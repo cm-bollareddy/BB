@@ -1,0 +1,22 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="MusicCueDataSet" targetNamespace="http://localhost/BVWebService/xsd/MusicCueDataSet.xsd" xmlns:mstns="http://localhost/BVWebService/xsd/MusicCueDataSet.xsd" xmlns="http://localhost/BVWebService/xsd/MusicCueDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:element name="MusicCueDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="MUSICCUE">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PMC_ID" type="xs:int" />
+              <xs:element name="PMC_DEA_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="PMC_FORMSTATUS" type="xs:short" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="PK_MUSICCUE" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:MUSICCUE" />
+      <xs:field xpath="mstns:PMC_ID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

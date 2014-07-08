@@ -1,0 +1,878 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <ProductVersion>8.0.30319</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{201ED7B0-5B0F-4D42-9D24-836025F694C3}</ProjectGuid>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccProvider>
+    </SccProvider>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon />
+    <AssemblyKeyContainerName />
+    <AssemblyName>BVWebService</AssemblyName>
+    <AssemblyOriginatorKeyFile />
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>BVWebService</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject />
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <SccAuxPath>
+    </SccAuxPath>
+    <UpgradeBackupLocation />
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile />
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile />
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn />
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile />
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile />
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn />
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Utility\Utility.csproj">
+      <Name>Utility</Name>
+      <Project>{FBDC65F7-C240-4972-A386-B4F8FE9CA926}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <Reference Include="OrionProxyLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=d6ca8778fbd0bc89, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Dependencies\OrionProxyLib.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Configuration.Install">
+      <Name>System.Configuration.Install</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Management">
+      <Name>System.Management</Name>
+    </Reference>
+    <Reference Include="System.Web">
+      <Name>System.Web</Name>
+    </Reference>
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services">
+      <Name>System.Web.Services</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ComponentFactory\ComponentFactory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PBS\Packages.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PBS\UserProfile.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PBS\UserProfileBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PBS\SearchCriterion.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Service.asmx.cs">
+      <DependentUpon>Service.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SessionHandling\BVSession.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XsltClass\AdCopySearchClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XsltClass\CreateDealClass.cs" />
+    <Compile Include="XsltClass\CreateMediaInventoryRevisionClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XsltClass\CreateProgramClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XsltClass\DealSearchClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XsltClass\DebugTimeOutClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XsltClass\DeleteFormatSheetClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XsltClass\DeleteIWTClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XsltClass\DeleteMusicCueClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XsltClass\DeleteOACClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XsltClass\DeleteUCCClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XsltClass\DeleteVisualArtClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XsltClass\GetAdCopyClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XsltClass\GetAssetAppliesToRangeByTabClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XsltClass\GetBarCodeClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XsltClass\GetDealAllClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XsltClass\GetDealClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XsltClass\GetDealWithFundingClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XsltClass\GetDealWithGeneralClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XsltClass\GetDealWithRightsClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XsltClass\GetDealWithTechnicalClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XsltClass\GetDiscrepancyProgramClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XsltClass\GetFeatureMediaInventoryClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XsltClass\GetFormatSheetClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XsltClass\GetIDsClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XsltClass\GetIWTClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XsltClass\GetMasterDealClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XsltClass\GetMediaInventoryRevisionClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XsltClass\GetMusicCueClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XsltClass\GetOACClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XsltClass\GetPackageAppliesToRangeByTabClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XsltClass\GetPackageClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XsltClass\GetProgramDetailsClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XsltClass\GetTalentClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XsltClass\GetUCCClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XsltClass\GetVisualArtClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XsltClass\ListDealsByMasterDealClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XsltClass\ListFormDeadlineClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XsltClass\ListMissingEpisodeFormDeadlineClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XsltClass\ListMissingVersionFormDeadlineClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XsltClass\ListPAADeadlineClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XsltClass\ListProgramPackagesByProgramClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XsltClass\ListProgramsByDealClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XsltClass\ListTabMapByDealClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XsltClass\LoadAlliantContractModelsClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XsltClass\LoadAspectRatioTypeClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XsltClass\LoadAssetCategoryClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XsltClass\LoadAudioTypeClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XsltClass\LoadBillToClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XsltClass\LoadBillToContactClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XsltClass\LoadCaptionVendorClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XsltClass\LoadCompanyClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XsltClass\LoadContactTypeClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XsltClass\LoadCutItemTypeClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XsltClass\LoadDisclaimerClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XsltClass\LoadDistributorsClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XsltClass\LoadFundersClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XsltClass\LoadFunderTypeClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XsltClass\LoadGenreClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XsltClass\LoadHighDefTypeClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XsltClass\LoadKeywordsClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XsltClass\LoadLanguageClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XsltClass\LoadLocalUnderwritingClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XsltClass\LoadMediaFeatureClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XsltClass\LoadMediaFeatureClassClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XsltClass\LoadMediaFormatTypeClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XsltClass\LoadMediaInventoryTypeClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XsltClass\LoadMediaStatusClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XsltClass\LoadOacPostOfferDescriptionTypeClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XsltClass\LoadOacPreOfferDescriptionTypeClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XsltClass\LoadPackageTypeClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XsltClass\LoadPBSProgramTypeClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XsltClass\LoadPlayRuleClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XsltClass\LoadProgramTypeClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XsltClass\LoadRatingClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XsltClass\LoadSchoolRightsClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XsltClass\LoadStationsClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XsltClass\LoadSurroundSoundTypeClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XsltClass\LoadTalentRolesClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XsltClass\LoadUplinksClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XsltClass\LoadVCHIPValuesClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XsltClass\LoadVersionFormatAndTypeClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XsltClass\LoadVideoFormatClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XsltClass\MasterDealSearchClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XsltClass\MediaInventorySearchClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XsltClass\ProgramSearchClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XsltClass\PutAdCopyClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XsltClass\PutAssetAppliesToRangeByTabClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XsltClass\PutDealClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XsltClass\PutDealWithFundingClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XsltClass\PutDealWithGeneralClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XsltClass\PutDealWithRightsClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XsltClass\PutDealWithTechnicalClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XsltClass\PutFeatureMediaInventoryClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XsltClass\PutFormatSheetClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XsltClass\PutIWTClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XsltClass\PutMediaInventoryRevisionClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XsltClass\PutMusicCueClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XsltClass\PutOACClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XsltClass\PutPackageAppliesToRangeByTabClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XsltClass\PutProgramDetailsClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XsltClass\PutTalentClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XsltClass\PutUCCClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XsltClass\PutVisualArtClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XsltClass\ReleaseLockClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XsltClass\SchemaConverter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XsltClass\TalentSearchClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XsltClass\TestConverterClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XsltClass\TrafficItemSearchClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XsltClass\ValidateEpisodeSlateClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Content Include="Dependencies\OrionProxyLib.dll" />
+    <Content Include="Global.asax">
+      <SubType>Component</SubType>
+    </Content>
+    <Content Include="Service.asmx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="xslt\AdCopySearch.xslt" />
+    <Content Include="xslt\DealSearch.xslt" />
+    <Content Include="xslt\GetAdCopy.xslt" />
+    <Content Include="xslt\GetAssetAppliesToRangeByTab.xslt" />
+    <Content Include="xslt\GetDataEpisodeAppliesTo.xslt" />
+    <Content Include="xslt\GetDataEpisodeTalent.xslt" />
+    <Content Include="xslt\GetDataTalent.xslt" />
+    <Content Include="xslt\GetDeal.xslt" />
+    <Content Include="xslt\GetDealAll.xslt" />
+    <Content Include="xslt\GetDealWithFunding.xslt" />
+    <Content Include="xslt\GetDealWithGeneral.xslt" />
+    <Content Include="xslt\GetDealWithRights.xslt" />
+    <Content Include="xslt\GetDealWithTechnical.xslt" />
+    <Content Include="xslt\GetDiscrepancyProgram.xslt" />
+    <Content Include="xslt\GetFeatureMediaInventory.xslt" />
+    <Content Include="xslt\GetFormatSheet.xslt" />
+    <Content Include="xslt\GetIWT.xslt" />
+    <Content Include="xslt\GetMasterDeal.xslt" />
+    <Content Include="xslt\GetMediaInventoryRevision.xslt" />
+    <Content Include="xslt\GetMusicCue.xslt" />
+    <Content Include="xslt\GetOAC.xslt" />
+    <Content Include="xslt\GetPackage.xslt" />
+    <Content Include="xslt\GetPackageAppliesToRangeByTab.xslt" />
+    <Content Include="xslt\GetProgramDetails.xslt" />
+    <Content Include="xslt\GetUCC.xslt" />
+    <Content Include="xslt\GetVisualArt.xslt" />
+    <Content Include="xslt\ListDealsByMasterDeal.xslt" />
+    <Content Include="xslt\ListFormDeadline.xslt" />
+    <Content Include="xslt\ListMissingEpisodeFormDeadline.xslt" />
+    <Content Include="xslt\ListMissingVersionFormDeadline.xslt" />
+    <Content Include="xslt\ListPAADeadline.xslt" />
+    <Content Include="xslt\ListProgramPackagesByProgram.xslt" />
+    <Content Include="xslt\ListProgramsByDeal.xslt" />
+    <Content Include="xslt\ListTabMapByDeal.xslt" />
+    <Content Include="xslt\LoadAlliantContractModels.xslt" />
+    <Content Include="xslt\LoadAspectRatioType.xslt" />
+    <Content Include="xslt\LoadAssetCategory.xslt" />
+    <Content Include="xslt\LoadAudioType.xslt" />
+    <Content Include="xslt\LoadBillTo.xslt" />
+    <Content Include="xslt\LoadBillToContact.xslt" />
+    <Content Include="xslt\LoadCaptionVendor.xslt" />
+    <Content Include="xslt\LoadCompany.xslt" />
+    <Content Include="xslt\LoadContactType.xslt" />
+    <Content Include="xslt\LoadCutItemType.xslt" />
+    <Content Include="xslt\LoadDisclaimer.xslt" />
+    <Content Include="xslt\LoadDistributors.xslt" />
+    <Content Include="xslt\LoadFunders.xslt" />
+    <Content Include="xslt\LoadFunderType.xslt" />
+    <Content Include="xslt\LoadGenre.xslt" />
+    <Content Include="xslt\LoadHighDefType.xslt" />
+    <Content Include="xslt\LoadKeywords.xslt" />
+    <Content Include="xslt\LoadLanguage.xslt" />
+    <Content Include="xslt\LoadLocalUnderwriting.xslt" />
+    <Content Include="xslt\LoadMediaFeature.xslt" />
+    <Content Include="xslt\LoadMediaFeatureClass.xslt" />
+    <Content Include="xslt\LoadMediaFormatType.xslt" />
+    <Content Include="xslt\LoadMediaInventoryType.xslt" />
+    <Content Include="xslt\LoadMediaStatus.xslt" />
+    <Content Include="xslt\LoadOacPostOfferDescriptionType.xslt" />
+    <Content Include="xslt\LoadOacPreOfferDescriptionType.xslt" />
+    <Content Include="xslt\LoadPackageType.xslt" />
+    <Content Include="xslt\LoadPBSProgramType.xslt" />
+    <Content Include="xslt\LoadPlayRule.xslt" />
+    <Content Include="xslt\LoadProgramType.xslt" />
+    <Content Include="xslt\LoadRating.xslt" />
+    <Content Include="xslt\LoadSchoolRights.xslt" />
+    <Content Include="xslt\LoadStations.xslt" />
+    <Content Include="xslt\LoadSurroundSoundType.xslt" />
+    <Content Include="xslt\LoadTalentRoles.xslt" />
+    <Content Include="xslt\LoadUplinks.xslt" />
+    <Content Include="xslt\LoadVCHIPValues.xslt" />
+    <Content Include="xslt\LoadVersionFormatAndType.xslt" />
+    <Content Include="xslt\LoadVideoFormat.xslt" />
+    <Content Include="xslt\MasterDealSearch.xslt" />
+    <Content Include="xslt\MediaInventorySearch.xslt" />
+    <Content Include="xslt\ProgramSearch.xslt" />
+    <Content Include="xslt\PutAdCopy.xslt" />
+    <Content Include="xslt\PutAssetAppliesToRangeByTab.xslt" />
+    <Content Include="xslt\PutDataEpisodeAppliesTo.xslt" />
+    <Content Include="xslt\PutDataEpisodeTalent.xslt" />
+    <Content Include="xslt\PutDataTalent.xslt" />
+    <Content Include="xslt\PutDeal.xslt" />
+    <Content Include="xslt\PutDealWithFunding.xslt" />
+    <Content Include="xslt\PutDealWithGeneral.xslt" />
+    <Content Include="xslt\PutDealWithRights.xslt" />
+    <Content Include="xslt\PutDealWithTechnical.xslt" />
+    <Content Include="xslt\PutFeatureMediaInventory.xslt" />
+    <Content Include="xslt\PutFormatSheet.xslt" />
+    <Content Include="xslt\PutIWT.xslt" />
+    <Content Include="xslt\PutMediaInventoryRevision.xslt" />
+    <Content Include="xslt\PutMusicCue.xslt" />
+    <Content Include="xslt\PutOAC.xslt" />
+    <Content Include="xslt\PutPackageAppliesToRangeByTab.xslt" />
+    <Content Include="xslt\PutProgramDetails.xslt" />
+    <Content Include="xslt\PutUCC.xslt" />
+    <Content Include="xslt\PutVisualArt.xslt" />
+    <Content Include="xslt\TalentSearch.xslt" />
+    <Content Include="xslt\TrafficItemSearch.xslt" />
+    <Content Include="xslt\TransformUtil.xslt" />
+    <Content Include="xslt\ValidateEpisodeSlate.xslt" />
+    <EmbeddedResource Include="Global.asax.resx">
+      <DependentUpon>Global.asax.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Service.asmx.resx">
+      <DependentUpon>Service.asmx.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="PublishProfiles\Web Deploy Package.pubxml" />
+    <None Include="xsd\AdCopyDataSet.xsd">
+      <LastGenOutput>AdCopyDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="xsd\AdCopySearchDataSet.xsd">
+      <LastGenOutput>AdCopySearchDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="xsd\AssetAppliesToRangeByTabDataSet.xsd">
+      <LastGenOutput>AssetAppliesToRangeByTabDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="xsd\DealAllDataSet.xsd">
+      <LastGenOutput>DealAllDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="xsd\DealDataSet.xsd">
+      <LastGenOutput>DealDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="xsd\DealSearchDataSet.xsd">
+      <LastGenOutput>DealSearchDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="xsd\DealWithFundingDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="xsd\DealWithGeneralDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="xsd\DealWithRightsDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="xsd\DealWithTechnicalDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="xsd\DiscrepancyProgramDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="xsd\EpisodeAppliesToDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="xsd\EpisodeTalentDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="xsd\FeatureMediaInventoryDataSet.xsd">
+      <LastGenOutput>FeatureMediaInventoryDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="xsd\FormatSheetDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="xsd\IWTDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="xsd\ListDealsByMasterDealDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="xsd\ListFormDeadlineDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="xsd\ListMissingEpisodeFormDeadlineDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="xsd\ListMissingVersionFormDeadlineDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="xsd\ListPAADeadlineDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="xsd\ListProgramPackagesByProgramDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="xsd\ListProgramsByDealDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="xsd\ListTabMapByDealDataSet.xsd">
+      <LastGenOutput>ListTabMapByDealDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="xsd\LoadAlliantContractModelsDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="xsd\LoadAspectRatioTypeDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="xsd\LoadAssetCategoryDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="xsd\LoadAudioTypeDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="xsd\LoadBillToContactDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="xsd\LoadBillToDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="xsd\LoadCaptionVendorDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="xsd\LoadCompanyDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="xsd\LoadContactTypeDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="xsd\LoadCutItemTypeDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="xsd\LoadDisclaimerDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="xsd\LoadDistributorsDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="xsd\LoadFundersDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="xsd\LoadFunderTypeDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="xsd\LoadGenreDataSet.xsd">
+      <LastGenOutput>LoadGenreDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="xsd\LoadHighDefTypeDataSet.xsd">
+      <LastGenOutput>LoadHighDefTypeDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="xsd\LoadKeywordsDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="xsd\LoadLanguageDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="xsd\LoadLocalUnderwritingDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="xsd\LoadMediaFeatureClassDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="xsd\LoadMediaFeatureDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="xsd\LoadMediaFormatTypeDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="xsd\LoadMediaInventoryTypeDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="xsd\LoadMediaStatusDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="xsd\LoadOacPostOfferDescriptionTypeDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="xsd\LoadOacPreOfferDescriptionTypeDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="xsd\LoadPackageTypeDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="xsd\LoadPBSProgramTypeDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="xsd\LoadPlayRuleDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="xsd\LoadProgramTypeDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="xsd\LoadRatingDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="xsd\LoadSchoolRightsDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="xsd\LoadStationsDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="xsd\LoadSurroundSoundTypeDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="xsd\LoadTalentRolesDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="xsd\LoadUplinksDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="xsd\LoadVCHIPValuesDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="xsd\LoadVersionFormatAndTypeDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="xsd\LoadVideoFormatDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="xsd\MasterDealDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="xsd\MasterDealSearchDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="xsd\MediaInventoryRevisionDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="xsd\MediaInventorySearchDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="xsd\MusicCueDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="xsd\OACDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="xsd\PackageAppliesToRangeByTabDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="xsd\PackageDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="xsd\ProgramDetailsDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="xsd\ProgramSearchDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="xsd\TalentDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="xsd\TalentSearchDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="xsd\TrafficItemSearchDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="xsd\UCCDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="xsd\ValidateEpisodeSlateDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="xsd\VisualArtDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent />
+    <PostBuildEvent />
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>51217</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/BVWebService</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

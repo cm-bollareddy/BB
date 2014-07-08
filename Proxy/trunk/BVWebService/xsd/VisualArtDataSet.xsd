@@ -1,0 +1,22 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="VisualArtDataSet" targetNamespace="http://localhost/BVWebService/xsd/VisualArtDataSet.xsd" xmlns:mstns="http://localhost/BVWebService/xsd/VisualArtDataSet.xsd" xmlns="http://localhost/BVWebService/xsd/VisualArtDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:element name="VisualArtDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="VISUALART">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PVA_ID" type="xs:int" />
+              <xs:element name="PVA_DEA_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="PVA_FORMSTATUS" type="xs:short" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="PK_VISUALART" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:VISUALART" />
+      <xs:field xpath="mstns:PVA_ID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

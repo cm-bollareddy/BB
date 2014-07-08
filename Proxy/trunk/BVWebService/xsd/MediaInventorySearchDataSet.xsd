@@ -1,0 +1,38 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="MediaInventoryDataSet" targetNamespace="http://localhost/BVWebService/xsd/MediaInventorySearchDataSet.xsd" xmlns:mstns="http://localhost/BVWebService/xsd/MediaInventorySearchDataSet.xsd" xmlns="http://localhost/BVWebService/xsd/MediaInventorySearchDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:element name="MediaInventoryDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="MEDIAINVENTORYSEARCH">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="MEI_ID" type="xs:int" />
+              <xs:element name="MEI_UPDATEDATETIME" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="MEI_DESCRIPTION">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="80" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MEI_VET_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="MEI_ASS_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="MEI_ISFEATUREONLY" type="xs:short" minOccurs="0" />
+              <xs:element name="MEI_CLASS">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MEIR_ID" msdata:ReadOnly="true" type="xs:int" minOccurs="0" />
+              <xs:element name="MEIR_ISREVISIONREQUIRED" msdata:ReadOnly="true" type="xs:short" minOccurs="0" />
+              <xs:element name="MEIR_ISARCHIVED" msdata:ReadOnly="true" type="xs:short" minOccurs="0" />
+              <xs:element name="MEI_ID_PARENT" msdata:ReadOnly="true" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

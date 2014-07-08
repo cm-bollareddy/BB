@@ -1,0 +1,90 @@
+using System;
+using System.Data;
+using System.Xml;
+using SAWebService;
+using TVSServer = OrionProxy;
+using Pbs.WebServices.Utility;
+
+
+namespace SAWebService
+{
+	/// <summary>
+	/// <object>Class: Implement the <object> web method.
+	/// </summary>
+	class <object>Class
+	{
+		private const string FILE_SEARCH_XSLT = @"<object>.xslt";
+
+		public <object>Class()
+		{
+			//
+			// TODO: Add constructor logic here
+			//
+		}
+
+
+		public DataSet Get<object>(string strSessionID, int nMediaInventoryId)
+		{
+
+			//
+			// Validate that at least one of the input parameter(s) is defined
+			//
+			if (nMediaInventoryId == int.MinValue || nMediaInventoryId == -1)
+			{
+				throw new ServiceException(
+					ServiceException.ExceptionCode.InvalidParameters,
+					"Media Inventory Id is required.  Value provided = " + nMediaInventoryId.ToString() + " ",
+					"",
+					ServiceException.ExceptionActor.Client);
+			}
+
+			Tracer oTracer = new Tracer();
+			oTracer.LogInfo("Entering <object>.\n nMediaInventoryId=" + nMediaInventoryId.ToString());
+
+
+			//
+			// Go ahead and search based upon given parameters
+			//
+			TVSServer.rdmPBS<interface> oPBS<interface>;
+
+			try
+			{
+				oPBS<interface> = ComponentFactory.Create<interface>Class();
+				
+			}
+			catch (Exception ex)
+			{
+				throw new BVException(
+					BVException.ExceptionCode.ComponentAccessFailure,
+					"Error while creating server component: " + ex.Message,
+					"Component= TVSServer.rdmPBS<interface> <object> ",
+					ex);
+			}
+
+			int nErrorCode = 0;
+			string sXmlData = "";
+			string strErrorText = "";
+			try
+			{
+				nErrorCode = oPBS<interface>.<object>(strSessionID, nMediaInventoryId, out sXmlData, out strErrorText);
+			}
+			catch (Exception ex)
+			{
+				throw new BVException(
+					BVException.ExceptionCode.ComponentExecutionFailure,
+					"Error while executing server component method: " + ex.Message,
+					"SessionID= " + strSessionID + ", MediaInventoryId(" + nMediaInventoryId.ToString()+ ")",
+					ex);
+			}
+
+			if (nErrorCode == 0)
+			{
+				return SchemaConverter.ToDataSet(sXmlData, SAWebService.ApplicationPath + @"\xslt\" + FILE_SEARCH_XSLT );
+			}
+			else
+			{
+				throw new BVException(nErrorCode, strErrorText, "SessionID= " + strSessionID + ", MediaInventoryId (" + nMediaInventoryId.ToString() + ")");
+			}
+		}
+	}
+}

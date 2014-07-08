@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<OrderedTest name="OACOrderedTest" storage="e:\projects\visual studio 2010\projects\bvwebservice.root\bvwebservice\bvwebservicetestproject\oacorderedtest.orderedtest" id="c3a41260-6447-4759-b664-3aa31cb1e898" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Execution id="1507d416-efc4-44b2-a4cb-b924a951bea1" />
+  <TestLinks>
+    <TestLink id="a7b893cc-ca60-2868-b654-c06331463ece" name="CreateOACTest" storage="bin\debug\bvwebservicetestproject.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <TestLink id="bb3d6dd8-c67c-55d3-8992-588505fb45a4" name="EditExistingOACTest" storage="bin\debug\bvwebservicetestproject.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <TestLink id="3b4ddc99-ee83-f7c4-a517-212b1de99c3c" name="DeleteOACTest" storage="bin\debug\bvwebservicetestproject.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  </TestLinks>
+</OrderedTest>

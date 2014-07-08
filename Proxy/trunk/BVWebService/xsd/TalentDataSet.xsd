@@ -1,0 +1,41 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="TalentDataSet" targetNamespace="http://localhost/BVWebService/xsd/TalentDataSet.xsd" xmlns:mstns="http://localhost/BVWebService/xsd/TalentDataSet.xsd" xmlns="http://localhost/BVWebService/xsd/TalentDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:element name="TalentDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="TALENT">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TAL_ID" type="xs:int" />
+              <xs:element name="TAL_NAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="80" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TAL_NAMEFIRST" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TAL_NAMELAST" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="PK_TALENT" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:TALENT" />
+      <xs:field xpath="mstns:TAL_ID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

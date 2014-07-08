@@ -1,0 +1,132 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="ProgramDetailsDataSet" targetNamespace="http://localhost/BVWebService/xsd/ProgramDetailsDataSet.xsd" xmlns:mstns="http://localhost/BVWebService/xsd/ProgramDetailsDataSet.xsd" xmlns="http://localhost/BVWebService/xsd/ProgramDetailsDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:element name="ProgramDetailsDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ASSET">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ASS_ID" type="xs:int" />
+              <xs:element name="ASS_EPISODENUMBER" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ASS_TITLE">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="80" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ASS_EPISODETITLE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="80" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ASS_PBS_ISFINALTITLE" type="xs:short" minOccurs="0" />
+              <xs:element name="ASS_PBSTITLEPREVIOUS" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="80" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ASS_EPISODESLATE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ASS_SYNOPSIS" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ASS_PBSPICTURELOCKDATE" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ASS_EPGTEXT" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ASS_TITLELISTING" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="80" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DEAL_ID" msdata:ReadOnly="true" type="xs:int" minOccurs="0" />
+              <xs:element name="ASS_ACA_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="ASS_PMC_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="ASS_PVA_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="PREMIEREDATETIME" msdata:ReadOnly="true" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="CASTTABLE">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TAL_ID" type="xs:int" />
+              <xs:element name="TAL_NAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="80" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TRO_ID" type="xs:int" />
+              <xs:element name="ASS_TAL_DESC" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="80" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ASS_ID" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ASSET_PBSPROGRAMKEYWORD">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PBSPK_ID" type="xs:int" />
+              <xs:element name="ASS_ID" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="PK_ASSET" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:ASSET" />
+      <xs:field xpath="mstns:ASS_ID" />
+    </xs:unique>
+    <xs:unique name="PK_CASTTABLE" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:CASTTABLE" />
+      <xs:field xpath="mstns:TAL_ID" />
+      <xs:field xpath="mstns:TRO_ID" />
+      <xs:field xpath="mstns:ASS_ID" />
+    </xs:unique>
+    <xs:unique name="PK_ASSET_PBSPROGRAMKEYWORD" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:ASSET_PBSPROGRAMKEYWORD" />
+      <xs:field xpath="mstns:PBSPK_ID" />
+    </xs:unique>
+    <xs:keyref name="FK_ASSET_ASSET_PBSPROGRAMKEYWORD" refer="PK_ASSET">
+      <xs:selector xpath=".//mstns:ASSET_PBSPROGRAMKEYWORD" />
+      <xs:field xpath="mstns:ASS_ID" />
+    </xs:keyref>
+    <xs:keyref name="FK_ASSET_CASTTABLE" refer="PK_ASSET">
+      <xs:selector xpath=".//mstns:CASTTABLE" />
+      <xs:field xpath="mstns:ASS_ID" />
+    </xs:keyref>
+  </xs:element>
+</xs:schema>
