@@ -1,0 +1,77 @@
+using System;
+using System.Collections;
+using System.ComponentModel;
+using System.Data;
+using System.Diagnostics;
+using System.Xml;
+using System.Xml.Xsl;
+using System.IO;
+using System.Globalization;
+using Pbs.WebServices.Utility;
+
+using TVSServer = OrionProxy;
+
+namespace BVWebService
+{
+	/// <summary>
+	/// Create<object>Class: Implement the Create<object> web method using XSLT.
+	/// </summary>
+	class Create<object>Class
+	{
+		private const string FILE_GET_XSLT = @"Get<object>.xslt";
+
+		public Create<object>Class()
+		{
+		}
+
+		public DataSet Create<object>(string strSessionID,string strLockId, int nOldID, int nNewID)
+		{
+			// Method returns a GetMediaInventoryRevision result after a MEIR is created.
+
+			Tracer oTracer = new Tracer();
+			oTracer.LogInfo("Entering Create<object>.\n strSessionID=" + strSessionID + ", nOldID="  + nOldID+ ", nNewID="  + nNewID+ ", strLockId="  + strLockId);
+		
+			TVSServer.rdmPBS<interface> oPBS<object>;
+
+			try
+			{
+				oPBS<object> = ComponentFactory.Create<interface>Class();
+			}
+			catch (Exception ex)
+			{
+				throw new BVException(
+					BVException.ExceptionCode.ComponentAccessFailure,
+					"Error while creating server component: " + ex.Message,
+					"Component= TVSServer.rdmPBS<interface> Get<object>",
+					ex);
+			}
+
+			int nErrorCode = 0;
+			string strErrorText = "";
+			string strResult = "";
+			try
+			{
+				nErrorCode = oPBS<object>.Create<object>(strSessionID, strLockId,nOldID,nNewID,out strResult, out strErrorText);
+			}
+			catch (Exception ex)
+			{
+				throw new BVException(
+					BVException.ExceptionCode.ComponentExecutionFailure,
+					"Error while executing server component method: " + ex.Message,
+					"nOldID= " + nOldID + ", nNewID= " + nNewID + ", LockId= " + strLockId,
+					ex);
+			}
+
+			if (nErrorCode == 0)
+			{
+				oTracer.LogInfo("Leaving Create<object>..\n strSessionID=" + strSessionID + ", nOldID="  + nOldID+ ", nNewID="  + nNewID+ ", strLockId="  + strLockId);
+			
+				return SchemaConverter.ToDataSet(strResult, BVWebService.ApplicationPath + @"\xslt\" + FILE_GET_XSLT);
+			}
+			else
+			{
+				throw new BVException(nErrorCode, strErrorText, "strSessionID=" + strSessionID + ", nOldID="  + nOldID+ ", nNewID="  + nNewID+ ", strLockId="  + strLockId );
+			}
+		}
+	}
+}
