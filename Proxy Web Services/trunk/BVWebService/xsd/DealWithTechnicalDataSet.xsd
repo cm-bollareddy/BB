@@ -1,0 +1,306 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="DealWithTechnicalDataSet" targetNamespace="http://localhost/BVWebService/xsd/DealWithTechnicalDataSet.xsd" xmlns:mstns="http://localhost/BVWebService/xsd/DealWithTechnicalDataSet.xsd" xmlns="http://localhost/BVWebService/xsd/DealWithTechnicalDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:element name="DealWithTechnicalDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DEAL">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="DEA_ID" type="xs:int" />
+              <xs:element name="DEA_DESC">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="80" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EPISODE_COUNT" msdata:ReadOnly="true" type="xs:int" minOccurs="0" />
+              <xs:element name="DEA_PBSDS_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="DEA_UPDATEDATETIME" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="DEA_UPDATEUSERID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SEASON" msdata:ReadOnly="true" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MASTERDEALTITLE" msdata:ReadOnly="true" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="80" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DEA_PBSFD_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="DEA_ISPBSMINORITYPRODUCTION" type="xs:short" minOccurs="0" />
+              <xs:element name="DEA_ISPBSMINORITYPRODUCEREXEC" type="xs:short" minOccurs="0" />
+              <xs:element name="DEA_ISPBSMINORITYDIRECTOR" type="xs:short" minOccurs="0" />
+              <xs:element name="DEA_ISPBSMINORITYTALENT" type="xs:short" minOccurs="0" />
+              <xs:element name="DEA_ISPBSMINORITYPRODUCERLINE" type="xs:short" minOccurs="0" />
+              <xs:element name="DEA_ISPBSMINORITYWRITER" type="xs:short" minOccurs="0" />
+              <xs:element name="DEA_ISPBSMINORITYSUBJECTMATTER" type="xs:short" minOccurs="0" />
+              <xs:element name="DEA_PBSPRODUCTIONCOST" type="xs:double" minOccurs="0" />
+              <xs:element name="DEA_SLU_ID_PBSUNDERWRITINGTYPE" type="xs:int" minOccurs="0" />
+              <xs:element name="DEA_PBSUNDERWRITINGNOTE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DEA_PBSUNDERWRITINGCONTACT" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="80" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DEA_PBSUNDERWRITINGPHONE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DEA_SLU_ID_PBSSCHOOLRIGHTSTYPE" type="xs:int" minOccurs="0" />
+              <xs:element name="DEA_PBSSCHOOLEXPIREDATE" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="DEA_PBSSCHOOLOBDATEMONTHS" type="xs:short" minOccurs="0" />
+              <xs:element name="DEA_PBSSCHOOLOBDATEDAYS" type="xs:short" minOccurs="0" />
+              <xs:element name="DEA_PBSSCHOOLEACHBCASTMONTHS" type="xs:short" minOccurs="0" />
+              <xs:element name="DEA_PBSSCHOOLEACHBCASTDAYS" type="xs:short" minOccurs="0" />
+              <xs:element name="DEA_ISPBSSIMULCASTRIGHTS" type="xs:short" minOccurs="0" />
+              <xs:element name="DEA_ISPBSNCCABLERIGHTS" type="xs:short" minOccurs="0" />
+              <xs:element name="DEA_PBSBROADCASTRIGHTSCOMMENTS" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DEA_PBSCANADIANHOLDBACK" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="80" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DEA_ISPBSCANADIANPRERELEASE" type="xs:short" minOccurs="0" />
+              <xs:element name="DEA_PBSPRODUCTIONCONTACTNAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DEA_PBSPRODUCTIONCONTACTPHONE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DEA_PBSPRODUCTIONCONTACTEMAIL" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="80" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DEA_PBSTECHNICALCONTACTNAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DEA_PBSTECHNICALCONTACTPHONE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DEA_PBSTECHNICALCONTACTEMAIL" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="80" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DEA_ISPBSLIVEEVENT" type="xs:short" minOccurs="0" />
+              <xs:element name="DEA_PBSORIGSITE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DEA_PBSUP_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="DEA_PBSLIVEORIGINATIONPATH" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DEA_PBSLIVEORIGINATIONPATH2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DEA_PBSLIVEORIGINATIONPATH3" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DEA_PBSLIVEORIGINATIONPATH4" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DEA_ISPBSLIVERECORD" type="xs:short" minOccurs="0" />
+              <xs:element name="DEA_MFC_ID_AUDIOTYPE" type="xs:int" minOccurs="0" />
+              <xs:element name="DEA_MEF_ID_AUDIO1" type="xs:int" minOccurs="0" />
+              <xs:element name="DEA_MEF_ID_AUDIO2" type="xs:int" minOccurs="0" />
+              <xs:element name="DEA_MEF_ID_AUDIO3" type="xs:int" minOccurs="0" />
+              <xs:element name="DEA_MEF_ID_AUDIO4" type="xs:int" minOccurs="0" />
+              <xs:element name="DEA_MEF_ID_AUDIO5" type="xs:int" minOccurs="0" />
+              <xs:element name="DEA_MEF_ID_AUDIO6" type="xs:int" minOccurs="0" />
+              <xs:element name="DEA_MEF_ID_AUDIO7" type="xs:int" minOccurs="0" />
+              <xs:element name="DEA_MEF_ID_AUDIO8" type="xs:int" minOccurs="0" />
+              <xs:element name="DEA_IS_DVI_PBSENCODES" type="xs:short" minOccurs="0" />
+              <xs:element name="DEA_IS_DVI_PBSCOORDINATES" type="xs:short" minOccurs="0" />
+              <xs:element name="DEA_IS_SAP_PBSENCODES" type="xs:short" minOccurs="0" />
+              <xs:element name="DEA_ISSUBTITLES" type="xs:short" minOccurs="0" />
+              <xs:element name="DEA_LAN_ID_SUBTITLES" type="xs:int" minOccurs="0" />
+              <xs:element name="DEA_MEF_ID_CAPTION1" type="xs:int" minOccurs="0" />
+              <xs:element name="DEA_MEF_ID_CAPTION2" type="xs:int" minOccurs="0" />
+              <xs:element name="DEA_MEF_ID_CAPTION3" type="xs:int" minOccurs="0" />
+              <xs:element name="DEA_IS_CC_PBSENCODES" type="xs:short" minOccurs="0" />
+              <xs:element name="DEA_IS_CC_PBSCOORDINATES" type="xs:short" minOccurs="0" />
+              <xs:element name="DEA_CC_PROVIDER" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DEA_PBSCV_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="DEA_SLU_ID_ASPECTRATIO" type="xs:int" minOccurs="0" />
+              <xs:element name="DEA_ISINTERNALBREAK" type="xs:short" minOccurs="0" />
+              <xs:element name="DEA_ISCC" type="xs:short" minOccurs="0" />
+              <xs:element name="DEA_ISSAP" type="xs:short" minOccurs="0" />
+              <xs:element name="DEA_ISDVI" type="xs:short" minOccurs="0" />
+              <xs:element name="DEA_SLU_ID_HIDEF" type="xs:int" minOccurs="0" />
+              <xs:element name="DEA_PBSCONTENTDESCRIPTION" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DEA_PBSOPERATINGUNIT" type="xs:int" minOccurs="0" />
+              <xs:element name="DEA_PBSOPERATINGGROUP" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DEA_ISPBSOPENCAPTIONS" type="xs:short" minOccurs="0" />
+              <xs:element name="DEA_PBSLIVEDESTINATION" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DEA_PBSLIVEBACKUPPATH1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DEA_PBSLIVEBACKUPPATH2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DEA_PBSLIVEBACKUPPATH3" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DEA_PBSLIVEBACKUPPATH4" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DEA_MDL_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="DEA_GNR_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="DEA_ACM_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="DEA_ALLIANTCONTRACTID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="34" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ISALLIANTCONTRACTINTERFACED" msdata:ReadOnly="true" type="xs:short" minOccurs="0" />
+              <xs:element name="DEA_PBSBC_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="DEA_PBSCONTENTDESCRIPTION_1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DEA_ISPBSSERIESDESCRIPTION" type="xs:short" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="DEALVERSIONTYPE">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="DVT_ID" type="xs:int" />
+              <xs:element name="DVT_DEA_ID" type="xs:int" />
+              <xs:element name="DVT_VET_ID" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="PK_DEAL" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:DEAL" />
+      <xs:field xpath="mstns:DEA_ID" />
+    </xs:unique>
+    <xs:unique name="PK_DEALVERSIONTYPE" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:DEALVERSIONTYPE" />
+      <xs:field xpath="mstns:DVT_ID" />
+    </xs:unique>
+    <xs:keyref name="FK_DEAL_DEALVERSIONTYPE" refer="PK_DEAL">
+      <xs:selector xpath=".//mstns:DEALVERSIONTYPE" />
+      <xs:field xpath="mstns:DVT_DEA_ID" />
+    </xs:keyref>
+  </xs:element>
+</xs:schema>
