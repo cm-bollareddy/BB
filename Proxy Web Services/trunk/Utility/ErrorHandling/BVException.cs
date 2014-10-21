@@ -40,7 +40,16 @@ namespace Pbs.WebServices.Utility
 		private const int PBS_CORRUPTED_SESSION_MANAGER = 0x100;
 		private const int PBS_INVALID_LOCKID			= 0x200;
 		//private const int PBS_RECORD_LOCKED				= 0x020;
-		
+
+        
+        //New Error Flags with the COM Rewrite of the BroadView OrionProxy
+        private const int PROXY_SUCCESS                 = 0x10000000; //SUCCESS
+        private const int PROXY_BVS_REQUEST_FAILURE     = 0x10000001; //BVSM request has failed
+        private const int PROXY_DB_NOT_FOUND            = 0x10000002; //Database has not been found
+        private const int PROXY_DB_NOT_ACCESSIBLE       = 0x10000004; //Database is not accessible
+        private const int PROXY_RESPONSE_TIMEOUT        = 0x10000008; //Response timeout
+        private const int PROXY_GENERIC_EXCEPTION       = 0x10000020; //Exception
+
 
 		//definitions of the XML elements to sent back in case of a BV Error.
 		private const string PBS_XML_ERROR_HEADER = "<?xml version='1.0' encoding='utf-8'?><Detail>@</Detail>";
@@ -265,6 +274,65 @@ namespace Pbs.WebServices.Utility
 				m_sCode = ReplaceErrorValues(BVException.PBS_XML_ERROR_CODE,"0x" + Convert.ToString(PBS_INVALID_LOCKID, 16));
 				m_xml += ReplaceErrorValues(BVException.PBS_XML_ERROR_SUB_ELEMENT,m_sCode + m_sDesc);
 			}
+
+//NEW
+
+            if ((errorCode & PROXY_BVS_REQUEST_FAILURE) == PROXY_BVS_REQUEST_FAILURE)
+			{
+				m_Message   += " BVSM request has failed.";
+				m_ErrorCode  = ExceptionCode.ServerComponentError;
+				
+				//Build the xml
+				m_sDesc =ReplaceErrorValues( BVException.PBS_XML_ERROR_DESC," BVSM request has failed.");
+				m_sCode = ReplaceErrorValues(BVException.PBS_XML_ERROR_CODE,"0x" + Convert.ToString(PROXY_BVS_REQUEST_FAILURE, 16));
+				m_xml += ReplaceErrorValues(BVException.PBS_XML_ERROR_SUB_ELEMENT,m_sCode + m_sDesc);
+			}
+
+            if ((errorCode & PROXY_DB_NOT_FOUND) == PROXY_DB_NOT_FOUND)
+			{
+				m_Message   += " Database has not been found.";
+				m_ErrorCode  = ExceptionCode.ServerComponentError;
+				
+				//Build the xml
+				m_sDesc =ReplaceErrorValues( BVException.PBS_XML_ERROR_DESC," Database has not been found.");
+				m_sCode = ReplaceErrorValues(BVException.PBS_XML_ERROR_CODE,"0x" + Convert.ToString(PROXY_DB_NOT_FOUND, 16));
+				m_xml += ReplaceErrorValues(BVException.PBS_XML_ERROR_SUB_ELEMENT,m_sCode + m_sDesc);
+			}
+
+            if ((errorCode & PROXY_DB_NOT_ACCESSIBLE) == PROXY_DB_NOT_ACCESSIBLE)
+			{
+				m_Message   += " Database is not accessible.";
+				m_ErrorCode  = ExceptionCode.ServerComponentError;
+				
+				//Build the xml
+				m_sDesc =ReplaceErrorValues( BVException.PBS_XML_ERROR_DESC," Database is not accessible.");
+				m_sCode = ReplaceErrorValues(BVException.PBS_XML_ERROR_CODE,"0x" + Convert.ToString(PROXY_DB_NOT_ACCESSIBLE, 16));
+				m_xml += ReplaceErrorValues(BVException.PBS_XML_ERROR_SUB_ELEMENT,m_sCode + m_sDesc);
+			}
+
+            if ((errorCode & PROXY_RESPONSE_TIMEOUT) == PROXY_RESPONSE_TIMEOUT)
+			{
+				m_Message   += " Response timeout.";
+				m_ErrorCode  = ExceptionCode.ServerComponentError;
+				
+				//Build the xml
+				m_sDesc =ReplaceErrorValues( BVException.PBS_XML_ERROR_DESC," Response timeout.");
+				m_sCode = ReplaceErrorValues(BVException.PBS_XML_ERROR_CODE,"0x" + Convert.ToString(PROXY_RESPONSE_TIMEOUT, 16));
+				m_xml += ReplaceErrorValues(BVException.PBS_XML_ERROR_SUB_ELEMENT,m_sCode + m_sDesc);
+			}
+
+            if ((errorCode & PROXY_GENERIC_EXCEPTION) == PROXY_GENERIC_EXCEPTION)
+			{
+				m_Message   += " Generic exception.";
+				m_ErrorCode  = ExceptionCode.ServerComponentError;
+				
+				//Build the xml
+				m_sDesc =ReplaceErrorValues( BVException.PBS_XML_ERROR_DESC," Generic exception.");
+				m_sCode = ReplaceErrorValues(BVException.PBS_XML_ERROR_CODE,"0x" + Convert.ToString(PROXY_GENERIC_EXCEPTION, 16));
+				m_xml += ReplaceErrorValues(BVException.PBS_XML_ERROR_SUB_ELEMENT,m_sCode + m_sDesc);
+			}
+
+
 
 			//
 			// Decide the actor
