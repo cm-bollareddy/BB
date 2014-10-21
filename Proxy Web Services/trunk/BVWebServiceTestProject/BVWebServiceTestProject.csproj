@@ -238,6 +238,7 @@
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="Dependencies\OrionProxyLib.dll" />
   </ItemGroup>

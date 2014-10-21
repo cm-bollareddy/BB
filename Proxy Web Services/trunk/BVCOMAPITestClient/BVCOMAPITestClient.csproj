@@ -111,6 +111,7 @@
       <Name>Utility</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="Dependencies\OrionProxyLib.dll" />
   </ItemGroup>
