@@ -1,0 +1,35 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="GenreDataSet" targetNamespace="http://localhost/BVWebService/xsd/LoadGenreDataSet.xsd" xmlns:mstns="http://localhost/BVWebService/xsd/LoadGenreDataSet.xsd" xmlns="http://localhost/BVWebService/xsd/LoadGenreDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:element name="GenreDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Genre">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="GNR_ID" type="xs:int" />
+              <xs:element name="GNR_CODE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="6" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="GNR_DESC">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="GNR_ISARCHIVED" type="xs:short" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="PK_GENRE" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Genre" />
+      <xs:field xpath="mstns:GNR_ID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

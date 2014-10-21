@@ -1,0 +1,36 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="VCHIPValuesDataSet" targetNamespace="http://localhost/BVWebService/xsd/LoadVCHIPValuesDataSet.xsd" xmlns:mstns="http://localhost/BVWebService/xsd/LoadVCHIPValuesDataSet.xsd" xmlns="http://localhost/BVWebService/xsd/LoadVCHIPValuesDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:element name="VCHIPValuesDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="VCHIP">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="VCH_ID" type="xs:int" />
+              <xs:element name="VCH_CODE">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="VCH_DESCRIPTION" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="VCH_ISARCHIVED" type="xs:short" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="PK_VCHIP" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:VCHIP" />
+      <xs:field xpath="mstns:VCH_ID" />
+      <xs:field xpath="mstns:VCH_CODE" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
