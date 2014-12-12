@@ -141,6 +141,17 @@
                           </TextRuns>
                           <Style />
                         </Paragraph>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value />
+                              <Style>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>textbox4</rd:DefaultName>
                       <Style>
@@ -364,7 +375,7 @@
   <Width>7.4375in</Width>
   <Page>
     <PageFooter>
-      <Height>1.53125in</Height>
+      <Height>1.90625in</Height>
       <PrintOnFirstPage>true</PrintOnFirstPage>
       <PrintOnLastPage>true</PrintOnLastPage>
       <ReportItems>
@@ -464,7 +475,19 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value>NR01 - Content filtered to remove Live Content, Traffic Items and Distributor Direct</Value>
+                  <Value>NR01 - Content filtered to remove same day repeats, Live Content, Traffic Items and Distributor Direct</Value>
+                  <Style>
+                    <FontSize>8pt</FontSize>
+                    <FontWeight>Normal</FontWeight>
+                  </Style>
+                </TextRun>
+              </TextRuns>
+              <Style />
+            </Paragraph>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>NR02 - Content filtered to remove same day repeats</Value>
                   <Style>
                     <FontSize>8pt</FontSize>
                     <FontWeight>Normal</FontWeight>
@@ -476,7 +499,7 @@
           </Paragraphs>
           <rd:DefaultName>textbox1</rd:DefaultName>
           <Top>0.2075in</Top>
-          <Height>0.98083in</Height>
+          <Height>1.25166in</Height>
           <Width>5in</Width>
           <Style>
             <PaddingLeft>2pt</PaddingLeft>
@@ -511,7 +534,7 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox8</rd:DefaultName>
-          <Top>1.18833in</Top>
+          <Top>1.45916in</Top>
           <Height>0.22389in</Height>
           <Width>5in</Width>
           <ZIndex>1</ZIndex>
@@ -558,52 +581,67 @@
             <Value>=Parameters!End_Date.Value</Value>
           </QueryParameter>
         </QueryParameters>
-        <CommandText>with CTE as
+        <CommandText>
+
+with CTE as
 (
 SELECT
   dat_date,
   (select cha_desc from channel where cha_id = 5000000) NR01,
-  (select sum(tln_duration)
-     from timeline
-     join version on ver_id = tln_ver_id
-     where
-        tln_cha_id = 5000000
-        and
-        tln_logdate = DAT_DATE
-        and
-        tln_level = 1                --- no traffic items
-        and -
-        tln_ver_id is not null       --- package is assigned to schedule
-        and -
-        ver_islive = 0           -- package is not live
-       and
-       ver_ispbsdistributordirect = 0      -- not distributor package
-       and
-       ver_ispackage = 1
- ) NR01SUM,
+    (select
+        sum(DV1.ver_durationscheduled)
+        from
+        (select
+            distinct tln_ver_id, ver_durationscheduled
+            from timeline
+            join version on ver_id = tln_ver_id
+            where
+            tln_cha_id = 5000000
+            and
+            tln_logdate = DAT_DATE
+            and
+            tln_level = 1                --- no traffic items
+            and
+            tln_ver_id is not null       --- package is assigned to schedule
+            and
+            ver_islive = 0           -- package is not live
+            and
+            ver_ispbsdistributordirect = 0      -- not distributor package
+            and
+            ver_ispackage = 1
+        ) DV1
+    ) NR01SUM,
+ 
+ 
   (select cha_desc from channel where cha_id = 7400) NR02,
-  (select sum(tln_duration)
-     from timeline
-     join version on ver_id = tln_ver_id
-     where
-        tln_cha_id = 7400
-        and
-        tln_logdate = DAT_DATE
-        and
---        tln_level = 1                --- no traffic items
---        and -
-        tln_ver_id is not null       --- package is assigned to schedule
---        and
---        ver_islive = 0           -- package is not live
---        and
---        ver_ispbsdistributordirect = 0      -- not distributor package
---        and
---        ver_ispackage = 1
-) NR02SUM
+   (select
+        sum(DV2.ver_durationscheduled)
+        from
+        (select
+            distinct tln_ver_id, ver_durationscheduled
+            from timeline
+            join version on ver_id = tln_ver_id
+            where
+            tln_cha_id = 7400
+            and
+            tln_logdate = DAT_DATE
+    --      and
+    --        tln_level = 1                --- no traffic items
+            and 
+            tln_ver_id is not null       --- package is assigned to schedule
+    --      and 
+    --      ver_islive = 0           -- package is not live
+    --      and 
+    --      ver_ispbsdistributordirect = 0      -- not distributor package
+    --      and 
+    --      ver_ispackage = 1
+        ) DV2
+    )NR02SUM
+
 FROM
   dates
   where
- -- dat_date between  F_AddDay( 'TODAY', -120) and F_AddDay( 'TODAY', 90)
+  --dat_date between  F_AddDay( 'TODAY', -120) and F_AddDay( 'TODAY', 90)
  dat_date between ? and ?
 
 Order by 1
@@ -619,7 +657,8 @@ dat_date
 ,F_DURATIONTOSTR(NR01SUM + coalesce(NR02SUM,0)) as NRTTotalDisplay
 from
 CTE
-order by dat_date</CommandText>
+order by dat_date
+</CommandText>
         <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
       </Query>
       <Fields>
@@ -677,7 +716,7 @@ order by dat_date</CommandText>
       <DataType>Integer</DataType>
       <DefaultValue>
         <Values>
-          <Value>=147600</Value>
+          <Value>=154800</Value>
         </Values>
       </DefaultValue>
       <Prompt>Alarm Threshold (Seconds)</Prompt>
