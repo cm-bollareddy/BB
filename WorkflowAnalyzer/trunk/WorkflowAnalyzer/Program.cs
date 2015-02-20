@@ -137,19 +137,41 @@ namespace WorkflowAnalyzer
         {
             DataSet ds = new DataSet();
 
-            string sSQL = @"SELECT	a.*
-                            FROM	signiant_file_transfer_queue A
+            string sSQL = @"SELECT	c.name AS ClientName,
+		                            a.WO_WoNum,
+		                            a.WO_EXTID,
+		                            a.WO_CLJNO,
+		                            a.DATE_CREATED,
+		                               CASE
+			                              WHEN (LTRIM(b.stat)='0' and ltrim(b.statusex)='0') then 'MTR Impairment'
+			                              WHEN (LTRIM(b.stat)='0' and ltrim(b.statusex)='1') then 'In-House Repack'
+			                              WHEN LTRIM(b.stat)='1' then 'In Progress'
+			                              WHEN LTRIM(b.stat)='2' then 'Cancelled'
+			                              WHEN LTRIM(b.stat)='3' then 'Awaiting Scheduling'
+			                              WHEN LTRIM(b.stat)='4' then 'New'
+			                              WHEN (LTRIM(b.stat)='5' AND LTRIM(b.statUSEX)='0') then 'Completed Successfully'
+			                              WHEN (LTRIM(b.stat)='5' AND LTRIM(b.statUSEX)='1') then 'Containerized'
+			                              WHEN (LTRIM(b.stat)='5' AND LTRIM(b.statUSEX)='2') then 'Ready to be Reconciled'
+			                              WHEN LTRIM(b.stat)='6' then 'Reconciled'
+			                              WHEN LTRIM(b.stat)='7' then 'New Booking/Request'
+			                              WHEN LTRIM(b.stat)='8' then 'Autocreated'
+			                              WHEN LTRIM(b.stat)='9' then 'MTR Resolved'
+			                              Else 'Fourth Hold'
+		                               END AS WoStatus
+                            FROM	pbsfilemover.dbo.signiant_file_transfer_queue A
+                            LEFT JOIN scheduallprod.schedwin.WO b ON b.EXTID = a.wo_extid
+                            LEFT JOIN scheduallprod.schedwin.CLNT c ON rtrim(ltrim(c.cl_id)) = rtrim(ltrim(b.cl_id))
                             where   a.WO_USER23 IN ( 'FLATTEN', 'TRAFFIC_FLATTEN' )
                             AND		NOT EXISTS
 	                            (
 		                            SELECT	1
-		                            FROM	BV_AS03_MESSAGEtmp B
+		                            FROM	pbsfilemover.dbo.BV_AS03_MESSAGEtmp B
 		                            WHERE	b.PACKAGECODE = a.WO_EXTID
 	                            )
                             AND a.DATE_CREATED between @ThresholdDate and @ThresholdDateMinuteOffset";
 
 
-            SqlDataAdapter oSqlDataAdapter = new SqlDataAdapter(sSQL, ConfigurationManager.ConnectionStrings["FileMoverDBConnectionString"].ToString());
+            SqlDataAdapter oSqlDataAdapter = new SqlDataAdapter(sSQL, ConfigurationManager.ConnectionStrings["SchedWinDBConnectionString"].ToString());
             oSqlDataAdapter.SelectCommand.Parameters.AddWithValue("ThresholdDate", DateTime.Now.AddDays(-int.Parse(ConfigurationManager.AppSettings["ThresholdDays"].ToString())));
             oSqlDataAdapter.SelectCommand.Parameters.AddWithValue("ThresholdDateMinuteOffset", DateTime.Now.AddMinutes(-int.Parse(ConfigurationManager.AppSettings["ThresholdDateMinuteOffset"].ToString())));
 
@@ -222,10 +244,15 @@ namespace WorkflowAnalyzer
             DataSet ds = new DataSet();
 
             string sSQL = @"select
-                                slu2.slu_desc as package_media_status
-                            from version ver
-                            left outer join syslookup slu2 on (slu2.slu_id = ver.ver_slu_id_pbsmediastatus)
-                            where   ver.ver_packagehouse = '" + sPackage + "'";
+                                ver.ver_packagehouse
+                                ,sl1.slu_desc as PBSMediaStatus
+                                ,sl2.slu_desc as PBSPackageStatus
+                                from    version ver
+                                join    asset               ass on (ass.ass_id = ver.ver_ass_id)
+                                join    versiontype         vet on vet.vet_id = ver.ver_vet_id
+                                left    join syslookup      sl1 on sl1.slu_id = ver.ver_slu_id_pbsmediastatus
+                                left    join syslookup      sl2 on sl2.slu_id = ver.ver_slu_id_packagestatus
+                                where   ver.ver_packagehouse = '" + sPackage + "'";
 
             FbDataAdapter oFbDataAdapter = new FbDataAdapter(sSQL, ConfigurationManager.ConnectionStrings["BroadViewDBConnectionString"].ToString());
 
@@ -234,7 +261,7 @@ namespace WorkflowAnalyzer
 
             if (ds.Tables[0].Rows.Count.Equals(1))
             {
-                sStatus = ds.Tables[0].Rows[0]["package_media_status"].ToString();
+                sStatus = ds.Tables[0].Rows[0]["PBSMediaStatus"].ToString();
             }
 
             return sStatus;
@@ -254,7 +281,7 @@ namespace WorkflowAnalyzer
             {
                 sb.Append("There are issue with certain workflow items<br><br>");
                 sb.Append("With a THRESHOLD of " + ConfigurationManager.AppSettings["ThresholdDays"].ToString() + " days, the following work orders don't have records in MOC_BPMWEBDB: BV_AS03_MESSAGE<br><br>");
-                sb.Append("<table border=1><tr><td>WO Num</td><td>P#</td><td>NOLA</td><td>Date Completed</td><td>Package Status</td></tr>");
+                sb.Append("<table border=1><tr><td>WO Num</td><td>P#</td><td>NOLA</td><td>Date Completed</td><td>Package Status</td><td>WO Status</td><td>ClientName</td></tr>");
                 for (int i = 0; i < dtRecords.Rows.Count; i++)
                 {
                     sb.Append("<tr>");
@@ -263,6 +290,8 @@ namespace WorkflowAnalyzer
                     sb.Append("<td>" + dtRecords.Rows[i]["WO_CLJNO"].ToString() + "</td>");
                     sb.Append("<td>" + dtRecords.Rows[i]["Date_Created"].ToString() + "</td>");
                     sb.Append("<td>" + getPackageStatus(dtRecords.Rows[i]["WO_EXTID"].ToString()) + "</td>");
+                    sb.Append("<td>" + dtRecords.Rows[i]["WoStatus"].ToString() + "</td>");
+                    sb.Append("<td>" + dtRecords.Rows[i]["ClientName"].ToString() + "</td>");
                     sb.Append("</tr>");
                 }
                 sb.Append("</table>");
