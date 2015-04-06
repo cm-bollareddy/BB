@@ -269,39 +269,47 @@ namespace WorkflowAnalyzer
 
         public static void processAlertRecords()
         {
-            log.Debug("Before getAlarmRecords Get");
-            DataTable dtRecords = getAlarmRecords();
-            log.Debug("After getAlarmRecords Get");
-
-            log.Debug("We got " + dtRecords.Rows.Count.ToString() +  " AlarmRecords");
-
-            StringBuilder sb = new StringBuilder();
-
-            if (dtRecords.Rows.Count > 0)
+            try
             {
-                sb.Append("There are issue with certain workflow items<br><br>");
-                sb.Append("With a THRESHOLD of " + ConfigurationManager.AppSettings["ThresholdDays"].ToString() + " days, the following work orders don't have records in MOC_BPMWEBDB: BV_AS03_MESSAGE<br><br>");
-                sb.Append("<table border=1><tr><td>WO Num</td><td>P#</td><td>NOLA</td><td>Date Completed</td><td>Package Status</td><td>WO Status</td><td>ClientName</td></tr>");
-                for (int i = 0; i < dtRecords.Rows.Count; i++)
+                log.Debug("Before getAlarmRecords Get");
+                DataTable dtRecords = getAlarmRecords();
+                log.Debug("After getAlarmRecords Get");
+
+                log.Debug("We got " + dtRecords.Rows.Count.ToString() + " AlarmRecords");
+
+                StringBuilder sb = new StringBuilder();
+
+                if (dtRecords.Rows.Count > 0)
                 {
-                    sb.Append("<tr>");
-                    sb.Append("<td>" + dtRecords.Rows[i]["WO_WoNum"].ToString() + "</td>");
-                    sb.Append("<td>" + dtRecords.Rows[i]["WO_EXTID"].ToString() + "</td>");
-                    sb.Append("<td>" + dtRecords.Rows[i]["WO_CLJNO"].ToString() + "</td>");
-                    sb.Append("<td>" + dtRecords.Rows[i]["Date_Created"].ToString() + "</td>");
-                    sb.Append("<td>" + getPackageStatus(dtRecords.Rows[i]["WO_EXTID"].ToString()) + "</td>");
-                    sb.Append("<td>" + dtRecords.Rows[i]["WoStatus"].ToString() + "</td>");
-                    sb.Append("<td>" + dtRecords.Rows[i]["ClientName"].ToString() + "</td>");
-                    sb.Append("</tr>");
+                    sb.Append("There are issue with certain workflow items<br><br>");
+                    sb.Append("With a THRESHOLD of " + ConfigurationManager.AppSettings["ThresholdDays"].ToString() + " days, the following work orders don't have records in MOC_BPMWEBDB: BV_AS03_MESSAGE<br><br>");
+                    sb.Append("<table border=1><tr><td>WO Num</td><td>P#</td><td>NOLA</td><td>Date Completed</td><td>Package Status</td><td>WO Status</td><td>ClientName</td></tr>");
+                    for (int i = 0; i < dtRecords.Rows.Count; i++)
+                    {
+                        sb.Append("<tr>");
+                        sb.Append("<td>" + dtRecords.Rows[i]["WO_WoNum"].ToString() + "</td>");
+                        sb.Append("<td>" + dtRecords.Rows[i]["WO_EXTID"].ToString() + "</td>");
+                        sb.Append("<td>" + dtRecords.Rows[i]["WO_CLJNO"].ToString() + "</td>");
+                        sb.Append("<td>" + dtRecords.Rows[i]["Date_Created"].ToString() + "</td>");
+                        sb.Append("<td>" + getPackageStatus(dtRecords.Rows[i]["WO_EXTID"].ToString()) + "</td>");
+                        sb.Append("<td>" + dtRecords.Rows[i]["WoStatus"].ToString() + "</td>");
+                        sb.Append("<td>" + dtRecords.Rows[i]["ClientName"].ToString() + "</td>");
+                        sb.Append("</tr>");
+                    }
+                    sb.Append("</table>");
+
+                    sb.Append("<br><br>Thank you.");
+
+                    log.Debug("Before Send Email");
+                    sendNotification(sb.ToString());
+                    log.Debug("After Send Email");
                 }
-                sb.Append("</table>");
-
-                sb.Append("<br><br>Thank you.");
-
-                log.Debug("Before Send Email");
-                sendNotification(sb.ToString());
-                log.Debug("After Send Email"); 
             }
+            catch (Exception _e)
+            {
+                log.Error("There is an error with the transcode workflow. The error is: " + _e.Message + " The Stack Trace is: " + _e.StackTrace);
+            }
+
 
         }
 
