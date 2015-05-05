@@ -23,17 +23,24 @@ namespace WorkflowAnalyzer
 
         static void Main(string[] args)
         {
-            stopwatch = new Stopwatch();
-            
-            log.Debug("Start");
-            stopwatch.Start();
+            try
+            {
+                stopwatch = new Stopwatch();
 
-            BatchBulkCopy();
+                log.Debug("Start");
+                stopwatch.Start();
 
-            processAlertRecords();
+                BatchBulkCopy();
 
-            stopwatch.Stop();
-            log.Debug("Finish");
+                processAlertRecords();
+
+                stopwatch.Stop();
+                log.Debug("Finish");
+            }
+            catch(Exception _e)
+            {
+                log.Error("There was an error: " + _e.Message + " Stack Trace: " + _e.StackTrace);
+            }
 
         }
 
@@ -130,6 +137,7 @@ namespace WorkflowAnalyzer
             catch (Exception _e)
             {
                 log.Error("Error with processgetMOC_BPMWEBDB: " + _e.Message);
+                throw _e;
             }
         }
 
