@@ -165,10 +165,16 @@ namespace WorkflowAnalyzer
 			                              WHEN LTRIM(b.stat)='8' then 'Autocreated'
 			                              WHEN LTRIM(b.stat)='9' then 'MTR Resolved'
 			                              Else 'Fourth Hold'
-		                               END AS WoStatus
+		                               END AS WoStatus,
+                                    CASE 
+			                            WHEN d.DESCRIPT LIKE '%impaire%' THEN 'YES'
+			                            ELSE 'No'
+			                        END AS Impaired
                             FROM	pbsfilemover.dbo.signiant_file_transfer_queue A
                             LEFT JOIN scheduallprod.schedwin.WO b ON b.EXTID = a.wo_extid
                             LEFT JOIN scheduallprod.schedwin.CLNT c ON rtrim(ltrim(c.cl_id)) = rtrim(ltrim(b.cl_id))
+                            LEFT JOIN ScheduALLProd.schedwin.TRAIL d ON d.WONUM = a.WO_WoNum
+                                AND d.DESCRIPT LIKE '%impaire%'
                             where   a.WO_USER23 IN ( 'FLATTEN', 'TRAFFIC_FLATTEN' )
                             AND		NOT EXISTS
 	                            (
@@ -291,7 +297,7 @@ namespace WorkflowAnalyzer
                 {
                     sb.Append("There are issue with certain workflow items<br><br>");
                     sb.Append("With a THRESHOLD of " + ConfigurationManager.AppSettings["ThresholdDays"].ToString() + " days, the following work orders don't have records in MOC_BPMWEBDB: BV_AS03_MESSAGE<br><br>");
-                    sb.Append("<table border=1><tr><td>WO Num</td><td>P#</td><td>NOLA</td><td>Date Completed</td><td>Package Status</td><td>WO Status</td><td>ClientName</td></tr>");
+                    sb.Append("<table border=1><tr><td>WO Num</td><td>P#</td><td>NOLA</td><td>Date Completed</td><td>Package Status</td><td>WO Status</td><td>ClientName</td><td>Impaired?</td></tr>");
                     for (int i = 0; i < dtRecords.Rows.Count; i++)
                     {
                         sb.Append("<tr>");
@@ -302,6 +308,7 @@ namespace WorkflowAnalyzer
                         sb.Append("<td>" + getPackageStatus(dtRecords.Rows[i]["WO_EXTID"].ToString()) + "</td>");
                         sb.Append("<td>" + dtRecords.Rows[i]["WoStatus"].ToString() + "</td>");
                         sb.Append("<td>" + dtRecords.Rows[i]["ClientName"].ToString() + "</td>");
+                        sb.Append("<td>" + dtRecords.Rows[i]["Impaired"].ToString() + "</td>");
                         sb.Append("</tr>");
                     }
                     sb.Append("</table>");
