@@ -167,14 +167,14 @@ namespace WorkflowAnalyzer
 			                              Else 'Fourth Hold'
 		                               END AS WoStatus,
                                     CASE 
-			                            WHEN d.DESCRIPT LIKE '%impaire%' THEN 'YES'
+			                            WHEN d.DESCRIPT LIKE '%impair%' THEN 'YES'
 			                            ELSE 'No'
 			                        END AS Impaired
                             FROM	pbsfilemover.dbo.signiant_file_transfer_queue A
                             LEFT JOIN scheduallprod.schedwin.WO b ON b.EXTID = a.wo_extid
                             LEFT JOIN scheduallprod.schedwin.CLNT c ON rtrim(ltrim(c.cl_id)) = rtrim(ltrim(b.cl_id))
                             LEFT JOIN ScheduALLProd.schedwin.TRAIL d ON d.WONUM = a.WO_WoNum
-                                AND d.DESCRIPT LIKE '%impaire%'
+                                AND d.DESCRIPT LIKE '%impair%'
                             where   a.WO_USER23 IN ( 'FLATTEN', 'TRAFFIC_FLATTEN' )
                             AND		NOT EXISTS
 	                            (
