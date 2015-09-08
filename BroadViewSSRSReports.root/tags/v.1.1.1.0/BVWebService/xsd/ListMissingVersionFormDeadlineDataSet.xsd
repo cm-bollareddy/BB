@@ -1,0 +1,61 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="MissingVersionFormDeadlineDataSet" targetNamespace="http://localhost/BVWebService/xsd/ListMissingVersionFormDeadlineDataSet.xsd" xmlns:mstns="http://localhost/BVWebService/xsd/ListMissingVersionFormDeadlineDataSet.xsd" xmlns="http://localhost/BVWebService/xsd/ListMissingVersionFormDeadlineDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:element name="MissingVersionFormDeadlineDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="VERSION_DEADLINE_TEMP">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="DEA_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="DEA_DESC" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="80" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ASS_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="ASS_TITLE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="80" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ASS_EPISODETITLE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="80" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ASS_EPISODESLATE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="VER_ID" type="xs:int" />
+              <xs:element name="VER_REVISIONNO" type="xs:short" minOccurs="0" />
+              <xs:element name="VER_VET_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="PREMIEREDATETIME" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="TABTYPE">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="PK_VERSION_DEADLINE_TEMP" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:VERSION_DEADLINE_TEMP" />
+      <xs:field xpath="mstns:VER_ID" />
+      <xs:field xpath="mstns:TABTYPE" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

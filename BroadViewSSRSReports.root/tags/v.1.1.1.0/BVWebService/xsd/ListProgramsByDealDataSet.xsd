@@ -1,0 +1,90 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="ProgramsByDealDataSet" targetNamespace="http://localhost/BVWebService/xsd/ListProgramsByDealDataSet.xsd" xmlns:mstns="http://localhost/BVWebService/xsd/ListProgramsByDealDataSet.xsd" xmlns="http://localhost/BVWebService/xsd/ListProgramsByDealDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:element name="ProgramsByDealDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ASSET">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ASS_ID" type="xs:int" />
+              <xs:element name="ASS_EPISODENUMBER" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ASS_TITLE">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="80" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ASS_EPISODETITLE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="80" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ASS_EPISODESLATE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ASS_PMC_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="ASS_PVA_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="ASS_ISARCHIVED" type="xs:short" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="VERSION">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="VER_ID" type="xs:int" />
+              <xs:element name="VER_ASS_ID" type="xs:int" />
+              <xs:element name="VER_VET_ID" type="xs:int" />
+              <xs:element name="VER_SLATE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="VER_PFS_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="VER_PIWT_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="VER_POAC_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="VER_PUCC_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="VER_PACKAGEHOUSE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="VER_PACKAGENUMBER" type="xs:int" minOccurs="0" />
+              <xs:element name="VER_REVISIONNO" type="xs:short" minOccurs="0" />
+              <xs:element name="DCO_OBDATE" msdata:ReadOnly="true" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="VER_ISARCHIVED" type="xs:short" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="PK_ASSET" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:ASSET" />
+      <xs:field xpath="mstns:ASS_ID" />
+    </xs:unique>
+    <xs:unique name="PK_VERSION" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:VERSION" />
+      <xs:field xpath="mstns:VER_ID" />
+    </xs:unique>
+    <xs:keyref name="FK_ASSET_VERSION" refer="PK_ASSET">
+      <xs:selector xpath=".//mstns:VERSION" />
+      <xs:field xpath="mstns:VER_ASS_ID" />
+    </xs:keyref>
+  </xs:element>
+</xs:schema>

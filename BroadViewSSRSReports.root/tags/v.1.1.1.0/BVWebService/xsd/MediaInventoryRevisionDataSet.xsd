@@ -1,0 +1,221 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="MediaInventoryRevisionDataSet" targetNamespace="http://localhost/BVWebService/xsd/MediaInventoryRevisionDataSet.xsd" xmlns:mstns="http://localhost/BVWebService/xsd/MediaInventoryRevisionDataSet.xsd" xmlns="http://localhost/BVWebService/xsd/MediaInventoryRevisionDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:element name="MediaInventoryRevisionDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="MEDIAINVENTORYREVISION">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="MEIR_ID" type="xs:int" />
+              <xs:element name="MEI_ASS_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="MEIR_MEI_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="MEI_NUMBER" type="xs:int" minOccurs="0" />
+              <xs:element name="MEI_SLU_ID_STATUS" type="xs:int" minOccurs="0" />
+              <xs:element name="MEI_ISNOINGEST" type="xs:int" minOccurs="0" />
+              <xs:element name="MEI_LASTSUBMITTEDDATE" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="MEI_PBSOPERATINGUNIT" type="xs:int" minOccurs="0" />
+              <xs:element name="MEI_PBSOPERATINGGROUP" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MEI_MIT_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="MEI_MET_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="MEI_ISCOMPLETEPACKAGE" type="xs:short" minOccurs="0" />
+              <xs:element name="MEI_VET_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="MEI_ISDROPFRAME" type="xs:short" minOccurs="0" />
+              <xs:element name="MEI_SLU_ID_PBSMEDIASTATUS" type="xs:int" minOccurs="0" />
+              <xs:element name="MEIR_ISBILLABLE" type="xs:short" minOccurs="0" />
+              <xs:element name="MEI_ISCHANGESALLOWED" type="xs:short" minOccurs="0" />
+              <xs:element name="MEIR_SLU_ID_PBSMEDIASTATUS" type="xs:int" minOccurs="0" />
+              <xs:element name="MEIR_SLU_ID_STATUS" type="xs:int" minOccurs="0" />
+              <xs:element name="MEIR_ISNOINGEST" type="xs:int" minOccurs="0" />
+              <xs:element name="MEI_NOTE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MEI_ISHDINGEST" type="xs:short" minOccurs="0" />
+              <xs:element name="MEIR_REVISIONNO" type="xs:short" minOccurs="0" />
+              <xs:element name="MEIR_MFC_ID_AUDIOTYPE" type="xs:int" minOccurs="0" />
+              <xs:element name="MEIR_ISCC" type="xs:short" minOccurs="0" />
+              <xs:element name="MEIR_ISDVI" type="xs:short" minOccurs="0" />
+              <xs:element name="MEIR_ISSAP" type="xs:short" minOccurs="0" />
+              <xs:element name="MEIR_SLU_ID_ASPECTRATIO" type="xs:int" minOccurs="0" />
+              <xs:element name="MEIR_SLU_ID_HIDEF" type="xs:int" minOccurs="0" />
+              <xs:element name="MEIR_MEF_ID_AUDIO1" type="xs:int" minOccurs="0" />
+              <xs:element name="MEIR_MEF_ID_AUDIO2" type="xs:int" minOccurs="0" />
+              <xs:element name="MEIR_MEF_ID_AUDIO3" type="xs:int" minOccurs="0" />
+              <xs:element name="MEIR_MEF_ID_AUDIO4" type="xs:int" minOccurs="0" />
+              <xs:element name="MEIR_MEF_ID_CAPTION1" type="xs:int" minOccurs="0" />
+              <xs:element name="MEIR_MEF_ID_CAPTION2" type="xs:int" minOccurs="0" />
+              <xs:element name="MEIR_MEF_ID_CAPTION3" type="xs:int" minOccurs="0" />
+              <xs:element name="MEIR_CONTACTMANAGER" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MEIR_CONTACTMANAGER_PHONE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MEIR_CONTACTMANAGER_EMAIL" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="252" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MEIR_CONTACTTECHNICIAN" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MEIR_CONTACTTECHNICIAN_PHONE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MEIR_CONTACTTECHNICIAN_EMAIL" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="252" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MEIR_IS_CC_PBSENCODES" type="xs:short" minOccurs="0" />
+              <xs:element name="MEIR_CC_PROVIDER" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MEIR_IS_CC_PBSCOORDINATES" type="xs:short" minOccurs="0" />
+              <xs:element name="MEIR_PBSCV_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="MEIR_IS_DVI_PBSENCODES" type="xs:short" minOccurs="0" />
+              <xs:element name="MEIR_IS_DVI_PBSCOORDINATES" type="xs:short" minOccurs="0" />
+              <xs:element name="MEIR_IS_SAP_PBSENCODES" type="xs:short" minOccurs="0" />
+              <xs:element name="MEIR_ISREVISIONREQUIRED" type="xs:short" minOccurs="0" />
+              <xs:element name="MEI_CLASS" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MEI_DESCRIPTION" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="80" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MEI_ISPREFEEDONLY" type="xs:short" minOccurs="0" />
+              <xs:element name="MEI_ISCONTAINERIZED" type="xs:short" minOccurs="0" />
+              <xs:element name="MEIR_PBSBT_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="MEIR_PBSBC_ID" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="MEDIAINVENTORYCUT">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="MIC_ID" type="xs:int" />
+              <xs:element name="MIC_MEIR_ID" type="xs:int" />
+              <xs:element name="MIC_NUMBER" type="xs:short" minOccurs="0" />
+              <xs:element name="MIC_MICT_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="MIC_DESCRIPTION" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="80" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MIC_ISREUSABLE" type="xs:short" minOccurs="0" />
+              <xs:element name="MIC_TIMECODEIN" type="xs:int" minOccurs="0" />
+              <xs:element name="MIC_DURATION" type="xs:int" minOccurs="0" />
+              <xs:element name="MIC_TIMECODEOUT" type="xs:int" minOccurs="0" />
+              <xs:element name="MIC_ISVARIABLELENGTH" type="xs:short" minOccurs="0" />
+              <xs:element name="MIC_DURATIONMINIMUM" type="xs:int" minOccurs="0" />
+              <xs:element name="MIC_ISREPLACEMENTITEM" type="xs:short" minOccurs="0" />
+              <xs:element name="MIC_REPLACEMENTNOTE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="80" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MIC_ASS_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="MIC_ASSOCIATEDTITLE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="80" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MIC_NEW_DESC" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="80" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MIC_NEW_DATEAVAILABLEFROM" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="MIC_NEW_DATEAVAILABLETO" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ASS_TITLE" msdata:ReadOnly="true" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="80" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MIC_MFC_ID_AUDIOTYPE" type="xs:int" minOccurs="0" />
+              <xs:element name="MIC_ISCC" type="xs:short" minOccurs="0" />
+              <xs:element name="MIC_ISDVI" type="xs:short" minOccurs="0" />
+              <xs:element name="MIC_ISSAP" type="xs:short" minOccurs="0" />
+              <xs:element name="MIC_SLU_ID_ASPECTRATIO" type="xs:int" minOccurs="0" />
+              <xs:element name="MIC_SLU_ID_HIDEF" type="xs:int" minOccurs="0" />
+              <xs:element name="MIC_MEF_ID_AUDIO1" type="xs:int" minOccurs="0" />
+              <xs:element name="MIC_MEF_ID_AUDIO2" type="xs:int" minOccurs="0" />
+              <xs:element name="MIC_MEF_ID_AUDIO3" type="xs:int" minOccurs="0" />
+              <xs:element name="MIC_MEF_ID_AUDIO4" type="xs:int" minOccurs="0" />
+              <xs:element name="MIC_MEF_ID_AUDIO5" type="xs:int" minOccurs="0" />
+              <xs:element name="MIC_MEF_ID_AUDIO6" type="xs:int" minOccurs="0" />
+              <xs:element name="MIC_MEF_ID_AUDIO7" type="xs:int" minOccurs="0" />
+              <xs:element name="MIC_MEF_ID_AUDIO8" type="xs:int" minOccurs="0" />
+              <xs:element name="MIC_MEF_ID_CAPTION1" type="xs:int" minOccurs="0" />
+              <xs:element name="MIC_MEF_ID_CAPTION2" type="xs:int" minOccurs="0" />
+              <xs:element name="MIC_MEF_ID_CAPTION3" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="PK_MEDIAINVENTORYREVISION" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:MEDIAINVENTORYREVISION" />
+      <xs:field xpath="mstns:MEIR_ID" />
+    </xs:unique>
+    <xs:unique name="PK_MEDIAINVENTORYCUT" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:MEDIAINVENTORYCUT" />
+      <xs:field xpath="mstns:MIC_ID" />
+    </xs:unique>
+    <xs:keyref name="FK_MEDIAINVENTORYREVISION_MEDIAINVENTORYCUT" refer="PK_MEDIAINVENTORYREVISION">
+      <xs:selector xpath=".//mstns:MEDIAINVENTORYCUT" />
+      <xs:field xpath="mstns:MIC_MEIR_ID" />
+    </xs:keyref>
+  </xs:element>
+</xs:schema>

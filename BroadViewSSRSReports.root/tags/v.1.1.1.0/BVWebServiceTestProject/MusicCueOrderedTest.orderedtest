@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<OrderedTest name="OrderedTest1" storage="e:\projects\visual studio 2010\projects\bvwebservice.root\bvwebservice\bvwebservicetestproject\orderedtest1.orderedtest" id="591e9a3a-761a-4026-b73d-83805b458f2c" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestLinks>
+    <TestLink id="6a711e85-02a2-33d2-4a24-d602a1b0263a" name="CreateMusicCueTest" storage="bin\debug\bvwebservicetestproject.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <TestLink id="6a4859ba-e39f-55ad-a259-50835cbf4be0" name="EditExistingMusicCueTest" storage="bin\debug\bvwebservicetestproject.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <TestLink id="9259b410-00b2-7652-f7e7-1aa3bae8d822" name="DeleteMusicCueTest" storage="bin\debug\bvwebservicetestproject.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  </TestLinks>
+</OrderedTest>

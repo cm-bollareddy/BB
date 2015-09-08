@@ -1,0 +1,80 @@
+using System;
+using System.Collections;
+using System.ComponentModel;
+using System.Data;
+using System.Diagnostics;
+using System.Xml;
+using System.Xml.Xsl;
+using System.IO;
+using System.Globalization;
+using Pbs.WebServices.Utility;
+
+using TVSServer = OrionProxy;
+
+namespace BVWebService
+{
+	/// <summary>
+	/// GetDataClass: Implement the GetData web method using XSLT.
+	/// </summary>
+	class Put<object>Class
+	{
+		private const string FILE_SET_XSLT = @"Put<object>.xslt";
+
+		public Put<object>Class()
+		{
+		}
+
+		public void Put<object>(string strSessionID, int n<object>ID, string strLockID, DataSet ds<object>)
+		{
+			Tracer oTracer = new Tracer();
+			oTracer.LogInfo("Entering Put<object>.\n strSessionID=" + strSessionID + ", n<object>ID="  + n<object>ID);
+		
+			//
+			// Convert incoming dataset into XML stream
+			//
+			string strUpdateXml = SchemaConverter.ToXml(ds<object>, BVWebService.ApplicationPath + @"\xslt\" + FILE_SET_XSLT);
+			
+			//
+			// Create the PBS<object> object, throwing exception if failed
+			//
+			rdmPBSDeal oPBS<object>;
+			try
+			{
+				oPBS<object> = ComponentFactory.CreateDealClass();
+			}
+			catch (Exception ex)
+			{
+				throw new BVException(
+					BVException.ExceptionCode.ComponentAccessFailure,
+					"Error while creating server component: " + ex.Message,
+					"Component: PBSInterface.PBS<object>",
+					ex);
+			}
+
+			//
+			// Update the data
+			//
+			int nErrorCode = 0;
+			string strErrorText = "";
+			try
+			{
+				nErrorCode = oPBS<object>.Put<object>(strSessionID, n<object>ID, strLockID, strUpdateXml, out strErrorText);
+			}
+			catch(Exception ex)
+			{
+				throw new BVException(
+					BVException.ExceptionCode.ComponentExecutionFailure,
+					"Error while executing server component method: " + ex.Message,
+					"DataSet=" + ds<object>.GetXml() + "\n\nXML=" + strUpdateXml,
+					ex);
+			}
+
+			if (nErrorCode != 0)
+			{
+				throw new BVException(nErrorCode, strErrorText, "<object>ID=" + n<object>ID + "\n\nDataSet=" + ds<object>.GetXml() + "\n\nXML=" + strUpdateXml);
+			}
+			
+			oTracer.LogInfo("Leaving Put<object>.\n strSessionID=" + strSessionID + ", n<object>ID="  + n<object>ID);
+		}
+	}
+}
