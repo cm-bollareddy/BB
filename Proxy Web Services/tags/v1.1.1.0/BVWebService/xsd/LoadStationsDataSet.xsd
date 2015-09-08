@@ -1,0 +1,35 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="StationsDataSet" targetNamespace="http://localhost/BVWebService/xsd/LoadStationsDataSet.xsd" xmlns:mstns="http://localhost/BVWebService/xsd/LoadStationsDataSet.xsd" xmlns="http://localhost/BVWebService/xsd/LoadStationsDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:element name="StationsDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="STATION">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CHA_ID" type="xs:int" />
+              <xs:element name="CHA_CODE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CHA_DESC">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="80" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CHA_ISARCHIVED" type="xs:short" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="PK_STATION" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:STATION" />
+      <xs:field xpath="mstns:CHA_ID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

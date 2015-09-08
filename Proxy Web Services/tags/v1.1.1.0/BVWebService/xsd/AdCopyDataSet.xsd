@@ -1,0 +1,62 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="AdCopyDataSet" targetNamespace="http://localhost/BVWebService/xsd/AdCopyDataSet.xsd" xmlns:mstns="http://localhost/BVWebService/xsd/AdCopyDataSet.xsd" xmlns="http://localhost/BVWebService/xsd/AdCopyDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:element name="AdCopyDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ADCOPY">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ASS_ID" type="xs:int" />
+              <xs:element name="ASS_TITLE">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="80" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ASS_DURATIONSCHEDULED" type="xs:int" minOccurs="0" />
+              <xs:element name="ASS_VIDEOTEXT" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ASS_AUDIOTEXT" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ASS_COM_ID_ADVERTISER" type="xs:int" minOccurs="0" />
+              <xs:element name="ASS_ISPBSAPPROVED" type="xs:short" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ASSETRIGHTWINDOW">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ARW_ID" type="xs:int" />
+              <xs:element name="ARW_ASS_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="ARW_DATEAVAILABLEFROM" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ARW_DATEAVAILABLETO" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="PK_ADCOPY" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:ADCOPY" />
+      <xs:field xpath="mstns:ASS_ID" />
+    </xs:unique>
+    <xs:unique name="PK_ASSETRIGHTWINDOW" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:ASSETRIGHTWINDOW" />
+      <xs:field xpath="mstns:ARW_ID" />
+    </xs:unique>
+    <xs:keyref name="FK_ADCOPYASSETRIGHTWINDOW" refer="PK_ADCOPY">
+      <xs:selector xpath=".//mstns:ASSETRIGHTWINDOW" />
+      <xs:field xpath="mstns:ARW_ASS_ID" />
+    </xs:keyref>
+  </xs:element>
+</xs:schema>
