@@ -9,6 +9,9 @@ using System.IO;
 using System.Globalization;
 using Pbs.WebServices.Utility;
 
+
+using System.Linq;
+
 using TVSServer = OrionProxy;
 
 namespace BVWebService
@@ -61,41 +64,63 @@ namespace BVWebService
 
 
 		{
+
+            int nErrorCode = 0;
+            string strErrorText = "";
+            bool bExceptionCaught = false;
+
+
+            Tracer oTracer = new Tracer();
+            oTracer.LogInfo("Entering CreateProgram.");
+
+
 			//
 			// Construct the search input parameter for troubleshooting...
 			//
 			int numProgIds = 0;
+            numProgIds = nProgramIDs.Length;
+
+            oTracer.LogInfo("In CreateProgram - requesting " + numProgIds.ToString() + " programs.");
+
+
 			int numPackages = 0;
-			string progIds = string.Empty;
-			string spacks = string.Empty;
-			foreach (int nid  in nProgramIDs)
-			{
-				if ((nid != 0))
-				{
-					if (progIds != "")
-						progIds += ",";
-					progIds += nid.ToString();
-					numProgIds++;
-				}	
+            numPackages = cPackages.Length;
 
-			}
-			foreach (Packages pack in cPackages)
-			{
-				if ((pack != null) && (pack.FormatAndTypeID != 0) && (pack.Length != 0))
-				{
-					if (spacks != "")
-						spacks += ",";
-					spacks += pack.FormatAndTypeID + "=\"" + pack.Length + "\"";
-					numPackages++;
-				}	
+            oTracer.LogInfo("In CreateProgram - requesting " + numPackages.ToString() + " packages per program.");
 
-			}
 
+
+            //string progIds = string.Empty;
+            //string spacks = string.Empty;
 			
-			Tracer oTracer = new Tracer();
-			oTracer.LogInfo("Entering CreateProgram.\n ProgIds=" + nProgramIDs.ToString());
-			oTracer.LogInfo("Entering CreateProgram.\n Packages=" + spacks);
-			//
+            //foreach (int nid  in nProgramIDs)
+            //{
+            //    if ((nid != 0))
+            //    {
+            //        if (progIds != "")
+            //            progIds += ",";
+            //        progIds += nid.ToString();
+            //        numProgIds++;
+            //    }	
+
+            //}
+            //foreach (Packages pack in cPackages)
+            //{
+            //    if ((pack != null) && (pack.FormatAndTypeID != 0) && (pack.Length != 0))
+            //    {
+            //        if (spacks != "")
+            //            spacks += ",";
+            //        spacks += pack.FormatAndTypeID + "=\"" + pack.Length + "\"";
+            //        numPackages++;
+            //    }	
+
+            //}
+
+            //oTracer.LogInfo("Entering CreateProgram.\n ProgIds=" + nProgramIDs.ToString());
+            //oTracer.LogInfo("Entering CreateProgram.\n Packages=" + spacks);
+
+
+            //
 			// Validate that at least one of the input parameter(s) is defined
 			//
 			if (numProgIds == 0)
@@ -118,24 +143,30 @@ namespace BVWebService
 			//
 			// Validate the incoming criteria
 			//
-			object[] oProgramIDs = new object[numProgIds];
-			int i = 0;
-			foreach (int nIds  in nProgramIDs)
-			{
-				if (nIds !=0)
-				{	
-					oProgramIDs[i] = nIds;
-					i++;
-				}
-			}
 
+            oTracer.LogInfo("In CreateProgram - converting Program List.");
+            object[] oProgramIDs = nProgramIDs.Cast<object>().ToArray();
+
+
+            //object[] oProgramIDs = new object[numProgIds];
+            //int i = 0;
+            //foreach (int nIds  in nProgramIDs)
+            //{
+            //    if (nIds !=0)
+            //    {	
+            //        oProgramIDs[i] = nIds;
+            //        i++;
+            //    }
+            //}
+
+
+            oTracer.LogInfo("In CreateProgram - converting Package List.");
 			object[] oPackages = new object[numPackages];
-			i=0;
+			int i=0;
 			foreach (Packages pack in cPackages)
 			{
 				if ((pack != null) && ( pack.FormatAndTypeID != 0) && (pack.Length != 0))
 				{
-					
 					oPackages[i] = (object) new object[6];
 					((object[]) oPackages[i])[0] = pack.FormatAndTypeID;
 					((object[]) oPackages[i])[1] = pack.Length ;
@@ -144,8 +175,6 @@ namespace BVWebService
 					((object[]) oPackages[i])[4] = pack.IsEiQualified ;
 					((object[]) oPackages[i])[5] = pack.IsEiEmbedded ;
 					i++;
-					
-
 				}
 			}
 
@@ -168,63 +197,73 @@ namespace BVWebService
 					ex);
 			}
 
-			int nErrorCode = 0;
-			string strErrorText = "";
-			
-			try
-			{
-		
-				nErrorCode = oPBSProgram.CreateProgram(
+
+
+            try
+            {
+
+                oTracer.LogInfo("In CreateProgram - Executing CreateProgram Call to BroadView.");
+                nErrorCode = oPBSProgram.CreateProgram(
                     strSessionID
-                    ,nMasterDealID
-                    ,strMasterDealTitle
-                    ,strSeason
-                    ,nDealID
-                    ,strDealDesc
-                    ,strDealSynopsis
-                    ,nPBSProgramTypeID
-                    ,nUpLinkID
-                    ,oProgramIDs
-                    ,nProgramTypeID
-                    ,nDuration
-                    ,strNolaRoot
-                    ,nFirstEpisodeNumber
-                    ,nIncrement
-                    ,nDistributorID
-                    ,nGenreID
-                    ,bLive
-                    ,bRecord
-                    ,nDefaultRatingID
-                    ,nDisclaimerID
-                    ,strFirstPictureLockDate
-                    ,nAssetVChipID
-                    ,sAssetEpisodeTitle
-                    ,sAssetTitleListing
-                    ,bIsFinalTitle
-                    ,nOperatingUnit
-                    ,strOperatingGroup
-                    ,oPackages
-                    ,bSDRightsFlag
-                    ,bHDRightsFlag
-                    ,out strErrorText);
-			}
-			catch (Exception ex)
-			{
-				throw new BVException(
-					BVException.ExceptionCode.ComponentExecutionFailure,
-					"Error while executing server component method: " + ex.Message,
-					"SessionID= " + strSessionID + ", Params(" + nProgramIDs.ToString() + spacks +  ")",
-					ex);
-			}
+                    , nMasterDealID
+                    , strMasterDealTitle
+                    , strSeason
+                    , nDealID
+                    , strDealDesc
+                    , strDealSynopsis
+                    , nPBSProgramTypeID
+                    , nUpLinkID
+                    , oProgramIDs
+                    , nProgramTypeID
+                    , nDuration
+                    , strNolaRoot
+                    , nFirstEpisodeNumber
+                    , nIncrement
+                    , nDistributorID
+                    , nGenreID
+                    , bLive
+                    , bRecord
+                    , nDefaultRatingID
+                    , nDisclaimerID
+                    , strFirstPictureLockDate
+                    , nAssetVChipID
+                    , sAssetEpisodeTitle
+                    , sAssetTitleListing
+                    , bIsFinalTitle
+                    , nOperatingUnit
+                    , strOperatingGroup
+                    , oPackages
+                    , bSDRightsFlag
+                    , bHDRightsFlag
+                    , out strErrorText);
+            }
+            catch (Exception ex)
+            {
+                bExceptionCaught = true;
+
+                throw new BVException(
+                    BVException.ExceptionCode.ComponentExecutionFailure,
+                    "Error while executing server component method: " + ex.Message,
+                    "SessionID= " + strSessionID + ", Params( # Programs: " + numProgIds.ToString() + "; # Packages: " + numPackages.ToString() + ")",
+                    ex);
+            }
+            finally
+            {
+                oTracer.LogInfo("In CreateProgram - Ended CreateProgram Call to BroadView.  Exception caught during invocation? " + bExceptionCaught.ToString());
+            }
+
+
+            oTracer.LogInfo("Exiting CreateProgram.  BV Error Code: [" + nErrorCode + "]  BV Error Text: [" + strErrorText + "]");	
 
 			if (nErrorCode == 0)
 			{
-				
+                
 			}
 			else
 			{
-				throw new BVException(nErrorCode, strErrorText, "SessionID= " + strSessionID + ", Params(" + nProgramIDs.ToString() + spacks + ")");
+                throw new BVException(nErrorCode, strErrorText, "SessionID= " + strSessionID + ", Params( # Programs: " + numProgIds.ToString() + "; # Packages: " + numPackages.ToString() + ")");
 			}
+
 		}
 	}
 }
