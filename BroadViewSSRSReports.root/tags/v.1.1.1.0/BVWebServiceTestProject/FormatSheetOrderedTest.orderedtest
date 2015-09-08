@@ -1,8 +1,0 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<OrderedTest name="OrderedTest1" storage="e:\projects\visual studio 2010\projects\bvwebservice.root\bvwebservice\bvwebservicetestproject\orderedtest1.orderedtest" id="928d6ecc-67bd-4ef5-b20c-99b1df9c4c00" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
-  <TestLinks>
-    <TestLink id="b7051e70-b47c-2f56-a2a9-5519458c8bc8" name="CreateFormatSheetTest" storage="bin\debug\bvwebservicetestproject.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-    <TestLink id="c23f6536-9aa1-98de-982f-8fbc05539a53" name="EditExistingFormatSheetTest" storage="bin\debug\bvwebservicetestproject.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-    <TestLink id="7d5f29c4-dfcd-a83e-3067-d1789a1b3f45" name="DeleteFormatSheetTest" storage="bin\debug\bvwebservicetestproject.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  </TestLinks>
-</OrderedTest>

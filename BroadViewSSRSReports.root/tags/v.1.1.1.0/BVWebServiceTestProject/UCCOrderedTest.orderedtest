@@ -1,8 +1,0 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<OrderedTest name="OrderedTest1" storage="e:\projects\visual studio 2010\projects\bvwebservice.root\bvwebservice\bvwebservicetestproject\orderedtest1.orderedtest" id="f39038ec-91b2-4869-8b8e-c9bcb421874a" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
-  <TestLinks>
-    <TestLink id="f299b9d4-dfc4-d637-0a6d-a1592c40c5d3" name="CreateUCCTest" storage="bin\debug\bvwebservicetestproject.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-    <TestLink id="8f78ae1a-4e51-1081-b924-edf4fddccad7" name="EditUCCTest" storage="bin\debug\bvwebservicetestproject.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-    <TestLink id="3a3a978b-756a-a57e-a36f-32f990dbd3d1" name="DeleteUCCTest" storage="bin\debug\bvwebservicetestproject.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  </TestLinks>
-</OrderedTest>

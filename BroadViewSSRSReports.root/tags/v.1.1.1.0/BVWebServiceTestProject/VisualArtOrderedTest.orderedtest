@@ -1,8 +1,0 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<OrderedTest name="OrderedTest1" storage="e:\projects\visual studio 2010\projects\bvwebservice.root\bvwebservice\bvwebservicetestproject\orderedtest1.orderedtest" id="e923cf2f-0147-41c8-945b-994410e09410" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
-  <TestLinks>
-    <TestLink id="b6fc666c-e7eb-70b6-a817-cd2760178474" name="CreateVisualArtTest" storage="bin\debug\bvwebservicetestproject.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-    <TestLink id="653129db-9f88-e398-8695-c27725230cf0" name="GetExistingVisualArtTest" storage="bin\debug\bvwebservicetestproject.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-    <TestLink id="c61cb92c-f854-cde4-9640-24182f866b73" name="DeleteVisualArtTest" storage="bin\debug\bvwebservicetestproject.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  </TestLinks>
-</OrderedTest>
