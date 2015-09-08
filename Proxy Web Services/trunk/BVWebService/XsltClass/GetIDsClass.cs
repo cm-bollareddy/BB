@@ -28,7 +28,7 @@ namespace BVWebService
 			}
 
 			Tracer oTracer = new Tracer();
-			oTracer.LogInfo("Entering GetIDS.\n nHowMany=" + nHowMany);
+			oTracer.LogInfo("Entering GetIDs(" + nHowMany.ToString() + ");");
 
 			int[] myID = new int[nHowMany];
 
@@ -56,9 +56,7 @@ namespace BVWebService
 				try
 				{
 
-					//nErrorCode = oOrionProxyModuleClass.GetID(out n, out strErrorText);
                     nErrorCode = oOrionProxyModuleClass.GetID(out n, out strErrorText);
-                    
 				}
 				catch (Exception ex)
 				{
@@ -80,16 +78,18 @@ namespace BVWebService
 				}
 			}
 
-            if (oTracer.IsDebugEnabled)
-			{
-				string strID = "{";
-				for (int i = 0; i < nHowMany; i++)
-				{
-					strID += myID[i] + " ";
-				}
-				strID += "}";
-				oTracer.LogInfo("Leaving GetIDs.\n ID=" + strID);
-			}
+            //if (oTracer.IsDebugEnabled)
+            //{
+            //    string strID = "{";
+            //    for (int i = 0; i < nHowMany; i++)
+            //    {
+            //        strID += myID[i] + " ";
+            //    }
+            //    strID += "}";
+            //    oTracer.LogInfo("Leaving GetIDs.\n ID=" + strID);
+            //}
+
+            oTracer.LogInfo("Exiting GetIDs(" + nHowMany.ToString() + ");");
 
 			return myID;
 		}
