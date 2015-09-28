@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "BroadViewReports", "BroadViewReports\BroadViewReports.rptproj", "{A4843205-E77B-4709-8990-4E5136B539D4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Default = Debug|Default
+		DebugLocal|Default = DebugLocal|Default
+		Release|Default = Release|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A4843205-E77B-4709-8990-4E5136B539D4}.Debug|Default.ActiveCfg = Debug
+		{A4843205-E77B-4709-8990-4E5136B539D4}.Debug|Default.Build.0 = Debug
+		{A4843205-E77B-4709-8990-4E5136B539D4}.Debug|Default.Deploy.0 = Debug
+		{A4843205-E77B-4709-8990-4E5136B539D4}.DebugLocal|Default.ActiveCfg = DebugLocal
+		{A4843205-E77B-4709-8990-4E5136B539D4}.DebugLocal|Default.Build.0 = DebugLocal
+		{A4843205-E77B-4709-8990-4E5136B539D4}.Release|Default.ActiveCfg = Release
+		{A4843205-E77B-4709-8990-4E5136B539D4}.Release|Default.Build.0 = Release
+		{A4843205-E77B-4709-8990-4E5136B539D4}.Release|Default.Deploy.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		VisualSVNWorkingCopyRoot = .
+	EndGlobalSection
+EndGlobal

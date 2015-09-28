@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RptDataSource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="BroadViewDataSourceTest">
+  <ConnectionProperties>
+    <Extension>ODBC</Extension>
+    <ConnectString>Dsn=BVSTAPP2</ConnectString>
+  </ConnectionProperties>
+  <DataSourceID>493d2ac6-9c68-4e9b-b144-c0ba5953aaef</DataSourceID>
+</RptDataSource>

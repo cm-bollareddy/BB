@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RptDataSource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="SSRSDataSourceProd">
+  <ConnectionProperties>
+    <Extension>SQL</Extension>
+    <ConnectString>Data Source=db19;Initial Catalog=rsprod4ReportServer</ConnectString>
+  </ConnectionProperties>
+  <DataSourceID>067689d5-8003-456d-92c1-2a1d20e83b0f</DataSourceID>
+</RptDataSource>
