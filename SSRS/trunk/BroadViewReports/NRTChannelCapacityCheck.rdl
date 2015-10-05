@@ -564,7 +564,7 @@
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
     <DataSource Name="BroadViewDataSource">
-      <DataSourceReference>BroadViewDataSource</DataSourceReference>
+      <DataSourceReference>BroadViewDataSourceProd</DataSourceReference>
       <rd:SecurityType>None</rd:SecurityType>
       <rd:DataSourceID>1ace7741-edbf-4cd1-b220-36e0f3f40da1</rd:DataSourceID>
     </DataSource>
