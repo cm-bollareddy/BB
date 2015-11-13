@@ -316,6 +316,9 @@ namespace WorkflowAnalyzer
                     }
                     sb.Append("</table>");
                     //Check for Service and MSMQ status here
+                    ManageServiceAndMSMQ mgr = new ManageServiceAndMSMQ();
+                    mgr.checkServiceAndMSMQStatus();
+                    sb.Append("<br><br> Service Status: " + mgr.ServiceStatus + "<br/> MSMQ Status: " + mgr.MSMQStatus);
                     sb.Append("<br><br>Thank you.");
 
                     log.Debug("Before Send Email");
@@ -357,8 +360,9 @@ namespace WorkflowAnalyzer
             {
                 System.Console.WriteLine("Application Started: " + System.DateTime.Now.ToString());
                 ManageServiceAndMSMQ mgr = new ManageServiceAndMSMQ();
-                var msg = mgr.checkServiceAndMSMQStatus();
-                System.Console.WriteLine(msg);
+                mgr.checkServiceAndMSMQStatus();
+                System.Console.WriteLine(mgr.ServiceStatus);
+                System.Console.WriteLine(mgr.MSMQStatus);
                 System.Console.WriteLine("Application Stopped: " + System.DateTime.Now.ToString());
             }
             catch (Exception ex)
