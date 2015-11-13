@@ -312,7 +312,7 @@ namespace WorkflowAnalyzer
                         sb.Append("</tr>");
                     }
                     sb.Append("</table>");
-
+                    //Check for Service and MSMQ status here
                     sb.Append("<br><br>Thank you.");
 
                     log.Debug("Before Send Email");
