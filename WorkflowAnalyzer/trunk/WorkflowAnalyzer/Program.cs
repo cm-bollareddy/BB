@@ -10,7 +10,7 @@ using System.Configuration;
 using System.Transactions;
 using System.Net.Mail;
 using FirebirdSql.Data.FirebirdClient;
-
+using System.Management.Automation;
 
 
 namespace WorkflowAnalyzer
@@ -23,24 +23,27 @@ namespace WorkflowAnalyzer
 
         static void Main(string[] args)
         {
-            try
-            {
-                stopwatch = new Stopwatch();
+            TestServiceAndMSMQ();
+            
+          
+            //try
+            //{
+            //    stopwatch = new Stopwatch();
 
-                log.Debug("Start");
-                stopwatch.Start();
+            //    log.Debug("Start");
+            //    stopwatch.Start();
 
-                BatchBulkCopy();
+            //    BatchBulkCopy();
 
-                processAlertRecords();
+            //    processAlertRecords();
 
-                stopwatch.Stop();
-                log.Debug("Finish");
-            }
-            catch(Exception _e)
-            {
-                log.Error("There was an error: " + _e.Message + " Stack Trace: " + _e.StackTrace);
-            }
+            //    stopwatch.Stop();
+            //    log.Debug("Finish");
+            //}
+            //catch(Exception _e)
+            //{
+            //    log.Error("There was an error: " + _e.Message + " Stack Trace: " + _e.StackTrace);
+            //}
 
         }
 
@@ -346,6 +349,24 @@ namespace WorkflowAnalyzer
             mail.Body = sBody;
             mail.IsBodyHtml = true;
             client.Send(mail);
+        }
+
+        private static void TestServiceAndMSMQ() {
+
+            try
+            {
+                System.Console.WriteLine("Application Started: " + System.DateTime.Now.ToString());
+                ManageServiceAndMSMQ mgr = new ManageServiceAndMSMQ();
+                var msg = mgr.checkServiceAndMSMQStatus();
+                System.Console.WriteLine(msg);
+                System.Console.WriteLine("Application Stopped: " + System.DateTime.Now.ToString());
+            }
+            catch (Exception ex)
+            {
+
+                System.Console.WriteLine(ex.Message);
+                System.Console.WriteLine(ex.InnerException.ToString());
+            }
         }
     }
 }
