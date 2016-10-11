@@ -35,7 +35,8 @@ namespace CreateSchema
 				case "dateTime":
 					return System.Type.GetType("System.DateTime");
 
-				case "bin.hex":
+                case "string.uni":
+                case "bin.hex":
 				case "string":
 					return System.Type.GetType("System.String");
 
@@ -82,7 +83,8 @@ namespace CreateSchema
 						}
 
 						// Set the maximum length for string (DO WE CARE?)
-						if ((FieldTypeString == "string") &&
+                        //if ((FieldTypeString == "string") &&
+                        if (((FieldTypeString == "string") || (FieldTypeString == "string.uni")) &&
 							(oXmlNode.Attributes["WIDTH"] != null))
 						{
 							int w = int.Parse(oXmlNode.Attributes["WIDTH"].Value);

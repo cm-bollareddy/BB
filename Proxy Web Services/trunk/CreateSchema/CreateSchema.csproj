@@ -94,9 +94,8 @@
     <PlatformTarget>x86</PlatformTarget>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="OrionProxyLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=d6ca8778fbd0bc89, processorArchitecture=x86">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>Dependencies\OrionProxyLib.dll</HintPath>
+    <Reference Include="OrionProxyLib">
+      <HintPath>..\Dependencies\OrionProxyLib.dll</HintPath>
     </Reference>
     <Reference Include="System">
       <Name>System</Name>
@@ -208,7 +207,6 @@
     <Compile Include="Message Classes\GetMasterDeal.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Content Include="Dependencies\OrionProxyLib.dll" />
     <Content Include="Templates\CreateDealClassTemplate.cs.txt" />
     <Content Include="Templates\ListGetMasterDealClassTemplate.cs.txt" />
     <Content Include="Templates\ListMediaInfoTemplate.cs.txt" />

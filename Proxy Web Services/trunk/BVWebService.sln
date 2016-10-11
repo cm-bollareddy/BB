@@ -14,6 +14,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BVWebServiceTestProject", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BVCOMAPITestClient", "BVCOMAPITestClient\BVCOMAPITestClient.csproj", "{118159EC-E1BA-4AB3-A802-2906C6CFA565}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dependencies", "Dependencies", "{A80258A4-3326-4201-98FB-07943C460D75}"
+	ProjectSection(SolutionItems) = preProject
+		Dependencies\log4net.dll = Dependencies\log4net.dll
+		Dependencies\OrionProxyLib.dll = Dependencies\OrionProxyLib.dll
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(TestCaseManagementSettings) = postSolution
 		CategoryFile = BVWebService1.vsmdi

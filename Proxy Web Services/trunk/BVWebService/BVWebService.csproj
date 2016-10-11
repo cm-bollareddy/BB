@@ -95,7 +95,7 @@
     </ProjectReference>
     <Reference Include="OrionProxyLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=d6ca8778fbd0bc89, processorArchitecture=x86">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>Dependencies\OrionProxyLib.dll</HintPath>
+      <HintPath>..\Dependencies\OrionProxyLib.dll</HintPath>
     </Reference>
     <Reference Include="System">
       <Name>System</Name>
@@ -484,7 +484,6 @@
     <Compile Include="XsltClass\ValidateEpisodeSlateClass.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Content Include="Dependencies\OrionProxyLib.dll" />
     <Content Include="Global.asax">
       <SubType>Component</SubType>
     </Content>
