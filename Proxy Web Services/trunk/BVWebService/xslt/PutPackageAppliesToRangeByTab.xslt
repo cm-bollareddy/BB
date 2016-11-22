@@ -54,7 +54,9 @@
 				<xsl:if test="msxsl:node-set($Original)/TABTYPE and not(TABTYPE)">
 					<xsl:attribute name="TABTYPE"></xsl:attribute>
 				</xsl:if>
-				<xsl:if test="(not(msxsl:node-set($Original)/IS_APPROVED) and IS_APPROVED) or (msxsl:node-set($Original)/IS_APPROVED != IS_APPROVED)">
+      <!--
+***Commented out 20161121 to reduce size of PutOperation for ReadOnly Fields)***
+        <xsl:if test="(not(msxsl:node-set($Original)/IS_APPROVED) and IS_APPROVED) or (msxsl:node-set($Original)/IS_APPROVED != IS_APPROVED)">
 					<xsl:attribute name="IS_APPROVED"><xsl:value-of select="IS_APPROVED" /></xsl:attribute>
 				</xsl:if>
 				<xsl:if test="msxsl:node-set($Original)/IS_APPROVED and not(IS_APPROVED)">
@@ -90,6 +92,8 @@
 				<xsl:if test="msxsl:node-set($Original)/PACKAGE_HOUSENUMBER and not(PACKAGE_HOUSENUMBER)">
 					<xsl:attribute name="PACKAGE_HOUSENUMBER"></xsl:attribute>
 				</xsl:if>
+***End Commented out 20161121***
+-->      
 			</xsl:when>
 			<xsl:otherwise>
 				<xsl:attribute name="VER_ID"><xsl:value-of select="VER_ID" /></xsl:attribute>
@@ -108,6 +112,8 @@
 				<xsl:if test="msxsl:node-set($Original)/TABTYPE and not(TABTYPE)">
 					<xsl:attribute name="TABTYPE"></xsl:attribute>
 				</xsl:if>
+<!--
+***Commented out 20161121 to reduce size of PutOperation for ReadOnly Fields)***
 				<xsl:attribute name="IS_APPROVED"><xsl:value-of select="IS_APPROVED" /></xsl:attribute>
 				<xsl:if test="msxsl:node-set($Original)/IS_APPROVED and not(IS_APPROVED)">
 					<xsl:attribute name="IS_APPROVED"></xsl:attribute>
@@ -132,6 +138,8 @@
 				<xsl:if test="msxsl:node-set($Original)/PACKAGE_HOUSENUMBER and not(PACKAGE_HOUSENUMBER)">
 					<xsl:attribute name="PACKAGE_HOUSENUMBER"></xsl:attribute>
 				</xsl:if>
+***End Commented out 20161121***        
+-->
 			</xsl:otherwise>
 		</xsl:choose>
 
@@ -158,7 +166,9 @@
 				<xsl:if test="msxsl:node-set($Original)/ASS_TITLE and not(ASS_TITLE)">
 					<xsl:attribute name="ASS_TITLE"></xsl:attribute>
 				</xsl:if>
-				<xsl:if test="(not(msxsl:node-set($Original)/ASS_EPISODENUMBER) and ASS_EPISODENUMBER) or (msxsl:node-set($Original)/ASS_EPISODENUMBER != ASS_EPISODENUMBER)">
+	<!--
+***Commented out 20161121 to reduce size of PutOperation for ReadOnly Fields)***  
+        <xsl:if test="(not(msxsl:node-set($Original)/ASS_EPISODENUMBER) and ASS_EPISODENUMBER) or (msxsl:node-set($Original)/ASS_EPISODENUMBER != ASS_EPISODENUMBER)">
 					<xsl:attribute name="ASS_EPISODENUMBER"><xsl:value-of select="ASS_EPISODENUMBER" /></xsl:attribute>
 				</xsl:if>
 				<xsl:if test="msxsl:node-set($Original)/ASS_EPISODENUMBER and not(ASS_EPISODENUMBER)">
@@ -170,7 +180,9 @@
 				<xsl:if test="msxsl:node-set($Original)/ASS_EPISODETITLE and not(ASS_EPISODETITLE)">
 					<xsl:attribute name="ASS_EPISODETITLE"></xsl:attribute>
 				</xsl:if>
-			</xsl:when>
+***End Commented out 20161121***        
+-->
+      </xsl:when>
 			<xsl:otherwise>
 				<xsl:attribute name="ASS_ID"><xsl:value-of select="ASS_ID" /></xsl:attribute>
 				<xsl:if test="msxsl:node-set($Original)/ASS_ID and not(ASS_ID)">
@@ -180,7 +192,9 @@
 				<xsl:if test="msxsl:node-set($Original)/ASS_TITLE and not(ASS_TITLE)">
 					<xsl:attribute name="ASS_TITLE"></xsl:attribute>
 				</xsl:if>
-				<xsl:attribute name="ASS_EPISODENUMBER"><xsl:value-of select="ASS_EPISODENUMBER" /></xsl:attribute>
+<!--
+***Commented out 20161121 to reduce size of PutOperation for ReadOnly Fields)***
+        <xsl:attribute name="ASS_EPISODENUMBER"><xsl:value-of select="ASS_EPISODENUMBER" /></xsl:attribute>
 				<xsl:if test="msxsl:node-set($Original)/ASS_EPISODENUMBER and not(ASS_EPISODENUMBER)">
 					<xsl:attribute name="ASS_EPISODENUMBER"></xsl:attribute>
 				</xsl:if>
@@ -188,7 +202,9 @@
 				<xsl:if test="msxsl:node-set($Original)/ASS_EPISODETITLE and not(ASS_EPISODETITLE)">
 					<xsl:attribute name="ASS_EPISODETITLE"></xsl:attribute>
 				</xsl:if>
-			</xsl:otherwise>
+***End Commented out 20161121***                
+-->
+      </xsl:otherwise>
 		</xsl:choose>
 
 		<VW_VERSIONAPPLIESTORANGE>
@@ -217,11 +233,13 @@
 				</xsl:if>
 				</xsl:for-each>
 				<xsl:for-each select="//diffgr:before/VW_VERSIONAPPLIESTORANGE">
-					<xsl:if test="count(key('CurrentVW_VERSIONAPPLIESTORANGE', @diffgr:id)) = 0">
-						<xsl:call-template name="OutputVW_VERSIONAPPLIESTORANGE">
-							<xsl:with-param name="RowState" select="$ROWSTATE_DELETED" />
-						</xsl:call-template>
-					</xsl:if>
+          <xsl:if test="($COMPAREID = VER_ASS_ID)"> <!--ADDED 20161121-->
+					  <xsl:if test="count(key('CurrentVW_VERSIONAPPLIESTORANGE', @diffgr:id)) = 0">
+						  <xsl:call-template name="OutputVW_VERSIONAPPLIESTORANGE">
+							  <xsl:with-param name="RowState" select="$ROWSTATE_DELETED" />
+						  </xsl:call-template>
+					  </xsl:if>
+          </xsl:if>
 				</xsl:for-each>
 			</xsl:if>
 		</VW_VERSIONAPPLIESTORANGE>
