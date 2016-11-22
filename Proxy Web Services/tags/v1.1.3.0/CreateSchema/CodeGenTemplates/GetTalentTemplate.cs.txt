@@ -1,0 +1,164 @@
+using System;
+using System.Data;
+using System.IO;
+using System.Xml;
+using System.Text;
+using BVWebService;
+using TVSServer = OrionProxy;
+
+namespace CreateSchema
+{
+	/// <summary>
+	/// Summary description for GetData.
+	/// </summary>
+	public class GetTalent
+	{
+		public GetTalent()
+		{
+			//
+			// TODO: Add constructor logic here
+			//
+		}
+
+		public void GenSchema(string strTargetDir)
+		{
+			#region BroadView Schema Generation
+			string strSessionID = "";
+			int nErrorCode = 0;
+			int nDealID = 0;
+			int nTalentID =0;
+			int nRoleID = 0;
+			string strErrorText = "";
+			string XmlString = "";
+			string strLockID = "";
+
+			//
+			// Start a BroadView session
+			//
+			BVSession s = new BVSession();
+			strSessionID = s.Login();
+
+			//
+			// Generate the BroadView Schema
+			//
+			TVSServer.rdmPBSTalent p = ComponentFactory.CreateTalentClass();
+
+			// Invoke the object to get the XML result string
+			nErrorCode = p.GetTalent(strSessionID, nDealID,nTalentID,nRoleID,out strDataEpisodeAppliesTo, out strDataEpisodeTalent,out strDataTalent, out strErrorText);
+
+
+			//
+			// End our session
+			//
+			s.Logout(strSessionID);
+
+
+			//  Load all into differnent  XML documents
+			createxmlDocs(strDataEpisodeAppliesTo,"DataEpisodeAppilesTo");
+			createxmlDocs(strDataEpisodeTalent,"DataEpisodeTalent");
+			createxmlDocs(strDataTalent,"DataTalent");
+			
+							
+			#endregion BroadView Schema Generation
+
+			#region ORION Schema Generation
+			//
+			// Generate the ORION Schema
+			//
+			
+			// DataTalent
+			XmlDocument XmlDocument = new XmlDocument();
+			XmlDocument.LoadXml(strDataTalent);
+			DataSet oDataSet = new DataSet("TalentDataSet");
+			oDataSet.Namespace = "http://localhost/BVWebService/xsd/TalentDataSet.xsd";
+
+			XmlNode oTALENTNode = XmlDocument.SelectSingleNode("/DATAPACKET/METADATA");
+			DataTable dtTALENT = new DataTable("TALENT");
+			XmlNodeList oTALENTNodes = oTALENTNode.SelectNodes("FIELDS/FIELD");
+			GenSchemaHelper.LoadColumns(dtTALENT, oTALENTNodes);
+			dtTALENT.Constraints.Add("PK_TALENT", new DataColumn[] {dtTALENT.Columns["TAL_ID"]}, true);
+			oDataSet.Tables.Add(dtTALENT);
+
+			oDataSet.WriteXmlSchema(strTargetDir + @"\xsd\TalentDataSet.xsd");
+			XmlDocument =null;
+			
+			//DataEpisodeTalent
+			XmlDocument XmlDocument = new XmlDocument();
+			XmlDocument.LoadXml(strDataEpisodeTalent);
+			DataSet oDataSet = new DataSet("EpisodeTalentDataSet");
+			oDataSet.Namespace = "http://localhost/BVWebService/xsd/EpisodeTalentDataSet.xsd";
+			XmlNode oEPISODETALENTNode = XmlDocument.SelectSingleNode("/DATAPACKET/METADATA");
+			DataTable dtEPISODETALENT = new DataTable("EPISODETALENT");
+			XmlNodeList oEPISODETALENTNodes = oEPISODETALENTNode.SelectNodes("FIELDS/FIELD");
+			GenSchemaHelper.LoadColumns(dtEPISODETALENT, oEPISODETALENTNodes);
+			dtEPISODETALENT.Constraints.Add("PK_EPISODETALENT", new DataColumn[] {dtEPISODETALENT.Columns["ASS_ID"]}, true);
+			oDataSet.Tables.Add(dtEPISODETALENT);
+			oDataSet.WriteXmlSchema(strTargetDir + @"\xsd\EpisodeTalentDataSet.xsd");
+			XmlDocument =null;
+			
+			//DataEpisodeAppTo
+			
+			XmlDocument XmlDocument = new XmlDocument();
+			XmlDocument.LoadXml(strDataEpisodeAppliesTo);
+			DataSet oDataSet = new DataSet("EpisodeAppsTo");
+			oDataSet.Namespace = "http://localhost/BVWebService/xsd/EpisodeApptoDataSet.xsd";
+
+			XmlNode oEPISODEAPPTONode = XmlDocument.SelectSingleNode("/DATAPACKET/METADATA");
+			DataTable dtEPISODEAPPTO = new DataTable("EPISODEAPPTO");
+			XmlNodeList oEPISODEAPPTONodes = oEPISODEAPPTONode.SelectNodes("FIELDS/FIELD");
+			GenSchemaHelper.LoadColumns(dtEPISODEAPPTO, oEPISODEAPPTONodes);
+			dtEPISODEAPPTO.Constraints.Add("PK_EPISODEAPPTO", new DataColumn[] {dtEPISODEAPPTO.Columns["ASS_ID"]}, true);
+			oDataSet.Tables.Add(dtEPISODEAPPTO);
+
+			oDataSet.WriteXmlSchema(strTargetDir + @"\xsd\EpisodeApptoDataSet.xsd");
+			XmlDocument =null;
+			
+			#endregion ORION Schema Generation
+
+			
+			#region allxslt
+			createxsltDocs(strDataEpisodeAppliesTo,"DataEpisodeAppilesTo",oDataSetDataEpisodeAppilesTo);
+			createxsltDocs(strDataEpisodeTalent,"DataEpisodeTalent",oDataSetDataEpisodeTalent);
+			createxsltDocs(strDataTalent,"DataTalent",oDataSetDataTalent);
+			
+			#endregion
+
+			#region GetDealClass.cs Generation
+			GenGetClassHelper.GenClass(strTargetDir + @"\..\Templates\GetTalentClassTemplate.cs.txt", strTargetDir + @"\xsltClass\<GetMethodName>Class.cs", "<MethodName>");
+			#endregion
+
+			#region SetDealClass.cs Generation
+			GenSetClassHelper.GenClass(strTargetDir + @"\..\Templates\SetTalentClassTemplate.cs.txt", strTargetDir + @"\xsltClass\<PutMethodName>Class.cs", "<MethodName>");
+			#endregion
+		}
+		
+		private void createxmlDocs(string sXML, sOutPutType)
+		{
+		
+			XmlDocument XmlDocument = new XmlDocument();
+			XmlDocument.LoadXml(sXML);
+
+			// Create an XmlTextWriter and save it out
+			XmlTextWriter XmlWriter = new XmlTextWriter(strTargetDir + @"\BVSchema\<sOutPutType>.xml", System.Text.Encoding.UTF8);
+			XmlDocument.WriteTo(XmlWriter);
+			XmlWriter.Flush();
+			XmlWriter.Close();
+		
+		
+		}
+		private void createxsltDocs(string sXML, sOutPutType, oDataSet)
+		{
+			XmlDocument XmlDocument = new XmlDocument();
+			XmlDocument.LoadXml(sXML);
+			#region GetDeal.xslt Generation
+			GenGetXsltHelper.GenXslTransform(strTargetDir + @"\xslt\Get" +sOutPutType + ".xslt", oDataSet);
+			#endregion GetDeal.xslt Generation
+
+			#region PutDeal.xslt Generation
+			GenPutXsltHelper.GenXslTransform(strTargetDir + @"\xslt\Put"+sOutPutType+".xslt", XmlDocument, oDataSet);
+			#endregion
+		
+		
+		}
+	}
+}

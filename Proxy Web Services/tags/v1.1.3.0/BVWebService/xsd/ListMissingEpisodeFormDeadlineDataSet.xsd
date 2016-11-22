@@ -1,0 +1,30 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="MissingEpisodeFormDeadlineDataSet" targetNamespace="http://localhost/BVWebService/xsd/ListMissingEpisodeFormDeadlineDataSet.xsd" xmlns:mstns="http://localhost/BVWebService/xsd/ListMissingEpisodeFormDeadlineDataSet.xsd" xmlns="http://localhost/BVWebService/xsd/ListMissingEpisodeFormDeadlineDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:element name="MissingEpisodeFormDeadlineDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="EPISODE_DEADLINE_TEMP">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="DEA_ID" type="xs:int" />
+              <xs:element name="ASS_ID" type="xs:int" />
+              <xs:element name="TABTYPE">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="PK_EPISODE_DEADLINE_TEMP" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:EPISODE_DEADLINE_TEMP" />
+      <xs:field xpath="mstns:DEA_ID" />
+      <xs:field xpath="mstns:ASS_ID" />
+      <xs:field xpath="mstns:TABTYPE" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

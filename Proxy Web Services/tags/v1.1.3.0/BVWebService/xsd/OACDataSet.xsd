@@ -1,0 +1,282 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="OACDataSet" targetNamespace="http://localhost/BVWebService/xsd/OACDataSet.xsd" xmlns:mstns="http://localhost/BVWebService/xsd/OACDataSet.xsd" xmlns="http://localhost/BVWebService/xsd/OACDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:element name="OACDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="OAC">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="POAC_ID" type="xs:int" />
+              <xs:element name="POAC_CONTACT" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="80" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="POAC_PHONE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="POAC_EMAIL" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="80" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="POAC_DEA_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="POAC_FORMSTATUS" type="xs:short" minOccurs="0" />
+              <xs:element name="POAC_OPERATINGUNIT" type="xs:int" minOccurs="0" />
+              <xs:element name="POAC_OPERATINGGROUP" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PREMIEREDATE" msdata:ReadOnly="true" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="VW_PBSOACENTITY">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="POEN_ID" type="xs:int" />
+              <xs:element name="POEN_OAC_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="POEN_OFFEROR" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="80" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="POEN_FENAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="80" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="POEN_FEADDRESS" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="80" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="POEN_FECITY" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="80" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="POEN_FESTATE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="POEN_FEZIP" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="POEN_OFFERMADEBY" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="80" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="POEN_PAYMENTCOMPANY" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="80" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="POEN_PAYMENTCONTACT" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="80" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="POEN_PAYMENTADDRESS" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="80" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="POEN_PAYMENTCITY" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="80" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="POEN_PAYMENTSTATE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="POEN_PAYMENTZIP" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="POEN_PAYMENTPHONE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="POEN_PAYMENTFAX" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="POEN_PAYMENTEMAIL" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="80" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="POEN_PREPBSLOGO" type="xs:short" minOccurs="0" />
+              <xs:element name="POEN_PODT_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="POEN_PREOFFERDESCDETAILS" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="80" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="POEN_POPDT_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="POEN_POSTOFFERDESCDETAILS" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="80" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ASS_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="ASS_TITLE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="80" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ASS_SYNOPSIS" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ASS_VIDEOTEXT" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ASS_AUDIOTEXT" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ASS_VIDEODESCRIPTION" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ASS_DURATIONSCHEDULED" type="xs:int" minOccurs="0" />
+              <xs:element name="ASS_ISPBSAPPROVED" type="xs:short" minOccurs="0" />
+              <xs:element name="ARW_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="ARW_DATEAVAILABLEFROM" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ARW_DATEAVAILABLETO" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="PBSOACITEM">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="POAI_ID" type="xs:int" />
+              <xs:element name="POAI_OEN_ID" type="xs:int" />
+              <xs:element name="POAI_ITEM" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="POAI_DESC" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="252" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="POAI_MANUFACTURER" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="80" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="POAI_OFFERINGPRICE" type="xs:double" minOccurs="0" />
+              <xs:element name="POAI_SHIPPINGPRICE" type="xs:double" minOccurs="0" />
+              <xs:element name="POAI_TOTALPRICE" type="xs:double" minOccurs="0" />
+              <xs:element name="POAI_PRODUCTIONCOST" type="xs:double" minOccurs="0" />
+              <xs:element name="POAI_SHIPPINGCOST" type="xs:double" minOccurs="0" />
+              <xs:element name="POAI_ADMINCOST" type="xs:double" minOccurs="0" />
+              <xs:element name="POAI_OTHERCOST" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="PK_OAC" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:OAC" />
+      <xs:field xpath="mstns:POAC_ID" />
+    </xs:unique>
+    <xs:unique name="PK_VW_PBSOACENTITY" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:VW_PBSOACENTITY" />
+      <xs:field xpath="mstns:POEN_ID" />
+    </xs:unique>
+    <xs:unique name="PK_PBSOACITEM" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:PBSOACITEM" />
+      <xs:field xpath="mstns:POAI_ID" />
+    </xs:unique>
+    <xs:keyref name="FK_VW_PBSOACENTITY_PBSOACITEM" refer="PK_VW_PBSOACENTITY">
+      <xs:selector xpath=".//mstns:PBSOACITEM" />
+      <xs:field xpath="mstns:POAI_OEN_ID" />
+    </xs:keyref>
+    <xs:keyref name="FK_OAC_VW_PBSOACENTITY" refer="PK_OAC">
+      <xs:selector xpath=".//mstns:VW_PBSOACENTITY" />
+      <xs:field xpath="mstns:POEN_OAC_ID" />
+    </xs:keyref>
+  </xs:element>
+</xs:schema>
