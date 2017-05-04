@@ -177,7 +177,7 @@ namespace WorkflowAnalyzer
                             LEFT JOIN ScheduALLProd.schedwin.TRAIL d ON d.WONUM = a.WO_WoNum
                                 AND d.DESCRIPT LIKE '%impair%'
                             where   a.WO_USER23 IN ( 'FLATTEN', 'TRAFFIC_FLATTEN' )
-                            AND     a.WO_USER_PROG_TYPE != 'HD-PBS KIDS'
+                            AND     a.WO_USER_PROG_TYPE not like 'HD-PBS KIDS%'
                             AND		NOT EXISTS
 	                            (
 		                            SELECT	1
