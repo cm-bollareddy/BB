@@ -1,0 +1,153 @@
+<?xml version="1.0"?>
+<DTSConfiguration>
+  <DTSConfigurationHeading>
+    <DTSConfigurationFileInfo GeneratedBy="BRADDOCK\ytseytlin" GeneratedFromPackageName="Package" GeneratedFromPackageID="{00FFF0F3-DDBA-4965-B92D-AB90E5EDAFBC}" GeneratedDate="4/19/2018 10:29:40 AM"/>
+  </DTSConfigurationHeading>
+  <Configuration ConfiguredType="Property" Path="\Package.Connections[db19-uat].Properties[ConnectionString]" ValueType="String">
+    <ConfiguredValue>SqlServerName=db19-uat;UseWindowsAuthentication=True;UserName=;</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Connections[db19-uat].Properties[Description]" ValueType="String">
+    <ConfiguredValue></ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Connections[db19-uat].Properties[Name]" ValueType="String">
+    <ConfiguredValue>db19-uat</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Connections[db19-uat].Properties[Password]" ValueType="String">
+    <ConfiguredValue></ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Connections[db19-uat].Properties[ProtectionLevel]" ValueType="Int32">
+    <ConfiguredValue>0</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Connections[db19-uat].Properties[Scope]" ValueType="Int32">
+    <ConfiguredValue>0</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Connections[db19-uat].Properties[SqlServerName]" ValueType="String">
+    <ConfiguredValue>db19-uat</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Connections[db19-uat].Properties[UserName]" ValueType="String">
+    <ConfiguredValue></ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Connections[db19-uat].Properties[UseWindowsAuthentication]" ValueType="Boolean">
+    <ConfiguredValue>-1</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Connections[db19-uat.RightsLineETL].Properties[ConnectionString]" ValueType="String">
+    <ConfiguredValue>Data Source=db19-uat;Initial Catalog=RightsLineETL-DAGI;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Connections[db19-uat.RightsLineETL].Properties[Description]" ValueType="String">
+    <ConfiguredValue></ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Connections[db19-uat.RightsLineETL].Properties[InitialCatalog]" ValueType="String">
+    <ConfiguredValue>RightsLineETL-DAGI</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Connections[db19-uat.RightsLineETL].Properties[Name]" ValueType="String">
+    <ConfiguredValue>db19-uat.RightsLineETL</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Connections[db19-uat.RightsLineETL].Properties[Password]" ValueType="String">
+    <ConfiguredValue></ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Connections[db19-uat.RightsLineETL].Properties[ProtectionLevel]" ValueType="Int32">
+    <ConfiguredValue>1</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Connections[db19-uat.RightsLineETL].Properties[RetainSameConnection]" ValueType="Boolean">
+    <ConfiguredValue>0</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Connections[db19-uat.RightsLineETL].Properties[Scope]" ValueType="Int32">
+    <ConfiguredValue>0</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Connections[db19-uat.RightsLineETL].Properties[ServerName]" ValueType="String">
+    <ConfiguredValue>db19-uat</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Connections[db19-uat.RightsLineETL].Properties[UserName]" ValueType="String">
+    <ConfiguredValue></ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Connections[db19-uat.RightsLineETL 1].Properties[ConnectionString]" ValueType="String">
+    <ConfiguredValue>Data Source=db19-uat;Initial Catalog=RightsLineETL-DAGI;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Connections[db19-uat.RightsLineETL 1].Properties[Description]" ValueType="String">
+    <ConfiguredValue></ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Connections[db19-uat.RightsLineETL 1].Properties[InitialCatalog]" ValueType="String">
+    <ConfiguredValue>RightsLineETL-DAGI</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Connections[db19-uat.RightsLineETL 1].Properties[Name]" ValueType="String">
+    <ConfiguredValue>db19-uat.RightsLineETL 1</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Connections[db19-uat.RightsLineETL 1].Properties[Password]" ValueType="String">
+    <ConfiguredValue></ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Connections[db19-uat.RightsLineETL 1].Properties[ProtectionLevel]" ValueType="Int32">
+    <ConfiguredValue>1</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Connections[db19-uat.RightsLineETL 1].Properties[RetainSameConnection]" ValueType="Boolean">
+    <ConfiguredValue>0</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Connections[db19-uat.RightsLineETL 1].Properties[Scope]" ValueType="Int32">
+    <ConfiguredValue>0</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Connections[db19-uat.RightsLineETL 1].Properties[ServerName]" ValueType="String">
+    <ConfiguredValue>db19-uat</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Connections[db19-uat.RightsLineETL 1].Properties[UserName]" ValueType="String">
+    <ConfiguredValue></ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Connections[db19-uat.TrafficData].Properties[ConnectionString]" ValueType="String">
+    <ConfiguredValue>Data Source=db19-uat;Initial Catalog=TrafficData;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Connections[db19-uat.TrafficData].Properties[Description]" ValueType="String">
+    <ConfiguredValue></ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Connections[db19-uat.TrafficData].Properties[InitialCatalog]" ValueType="String">
+    <ConfiguredValue>TrafficData</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Connections[db19-uat.TrafficData].Properties[Name]" ValueType="String">
+    <ConfiguredValue>db19-uat.TrafficData</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Connections[db19-uat.TrafficData].Properties[Password]" ValueType="String">
+    <ConfiguredValue></ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Connections[db19-uat.TrafficData].Properties[ProtectionLevel]" ValueType="Int32">
+    <ConfiguredValue>1</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Connections[db19-uat.TrafficData].Properties[RetainSameConnection]" ValueType="Boolean">
+    <ConfiguredValue>0</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Connections[db19-uat.TrafficData].Properties[Scope]" ValueType="Int32">
+    <ConfiguredValue>0</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Connections[db19-uat.TrafficData].Properties[ServerName]" ValueType="String">
+    <ConfiguredValue>db19-uat</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Connections[db19-uat.TrafficData].Properties[UserName]" ValueType="String">
+    <ConfiguredValue></ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Connections[db19-uat.TrafficData 1].Properties[ConnectionString]" ValueType="String">
+    <ConfiguredValue>Data Source=db19-uat;Initial Catalog=TrafficData;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Connections[db19-uat.TrafficData 1].Properties[Description]" ValueType="String">
+    <ConfiguredValue></ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Connections[db19-uat.TrafficData 1].Properties[InitialCatalog]" ValueType="String">
+    <ConfiguredValue>TrafficData</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Connections[db19-uat.TrafficData 1].Properties[Name]" ValueType="String">
+    <ConfiguredValue>db19-uat.TrafficData 1</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Connections[db19-uat.TrafficData 1].Properties[Password]" ValueType="String">
+    <ConfiguredValue></ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Connections[db19-uat.TrafficData 1].Properties[ProtectionLevel]" ValueType="Int32">
+    <ConfiguredValue>1</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Connections[db19-uat.TrafficData 1].Properties[RetainSameConnection]" ValueType="Boolean">
+    <ConfiguredValue>0</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Connections[db19-uat.TrafficData 1].Properties[Scope]" ValueType="Int32">
+    <ConfiguredValue>0</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Connections[db19-uat.TrafficData 1].Properties[ServerName]" ValueType="String">
+    <ConfiguredValue>db19-uat</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Connections[db19-uat.TrafficData 1].Properties[UserName]" ValueType="String">
+    <ConfiguredValue></ConfiguredValue>
+  </Configuration>
+</DTSConfiguration>
