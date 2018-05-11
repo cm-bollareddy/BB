@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="RightslineLoad"
   DTS:PackageType="5"
-  DTS:VersionBuild="200"
-  DTS:VersionGUID="{3208B60F-B82A-4548-B877-1850A3E97CC2}">
+  DTS:VersionBuild="202"
+  DTS:VersionGUID="{F496B658-E874-47C1-B187-940D7A8B8ABF}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">6</DTS:Property>
   <DTS:ConnectionManagers>
@@ -13877,6 +13877,11 @@ join [RightsLineETL].[dbo].[Apr23_Deals] Apr23 on Apr23.DEA_ID = substring(xref.
                           dataType="wstr"
                           length="100"
                           name="Item_BV_ID" />
+                        <externalMetadataColumn
+                          refId="Package\Contact\Import Company\RL Dest - Company.Inputs[OLE DB Destination Input].ExternalColumns[entity_title]"
+                          codePage="1252"
+                          dataType="text"
+                          name="entity_title" />
                       </externalMetadataColumns>
                     </input>
                   </inputs>
@@ -15907,7 +15912,7 @@ join [RightsLineETL].[dbo].[Apr23_Deals] Apr23 on Apr23.DEA_ID = substring(xref.
       ,case 
 			when cast([PBSCanSecureUnderWriting] as nvarchar) = 'NO' then '2' 
 			when cast([PBSCanSecureUnderWriting] as nvarchar) = 'YES' then '1'
-	  
+			else '2'
 	  end as [PBSCanSecureUnderWriting]
       ,[underwriting_notes]
      ,[dealid]
@@ -17097,11 +17102,13 @@ join [RightsLineETL].[dbo].[Apr23_Deals] Apr23 on Apr23.DEA_ID = substring(xref.
       ,case
 			when cast([RevBacktoCPB] as nvarchar) = 'NO' then cast('2' as nvarchar)
 			when cast([RevBacktoCPB] as nvarchar) = 'YES' then cast('1' as nvarchar)
+			else cast('2' as nvarchar)
 	   end as  [RevBackToCPB]
       ,[RightsAndRestrictionsNotes]
       ,case 
 			when cast([PBSCanSecureUnderWriting] as nvarchar) = 'NO' then cast('2' as nvarchar)
 			when cast([PBSCanSecureUnderWriting] as nvarchar) = 'YES' then cast('1' as nvarchar)
+			else cast('2' as nvarchar)
 	  
 	  end as [PBSCanSecureUnderWriting]
       ,[underwriting_notes]
