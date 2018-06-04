@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="RightslineLoad"
   DTS:PackageType="5"
-  DTS:VersionBuild="202"
-  DTS:VersionGUID="{F496B658-E874-47C1-B187-940D7A8B8ABF}">
+  DTS:VersionBuild="212"
+  DTS:VersionGUID="{6B2CC920-5196-4D4C-9D29-86C01E4A0128}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">6</DTS:Property>
   <DTS:ConnectionManagers>
@@ -23,7 +23,7 @@
       DTS:ObjectName="ADO.NET-Rightsline">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=db19-uat;Initial Catalog=RightsLineETL;Integrated Security=True;Application Name=SSIS-Package-{71E29813-C634-400C-947F-2B4708DBD8E0}db19-uat.RightsLineETL;" />
+          DTS:ConnectionString="Data Source=db19-uat;Initial Catalog=RightsLineETL-EA;Integrated Security=True;Application Name=SSIS-Package-{71E29813-C634-400C-947F-2B4708DBD8E0}db19-uat.RightsLineETL;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -53,7 +53,7 @@
       DTS:ObjectName="Rightsline-Dest">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=db19-uat;Initial Catalog=RightsLineETL;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+          DTS:ConnectionString="Data Source=db19-uat;Initial Catalog=RightsLineETL-EA;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
@@ -3109,6 +3109,10 @@
 						else ass.ass_title
 					end
 		 as [DisplayFriendlyTitle]
+	, case ass.ASS_ISPBSPUBLISHED
+		when 1 then cast('Ready for External Publishing' as nvarchar)
+		else cast('In Progress' as nvarchar)
+	end as entity_status
   FROM [TrafficData].[PBS].[vwMOSEpisode] 
   Join Bv.EXTENDEDDATA extD on extD.EXT_OWNERRECORD_ID = ass_id 
   Join bv.USERLOOKUP ulkup on ulkup.Ulu_id = extD.EXT_INTEGER
@@ -3117,7 +3121,69 @@
   LEFT JOIN [BV].[ASSETCATEGORY] aca ON aca.ACA_ID = ass.ASS_ACA_ID
   where EXT_SEXTC_ID = 607871753 -- RightslineTemplate Column
   and ulkup.ULU_CLASS = 'L03' and ULU_ID != 609587740 
-  and charindex('Season',[Episode.ParentID]) &gt;= 1</property>
+  and charindex('Season',[Episode.ParentID]) &gt;= 1
+
+
+
+/* Original SQL
+SELECT 
+      vwMosEpisode.[ass_id]
+      ,[Episode.ContentIdentifier]
+      ,[Episode.UID]
+      ,[Episode.ParentID]
+      ,[Episode.Referent.Type]
+      ,[Episode.Organization.Contact.Info.Phone]
+      ,[Episode.Organization.Contact.Info.Phone.Type]
+      ,[Episode.Organization.Contact Info.Address]
+      ,[Episode.Organization.Contact.Info.PrimaryEmail]
+      ,[Episode.Organization.Contact.Info.Name]
+      ,[Episode.Organization.Contact.Info.ContactID]
+      ,[Episode.Organization.DisplayName]
+      ,[Episode.Organization.domain]
+      ,[Episode.Organization.OrganizationID]
+      ,[Episode.Organization.Role]
+      ,CASE 
+						when ass.ASS_EPISODETITLE is not null then rtrim(ltrim(ass.ASS_EPISODETITLE))
+						else rtrim(ltrim(ass.ass_title))
+					end
+		 as [Episode.Title.Corrected]
+      ,substring(rtrim(ltrim(ass.ass_episodetitle)),1,120) as [Episode.Title120.Corrected]
+      ,[Episode.TitleClass]
+      ,[Episode.EpisodeNumber]
+      ,[Episode.EpisodeClass]
+      ,[Episode.SynopsisShort]
+      ,[Episode.SynopsisLong]
+      ,[Episode.CountryOfOrigin]
+      ,[Episode.PrimaryGenre]
+      ,[Episode.SecondaryGenre]
+      ,[Episode.Distribution.Number]
+      ,[Episode.ReleaseDate]
+      ,[Episode.ApproximateLength]
+      ,[Episode.Language.Primary.mode]
+      ,[Episode.LanguagePrimary]
+      ,[Episode.LanguageSecondary]
+      ,[Episode.Credits.Display.Name]
+      ,[Episode.Credits.Role]
+      ,[Episode.Credits.TalentID]
+      ,[Episode.ContactType]
+      ,substring([Episode.ParentID],charindex(':pbs.org',[Episode.ParentID])+9,len([Episode.ParentID])) as PBS_Parent_ID
+	  ,substring([Episode.ContentIdentifier],charindex('NOLARoot',[Episode.ContentIdentifier])+9,4) as NolaRoot
+	  ,substring([Episode.ContentIdentifier],charindex('NOLARoot',[Episode.ContentIdentifier])+9,len([Episode.ParentID])) as Nolacode
+	  ,	CASE 
+						when ass.ASS_EPISODETITLE is not null then ass.ASS_EPISODETITLE 
+						else ass.ass_title
+					end
+		 as [DisplayFriendlyTitle]
+  FROM [TrafficData].[PBS].[vwMOSEpisode] 
+  Join Bv.EXTENDEDDATA extD on extD.EXT_OWNERRECORD_ID = ass_id 
+  Join bv.USERLOOKUP ulkup on ulkup.Ulu_id = extD.EXT_INTEGER
+  Join [RightsLineETL].[dbo].Apr23_Episodes feb28 on  feb28.ASS_ID = vwMOSEpisode.Ass_id
+  join bv.asset ass on ass.ass_id = vwMOSEpisode.ass_id
+  LEFT JOIN [BV].[ASSETCATEGORY] aca ON aca.ACA_ID = ass.ASS_ACA_ID
+  where EXT_SEXTC_ID = 607871753 -- RightslineTemplate Column
+  and ulkup.ULU_CLASS = 'L03' and ULU_ID != 609587740 
+  and charindex('Season',[Episode.ParentID]) &gt;= 1
+*/</property>
                     <property
                       dataType="System.String"
                       description="The variable that contains the SQL command to be executed."
@@ -3545,6 +3611,16 @@
                           lineageId="Package\Catalog Import Container\Import EpisodeParentSeason\MOS-EpisodeWithSeasonParent.Outputs[OLE DB Source Output].Columns[Episode.Title120.Corrected]"
                           name="Episode.Title120.Corrected"
                           truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Catalog Import Container\Import EpisodeParentSeason\MOS-EpisodeWithSeasonParent.Outputs[OLE DB Source Output].Columns[entity_status]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Catalog Import Container\Import EpisodeParentSeason\MOS-EpisodeWithSeasonParent.Outputs[OLE DB Source Output].ExternalColumns[entity_status]"
+                          length="30"
+                          lineageId="Package\Catalog Import Container\Import EpisodeParentSeason\MOS-EpisodeWithSeasonParent.Outputs[OLE DB Source Output].Columns[entity_status]"
+                          name="entity_status"
+                          truncationRowDisposition="FailComponent" />
                       </outputColumns>
                       <externalMetadataColumns
                         isUsed="True">
@@ -3745,6 +3821,11 @@
                           dataType="wstr"
                           length="80"
                           name="Episode.Title120.Corrected" />
+                        <externalMetadataColumn
+                          refId="Package\Catalog Import Container\Import EpisodeParentSeason\MOS-EpisodeWithSeasonParent.Outputs[OLE DB Source Output].ExternalColumns[entity_status]"
+                          dataType="wstr"
+                          length="30"
+                          name="entity_status" />
                       </externalMetadataColumns>
                     </output>
                     <output
@@ -4000,6 +4081,12 @@
                           lineageId="Package\Catalog Import Container\Import EpisodeParentSeason\MOS-EpisodeWithSeasonParent.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
                           name="ErrorColumn"
                           specialFlags="2" />
+                        <outputColumn
+                          refId="Package\Catalog Import Container\Import EpisodeParentSeason\MOS-EpisodeWithSeasonParent.Outputs[OLE DB Source Error Output].Columns[entity_status]"
+                          dataType="wstr"
+                          length="30"
+                          lineageId="Package\Catalog Import Container\Import EpisodeParentSeason\MOS-EpisodeWithSeasonParent.Outputs[OLE DB Source Error Output].Columns[entity_status]"
+                          name="entity_status" />
                       </outputColumns>
                       <externalMetadataColumns />
                     </output>
@@ -4167,6 +4254,13 @@
                           cachedName="dr_edit_name"
                           externalMetadataColumnId="Package\Catalog Import Container\Import EpisodeParentSeason\RL-Episode.Inputs[OLE DB Destination Input].ExternalColumns[edit_name]"
                           lineageId="Package\Catalog Import Container\Import EpisodeParentSeason\Derived Column.Outputs[Derived Column Output].Columns[dr_edit_name]" />
+                        <inputColumn
+                          refId="Package\Catalog Import Container\Import EpisodeParentSeason\RL-Episode.Inputs[OLE DB Destination Input].Columns[entity_status]"
+                          cachedDataType="wstr"
+                          cachedLength="30"
+                          cachedName="entity_status"
+                          externalMetadataColumnId="Package\Catalog Import Container\Import EpisodeParentSeason\RL-Episode.Inputs[OLE DB Destination Input].ExternalColumns[entity_status]"
+                          lineageId="Package\Catalog Import Container\Import EpisodeParentSeason\Sort.Outputs[Sort Output].Columns[entity_status]" />
                       </inputColumns>
                       <externalMetadataColumns
                         isUsed="True">
@@ -4265,6 +4359,11 @@
                           dataType="wstr"
                           length="100"
                           name="Item_BV_ID" />
+                        <externalMetadataColumn
+                          refId="Package\Catalog Import Container\Import EpisodeParentSeason\RL-Episode.Inputs[OLE DB Destination Input].ExternalColumns[entity_status]"
+                          dataType="wstr"
+                          length="100"
+                          name="entity_status" />
                       </externalMetadataColumns>
                     </input>
                   </inputs>
@@ -4981,6 +5080,23 @@
                               name="NewSortKeyPosition">0</property>
                           </properties>
                         </inputColumn>
+                        <inputColumn
+                          refId="Package\Catalog Import Container\Import EpisodeParentSeason\Sort.Inputs[Sort Input].Columns[entity_status]"
+                          cachedDataType="wstr"
+                          cachedLength="30"
+                          cachedName="entity_status"
+                          lineageId="Package\Catalog Import Container\Import EpisodeParentSeason\MOS-EpisodeWithSeasonParent.Outputs[OLE DB Source Output].Columns[entity_status]">
+                          <properties>
+                            <property
+                              dataType="System.Int32"
+                              description="Specifies the comparison options for character data."
+                              name="NewComparisonFlags">0</property>
+                            <property
+                              dataType="System.Int32"
+                              description="Specifies the sort order of the column."
+                              name="NewSortKeyPosition">0</property>
+                          </properties>
+                        </inputColumn>
                       </inputColumns>
                       <externalMetadataColumns />
                     </input>
@@ -5543,6 +5659,20 @@
                               name="SortColumnId">#{Package\Catalog Import Container\Import EpisodeParentSeason\MOS-EpisodeWithSeasonParent.Outputs[OLE DB Source Output].Columns[Episode.Title120.Corrected]}</property>
                           </properties>
                         </outputColumn>
+                        <outputColumn
+                          refId="Package\Catalog Import Container\Import EpisodeParentSeason\Sort.Outputs[Sort Output].Columns[entity_status]"
+                          dataType="wstr"
+                          length="30"
+                          lineageId="Package\Catalog Import Container\Import EpisodeParentSeason\Sort.Outputs[Sort Output].Columns[entity_status]"
+                          name="entity_status">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Specifies the lineage identifier of the input column that is associated with this output column."
+                              name="SortColumnId">#{Package\Catalog Import Container\Import EpisodeParentSeason\MOS-EpisodeWithSeasonParent.Outputs[OLE DB Source Output].Columns[entity_status]}</property>
+                          </properties>
+                        </outputColumn>
                       </outputColumns>
                       <externalMetadataColumns />
                     </output>
@@ -5884,13 +6014,67 @@
       ,substring([Episode.ParentID],charindex(':pbs.org',[Episode.ParentID])+9,len([Episode.ParentID])) as PBS_Parent_ID
 	  ,substring([Episode.ContentIdentifier],charindex('NOLARoot',[Episode.ContentIdentifier])+9,4) as NolaRoot
 	  ,substring([Episode.ContentIdentifier],charindex('NOLARoot',[Episode.ContentIdentifier])+9,len([Episode.ContentIdentifier])) as Nolacode
+	  ,case ass.ass_ISPBSPUBLISHED
+		when 1 then cast('Ready for External Publishing' as nvarchar)
+		else cast('In Progress' as nvarchar)
+	  end as entity_status
   FROM [TrafficData].[PBS].[vwMOSEpisode] 
   Join Bv.EXTENDEDDATA extD on extD.EXT_OWNERRECORD_ID = ass_id 
   Join bv.USERLOOKUP ulkup on ulkup.Ulu_id = extD.EXT_INTEGER
   Join [RightsLineETL].[dbo].Apr23_OneTimeOnly Apr23 on  Apr23.ASS_ID = vwMOSEpisode.Ass_id
   Join Bv.Asset ass on ass.ass_id = vwMOSEpisode.Ass_id
   where EXT_SEXTC_ID = 607871753 
-  and ulkup.ULU_CLASS = 'L03' and ULU_ID = 609587740</property>
+  and ulkup.ULU_CLASS = 'L03' and ULU_ID = 609587740
+
+/* Original SQL
+SELECT 
+       vwMOsepisode.[ass_id]
+      ,[Episode.ContentIdentifier]
+      ,[Episode.UID]
+      ,[Episode.ParentID]
+      ,[Episode.Referent.Type]
+      ,[Episode.Organization.Contact.Info.Phone]
+      ,[Episode.Organization.Contact.Info.Phone.Type]
+      ,[Episode.Organization.Contact Info.Address]
+      ,[Episode.Organization.Contact.Info.PrimaryEmail]
+      ,[Episode.Organization.Contact.Info.Name]
+      ,[Episode.Organization.Contact.Info.ContactID]
+      ,[Episode.Organization.DisplayName]
+      ,[Episode.Organization.domain]
+      ,[Episode.Organization.OrganizationID]
+      ,[Episode.Organization.Role]
+      ,ass.Ass_title  as [Episode.Title.Corrected]
+      ,substring(ass.Ass_title,1,120)  as [Episode.Title120.Corrected]
+      ,[Episode.TitleClass]
+      ,[Episode.EpisodeNumber]
+      ,[Episode.EpisodeClass]
+      ,[Episode.SynopsisShort]
+      ,[Episode.SynopsisLong]
+      ,[Episode.CountryOfOrigin]
+      ,[Episode.PrimaryGenre]
+      ,[Episode.SecondaryGenre]
+      ,[Episode.Distribution.Number]
+      ,[Episode.ReleaseDate]
+      ,[Episode.ApproximateLength]
+      ,[Episode.Language.Primary.mode]
+      ,[Episode.LanguagePrimary]
+      ,[Episode.LanguageSecondary]
+      ,[Episode.Credits.Display.Name]
+      ,[Episode.Credits.Role]
+      ,[Episode.Credits.TalentID]
+      ,[Episode.ContactType]
+      ,substring([Episode.ParentID],charindex(':pbs.org',[Episode.ParentID])+9,len([Episode.ParentID])) as PBS_Parent_ID
+	  ,substring([Episode.ContentIdentifier],charindex('NOLARoot',[Episode.ContentIdentifier])+9,4) as NolaRoot
+	  ,substring([Episode.ContentIdentifier],charindex('NOLARoot',[Episode.ContentIdentifier])+9,len([Episode.ContentIdentifier])) as Nolacode
+  FROM [TrafficData].[PBS].[vwMOSEpisode] 
+  Join Bv.EXTENDEDDATA extD on extD.EXT_OWNERRECORD_ID = ass_id 
+  Join bv.USERLOOKUP ulkup on ulkup.Ulu_id = extD.EXT_INTEGER
+  Join [RightsLineETL].[dbo].Apr23_OneTimeOnly Apr23 on  Apr23.ASS_ID = vwMOSEpisode.Ass_id
+  Join Bv.Asset ass on ass.ass_id = vwMOSEpisode.Ass_id
+  where EXT_SEXTC_ID = 607871753 
+  and ulkup.ULU_CLASS = 'L03' and ULU_ID = 609587740
+
+*/</property>
                     <property
                       dataType="System.String"
                       description="The variable that contains the SQL command to be executed."
@@ -6308,6 +6492,16 @@
                           lineageId="Package\Catalog Import Container\Import OneTimeOnly\MOS-Episode.Outputs[OLE DB Source Output].Columns[Episode.Title120.Corrected]"
                           name="Episode.Title120.Corrected"
                           truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Catalog Import Container\Import OneTimeOnly\MOS-Episode.Outputs[OLE DB Source Output].Columns[entity_status]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Catalog Import Container\Import OneTimeOnly\MOS-Episode.Outputs[OLE DB Source Output].ExternalColumns[entity_status]"
+                          length="30"
+                          lineageId="Package\Catalog Import Container\Import OneTimeOnly\MOS-Episode.Outputs[OLE DB Source Output].Columns[entity_status]"
+                          name="entity_status"
+                          truncationRowDisposition="FailComponent" />
                       </outputColumns>
                       <externalMetadataColumns
                         isUsed="True">
@@ -6503,6 +6697,11 @@
                           dataType="wstr"
                           length="80"
                           name="Episode.Title120.Corrected" />
+                        <externalMetadataColumn
+                          refId="Package\Catalog Import Container\Import OneTimeOnly\MOS-Episode.Outputs[OLE DB Source Output].ExternalColumns[entity_status]"
+                          dataType="wstr"
+                          length="30"
+                          name="entity_status" />
                       </externalMetadataColumns>
                     </output>
                     <output
@@ -6752,6 +6951,12 @@
                           lineageId="Package\Catalog Import Container\Import OneTimeOnly\MOS-Episode.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
                           name="ErrorColumn"
                           specialFlags="2" />
+                        <outputColumn
+                          refId="Package\Catalog Import Container\Import OneTimeOnly\MOS-Episode.Outputs[OLE DB Source Error Output].Columns[entity_status]"
+                          dataType="wstr"
+                          length="30"
+                          lineageId="Package\Catalog Import Container\Import OneTimeOnly\MOS-Episode.Outputs[OLE DB Source Error Output].Columns[entity_status]"
+                          name="entity_status" />
                       </outputColumns>
                       <externalMetadataColumns />
                     </output>
@@ -6919,6 +7124,13 @@
                           cachedName="PBS_Parent_ID"
                           externalMetadataColumnId="Package\Catalog Import Container\Import OneTimeOnly\RL-OTO.Inputs[OLE DB Destination Input].ExternalColumns[edit_name]"
                           lineageId="Package\Catalog Import Container\Import OneTimeOnly\Sort.Outputs[Sort Output].Columns[PBS_Parent_ID]" />
+                        <inputColumn
+                          refId="Package\Catalog Import Container\Import OneTimeOnly\RL-OTO.Inputs[OLE DB Destination Input].Columns[entity_status]"
+                          cachedDataType="wstr"
+                          cachedLength="30"
+                          cachedName="entity_status"
+                          externalMetadataColumnId="Package\Catalog Import Container\Import OneTimeOnly\RL-OTO.Inputs[OLE DB Destination Input].ExternalColumns[entity_status]"
+                          lineageId="Package\Catalog Import Container\Import OneTimeOnly\Sort.Outputs[Sort Output].Columns[entity_status]" />
                       </inputColumns>
                       <externalMetadataColumns
                         isUsed="True">
@@ -7017,6 +7229,11 @@
                           dataType="wstr"
                           length="100"
                           name="RL_OneTimeOnly_ID" />
+                        <externalMetadataColumn
+                          refId="Package\Catalog Import Container\Import OneTimeOnly\RL-OTO.Inputs[OLE DB Destination Input].ExternalColumns[entity_status]"
+                          dataType="wstr"
+                          length="100"
+                          name="entity_status" />
                       </externalMetadataColumns>
                     </input>
                   </inputs>
@@ -7716,6 +7933,23 @@
                               name="NewSortKeyPosition">0</property>
                           </properties>
                         </inputColumn>
+                        <inputColumn
+                          refId="Package\Catalog Import Container\Import OneTimeOnly\Sort.Inputs[Sort Input].Columns[entity_status]"
+                          cachedDataType="wstr"
+                          cachedLength="30"
+                          cachedName="entity_status"
+                          lineageId="Package\Catalog Import Container\Import OneTimeOnly\MOS-Episode.Outputs[OLE DB Source Output].Columns[entity_status]">
+                          <properties>
+                            <property
+                              dataType="System.Int32"
+                              description="Specifies the comparison options for character data."
+                              name="NewComparisonFlags">0</property>
+                            <property
+                              dataType="System.Int32"
+                              description="Specifies the sort order of the column."
+                              name="NewSortKeyPosition">0</property>
+                          </properties>
+                        </inputColumn>
                       </inputColumns>
                       <externalMetadataColumns />
                     </input>
@@ -8262,6 +8496,20 @@
                               dataType="System.Int32"
                               description="Specifies the lineage identifier of the input column that is associated with this output column."
                               name="SortColumnId">#{Package\Catalog Import Container\Import OneTimeOnly\MOS-Episode.Outputs[OLE DB Source Output].Columns[Episode.Title120.Corrected]}</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Catalog Import Container\Import OneTimeOnly\Sort.Outputs[Sort Output].Columns[entity_status]"
+                          dataType="wstr"
+                          length="30"
+                          lineageId="Package\Catalog Import Container\Import OneTimeOnly\Sort.Outputs[Sort Output].Columns[entity_status]"
+                          name="entity_status">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Specifies the lineage identifier of the input column that is associated with this output column."
+                              name="SortColumnId">#{Package\Catalog Import Container\Import OneTimeOnly\MOS-Episode.Outputs[OLE DB Source Output].Columns[entity_status]}</property>
                           </properties>
                         </outputColumn>
                       </outputColumns>
@@ -10101,7 +10349,7 @@
                         <inputColumn
                           refId="Package\Catalog Import Container\ImportSeasons\RL-Season.Inputs[OLE DB Destination Input].Columns[dr_Season_ContentIdentifier]"
                           cachedDataType="wstr"
-                          cachedLength="279"
+                          cachedLength="1"
                           cachedName="dr_Season_ContentIdentifier"
                           externalMetadataColumnId="Package\Catalog Import Container\ImportSeasons\RL-Season.Inputs[OLE DB Destination Input].ExternalColumns[pbs_nola_root]"
                           lineageId="Package\Catalog Import Container\ImportSeasons\Derived Column.Outputs[Derived Column Output].Columns[dr_Season_ContentIdentifier]" />
@@ -10112,13 +10360,6 @@
                           cachedName="dr_Season_ReleaseDate"
                           externalMetadataColumnId="Package\Catalog Import Container\ImportSeasons\RL-Season.Inputs[OLE DB Destination Input].ExternalColumns[release_date]"
                           lineageId="Package\Catalog Import Container\ImportSeasons\Derived Column.Outputs[Derived Column Output].Columns[dr_Season_ReleaseDate]" />
-                        <inputColumn
-                          refId="Package\Catalog Import Container\ImportSeasons\RL-Season.Inputs[OLE DB Destination Input].Columns[dr_Season_Language]"
-                          cachedDataType="wstr"
-                          cachedLength="7"
-                          cachedName="dr_Season_Language"
-                          externalMetadataColumnId="Package\Catalog Import Container\ImportSeasons\RL-Season.Inputs[OLE DB Destination Input].ExternalColumns[title_Language]"
-                          lineageId="Package\Catalog Import Container\ImportSeasons\Derived Column.Outputs[Derived Column Output].Columns[dr_Season_Language]" />
                         <inputColumn
                           refId="Package\Catalog Import Container\ImportSeasons\RL-Season.Inputs[OLE DB Destination Input].Columns[Season.UID]"
                           cachedDataType="wstr"
@@ -10140,6 +10381,13 @@
                           cachedName="PBS_Season_ID"
                           externalMetadataColumnId="Package\Catalog Import Container\ImportSeasons\RL-Season.Inputs[OLE DB Destination Input].ExternalColumns[Item_BV_ID]"
                           lineageId="Package\Catalog Import Container\ImportSeasons\Sort.Outputs[Sort Output].Columns[PBS_Season_ID]" />
+                        <inputColumn
+                          refId="Package\Catalog Import Container\ImportSeasons\RL-Season.Inputs[OLE DB Destination Input].Columns[dr_Season_Language]"
+                          cachedDataType="wstr"
+                          cachedLength="7"
+                          cachedName="dr_Season_Language"
+                          externalMetadataColumnId="Package\Catalog Import Container\ImportSeasons\RL-Season.Inputs[OLE DB Destination Input].ExternalColumns[title_language]"
+                          lineageId="Package\Catalog Import Container\ImportSeasons\Derived Column.Outputs[Derived Column Output].Columns[dr_Season_Language]" />
                       </inputColumns>
                       <externalMetadataColumns
                         isUsed="True">
@@ -10179,11 +10427,6 @@
                           length="100"
                           name="RL_Season_ID" />
                         <externalMetadataColumn
-                          refId="Package\Catalog Import Container\ImportSeasons\RL-Season.Inputs[OLE DB Destination Input].ExternalColumns[title_Language]"
-                          dataType="wstr"
-                          length="100"
-                          name="title_Language" />
-                        <externalMetadataColumn
                           refId="Package\Catalog Import Container\ImportSeasons\RL-Season.Inputs[OLE DB Destination Input].ExternalColumns[PBS_BV_MOS_SeriesID]"
                           dataType="wstr"
                           length="100"
@@ -10202,6 +10445,11 @@
                           dataType="wstr"
                           length="100"
                           name="season_number" />
+                        <externalMetadataColumn
+                          refId="Package\Catalog Import Container\ImportSeasons\RL-Season.Inputs[OLE DB Destination Input].ExternalColumns[title_language]"
+                          dataType="wstr"
+                          length="100"
+                          name="title_language" />
                       </externalMetadataColumns>
                     </input>
                   </inputs>
@@ -10925,7 +11173,6 @@
       ,[Series.Mode]
       ,[Series.ContentIdentifier]
       ,[Series.SeriesClass]
-      ,[Series.Organization.ContactInfo.Phone.Type]
       ,[Series.Title.Class]
       ,[Series.Title.Language]
       ,[Series.Title]
@@ -11041,17 +11288,6 @@
                           length="52"
                           lineageId="Package\Catalog Import Container\ImportSeries\MOS-Source-Series.Outputs[OLE DB Source Output].Columns[Series.UID]"
                           name="Series.UID"
-                          truncationRowDisposition="FailComponent" />
-                        <outputColumn
-                          refId="Package\Catalog Import Container\ImportSeries\MOS-Source-Series.Outputs[OLE DB Source Output].Columns[Series.Organization.ContactInfo.Phone.Type]"
-                          codePage="1252"
-                          dataType="str"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Catalog Import Container\ImportSeries\MOS-Source-Series.Outputs[OLE DB Source Output].ExternalColumns[Series.Organization.ContactInfo.Phone.Type]"
-                          length="6"
-                          lineageId="Package\Catalog Import Container\ImportSeries\MOS-Source-Series.Outputs[OLE DB Source Output].Columns[Series.Organization.ContactInfo.Phone.Type]"
-                          name="Series.Organization.ContactInfo.Phone.Type"
                           truncationRowDisposition="FailComponent" />
                         <outputColumn
                           refId="Package\Catalog Import Container\ImportSeries\MOS-Source-Series.Outputs[OLE DB Source Output].Columns[Series.Organization.Role]"
@@ -11370,12 +11606,6 @@
                           length="52"
                           name="Series.UID" />
                         <externalMetadataColumn
-                          refId="Package\Catalog Import Container\ImportSeries\MOS-Source-Series.Outputs[OLE DB Source Output].ExternalColumns[Series.Organization.ContactInfo.Phone.Type]"
-                          codePage="1252"
-                          dataType="str"
-                          length="6"
-                          name="Series.Organization.ContactInfo.Phone.Type" />
-                        <externalMetadataColumn
                           refId="Package\Catalog Import Container\ImportSeries\MOS-Source-Series.Outputs[OLE DB Source Output].ExternalColumns[Series.Organization.Role]"
                           codePage="1252"
                           dataType="str"
@@ -11572,13 +11802,6 @@
                           length="10"
                           lineageId="Package\Catalog Import Container\ImportSeries\MOS-Source-Series.Outputs[OLE DB Source Error Output].Columns[Series.SeriesClass]"
                           name="Series.SeriesClass" />
-                        <outputColumn
-                          refId="Package\Catalog Import Container\ImportSeries\MOS-Source-Series.Outputs[OLE DB Source Error Output].Columns[Series.Organization.ContactInfo.Phone.Type]"
-                          codePage="1252"
-                          dataType="str"
-                          length="6"
-                          lineageId="Package\Catalog Import Container\ImportSeries\MOS-Source-Series.Outputs[OLE DB Source Error Output].Columns[Series.Organization.ContactInfo.Phone.Type]"
-                          name="Series.Organization.ContactInfo.Phone.Type" />
                         <outputColumn
                           refId="Package\Catalog Import Container\ImportSeries\MOS-Source-Series.Outputs[OLE DB Source Error Output].Columns[Series.Organization.Role]"
                           codePage="1252"
@@ -12130,24 +12353,6 @@
                               dataType="System.Int32"
                               description="Specifies the sort order of the column."
                               name="NewSortKeyPosition">1</property>
-                          </properties>
-                        </inputColumn>
-                        <inputColumn
-                          refId="Package\Catalog Import Container\ImportSeries\Sort and Remove Dups.Inputs[Sort Input].Columns[Series.Organization.ContactInfo.Phone.Type]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="6"
-                          cachedName="Series.Organization.ContactInfo.Phone.Type"
-                          lineageId="Package\Catalog Import Container\ImportSeries\MOS-Source-Series.Outputs[OLE DB Source Output].Columns[Series.Organization.ContactInfo.Phone.Type]">
-                          <properties>
-                            <property
-                              dataType="System.Int32"
-                              description="Specifies the comparison options for character data."
-                              name="NewComparisonFlags">0</property>
-                            <property
-                              dataType="System.Int32"
-                              description="Specifies the sort order of the column."
-                              name="NewSortKeyPosition">0</property>
                           </properties>
                         </inputColumn>
                         <inputColumn
@@ -12707,21 +12912,6 @@
                               dataType="System.Int32"
                               description="Specifies the lineage identifier of the input column that is associated with this output column."
                               name="SortColumnId">#{Package\Catalog Import Container\ImportSeries\MOS-Source-Series.Outputs[OLE DB Source Output].Columns[Series.UID]}</property>
-                          </properties>
-                        </outputColumn>
-                        <outputColumn
-                          refId="Package\Catalog Import Container\ImportSeries\Sort and Remove Dups.Outputs[Sort Output].Columns[Series.Organization.ContactInfo.Phone.Type]"
-                          codePage="1252"
-                          dataType="str"
-                          length="6"
-                          lineageId="Package\Catalog Import Container\ImportSeries\Sort and Remove Dups.Outputs[Sort Output].Columns[Series.Organization.ContactInfo.Phone.Type]"
-                          name="Series.Organization.ContactInfo.Phone.Type">
-                          <properties>
-                            <property
-                              containsID="true"
-                              dataType="System.Int32"
-                              description="Specifies the lineage identifier of the input column that is associated with this output column."
-                              name="SortColumnId">#{Package\Catalog Import Container\ImportSeries\MOS-Source-Series.Outputs[OLE DB Source Output].Columns[Series.Organization.ContactInfo.Phone.Type]}</property>
                           </properties>
                         </outputColumn>
                         <outputColumn
@@ -15909,6 +16099,33 @@ join [RightsLineETL].[dbo].[Apr23_Deals] Apr23 on Apr23.DEA_ID = substring(xref.
       ,[RightsAndRestrictionsNotes]
       ,[Executed_Status]
       ,[financial_notes]
+      ,[PBSCanSecureUnderWriting]as [PBSCanSecureUnderWriting]
+      ,[underwriting_notes]
+     ,[dealid]
+	 ,case pbsds.PBSDS_LABEL
+		when 'approved' then cast('Complete' as nvarchar)
+		when 'in revision' then cast('In Revision' as nvarchar)
+		when 'in progress' then cast('Rights Pending' as nvarchar)
+		when 'submitted' then cast('Rights Pending' as nvarchar)
+		else cast('Rights Pending' as nvarchar)
+		 
+	 end as entity_status
+  FROM [TrafficData].[PBS].[DealPBSPAA1] paa
+  join [RightslineETL].[dbo].Apr23_deals Apr23 on Apr23.dea_id = paa.dea_id
+  left join [TrafficData].[BV].[DEAL] ds on ds.DEA_ID = paa.dea_id
+  left JOIN trafficdata.BV.PBSDEALSTATUS pbsds ON pbsds.PBSDS_ID = ds.DEA_PBSDS_ID
+
+/* Original SQL
+SELECT 
+       paa.dea_id
+     ,[Title]
+      ,[AlliantID]
+      ,[Contract_Effective_Date]
+      ,[Contract_Execution_Date]
+      ,[Programming_service]
+      ,[RightsAndRestrictionsNotes]
+      ,[Executed_Status]
+      ,[financial_notes]
       ,case 
 			when cast([PBSCanSecureUnderWriting] as nvarchar) = 'NO' then '2' 
 			when cast([PBSCanSecureUnderWriting] as nvarchar) = 'YES' then '1'
@@ -15917,7 +16134,8 @@ join [RightsLineETL].[dbo].[Apr23_Deals] Apr23 on Apr23.DEA_ID = substring(xref.
       ,[underwriting_notes]
      ,[dealid]
   FROM [PBS].[DealPBSPAA1] paa
-  join [RightslineETL].[dbo].Apr23_deals Apr23 on Apr23.dea_id = paa.dea_id</property>
+  join [RightslineETL].[dbo].Apr23_deals Apr23 on Apr23.dea_id = paa.dea_id
+*/</property>
                     <property
                       dataType="System.String"
                       description="The variable that contains the SQL command to be executed."
@@ -16072,6 +16290,16 @@ join [RightsLineETL].[dbo].[Apr23_Deals] Apr23 on Apr23.DEA_ID = substring(xref.
                           lineageId="Package\Deal Imports\Import Deal-PBS PAA1\MOS-DealPbsPAA1.Outputs[OLE DB Source Output].Columns[dealid]"
                           name="dealid"
                           truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Deal Imports\Import Deal-PBS PAA1\MOS-DealPbsPAA1.Outputs[OLE DB Source Output].Columns[entity_status]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Deal Imports\Import Deal-PBS PAA1\MOS-DealPbsPAA1.Outputs[OLE DB Source Output].ExternalColumns[entity_status]"
+                          length="30"
+                          lineageId="Package\Deal Imports\Import Deal-PBS PAA1\MOS-DealPbsPAA1.Outputs[OLE DB Source Output].Columns[entity_status]"
+                          name="entity_status"
+                          truncationRowDisposition="FailComponent" />
                       </outputColumns>
                       <externalMetadataColumns
                         isUsed="True">
@@ -16099,7 +16327,7 @@ join [RightsLineETL].[dbo].[Apr23_Deals] Apr23 on Apr23.DEA_ID = substring(xref.
                           refId="Package\Deal Imports\Import Deal-PBS PAA1\MOS-DealPbsPAA1.Outputs[OLE DB Source Output].ExternalColumns[PBSCanSecureUnderWriting]"
                           codePage="1252"
                           dataType="str"
-                          length="1"
+                          length="3"
                           name="PBSCanSecureUnderWriting" />
                         <externalMetadataColumn
                           refId="Package\Deal Imports\Import Deal-PBS PAA1\MOS-DealPbsPAA1.Outputs[OLE DB Source Output].ExternalColumns[underwriting_notes]"
@@ -16134,6 +16362,11 @@ join [RightsLineETL].[dbo].[Apr23_Deals] Apr23 on Apr23.DEA_ID = substring(xref.
                           dataType="wstr"
                           length="35"
                           name="dealid" />
+                        <externalMetadataColumn
+                          refId="Package\Deal Imports\Import Deal-PBS PAA1\MOS-DealPbsPAA1.Outputs[OLE DB Source Output].ExternalColumns[entity_status]"
+                          dataType="wstr"
+                          length="30"
+                          name="entity_status" />
                       </externalMetadataColumns>
                     </output>
                     <output
@@ -16198,7 +16431,7 @@ join [RightsLineETL].[dbo].[Apr23_Deals] Apr23 on Apr23.DEA_ID = substring(xref.
                           refId="Package\Deal Imports\Import Deal-PBS PAA1\MOS-DealPbsPAA1.Outputs[OLE DB Source Error Output].Columns[PBSCanSecureUnderWriting]"
                           codePage="1252"
                           dataType="str"
-                          length="1"
+                          length="3"
                           lineageId="Package\Deal Imports\Import Deal-PBS PAA1\MOS-DealPbsPAA1.Outputs[OLE DB Source Error Output].Columns[PBSCanSecureUnderWriting]"
                           name="PBSCanSecureUnderWriting" />
                         <outputColumn
@@ -16212,6 +16445,12 @@ join [RightsLineETL].[dbo].[Apr23_Deals] Apr23 on Apr23.DEA_ID = substring(xref.
                           length="35"
                           lineageId="Package\Deal Imports\Import Deal-PBS PAA1\MOS-DealPbsPAA1.Outputs[OLE DB Source Error Output].Columns[dealid]"
                           name="dealid" />
+                        <outputColumn
+                          refId="Package\Deal Imports\Import Deal-PBS PAA1\MOS-DealPbsPAA1.Outputs[OLE DB Source Error Output].Columns[entity_status]"
+                          dataType="wstr"
+                          length="30"
+                          lineageId="Package\Deal Imports\Import Deal-PBS PAA1\MOS-DealPbsPAA1.Outputs[OLE DB Source Error Output].Columns[entity_status]"
+                          name="entity_status" />
                         <outputColumn
                           refId="Package\Deal Imports\Import Deal-PBS PAA1\MOS-DealPbsPAA1.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
                           dataType="i4"
@@ -16383,6 +16622,13 @@ join [RightsLineETL].[dbo].[Apr23_Deals] Apr23 on Apr23.DEA_ID = substring(xref.
                           cachedName="dr_standard"
                           externalMetadataColumnId="Package\Deal Imports\Import Deal-PBS PAA1\RL-DealPBSPAA1.Inputs[OLE DB Destination Input].ExternalColumns[standard_terms_conditions]"
                           lineageId="Package\Deal Imports\Import Deal-PBS PAA1\Derived Column.Outputs[Derived Column Output].Columns[dr_standard]" />
+                        <inputColumn
+                          refId="Package\Deal Imports\Import Deal-PBS PAA1\RL-DealPBSPAA1.Inputs[OLE DB Destination Input].Columns[entity_status]"
+                          cachedDataType="wstr"
+                          cachedLength="30"
+                          cachedName="entity_status"
+                          externalMetadataColumnId="Package\Deal Imports\Import Deal-PBS PAA1\RL-DealPBSPAA1.Inputs[OLE DB Destination Input].ExternalColumns[entity_status]"
+                          lineageId="Package\Deal Imports\Import Deal-PBS PAA1\Sort.Outputs[Sort Output].Columns[entity_status]" />
                       </inputColumns>
                       <externalMetadataColumns
                         isUsed="True">
@@ -16449,6 +16695,11 @@ join [RightsLineETL].[dbo].[Apr23_Deals] Apr23 on Apr23.DEA_ID = substring(xref.
                           dataType="wstr"
                           length="100"
                           name="standard_terms_conditions" />
+                        <externalMetadataColumn
+                          refId="Package\Deal Imports\Import Deal-PBS PAA1\RL-DealPBSPAA1.Inputs[OLE DB Destination Input].ExternalColumns[entity_status]"
+                          dataType="wstr"
+                          length="100"
+                          name="entity_status" />
                       </externalMetadataColumns>
                     </input>
                   </inputs>
@@ -16703,6 +16954,23 @@ join [RightsLineETL].[dbo].[Apr23_Deals] Apr23 on Apr23.DEA_ID = substring(xref.
                               name="NewSortKeyPosition">1</property>
                           </properties>
                         </inputColumn>
+                        <inputColumn
+                          refId="Package\Deal Imports\Import Deal-PBS PAA1\Sort.Inputs[Sort Input].Columns[entity_status]"
+                          cachedDataType="wstr"
+                          cachedLength="30"
+                          cachedName="entity_status"
+                          lineageId="Package\Deal Imports\Import Deal-PBS PAA1\MOS-DealPbsPAA1.Outputs[OLE DB Source Output].Columns[entity_status]">
+                          <properties>
+                            <property
+                              dataType="System.Int32"
+                              description="Specifies the comparison options for character data."
+                              name="NewComparisonFlags">0</property>
+                            <property
+                              dataType="System.Int32"
+                              description="Specifies the sort order of the column."
+                              name="NewSortKeyPosition">0</property>
+                          </properties>
+                        </inputColumn>
                       </inputColumns>
                       <externalMetadataColumns />
                     </input>
@@ -16879,6 +17147,20 @@ join [RightsLineETL].[dbo].[Apr23_Deals] Apr23 on Apr23.DEA_ID = substring(xref.
                               dataType="System.Int32"
                               description="Specifies the lineage identifier of the input column that is associated with this output column."
                               name="SortColumnId">#{Package\Deal Imports\Import Deal-PBS PAA1\MOS-DealPbsPAA1.Outputs[OLE DB Source Output].Columns[dealid]}</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Deal Imports\Import Deal-PBS PAA1\Sort.Outputs[Sort Output].Columns[entity_status]"
+                          dataType="wstr"
+                          length="30"
+                          lineageId="Package\Deal Imports\Import Deal-PBS PAA1\Sort.Outputs[Sort Output].Columns[entity_status]"
+                          name="entity_status">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Specifies the lineage identifier of the input column that is associated with this output column."
+                              name="SortColumnId">#{Package\Deal Imports\Import Deal-PBS PAA1\MOS-DealPbsPAA1.Outputs[OLE DB Source Output].Columns[entity_status]}</property>
                           </properties>
                         </outputColumn>
                       </outputColumns>
@@ -17099,6 +17381,39 @@ join [RightsLineETL].[dbo].[Apr23_Deals] Apr23 on Apr23.DEA_ID = substring(xref.
       ,[financial_notes]
       ,[total_budget]
       ,[cpb_funding]
+      ,cast([RevBacktoCPB] as nvarchar) as  [RevBackToCPB]
+      ,[RightsAndRestrictionsNotes]
+      ,cast([PBSCanSecureUnderWriting] as nvarchar) as [PBSCanSecureUnderWriting]
+      ,[underwriting_notes]
+     ,[DealProdAcQ].[dea_id]
+     ,[dealid]
+	 ,case pbsds.PBSDS_LABEL
+		when 'approved' then cast('Complete' as nvarchar)
+		when 'in revision' then cast('In Revision' as nvarchar)
+		when 'in progress' then cast('Rights Pending' as nvarchar)
+		when 'submitted' then cast('Rights Pending' as nvarchar)
+		else cast('Rights Pending' as nvarchar)
+		 
+	 end as entity_status
+  FROM [TrafficData].[PBS].[DealProdAcQ]
+  join [RightsLineETL].[dbo].[Apr23_Deals] Apr23 on Apr23.dea_id = [DealProdAcQ].dea_id
+  left join [TrafficData].[BV].[DEAL] ds on ds.DEA_ID = [DealProdAcQ].dea_id
+  left JOIN trafficdata.BV.PBSDEALSTATUS pbsds ON pbsds.PBSDS_ID = ds.DEA_PBSDS_ID
+
+
+/* Original SQL
+SELECT 
+	
+       [Title]
+      ,[AlliantID]
+      ,[Contract_Effective_Date]
+      ,[Contract_Execution_date]
+      ,[License_Term_end]
+      ,[Programming_service]
+      ,[total_pbs_fees]
+      ,[financial_notes]
+      ,[total_budget]
+      ,[cpb_funding]
       ,case
 			when cast([RevBacktoCPB] as nvarchar) = 'NO' then cast('2' as nvarchar)
 			when cast([RevBacktoCPB] as nvarchar) = 'YES' then cast('1' as nvarchar)
@@ -17115,7 +17430,8 @@ join [RightsLineETL].[dbo].[Apr23_Deals] Apr23 on Apr23.DEA_ID = substring(xref.
      ,[DealProdAcQ].[dea_id]
      ,[dealid]
   FROM [TrafficData].[PBS].[DealProdAcQ]
-  join [RightsLineETL].[dbo].[Apr23_Deals] Apr23 on Apr23.dea_id = [DealProdAcQ].dea_id</property>
+  join [RightsLineETL].[dbo].[Apr23_Deals] Apr23 on Apr23.dea_id = [DealProdAcQ].dea_id
+*/</property>
                     <property
                       dataType="System.String"
                       description="The variable that contains the SQL command to be executed."
@@ -17308,6 +17624,16 @@ join [RightsLineETL].[dbo].[Apr23_Deals] Apr23 on Apr23.DEA_ID = substring(xref.
                           lineageId="Package\Deal Imports\Import Deal-ProdAcq\MOS-DealProdACQ.Outputs[OLE DB Source Output].Columns[RevBackToCPB]"
                           name="RevBackToCPB"
                           truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Deal Imports\Import Deal-ProdAcq\MOS-DealProdACQ.Outputs[OLE DB Source Output].Columns[entity_status]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Deal Imports\Import Deal-ProdAcq\MOS-DealProdACQ.Outputs[OLE DB Source Output].ExternalColumns[entity_status]"
+                          length="30"
+                          lineageId="Package\Deal Imports\Import Deal-ProdAcq\MOS-DealProdACQ.Outputs[OLE DB Source Output].Columns[entity_status]"
+                          name="entity_status"
+                          truncationRowDisposition="FailComponent" />
                       </outputColumns>
                       <externalMetadataColumns
                         isUsed="True">
@@ -17388,6 +17714,11 @@ join [RightsLineETL].[dbo].[Apr23_Deals] Apr23 on Apr23.DEA_ID = substring(xref.
                           dataType="wstr"
                           length="30"
                           name="RevBackToCPB" />
+                        <externalMetadataColumn
+                          refId="Package\Deal Imports\Import Deal-ProdAcq\MOS-DealProdACQ.Outputs[OLE DB Source Output].ExternalColumns[entity_status]"
+                          dataType="wstr"
+                          length="30"
+                          name="entity_status" />
                       </externalMetadataColumns>
                     </output>
                     <output
@@ -17488,6 +17819,12 @@ join [RightsLineETL].[dbo].[Apr23_Deals] Apr23 on Apr23.DEA_ID = substring(xref.
                           length="35"
                           lineageId="Package\Deal Imports\Import Deal-ProdAcq\MOS-DealProdACQ.Outputs[OLE DB Source Error Output].Columns[dealid]"
                           name="dealid" />
+                        <outputColumn
+                          refId="Package\Deal Imports\Import Deal-ProdAcq\MOS-DealProdACQ.Outputs[OLE DB Source Error Output].Columns[entity_status]"
+                          dataType="wstr"
+                          length="30"
+                          lineageId="Package\Deal Imports\Import Deal-ProdAcq\MOS-DealProdACQ.Outputs[OLE DB Source Error Output].Columns[entity_status]"
+                          name="entity_status" />
                         <outputColumn
                           refId="Package\Deal Imports\Import Deal-ProdAcq\MOS-DealProdACQ.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
                           dataType="i4"
@@ -17680,6 +18017,13 @@ join [RightsLineETL].[dbo].[Apr23_Deals] Apr23 on Apr23.DEA_ID = substring(xref.
                           cachedName="Title"
                           externalMetadataColumnId="Package\Deal Imports\Import Deal-ProdAcq\RL-DealProdACQ.Inputs[OLE DB Destination Input].ExternalColumns[entity_title]"
                           lineageId="Package\Deal Imports\Import Deal-ProdAcq\Sort 1.Outputs[Sort Output].Columns[Title]" />
+                        <inputColumn
+                          refId="Package\Deal Imports\Import Deal-ProdAcq\RL-DealProdACQ.Inputs[OLE DB Destination Input].Columns[entity_status]"
+                          cachedDataType="wstr"
+                          cachedLength="30"
+                          cachedName="entity_status"
+                          externalMetadataColumnId="Package\Deal Imports\Import Deal-ProdAcq\RL-DealProdACQ.Inputs[OLE DB Destination Input].ExternalColumns[entity_status]"
+                          lineageId="Package\Deal Imports\Import Deal-ProdAcq\Sort 1.Outputs[Sort Output].Columns[entity_status]" />
                       </inputColumns>
                       <externalMetadataColumns
                         isUsed="True">
@@ -17761,6 +18105,11 @@ join [RightsLineETL].[dbo].[Apr23_Deals] Apr23 on Apr23.DEA_ID = substring(xref.
                           dataType="wstr"
                           length="1000"
                           name="entity_title" />
+                        <externalMetadataColumn
+                          refId="Package\Deal Imports\Import Deal-ProdAcq\RL-DealProdACQ.Inputs[OLE DB Destination Input].ExternalColumns[entity_status]"
+                          dataType="wstr"
+                          length="100"
+                          name="entity_status" />
                       </externalMetadataColumns>
                     </input>
                   </inputs>
@@ -18081,6 +18430,23 @@ join [RightsLineETL].[dbo].[Apr23_Deals] Apr23 on Apr23.DEA_ID = substring(xref.
                               name="NewSortKeyPosition">0</property>
                           </properties>
                         </inputColumn>
+                        <inputColumn
+                          refId="Package\Deal Imports\Import Deal-ProdAcq\Sort 1.Inputs[Sort Input].Columns[entity_status]"
+                          cachedDataType="wstr"
+                          cachedLength="30"
+                          cachedName="entity_status"
+                          lineageId="Package\Deal Imports\Import Deal-ProdAcq\MOS-DealProdACQ.Outputs[OLE DB Source Output].Columns[entity_status]">
+                          <properties>
+                            <property
+                              dataType="System.Int32"
+                              description="Specifies the comparison options for character data."
+                              name="NewComparisonFlags">0</property>
+                            <property
+                              dataType="System.Int32"
+                              description="Specifies the sort order of the column."
+                              name="NewSortKeyPosition">0</property>
+                          </properties>
+                        </inputColumn>
                       </inputColumns>
                       <externalMetadataColumns />
                     </input>
@@ -18311,6 +18677,20 @@ join [RightsLineETL].[dbo].[Apr23_Deals] Apr23 on Apr23.DEA_ID = substring(xref.
                               dataType="System.Int32"
                               description="Specifies the lineage identifier of the input column that is associated with this output column."
                               name="SortColumnId">#{Package\Deal Imports\Import Deal-ProdAcq\MOS-DealProdACQ.Outputs[OLE DB Source Output].Columns[RevBackToCPB]}</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Deal Imports\Import Deal-ProdAcq\Sort 1.Outputs[Sort Output].Columns[entity_status]"
+                          dataType="wstr"
+                          length="30"
+                          lineageId="Package\Deal Imports\Import Deal-ProdAcq\Sort 1.Outputs[Sort Output].Columns[entity_status]"
+                          name="entity_status">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Specifies the lineage identifier of the input column that is associated with this output column."
+                              name="SortColumnId">#{Package\Deal Imports\Import Deal-ProdAcq\MOS-DealProdACQ.Outputs[OLE DB Source Output].Columns[entity_status]}</property>
                           </properties>
                         </outputColumn>
                       </outputColumns>
@@ -22333,26 +22713,26 @@ where [Usage.EffectiveTerm.Use] = 'Blackouts'</property>
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="147.916666666667,46.2857142857142"
+              EndConnector="147.916666666667,46.285714285715"
               Start="0,0"
-              End="147.916666666667,38.7857142857142">
+              End="147.916666666667,38.785714285715">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,11.8448566610455" />
+                    End="0,11.8448566610458" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,11.8448566610455"
-                    Point2="0,15.8448566610455"
-                    Point3="4,15.8448566610455" />
+                    Point1="0,11.8448566610458"
+                    Point2="0,15.8448566610458"
+                    Point3="4,15.8448566610458" />
                   <mssgle:LineSegment
-                    End="143.916666666667,15.8448566610455" />
+                    End="143.916666666667,15.8448566610458" />
                   <mssgle:CubicBezierSegment
-                    Point1="143.916666666667,15.8448566610455"
-                    Point2="147.916666666667,15.8448566610455"
-                    Point3="147.916666666667,19.8448566610455" />
+                    Point1="143.916666666667,15.8448566610458"
+                    Point2="147.916666666667,15.8448566610458"
+                    Point3="147.916666666667,19.8448566610458" />
                   <mssgle:LineSegment
-                    End="147.916666666667,38.7857142857142" />
+                    End="147.916666666667,38.785714285715" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -23479,19 +23859,19 @@ where [Usage.EffectiveTerm.Use] = 'Blackouts'</property>
     design-time-name="Package\Contact\Import Company">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="151,42"
           Id="Package\Contact\Import Company\MOS-Company"
           TopLeft="361,66" />
         <NodeLayout
-          Size="100,42"
-          Id="Package\Contact\Import Company\Sort"
-          TopLeft="393,134" />
-        <NodeLayout
           Size="156,42"
           Id="Package\Contact\Import Company\Derived Column"
           TopLeft="372,196" />
+        <NodeLayout
+          Size="100,42"
+          Id="Package\Contact\Import Company\Sort"
+          TopLeft="393,134" />
         <NodeLayout
           Size="172,42"
           Id="Package\Contact\Import Company\RL Dest - Company"
@@ -23521,7 +23901,9 @@ where [Usage.EffectiveTerm.Use] = 'Blackouts'</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -23543,7 +23925,9 @@ where [Usage.EffectiveTerm.Use] = 'Blackouts'</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -23577,7 +23961,9 @@ where [Usage.EffectiveTerm.Use] = 'Blackouts'</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -23864,19 +24250,6 @@ where [Usage.EffectiveTerm.Use] = 'Blackouts'</property>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Deal Imports\Import Deal-PBS PAA1\RL-DealPBSPAA1">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
     design-time-name="Package\Deal Imports\Import Deal-PBS PAA1\MOS-DealPbsPAA1">
     <Properties>
       <Property>
@@ -23886,6 +24259,19 @@ where [Usage.EffectiveTerm.Use] = 'Blackouts'</property>
         <Name>TableInfoObjectType</Name>
         <Value
           type="q2:string">View</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Deal Imports\Import Deal-PBS PAA1\RL-DealPBSPAA1">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
@@ -24045,7 +24431,7 @@ where [Usage.EffectiveTerm.Use] = 'Blackouts'</property>
     design-time-name="Package\Rights Imports\AlliantRightsIn">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="156,42"
           Id="Package\Rights Imports\AlliantRightsIn\Derived Column"
@@ -24077,7 +24463,9 @@ where [Usage.EffectiveTerm.Use] = 'Blackouts'</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -24111,7 +24499,9 @@ where [Usage.EffectiveTerm.Use] = 'Blackouts'</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -24142,7 +24532,7 @@ where [Usage.EffectiveTerm.Use] = 'Blackouts'</property>
     design-time-name="Package\Rights Imports\Import Rights IN Bv-MOS">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="160,42"
           Id="Package\Rights Imports\Import Rights IN Bv-MOS\MOS-RightsINBV"
@@ -24178,7 +24568,9 @@ where [Usage.EffectiveTerm.Use] = 'Blackouts'</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -24206,7 +24598,9 @@ where [Usage.EffectiveTerm.Use] = 'Blackouts'</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -24228,7 +24622,9 @@ where [Usage.EffectiveTerm.Use] = 'Blackouts'</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -24344,7 +24740,7 @@ where [Usage.EffectiveTerm.Use] = 'Blackouts'</property>
     design-time-name="Package\Rights Imports\Import RIghts-Holdback">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="150,42"
           Id="Package\Rights Imports\Import RIghts-Holdback\MOS-HoldBack"
@@ -24376,7 +24772,9 @@ where [Usage.EffectiveTerm.Use] = 'Blackouts'</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -24398,7 +24796,9 @@ where [Usage.EffectiveTerm.Use] = 'Blackouts'</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>

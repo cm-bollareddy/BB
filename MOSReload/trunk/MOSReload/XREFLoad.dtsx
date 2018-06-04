@@ -13,8 +13,8 @@
   DTS:ObjectName="Package"
   DTS:PackageType="5"
   DTS:ProtectionLevel="2"
-  DTS:VersionBuild="24"
-  DTS:VersionGUID="{914B211F-AEF6-4625-88E9-FEED4259D8B0}">
+  DTS:VersionBuild="28"
+  DTS:VersionGUID="{DB21A152-D089-40FA-8BAF-41D80BE31544}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">6</DTS:Property>
   <DTS:ConnectionManagers>
@@ -38,12 +38,12 @@
           DTS:ConnectionString="Data Source=db19-uat;User ID=;Initial Catalog=RightsLineETL-DAGI;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;">
           <EncryptedData
             Type="http://www.w3.org/2001/04/xmlenc#Element"
-            Salt="oWig6M2QRw=="
-            IV="vzTs12JXbik=" xmlns="http://www.w3.org/2001/04/xmlenc#">
+            Salt="mRgLN83hHw=="
+            IV="207HaqrifhI=" xmlns="http://www.w3.org/2001/04/xmlenc#">
             <EncryptionMethod
               Algorithm="http://www.w3.org/2001/04/xmlenc#tripledes-cbc" />
             <CipherData>
-              <CipherValue>vzTs12JXbikCbxrhoi+m0wd1UYYTuUq6BxHnF+UjMKq/dE1/oYHVD6pWM1AWx8n6C0dAEYdmH1x2pmwQLxMuVs3x4NKmui7ovEuHOtvAOGNDdIEqiHSguFsOPls+9k73o4oLb3skwqNA3E70KL4Dn1PucsDgFyh2</CipherValue>
+              <CipherValue>207HaqrifhJeKwg5AIOMCDH+1Qt/2a6KTQoijkLqRcH78CbVgvGgmKk7aBq1cyPXuNpsk4ydt8rqDdbeDJmG1FQcHoWboNKfl1PrNk+664patkcW9n/19gH1TmH3sqAdo1t2/LSjNo1d83WQ6kQzyKbxOXR51yBy</CipherValue>
             </CipherData>
           </EncryptedData>
         </DTS:ConnectionManager>
@@ -59,12 +59,12 @@
           DTS:ConnectionString="Data Source=db19-uat;User ID=;Initial Catalog=RightsLineETL-DAGI;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;">
           <EncryptedData
             Type="http://www.w3.org/2001/04/xmlenc#Element"
-            Salt="DfEMhK22ig=="
-            IV="hGRwgVPcR2A=" xmlns="http://www.w3.org/2001/04/xmlenc#">
+            Salt="K45XfCddUw=="
+            IV="ULuHhEx2cFA=" xmlns="http://www.w3.org/2001/04/xmlenc#">
             <EncryptionMethod
               Algorithm="http://www.w3.org/2001/04/xmlenc#tripledes-cbc" />
             <CipherData>
-              <CipherValue>hGRwgVPcR2Bchr2hp7TMSA7T98j/cGk41zbRCzHxFHXvl+DO3v9wD1Bn37oATiVm2iUc2G3gAde6x4OeHH2y+iycqq6cAQR8lOhbEPmbOTmhtZWZke7aoFYxVKFE+25CkJOgfcHYs+U2aTT/In/vXvY0i1tcjy2F</CipherValue>
+              <CipherValue>ULuHhEx2cFAoF0udzXH2c9gL87BevnG4CpnclVqLAfF6L0pDu4rPhsCMMyAcuOFQzfv8n2X5MlqMAeRCWBuF+/ylBEsVTl5yLxqDP3FVbj+FT00cjz8nu8ILN2kXfgOI+rd8PRbSR1U5jrzFZhhSYTAvA1RmpOP6</CipherValue>
             </CipherData>
           </EncryptedData>
         </DTS:ConnectionManager>
@@ -80,12 +80,12 @@
           DTS:ConnectionString="Data Source=db19-uat;User ID=;Initial Catalog=TrafficData;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;">
           <EncryptedData
             Type="http://www.w3.org/2001/04/xmlenc#Element"
-            Salt="DpJCJttw5g=="
-            IV="gPDkk3NyRCw=" xmlns="http://www.w3.org/2001/04/xmlenc#">
+            Salt="4CHuQYH3oQ=="
+            IV="o5oaGfPPEZw=" xmlns="http://www.w3.org/2001/04/xmlenc#">
             <EncryptionMethod
               Algorithm="http://www.w3.org/2001/04/xmlenc#tripledes-cbc" />
             <CipherData>
-              <CipherValue>gPDkk3NyRCz+SpSfE+6V9fb9hPDTKoVUb6jb8DeoK/8uYMyuQMpOYU++sFrYWbhlrDg2zVTWmwGRR9jaLTnceKnY4PAHImA2zb8SZH7f+TgYmvqFeLYjwUJZEGXQVGWM2Pb8rCums6rNqRNEtEB/0L6Wh2Hg9GAN</CipherValue>
+              <CipherValue>o5oaGfPPEZybSJm+Es6eHLemWThbsS5qwZd3P+8jb+cAtM+LrWHUb7nO92YjnR8NOxBRQl0eEwXAbHsVC7ypQtzUaqpZe+TIGQ3o3BqS7bDbnIyQL2OlwCBLCbpDxXP1cZwUNdoCw6ZmmcYsISvrLg0tMYwCFiyl</CipherValue>
             </CipherData>
           </EncryptedData>
         </DTS:ConnectionManager>
@@ -101,12 +101,12 @@
           DTS:ConnectionString="Data Source=db19-uat;User ID=;Initial Catalog=TrafficData;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;">
           <EncryptedData
             Type="http://www.w3.org/2001/04/xmlenc#Element"
-            Salt="Qm/lIVX4kA=="
-            IV="hI6EQM6V1X4=" xmlns="http://www.w3.org/2001/04/xmlenc#">
+            Salt="2y6FobYQCg=="
+            IV="PBvmP5huGjs=" xmlns="http://www.w3.org/2001/04/xmlenc#">
             <EncryptionMethod
               Algorithm="http://www.w3.org/2001/04/xmlenc#tripledes-cbc" />
             <CipherData>
-              <CipherValue>hI6EQM6V1X7SBBJ4LocTCZa6400TZS+7aChpiZBwSvbtaGytFLzkGw5SzVl6rgNugYy/m/vh+tKCIPEvFfl/xNISmTCar4oS4jpgY2uX6zFqbkNmjwU6bJhgmsrDBBran7sKS5tGQrWe1ZNsxKwAj8H00SwXlQdF</CipherValue>
+              <CipherValue>PBvmP5huGjvv4ygWV9ocbY4lLT7B/Yug8p5ojwkI3ctFvSmgiCRtcDkPXMwzhcG95XLimxmIaVvop6XuLXgpN6zDdstq57dnFND4wK3FQH7fhCZOLHtYY6YwjCrEwCBmxwuPbiXmtwN4RKvcDmbU/mA7+t4eJ2Mr</CipherValue>
             </CipherData>
           </EncryptedData>
         </DTS:ConnectionManager>
@@ -415,9 +415,18 @@
                   UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">SELECT  distinct
       REVERSE(SUBSTRING(REVERSE([Usage.UID]),0,CHARINDEX(':',REVERSE([Usage.UID])))) as ChildID
 	  ,REVERSE(SUBSTRING(REVERSE([Usage.ParentID]),0,CHARINDEX(':',REVERSE([Usage.ParentID])))) as ParentID
+  FROM [PBS].[vwMOSUsage]
+  join [rightslineETL].[dbo].Apr23_deals Apr23 on  Apr23.OfferUID = substring(vwMOSUsage.[Usage.ParentID],len('parentid:org:pbs.org:')+1,len(vwMOSUsage.[Usage.ParentID]))
+  where [Usage.EffectiveTerm.Use] = 'BLACKOUTS'
+
+/* Original SQL
+SELECT  distinct
+      REVERSE(SUBSTRING(REVERSE([Usage.UID]),0,CHARINDEX(':',REVERSE([Usage.UID])))) as ChildID
+	  ,REVERSE(SUBSTRING(REVERSE([Usage.ParentID]),0,CHARINDEX(':',REVERSE([Usage.ParentID])))) as ParentID
 
   FROM [PBS].[vwMOSUsage]
-  where [Usage.EffectiveTerm.Use] = 'BLACKOUTS'</property>
+  where [Usage.EffectiveTerm.Use] = 'BLACKOUTS'
+*/</property>
                 <property
                   dataType="System.String"
                   description="The variable that contains the SQL command to be executed."
@@ -711,10 +720,20 @@
                   description="The SQL command to be executed."
                   name="SqlCommand"
                   UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">SELECT distinct
+    Replace(REVERSE(SUBSTRING(REVERSE([Offer.Entry.UID]),0,CHARINDEX(':',REVERSE([Offer.Entry.UID])))),'Episode','') as ChildID
+	,[Offer.UID] as ParentID
+FROM [PBS].[vwMOSOffer]
+Join [RightsLineETL].[dbo].Apr23_Episodes feb28 on  feb28.ASS_ID = [PBS].[vwMOSOffer].ass_id
+where [Offer.Entry.UID] like '%EPISODE%'
+
+
+/* Original SQL
+SELECT distinct
       Replace(REVERSE(SUBSTRING(REVERSE([Offer.Entry.UID]),0,CHARINDEX(':',REVERSE([Offer.Entry.UID])))),'Episode','') as ChildID
 	  ,[Offer.UID] as ParentID
   FROM [PBS].[vwMOSOffer]
-  where [Offer.Entry.UID] like '%EPISODE%'</property>
+  where [Offer.Entry.UID] like '%EPISODE%'
+*/</property>
                 <property
                   dataType="System.String"
                   description="The variable that contains the SQL command to be executed."
@@ -1102,12 +1121,22 @@
                   dataType="System.String"
                   description="The SQL command to be executed."
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">SELECT distinct
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">SELECT  distinct
+      REVERSE(SUBSTRING(REVERSE([Usage.UID]),0,CHARINDEX(':',REVERSE([Usage.UID])))) as ChildID
+	  ,REVERSE(SUBSTRING(REVERSE([Usage.ParentID]),0,CHARINDEX(':',REVERSE([Usage.ParentID])))) as ParentID
+  FROM [PBS].[vwMOSUsage]
+  join [rightslineETL].[dbo].Apr23_deals Apr23 on  Apr23.OfferUID = substring(vwMOSUsage.[Usage.ParentID],len('parentid:org:pbs.org:')+1,len(vwMOSUsage.[Usage.ParentID]))
+  where [Usage.EffectiveTerm.Use] = 'HOLDBACK'
+
+
+/* Original SQL
+SELECT distinct
       REVERSE(SUBSTRING(REVERSE([Usage.UID]),0,CHARINDEX(':',REVERSE([Usage.UID])))) as ChildID
 	  ,REVERSE(SUBSTRING(REVERSE([Usage.ParentID]),0,CHARINDEX(':',REVERSE([Usage.ParentID])))) as ParentID
 
   FROM [PBS].[vwMOSUsage]
-  where [Usage.EffectiveTerm.Use] = 'HOLDBACK'</property>
+  where [Usage.EffectiveTerm.Use] = 'HOLDBACK'
+*/</property>
                 <property
                   dataType="System.String"
                   description="The variable that contains the SQL command to be executed."
@@ -1506,13 +1535,23 @@
                   dataType="System.String"
                   description="The SQL command to be executed."
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">SELECT distinct
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">SELECT  distinct
+      REVERSE(SUBSTRING(REVERSE([Usage.UID]),0,CHARINDEX(':',REVERSE([Usage.UID])))) as ChildID
+	  ,REVERSE(SUBSTRING(REVERSE([Usage.ParentID]),0,CHARINDEX(':',REVERSE([Usage.ParentID])))) as ParentID
+  FROM [PBS].[vwMOSUsage]
+  join [rightslineETL].[dbo].Apr23_deals Apr23 on  Apr23.OfferUID = substring(vwMOSUsage.[Usage.ParentID],len('parentid:org:pbs.org:')+1,len(vwMOSUsage.[Usage.ParentID]))
+  where [Usage.EffectiveTerm.Use] = 'LINEAR'
+  and [Usage.UID] like '%TV%'
+
+/* Original SQL
+SELECT distinct
       REVERSE(SUBSTRING(REVERSE([Usage.UID]),0,CHARINDEX(':',REVERSE([Usage.UID])))) as ChildID
 	  ,REVERSE(SUBSTRING(REVERSE([Usage.ParentID]),0,CHARINDEX(':',REVERSE([Usage.ParentID])))) as ParentID
 
   FROM [PBS].[vwMOSUsage]
   where [Usage.EffectiveTerm.Use] = 'LINEAR'
-  and [Usage.UID] like '%TV%'</property>
+  and [Usage.UID] like '%TV%'
+*/</property>
                 <property
                   dataType="System.String"
                   description="The variable that contains the SQL command to be executed."
@@ -1809,7 +1848,16 @@
       REVERSE(SUBSTRING(REVERSE([Offer.Entry.UID]),0,CHARINDEX(':',REVERSE([Offer.Entry.UID])))) as ChildID
 	  ,[Offer.UID] as ParentID
   FROM [PBS].[vwMOSOffer]
-  where [Offer.Entry.UID] like '%SEASON%'</property>
+Join [RightsLineETL].[dbo].Apr23_Episodes feb28 on  feb28.ASS_ID = [PBS].[vwMOSOffer].ass_id
+  where [Offer.Entry.UID] like '%SEASON%'
+
+/* Original SQL
+SELECT distinct
+      REVERSE(SUBSTRING(REVERSE([Offer.Entry.UID]),0,CHARINDEX(':',REVERSE([Offer.Entry.UID])))) as ChildID
+	  ,[Offer.UID] as ParentID
+  FROM [PBS].[vwMOSOffer]
+  where [Offer.Entry.UID] like '%SEASON%'
+*/</property>
                 <property
                   dataType="System.String"
                   description="The variable that contains the SQL command to be executed."
@@ -2384,12 +2432,22 @@
                   dataType="System.String"
                   description="The SQL command to be executed."
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">SELECT distinct [ass_id]
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">SELECT distinct [PBS].[vwMOSEpisode].[ass_id]
+    ,REVERSE(SUBSTRING(REVERSE([Episode.UID]),0,CHARINDEX(':',REVERSE([Episode.UID])))) as ChildID
+    ,REVERSE(SUBSTRING(REVERSE([Episode.ParentID]),0,CHARINDEX(':',REVERSE([Episode.ParentID])))) as ParentID
+     
+FROM [PBS].[vwMOSEpisode]
+Join [RightsLineETL].[dbo].Apr23_Episodes feb28 on  feb28.ASS_ID = vwMOSEpisode.Ass_id
+where [Episode.ParentID] like '%SEASON%'
+
+/* Original SQL
+SELECT distinct [ass_id]
       ,REVERSE(SUBSTRING(REVERSE([Episode.UID]),0,CHARINDEX(':',REVERSE([Episode.UID])))) as ChildID
       ,REVERSE(SUBSTRING(REVERSE([Episode.ParentID]),0,CHARINDEX(':',REVERSE([Episode.ParentID])))) as ParentID
      
   FROM [PBS].[vwMOSEpisode]
-  where [Episode.ParentID] like '%SEASON%'</property>
+  where [Episode.ParentID] like '%SEASON%'
+*/</property>
                 <property
                   dataType="System.String"
                   description="The variable that contains the SQL command to be executed."
@@ -2699,13 +2757,24 @@
                   dataType="System.String"
                   description="The SQL command to be executed."
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">SELECT distinct [ass_id]
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">SELECT distinct [PBS].[vwMOSEpisode].[ass_id]
+    ,REVERSE(SUBSTRING(REVERSE([Episode.UID]),0,CHARINDEX(':',REVERSE([Episode.UID])))) as ChildID
+    ,REVERSE(SUBSTRING(REVERSE([Episode.ParentID]),0,CHARINDEX(':',REVERSE([Episode.ParentID])))) as ParentID
+     
+FROM [PBS].[vwMOSEpisode]
+Join [RightsLineETL].[dbo].Apr23_Episodes feb28 on  feb28.ASS_ID = vwMOSEpisode.Ass_id
+where [Episode.ParentID] like '%SERIES%' 
+and [Episode.ParentID] not like '%SEASON%'
+
+/* Original SQL
+SELECT distinct [ass_id]
       ,REVERSE(SUBSTRING(REVERSE([Episode.UID]),0,CHARINDEX(':',REVERSE([Episode.UID])))) as ChildID
       ,REVERSE(SUBSTRING(REVERSE([Episode.ParentID]),0,CHARINDEX(':',REVERSE([Episode.ParentID])))) as ParentID
      
   FROM [PBS].[vwMOSEpisode]
   where [Episode.ParentID] like '%SERIES%' 
-  and [Episode.ParentID] not like '%SEASON%'</property>
+  and [Episode.ParentID] not like '%SEASON%'
+*/</property>
                 <property
                   dataType="System.String"
                   description="The variable that contains the SQL command to be executed."
@@ -3006,9 +3075,17 @@
                   description="The SQL command to be executed."
                   name="SqlCommand"
                   UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">SELECT distinct
+	REVERSE(SUBSTRING(REVERSE([Season.UID]),0,CHARINDEX(':',REVERSE([Season.UID])))) as ChildID
+    ,REVERSE(SUBSTRING(REVERSE([Season.ParentID]),0,CHARINDEX(':',REVERSE([Season.ParentID])))) as ParentID
+FROM [PBS].[vwMOSSeason]
+Join [RightsLineETL].[dbo].Apr23_Episodes feb28 on  feb28.ASS_ID = [PBS].[vwMOSSeason].InternalPBSID
+
+/* Original SQL
+SELECT distinct
 	  REVERSE(SUBSTRING(REVERSE([Season.UID]),0,CHARINDEX(':',REVERSE([Season.UID])))) as ChildID
       ,REVERSE(SUBSTRING(REVERSE([Season.ParentID]),0,CHARINDEX(':',REVERSE([Season.ParentID])))) as ParentID
-  FROM [PBS].[vwMOSSeason]</property>
+  FROM [PBS].[vwMOSSeason]
+*/</property>
                 <property
                   dataType="System.String"
                   description="The variable that contains the SQL command to be executed."
@@ -3530,6 +3607,10 @@
           Id="Package\Load xref_DealToSeason"
           TopLeft="415.777777777778,217.555555555555" />
         <NodeLayout
+          Size="255,42"
+          Id="Package\Load xref_SeasonContainerToSeason"
+          TopLeft="775,385" />
+        <NodeLayout
           Size="213,42"
           Id="Package\Load xref_SeasonToEpisode"
           TopLeft="92.888888888889,125.333333333333" />
@@ -3541,6 +3622,10 @@
           Size="205,42"
           Id="Package\Load xref_SeriesToSeason"
           TopLeft="78.666666666667,325.555555555556" />
+        <NodeLayout
+          Size="250,42"
+          Id="Package\Load xref_SeriesToSeasonContainer"
+          TopLeft="776,286" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
           TopLeft="459.333333333333,78">
@@ -3644,6 +3729,28 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 3]"
+          TopLeft="515.611111111111,78">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,52.666666666667"
+              Start="0,0"
+              End="0,45.166666666667">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,45.166666666667" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 4]"
           TopLeft="516.916666666667,172.666666666667">
           <EdgeLayout.Curve>
@@ -3700,6 +3807,40 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 6]"
+          TopLeft="524.75,78">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="366.19444444445,42.444444444444"
+              Start="0,0"
+              End="366.19444444445,34.944444444444">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,10.5981886459022" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,10.5981886459022"
+                    Point2="0,14.5981886459022"
+                    Point3="4,14.5981886459022" />
+                  <mssgle:LineSegment
+                    End="362.19444444445,14.5981886459022" />
+                  <mssgle:CubicBezierSegment
+                    Point1="362.19444444445,14.5981886459022"
+                    Point2="366.19444444445,14.5981886459022"
+                    Point3="366.19444444445,18.5981886459022" />
+                  <mssgle:LineSegment
+                    End="366.19444444445,34.944444444444" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 7]"
           TopLeft="891.611111111115,162.444444444444">
           <EdgeLayout.Curve>
@@ -3721,10 +3862,6 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="250,42"
-          Id="Package\Load xref_SeriesToSeasonContainer"
-          TopLeft="776,286" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 8]"
           TopLeft="892.27777777778,239.888888888889">
@@ -3759,10 +3896,6 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="255,42"
-          Id="Package\Load xref_SeasonContainerToSeason"
-          TopLeft="775,385" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 9]"
           TopLeft="901.75,328">
@@ -3785,62 +3918,6 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 3]"
-          TopLeft="515.611111111111,78">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,52.666666666667"
-              Start="0,0"
-              End="0,45.166666666667">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,45.166666666667" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 6]"
-          TopLeft="524.75,78">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="366.19444444445,42.444444444444"
-              Start="0,0"
-              End="366.19444444445,34.944444444444">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,10.5981886459022" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,10.5981886459022"
-                    Point2="0,14.5981886459022"
-                    Point3="4,14.5981886459022" />
-                  <mssgle:LineSegment
-                    End="362.19444444445,14.5981886459022" />
-                  <mssgle:CubicBezierSegment
-                    Point1="362.19444444445,14.5981886459022"
-                    Point2="366.19444444445,14.5981886459022"
-                    Point3="366.19444444445,18.5981886459022" />
-                  <mssgle:LineSegment
-                    End="366.19444444445,34.944444444444" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </Package>
@@ -3848,7 +3925,7 @@
     design-time-name="Package\Load xref_DealToBlackout">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="173,42"
           Id="Package\Load xref_DealToBlackout\OLE DB Destination"
@@ -3880,9 +3957,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -3904,9 +3979,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -3937,7 +4010,7 @@
     design-time-name="Package\Load xref_DealToEpisode">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="152,42"
           Id="Package\Load xref_DealToEpisode\OLE DB Source"
@@ -3965,9 +4038,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -3998,7 +4069,7 @@
     design-time-name="Package\Load xref_DealToHoldback">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="173,42"
           Id="Package\Load xref_DealToHoldback\OLE DB Destination"
@@ -4030,9 +4101,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -4054,9 +4123,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -4087,7 +4154,7 @@
     design-time-name="Package\Load xref_DealToRightsIn">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="173,42"
           Id="Package\Load xref_DealToRightsIn\OLE DB Destination"
@@ -4119,9 +4186,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -4143,9 +4208,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -4176,7 +4239,7 @@
     design-time-name="Package\Load xref_DealToSeason">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="152,42"
           Id="Package\Load xref_DealToSeason\OLE DB Source"
@@ -4204,9 +4267,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -4234,10 +4295,69 @@
     </Properties>
   </PipelineComponentMetadata>
   <TaskHost
+    design-time-name="Package\Load xref_SeasonContainerToSeason">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="173,42"
+          Id="Package\Load xref_SeasonContainerToSeason\OLE DB Destination"
+          TopLeft="129,299" />
+        <NodeLayout
+          Size="152,42"
+          Id="Package\Load xref_SeasonContainerToSeason\OLE DB Source"
+          TopLeft="140,130" />
+        <EdgeLayout
+          Id="Package\Load xref_SeasonContainerToSeason.Paths[OLE DB Source Output]"
+          TopLeft="215.75,172">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,127"
+              Start="0,0"
+              End="0,119.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,119.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load xref_SeasonContainerToSeason\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load xref_SeasonContainerToSeason\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
     design-time-name="Package\Load xref_SeasonToEpisode">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="152,42"
           Id="Package\Load xref_SeasonToEpisode\OLE DB Source"
@@ -4265,9 +4385,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -4298,7 +4416,7 @@
     design-time-name="Package\Load xref_SeriesToEpisode">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="152,42"
           Id="Package\Load xref_SeriesToEpisode\OLE DB Source"
@@ -4326,9 +4444,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -4462,65 +4578,6 @@
         <Name>TableInfoObjectType</Name>
         <Value
           type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <TaskHost
-    design-time-name="Package\Load xref_SeasonContainerToSeason">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="173,42"
-          Id="Package\Load xref_SeasonContainerToSeason\OLE DB Destination"
-          TopLeft="129,299" />
-        <NodeLayout
-          Size="152,42"
-          Id="Package\Load xref_SeasonContainerToSeason\OLE DB Source"
-          TopLeft="140,130" />
-        <EdgeLayout
-          Id="Package\Load xref_SeasonContainerToSeason.Paths[OLE DB Source Output]"
-          TopLeft="215.75,172">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,127"
-              Start="0,0"
-              End="0,119.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,119.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\Load xref_SeasonContainerToSeason\OLE DB Destination">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Load xref_SeasonContainerToSeason\OLE DB Source">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
       </Property>
     </Properties>
   </PipelineComponentMetadata>

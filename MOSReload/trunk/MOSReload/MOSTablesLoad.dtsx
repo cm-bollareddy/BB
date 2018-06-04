@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="MOSTablesLoad"
   DTS:PackageType="5"
-  DTS:VersionBuild="9"
-  DTS:VersionGUID="{5E1F971A-FD55-421D-BA5B-AEBB2068298E}">
+  DTS:VersionBuild="23"
+  DTS:VersionGUID="{0CCE0F48-8492-4298-9779-A3C9888A7C8A}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">6</DTS:Property>
   <DTS:ConnectionManagers>
@@ -27,7 +27,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA74zJac6l2EC8VbVxRM/G5AAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABdXS0gmWDk9+HuPopHZg0mAAAAAASAAACgAAAAEAAAAI2Y0KitZVzTwA3OjqUXMlsYAAAAt4BzvXIKC5go2mRw6NS2Ju+iAHREpEfiFAAAAKxT/Q34DS9Hdjcb97ckPNwmRUTq</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAQU+eAkYgL0mMSBm2DinOpAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAxvxL+O/ii+V7MB6XAdPWOAAAAAASAAACgAAAAEAAAADl3mL0StiMra9INjDVN32UYAAAA0TeC3o2epvL+AiUznvGyj3kiLGOpmL7oFAAAAM+fCyzWLj1HQesJK3aLLzhw03ax</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -42,7 +42,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA74zJac6l2EC8VbVxRM/G5AAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAxJM1CoaS9fwI1q9FhcDdmAAAAAASAAACgAAAAEAAAAANc9kwAbgAlqm3sjSEIYr4YAAAAXmJgqG37T0y1IEj0r8NfFO8rk3M1/HwfFAAAANzkNvnzim08nX3l6C/T6SaJxxNW</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAQU+eAkYgL0mMSBm2DinOpAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADtniVVi6wp/wyDtrT5Jw4gAAAAAASAAACgAAAAEAAAAGRXS21vb3HUW7jcK0mk+iAYAAAA+U+M++x9ppjn/UcbvufG5MZdUdLE21ziFAAAANBdNmHXhsLUJHWbJc6cLQ//PQdr</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -1551,7 +1551,16 @@
                   description="Specifies the SQL statement used by the component to extract data."
                   expressionType="Notify"
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">SELECT distinct 1 as [InternalPBSID]
+      ,[Season.Season Class]
+      ,[Season.Referent Type]
+      ,[Season.UID]
+      ,[Season.ContentIdentifier]
+      ,[Season.Sequence.Number]
+      ,[Season.ReleaseDate]
+      ,[Season.ParentID]
+      ,[Season.Title]
+  FROM [PBS].[vwMOSSeason]</property>
                 <property
                   dataType="System.Int32"
                   description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
@@ -1570,7 +1579,7 @@
                   dataType="System.Int32"
                   description="Specify the mode to retrieve external column information"
                   name="AccessMode"
-                  typeConverter="Microsoft.SqlServer.Dts.Pipeline.DataReaderSourceAdapter+EnumToStringConverter, Microsoft.SqlServer.ADONETSrc, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">0</property>
+                  typeConverter="Microsoft.SqlServer.Dts.Pipeline.DataReaderSourceAdapter+EnumToStringConverter, Microsoft.SqlServer.ADONETSrc, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">2</property>
                 <property
                   dataType="System.String"
                   name="UserComponentTypeName">Microsoft.SqlServer.Dts.Pipeline.DataReaderSourceAdapter, Microsoft.SqlServer.ADONETSrc, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91</property>
@@ -2677,19 +2686,19 @@
                       externalMetadataColumnId="Package\Load MOSSeries\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Series.SeriesClass]"
                       lineageId="Package\Load MOSSeries\ADO NET Source.Outputs[ADO NET Source Output].Columns[Series.SeriesClass]" />
                     <inputColumn
-                      refId="Package\Load MOSSeries\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Series.Organization.ContactInfo.Phone.Type]"
-                      cachedDataType="wstr"
-                      cachedLength="6"
-                      cachedName="Series.Organization.ContactInfo.Phone.Type"
-                      externalMetadataColumnId="Package\Load MOSSeries\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Series.Organization.ContactInfo.Phone.Type]"
-                      lineageId="Package\Load MOSSeries\ADO NET Source.Outputs[ADO NET Source Output].Columns[Series.Organization.ContactInfo.Phone.Type]" />
-                    <inputColumn
                       refId="Package\Load MOSSeries\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Series.Title.Class]"
                       cachedDataType="wstr"
                       cachedLength="7"
                       cachedName="Series.Title.Class"
                       externalMetadataColumnId="Package\Load MOSSeries\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Series.Title.Class]"
                       lineageId="Package\Load MOSSeries\ADO NET Source.Outputs[ADO NET Source Output].Columns[Series.Title.Class]" />
+                    <inputColumn
+                      refId="Package\Load MOSSeries\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Series.Title.Language]"
+                      cachedDataType="wstr"
+                      cachedLength="6"
+                      cachedName="Series.Title.Language"
+                      externalMetadataColumnId="Package\Load MOSSeries\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Series.Title.Language]"
+                      lineageId="Package\Load MOSSeries\ADO NET Source.Outputs[ADO NET Source Output].Columns[Series.Title.Language]" />
                     <inputColumn
                       refId="Package\Load MOSSeries\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Series.Title]"
                       cachedDataType="wstr"
@@ -2744,6 +2753,104 @@
                       cachedScale="7"
                       externalMetadataColumnId="Package\Load MOSSeries\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Series.ReleaseDate]"
                       lineageId="Package\Load MOSSeries\ADO NET Source.Outputs[ADO NET Source Output].Columns[Series.ReleaseDate]" />
+                    <inputColumn
+                      refId="Package\Load MOSSeries\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Series.Credits.Role]"
+                      cachedDataType="wstr"
+                      cachedLength="1"
+                      cachedName="Series.Credits.Role"
+                      externalMetadataColumnId="Package\Load MOSSeries\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Series.Credits.Role]"
+                      lineageId="Package\Load MOSSeries\ADO NET Source.Outputs[ADO NET Source Output].Columns[Series.Credits.Role]" />
+                    <inputColumn
+                      refId="Package\Load MOSSeries\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Series.Credits.TalentID]"
+                      cachedDataType="wstr"
+                      cachedLength="1"
+                      cachedName="Series.Credits.TalentID"
+                      externalMetadataColumnId="Package\Load MOSSeries\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Series.Credits.TalentID]"
+                      lineageId="Package\Load MOSSeries\ADO NET Source.Outputs[ADO NET Source Output].Columns[Series.Credits.TalentID]" />
+                    <inputColumn
+                      refId="Package\Load MOSSeries\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Series.Credits.DisplayName]"
+                      cachedDataType="wstr"
+                      cachedLength="1"
+                      cachedName="Series.Credits.DisplayName"
+                      externalMetadataColumnId="Package\Load MOSSeries\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Series.Credits.DisplayName]"
+                      lineageId="Package\Load MOSSeries\ADO NET Source.Outputs[ADO NET Source Output].Columns[Series.Credits.DisplayName]" />
+                    <inputColumn
+                      refId="Package\Load MOSSeries\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Series.Organization.Contact.Info.Phone]"
+                      cachedDataType="wstr"
+                      cachedLength="1"
+                      cachedName="Series.Organization.Contact.Info.Phone"
+                      externalMetadataColumnId="Package\Load MOSSeries\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Series.Organization.Contact.Info.Phone]"
+                      lineageId="Package\Load MOSSeries\ADO NET Source.Outputs[ADO NET Source Output].Columns[Series.Organization.Contact.Info.Phone]" />
+                    <inputColumn
+                      refId="Package\Load MOSSeries\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Series.Organization.Contact.Info.Phone.Type]"
+                      cachedDataType="wstr"
+                      cachedLength="1"
+                      cachedName="Series.Organization.Contact.Info.Phone.Type"
+                      externalMetadataColumnId="Package\Load MOSSeries\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Series.Organization.Contact.Info.Phone.Type]"
+                      lineageId="Package\Load MOSSeries\ADO NET Source.Outputs[ADO NET Source Output].Columns[Series.Organization.Contact.Info.Phone.Type]" />
+                    <inputColumn
+                      refId="Package\Load MOSSeries\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Series.Organization.Contact Info.Address]"
+                      cachedDataType="wstr"
+                      cachedLength="1"
+                      cachedName="Series.Organization.Contact Info.Address"
+                      externalMetadataColumnId="Package\Load MOSSeries\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Series.Organization.Contact Info.Address]"
+                      lineageId="Package\Load MOSSeries\ADO NET Source.Outputs[ADO NET Source Output].Columns[Series.Organization.Contact Info.Address]" />
+                    <inputColumn
+                      refId="Package\Load MOSSeries\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Series.Organization.Contact.Info.PrimaryEmail]"
+                      cachedDataType="wstr"
+                      cachedLength="1"
+                      cachedName="Series.Organization.Contact.Info.PrimaryEmail"
+                      externalMetadataColumnId="Package\Load MOSSeries\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Series.Organization.Contact.Info.PrimaryEmail]"
+                      lineageId="Package\Load MOSSeries\ADO NET Source.Outputs[ADO NET Source Output].Columns[Series.Organization.Contact.Info.PrimaryEmail]" />
+                    <inputColumn
+                      refId="Package\Load MOSSeries\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Series.Organization.Contact.Info.Name]"
+                      cachedDataType="wstr"
+                      cachedLength="1"
+                      cachedName="Series.Organization.Contact.Info.Name"
+                      externalMetadataColumnId="Package\Load MOSSeries\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Series.Organization.Contact.Info.Name]"
+                      lineageId="Package\Load MOSSeries\ADO NET Source.Outputs[ADO NET Source Output].Columns[Series.Organization.Contact.Info.Name]" />
+                    <inputColumn
+                      refId="Package\Load MOSSeries\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Series.Organization.Contact.Info.ContactID]"
+                      cachedDataType="wstr"
+                      cachedLength="1"
+                      cachedName="Series.Organization.Contact.Info.ContactID"
+                      externalMetadataColumnId="Package\Load MOSSeries\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Series.Organization.Contact.Info.ContactID]"
+                      lineageId="Package\Load MOSSeries\ADO NET Source.Outputs[ADO NET Source Output].Columns[Series.Organization.Contact.Info.ContactID]" />
+                    <inputColumn
+                      refId="Package\Load MOSSeries\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Series.Organization.DisplayName]"
+                      cachedDataType="wstr"
+                      cachedLength="1"
+                      cachedName="Series.Organization.DisplayName"
+                      externalMetadataColumnId="Package\Load MOSSeries\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Series.Organization.DisplayName]"
+                      lineageId="Package\Load MOSSeries\ADO NET Source.Outputs[ADO NET Source Output].Columns[Series.Organization.DisplayName]" />
+                    <inputColumn
+                      refId="Package\Load MOSSeries\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Series.Organization.domain]"
+                      cachedDataType="wstr"
+                      cachedLength="1"
+                      cachedName="Series.Organization.domain"
+                      externalMetadataColumnId="Package\Load MOSSeries\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Series.Organization.domain]"
+                      lineageId="Package\Load MOSSeries\ADO NET Source.Outputs[ADO NET Source Output].Columns[Series.Organization.domain]" />
+                    <inputColumn
+                      refId="Package\Load MOSSeries\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Series.Organization.OrganizationID]"
+                      cachedDataType="wstr"
+                      cachedLength="1"
+                      cachedName="Series.Organization.OrganizationID"
+                      externalMetadataColumnId="Package\Load MOSSeries\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Series.Organization.OrganizationID]"
+                      lineageId="Package\Load MOSSeries\ADO NET Source.Outputs[ADO NET Source Output].Columns[Series.Organization.OrganizationID]" />
+                    <inputColumn
+                      refId="Package\Load MOSSeries\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Series.Organization.Role]"
+                      cachedDataType="wstr"
+                      cachedLength="1"
+                      cachedName="Series.Organization.Role"
+                      externalMetadataColumnId="Package\Load MOSSeries\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Series.Organization.Role]"
+                      lineageId="Package\Load MOSSeries\ADO NET Source.Outputs[ADO NET Source Output].Columns[Series.Organization.Role]" />
+                    <inputColumn
+                      refId="Package\Load MOSSeries\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Series.Credits.ContactTypeID]"
+                      cachedDataType="wstr"
+                      cachedLength="1"
+                      cachedName="Series.Credits.ContactTypeID"
+                      externalMetadataColumnId="Package\Load MOSSeries\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Series.Credits.ContactTypeID]"
+                      lineageId="Package\Load MOSSeries\ADO NET Source.Outputs[ADO NET Source Output].Columns[Series.Credits.ContactTypeID]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -2777,11 +2884,6 @@
                       dataType="wstr"
                       length="500"
                       name="Series.SeriesClass" />
-                    <externalMetadataColumn
-                      refId="Package\Load MOSSeries\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Series.Organization.ContactInfo.Phone.Type]"
-                      dataType="wstr"
-                      length="500"
-                      name="Series.Organization.ContactInfo.Phone.Type" />
                     <externalMetadataColumn
                       refId="Package\Load MOSSeries\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Series.Title.Class]"
                       dataType="wstr"
@@ -2836,7 +2938,8 @@
                       name="Series.Credits.Role" />
                     <externalMetadataColumn
                       refId="Package\Load MOSSeries\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Series.Credits.TalentID]"
-                      dataType="i4"
+                      dataType="wstr"
+                      length="500"
                       name="Series.Credits.TalentID" />
                     <externalMetadataColumn
                       refId="Package\Load MOSSeries\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Series.Credits.DisplayName]"
@@ -2860,7 +2963,8 @@
                       name="Series.Organization.Contact Info.Address" />
                     <externalMetadataColumn
                       refId="Package\Load MOSSeries\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Series.Organization.Contact.Info.PrimaryEmail]"
-                      dataType="i4"
+                      dataType="wstr"
+                      length="500"
                       name="Series.Organization.Contact.Info.PrimaryEmail" />
                     <externalMetadataColumn
                       refId="Package\Load MOSSeries\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Series.Organization.Contact.Info.Name]"
@@ -2869,7 +2973,8 @@
                       name="Series.Organization.Contact.Info.Name" />
                     <externalMetadataColumn
                       refId="Package\Load MOSSeries\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Series.Organization.Contact.Info.ContactID]"
-                      dataType="i4"
+                      dataType="wstr"
+                      length="500"
                       name="Series.Organization.Contact.Info.ContactID" />
                     <externalMetadataColumn
                       refId="Package\Load MOSSeries\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Series.Organization.DisplayName]"
@@ -2883,7 +2988,8 @@
                       name="Series.Organization.domain" />
                     <externalMetadataColumn
                       refId="Package\Load MOSSeries\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Series.Organization.OrganizationID]"
-                      dataType="i4"
+                      dataType="wstr"
+                      length="500"
                       name="Series.Organization.OrganizationID" />
                     <externalMetadataColumn
                       refId="Package\Load MOSSeries\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Series.Organization.Role]"
@@ -2892,7 +2998,8 @@
                       name="Series.Organization.Role" />
                     <externalMetadataColumn
                       refId="Package\Load MOSSeries\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Series.Credits.ContactTypeID]"
-                      dataType="i4"
+                      dataType="wstr"
+                      length="500"
                       name="Series.Credits.ContactTypeID" />
                   </externalMetadataColumns>
                 </input>
@@ -2936,7 +3043,7 @@
                   description="Specifies the SQL statement used by the component to extract data."
                   expressionType="Notify"
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">select * from [PBS].[vwMOSSeries]</property>
                 <property
                   dataType="System.Int32"
                   description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
@@ -3032,16 +3139,6 @@
                       length="10"
                       lineageId="Package\Load MOSSeries\ADO NET Source.Outputs[ADO NET Source Output].Columns[Series.SeriesClass]"
                       name="Series.SeriesClass"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Load MOSSeries\ADO NET Source.Outputs[ADO NET Source Output].Columns[Series.Organization.ContactInfo.Phone.Type]"
-                      dataType="wstr"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Load MOSSeries\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Series.Organization.ContactInfo.Phone.Type]"
-                      length="6"
-                      lineageId="Package\Load MOSSeries\ADO NET Source.Outputs[ADO NET Source Output].Columns[Series.Organization.ContactInfo.Phone.Type]"
-                      name="Series.Organization.ContactInfo.Phone.Type"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\Load MOSSeries\ADO NET Source.Outputs[ADO NET Source Output].Columns[Series.Title.Class]"
@@ -3315,11 +3412,6 @@
                       length="10"
                       name="Series.SeriesClass" />
                     <externalMetadataColumn
-                      refId="Package\Load MOSSeries\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Series.Organization.ContactInfo.Phone.Type]"
-                      dataType="wstr"
-                      length="6"
-                      name="Series.Organization.ContactInfo.Phone.Type" />
-                    <externalMetadataColumn
                       refId="Package\Load MOSSeries\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Series.Title.Class]"
                       dataType="wstr"
                       length="7"
@@ -3480,12 +3572,6 @@
                       length="10"
                       lineageId="Package\Load MOSSeries\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Series.SeriesClass]"
                       name="Series.SeriesClass" />
-                    <outputColumn
-                      refId="Package\Load MOSSeries\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Series.Organization.ContactInfo.Phone.Type]"
-                      dataType="wstr"
-                      length="6"
-                      lineageId="Package\Load MOSSeries\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Series.Organization.ContactInfo.Phone.Type]"
-                      name="Series.Organization.ContactInfo.Phone.Type" />
                     <outputColumn
                       refId="Package\Load MOSSeries\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Series.Title.Class]"
                       dataType="wstr"
@@ -4221,6 +4307,22 @@
           Size="165,42"
           Id="Package\Load MOSEpisode"
           TopLeft="20,315" />
+        <NodeLayout
+          Size="184,42"
+          Id="Package\Load MOSMOSSeason"
+          TopLeft="412,319" />
+        <NodeLayout
+          Size="152,42"
+          Id="Package\Load MOSOffer"
+          TopLeft="223,320" />
+        <NodeLayout
+          Size="157,42"
+          Id="Package\Load MOSSeries"
+          TopLeft="646,321" />
+        <NodeLayout
+          Size="158,42"
+          Id="Package\Load MOSUsage"
+          TopLeft="839,320" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
           TopLeft="517.166666666667,87">
@@ -4255,10 +4357,6 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="152,42"
-          Id="Package\Load MOSOffer"
-          TopLeft="223,320" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 1]"
           TopLeft="543.333333333333,87">
@@ -4293,10 +4391,6 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="184,42"
-          Id="Package\Load MOSMOSSeason"
-          TopLeft="412,319" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 2]"
           TopLeft="569.5,87">
@@ -4331,10 +4425,6 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="157,42"
-          Id="Package\Load MOSSeries"
-          TopLeft="646,321" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 3]"
           TopLeft="595.666666666667,87">
@@ -4369,10 +4459,6 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="158,42"
-          Id="Package\Load MOSUsage"
-          TopLeft="839,320" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 4]"
           TopLeft="621.833333333333,87">
@@ -4461,14 +4547,6 @@
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Load MOSEpisode\ADO NET Source">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
     design-time-name="Package\Load MOSEpisode\ADO NET Destination">
     <Properties>
       <Property>
@@ -4476,66 +4554,8 @@
       </Property>
     </Properties>
   </PipelineComponentMetadata>
-  <TaskHost
-    design-time-name="Package\Load MOSOffer">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="160,42"
-          Id="Package\Load MOSOffer\ADO NET Source"
-          TopLeft="185,97" />
-        <NodeLayout
-          Size="181,42"
-          Id="Package\Load MOSOffer\ADO NET Destination"
-          TopLeft="166,246" />
-        <EdgeLayout
-          Id="Package\Load MOSOffer.Paths[ADO NET Source Output]"
-          TopLeft="265,139">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-8.5,107"
-              Start="0,0"
-              End="-8.5,99.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,49.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,49.5"
-                    Point2="0,53.5"
-                    Point3="-4,53.5" />
-                  <mssgle:LineSegment
-                    End="-4.5,53.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-4.5,53.5"
-                    Point2="-8.5,53.5"
-                    Point3="-8.5,57.5" />
-                  <mssgle:LineSegment
-                    End="-8.5,99.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Load MOSOffer\ADO NET Source">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Load MOSOffer\ADO NET Destination">
+    design-time-name="Package\Load MOSEpisode\ADO NET Source">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -4593,7 +4613,7 @@
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Load MOSMOSSeason\ADO NET Source">
+    design-time-name="Package\Load MOSMOSSeason\ADO NET Destination">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -4601,7 +4621,75 @@
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Load MOSMOSSeason\ADO NET Destination">
+    design-time-name="Package\Load MOSMOSSeason\ADO NET Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Load MOSOffer">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="181,42"
+          Id="Package\Load MOSOffer\ADO NET Destination"
+          TopLeft="166,246" />
+        <NodeLayout
+          Size="160,42"
+          Id="Package\Load MOSOffer\ADO NET Source"
+          TopLeft="185,97" />
+        <EdgeLayout
+          Id="Package\Load MOSOffer.Paths[ADO NET Source Output]"
+          TopLeft="265,139">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-8.5,107"
+              Start="0,0"
+              End="-8.5,99.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,49.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,49.5"
+                    Point2="0,53.5"
+                    Point3="-4,53.5" />
+                  <mssgle:LineSegment
+                    End="-4.5,53.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-4.5,53.5"
+                    Point2="-8.5,53.5"
+                    Point3="-8.5,57.5" />
+                  <mssgle:LineSegment
+                    End="-8.5,99.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load MOSOffer\ADO NET Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load MOSOffer\ADO NET Source">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -4620,21 +4708,33 @@
         <NodeLayout
           Size="181,42"
           Id="Package\Load MOSSeries\ADO NET Destination"
-          TopLeft="178,248" />
+          TopLeft="192,230" />
         <EdgeLayout
           Id="Package\Load MOSSeries.Paths[ADO NET Source Output]"
-          TopLeft="266.75,139">
+          TopLeft="265,139">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,109"
+              EndConnector="17.5,91"
               Start="0,0"
-              End="0,101.5">
+              End="17.5,83.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,101.5" />
+                    End="0,41.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,41.5"
+                    Point2="0,45.5"
+                    Point3="4,45.5" />
+                  <mssgle:LineSegment
+                    End="13.5,45.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="13.5,45.5"
+                    Point2="17.5,45.5"
+                    Point3="17.5,49.5" />
+                  <mssgle:LineSegment
+                    End="17.5,83.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -4654,19 +4754,11 @@
       </Property>
     </Properties>
   </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Load MOSSeries\ADO NET Destination">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
   <TaskHost
     design-time-name="Package\Load MOSUsage">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="160,42"
           Id="Package\Load MOSUsage\ADO NET Source"
@@ -4706,12 +4798,22 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load MOSUsage\ADO NET Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\Load MOSUsage\ADO NET Source">
     <Properties>
@@ -4721,7 +4823,7 @@
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Load MOSUsage\ADO NET Destination">
+    design-time-name="Package\Load MOSSeries\ADO NET Destination">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
