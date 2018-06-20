@@ -31,13 +31,13 @@
     <ConfiguredValue>-1</ConfiguredValue>
   </Configuration>
   <Configuration ConfiguredType="Property" Path="\Package.Connections[db19-uat.RightsLineETL].Properties[ConnectionString]" ValueType="String">
-    <ConfiguredValue>Data Source=db19-uat;Initial Catalog=RightsLineETL-DAGI;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;</ConfiguredValue>
+    <ConfiguredValue>Data Source=db19-uat;Initial Catalog=RightsLineETL;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;</ConfiguredValue>
   </Configuration>
   <Configuration ConfiguredType="Property" Path="\Package.Connections[db19-uat.RightsLineETL].Properties[Description]" ValueType="String">
     <ConfiguredValue></ConfiguredValue>
   </Configuration>
   <Configuration ConfiguredType="Property" Path="\Package.Connections[db19-uat.RightsLineETL].Properties[InitialCatalog]" ValueType="String">
-    <ConfiguredValue>RightsLineETL-DAGI</ConfiguredValue>
+    <ConfiguredValue>RightsLineETL</ConfiguredValue>
   </Configuration>
   <Configuration ConfiguredType="Property" Path="\Package.Connections[db19-uat.RightsLineETL].Properties[Name]" ValueType="String">
     <ConfiguredValue>db19-uat.RightsLineETL</ConfiguredValue>
@@ -61,13 +61,13 @@
     <ConfiguredValue></ConfiguredValue>
   </Configuration>
   <Configuration ConfiguredType="Property" Path="\Package.Connections[db19-uat.RightsLineETL 1].Properties[ConnectionString]" ValueType="String">
-    <ConfiguredValue>Data Source=db19-uat;Initial Catalog=RightsLineETL-DAGI;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;</ConfiguredValue>
+    <ConfiguredValue>Data Source=db19-uat;Initial Catalog=RightsLineETL;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;</ConfiguredValue>
   </Configuration>
   <Configuration ConfiguredType="Property" Path="\Package.Connections[db19-uat.RightsLineETL 1].Properties[Description]" ValueType="String">
     <ConfiguredValue></ConfiguredValue>
   </Configuration>
   <Configuration ConfiguredType="Property" Path="\Package.Connections[db19-uat.RightsLineETL 1].Properties[InitialCatalog]" ValueType="String">
-    <ConfiguredValue>RightsLineETL-DAGI</ConfiguredValue>
+    <ConfiguredValue>RightsLineETL</ConfiguredValue>
   </Configuration>
   <Configuration ConfiguredType="Property" Path="\Package.Connections[db19-uat.RightsLineETL 1].Properties[Name]" ValueType="String">
     <ConfiguredValue>db19-uat.RightsLineETL 1</ConfiguredValue>
