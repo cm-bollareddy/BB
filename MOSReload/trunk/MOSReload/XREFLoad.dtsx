@@ -13,8 +13,8 @@
   DTS:ObjectName="Package"
   DTS:PackageType="5"
   DTS:ProtectionLevel="2"
-  DTS:VersionBuild="49"
-  DTS:VersionGUID="{50BC4300-43C5-47D3-B6C6-B6CDDBEA20D6}">
+  DTS:VersionBuild="65"
+  DTS:VersionGUID="{6D74992A-E8DC-4A42-8858-C306E091FE9E}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">6</DTS:Property>
   <DTS:ConnectionManagers>
@@ -29,55 +29,23 @@
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[db19-uat.RightsLineETL]"
-      DTS:CreationName="ADO"
-      DTS:DTSID="{055F5F60-9846-42C5-8DB1-E07A4533DD01}"
-      DTS:ObjectName="db19-uat.RightsLineETL">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=db19-uat;User ID=;Initial Catalog=RightsLineETL;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;">
-          <EncryptedData
-            Type="http://www.w3.org/2001/04/xmlenc#Element"
-            Salt="UW1iVPWH0Q=="
-            IV="avv4b0/wdnI=" xmlns="http://www.w3.org/2001/04/xmlenc#">
-            <EncryptionMethod
-              Algorithm="http://www.w3.org/2001/04/xmlenc#tripledes-cbc" />
-            <CipherData>
-              <CipherValue>avv4b0/wdnJb+OdR4IU41Kdnd5BqoBFXmV8rGTJFA+7pukvl/8ntGHCvTlFtXn+N+sRRLCwTmiCVD4UbeV4D02+ttRK+BG4aKZbV/ocXRI0yx3taKhIIk3xe6IjmCYZv8J+nBEpoNuTU582rGJDCts3NiXA+i0dN</CipherValue>
-            </CipherData>
-          </EncryptedData>
-        </DTS:ConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[db19-uat.RightsLineETL 1]"
       DTS:CreationName="OLEDB"
       DTS:DTSID="{4ECBF84F-C59A-4442-90AF-E7A5EABDE061}"
       DTS:ObjectName="db19-uat.RightsLineETL 1">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=db19-uat;User ID=;Initial Catalog=RightsLineETL;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;">
-          <EncryptedData
-            Type="http://www.w3.org/2001/04/xmlenc#Element"
-            Salt="iZa4GWovFg=="
-            IV="II+jFEcTzUA=" xmlns="http://www.w3.org/2001/04/xmlenc#">
-            <EncryptionMethod
-              Algorithm="http://www.w3.org/2001/04/xmlenc#tripledes-cbc" />
-            <CipherData>
-              <CipherValue>II+jFEcTzUD+jw76UTCPiKg6/lC/xi8iv8qfR1w+sG4gr1sSmTsZFFdnXfgFEvVMrxHFIX0x0yjN8mOXC5/zRAcfEgv2eDfpOZvLrUrkGL5l4uAeCbUNpcYKt1AWtqvDt6ZzsE4QGFBq7eWflheL+nd1oAcxcizb</CipherValue>
-            </CipherData>
-          </EncryptedData>
-        </DTS:ConnectionManager>
+          DTS:ConnectionString="Data Source=db19-uat;Initial Catalog=RightsLineETL-EA;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[db19-uat.RightsLineETL-EA]"
-      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
-      DTS:DTSID="{1F920C4C-3004-4FB9-BE88-9F1EDA5508E3}"
+      DTS:CreationName="ADO"
+      DTS:DTSID="{055F5F60-9846-42C5-8DB1-E07A4533DD01}"
       DTS:ObjectName="db19-uat.RightsLineETL-EA">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=db19-uat;Initial Catalog=RightsLineETL;Integrated Security=True;Application Name=SSIS-Package-{1F920C4C-3004-4FB9-BE88-9F1EDA5508E3}db19-uat.RightsLineETL-EA;" />
+          DTS:ConnectionString="Data Source=db19-uat;Initial Catalog=RightsLineETL-EA;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -87,7 +55,7 @@
       DTS:ObjectName="db19-uat.RightsLineETL-EA ADONET">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=db19-uat;Initial Catalog=RightsLineETL;Integrated Security=True;Application Name=&quot;SSIS-Package-{AF5393F6-4EC0-4DD3-A212-FF3CA4EF2D6D}db19-uat.RightsLineETL-EA 1&quot;;" />
+          DTS:ConnectionString="Data Source=db19-uat;Initial Catalog=RightsLineETL-EA;Integrated Security=True;Application Name=&quot;SSIS-Package-{AF5393F6-4EC0-4DD3-A212-FF3CA4EF2D6D}db19-uat.RightsLineETL-EA 1&quot;;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -100,12 +68,12 @@
           DTS:ConnectionString="Data Source=db19-uat;User ID=;Initial Catalog=TrafficData;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;">
           <EncryptedData
             Type="http://www.w3.org/2001/04/xmlenc#Element"
-            Salt="K8YaYuqzeg=="
-            IV="AiTNt1LK/fc=" xmlns="http://www.w3.org/2001/04/xmlenc#">
+            Salt="KSj/rJQ5fA=="
+            IV="uTbyeaQ5HvE=" xmlns="http://www.w3.org/2001/04/xmlenc#">
             <EncryptionMethod
               Algorithm="http://www.w3.org/2001/04/xmlenc#tripledes-cbc" />
             <CipherData>
-              <CipherValue>AiTNt1LK/ffK1eWXda631sOddpDnPDuniHf71CAsPj7oT5rAFseX2t1OOireU7jQ6b14KByFbVuZXoDivEMPmCztese8Y/Yy9MAhtmWF5JJ8b2s8JU0woC6Tfv+lAajKwgEqiU+72uAfR6tMwbVcQ0CAtnK1vfoL</CipherValue>
+              <CipherValue>uTbyeaQ5HvGxXs6UCns+/CIL0R4N1qbkrJQGlWODZVyedhngmACRhwHZDzArIS+gL/I1fkvWgOhy6toC5tOwphtWAjZYkdZ1kMg7qGU0HtXjWq/+S+rDT4f4xMkUm8sUGHsmF1sgoCII7zbOHTAR7/XbzsgvZkzx</CipherValue>
             </CipherData>
           </EncryptedData>
         </DTS:ConnectionManager>
@@ -121,12 +89,12 @@
           DTS:ConnectionString="Data Source=db19-uat;User ID=;Initial Catalog=TrafficData;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;">
           <EncryptedData
             Type="http://www.w3.org/2001/04/xmlenc#Element"
-            Salt="Yna/2rsUWA=="
-            IV="pJrv74BBgvc=" xmlns="http://www.w3.org/2001/04/xmlenc#">
+            Salt="Lt/ljeq0kw=="
+            IV="Kl7F9LkcvAs=" xmlns="http://www.w3.org/2001/04/xmlenc#">
             <EncryptionMethod
               Algorithm="http://www.w3.org/2001/04/xmlenc#tripledes-cbc" />
             <CipherData>
-              <CipherValue>pJrv74BBgveLi+/s8LrXlb+HeEnJ/rCgBUOtY4ba4+7xAPxqoXh70WJ6988F0D7dIp3WNCcTXlPzZgCzYYlNgnVOKFzTR2URQjyvTk7NjicniqlK6nKeNdZlscZ+pfn2MVg9tC0zW0sTuITiPIGMFHEJtN3I+ctu</CipherValue>
+              <CipherValue>Kl7F9LkcvAtEj5fneOtXWOHZDI1jJszWup2GWcIHO0rGiDVms8S3ZSm08A60M7I7rDJThBDRaB6rHtMZbOUOkms76co8LMbrpFBkY7KENbeM/VyxPcOJN4M/LzkLH3XU6eY24wGsE7FqkOObPc92JkfPotbBsMzl</CipherValue>
             </CipherData>
           </EncryptedData>
         </DTS:ConnectionManager>
@@ -145,11 +113,11 @@
   </DTS:ConnectionManagers>
   <DTS:Configurations>
     <DTS:Configuration
-      DTS:ConfigurationString="E:\PBS Projects\SSIS\MOS\MOSReload\MOSReload\XRefReloadConfig.dtsConfig"
+      DTS:ConfigurationString="E:\PBS Projects\SSIS\MOS\MOSReload\MOSReload\xrefLoadDTSConfig.dtsConfig"
       DTS:ConfigurationType="1"
       DTS:CreationName=""
-      DTS:DTSID="{74D6F638-8677-43A0-9F41-CD4CDA92F02B}"
-      DTS:ObjectName="DBConnectionsConfig" />
+      DTS:DTSID="{B4EB621B-05ED-44B0-A5E0-0C57D8E1C4F3}"
+      DTS:ObjectName="Configuration 1" />
   </DTS:Configurations>
   <DTS:Variables />
   <DTS:Executables>
@@ -167,7 +135,7 @@
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
           SQLTask:Connection="{055F5F60-9846-42C5-8DB1-E07A4533DD01}"
-          SQLTask:SqlStatementSource="Truncate table dbo.xref_SeasonToEpisode&#xA;go&#xA;truncate table dbo.xref_SeriesToEpisode&#xA;go&#xA;Truncate table dbo.xref_SeriesToSeason&#xA;go&#xA;Truncate table dbo.xref_DealToEpisode&#xA;go&#xA;Truncate table dbo.xref_DealToSeason&#xA;go&#xA;Truncate table dbo.xref_DealToBlackout&#xA;go&#xA;Truncate table dbo.xref_DealToHoldback&#xA;go&#xA;Truncate table dbo.xref_DealToRightsIn&#xA;go&#xA;Truncate table dbo.xref_DealToFunder&#xA;go&#xA;Truncate table dbo.xref_DealToUnderwriter&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          SQLTask:SqlStatementSource="Truncate table dbo.xref_SeasonToEpisode&#xA;go&#xA;truncate table dbo.xref_SeriesToEpisode&#xA;go&#xA;Truncate table dbo.xref_SeriesToSeason&#xA;go&#xA;Truncate table dbo.xref_DealToEpisode&#xA;go&#xA;Truncate table dbo.xref_DealToSeason&#xA;go&#xA;Truncate table dbo.xref_DealToBlackout&#xA;go&#xA;Truncate table dbo.xref_DealToHoldback&#xA;go&#xA;Truncate table dbo.xref_DealToRightsIn&#xA;go&#xA;Truncate table dbo.xref_DealToFunder&#xA;go&#xA;Truncate table dbo.xref_DealToUnderwriter&#xA;go&#xA;Truncate table  dbo.xref_DealToProductionCompany&#xA;&#xA;&#xA;&#xA;&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
@@ -584,6 +552,259 @@ SELECT  distinct
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
+      DTS:refId="Package\Load xref_DealToCompany"
+      DTS:CreationName="SSIS.Pipeline.3"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{C739126D-D8AD-4A22-A7E5-FC54D39ECF9A}"
+      DTS:ExecutableType="SSIS.Pipeline.3"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Load xref_DealToCompany"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Load xref_DealToCompany\ADO NET Destination"
+              componentClassID="{874F7595-FB5F-40FF-96AF-FBFF8250E3EF}"
+              contactInfo="Loads data into an ADO.NET-compliant database that uses a database table or view. Load data into a new or existing table. For example, use an ADO.NET provider for ODBC to load data into an ODBC destination.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;2"
+              description="Loads data into an ADO.NET-compliant database that uses a database table or view. Load data into a new or existing table. For example, use an ADO.NET provider for ODBC to load data into an ODBC destination."
+              name="ADO NET Destination"
+              usesDispositions="true"
+              version="2">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="The Destination database table name."
+                  expressionType="Notify"
+                  name="TableOrViewName"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version= 11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">"dbo"."xref_DealToUnderwriter"</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specify the number of rows per batch. The default is 0 which uses the same size as SSIS internal buffer. "
+                  expressionType="Notify"
+                  name="BatchSize">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out. A value of 0 indicates infinite time-out. "
+                  expressionType="Notify"
+                  name="CommandTimeout">30</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether to use the SqlBulkCopy interface to improve the performance of bulk insert operations. Only certain providers support this interface."
+                  expressionType="Notify"
+                  name="UseBulkInsertWhenPossible">true</property>
+                <property
+                  dataType="System.String"
+                  name="UserComponentTypeName">Microsoft.SqlServer.Dts.Pipeline.ADONETDestination, Microsoft.SqlServer.ADONETDest, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Load xref_DealToCompany\ADO NET Destination.Connections[IDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[db19-uat.RightsLineETL-EA ADONET]"
+                  connectionManagerRefId="Package.ConnectionManagers[db19-uat.RightsLineETL-EA ADONET]"
+                  description="Managed connection manager"
+                  name="IDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Load xref_DealToCompany\ADO NET Destination.Inputs[ADO NET Destination Input]"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="ADO NET Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Load xref_DealToCompany\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[ParentID]"
+                      cachedDataType="wstr"
+                      cachedLength="51"
+                      cachedName="ParentID"
+                      externalMetadataColumnId="Package\Load xref_DealToCompany\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[ParentID]"
+                      lineageId="Package\Load xref_DealToCompany\ADO NET Source.Outputs[ADO NET Source Output].Columns[ParentID]" />
+                    <inputColumn
+                      refId="Package\Load xref_DealToCompany\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[ChildID]"
+                      cachedDataType="wstr"
+                      cachedLength="53"
+                      cachedName="ChildID"
+                      externalMetadataColumnId="Package\Load xref_DealToCompany\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[ChildID]"
+                      lineageId="Package\Load xref_DealToCompany\ADO NET Source.Outputs[ADO NET Source Output].Columns[ChildID]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Load xref_DealToCompany\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[ChildID]"
+                      dataType="wstr"
+                      length="500"
+                      name="ChildID" />
+                    <externalMetadataColumn
+                      refId="Package\Load xref_DealToCompany\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[ParentID]"
+                      dataType="wstr"
+                      length="500"
+                      name="ParentID" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Load xref_DealToCompany\ADO NET Destination.Outputs[ADO NET Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="ADO NET Destination Error Output"
+                  synchronousInputId="Package\Load xref_DealToCompany\ADO NET Destination.Inputs[ADO NET Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load xref_DealToCompany\ADO NET Destination.Outputs[ADO NET Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Load xref_DealToCompany\ADO NET Destination.Outputs[ADO NET Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Load xref_DealToCompany\ADO NET Destination.Outputs[ADO NET Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Load xref_DealToCompany\ADO NET Destination.Outputs[ADO NET Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Load xref_DealToCompany\ADO NET Source"
+              componentClassID="{874F7595-FB5F-40FF-96AF-FBFF8250E3EF}"
+              contactInfo="Consumes data from SQL Server, OLE DB, ODBC, or Oracle, using the corresponding .NET Framework data provider. Use a Transact-SQL statement to define the result set. For example, extract data from SQL Server with the .NET Framework data provider for SQL Server.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="Consumes data from SQL Server, OLE DB, ODBC, or Oracle, using the corresponding .NET Framework data provider. Use a Transact-SQL statement to define the result set. For example, extract data from SQL Server with the .NET Framework data provider for SQL Server."
+              name="ADO NET Source"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Specifies the SQL statement used by the component to extract data."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">select	distinct 
+		REVERSE(SUBSTRING(REVERSE([Offer.UID]),0,CHARINDEX(':',REVERSE([Offer.UID])))) as ParentID
+		,[Offer.Organization.OrganizationID] as ChildID
+from	[PBS].[vwMOSOffer]
+where	[Offer.Organization.OrganizationID] is not null</property>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">30</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether to allow non-string external columns to be implicitly converted to strings at the output columns."
+                  name="AllowImplicitStringConversion">true</property>
+                <property
+                  dataType="System.String"
+                  description="The Source database table name."
+                  expressionType="Notify"
+                  name="TableOrViewName"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version= 11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specify the mode to retrieve external column information"
+                  name="AccessMode"
+                  typeConverter="Microsoft.SqlServer.Dts.Pipeline.DataReaderSourceAdapter+EnumToStringConverter, Microsoft.SqlServer.ADONETSrc, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">2</property>
+                <property
+                  dataType="System.String"
+                  name="UserComponentTypeName">Microsoft.SqlServer.Dts.Pipeline.DataReaderSourceAdapter, Microsoft.SqlServer.ADONETSrc, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Load xref_DealToCompany\ADO NET Source.Connections[IDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[db19-uat.TrafficDataADONET]"
+                  connectionManagerRefId="Package.ConnectionManagers[db19-uat.TrafficDataADONET]"
+                  description="Managed connection manager"
+                  name="IDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Load xref_DealToCompany\ADO NET Source.Outputs[ADO NET Source Output]"
+                  name="ADO NET Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load xref_DealToCompany\ADO NET Source.Outputs[ADO NET Source Output].Columns[ParentID]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load xref_DealToCompany\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[ParentID]"
+                      length="51"
+                      lineageId="Package\Load xref_DealToCompany\ADO NET Source.Outputs[ADO NET Source Output].Columns[ParentID]"
+                      name="ParentID"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Load xref_DealToCompany\ADO NET Source.Outputs[ADO NET Source Output].Columns[ChildID]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load xref_DealToCompany\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[ChildID]"
+                      length="53"
+                      lineageId="Package\Load xref_DealToCompany\ADO NET Source.Outputs[ADO NET Source Output].Columns[ChildID]"
+                      name="ChildID"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Load xref_DealToCompany\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[ParentID]"
+                      dataType="wstr"
+                      length="51"
+                      name="ParentID" />
+                    <externalMetadataColumn
+                      refId="Package\Load xref_DealToCompany\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[ChildID]"
+                      dataType="wstr"
+                      length="53"
+                      name="ChildID" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Load xref_DealToCompany\ADO NET Source.Outputs[ADO NET Source Error Output]"
+                  isErrorOut="true"
+                  name="ADO NET Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load xref_DealToCompany\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[ParentID]"
+                      dataType="wstr"
+                      length="51"
+                      lineageId="Package\Load xref_DealToCompany\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[ParentID]"
+                      name="ParentID" />
+                    <outputColumn
+                      refId="Package\Load xref_DealToCompany\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[ChildID]"
+                      dataType="wstr"
+                      length="53"
+                      lineageId="Package\Load xref_DealToCompany\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[ChildID]"
+                      name="ChildID" />
+                    <outputColumn
+                      refId="Package\Load xref_DealToCompany\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Load xref_DealToCompany\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Load xref_DealToCompany\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Load xref_DealToCompany\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Load xref_DealToCompany.Paths[ADO NET Source Output]"
+              endId="Package\Load xref_DealToCompany\ADO NET Destination.Inputs[ADO NET Destination Input]"
+              name="ADO NET Source Output"
+              startId="Package\Load xref_DealToCompany\ADO NET Source.Outputs[ADO NET Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
       DTS:refId="Package\Load xref_DealToEpisode"
       DTS:CreationName="SSIS.Pipeline.3"
       DTS:Description="Data Flow Task"
@@ -962,13 +1183,15 @@ SELECT distinct
                   <inputColumns>
                     <inputColumn
                       refId="Package\Load xref_DealToFunder\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[ParentID]"
-                      cachedDataType="i4"
+                      cachedDataType="wstr"
+                      cachedLength="105"
                       cachedName="ParentID"
                       externalMetadataColumnId="Package\Load xref_DealToFunder\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[ParentID]"
                       lineageId="Package\Load xref_DealToFunder\ADO NET Source.Outputs[ADO NET Source Output].Columns[ParentID]" />
                     <inputColumn
                       refId="Package\Load xref_DealToFunder\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[ChildID]"
-                      cachedDataType="i4"
+                      cachedDataType="wstr"
+                      cachedLength="103"
                       cachedName="ChildID"
                       externalMetadataColumnId="Package\Load xref_DealToFunder\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[ChildID]"
                       lineageId="Package\Load xref_DealToFunder\ADO NET Source.Outputs[ADO NET Source Output].Columns[ChildID]" />
@@ -1031,6 +1254,33 @@ SELECT distinct
 from
 (
 SELECT DISTINCT
+        'Offer' + cast(BV.DEAL.DEA_ID as nvarchar(100)) AS [ParentID] ,
+        'org' + cast(BV.DEALFUNDING.DEF_COM_ID_FUNDER  as nvarchar(100)) AS [ChildID] ,
+		BV.DEAL.DEA_ID as DEA_ID
+FROM    BV.DEALFUNDING
+        RIGHT OUTER JOIN BV.DEAL ON BV.DEALFUNDING.DEF_DEA_ID = BV.DEAL.DEA_ID
+        LEFT OUTER JOIN BV.MASTERDEAL ON BV.DEAL.DEA_MDL_ID = BV.MASTERDEAL.MDL_ID
+        LEFT OUTER JOIN BV.ATTRIBUTE
+        RIGHT OUTER JOIN BV.DEAL_ATTRIBUTE ON BV.ATTRIBUTE.ATT_ID = BV.DEAL_ATTRIBUTE.ATT_ID ON BV.DEAL.DEA_ID = BV.DEAL_ATTRIBUTE.DEA_ID
+        RIGHT OUTER JOIN BV.DEALCONTENT ON BV.DEAL.DEA_ID = BV.DEALCONTENT.DCO_DEA_ID
+        RIGHT OUTER JOIN BV.ASSETRIGHTWINDOW ON BV.DEALCONTENT.DCO_ID = BV.ASSETRIGHTWINDOW.ARW_DCO_ID
+        RIGHT OUTER JOIN BV.PBSFEEDDISTRIBUTOR ON BV.DEAL.DEA_PBSFD_ID = BV.PBSFEEDDISTRIBUTOR.PBSFDS_ID
+WHERE   ( BV.PBSFEEDDISTRIBUTOR.PBSFDS_ISPBSDISTRIBUTOR &lt;&gt; 0 )
+        AND ( BV.DEALCONTENT.DCO_CHA_ID = 5000 )
+        AND ( BV.ASSETRIGHTWINDOW.ARW_ARR_ID = 152 )
+        OR ( BV.PBSFEEDDISTRIBUTOR.PBSFDS_ISPBSDISTRIBUTOR &lt;&gt; 0 )
+        AND ( BV.DEALCONTENT.DCO_CHA_ID = 5000 )
+        AND ( BV.ASSETRIGHTWINDOW.ARW_DATEAVAILABLETO &gt;= CONVERT(DATETIME, '2017-12-31 00:00:00', 102) )
+) q 
+join [RightsLineETL-EA].dbo.Apr23_Deals z on z.dea_id = q.DEA_ID
+where [ChildID] is not null
+
+
+/*
+select [ParentID],ChildID
+from
+(
+SELECT DISTINCT
         BV.DEAL.DEA_ID AS [ParentID] ,
         BV.DEALFUNDING.DEF_DEA_ID AS [ChildID] 
 FROM    BV.DEALFUNDING
@@ -1049,7 +1299,8 @@ WHERE   ( BV.PBSFEEDDISTRIBUTOR.PBSFDS_ISPBSDISTRIBUTOR &lt;&gt; 0 )
         AND ( BV.ASSETRIGHTWINDOW.ARW_DATEAVAILABLETO &gt;= CONVERT(DATETIME, '2017-12-31 00:00:00', 102) )
 ) q 
 join [RightsLineETL-EA].dbo.Apr23_Deals z on z.dea_id = q.parentid
-where [ChildID] is not null</property>
+where [ChildID] is not null
+*/</property>
                 <property
                   dataType="System.Int32"
                   description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
@@ -1088,19 +1339,21 @@ where [ChildID] is not null</property>
                   <outputColumns>
                     <outputColumn
                       refId="Package\Load xref_DealToFunder\ADO NET Source.Outputs[ADO NET Source Output].Columns[ParentID]"
-                      dataType="i4"
+                      dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Load xref_DealToFunder\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[ParentID]"
+                      length="105"
                       lineageId="Package\Load xref_DealToFunder\ADO NET Source.Outputs[ADO NET Source Output].Columns[ParentID]"
                       name="ParentID"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\Load xref_DealToFunder\ADO NET Source.Outputs[ADO NET Source Output].Columns[ChildID]"
-                      dataType="i4"
+                      dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Load xref_DealToFunder\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[ChildID]"
+                      length="103"
                       lineageId="Package\Load xref_DealToFunder\ADO NET Source.Outputs[ADO NET Source Output].Columns[ChildID]"
                       name="ChildID"
                       truncationRowDisposition="FailComponent" />
@@ -1109,11 +1362,13 @@ where [ChildID] is not null</property>
                     isUsed="True">
                     <externalMetadataColumn
                       refId="Package\Load xref_DealToFunder\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[ParentID]"
-                      dataType="i4"
+                      dataType="wstr"
+                      length="105"
                       name="ParentID" />
                     <externalMetadataColumn
                       refId="Package\Load xref_DealToFunder\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[ChildID]"
-                      dataType="i4"
+                      dataType="wstr"
+                      length="103"
                       name="ChildID" />
                   </externalMetadataColumns>
                 </output>
@@ -1124,12 +1379,14 @@ where [ChildID] is not null</property>
                   <outputColumns>
                     <outputColumn
                       refId="Package\Load xref_DealToFunder\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[ParentID]"
-                      dataType="i4"
+                      dataType="wstr"
+                      length="105"
                       lineageId="Package\Load xref_DealToFunder\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[ParentID]"
                       name="ParentID" />
                     <outputColumn
                       refId="Package\Load xref_DealToFunder\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[ChildID]"
-                      dataType="i4"
+                      dataType="wstr"
+                      length="103"
                       lineageId="Package\Load xref_DealToFunder\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[ChildID]"
                       name="ChildID" />
                     <outputColumn
@@ -2335,8 +2592,8 @@ SELECT distinct
               <connections>
                 <connection
                   refId="Package\Load xref_DealToUnderwriter\ADO NET Destination.Connections[IDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[db19-uat.RightsLineETL-EA]"
-                  connectionManagerRefId="Package.ConnectionManagers[db19-uat.RightsLineETL-EA]"
+                  connectionManagerID="Package.ConnectionManagers[db19-uat.RightsLineETL-EA ADONET]"
+                  connectionManagerRefId="Package.ConnectionManagers[db19-uat.RightsLineETL-EA ADONET]"
                   description="Managed connection manager"
                   name="IDbConnection" />
               </connections>
@@ -2531,10 +2788,19 @@ SELECT distinct
                   dataType="System.String"
                   description="The SQL command to be executed."
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">select	distinct a.dea_id as ParentID,
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">select	distinct 
+                'Offer' + cast(a.dea_id as nvarchar(max)) as ParentID,
+                b.item_bv_id as ChildID
+from	pbs.vwFunders a
+join	pbs.underwriter b on replace(b.item_bv_id,'org','') = a.item_bv_id
+
+
+/*
+select	distinct a.dea_id as ParentID,
 		replace(b.item_bv_id,'org','') as ChildID
 from	pbs.vwFunders a
-join	pbs.underwriter b on replace(b.item_bv_id,'org','') = a.item_bv_id</property>
+join	pbs.underwriter b on replace(b.item_bv_id,'org','') = a.item_bv_id
+*/</property>
                 <property
                   dataType="System.String"
                   description="The variable that contains the SQL command to be executed."
@@ -2596,11 +2862,11 @@ join	pbs.underwriter b on replace(b.item_bv_id,'org','') = a.item_bv_id</propert
                     <externalMetadataColumn
                       refId="Package\Load xref_DealToUnderwriter\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ChildID]"
                       dataType="wstr"
-                      length="4000"
+                      length="33"
                       name="ChildID" />
                     <externalMetadataColumn
                       refId="Package\Load xref_DealToUnderwriter\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ParentID]"
-                      dataType="i4"
+                      dataType="nText"
                       name="ParentID" />
                   </externalMetadataColumns>
                 </output>
@@ -2624,12 +2890,12 @@ join	pbs.underwriter b on replace(b.item_bv_id,'org','') = a.item_bv_id</propert
                     <outputColumn
                       refId="Package\Load xref_DealToUnderwriter\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ChildID]"
                       dataType="wstr"
-                      length="4000"
+                      length="33"
                       lineageId="Package\Load xref_DealToUnderwriter\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ChildID]"
                       name="ChildID" />
                     <outputColumn
                       refId="Package\Load xref_DealToUnderwriter\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ParentID]"
-                      dataType="i4"
+                      dataType="nText"
                       lineageId="Package\Load xref_DealToUnderwriter\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ParentID]"
                       name="ParentID" />
                   </outputColumns>
@@ -4194,6 +4460,14 @@ SELECT distinct
       DTS:ObjectName="Constraint 10"
       DTS:To="Package\Load xref_DealToFunder" />
     <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 11]"
+      DTS:CreationName=""
+      DTS:DTSID="{2030DA27-4BA9-4363-BA64-5E2D36C12DC6}"
+      DTS:From="Package\Load xref_DealToUnderwriter"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 11"
+      DTS:To="Package\Load xref_DealToCompany" />
+    <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 2]"
       DTS:CreationName=""
       DTS:DTSID="{05359A7F-0446-48CA-805C-57662E36F976}"
@@ -4448,18 +4722,30 @@ SELECT distinct
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 3]"
-          TopLeft="515.611111111111,78">
+          TopLeft="485.5,78">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,52.666666666667"
+              EndConnector="34.055555555556,52.666666666667"
               Start="0,0"
-              End="0,45.166666666667">
+              End="34.055555555556,45.166666666667">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,45.166666666667" />
+                    End="0,22.3333333333335" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,22.3333333333335"
+                    Point2="0,26.3333333333335"
+                    Point3="4,26.3333333333335" />
+                  <mssgle:LineSegment
+                    End="30.055555555556,26.3333333333335" />
+                  <mssgle:CubicBezierSegment
+                    Point1="30.055555555556,26.3333333333335"
+                    Point2="34.055555555556,26.3333333333335"
+                    Point3="34.055555555556,30.3333333333335" />
+                  <mssgle:LineSegment
+                    End="34.055555555556,45.166666666667" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -4492,30 +4778,18 @@ SELECT distinct
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 5]"
-          TopLeft="514.277777777778,259.555555555555">
+          TopLeft="514.138888888889,259.555555555555">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-32.9444444444447,37.3333333333341"
+              EndConnector="0,37.3333333333341"
               Start="0,0"
-              End="-32.9444444444447,29.8333333333341">
+              End="0,29.8333333333341">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,18.2256809338526" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,18.2256809338526"
-                    Point2="0,22.2256809338526"
-                    Point3="-4,22.2256809338526" />
-                  <mssgle:LineSegment
-                    End="-28.9444444444447,22.2256809338526" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-28.9444444444447,22.2256809338526"
-                    Point2="-32.9444444444447,22.2256809338526"
-                    Point3="-32.9444444444447,26.2256809338526" />
-                  <mssgle:LineSegment
-                    End="-32.9444444444447,29.8333333333341" />
+                    End="0,29.8333333333341" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -4636,6 +4910,44 @@ SELECT distinct
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <NodeLayout
+          Size="208,42"
+          Id="Package\Load xref_DealToCompany"
+          TopLeft="818,383" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 11]"
+          TopLeft="913.5,332">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="8.5,51"
+              Start="0,0"
+              End="8.5,43.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,21.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,21.5"
+                    Point2="0,25.5"
+                    Point3="4,25.5" />
+                  <mssgle:LineSegment
+                    End="4.5,25.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="4.5,25.5"
+                    Point2="8.5,25.5"
+                    Point3="8.5,29.5" />
+                  <mssgle:LineSegment
+                    End="8.5,43.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </Package>
@@ -4643,7 +4955,7 @@ SELECT distinct
     design-time-name="Package\Load xref_DealToBlackout">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="173,42"
           Id="Package\Load xref_DealToBlackout\OLE DB Destination"
@@ -4675,9 +4987,7 @@ SELECT distinct
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -4699,9 +5009,7 @@ SELECT distinct
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -4732,7 +5040,7 @@ SELECT distinct
     design-time-name="Package\Load xref_DealToEpisode">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="152,42"
           Id="Package\Load xref_DealToEpisode\OLE DB Source"
@@ -4760,9 +5068,7 @@ SELECT distinct
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -4847,7 +5153,7 @@ SELECT distinct
     design-time-name="Package\Load xref_DealToHoldback">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="173,42"
           Id="Package\Load xref_DealToHoldback\OLE DB Destination"
@@ -4879,9 +5185,7 @@ SELECT distinct
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -4903,9 +5207,7 @@ SELECT distinct
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -4936,7 +5238,7 @@ SELECT distinct
     design-time-name="Package\Load xref_DealToRightsIn">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="173,42"
           Id="Package\Load xref_DealToRightsIn\OLE DB Destination"
@@ -4968,9 +5270,7 @@ SELECT distinct
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -4992,9 +5292,7 @@ SELECT distinct
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -5004,7 +5302,7 @@ SELECT distinct
     design-time-name="Package\Load xref_DealToSeason">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="152,42"
           Id="Package\Load xref_DealToSeason\OLE DB Source"
@@ -5032,9 +5330,7 @@ SELECT distinct
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -5065,7 +5361,7 @@ SELECT distinct
     design-time-name="Package\Load xref_DealToUnderwriter">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="158,42"
           Id="Package\Load xref_DealToUnderwriter\Data Conversion"
@@ -5073,7 +5369,7 @@ SELECT distinct
         <NodeLayout
           Size="181,42"
           Id="Package\Load xref_DealToUnderwriter\ADO NET Destination"
-          TopLeft="236,389" />
+          TopLeft="164,406" />
         <NodeLayout
           Size="152,42"
           Id="Package\Load xref_DealToUnderwriter\OLE DB Source"
@@ -5097,45 +5393,29 @@ SELECT distinct
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Load xref_DealToUnderwriter.Paths[Data Conversion Output]"
-          TopLeft="252,287">
+          TopLeft="253.25,287">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="74.5,102"
+              EndConnector="0,119"
               Start="0,0"
-              End="74.5,94.5">
+              End="0,111.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,47" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,47"
-                    Point2="0,51"
-                    Point3="4,51" />
-                  <mssgle:LineSegment
-                    End="70.5,51" />
-                  <mssgle:CubicBezierSegment
-                    Point1="70.5,51"
-                    Point2="74.5,51"
-                    Point3="74.5,55" />
-                  <mssgle:LineSegment
-                    End="74.5,94.5" />
+                    End="0,111.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -5161,7 +5441,7 @@ SELECT distinct
     design-time-name="Package\Load xref_SeasonContainerToSeason">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="152,42"
           Id="Package\Load xref_SeasonContainerToSeason\OLE DB Source"
@@ -5189,9 +5469,7 @@ SELECT distinct
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -5222,7 +5500,7 @@ SELECT distinct
     design-time-name="Package\Load xref_SeasonToEpisode">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="152,42"
           Id="Package\Load xref_SeasonToEpisode\OLE DB Source"
@@ -5250,9 +5528,7 @@ SELECT distinct
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -5344,7 +5620,7 @@ SELECT distinct
     design-time-name="Package\Load xref_SeriesToSeason">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="152,42"
           Id="Package\Load xref_SeriesToSeason\OLE DB Source"
@@ -5372,9 +5648,7 @@ SELECT distinct
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -5451,6 +5725,72 @@ SELECT distinct
         <Name>TableInfoObjectType</Name>
         <Value
           type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Load xref_DealToCompany">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="160,42"
+          Id="Package\Load xref_DealToCompany\ADO NET Source"
+          TopLeft="208,118" />
+        <NodeLayout
+          Size="181,42"
+          Id="Package\Load xref_DealToCompany\ADO NET Destination"
+          TopLeft="242,265" />
+        <EdgeLayout
+          Id="Package\Load xref_DealToCompany.Paths[ADO NET Source Output]"
+          TopLeft="288,160">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="44.5,105"
+              Start="0,0"
+              End="44.5,97.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,48.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,48.5"
+                    Point2="0,52.5"
+                    Point3="4,52.5" />
+                  <mssgle:LineSegment
+                    End="40.5,52.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="40.5,52.5"
+                    Point2="44.5,52.5"
+                    Point3="44.5,56.5" />
+                  <mssgle:LineSegment
+                    End="44.5,97.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load xref_DealToCompany\ADO NET Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load xref_DealToCompany\ADO NET Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
