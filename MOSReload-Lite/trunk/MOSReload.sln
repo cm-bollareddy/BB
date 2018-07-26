@@ -3,6 +3,16 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "MOSReload", "MOSReload\MOSReload.dtproj", "{0C92E4F0-476A-4484-B640-D6235AD628AD}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PSScript", "PSScript", "{02E2DA55-D5B0-40F7-926A-63F00FFD692B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "log4net", "log4net", "{885D8538-81A6-4EF7-B75F-3A173A79050E}"
+	ProjectSection(SolutionItems) = preProject
+		log4net\log4net.config = log4net\log4net.config
+		log4net\log4net.dll = log4net\log4net.dll
+		log4net\psm_logger.psm1 = log4net\psm_logger.psm1
+		log4net\rl_RunSSIS.ps1 = log4net\rl_RunSSIS.ps1
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Development|Default = Development|Default
@@ -13,6 +23,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{885D8538-81A6-4EF7-B75F-3A173A79050E} = {02E2DA55-D5B0-40F7-926A-63F00FFD692B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		VisualSVNWorkingCopyRoot = .
