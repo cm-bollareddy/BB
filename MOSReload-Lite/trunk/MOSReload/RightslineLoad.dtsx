@@ -12,8 +12,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="RightslineLoad"
   DTS:PackageType="5"
-  DTS:VersionBuild="372"
-  DTS:VersionGUID="{81396B28-A6AF-48FC-B7FB-19C5770DFD55}">
+  DTS:VersionBuild="378"
+  DTS:VersionGUID="{6484202C-58F8-4347-9F05-796FB1248F32}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">6</DTS:Property>
   <DTS:ConnectionManagers>
@@ -4894,7 +4894,7 @@ SELECT distinct
       ,[Episode.PrimaryGenre]
       ,[Episode.SecondaryGenre]
       ,[Episode.Distribution.Number]
-      ,[Episode.ReleaseDate]
+      ,convert(varchar,[Episode.ReleaseDate],101) as [Episode.ReleaseDate]
       ,[Episode.ApproximateLength]
       ,[Episode.Language.Primary.mode]
       ,[Episode.LanguagePrimary]
@@ -5536,9 +5536,10 @@ SELECT
                               name="Episode.Distribution.Number" />
                             <externalMetadataColumn
                               refId="Package\Sequence Container 1\Catalog Import Container\Import Episode Series\MOS-EpisodeWithSeriesParent.Outputs[OLE DB Source Output].ExternalColumns[Episode.ReleaseDate]"
-                              dataType="dbTimeStamp2"
-                              name="Episode.ReleaseDate"
-                              scale="7" />
+                              codePage="1252"
+                              dataType="str"
+                              length="30"
+                              name="Episode.ReleaseDate" />
                             <externalMetadataColumn
                               refId="Package\Sequence Container 1\Catalog Import Container\Import Episode Series\MOS-EpisodeWithSeriesParent.Outputs[OLE DB Source Output].ExternalColumns[Episode.ApproximateLength]"
                               codePage="1252"
@@ -5781,10 +5782,11 @@ SELECT
                               name="Episode.Distribution.Number" />
                             <outputColumn
                               refId="Package\Sequence Container 1\Catalog Import Container\Import Episode Series\MOS-EpisodeWithSeriesParent.Outputs[OLE DB Source Error Output].Columns[Episode.ReleaseDate]"
-                              dataType="dbTimeStamp2"
+                              codePage="1252"
+                              dataType="str"
+                              length="30"
                               lineageId="Package\Sequence Container 1\Catalog Import Container\Import Episode Series\MOS-EpisodeWithSeriesParent.Outputs[OLE DB Source Error Output].Columns[Episode.ReleaseDate]"
-                              name="Episode.ReleaseDate"
-                              scale="7" />
+                              name="Episode.ReleaseDate" />
                             <outputColumn
                               refId="Package\Sequence Container 1\Catalog Import Container\Import Episode Series\MOS-EpisodeWithSeriesParent.Outputs[OLE DB Source Error Output].Columns[Episode.ApproximateLength]"
                               codePage="1252"
@@ -7733,7 +7735,7 @@ SELECT
         CAST([Episode.PrimaryGenre] AS NVARCHAR(500)) AS [Episode.PrimaryGenre] ,
         CAST(REPLACE([Episode.SecondaryGenre], ',', '|') AS NVARCHAR(500)) AS [Episode.SecondaryGenre] ,
         [Episode.Distribution.Number] ,
-        [Episode.ReleaseDate] ,
+      convert(varchar,  [Episode.ReleaseDate],101) as  [Episode.ReleaseDate] ,
         CONVERT(VARCHAR(3),ass.ASS_DURATIONSCHEDULED /60 ) AS [Episode.ApproximateLength] ,
         [Episode.Language.Primary.mode] ,
         [Episode.LanguagePrimary] ,
@@ -8624,9 +8626,10 @@ SELECT
                               name="Episode.Distribution.Number" />
                             <externalMetadataColumn
                               refId="Package\Sequence Container 1\Catalog Import Container\Import EpisodeParentSeason\MOS-EpisodeWithSeasonParent.Outputs[OLE DB Source Output].ExternalColumns[Episode.ReleaseDate]"
-                              dataType="dbTimeStamp2"
-                              name="Episode.ReleaseDate"
-                              scale="7" />
+                              codePage="1252"
+                              dataType="str"
+                              length="30"
+                              name="Episode.ReleaseDate" />
                             <externalMetadataColumn
                               refId="Package\Sequence Container 1\Catalog Import Container\Import EpisodeParentSeason\MOS-EpisodeWithSeasonParent.Outputs[OLE DB Source Output].ExternalColumns[Episode.ApproximateLength]"
                               codePage="1252"
@@ -8919,10 +8922,11 @@ SELECT
                               name="Episode.Distribution.Number" />
                             <outputColumn
                               refId="Package\Sequence Container 1\Catalog Import Container\Import EpisodeParentSeason\MOS-EpisodeWithSeasonParent.Outputs[OLE DB Source Error Output].Columns[Episode.ReleaseDate]"
-                              dataType="dbTimeStamp2"
+                              codePage="1252"
+                              dataType="str"
+                              length="30"
                               lineageId="Package\Sequence Container 1\Catalog Import Container\Import EpisodeParentSeason\MOS-EpisodeWithSeasonParent.Outputs[OLE DB Source Error Output].Columns[Episode.ReleaseDate]"
-                              name="Episode.ReleaseDate"
-                              scale="7" />
+                              name="Episode.ReleaseDate" />
                             <outputColumn
                               refId="Package\Sequence Container 1\Catalog Import Container\Import EpisodeParentSeason\MOS-EpisodeWithSeasonParent.Outputs[OLE DB Source Error Output].Columns[Episode.ApproximateLength]"
                               codePage="1252"
@@ -13155,7 +13159,7 @@ SELECT
         CAST([Episode.PrimaryGenre] AS NVARCHAR(500)) AS [Episode.PrimaryGenre] ,
         CAST(REPLACE([Episode.SecondaryGenre], ',', '|') AS NVARCHAR(500)) AS [Episode.SecondaryGenre] ,
         [Episode.Distribution.Number] ,
-        [Episode.ReleaseDate] ,
+       convert(varchar, [Episode.ReleaseDate],101) as  [Episode.ReleaseDate] ,
         CONVERT(VARCHAR(3),ass.ASS_DURATIONSCHEDULED /60 ) AS [Episode.ApproximateLength] ,
         [Episode.Language.Primary.mode] ,
         [Episode.LanguagePrimary] ,
@@ -14008,9 +14012,10 @@ SELECT
                               name="Episode.Distribution.Number" />
                             <externalMetadataColumn
                               refId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\MOS-OTO.Outputs[OLE DB Source Output].ExternalColumns[Episode.ReleaseDate]"
-                              dataType="dbTimeStamp2"
-                              name="Episode.ReleaseDate"
-                              scale="7" />
+                              codePage="1252"
+                              dataType="str"
+                              length="30"
+                              name="Episode.ReleaseDate" />
                             <externalMetadataColumn
                               refId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\MOS-OTO.Outputs[OLE DB Source Output].ExternalColumns[Episode.ApproximateLength]"
                               codePage="1252"
@@ -14299,10 +14304,11 @@ SELECT
                               name="Episode.Distribution.Number" />
                             <outputColumn
                               refId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\MOS-OTO.Outputs[OLE DB Source Error Output].Columns[Episode.ReleaseDate]"
-                              dataType="dbTimeStamp2"
+                              codePage="1252"
+                              dataType="str"
+                              length="30"
                               lineageId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\MOS-OTO.Outputs[OLE DB Source Error Output].Columns[Episode.ReleaseDate]"
-                              name="Episode.ReleaseDate"
-                              scale="7" />
+                              name="Episode.ReleaseDate" />
                             <outputColumn
                               refId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\MOS-OTO.Outputs[OLE DB Source Error Output].Columns[Episode.ApproximateLength]"
                               codePage="1252"
@@ -16633,7 +16639,7 @@ SELECT
                           UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">With MiEpisodeCTE as
 ( select min([Episode.EpisodeNumber]) episodeNo,[Episode.ParentID]  from pbs.vwMOSEpisode 
 group by [Episode.ParentID]),MIReleaseCTE as
-(select min([Episode.ReleaseDate]) minReleaseDate,vwMOsEpisode.[Episode.ParentID] from pbs.vwMOSEpisode join MiEpisodeCTE on MIEpisodeCTE.episodeNO = vwMOSEpisode.[Episode.EpisodeNumber] 
+(select convert(varchar, min([Episode.ReleaseDate]),101) minReleaseDate,vwMOsEpisode.[Episode.ParentID] from pbs.vwMOSEpisode join MiEpisodeCTE on MIEpisodeCTE.episodeNO = vwMOSEpisode.[Episode.EpisodeNumber] 
 and MIEpisodeCTE.[Episode.parentID] = vwMOsEpisode.[Episode.ParentID] group by vwMOSEpisode.[Episode.ParentID])
 SELECT [InternalPBSID]
       ,[Season.Season Class]
@@ -18284,7 +18290,7 @@ SELECT [InternalPBSID]
                           UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">With MiEpisodeCTE as
 ( select min([Episode.EpisodeNumber]) episodeNo,[Episode.ParentID]  from pbs.vwMOSEpisode 
 group by [Episode.ParentID]),MIReleaseCTE as
-(select min([Episode.ReleaseDate]) minReleaseDate,vwMOsEpisode.[Episode.ParentID] from pbs.vwMOSEpisode join MiEpisodeCTE on MIEpisodeCTE.episodeNO = vwMOSEpisode.[Episode.EpisodeNumber] 
+(select convert(varchar, min([Episode.ReleaseDate]),101) minReleaseDate,vwMOsEpisode.[Episode.ParentID] from pbs.vwMOSEpisode join MiEpisodeCTE on MIEpisodeCTE.episodeNO = vwMOSEpisode.[Episode.EpisodeNumber] 
 and MIEpisodeCTE.[Episode.parentID] = vwMOsEpisode.[Episode.ParentID] group by vwMOSEpisode.[Episode.ParentID])
 SELECT [InternalPBSID]
       ,[Season.Season Class]
@@ -19996,7 +20002,7 @@ SELECT  [InternalPBSID]
       ,[Series.LanguagePrimary]
       ,[Series.LanguageSecondary]
       ,[Series.ApproximateLength]
-      ,[Series.ReleaseDate]
+      ,convert(varchar,[Series.ReleaseDate],101) as [Series.ReleaseDate]
       ,[Series.Credits.Role]
       ,[Series.Credits.TalentID]
       ,[Series.Credits.DisplayName]
@@ -20640,9 +20646,10 @@ SELECT [Series.UID]
                               name="Copyright" />
                             <externalMetadataColumn
                               refId="Package\Sequence Container 1\Catalog Import Container\ImportSeries\MOS-Source-Series.Outputs[OLE DB Source Output].ExternalColumns[Series.ReleaseDate]"
-                              dataType="dbTimeStamp2"
-                              name="Series.ReleaseDate"
-                              scale="7" />
+                              codePage="1252"
+                              dataType="str"
+                              length="30"
+                              name="Series.ReleaseDate" />
                             <externalMetadataColumn
                               refId="Package\Sequence Container 1\Catalog Import Container\ImportSeries\MOS-Source-Series.Outputs[OLE DB Source Output].ExternalColumns[NolaRoot]"
                               dataType="wstr"
@@ -20770,10 +20777,11 @@ SELECT [Series.UID]
                               name="Series.ApproximateLength" />
                             <outputColumn
                               refId="Package\Sequence Container 1\Catalog Import Container\ImportSeries\MOS-Source-Series.Outputs[OLE DB Source Error Output].Columns[Series.ReleaseDate]"
-                              dataType="dbTimeStamp2"
+                              codePage="1252"
+                              dataType="str"
+                              length="30"
                               lineageId="Package\Sequence Container 1\Catalog Import Container\ImportSeries\MOS-Source-Series.Outputs[OLE DB Source Error Output].Columns[Series.ReleaseDate]"
-                              name="Series.ReleaseDate"
-                              scale="7" />
+                              name="Series.ReleaseDate" />
                             <outputColumn
                               refId="Package\Sequence Container 1\Catalog Import Container\ImportSeries\MOS-Source-Series.Outputs[OLE DB Source Error Output].Columns[Series.SynopsisShort]"
                               dataType="wstr"
@@ -36646,7 +36654,7 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
     design-time-name="Package\Sequence Container 1\Catalog Import Container\Import Episode Series">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="223,42"
           Id="Package\Sequence Container 1\Catalog Import Container\Import Episode Series\MOS-EpisodeWithSeriesParent"
@@ -36682,9 +36690,7 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -36718,9 +36724,7 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -36742,9 +36746,7 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -37146,7 +37148,7 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
     design-time-name="Package\Sequence Container 1\Catalog Import Container\Import SeasonContainer">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="185,42"
           Id="Package\Sequence Container 1\Catalog Import Container\Import SeasonContainer\MOS-SeasonContainer"
@@ -37194,9 +37196,7 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -37230,9 +37230,7 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -37266,9 +37264,7 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -37299,7 +37295,7 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
     design-time-name="Package\Sequence Container 1\Catalog Import Container\ImportSeasons">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="100,42"
           Id="Package\Sequence Container 1\Catalog Import Container\ImportSeasons\Sort"
@@ -37347,9 +37343,7 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -37383,9 +37377,7 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -37407,9 +37399,7 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -37445,7 +37435,7 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
     design-time-name="Package\Sequence Container 1\Catalog Import Container\ImportSeries">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="189,42"
           Id="Package\Sequence Container 1\Catalog Import Container\ImportSeries\Sort and Remove Dups"
@@ -37481,9 +37471,7 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -37505,9 +37493,7 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -37529,9 +37515,7 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
