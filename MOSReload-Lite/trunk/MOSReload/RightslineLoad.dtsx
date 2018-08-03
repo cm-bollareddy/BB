@@ -12,8 +12,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="RightslineLoad"
   DTS:PackageType="5"
-  DTS:VersionBuild="383"
-  DTS:VersionGUID="{F95503F1-8616-42D3-8DE0-18EAE532AADE}">
+  DTS:VersionBuild="385"
+  DTS:VersionGUID="{835CC6E5-8189-4DCE-BF70-3141B13C5A27}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">6</DTS:Property>
   <DTS:ConnectionManagers>
@@ -7775,7 +7775,8 @@ SUBSTRING(vch_code,1,CHARINDEX('+',VCH_CODE)-1) END AS us_tvpg,
         mlvISPBSMINORITYPRODUCTION.DerivedValue AS minority_production ,
         mlvEditClass.DerivedValue AS edit_class ,
         mlvEditName.DerivedValue AS edit_name ,
-        mlvEpisodeEntityTemplate.DerivedValue AS EpisodeEntityTemplate
+        mlvEpisodeEntityTemplate.DerivedValue AS EpisodeEntityTemplate,
+		p.ULU_DESC AS Franchise
 FROM    [TrafficData].[PBS].[vwMOSEpisode]
         JOIN Bv.EXTENDEDDATA extD ON extD.EXT_OWNERRECORD_ID = ass_id
         JOIN bv.USERLOOKUP ulkup ON ulkup.Ulu_id = extD.EXT_INTEGER
@@ -7803,163 +7804,24 @@ FROM    [TrafficData].[PBS].[vwMOSEpisode]
                                                             AND mlvEditName.ML_ID = 3
         LEFT JOIN [PBS].[MasterLookupValues] mlvEpisodeEntityTemplate ON mlvEpisodeEntityTemplate.field = 'static.EpisodeEntityTemplate.value'
                                                               AND mlvEpisodeEntityTemplate.ML_ID = 3
+		LEFT JOIN
+        (
+            SELECT BV.EXTENDEDDATA.EXT_INTEGER,
+                   BV.USERLOOKUP.ULU_DESC,
+                   BV.EXTENDEDDATA.EXT_OWNERRECORD_ID
+            FROM BV.EXTENDEDDATA
+                LEFT OUTER JOIN BV.USERLOOKUP
+                    ON BV.EXTENDEDDATA.EXT_INTEGER = BV.USERLOOKUP.ULU_ID
+            WHERE (BV.EXTENDEDDATA.EXT_SEXTC_ID = 607871743)
+        ) P
+            ON P.EXT_OWNERRECORD_ID = ass.ASS_ID
 WHERE   EXT_SEXTC_ID = 607871753 -- RightslineTemplate Column
         AND ulkup.ULU_CLASS = 'L03'
         AND ULU_ID != 609587740
         AND CHARINDEX('Season', [Episode.ParentID]) &gt;= 1
         AND [Episode.ParentID] IN ( 'cid:org:pbs.org:Season2Series600817646',
                                     'cid:org:pbs.org:Season1Series614345618',
-                                    'cid:org:pbs.org:Season1Series617324631' )
-
-
-/*
-SELECT 
-      vwMosEpisode.[ass_id]
-      ,[Episode.ContentIdentifier]
-      ,[Episode.UID]
-      ,[Episode.ParentID]
-      ,[Episode.Referent.Type]
-      ,[Episode.Organization.Contact.Info.Phone]
-      ,[Episode.Organization.Contact.Info.Phone.Type]
-      ,[Episode.Organization.Contact Info.Address]
-      ,[Episode.Organization.Contact.Info.PrimaryEmail]
-      ,[Episode.Organization.Contact.Info.Name]
-      ,[Episode.Organization.Contact.Info.ContactID]
-      ,[Episode.Organization.DisplayName]
-      ,[Episode.Organization.domain]
-      ,[Episode.Organization.OrganizationID]
-      ,[Episode.Organization.Role]
-      ,PBS.MoveArticleOfSpeach(CASE 
-			when ass.ASS_EPISODETITLE is not null then rtrim(ltrim(ass.ASS_EPISODETITLE))
-			else 'Episode ' + cast([TrafficData].[PBS].[vwMOSEpisode].[Episode.EpisodeNumber] as varchar(10))
-	   end) as [Episode.Title.Corrected]
-      ,PBS.MoveArticleOfSpeach(CASE 
-			when ass.ASS_EPISODETITLE is not null then substring(rtrim(ltrim(ass.ass_episodetitle)),1,120)
-			else 'Episode ' + cast([TrafficData].[PBS].[vwMOSEpisode].[Episode.EpisodeNumber] as varchar(10))
-	   end) as [Episode.Title120.Corrected]
-      ,[Episode.TitleClass]
-      ,[Episode.EpisodeNumber]
-      ,[Episode.EpisodeClass]
-      ,cast([Episode.SynopsisShort] as nvarchar(400)) as [Episode.SynopsisShort] 
-      ,cast([Episode.SynopsisLong] as nvarchar(400)) as [Episode.SynopsisLong]
-      ,[Episode.CountryOfOrigin]
-      ,cast([Episode.PrimaryGenre]as nvarchar(500)) as [Episode.PrimaryGenre]
-      ,cast(replace([Episode.SecondaryGenre],',','|') as nvarchar(500)) as [Episode.SecondaryGenre]
-      ,[Episode.Distribution.Number]
-      ,[Episode.ReleaseDate]
-      ,ass.ASS_DURATIONSCHEDULED as [Episode.ApproximateLength]
-      ,[Episode.Language.Primary.mode]
-      ,[Episode.LanguagePrimary]
-      ,[Episode.LanguageSecondary]
-      ,[Episode.Credits.Display.Name]
-      ,[Episode.Credits.Role]
-      ,[Episode.Credits.TalentID]
-      ,[Episode.ContactType]
-      ,substring([Episode.ParentID],charindex(':pbs.org',[Episode.ParentID])+9,len([Episode.ParentID])) as PBS_Parent_ID
-	  ,substring([Episode.ContentIdentifier],charindex('NOLARoot',[Episode.ContentIdentifier])+9,4) as NolaRoot
-	  ,substring([Episode.ContentIdentifier],charindex('NOLARoot',[Episode.ContentIdentifier])+9,len([Episode.ParentID])) as Nolacode
-	  ,CASE 
-			when ass.ASS_EPISODETITLE is not null then ass.ASS_EPISODETITLE 
-			else 'Episode ' + cast([TrafficData].[PBS].[vwMOSEpisode].[Episode.EpisodeNumber] as varchar(10))
-		end 	as [DisplayFriendlyTitle]
-	  ,case ass.ASS_ISPBSPUBLISHED
-		when 1 then cast('Ready for External Publishing' as nvarchar)
-		else cast('In Progress' as nvarchar)
-	end as entity_status
-	,11 as WorkflowStatus
-	,case [Episode.TitleClass] 
-		when 'Working' then 
-			cast(substring(rtrim(ltrim(ass.ass_episodetitle)),1,120) as nvarchar(120))
-		else cast('' as nvarchar)
-
-	end as additional_akas
-	,lookRating.RAT_DESC as us_tvpg
-   ,year([Episode.ReleaseDate]) as first_broadcast_year
-   ,ARLookup.SLU_DESC as aspect_ratio
-,case dea.DEA_SLU_ID_HIDEF
-          when 1 then cast( 'HD' as nvarchar(100))
-          else cast( 'SD' as nvarchar(100))
-  end as resolution
-, case dea.DEA_ISPBSMINORITYPRODUCTION
-     when 1 then cast('Yes' as nvarchar(5))
-    else cast('No' as nvarchar(5))
- end as minority_production
-,cast('original' as nvarchar(50)) as edit_class
-  FROM [TrafficData].[PBS].[vwMOSEpisode] 
-  Join Bv.EXTENDEDDATA extD on extD.EXT_OWNERRECORD_ID = ass_id 
-  Join bv.USERLOOKUP ulkup on ulkup.Ulu_id = extD.EXT_INTEGER
-  Join [RightsLineETL].[dbo].Apr23_Episodes feb28 on  feb28.ASS_ID = vwMOSEpisode.Ass_id
-  join bv.asset ass on ass.ass_id = vwMOSEpisode.ass_id
-  LEFT JOIN [BV].[ASSETCATEGORY] aca ON aca.ACA_ID = ass.ASS_ACA_ID
-  left join	bv.Rating lookRating on lookRating.RAT_ID = ass.ASS_RAT_ID
-  left join bv.Deal dea on dea.DEA_ID = [TrafficData].[PBS].[vwMOSEpisode].DealID
-  left join bv.SYSLOOKUP ARLookup on ARLookup.SLU_ID = dea.DEA_SLU_ID_ASPECTRATIO
-  where EXT_SEXTC_ID = 607871753 -- RightslineTemplate Column
-  and ulkup.ULU_CLASS = 'L03' and ULU_ID != 609587740 
-  and charindex('Season',[Episode.ParentID]) &gt;= 1
-  and [Episode.ParentID] in ('cid:org:pbs.org:Season2Series600817646','cid:org:pbs.org:Season1Series614345618','cid:org:pbs.org:Season1Series617324631')
-
-*/
-
-/* Original SQL
-SELECT 
-      vwMosEpisode.[ass_id]
-      ,[Episode.ContentIdentifier]
-      ,[Episode.UID]
-      ,[Episode.ParentID]
-      ,[Episode.Referent.Type]
-      ,[Episode.Organization.Contact.Info.Phone]
-      ,[Episode.Organization.Contact.Info.Phone.Type]
-      ,[Episode.Organization.Contact Info.Address]
-      ,[Episode.Organization.Contact.Info.PrimaryEmail]
-      ,[Episode.Organization.Contact.Info.Name]
-      ,[Episode.Organization.Contact.Info.ContactID]
-      ,[Episode.Organization.DisplayName]
-      ,[Episode.Organization.domain]
-      ,[Episode.Organization.OrganizationID]
-      ,[Episode.Organization.Role]
-      ,CASE 
-						when ass.ASS_EPISODETITLE is not null then rtrim(ltrim(ass.ASS_EPISODETITLE))
-						else rtrim(ltrim(ass.ass_title))
-					end
-		 as [Episode.Title.Corrected]
-      ,substring(rtrim(ltrim(ass.ass_episodetitle)),1,120) as [Episode.Title120.Corrected]
-      ,[Episode.TitleClass]
-      ,[Episode.EpisodeNumber]
-      ,[Episode.EpisodeClass]
-      ,[Episode.SynopsisShort]
-      ,[Episode.SynopsisLong]
-      ,[Episode.CountryOfOrigin]
-      ,[Episode.PrimaryGenre]
-      ,[Episode.SecondaryGenre]
-      ,[Episode.Distribution.Number]
-      ,[Episode.ReleaseDate]
-      ,[Episode.ApproximateLength]
-      ,[Episode.Language.Primary.mode]
-      ,[Episode.LanguagePrimary]
-      ,[Episode.LanguageSecondary]
-      ,[Episode.Credits.Display.Name]
-      ,[Episode.Credits.Role]
-      ,[Episode.Credits.TalentID]
-      ,[Episode.ContactType]
-      ,substring([Episode.ParentID],charindex(':pbs.org',[Episode.ParentID])+9,len([Episode.ParentID])) as PBS_Parent_ID
-	  ,substring([Episode.ContentIdentifier],charindex('NOLARoot',[Episode.ContentIdentifier])+9,4) as NolaRoot
-	  ,substring([Episode.ContentIdentifier],charindex('NOLARoot',[Episode.ContentIdentifier])+9,len([Episode.ParentID])) as Nolacode
-	  ,	CASE 
-						when ass.ASS_EPISODETITLE is not null then ass.ASS_EPISODETITLE 
-						else ass.ass_title
-					end
-		 as [DisplayFriendlyTitle]
-  FROM [TrafficData].[PBS].[vwMOSEpisode] 
-  Join Bv.EXTENDEDDATA extD on extD.EXT_OWNERRECORD_ID = ass_id 
-  Join bv.USERLOOKUP ulkup on ulkup.Ulu_id = extD.EXT_INTEGER
-  Join [RightsLineETL].[dbo].Apr23_Episodes feb28 on  feb28.ASS_ID = vwMOSEpisode.Ass_id
-  join bv.asset ass on ass.ass_id = vwMOSEpisode.ass_id
-  LEFT JOIN [BV].[ASSETCATEGORY] aca ON aca.ACA_ID = ass.ASS_ACA_ID
-  where EXT_SEXTC_ID = 607871753 -- RightslineTemplate Column
-  and ulkup.ULU_CLASS = 'L03' and ULU_ID != 609587740 
-  and charindex('Season',[Episode.ParentID]) &gt;= 1
-*/</property>
+                                    'cid:org:pbs.org:Season1Series617324631' )</property>
                         <property
                           dataType="System.String"
                           description="The variable that contains the SQL command to be executed."
@@ -8495,6 +8357,16 @@ SELECT
                               lineageId="Package\Sequence Container 1\Catalog Import Container\Import EpisodeParentSeason\MOS-EpisodeWithSeasonParent.Outputs[OLE DB Source Output].Columns[EpisodeEntityTemplate]"
                               name="EpisodeEntityTemplate"
                               truncationRowDisposition="FailComponent" />
+                            <outputColumn
+                              refId="Package\Sequence Container 1\Catalog Import Container\Import EpisodeParentSeason\MOS-EpisodeWithSeasonParent.Outputs[OLE DB Source Output].Columns[Franchise]"
+                              dataType="wstr"
+                              errorOrTruncationOperation="Conversion"
+                              errorRowDisposition="FailComponent"
+                              externalMetadataColumnId="Package\Sequence Container 1\Catalog Import Container\Import EpisodeParentSeason\MOS-EpisodeWithSeasonParent.Outputs[OLE DB Source Output].ExternalColumns[Franchise]"
+                              length="80"
+                              lineageId="Package\Sequence Container 1\Catalog Import Container\Import EpisodeParentSeason\MOS-EpisodeWithSeasonParent.Outputs[OLE DB Source Output].Columns[Franchise]"
+                              name="Franchise"
+                              truncationRowDisposition="FailComponent" />
                           </outputColumns>
                           <externalMetadataColumns
                             isUsed="True">
@@ -8750,6 +8622,11 @@ SELECT
                               dataType="wstr"
                               length="2000"
                               name="EpisodeEntityTemplate" />
+                            <externalMetadataColumn
+                              refId="Package\Sequence Container 1\Catalog Import Container\Import EpisodeParentSeason\MOS-EpisodeWithSeasonParent.Outputs[OLE DB Source Output].ExternalColumns[Franchise]"
+                              dataType="wstr"
+                              length="80"
+                              name="Franchise" />
                           </externalMetadataColumns>
                         </output>
                         <output
@@ -9059,6 +8936,12 @@ SELECT
                               length="2000"
                               lineageId="Package\Sequence Container 1\Catalog Import Container\Import EpisodeParentSeason\MOS-EpisodeWithSeasonParent.Outputs[OLE DB Source Error Output].Columns[EpisodeEntityTemplate]"
                               name="EpisodeEntityTemplate" />
+                            <outputColumn
+                              refId="Package\Sequence Container 1\Catalog Import Container\Import EpisodeParentSeason\MOS-EpisodeWithSeasonParent.Outputs[OLE DB Source Error Output].Columns[Franchise]"
+                              dataType="wstr"
+                              length="80"
+                              lineageId="Package\Sequence Container 1\Catalog Import Container\Import EpisodeParentSeason\MOS-EpisodeWithSeasonParent.Outputs[OLE DB Source Error Output].Columns[Franchise]"
+                              name="Franchise" />
                             <outputColumn
                               refId="Package\Sequence Container 1\Catalog Import Container\Import EpisodeParentSeason\MOS-EpisodeWithSeasonParent.Outputs[OLE DB Source Error Output].Columns[minority_production]"
                               dataType="wstr"
@@ -13191,7 +13074,8 @@ SUBSTRING(vch_code,1,CHARINDEX('+',VCH_CODE)-1) END AS us_tvpg,
         mlvISPBSMINORITYPRODUCTION.DerivedValue AS minority_production ,
         mlvEditClass.DerivedValue AS edit_class ,
         mlvEditName.DerivedValue AS EditName ,
-        mlvEpisodeEntityTemplate.DerivedValue AS EpisodeEntityTemplate
+        mlvEpisodeEntityTemplate.DerivedValue AS EpisodeEntityTemplate,
+		P.ULU_DESC AS Franchise
 FROM    [TrafficData].[PBS].[vwMOSEpisode]
         JOIN Bv.EXTENDEDDATA extD ON extD.EXT_OWNERRECORD_ID = ass_id
         JOIN bv.USERLOOKUP ulkup ON ulkup.Ulu_id = extD.EXT_INTEGER
@@ -13217,143 +13101,21 @@ FROM    [TrafficData].[PBS].[vwMOSEpisode]
         LEFT JOIN [PBS].[MasterLookupValues] mlvEditName ON mlvEditName.field = 'static.EditName.value'
                                                             AND mlvEditName.ML_ID = 5
         LEFT JOIN [PBS].[MasterLookupValues] mlvEpisodeEntityTemplate ON mlvEpisodeEntityTemplate.field = 'static.EpisodeEntityTemplate.value'
-                                                              AND mlvEpisodeEntityTemplate.ML_ID = 5
+                                                          AND mlvEpisodeEntityTemplate.ML_ID = 5
+		LEFT JOIN
+        (
+            SELECT BV.EXTENDEDDATA.EXT_INTEGER,
+                   BV.USERLOOKUP.ULU_DESC,
+                   BV.EXTENDEDDATA.EXT_OWNERRECORD_ID
+            FROM BV.EXTENDEDDATA
+                LEFT OUTER JOIN BV.USERLOOKUP
+                    ON BV.EXTENDEDDATA.EXT_INTEGER = BV.USERLOOKUP.ULU_ID
+            WHERE (BV.EXTENDEDDATA.EXT_SEXTC_ID = 607871743)
+        ) P ON P.EXT_OWNERRECORD_ID = ass.ASS_ID    
 WHERE   EXT_SEXTC_ID = 607871753
         AND ulkup.ULU_CLASS = 'L03'
         AND ULU_ID = 609587740
-        AND vwMOSEpisode.Ass_id IN ( 236035781, 595764080, 589763373 )
-
-/*
-SELECT 
-       vwMOsepisode.[ass_id]
-      ,[Episode.ContentIdentifier]
-      ,[Episode.UID]
-      ,[Episode.ParentID]
-      ,[Episode.Referent.Type]
-      ,[Episode.Organization.Contact.Info.Phone]
-      ,[Episode.Organization.Contact.Info.Phone.Type]
-      ,[Episode.Organization.Contact Info.Address]
-      ,[Episode.Organization.Contact.Info.PrimaryEmail]
-      ,[Episode.Organization.Contact.Info.Name]
-      ,[Episode.Organization.Contact.Info.ContactID]
-      ,[Episode.Organization.DisplayName]
-      ,[Episode.Organization.domain]
-      ,[Episode.Organization.OrganizationID]
-      ,[Episode.Organization.Role]
-      ,PBS.MoveArticleOfSpeach(CASE 
-			when ass.ASS_EPISODETITLE is not null then rtrim(ltrim(ass.ASS_EPISODETITLE))
-			else 'Episode ' + cast([TrafficData].[PBS].[vwMOSEpisode].[Episode.EpisodeNumber] as varchar(10))
-	   end) as [Episode.Title.Corrected]
-      ,PBS.MoveArticleOfSpeach(CASE 
-			when ass.ASS_EPISODETITLE is not null then substring(rtrim(ltrim(ass.ass_episodetitle)),1,120)
-			else 'Episode ' + cast([TrafficData].[PBS].[vwMOSEpisode].[Episode.EpisodeNumber] as varchar(10))
-	   end) as [Episode.Title120.Corrected]
-      ,[Episode.TitleClass]
-      ,[Episode.EpisodeNumber]
-      ,[Episode.EpisodeClass]
-      ,cast([Episode.SynopsisShort] as nvarchar(400)) as [Episode.SynopsisShort]
-      ,cast([Episode.SynopsisLong] as nvarchar(400)) as [Episode.SynopsisLong] 
-      ,[Episode.CountryOfOrigin]
-      ,cast([Episode.PrimaryGenre]as nvarchar(500)) as [Episode.PrimaryGenre]
-      ,cast(replace([Episode.SecondaryGenre],',','|') as nvarchar(500)) as [Episode.SecondaryGenre]
-      ,[Episode.Distribution.Number]
-      ,[Episode.ReleaseDate]
-      ,ass.ASS_DURATIONSCHEDULED as [Episode.ApproximateLength]
-      ,[Episode.Language.Primary.mode]
-      ,[Episode.LanguagePrimary]
-      ,[Episode.LanguageSecondary]
-      ,[Episode.Credits.Display.Name]
-      ,[Episode.Credits.Role]
-      ,[Episode.Credits.TalentID]
-      ,[Episode.ContactType]
-      ,substring([Episode.ParentID],charindex(':pbs.org',[Episode.ParentID])+9,len([Episode.ParentID])) as PBS_Parent_ID
-	  ,substring([Episode.ContentIdentifier],charindex('NOLARoot',[Episode.ContentIdentifier])+9,4) as NolaRoot
-	  ,substring([Episode.ContentIdentifier],charindex('NOLARoot',[Episode.ContentIdentifier])+9,len([Episode.ContentIdentifier])) as Nolacode
-	  ,case ass.ass_ISPBSPUBLISHED
-		when 1 then cast('Ready for External Publishing' as nvarchar)
-		else cast('In Progress' as nvarchar)
-	  end as entity_status
-	  ,11 as WorkflowStatus
-	,case [Episode.TitleClass] 
-		when 'Working' then 
-			substring(rtrim(ltrim(ass.ass_episodetitle)),1,120)
-		else ''
-
-	end as additional_akas
-	,lookRating.RAT_DESC as us_tvpg
-   ,year([Episode.ReleaseDate]) as first_broadcast_year
-   ,ARLookup.SLU_DESC as aspect_ratio
-,case dea.DEA_SLU_ID_HIDEF
-          when 1 then cast( 'HD' as nvarchar)
-          else cast( 'SD' as nvarchar)
-  end as resolution
-, case dea.DEA_ISPBSMINORITYPRODUCTION
-     when 1 then cast('Yes' as nvarchar(5))
-    else cast('No' as nvarchar(5))
- end as minority_production
-,cast('original' as nvarchar(50)) as edit_class
-  FROM [TrafficData].[PBS].[vwMOSEpisode] 
-  Join Bv.EXTENDEDDATA extD on extD.EXT_OWNERRECORD_ID = ass_id 
-  Join bv.USERLOOKUP ulkup on ulkup.Ulu_id = extD.EXT_INTEGER
-  Join [RightsLineETL].[dbo].Apr23_OneTimeOnly Apr23 on  Apr23.ASS_ID = vwMOSEpisode.Ass_id
-  Join Bv.Asset ass on ass.ass_id = vwMOSEpisode.Ass_id
-  left join	bv.Rating lookRating on lookRating.RAT_ID = ass.ASS_RAT_ID
-  left join bv.Deal dea on dea.DEA_ID = [TrafficData].[PBS].[vwMOSEpisode].DealID
-  left join bv.SYSLOOKUP ARLookup on ARLookup.SLU_ID = dea.DEA_SLU_ID_ASPECTRATIO
-  where EXT_SEXTC_ID = 607871753 
-  and ulkup.ULU_CLASS = 'L03' and ULU_ID = 609587740
-  and vwMOSEpisode.Ass_id in(236035781,595764080,589763373)
-*/
-
-/* Original SQL
-SELECT 
-       vwMOsepisode.[ass_id]
-      ,[Episode.ContentIdentifier]
-      ,[Episode.UID]
-      ,[Episode.ParentID]
-      ,[Episode.Referent.Type]
-      ,[Episode.Organization.Contact.Info.Phone]
-      ,[Episode.Organization.Contact.Info.Phone.Type]
-      ,[Episode.Organization.Contact Info.Address]
-      ,[Episode.Organization.Contact.Info.PrimaryEmail]
-      ,[Episode.Organization.Contact.Info.Name]
-      ,[Episode.Organization.Contact.Info.ContactID]
-      ,[Episode.Organization.DisplayName]
-      ,[Episode.Organization.domain]
-      ,[Episode.Organization.OrganizationID]
-      ,[Episode.Organization.Role]
-      ,ass.Ass_title  as [Episode.Title.Corrected]
-      ,substring(ass.Ass_title,1,120)  as [Episode.Title120.Corrected]
-      ,[Episode.TitleClass]
-      ,[Episode.EpisodeNumber]
-      ,[Episode.EpisodeClass]
-      ,[Episode.SynopsisShort]
-      ,[Episode.SynopsisLong]
-      ,[Episode.CountryOfOrigin]
-      ,[Episode.PrimaryGenre]
-      ,[Episode.SecondaryGenre]
-      ,[Episode.Distribution.Number]
-      ,[Episode.ReleaseDate]
-      ,[Episode.ApproximateLength]
-      ,[Episode.Language.Primary.mode]
-      ,[Episode.LanguagePrimary]
-      ,[Episode.LanguageSecondary]
-      ,[Episode.Credits.Display.Name]
-      ,[Episode.Credits.Role]
-      ,[Episode.Credits.TalentID]
-      ,[Episode.ContactType]
-      ,substring([Episode.ParentID],charindex(':pbs.org',[Episode.ParentID])+9,len([Episode.ParentID])) as PBS_Parent_ID
-	  ,substring([Episode.ContentIdentifier],charindex('NOLARoot',[Episode.ContentIdentifier])+9,4) as NolaRoot
-	  ,substring([Episode.ContentIdentifier],charindex('NOLARoot',[Episode.ContentIdentifier])+9,len([Episode.ContentIdentifier])) as Nolacode
-  FROM [TrafficData].[PBS].[vwMOSEpisode] 
-  Join Bv.EXTENDEDDATA extD on extD.EXT_OWNERRECORD_ID = ass_id 
-  Join bv.USERLOOKUP ulkup on ulkup.Ulu_id = extD.EXT_INTEGER
-  Join [RightsLineETL].[dbo].Apr23_OneTimeOnly Apr23 on  Apr23.ASS_ID = vwMOSEpisode.Ass_id
-  Join Bv.Asset ass on ass.ass_id = vwMOSEpisode.Ass_id
-  where EXT_SEXTC_ID = 607871753 
-  and ulkup.ULU_CLASS = 'L03' and ULU_ID = 609587740
-
-*/</property>
+        AND vwMOSEpisode.Ass_id IN ( 236035781, 595764080, 589763373 )</property>
                         <property
                           dataType="System.String"
                           description="The variable that contains the SQL command to be executed."
@@ -13879,6 +13641,16 @@ SELECT
                               lineageId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\MOS-OTO.Outputs[OLE DB Source Output].Columns[EpisodeEntityTemplate]"
                               name="EpisodeEntityTemplate"
                               truncationRowDisposition="FailComponent" />
+                            <outputColumn
+                              refId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\MOS-OTO.Outputs[OLE DB Source Output].Columns[Franchise]"
+                              dataType="wstr"
+                              errorOrTruncationOperation="Conversion"
+                              errorRowDisposition="FailComponent"
+                              externalMetadataColumnId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\MOS-OTO.Outputs[OLE DB Source Output].ExternalColumns[Franchise]"
+                              length="80"
+                              lineageId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\MOS-OTO.Outputs[OLE DB Source Output].Columns[Franchise]"
+                              name="Franchise"
+                              truncationRowDisposition="FailComponent" />
                           </outputColumns>
                           <externalMetadataColumns
                             isUsed="True">
@@ -14130,6 +13902,11 @@ SELECT
                               dataType="wstr"
                               length="2000"
                               name="EpisodeEntityTemplate" />
+                            <externalMetadataColumn
+                              refId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\MOS-OTO.Outputs[OLE DB Source Output].ExternalColumns[Franchise]"
+                              dataType="wstr"
+                              length="80"
+                              name="Franchise" />
                           </externalMetadataColumns>
                         </output>
                         <output
@@ -14434,6 +14211,12 @@ SELECT
                               length="2000"
                               lineageId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\MOS-OTO.Outputs[OLE DB Source Error Output].Columns[EpisodeEntityTemplate]"
                               name="EpisodeEntityTemplate" />
+                            <outputColumn
+                              refId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\MOS-OTO.Outputs[OLE DB Source Error Output].Columns[Franchise]"
+                              dataType="wstr"
+                              length="80"
+                              lineageId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\MOS-OTO.Outputs[OLE DB Source Error Output].Columns[Franchise]"
+                              name="Franchise" />
                             <outputColumn
                               refId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\MOS-OTO.Outputs[OLE DB Source Error Output].Columns[minority_production]"
                               dataType="wstr"
