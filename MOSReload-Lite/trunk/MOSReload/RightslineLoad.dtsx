@@ -8,12 +8,12 @@
   DTS:DTSID="{6CAC6FBD-DC5F-4BD2-B38F-E46769929427}"
   DTS:EnableConfig="True"
   DTS:ExecutableType="SSIS.Package.3"
-  DTS:LastModifiedProductVersion="11.0.5583.0"
+  DTS:LastModifiedProductVersion="11.0.6020.0"
   DTS:LocaleID="1033"
   DTS:ObjectName="RightslineLoad"
   DTS:PackageType="5"
-  DTS:VersionBuild="392"
-  DTS:VersionGUID="{E5ABC244-E80A-4BE0-B3B1-0D9BB43E9880}">
+  DTS:VersionBuild="416"
+  DTS:VersionGUID="{E21B41C9-DAF2-454C-9570-6BF5982D3383}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">6</DTS:Property>
   <DTS:ConnectionManagers>
@@ -24,12 +24,7 @@
       DTS:ObjectName="ADO.NET-Rightsline">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=db19-uat;User ID=;Initial Catalog=RightsLineETL-Light;Integrated Security=True;Application Name=SSIS-Package-{71E29813-C634-400C-947F-2B4708DBD8E0}db19-uat.RightsLineETL;">
-          <DTS:Password
-            DTS:Name="Password"
-            Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAQU+eAkYgL0mMSBm2DinOpAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADUvWLIF/QeTtcfFsbKY3+yAAAAAASAAACgAAAAEAAAAKwd4oPQKLUGuyOlr99kjyAIAAAAlJhoOU9VElEUAAAAJtvSMSAokxVbDY3KoeJbaopxO88</DTS:Password>
-        </DTS:ConnectionManager>
+          DTS:ConnectionString="Data Source=db19-uat;User ID=;Initial Catalog=RightsLineETL-Light;Integrated Security=True;Application Name=SSIS-Package-{71E29813-C634-400C-947F-2B4708DBD8E0}db19-uat.RightsLineETL;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -39,12 +34,7 @@
       DTS:ObjectName="ADO.NET-TrafficData">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=db19-uat;User ID=;Initial Catalog=TrafficData;Integrated Security=True;Application Name=SSIS-RightslineLoad-{39B52C15-5840-48C4-B58F-F9A976E2C894}db19-uat.TrafficData2;">
-          <DTS:Password
-            DTS:Name="Password"
-            Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAQU+eAkYgL0mMSBm2DinOpAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAC3b02A+FI9+JiW+t2UWeAbAAAAAASAAACgAAAAEAAAAIHnxrvjYiCzVaANgE4oNHwIAAAAZLMRkuTeMecUAAAAN6YjFChc3mDebTMLldUxMkg9H8s</DTS:Password>
-        </DTS:ConnectionManager>
+          DTS:ConnectionString="Data Source=db19-uat;User ID=;Initial Catalog=TrafficData;Integrated Security=True;Application Name=SSIS-RightslineLoad-{39B52C15-5840-48C4-B58F-F9A976E2C894}db19-uat.TrafficData2;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -54,12 +44,7 @@
       DTS:ObjectName="alliantDB">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=alliantdb-prod;User ID=kwalikar;Initial Catalog=pbs_master;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
-          <DTS:Password
-            DTS:Name="Password"
-            Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAQU+eAkYgL0mMSBm2DinOpAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABtZYZAqxYN3LFEM5div4DIAAAAAASAAACgAAAAEAAAAGPuEYoWFpO5hQcVFWl380sIAAAAVp6qf61Q9MgUAAAAaczAA6gOKtw6Vik/AH22YnxcQT4</DTS:Password>
-        </DTS:ConnectionManager>
+          DTS:ConnectionString="Data Source=alliantdb-prod;User ID=kwalikar;Initial Catalog=pbs_master;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -69,12 +54,7 @@
       DTS:ObjectName="db19-uat.TrafficData">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=db19-uat;User ID=;Initial Catalog=TrafficData;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;">
-          <DTS:Password
-            DTS:Name="Password"
-            Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAQU+eAkYgL0mMSBm2DinOpAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABmH5S99dvuAF3okNpcx2GqAAAAAASAAACgAAAAEAAAAGBSzDqRgm/Saeohvb9BejIIAAAAXtmQ/HOKsskUAAAAy4uP7LXuGOFGQOUfEakzc4t20no</DTS:Password>
-        </DTS:ConnectionManager>
+          DTS:ConnectionString="Data Source=db19-uat;Initial Catalog=TrafficData;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -84,12 +64,7 @@
       DTS:ObjectName="Rightsline-Dest">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=db19-uat;User ID=;Initial Catalog=RightsLineETL-Light;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;">
-          <DTS:Password
-            DTS:Name="Password"
-            Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAQU+eAkYgL0mMSBm2DinOpAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACd9h/XtPKR2Aq3kPn0sOBfAAAAAASAAACgAAAAEAAAAF4Rj7DQtSyPMB4QPqN8fPIIAAAAzZXjoZYLsAcUAAAAp/2QPI7mi5XyHlDS6rK5NPZJvDs</DTS:Password>
-        </DTS:ConnectionManager>
+          DTS:ConnectionString="Data Source=db19-uat;User ID=;Initial Catalog=RightsLineETL-Light;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -99,12 +74,7 @@
       DTS:ObjectName="Rightsline-Dest 1">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=db19-uat;User ID=;Initial Catalog=RightsLineETL-Light;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;">
-          <DTS:Password
-            DTS:Name="Password"
-            Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAQU+eAkYgL0mMSBm2DinOpAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAD2C616M0bwc3FuXrVhYbV2AAAAAASAAACgAAAAEAAAAD+E9coy5HzcGYeM5H8utfIIAAAA/gKB18qGh08UAAAA8H8jwhlMvt1noEPBCcwwo/z3Zb8</DTS:Password>
-        </DTS:ConnectionManager>
+          DTS:ConnectionString="Data Source=db19-uat;User ID=;Initial Catalog=RightsLineETL-Light;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
@@ -27601,7 +27571,8 @@ where 'Offer'+xref.ParentID in ('Offer592707727','Offer236035779','Offer58976336
                           dataType="System.String"
                           description="The SQL command to be executed."
                           name="SqlCommand"
-                          UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">With cteDealQuery (dea_id) 
+                          UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">--PBSPAA1
+With cteDealQuery (dea_id) 
 	as
 	(SELECT DISTINCT
         dea_id
@@ -27636,8 +27607,9 @@ SELECT distinct
       paa.dea_id
      ,[Title]
       ,[AlliantID]
-      ,[Contract_Effective_Date]
-      ,[Contract_Execution_Date]
+	  ,CAST(CONVERT(VARCHAR,[Contract_Effective_Date],101) AS NVARCHAR) AS [Contract_Effective_Date]
+      ,CAST(CONVERT(VARCHAR,[Contract_Execution_Date],101) AS NVARCHAR) AS [Contract_Execution_Date]
+      
       ,[Programming_service]
       ,[RightsAndRestrictionsNotes]
       ,[Executed_Status]
@@ -27659,70 +27631,7 @@ SELECT distinct
 				and mlvStaticSTCon.field = 'static.standard_terms__conditions.value'
   left join [PBS].[MasterLookupValues] mlvWorkflowStatus on mlvWorkflowStatus.ml_id = 1
 				and mlvWorkflowStatus.field = 'static.WorkflowStatus.value'
-join cteDealQuery q on q.dea_id = paa.dea_id
-
-
-/*
-SELECT distinct
-      paa.dea_id
-     ,[Title]
-      ,[AlliantID]
-      ,[Contract_Effective_Date]
-      ,[Contract_Execution_Date]
-      ,[Programming_service]
-      ,[RightsAndRestrictionsNotes]
-      ,[Executed_Status]
-      ,[financial_notes]
-      ,[PBSCanSecureUnderWriting]as [PBSCanSecureUnderWriting]
-      ,[underwriting_notes]
-     ,[dealid]
-	 ,mlvPBSD_Label.derivedvalue as entity_status
-	 ,mlvStaticSTCon.DerivedValue as   standard_terms__conditions
-	 ,cast(mlvWorkflowStatus.DerivedValue as int) as WorkflowStatus
-  FROM [TrafficData].[PBS].[DealPBSPAA1] paa
-  join [RightslineETL].[dbo].Apr23_deals Apr23 on Apr23.dea_id = paa.dea_id
-  left join [TrafficData].[BV].[DEAL] ds on ds.DEA_ID = paa.dea_id
-  left JOIN trafficdata.BV.PBSDEALSTATUS pbsds ON pbsds.PBSDS_ID = ds.DEA_PBSDS_ID
-  left join [PBS].[MasterLookupValues] mlvPBSD_Label on mlvPBSD_Label.dbvalue = pbsds.PBSDS_LABEL
-				and mlvPBSD_Label.ml_id = 1
-				and field = 'trafficdata.BV.PBSDEALSTATUS.PBSDS_LABEL'
-  left join [PBS].[MasterLookupValues] mlvStaticSTCon on mlvStaticSTCon.ml_id = 1
-				and mlvStaticSTCon.field = 'static.standard_terms__conditions.value'
-  left join [PBS].[MasterLookupValues] mlvWorkflowStatus on mlvWorkflowStatus.ml_id = 1
-				and mlvWorkflowStatus.field = 'static.WorkflowStatus.value'
- 
-*/
-/* Original SQL
-SELECT  paa.dea_id ,
-        [Title] ,
-        [AlliantID] ,
-        [Contract_Effective_Date] ,
-        [Contract_Execution_Date] ,
-        [Programming_service] ,
-        [RightsAndRestrictionsNotes] ,
-        [Executed_Status] ,
-        [financial_notes] ,
-        [PBSCanSecureUnderWriting] AS [PBSCanSecureUnderWriting] ,
-        [underwriting_notes] ,
-        [dealid] ,
-
-
-
-        CASE pbsds.PBSDS_LABEL
-          WHEN 'approved' THEN CAST('Complete' AS NVARCHAR)
-          WHEN 'in revision' THEN CAST('In Revision' AS NVARCHAR)
-          WHEN 'in progress' THEN CAST('Rights Pending' AS NVARCHAR)
-          WHEN 'submitted' THEN CAST('Rights Pending' AS NVARCHAR)
-          ELSE CAST('Rights Pending' AS NVARCHAR)
-        END AS entity_status ,
-        9 AS WorkflowStatus
-FROM    [TrafficData].[PBS].[DealPBSPAA1] paa
-        JOIN [RightslineETL].[dbo].Apr23_deals Apr23 ON Apr23.dea_id = paa.dea_id
-        LEFT JOIN [TrafficData].[BV].[DEAL] ds ON ds.DEA_ID = paa.dea_id
-        LEFT JOIN trafficdata.BV.PBSDEALSTATUS pbsds ON pbsds.PBSDS_ID = ds.DEA_PBSDS_ID
-
-
-*/</property>
+join cteDealQuery q on q.dea_id = paa.dea_id</property>
                         <property
                           dataType="System.String"
                           description="The variable that contains the SQL command to be executed."
@@ -27916,7 +27825,8 @@ FROM    [TrafficData].[PBS].[DealPBSPAA1] paa
                               name="AlliantID" />
                             <externalMetadataColumn
                               refId="Package\Sequence Container 1\Deal Imports\Import Deal-PBS PAA1\MOS-DealPbsPAA1.Outputs[OLE DB Source Output].ExternalColumns[Contract_Effective_Date]"
-                              dataType="dbDate"
+                              dataType="wstr"
+                              length="30"
                               name="Contract_Effective_Date" />
                             <externalMetadataColumn
                               refId="Package\Sequence Container 1\Deal Imports\Import Deal-PBS PAA1\MOS-DealPbsPAA1.Outputs[OLE DB Source Output].ExternalColumns[Programming_service]"
@@ -27946,7 +27856,8 @@ FROM    [TrafficData].[PBS].[DealPBSPAA1] paa
                               name="RightsAndRestrictionsNotes" />
                             <externalMetadataColumn
                               refId="Package\Sequence Container 1\Deal Imports\Import Deal-PBS PAA1\MOS-DealPbsPAA1.Outputs[OLE DB Source Output].ExternalColumns[Contract_Execution_Date]"
-                              dataType="dbDate"
+                              dataType="wstr"
+                              length="30"
                               name="Contract_Execution_Date" />
                             <externalMetadataColumn
                               refId="Package\Sequence Container 1\Deal Imports\Import Deal-PBS PAA1\MOS-DealPbsPAA1.Outputs[OLE DB Source Output].ExternalColumns[Executed_Status]"
@@ -28014,12 +27925,14 @@ FROM    [TrafficData].[PBS].[DealPBSPAA1] paa
                               name="AlliantID" />
                             <outputColumn
                               refId="Package\Sequence Container 1\Deal Imports\Import Deal-PBS PAA1\MOS-DealPbsPAA1.Outputs[OLE DB Source Error Output].Columns[Contract_Effective_Date]"
-                              dataType="dbDate"
+                              dataType="wstr"
+                              length="30"
                               lineageId="Package\Sequence Container 1\Deal Imports\Import Deal-PBS PAA1\MOS-DealPbsPAA1.Outputs[OLE DB Source Error Output].Columns[Contract_Effective_Date]"
                               name="Contract_Effective_Date" />
                             <outputColumn
                               refId="Package\Sequence Container 1\Deal Imports\Import Deal-PBS PAA1\MOS-DealPbsPAA1.Outputs[OLE DB Source Error Output].Columns[Contract_Execution_Date]"
-                              dataType="dbDate"
+                              dataType="wstr"
+                              length="30"
                               lineageId="Package\Sequence Container 1\Deal Imports\Import Deal-PBS PAA1\MOS-DealPbsPAA1.Outputs[OLE DB Source Error Output].Columns[Contract_Execution_Date]"
                               name="Contract_Execution_Date" />
                             <outputColumn
@@ -29065,7 +28978,8 @@ FROM    [TrafficData].[PBS].[DealPBSPAA1] paa
                           dataType="System.String"
                           description="The SQL command to be executed."
                           name="SqlCommand"
-                          UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">With cteDealQuery (dea_id) 
+                          UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">--DealProductAccusition
+With cteDealQuery (dea_id) 
 	as
 	(SELECT DISTINCT
         dea_id
@@ -29099,9 +29013,9 @@ WHERE   dco.DCO_ASS_ID IN (
 SELECT 
        [Title]
       ,[AlliantID]
-      ,[Contract_Effective_Date]
-      ,[Contract_Execution_date]
-      ,[License_Term_end]
+     ,CAST(CONVERT(VARCHAR,[Contract_Effective_Date],101) AS NVARCHAR) AS [Contract_Effective_Date]
+	  ,CAST(CONVERT(VARCHAR,[Contract_Execution_date],101) AS NVARCHAR)  AS[Contract_Execution_date]
+       ,CAST(CONVERT(VARCHAR,[License_Term_end],101) AS NVARCHAR) AS[License_Term_end]   
       ,[Programming_service]
       ,[total_pbs_fees]
       ,[financial_notes]
@@ -29124,84 +29038,7 @@ SELECT
 				and field = 'trafficdata.BV.PBSDEALSTATUS.PBSDS_LABEL'
   left join [PBS].[MasterLookupValues] mlvWorkflowStatus on mlvWorkflowStatus.ml_id = 2
 				and mlvWorkflowStatus.field = 'static.WorkflowStatus.value'
-join cteDealQuery q on q.dea_id = [DealProdAcQ].dea_id
-
-
-/*
-SELECT 
-       [Title]
-      ,[AlliantID]
-      ,[Contract_Effective_Date]
-      ,[Contract_Execution_date]
-      ,[License_Term_end]
-      ,[Programming_service]
-      ,[total_pbs_fees]
-      ,[financial_notes]
-      ,[total_budget]
-      ,[cpb_funding]
-      ,cast([RevBacktoCPB] as nvarchar) as  [RevBackToCPB]
-      ,[RightsAndRestrictionsNotes]
-      ,cast([PBSCanSecureUnderWriting] as nvarchar) as [PBSCanSecureUnderWriting]
-      ,[underwriting_notes]
-     ,[DealProdAcQ].[dea_id]
-     ,[dealid]
-	 ,mlvPBSD_Label.derivedvalue as entity_status
-	 ,cast(mlvWorkflowStatus.DerivedValue as int) as WorkflowStatus
-  FROM [TrafficData].[PBS].[DealProdAcQ]
-  join [RightsLineETL].[dbo].[Apr23_Deals] Apr23 on Apr23.dea_id = [DealProdAcQ].dea_id
-  left join [TrafficData].[BV].[DEAL] ds on ds.DEA_ID = [DealProdAcQ].dea_id
-  left JOIN trafficdata.BV.PBSDEALSTATUS pbsds ON pbsds.PBSDS_ID = ds.DEA_PBSDS_ID
-  left join [PBS].[MasterLookupValues] mlvPBSD_Label on mlvPBSD_Label.dbvalue = pbsds.PBSDS_LABEL
-				and mlvPBSD_Label.ml_id = 2
-				and field = 'trafficdata.BV.PBSDEALSTATUS.PBSDS_LABEL'
-  left join [PBS].[MasterLookupValues] mlvWorkflowStatus on mlvWorkflowStatus.ml_id = 2
-				and mlvWorkflowStatus.field = 'static.WorkflowStatus.value'
-
-WHERE   dealid IN ( 'Offer592707727', 'Offer236035779', 'Offer589763368',
-                    'Offer595764078', 'Offer589355320', 'Offer364979186',
-                    'Offer248568171' )
-*/
-
-/* Original SQL
-SELECT  [Title] ,
-        [AlliantID] ,
-        [Contract_Effective_Date] ,
-        [Contract_Execution_date] ,
-        [License_Term_end] ,
-        [Programming_service] ,
-        [total_pbs_fees] ,
-        [financial_notes] ,
-        [total_budget] ,
-        [cpb_funding] ,
-        CAST([RevBacktoCPB] AS NVARCHAR) AS [RevBackToCPB] ,
-        [RightsAndRestrictionsNotes] ,
-        CAST([PBSCanSecureUnderWriting] AS NVARCHAR) AS [PBSCanSecureUnderWriting] ,
-        [underwriting_notes] ,
-        [DealProdAcQ].[dea_id] ,
-        [dealid] ,
-
-
-        CASE pbsds.PBSDS_LABEL
-          WHEN 'approved' THEN CAST('Complete' AS NVARCHAR)
-          WHEN 'in revision' THEN CAST('In Revision' AS NVARCHAR)
-          WHEN 'in progress' THEN CAST('Rights Pending' AS NVARCHAR)
-          WHEN 'submitted' THEN CAST('Rights Pending' AS NVARCHAR)
-          ELSE CAST('Rights Pending' AS NVARCHAR)
-        END AS entity_status ,
-        9 AS WorkflowStatus
-FROM    [TrafficData].[PBS].[DealProdAcQ]
-        JOIN [RightsLineETL].[dbo].[Apr23_Deals] Apr23 ON Apr23.dea_id = [DealProdAcQ].dea_id
-        LEFT JOIN [TrafficData].[BV].[DEAL] ds ON ds.DEA_ID = [DealProdAcQ].dea_id
-        LEFT JOIN trafficdata.BV.PBSDEALSTATUS pbsds ON pbsds.PBSDS_ID = ds.DEA_PBSDS_ID
-
-
-
-
-
-WHERE   dealid IN ( 'Offer592707727', 'Offer236035779', 'Offer589763368',
-                    'Offer595764078', 'Offer589355320', 'Offer364979186',
-                    'Offer248568171' )
-*/</property>
+join cteDealQuery q on q.dea_id = [DealProdAcQ].dea_id</property>
                         <property
                           dataType="System.String"
                           description="The variable that contains the SQL command to be executed."
@@ -29249,28 +29086,31 @@ WHERE   dealid IN ( 'Offer592707727', 'Offer236035779', 'Offer589763368',
                               truncationRowDisposition="FailComponent" />
                             <outputColumn
                               refId="Package\Sequence Container 1\Deal Imports\Import Deal-ProdAcq\MOS-DealProdACQ.Outputs[OLE DB Source Output].Columns[Contract_Effective_Date]"
-                              dataType="dbDate"
+                              dataType="wstr"
                               errorOrTruncationOperation="Conversion"
                               errorRowDisposition="FailComponent"
                               externalMetadataColumnId="Package\Sequence Container 1\Deal Imports\Import Deal-ProdAcq\MOS-DealProdACQ.Outputs[OLE DB Source Output].ExternalColumns[Contract_Effective_Date]"
+                              length="50"
                               lineageId="Package\Sequence Container 1\Deal Imports\Import Deal-ProdAcq\MOS-DealProdACQ.Outputs[OLE DB Source Output].Columns[Contract_Effective_Date]"
                               name="Contract_Effective_Date"
                               truncationRowDisposition="FailComponent" />
                             <outputColumn
                               refId="Package\Sequence Container 1\Deal Imports\Import Deal-ProdAcq\MOS-DealProdACQ.Outputs[OLE DB Source Output].Columns[Contract_Execution_date]"
-                              dataType="i4"
+                              dataType="wstr"
                               errorOrTruncationOperation="Conversion"
                               errorRowDisposition="FailComponent"
                               externalMetadataColumnId="Package\Sequence Container 1\Deal Imports\Import Deal-ProdAcq\MOS-DealProdACQ.Outputs[OLE DB Source Output].ExternalColumns[Contract_Execution_date]"
+                              length="50"
                               lineageId="Package\Sequence Container 1\Deal Imports\Import Deal-ProdAcq\MOS-DealProdACQ.Outputs[OLE DB Source Output].Columns[Contract_Execution_date]"
                               name="Contract_Execution_date"
                               truncationRowDisposition="FailComponent" />
                             <outputColumn
                               refId="Package\Sequence Container 1\Deal Imports\Import Deal-ProdAcq\MOS-DealProdACQ.Outputs[OLE DB Source Output].Columns[License_Term_end]"
-                              dataType="dbDate"
+                              dataType="wstr"
                               errorOrTruncationOperation="Conversion"
                               errorRowDisposition="FailComponent"
                               externalMetadataColumnId="Package\Sequence Container 1\Deal Imports\Import Deal-ProdAcq\MOS-DealProdACQ.Outputs[OLE DB Source Output].ExternalColumns[License_Term_end]"
+                              length="50"
                               lineageId="Package\Sequence Container 1\Deal Imports\Import Deal-ProdAcq\MOS-DealProdACQ.Outputs[OLE DB Source Output].Columns[License_Term_end]"
                               name="License_Term_end"
                               truncationRowDisposition="FailComponent" />
@@ -29423,15 +29263,18 @@ WHERE   dealid IN ( 'Offer592707727', 'Offer236035779', 'Offer589763368',
                               name="AlliantID" />
                             <externalMetadataColumn
                               refId="Package\Sequence Container 1\Deal Imports\Import Deal-ProdAcq\MOS-DealProdACQ.Outputs[OLE DB Source Output].ExternalColumns[Contract_Effective_Date]"
-                              dataType="dbDate"
+                              dataType="wstr"
+                              length="30"
                               name="Contract_Effective_Date" />
                             <externalMetadataColumn
                               refId="Package\Sequence Container 1\Deal Imports\Import Deal-ProdAcq\MOS-DealProdACQ.Outputs[OLE DB Source Output].ExternalColumns[Contract_Execution_date]"
-                              dataType="i4"
+                              dataType="wstr"
+                              length="30"
                               name="Contract_Execution_date" />
                             <externalMetadataColumn
                               refId="Package\Sequence Container 1\Deal Imports\Import Deal-ProdAcq\MOS-DealProdACQ.Outputs[OLE DB Source Output].ExternalColumns[License_Term_end]"
-                              dataType="dbDate"
+                              dataType="wstr"
+                              length="30"
                               name="License_Term_end" />
                             <externalMetadataColumn
                               refId="Package\Sequence Container 1\Deal Imports\Import Deal-ProdAcq\MOS-DealProdACQ.Outputs[OLE DB Source Output].ExternalColumns[Programming_service]"
@@ -29523,17 +29366,20 @@ WHERE   dealid IN ( 'Offer592707727', 'Offer236035779', 'Offer589763368',
                               name="AlliantID" />
                             <outputColumn
                               refId="Package\Sequence Container 1\Deal Imports\Import Deal-ProdAcq\MOS-DealProdACQ.Outputs[OLE DB Source Error Output].Columns[Contract_Effective_Date]"
-                              dataType="dbDate"
+                              dataType="wstr"
+                              length="30"
                               lineageId="Package\Sequence Container 1\Deal Imports\Import Deal-ProdAcq\MOS-DealProdACQ.Outputs[OLE DB Source Error Output].Columns[Contract_Effective_Date]"
                               name="Contract_Effective_Date" />
                             <outputColumn
                               refId="Package\Sequence Container 1\Deal Imports\Import Deal-ProdAcq\MOS-DealProdACQ.Outputs[OLE DB Source Error Output].Columns[Contract_Execution_date]"
-                              dataType="i4"
+                              dataType="wstr"
+                              length="30"
                               lineageId="Package\Sequence Container 1\Deal Imports\Import Deal-ProdAcq\MOS-DealProdACQ.Outputs[OLE DB Source Error Output].Columns[Contract_Execution_date]"
                               name="Contract_Execution_date" />
                             <outputColumn
                               refId="Package\Sequence Container 1\Deal Imports\Import Deal-ProdAcq\MOS-DealProdACQ.Outputs[OLE DB Source Error Output].Columns[License_Term_end]"
-                              dataType="dbDate"
+                              dataType="wstr"
+                              length="30"
                               lineageId="Package\Sequence Container 1\Deal Imports\Import Deal-ProdAcq\MOS-DealProdACQ.Outputs[OLE DB Source Error Output].Columns[License_Term_end]"
                               name="License_Term_end" />
                             <outputColumn
@@ -29704,7 +29550,8 @@ WHERE   dealid IN ( 'Offer592707727', 'Offer236035779', 'Offer589763368',
                           <inputColumns>
                             <inputColumn
                               refId="Package\Sequence Container 1\Deal Imports\Import Deal-ProdAcq\RL-DealProdACQ.Inputs[OLE DB Destination Input].Columns[Contract_Execution_date]"
-                              cachedDataType="i4"
+                              cachedDataType="wstr"
+                              cachedLength="50"
                               cachedName="Contract_Execution_date"
                               externalMetadataColumnId="Package\Sequence Container 1\Deal Imports\Import Deal-ProdAcq\RL-DealProdACQ.Inputs[OLE DB Destination Input].ExternalColumns[contract_execution_date]"
                               lineageId="Package\Sequence Container 1\Deal Imports\Import Deal-ProdAcq\Sort 1.Outputs[Sort Output].Columns[Contract_Execution_date]" />
@@ -29737,13 +29584,15 @@ WHERE   dealid IN ( 'Offer592707727', 'Offer236035779', 'Offer589763368',
                               lineageId="Package\Sequence Container 1\Deal Imports\Import Deal-ProdAcq\Sort 1.Outputs[Sort Output].Columns[AlliantID]" />
                             <inputColumn
                               refId="Package\Sequence Container 1\Deal Imports\Import Deal-ProdAcq\RL-DealProdACQ.Inputs[OLE DB Destination Input].Columns[Contract_Effective_Date]"
-                              cachedDataType="dbDate"
+                              cachedDataType="wstr"
+                              cachedLength="50"
                               cachedName="Contract_Effective_Date"
                               externalMetadataColumnId="Package\Sequence Container 1\Deal Imports\Import Deal-ProdAcq\RL-DealProdACQ.Inputs[OLE DB Destination Input].ExternalColumns[effective_date]"
                               lineageId="Package\Sequence Container 1\Deal Imports\Import Deal-ProdAcq\Sort 1.Outputs[Sort Output].Columns[Contract_Effective_Date]" />
                             <inputColumn
                               refId="Package\Sequence Container 1\Deal Imports\Import Deal-ProdAcq\RL-DealProdACQ.Inputs[OLE DB Destination Input].Columns[License_Term_end]"
-                              cachedDataType="dbDate"
+                              cachedDataType="wstr"
+                              cachedLength="50"
                               cachedName="License_Term_end"
                               externalMetadataColumnId="Package\Sequence Container 1\Deal Imports\Import Deal-ProdAcq\RL-DealProdACQ.Inputs[OLE DB Destination Input].ExternalColumns[expiration_date]"
                               lineageId="Package\Sequence Container 1\Deal Imports\Import Deal-ProdAcq\Sort 1.Outputs[Sort Output].Columns[License_Term_end]" />
@@ -29832,14 +29681,14 @@ WHERE   dealid IN ( 'Offer592707727', 'Offer236035779', 'Offer589763368',
                               name="alliant_id" />
                             <externalMetadataColumn
                               refId="Package\Sequence Container 1\Deal Imports\Import Deal-ProdAcq\RL-DealProdACQ.Inputs[OLE DB Destination Input].ExternalColumns[effective_date]"
-                              dataType="dbTimeStamp2"
-                              name="effective_date"
-                              scale="7" />
+                              dataType="wstr"
+                              length="50"
+                              name="effective_date" />
                             <externalMetadataColumn
                               refId="Package\Sequence Container 1\Deal Imports\Import Deal-ProdAcq\RL-DealProdACQ.Inputs[OLE DB Destination Input].ExternalColumns[contract_execution_date]"
-                              dataType="dbTimeStamp2"
-                              name="contract_execution_date"
-                              scale="7" />
+                              dataType="wstr"
+                              length="50"
+                              name="contract_execution_date" />
                             <externalMetadataColumn
                               refId="Package\Sequence Container 1\Deal Imports\Import Deal-ProdAcq\RL-DealProdACQ.Inputs[OLE DB Destination Input].ExternalColumns[programming_service]"
                               dataType="wstr"
@@ -29847,9 +29696,9 @@ WHERE   dealid IN ( 'Offer592707727', 'Offer236035779', 'Offer589763368',
                               name="programming_service" />
                             <externalMetadataColumn
                               refId="Package\Sequence Container 1\Deal Imports\Import Deal-ProdAcq\RL-DealProdACQ.Inputs[OLE DB Destination Input].ExternalColumns[expiration_date]"
-                              dataType="dbTimeStamp2"
-                              name="expiration_date"
-                              scale="7" />
+                              dataType="wstr"
+                              length="50"
+                              name="expiration_date" />
                             <externalMetadataColumn
                               refId="Package\Sequence Container 1\Deal Imports\Import Deal-ProdAcq\RL-DealProdACQ.Inputs[OLE DB Destination Input].ExternalColumns[fee]"
                               dataType="numeric"
@@ -29978,7 +29827,8 @@ WHERE   dealid IN ( 'Offer592707727', 'Offer236035779', 'Offer589763368',
                             </inputColumn>
                             <inputColumn
                               refId="Package\Sequence Container 1\Deal Imports\Import Deal-ProdAcq\Sort 1.Inputs[Sort Input].Columns[Contract_Effective_Date]"
-                              cachedDataType="dbDate"
+                              cachedDataType="wstr"
+                              cachedLength="50"
                               cachedName="Contract_Effective_Date"
                               lineageId="Package\Sequence Container 1\Deal Imports\Import Deal-ProdAcq\MOS-DealProdACQ.Outputs[OLE DB Source Output].Columns[Contract_Effective_Date]">
                               <properties>
@@ -29994,7 +29844,8 @@ WHERE   dealid IN ( 'Offer592707727', 'Offer236035779', 'Offer589763368',
                             </inputColumn>
                             <inputColumn
                               refId="Package\Sequence Container 1\Deal Imports\Import Deal-ProdAcq\Sort 1.Inputs[Sort Input].Columns[Contract_Execution_date]"
-                              cachedDataType="i4"
+                              cachedDataType="wstr"
+                              cachedLength="50"
                               cachedName="Contract_Execution_date"
                               lineageId="Package\Sequence Container 1\Deal Imports\Import Deal-ProdAcq\MOS-DealProdACQ.Outputs[OLE DB Source Output].Columns[Contract_Execution_date]">
                               <properties>
@@ -30010,7 +29861,8 @@ WHERE   dealid IN ( 'Offer592707727', 'Offer236035779', 'Offer589763368',
                             </inputColumn>
                             <inputColumn
                               refId="Package\Sequence Container 1\Deal Imports\Import Deal-ProdAcq\Sort 1.Inputs[Sort Input].Columns[License_Term_end]"
-                              cachedDataType="dbDate"
+                              cachedDataType="wstr"
+                              cachedLength="50"
                               cachedName="License_Term_end"
                               lineageId="Package\Sequence Container 1\Deal Imports\Import Deal-ProdAcq\MOS-DealProdACQ.Outputs[OLE DB Source Output].Columns[License_Term_end]">
                               <properties>
@@ -30287,7 +30139,8 @@ WHERE   dealid IN ( 'Offer592707727', 'Offer236035779', 'Offer589763368',
                             </outputColumn>
                             <outputColumn
                               refId="Package\Sequence Container 1\Deal Imports\Import Deal-ProdAcq\Sort 1.Outputs[Sort Output].Columns[Contract_Effective_Date]"
-                              dataType="dbDate"
+                              dataType="wstr"
+                              length="50"
                               lineageId="Package\Sequence Container 1\Deal Imports\Import Deal-ProdAcq\Sort 1.Outputs[Sort Output].Columns[Contract_Effective_Date]"
                               name="Contract_Effective_Date">
                               <properties>
@@ -30300,7 +30153,8 @@ WHERE   dealid IN ( 'Offer592707727', 'Offer236035779', 'Offer589763368',
                             </outputColumn>
                             <outputColumn
                               refId="Package\Sequence Container 1\Deal Imports\Import Deal-ProdAcq\Sort 1.Outputs[Sort Output].Columns[Contract_Execution_date]"
-                              dataType="i4"
+                              dataType="wstr"
+                              length="50"
                               lineageId="Package\Sequence Container 1\Deal Imports\Import Deal-ProdAcq\Sort 1.Outputs[Sort Output].Columns[Contract_Execution_date]"
                               name="Contract_Execution_date">
                               <properties>
@@ -30313,7 +30167,8 @@ WHERE   dealid IN ( 'Offer592707727', 'Offer236035779', 'Offer589763368',
                             </outputColumn>
                             <outputColumn
                               refId="Package\Sequence Container 1\Deal Imports\Import Deal-ProdAcq\Sort 1.Outputs[Sort Output].Columns[License_Term_end]"
-                              dataType="dbDate"
+                              dataType="wstr"
+                              length="50"
                               lineageId="Package\Sequence Container 1\Deal Imports\Import Deal-ProdAcq\Sort 1.Outputs[Sort Output].Columns[License_Term_end]"
                               name="License_Term_end">
                               <properties>
@@ -35438,6 +35293,10 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
           Id="Package\Sequence Container\Execute SQL Task"
           TopLeft="395,80.3333333333333" />
         <NodeLayout
+          Size="252,42"
+          Id="Package\Sequence Container\Load XREF Deal To External Contact"
+          TopLeft="757,526" />
+        <NodeLayout
           Size="204,42"
           Id="Package\Sequence Container\Load xref_DealToBlackout"
           TopLeft="404,341.222222222222" />
@@ -35605,6 +35464,40 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
                     Point3="-13.833333333333,34.5" />
                   <mssgle:LineSegment
                     End="-13.833333333333,53.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Sequence Container.PrecedenceConstraints[Constraint 12]"
+          TopLeft="891.666666666667,479.333333333333">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-8.66666666666697,46.666666666667"
+              Start="0,0"
+              End="-8.66666666666697,39.166666666667">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,19.3333333333335" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,19.3333333333335"
+                    Point2="0,23.3333333333335"
+                    Point3="-4,23.3333333333335" />
+                  <mssgle:LineSegment
+                    End="-4.66666666666697,23.3333333333335" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-4.66666666666697,23.3333333333335"
+                    Point2="-8.66666666666697,23.3333333333335"
+                    Point3="-8.66666666666697,27.3333333333335" />
+                  <mssgle:LineSegment
+                    End="-8.66666666666697,39.166666666667" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -35829,44 +35722,6 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
                   Capacity="5">
                   <mssgle:LineSegment
                     End="0,50.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="252,42"
-          Id="Package\Sequence Container\Load XREF Deal To External Contact"
-          TopLeft="757,526" />
-        <EdgeLayout
-          Id="Package\Sequence Container.PrecedenceConstraints[Constraint 12]"
-          TopLeft="891.666666666667,479.333333333333">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-8.66666666666697,46.666666666667"
-              Start="0,0"
-              End="-8.66666666666697,39.166666666667">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,19.3333333333335" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,19.3333333333335"
-                    Point2="0,23.3333333333335"
-                    Point3="-4,23.3333333333335" />
-                  <mssgle:LineSegment
-                    End="-4.66666666666697,23.3333333333335" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-4.66666666666697,23.3333333333335"
-                    Point2="-8.66666666666697,23.3333333333335"
-                    Point3="-8.66666666666697,27.3333333333335" />
-                  <mssgle:LineSegment
-                    End="-8.66666666666697,39.166666666667" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -36556,6 +36411,60 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
       </GraphLayout>
     </LayoutInfo>
   </Package>
+  <TaskHost
+    design-time-name="Package\Sequence Container\Load XREF Deal To External Contact">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="160,42"
+          Id="Package\Sequence Container\Load XREF Deal To External Contact\ADO NET Source"
+          TopLeft="132,110" />
+        <NodeLayout
+          Size="181,42"
+          Id="Package\Sequence Container\Load XREF Deal To External Contact\ADO NET Destination"
+          TopLeft="114,251" />
+        <EdgeLayout
+          Id="Package\Sequence Container\Load XREF Deal To External Contact.Paths[ADO NET Source Output]"
+          TopLeft="208.25,152">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,99"
+              Start="0,0"
+              End="0,91.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,91.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Sequence Container\Load XREF Deal To External Contact\ADO NET Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Sequence Container\Load XREF Deal To External Contact\ADO NET Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <TaskHost
     design-time-name="Package\Sequence Container\Load xref_DealToBlackout">
     <LayoutInfo>
@@ -37648,28 +37557,6 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
           Id="Package\Sequence Container 1\Catalog Import Container\Import EpisodeParentSeason\MOS-EpisodeWithSeasonParent"
           TopLeft="272.5,81.5" />
         <EdgeLayout
-          Id="Package\Sequence Container 1\Catalog Import Container\Import EpisodeParentSeason.Paths[Derived Column Output]"
-          TopLeft="354.75,278">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,54"
-              Start="0,0"
-              End="0,46.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,46.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
           Id="Package\Sequence Container 1\Catalog Import Container\Import EpisodeParentSeason.Paths[Sort Output]"
           TopLeft="350,203">
           <EdgeLayout.Curve>
@@ -37717,6 +37604,28 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
                     Point3="-40,22.75" />
                   <mssgle:LineSegment
                     End="-40,30" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Sequence Container 1\Catalog Import Container\Import EpisodeParentSeason.Paths[Derived Column Output]"
+          TopLeft="354.75,278">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,54"
+              Start="0,0"
+              End="0,46.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,46.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -39558,60 +39467,6 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
   </TaskHost>
   <PipelineComponentMetadata
     design-time-name="Package\Sequence Container 1\Rights Imports\Import RIghts-Holdback\MOS-HoldBack">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <TaskHost
-    design-time-name="Package\Sequence Container\Load XREF Deal To External Contact">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="160,42"
-          Id="Package\Sequence Container\Load XREF Deal To External Contact\ADO NET Source"
-          TopLeft="132,110" />
-        <NodeLayout
-          Size="181,42"
-          Id="Package\Sequence Container\Load XREF Deal To External Contact\ADO NET Destination"
-          TopLeft="114,251" />
-        <EdgeLayout
-          Id="Package\Sequence Container\Load XREF Deal To External Contact.Paths[ADO NET Source Output]"
-          TopLeft="208.25,152">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,99"
-              Start="0,0"
-              End="0,91.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,91.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\Sequence Container\Load XREF Deal To External Contact\ADO NET Source">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Sequence Container\Load XREF Deal To External Contact\ADO NET Destination">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
