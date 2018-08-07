@@ -8,12 +8,12 @@
   DTS:DTSID="{6CAC6FBD-DC5F-4BD2-B38F-E46769929427}"
   DTS:EnableConfig="True"
   DTS:ExecutableType="SSIS.Package.3"
-  DTS:LastModifiedProductVersion="11.0.6020.0"
+  DTS:LastModifiedProductVersion="11.0.5583.0"
   DTS:LocaleID="1033"
   DTS:ObjectName="RightslineLoad"
   DTS:PackageType="5"
-  DTS:VersionBuild="385"
-  DTS:VersionGUID="{835CC6E5-8189-4DCE-BF70-3141B13C5A27}">
+  DTS:VersionBuild="392"
+  DTS:VersionGUID="{E5ABC244-E80A-4BE0-B3B1-0D9BB43E9880}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">6</DTS:Property>
   <DTS:ConnectionManagers>
@@ -24,7 +24,12 @@
       DTS:ObjectName="ADO.NET-Rightsline">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=db19-uat;Initial Catalog=RightsLineETL-Light;Integrated Security=True;Application Name=SSIS-Package-{71E29813-C634-400C-947F-2B4708DBD8E0}db19-uat.RightsLineETL;" />
+          DTS:ConnectionString="Data Source=db19-uat;User ID=;Initial Catalog=RightsLineETL-Light;Integrated Security=True;Application Name=SSIS-Package-{71E29813-C634-400C-947F-2B4708DBD8E0}db19-uat.RightsLineETL;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAQU+eAkYgL0mMSBm2DinOpAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADUvWLIF/QeTtcfFsbKY3+yAAAAAASAAACgAAAAEAAAAKwd4oPQKLUGuyOlr99kjyAIAAAAlJhoOU9VElEUAAAAJtvSMSAokxVbDY3KoeJbaopxO88</DTS:Password>
+        </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -34,7 +39,12 @@
       DTS:ObjectName="ADO.NET-TrafficData">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=db19-uat;Initial Catalog=TrafficData;Integrated Security=True;Application Name=SSIS-RightslineLoad-{39B52C15-5840-48C4-B58F-F9A976E2C894}db19-uat.TrafficData2;" />
+          DTS:ConnectionString="Data Source=db19-uat;User ID=;Initial Catalog=TrafficData;Integrated Security=True;Application Name=SSIS-RightslineLoad-{39B52C15-5840-48C4-B58F-F9A976E2C894}db19-uat.TrafficData2;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAQU+eAkYgL0mMSBm2DinOpAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAC3b02A+FI9+JiW+t2UWeAbAAAAAASAAACgAAAAEAAAAIHnxrvjYiCzVaANgE4oNHwIAAAAZLMRkuTeMecUAAAAN6YjFChc3mDebTMLldUxMkg9H8s</DTS:Password>
+        </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -44,7 +54,12 @@
       DTS:ObjectName="alliantDB">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=alliantdb-prod;User ID=kwalikar;Initial Catalog=pbs_master;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;" />
+          DTS:ConnectionString="Data Source=alliantdb-prod;User ID=kwalikar;Initial Catalog=pbs_master;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAQU+eAkYgL0mMSBm2DinOpAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABtZYZAqxYN3LFEM5div4DIAAAAAASAAACgAAAAEAAAAGPuEYoWFpO5hQcVFWl380sIAAAAVp6qf61Q9MgUAAAAaczAA6gOKtw6Vik/AH22YnxcQT4</DTS:Password>
+        </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -54,7 +69,12 @@
       DTS:ObjectName="db19-uat.TrafficData">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=db19-uat;Initial Catalog=TrafficData;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+          DTS:ConnectionString="Data Source=db19-uat;User ID=;Initial Catalog=TrafficData;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAQU+eAkYgL0mMSBm2DinOpAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABmH5S99dvuAF3okNpcx2GqAAAAAASAAACgAAAAEAAAAGBSzDqRgm/Saeohvb9BejIIAAAAXtmQ/HOKsskUAAAAy4uP7LXuGOFGQOUfEakzc4t20no</DTS:Password>
+        </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -64,7 +84,12 @@
       DTS:ObjectName="Rightsline-Dest">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=db19-uat;Initial Catalog=RightsLineETL-Light;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+          DTS:ConnectionString="Data Source=db19-uat;User ID=;Initial Catalog=RightsLineETL-Light;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAQU+eAkYgL0mMSBm2DinOpAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACd9h/XtPKR2Aq3kPn0sOBfAAAAAASAAACgAAAAEAAAAF4Rj7DQtSyPMB4QPqN8fPIIAAAAzZXjoZYLsAcUAAAAp/2QPI7mi5XyHlDS6rK5NPZJvDs</DTS:Password>
+        </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -74,7 +99,12 @@
       DTS:ObjectName="Rightsline-Dest 1">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=db19-uat;Initial Catalog=RightsLineETL-Light;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+          DTS:ConnectionString="Data Source=db19-uat;User ID=;Initial Catalog=RightsLineETL-Light;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAQU+eAkYgL0mMSBm2DinOpAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAD2C616M0bwc3FuXrVhYbV2AAAAAASAAACgAAAAEAAAAD+E9coy5HzcGYeM5H8utfIIAAAA/gKB18qGh08UAAAA8H8jwhlMvt1noEPBCcwwo/z3Zb8</DTS:Password>
+        </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
@@ -94,7 +124,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="DoTruncateXREFIDs">
       <DTS:VariableValue
-        DTS:DataType="11">0</DTS:VariableValue>
+        DTS:DataType="11">-1</DTS:VariableValue>
     </DTS:Variable>
   </DTS:Variables>
   <DTS:Executables>
@@ -122,7 +152,288 @@
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
               SQLTask:Connection="{A488E997-BD99-4317-A838-A28E59F2F73F}"
-              SQLTask:SqlStatementSource="Truncate table dbo.xref_SeasonToEpisode&#xA;go&#xA;truncate table dbo.xref_SeriesToEpisode&#xA;go&#xA;Truncate table dbo.xref_SeriesToSeason&#xA;go&#xA;Truncate table dbo.xref_DealToEpisode&#xA;go&#xA;Truncate table dbo.xref_DealToSeason&#xA;go&#xA;Truncate table dbo.xref_DealToBlackout&#xA;go&#xA;Truncate table dbo.xref_DealToHoldback&#xA;go&#xA;Truncate table dbo.xref_DealToRightsIn&#xA;go&#xA;Truncate table dbo.xref_DealToFunder&#xA;go&#xA;Truncate table dbo.xref_DealToUnderwriter&#xA;go&#xA;Truncate table dbo.xref_DealToProductionCompany&#xA;go&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+              SQLTask:SqlStatementSource="Truncate table dbo.xref_SeasonToEpisode&#xA;go&#xA;truncate table dbo.xref_SeriesToEpisode&#xA;go&#xA;Truncate table dbo.xref_SeriesToSeason&#xA;go&#xA;Truncate table dbo.xref_DealToEpisode&#xA;go&#xA;Truncate table dbo.xref_DealToSeason&#xA;go&#xA;Truncate table dbo.xref_DealToBlackout&#xA;go&#xA;Truncate table dbo.xref_DealToHoldback&#xA;go&#xA;Truncate table dbo.xref_DealToRightsIn&#xA;go&#xA;Truncate table dbo.xref_DealToFunder&#xA;go&#xA;Truncate table dbo.xref_DealToUnderwriter&#xA;go&#xA;Truncate table dbo.xref_DealToProductionCompany&#xA;go&#xA;Truncate table dbo.xref_DealToExternalContactPerson&#xA;go&#xA;&#xA;&#xA;&#xA;&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\Sequence Container\Load XREF Deal To External Contact"
+          DTS:CreationName="SSIS.Pipeline.3"
+          DTS:Description="Data Flow Task"
+          DTS:DTSID="{DDF08ABC-B0F8-4C34-AEC0-08B4948E4290}"
+          DTS:ExecutableType="SSIS.Pipeline.3"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Load XREF Deal To External Contact"
+          DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <pipeline
+              version="1">
+              <components>
+                <component
+                  refId="Package\Sequence Container\Load XREF Deal To External Contact\ADO NET Destination"
+                  componentClassID="{874F7595-FB5F-40FF-96AF-FBFF8250E3EF}"
+                  contactInfo="Loads data into an ADO.NET-compliant database that uses a database table or view. Load data into a new or existing table. For example, use an ADO.NET provider for ODBC to load data into an ODBC destination.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;2"
+                  description="Loads data into an ADO.NET-compliant database that uses a database table or view. Load data into a new or existing table. For example, use an ADO.NET provider for ODBC to load data into an ODBC destination."
+                  name="ADO NET Destination"
+                  usesDispositions="true"
+                  version="2">
+                  <properties>
+                    <property
+                      dataType="System.String"
+                      description="The Destination database table name."
+                      expressionType="Notify"
+                      name="TableOrViewName"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version= 11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">"dbo"."xref_DealToExternalContactPerson"</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specify the number of rows per batch. The default is 0 which uses the same size as SSIS internal buffer. "
+                      expressionType="Notify"
+                      name="BatchSize">0</property>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out. A value of 0 indicates infinite time-out. "
+                      expressionType="Notify"
+                      name="CommandTimeout">30</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Specifies whether to use the SqlBulkCopy interface to improve the performance of bulk insert operations. Only certain providers support this interface."
+                      expressionType="Notify"
+                      name="UseBulkInsertWhenPossible">true</property>
+                    <property
+                      dataType="System.String"
+                      name="UserComponentTypeName">Microsoft.SqlServer.Dts.Pipeline.ADONETDestination, Microsoft.SqlServer.ADONETDest, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Sequence Container\Load XREF Deal To External Contact\ADO NET Destination.Connections[IDbConnection]"
+                      connectionManagerID="Package.ConnectionManagers[ADO.NET-Rightsline]"
+                      connectionManagerRefId="Package.ConnectionManagers[ADO.NET-Rightsline]"
+                      description="Managed connection manager"
+                      name="IDbConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\Sequence Container\Load XREF Deal To External Contact\ADO NET Destination.Inputs[ADO NET Destination Input]"
+                      errorRowDisposition="FailComponent"
+                      hasSideEffects="true"
+                      name="ADO NET Destination Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Sequence Container\Load XREF Deal To External Contact\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[ContactType]"
+                          cachedDataType="wstr"
+                          cachedLength="19"
+                          cachedName="ContactType"
+                          externalMetadataColumnId="Package\Sequence Container\Load XREF Deal To External Contact\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[ContactType]"
+                          lineageId="Package\Sequence Container\Load XREF Deal To External Contact\ADO NET Source.Outputs[ADO NET Source Output].Columns[ContactType]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\Load XREF Deal To External Contact\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[dealid]"
+                          cachedDataType="i4"
+                          cachedName="dealid"
+                          externalMetadataColumnId="Package\Sequence Container\Load XREF Deal To External Contact\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[ParentID]"
+                          lineageId="Package\Sequence Container\Load XREF Deal To External Contact\ADO NET Source.Outputs[ADO NET Source Output].Columns[dealid]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\Load XREF Deal To External Contact\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[BV ID]"
+                          cachedDataType="wstr"
+                          cachedLength="40"
+                          cachedName="BV ID"
+                          externalMetadataColumnId="Package\Sequence Container\Load XREF Deal To External Contact\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[ChildID]"
+                          lineageId="Package\Sequence Container\Load XREF Deal To External Contact\ADO NET Source.Outputs[ADO NET Source Output].Columns[BV ID]" />
+                      </inputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Load XREF Deal To External Contact\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[ParentID]"
+                          dataType="i4"
+                          name="ParentID" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Load XREF Deal To External Contact\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[ChildID]"
+                          dataType="wstr"
+                          length="100"
+                          name="ChildID" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Load XREF Deal To External Contact\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[ContactType]"
+                          dataType="wstr"
+                          length="100"
+                          name="ContactType" />
+                      </externalMetadataColumns>
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Sequence Container\Load XREF Deal To External Contact\ADO NET Destination.Outputs[ADO NET Destination Error Output]"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="ADO NET Destination Error Output"
+                      synchronousInputId="Package\Sequence Container\Load XREF Deal To External Contact\ADO NET Destination.Inputs[ADO NET Destination Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Sequence Container\Load XREF Deal To External Contact\ADO NET Destination.Outputs[ADO NET Destination Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\Load XREF Deal To External Contact\ADO NET Destination.Outputs[ADO NET Destination Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Load XREF Deal To External Contact\ADO NET Destination.Outputs[ADO NET Destination Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\Load XREF Deal To External Contact\ADO NET Destination.Outputs[ADO NET Destination Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Sequence Container\Load XREF Deal To External Contact\ADO NET Source"
+                  componentClassID="{874F7595-FB5F-40FF-96AF-FBFF8250E3EF}"
+                  contactInfo="Consumes data from SQL Server, OLE DB, ODBC, or Oracle, using the corresponding .NET Framework data provider. Use a Transact-SQL statement to define the result set. For example, extract data from SQL Server with the .NET Framework data provider for SQL Server.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+                  description="Consumes data from SQL Server, OLE DB, ODBC, or Oracle, using the corresponding .NET Framework data provider. Use a Transact-SQL statement to define the result set. For example, extract data from SQL Server with the .NET Framework data provider for SQL Server."
+                  name="ADO NET Source"
+                  usesDispositions="true"
+                  version="4">
+                  <properties>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the SQL statement used by the component to extract data."
+                      expressionType="Notify"
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">select	distinct 
+		dealid,
+		[BV ID],
+		[ContactType]  
+from	[TrafficData].pbs.[ExternalContactPerson]</property>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">30</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether to allow non-string external columns to be implicitly converted to strings at the output columns."
+                      name="AllowImplicitStringConversion">true</property>
+                    <property
+                      dataType="System.String"
+                      description="The Source database table name."
+                      expressionType="Notify"
+                      name="TableOrViewName"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version= 11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specify the mode to retrieve external column information"
+                      name="AccessMode"
+                      typeConverter="Microsoft.SqlServer.Dts.Pipeline.DataReaderSourceAdapter+EnumToStringConverter, Microsoft.SqlServer.ADONETSrc, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">2</property>
+                    <property
+                      dataType="System.String"
+                      name="UserComponentTypeName">Microsoft.SqlServer.Dts.Pipeline.DataReaderSourceAdapter, Microsoft.SqlServer.ADONETSrc, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Sequence Container\Load XREF Deal To External Contact\ADO NET Source.Connections[IDbConnection]"
+                      connectionManagerID="Package.ConnectionManagers[ADO.NET-TrafficData]"
+                      connectionManagerRefId="Package.ConnectionManagers[ADO.NET-TrafficData]"
+                      description="Managed connection manager"
+                      name="IDbConnection" />
+                  </connections>
+                  <outputs>
+                    <output
+                      refId="Package\Sequence Container\Load XREF Deal To External Contact\ADO NET Source.Outputs[ADO NET Source Output]"
+                      name="ADO NET Source Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Sequence Container\Load XREF Deal To External Contact\ADO NET Source.Outputs[ADO NET Source Output].Columns[dealid]"
+                          dataType="i4"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\Load XREF Deal To External Contact\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[dealid]"
+                          lineageId="Package\Sequence Container\Load XREF Deal To External Contact\ADO NET Source.Outputs[ADO NET Source Output].Columns[dealid]"
+                          name="dealid"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Load XREF Deal To External Contact\ADO NET Source.Outputs[ADO NET Source Output].Columns[BV ID]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\Load XREF Deal To External Contact\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[BV ID]"
+                          length="40"
+                          lineageId="Package\Sequence Container\Load XREF Deal To External Contact\ADO NET Source.Outputs[ADO NET Source Output].Columns[BV ID]"
+                          name="BV ID"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Load XREF Deal To External Contact\ADO NET Source.Outputs[ADO NET Source Output].Columns[ContactType]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\Load XREF Deal To External Contact\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[ContactType]"
+                          length="19"
+                          lineageId="Package\Sequence Container\Load XREF Deal To External Contact\ADO NET Source.Outputs[ADO NET Source Output].Columns[ContactType]"
+                          name="ContactType"
+                          truncationRowDisposition="FailComponent" />
+                      </outputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Load XREF Deal To External Contact\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[dealid]"
+                          dataType="i4"
+                          name="dealid" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Load XREF Deal To External Contact\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[BV ID]"
+                          dataType="wstr"
+                          length="40"
+                          name="BV ID" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Load XREF Deal To External Contact\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[ContactType]"
+                          dataType="wstr"
+                          length="19"
+                          name="ContactType" />
+                      </externalMetadataColumns>
+                    </output>
+                    <output
+                      refId="Package\Sequence Container\Load XREF Deal To External Contact\ADO NET Source.Outputs[ADO NET Source Error Output]"
+                      isErrorOut="true"
+                      name="ADO NET Source Error Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Sequence Container\Load XREF Deal To External Contact\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[dealid]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\Load XREF Deal To External Contact\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[dealid]"
+                          name="dealid" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Load XREF Deal To External Contact\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[BV ID]"
+                          dataType="wstr"
+                          length="40"
+                          lineageId="Package\Sequence Container\Load XREF Deal To External Contact\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[BV ID]"
+                          name="BV ID" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Load XREF Deal To External Contact\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[ContactType]"
+                          dataType="wstr"
+                          length="19"
+                          lineageId="Package\Sequence Container\Load XREF Deal To External Contact\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[ContactType]"
+                          name="ContactType" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Load XREF Deal To External Contact\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\Load XREF Deal To External Contact\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Load XREF Deal To External Contact\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\Load XREF Deal To External Contact\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+              </components>
+              <paths>
+                <path
+                  refId="Package\Sequence Container\Load XREF Deal To External Contact.Paths[ADO NET Source Output]"
+                  endId="Package\Sequence Container\Load XREF Deal To External Contact\ADO NET Destination.Inputs[ADO NET Destination Input]"
+                  name="ADO NET Source Output"
+                  startId="Package\Sequence Container\Load XREF Deal To External Contact\ADO NET Source.Outputs[ADO NET Source Output]" />
+              </paths>
+            </pipeline>
           </DTS:ObjectData>
         </DTS:Executable>
         <DTS:Executable
@@ -4553,6 +4864,14 @@ SELECT distinct
           DTS:ObjectName="Constraint 11"
           DTS:To="Package\Sequence Container\Load xref_DealToProductionCompany" />
         <DTS:PrecedenceConstraint
+          DTS:refId="Package\Sequence Container.PrecedenceConstraints[Constraint 12]"
+          DTS:CreationName=""
+          DTS:DTSID="{D706BBB5-3CDA-4495-9B17-DAAE126B6124}"
+          DTS:From="Package\Sequence Container\Load xref_DealToProductionCompany"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint 12"
+          DTS:To="Package\Sequence Container\Load XREF Deal To External Contact" />
+        <DTS:PrecedenceConstraint
           DTS:refId="Package\Sequence Container.PrecedenceConstraints[Constraint 2]"
           DTS:CreationName=""
           DTS:DTSID="{22807f3a-560e-48e0-aaad-9306d952888f}"
@@ -4908,6 +5227,79 @@ SELECT distinct
 	  ,substring([Episode.ContentIdentifier],charindex('NOLARoot',[Episode.ContentIdentifier])+9,len([Episode.ParentID])) as Nolacode
 	  ,mlvEpisodeEditName.DerivedValue as EditName
 	  ,mlvEpisodeEntityTemplate.DerivedValue as EpisodeEntityTemplate
+	  ,subLan.LAN_DESC as sub_languages
+  FROM [TrafficData].[PBS].[vwMOSEpisode] 
+  Join Bv.EXTENDEDDATA extD on extD.EXT_OWNERRECORD_ID = ass_id 
+  Join bv.USERLOOKUP ulkup on ulkup.Ulu_id = extD.EXT_INTEGER
+  --Join [RightsLineETL].[dbo].Apr23_Episodes Apr23 on  Apr23.ASS_ID = vwMOSEpisode.Ass_id
+  left join [PBS].[MasterLookupValues] mlvEpisodeEditName on mlvEpisodeEditName.field = 'static.EditName.value'
+						and mlvEpisodeEditName.ML_ID = 4
+  left join [PBS].[MasterLookupValues] mlvEpisodeEntityTemplate on mlvEpisodeEntityTemplate.field = 'static.EpisodeEntityTemplate.value'
+			and mlvEpisodeEntityTemplate.ML_ID = 4
+  left join bv.language subLan on sublan.lan_id = [TrafficData].[PBS].[vwMOSEpisode].DealID
+  where EXT_SEXTC_ID = 607871753 
+  and ulkup.ULU_CLASS = 'L03' and ULU_ID != 609587740
+  and charindex('Season',[Episode.ParentID]) = 0
+
+/*below is 9 programs add on*/
+and [Episode.ParentID] IN ( 'cid:org:pbs.org:Season2Series600817646',--Victoria on Masterpiece
+                                    'cid:org:pbs.org:Season1Series614345618',--PCAT
+                                    'cid:org:pbs.org:Season1Series617324631',--We''Meet Again
+                                                              'cid:org:pbs.org:Season1Series617324631',
+                                                              'cid:org:pbs.org:Season1Series600817646', --MAST Dist Season Series
+'cid:org:pbs.org:Season1Series618563499',
+'cid:org:pbs.org:Season1Series618586683',
+'cid:org:pbs.org:Season1Series618587481',
+'cid:org:pbs.org:Season2Series618562042',
+'cid:org:pbs.org:Season2Series618587505',
+'cid:org:pbs.org:Season3Series609718540',
+'cid:org:pbs.org:Season3Series618586648',
+'cid:org:pbs.org:Season4Series618586647',
+'cid:org:pbs.org:Season4Series618587765',
+'cid:org:pbs.org:Season1Series615807153')
+
+/*
+SELECT 
+       vwMOSEpisode.[ass_id]
+      ,[Episode.ContentIdentifier]
+      ,[Episode.UID]
+      ,[Episode.ParentID]
+      ,[Episode.Referent.Type]
+      ,[Episode.Organization.Contact.Info.Phone]
+      ,[Episode.Organization.Contact.Info.Phone.Type]
+      ,[Episode.Organization.Contact Info.Address]
+      ,[Episode.Organization.Contact.Info.PrimaryEmail]
+      ,[Episode.Organization.Contact.Info.Name]
+      ,[Episode.Organization.Contact.Info.ContactID]
+      ,[Episode.Organization.DisplayName]
+      ,[Episode.Organization.domain]
+      ,[Episode.Organization.OrganizationID]
+      ,[Episode.Organization.Role]
+      ,[Episode.Title]
+      ,[Episode.Title120]
+      ,[Episode.TitleClass]
+      ,[Episode.EpisodeNumber]
+      ,[Episode.EpisodeClass]
+      ,[Episode.SynopsisShort]
+      ,[Episode.SynopsisLong]
+      ,[Episode.CountryOfOrigin]
+      ,[Episode.PrimaryGenre]
+      ,[Episode.SecondaryGenre]
+      ,[Episode.Distribution.Number]
+      ,CAST(CONVERT(nvarchar,  [Episode.ReleaseDate],101) AS NVARCHAR) as  [Episode.ReleaseDate]
+      ,[Episode.ApproximateLength]
+      ,[Episode.Language.Primary.mode]
+      ,[Episode.LanguagePrimary]
+      ,[Episode.LanguageSecondary]
+      ,[Episode.Credits.Display.Name]
+      ,[Episode.Credits.Role]
+      ,[Episode.Credits.TalentID]
+      ,[Episode.ContactType]
+	  ,substring([Episode.ParentID],charindex(':pbs.org',[Episode.ParentID])+9,len([Episode.ParentID])) as PBS_Parent_ID
+	  ,substring([Episode.ContentIdentifier],charindex('NOLARoot',[Episode.ContentIdentifier])+9,4) as NolaRoot
+	  ,substring([Episode.ContentIdentifier],charindex('NOLARoot',[Episode.ContentIdentifier])+9,len([Episode.ParentID])) as Nolacode
+	  ,mlvEpisodeEditName.DerivedValue as EditName
+	  ,mlvEpisodeEntityTemplate.DerivedValue as EpisodeEntityTemplate
   FROM [TrafficData].[PBS].[vwMOSEpisode] 
   Join Bv.EXTENDEDDATA extD on extD.EXT_OWNERRECORD_ID = ass_id 
   Join bv.USERLOOKUP ulkup on ulkup.Ulu_id = extD.EXT_INTEGER
@@ -4919,6 +5311,24 @@ SELECT distinct
   where EXT_SEXTC_ID = 607871753 
   and ulkup.ULU_CLASS = 'L03' and ULU_ID != 609587740
   and charindex('Season',[Episode.ParentID]) = 0
+
+/*below is 9 programs add on*/
+and [Episode.ParentID] IN ( 'cid:org:pbs.org:Season2Series600817646',--Victoria on Masterpiece
+                                    'cid:org:pbs.org:Season1Series614345618',--PCAT
+                                    'cid:org:pbs.org:Season1Series617324631',--We''Meet Again
+                                                              'cid:org:pbs.org:Season1Series617324631',
+                                                              'cid:org:pbs.org:Season1Series600817646', --MAST Dist Season Series
+'cid:org:pbs.org:Season1Series618563499',
+'cid:org:pbs.org:Season1Series618586683',
+'cid:org:pbs.org:Season1Series618587481',
+'cid:org:pbs.org:Season2Series618562042',
+'cid:org:pbs.org:Season2Series618587505',
+'cid:org:pbs.org:Season3Series609718540',
+'cid:org:pbs.org:Season3Series618586648',
+'cid:org:pbs.org:Season4Series618586647',
+'cid:org:pbs.org:Season4Series618587765',
+'cid:org:pbs.org:Season1Series615807153')
+*/
 
 /*
 SELECT 
@@ -5403,6 +5813,16 @@ SELECT
                               lineageId="Package\Sequence Container 1\Catalog Import Container\Import Episode Series\MOS-EpisodeWithSeriesParent.Outputs[OLE DB Source Output].Columns[EpisodeEntityTemplate]"
                               name="EpisodeEntityTemplate"
                               truncationRowDisposition="FailComponent" />
+                            <outputColumn
+                              refId="Package\Sequence Container 1\Catalog Import Container\Import Episode Series\MOS-EpisodeWithSeriesParent.Outputs[OLE DB Source Output].Columns[sub_languages]"
+                              dataType="wstr"
+                              errorOrTruncationOperation="Conversion"
+                              errorRowDisposition="FailComponent"
+                              externalMetadataColumnId="Package\Sequence Container 1\Catalog Import Container\Import Episode Series\MOS-EpisodeWithSeriesParent.Outputs[OLE DB Source Output].ExternalColumns[sub_languages]"
+                              length="40"
+                              lineageId="Package\Sequence Container 1\Catalog Import Container\Import Episode Series\MOS-EpisodeWithSeriesParent.Outputs[OLE DB Source Output].Columns[sub_languages]"
+                              name="sub_languages"
+                              truncationRowDisposition="FailComponent" />
                           </outputColumns>
                           <externalMetadataColumns
                             isUsed="True">
@@ -5606,6 +6026,11 @@ SELECT
                               dataType="wstr"
                               length="2000"
                               name="EpisodeEntityTemplate" />
+                            <externalMetadataColumn
+                              refId="Package\Sequence Container 1\Catalog Import Container\Import Episode Series\MOS-EpisodeWithSeriesParent.Outputs[OLE DB Source Output].ExternalColumns[sub_languages]"
+                              dataType="wstr"
+                              length="40"
+                              name="sub_languages" />
                           </externalMetadataColumns>
                         </output>
                         <output
@@ -5854,6 +6279,12 @@ SELECT
                               lineageId="Package\Sequence Container 1\Catalog Import Container\Import Episode Series\MOS-EpisodeWithSeriesParent.Outputs[OLE DB Source Error Output].Columns[EpisodeEntityTemplate]"
                               name="EpisodeEntityTemplate" />
                             <outputColumn
+                              refId="Package\Sequence Container 1\Catalog Import Container\Import Episode Series\MOS-EpisodeWithSeriesParent.Outputs[OLE DB Source Error Output].Columns[sub_languages]"
+                              dataType="wstr"
+                              length="40"
+                              lineageId="Package\Sequence Container 1\Catalog Import Container\Import Episode Series\MOS-EpisodeWithSeriesParent.Outputs[OLE DB Source Error Output].Columns[sub_languages]"
+                              name="sub_languages" />
+                            <outputColumn
                               refId="Package\Sequence Container 1\Catalog Import Container\Import Episode Series\MOS-EpisodeWithSeriesParent.Outputs[OLE DB Source Error Output].Columns[NolaRoot]"
                               dataType="wstr"
                               length="4"
@@ -6032,6 +6463,13 @@ SELECT
                               cachedName="EpisodeEntityTemplate"
                               externalMetadataColumnId="Package\Sequence Container 1\Catalog Import Container\Import Episode Series\RL-Episode.Inputs[OLE DB Destination Input].ExternalColumns[entity_template]"
                               lineageId="Package\Sequence Container 1\Catalog Import Container\Import Episode Series\Sort.Outputs[Sort Output].Columns[EpisodeEntityTemplate]" />
+                            <inputColumn
+                              refId="Package\Sequence Container 1\Catalog Import Container\Import Episode Series\RL-Episode.Inputs[OLE DB Destination Input].Columns[sub_languages]"
+                              cachedDataType="wstr"
+                              cachedLength="40"
+                              cachedName="sub_languages"
+                              externalMetadataColumnId="Package\Sequence Container 1\Catalog Import Container\Import Episode Series\RL-Episode.Inputs[OLE DB Destination Input].ExternalColumns[sub_languages]"
+                              lineageId="Package\Sequence Container 1\Catalog Import Container\Import Episode Series\Sort.Outputs[Sort Output].Columns[sub_languages]" />
                           </inputColumns>
                           <externalMetadataColumns
                             isUsed="True">
@@ -6130,6 +6568,11 @@ SELECT
                               dataType="wstr"
                               length="100"
                               name="Item_BV_ID" />
+                            <externalMetadataColumn
+                              refId="Package\Sequence Container 1\Catalog Import Container\Import Episode Series\RL-Episode.Inputs[OLE DB Destination Input].ExternalColumns[sub_languages]"
+                              dataType="wstr"
+                              length="500"
+                              name="sub_languages" />
                           </externalMetadataColumns>
                         </input>
                       </inputs>
@@ -6861,6 +7304,23 @@ SELECT
                                   name="NewSortKeyPosition">0</property>
                               </properties>
                             </inputColumn>
+                            <inputColumn
+                              refId="Package\Sequence Container 1\Catalog Import Container\Import Episode Series\Sort.Inputs[Sort Input].Columns[sub_languages]"
+                              cachedDataType="wstr"
+                              cachedLength="40"
+                              cachedName="sub_languages"
+                              lineageId="Package\Sequence Container 1\Catalog Import Container\Import Episode Series\MOS-EpisodeWithSeriesParent.Outputs[OLE DB Source Output].Columns[sub_languages]">
+                              <properties>
+                                <property
+                                  dataType="System.Int32"
+                                  description="Specifies the comparison options for character data."
+                                  name="NewComparisonFlags">0</property>
+                                <property
+                                  dataType="System.Int32"
+                                  description="Specifies the sort order of the column."
+                                  name="NewSortKeyPosition">0</property>
+                              </properties>
+                            </inputColumn>
                           </inputColumns>
                           <externalMetadataColumns />
                         </input>
@@ -7435,6 +7895,20 @@ SELECT
                                   name="SortColumnId">#{Package\Sequence Container 1\Catalog Import Container\Import Episode Series\MOS-EpisodeWithSeriesParent.Outputs[OLE DB Source Output].Columns[EpisodeEntityTemplate]}</property>
                               </properties>
                             </outputColumn>
+                            <outputColumn
+                              refId="Package\Sequence Container 1\Catalog Import Container\Import Episode Series\Sort.Outputs[Sort Output].Columns[sub_languages]"
+                              dataType="wstr"
+                              length="40"
+                              lineageId="Package\Sequence Container 1\Catalog Import Container\Import Episode Series\Sort.Outputs[Sort Output].Columns[sub_languages]"
+                              name="sub_languages">
+                              <properties>
+                                <property
+                                  containsID="true"
+                                  dataType="System.Int32"
+                                  description="Specifies the lineage identifier of the input column that is associated with this output column."
+                                  name="SortColumnId">#{Package\Sequence Container 1\Catalog Import Container\Import Episode Series\MOS-EpisodeWithSeriesParent.Outputs[OLE DB Source Output].Columns[sub_languages]}</property>
+                              </properties>
+                            </outputColumn>
                           </outputColumns>
                           <externalMetadataColumns />
                         </output>
@@ -7776,11 +8250,12 @@ SUBSTRING(vch_code,1,CHARINDEX('+',VCH_CODE)-1) END AS us_tvpg,
         mlvEditClass.DerivedValue AS edit_class ,
         mlvEditName.DerivedValue AS edit_name ,
         mlvEpisodeEntityTemplate.DerivedValue AS EpisodeEntityTemplate,
-		p.ULU_DESC AS Franchise
+		p.ULU_DESC AS Franchise,
+		subLan.LAN_DESC as sub_languages
 FROM    [TrafficData].[PBS].[vwMOSEpisode]
         JOIN Bv.EXTENDEDDATA extD ON extD.EXT_OWNERRECORD_ID = ass_id
         JOIN bv.USERLOOKUP ulkup ON ulkup.Ulu_id = extD.EXT_INTEGER
-        JOIN [RightsLineETL].[dbo].Apr23_Episodes feb28 ON feb28.ASS_ID = vwMOSEpisode.Ass_id
+        --JOIN [RightsLineETL].[dbo].Apr23_Episodes feb28 ON feb28.ASS_ID = vwMOSEpisode.Ass_id
         JOIN bv.asset ass ON ass.ass_id = vwMOSEpisode.ass_id
         LEFT JOIN [BV].[ASSETCATEGORY] aca ON aca.ACA_ID = ass.ASS_ACA_ID
         --LEFT JOIN bv.Rating lookRating ON lookRating.RAT_ID = ass.ASS_RAT_ID
@@ -7815,13 +8290,31 @@ FROM    [TrafficData].[PBS].[vwMOSEpisode]
             WHERE (BV.EXTENDEDDATA.EXT_SEXTC_ID = 607871743)
         ) P
             ON P.EXT_OWNERRECORD_ID = ass.ASS_ID
+        left join bv.language subLan on sublan.lan_id = dea.DEA_LAN_ID_SUBTITLES
 WHERE   EXT_SEXTC_ID = 607871753 -- RightslineTemplate Column
         AND ulkup.ULU_CLASS = 'L03'
         AND ULU_ID != 609587740
         AND CHARINDEX('Season', [Episode.ParentID]) &gt;= 1
         AND [Episode.ParentID] IN ( 'cid:org:pbs.org:Season2Series600817646',
                                     'cid:org:pbs.org:Season1Series614345618',
-                                    'cid:org:pbs.org:Season1Series617324631' )</property>
+                                    'cid:org:pbs.org:Season1Series617324631' )
+and
+
+[Episode.ParentID] IN ( 'cid:org:pbs.org:Season2Series600817646',--Victoria on Masterpiece
+                                    'cid:org:pbs.org:Season1Series614345618',--PCAT
+                                    'cid:org:pbs.org:Season1Series617324631',--We''Meet Again
+                                                              'cid:org:pbs.org:Season1Series617324631',
+                                                              'cid:org:pbs.org:Season1Series600817646', --MAST Dist Season Series
+'cid:org:pbs.org:Season1Series618563499',
+'cid:org:pbs.org:Season1Series618586683',
+'cid:org:pbs.org:Season1Series618587481',
+'cid:org:pbs.org:Season2Series618562042',
+'cid:org:pbs.org:Season2Series618587505',
+'cid:org:pbs.org:Season3Series609718540',
+'cid:org:pbs.org:Season3Series618586648',
+'cid:org:pbs.org:Season4Series618586647',
+'cid:org:pbs.org:Season4Series618587765',
+'cid:org:pbs.org:Season1Series615807153')</property>
                         <property
                           dataType="System.String"
                           description="The variable that contains the SQL command to be executed."
@@ -8367,6 +8860,16 @@ WHERE   EXT_SEXTC_ID = 607871753 -- RightslineTemplate Column
                               lineageId="Package\Sequence Container 1\Catalog Import Container\Import EpisodeParentSeason\MOS-EpisodeWithSeasonParent.Outputs[OLE DB Source Output].Columns[Franchise]"
                               name="Franchise"
                               truncationRowDisposition="FailComponent" />
+                            <outputColumn
+                              refId="Package\Sequence Container 1\Catalog Import Container\Import EpisodeParentSeason\MOS-EpisodeWithSeasonParent.Outputs[OLE DB Source Output].Columns[sub_languages]"
+                              dataType="wstr"
+                              errorOrTruncationOperation="Conversion"
+                              errorRowDisposition="FailComponent"
+                              externalMetadataColumnId="Package\Sequence Container 1\Catalog Import Container\Import EpisodeParentSeason\MOS-EpisodeWithSeasonParent.Outputs[OLE DB Source Output].ExternalColumns[sub_languages]"
+                              length="40"
+                              lineageId="Package\Sequence Container 1\Catalog Import Container\Import EpisodeParentSeason\MOS-EpisodeWithSeasonParent.Outputs[OLE DB Source Output].Columns[sub_languages]"
+                              name="sub_languages"
+                              truncationRowDisposition="FailComponent" />
                           </outputColumns>
                           <externalMetadataColumns
                             isUsed="True">
@@ -8627,6 +9130,11 @@ WHERE   EXT_SEXTC_ID = 607871753 -- RightslineTemplate Column
                               dataType="wstr"
                               length="80"
                               name="Franchise" />
+                            <externalMetadataColumn
+                              refId="Package\Sequence Container 1\Catalog Import Container\Import EpisodeParentSeason\MOS-EpisodeWithSeasonParent.Outputs[OLE DB Source Output].ExternalColumns[sub_languages]"
+                              dataType="wstr"
+                              length="40"
+                              name="sub_languages" />
                           </externalMetadataColumns>
                         </output>
                         <output
@@ -8943,6 +9451,12 @@ WHERE   EXT_SEXTC_ID = 607871753 -- RightslineTemplate Column
                               lineageId="Package\Sequence Container 1\Catalog Import Container\Import EpisodeParentSeason\MOS-EpisodeWithSeasonParent.Outputs[OLE DB Source Error Output].Columns[Franchise]"
                               name="Franchise" />
                             <outputColumn
+                              refId="Package\Sequence Container 1\Catalog Import Container\Import EpisodeParentSeason\MOS-EpisodeWithSeasonParent.Outputs[OLE DB Source Error Output].Columns[sub_languages]"
+                              dataType="wstr"
+                              length="40"
+                              lineageId="Package\Sequence Container 1\Catalog Import Container\Import EpisodeParentSeason\MOS-EpisodeWithSeasonParent.Outputs[OLE DB Source Error Output].Columns[sub_languages]"
+                              name="sub_languages" />
+                            <outputColumn
                               refId="Package\Sequence Container 1\Catalog Import Container\Import EpisodeParentSeason\MOS-EpisodeWithSeasonParent.Outputs[OLE DB Source Error Output].Columns[minority_production]"
                               dataType="wstr"
                               length="2000"
@@ -9202,6 +9716,20 @@ WHERE   EXT_SEXTC_ID = 607871753 -- RightslineTemplate Column
                               cachedName="dr_Episode_Synp_long"
                               externalMetadataColumnId="Package\Sequence Container 1\Catalog Import Container\Import EpisodeParentSeason\RL-Episode.Inputs[OLE DB Destination Input].ExternalColumns[synopsis_long]"
                               lineageId="Package\Sequence Container 1\Catalog Import Container\Import EpisodeParentSeason\Derived Column.Outputs[Derived Column Output].Columns[dr_Episode_Synp_long]" />
+                            <inputColumn
+                              refId="Package\Sequence Container 1\Catalog Import Container\Import EpisodeParentSeason\RL-Episode.Inputs[OLE DB Destination Input].Columns[Franchise]"
+                              cachedDataType="wstr"
+                              cachedLength="80"
+                              cachedName="Franchise"
+                              externalMetadataColumnId="Package\Sequence Container 1\Catalog Import Container\Import EpisodeParentSeason\RL-Episode.Inputs[OLE DB Destination Input].ExternalColumns[Franchise]"
+                              lineageId="Package\Sequence Container 1\Catalog Import Container\Import EpisodeParentSeason\Sort.Outputs[Sort Output].Columns[Franchise]" />
+                            <inputColumn
+                              refId="Package\Sequence Container 1\Catalog Import Container\Import EpisodeParentSeason\RL-Episode.Inputs[OLE DB Destination Input].Columns[sub_languages]"
+                              cachedDataType="wstr"
+                              cachedLength="40"
+                              cachedName="sub_languages"
+                              externalMetadataColumnId="Package\Sequence Container 1\Catalog Import Container\Import EpisodeParentSeason\RL-Episode.Inputs[OLE DB Destination Input].ExternalColumns[sub_languages]"
+                              lineageId="Package\Sequence Container 1\Catalog Import Container\Import EpisodeParentSeason\Sort.Outputs[Sort Output].Columns[sub_languages]" />
                           </inputColumns>
                           <externalMetadataColumns
                             isUsed="True">
@@ -9353,6 +9881,11 @@ WHERE   EXT_SEXTC_ID = 607871753 -- RightslineTemplate Column
                               dataType="wstr"
                               length="50"
                               name="edit_class" />
+                            <externalMetadataColumn
+                              refId="Package\Sequence Container 1\Catalog Import Container\Import EpisodeParentSeason\RL-Episode.Inputs[OLE DB Destination Input].ExternalColumns[Franchise]"
+                              dataType="wstr"
+                              length="500"
+                              name="Franchise" />
                           </externalMetadataColumns>
                         </input>
                       </inputs>
@@ -10254,6 +10787,40 @@ WHERE   EXT_SEXTC_ID = 607871753 -- RightslineTemplate Column
                                   name="NewSortKeyPosition">0</property>
                               </properties>
                             </inputColumn>
+                            <inputColumn
+                              refId="Package\Sequence Container 1\Catalog Import Container\Import EpisodeParentSeason\Sort.Inputs[Sort Input].Columns[Franchise]"
+                              cachedDataType="wstr"
+                              cachedLength="80"
+                              cachedName="Franchise"
+                              lineageId="Package\Sequence Container 1\Catalog Import Container\Import EpisodeParentSeason\MOS-EpisodeWithSeasonParent.Outputs[OLE DB Source Output].Columns[Franchise]">
+                              <properties>
+                                <property
+                                  dataType="System.Int32"
+                                  description="Specifies the comparison options for character data."
+                                  name="NewComparisonFlags">0</property>
+                                <property
+                                  dataType="System.Int32"
+                                  description="Specifies the sort order of the column."
+                                  name="NewSortKeyPosition">0</property>
+                              </properties>
+                            </inputColumn>
+                            <inputColumn
+                              refId="Package\Sequence Container 1\Catalog Import Container\Import EpisodeParentSeason\Sort.Inputs[Sort Input].Columns[sub_languages]"
+                              cachedDataType="wstr"
+                              cachedLength="40"
+                              cachedName="sub_languages"
+                              lineageId="Package\Sequence Container 1\Catalog Import Container\Import EpisodeParentSeason\MOS-EpisodeWithSeasonParent.Outputs[OLE DB Source Output].Columns[sub_languages]">
+                              <properties>
+                                <property
+                                  dataType="System.Int32"
+                                  description="Specifies the comparison options for character data."
+                                  name="NewComparisonFlags">0</property>
+                                <property
+                                  dataType="System.Int32"
+                                  description="Specifies the sort order of the column."
+                                  name="NewSortKeyPosition">0</property>
+                              </properties>
+                            </inputColumn>
                           </inputColumns>
                           <externalMetadataColumns />
                         </input>
@@ -10966,6 +11533,34 @@ WHERE   EXT_SEXTC_ID = 607871753 -- RightslineTemplate Column
                                   dataType="System.Int32"
                                   description="Specifies the lineage identifier of the input column that is associated with this output column."
                                   name="SortColumnId">#{Package\Sequence Container 1\Catalog Import Container\Import EpisodeParentSeason\MOS-EpisodeWithSeasonParent.Outputs[OLE DB Source Output].Columns[EpisodeEntityTemplate]}</property>
+                              </properties>
+                            </outputColumn>
+                            <outputColumn
+                              refId="Package\Sequence Container 1\Catalog Import Container\Import EpisodeParentSeason\Sort.Outputs[Sort Output].Columns[Franchise]"
+                              dataType="wstr"
+                              length="80"
+                              lineageId="Package\Sequence Container 1\Catalog Import Container\Import EpisodeParentSeason\Sort.Outputs[Sort Output].Columns[Franchise]"
+                              name="Franchise">
+                              <properties>
+                                <property
+                                  containsID="true"
+                                  dataType="System.Int32"
+                                  description="Specifies the lineage identifier of the input column that is associated with this output column."
+                                  name="SortColumnId">#{Package\Sequence Container 1\Catalog Import Container\Import EpisodeParentSeason\MOS-EpisodeWithSeasonParent.Outputs[OLE DB Source Output].Columns[Franchise]}</property>
+                              </properties>
+                            </outputColumn>
+                            <outputColumn
+                              refId="Package\Sequence Container 1\Catalog Import Container\Import EpisodeParentSeason\Sort.Outputs[Sort Output].Columns[sub_languages]"
+                              dataType="wstr"
+                              length="40"
+                              lineageId="Package\Sequence Container 1\Catalog Import Container\Import EpisodeParentSeason\Sort.Outputs[Sort Output].Columns[sub_languages]"
+                              name="sub_languages">
+                              <properties>
+                                <property
+                                  containsID="true"
+                                  dataType="System.Int32"
+                                  description="Specifies the lineage identifier of the input column that is associated with this output column."
+                                  name="SortColumnId">#{Package\Sequence Container 1\Catalog Import Container\Import EpisodeParentSeason\MOS-EpisodeWithSeasonParent.Outputs[OLE DB Source Output].Columns[sub_languages]}</property>
                               </properties>
                             </outputColumn>
                           </outputColumns>
@@ -13075,6 +13670,129 @@ SUBSTRING(vch_code,1,CHARINDEX('+',VCH_CODE)-1) END AS us_tvpg,
         mlvEditClass.DerivedValue AS edit_class ,
         mlvEditName.DerivedValue AS EditName ,
         mlvEpisodeEntityTemplate.DerivedValue AS EpisodeEntityTemplate,
+		P.ULU_DESC AS Franchise,
+		subLan.LAN_DESC as sub_languages
+FROM    [TrafficData].[PBS].[vwMOSEpisode]
+        JOIN Bv.EXTENDEDDATA extD ON extD.EXT_OWNERRECORD_ID = ass_id
+        JOIN bv.USERLOOKUP ulkup ON ulkup.Ulu_id = extD.EXT_INTEGER
+       --JOIN [RightsLineETL].[dbo].Apr23_OneTimeOnly Apr23 ON Apr23.ASS_ID = vwMOSEpisode.Ass_id
+        JOIN Bv.Asset ass ON ass.ass_id = vwMOSEpisode.Ass_id
+        --LEFT JOIN bv.Rating lookRating ON lookRating.RAT_ID = ass.ASS_RAT_ID
+		LEFT JOIN bv.vchip vchip ON vchip.VCH_ID = ass.ASS_VCH_ID
+        LEFT JOIN bv.Deal dea ON dea.DEA_ID = [TrafficData].[PBS].[vwMOSEpisode].DealID
+        LEFT JOIN bv.SYSLOOKUP ARLookup ON ARLookup.SLU_ID = dea.DEA_SLU_ID_ASPECTRATIO
+		left join [PBS].[MasterLookupValues] mlvAspectRation on mlvAspectRation.dbvalue = ARLookup.SLU_DESC
+			AND mlvAspectRation.ML_ID = 13
+			and mlvAspectRation.field = 'ASPECTRATIO_LOOKUP'
+        LEFT JOIN [PBS].[MasterLookupValues] mlvISPBSMINORITYPRODUCTION ON CAST(mlvISPBSMINORITYPRODUCTION.dbvalue AS INT) = dea.DEA_ISPBSMINORITYPRODUCTION
+                                                              AND mlvISPBSMINORITYPRODUCTION.field = 'trafficdata.BV.DEAL.DEA_ISPBSMINORITYPRODUCTION'
+                                                              AND mlvISPBSMINORITYPRODUCTION.ML_ID = 5
+        LEFT JOIN [PBS].[MasterLookupValues] mlvEditClass ON mlvEditClass.field = 'static.edit_class.value'
+                                                             AND mlvEditClass.ML_ID = 5
+        LEFT JOIN [PBS].[MasterLookupValues] mlvAssIsPublished ON CAST(mlvAssIsPublished.dbvalue AS INT) = ass.ASS_ISPBSPUBLISHED
+                                                              AND mlvAssIsPublished.field = 'trafficdata.BV.ASSET.ASS_ISPBSPUBLISHED'
+                                                              AND mlvAssIsPublished.ML_ID = 5
+        LEFT JOIN [PBS].[MasterLookupValues] mlvWorkflowStatus ON mlvWorkflowStatus.field = 'static.WorkflowStatus.value'
+                                                              AND mlvWorkflowStatus.ML_ID = 5
+        LEFT JOIN [PBS].[MasterLookupValues] mlvEditName ON mlvEditName.field = 'static.EditName.value'
+                                                            AND mlvEditName.ML_ID = 5
+        LEFT JOIN [PBS].[MasterLookupValues] mlvEpisodeEntityTemplate ON mlvEpisodeEntityTemplate.field = 'static.EpisodeEntityTemplate.value'
+                                                          AND mlvEpisodeEntityTemplate.ML_ID = 5
+		LEFT JOIN
+        (
+            SELECT BV.EXTENDEDDATA.EXT_INTEGER,
+                   BV.USERLOOKUP.ULU_DESC,
+                   BV.EXTENDEDDATA.EXT_OWNERRECORD_ID
+            FROM BV.EXTENDEDDATA
+                LEFT OUTER JOIN BV.USERLOOKUP
+                    ON BV.EXTENDEDDATA.EXT_INTEGER = BV.USERLOOKUP.ULU_ID
+            WHERE (BV.EXTENDEDDATA.EXT_SEXTC_ID = 607871743)
+        ) P ON P.EXT_OWNERRECORD_ID = ass.ASS_ID    
+		 left join bv.language subLan on sublan.lan_id = dea.DEA_LAN_ID_SUBTITLES
+WHERE   EXT_SEXTC_ID = 607871753
+        AND ulkup.ULU_CLASS = 'L03'
+        AND ULU_ID = 609587740
+       --YT: Orig AND 20180807 AND vwMOSEpisode.Ass_id IN ( 236035781, 595764080, 589763373 )
+
+/*9 Program Add on*/
+       AND vwMOSEpisode.Ass_id  
+IN (
+236035781, 595764080, 589763373,632259177) or ASS_EPISODESLATE LIKE 'NAAT  0035%'
+
+
+/*
+SELECT  vwMOsepisode.[ass_id] ,
+        [Episode.ContentIdentifier] ,
+        [Episode.UID] ,
+        [Episode.ParentID] ,
+        [Episode.Referent.Type] ,
+        [Episode.Organization.Contact.Info.Phone] ,
+        [Episode.Organization.Contact.Info.Phone.Type] ,
+        [Episode.Organization.Contact Info.Address] ,
+        [Episode.Organization.Contact.Info.PrimaryEmail] ,
+        [Episode.Organization.Contact.Info.Name] ,
+        [Episode.Organization.Contact.Info.ContactID] ,
+        [Episode.Organization.DisplayName] ,
+        [Episode.Organization.domain] ,
+        [Episode.Organization.OrganizationID] ,
+        [Episode.Organization.Role] ,
+        PBS.MoveArticleOfSpeach(CASE WHEN ass.ASS_TITLE IS NOT NULL
+                                     THEN RTRIM(LTRIM(ass.ASS_TITLE))
+                                     ELSE 'Episode '
+                                          + CAST([TrafficData].[PBS].[vwMOSEpisode].[Episode.EpisodeNumber] AS VARCHAR(10))
+                                END) AS [Episode.Title.Corrected] ,
+        PBS.MoveArticleOfSpeach(CASE WHEN ass.ASS_TITLE IS NOT NULL
+                                     THEN SUBSTRING(RTRIM(LTRIM(ass.ass_title)),
+                                                    1, 120)
+                                     ELSE 'Episode '
+                                          + CAST([TrafficData].[PBS].[vwMOSEpisode].[Episode.EpisodeNumber] AS VARCHAR(10))
+                                END) AS [Episode.Title120.Corrected] ,
+        [Episode.TitleClass] ,
+        Null as [Episode.EpisodeNumber] ,
+        [Episode.EpisodeClass] ,
+        CAST([Episode.SynopsisShort] AS NVARCHAR(400)) AS [Episode.SynopsisShort] ,
+        CAST([Episode.SynopsisLong] AS NVARCHAR(400)) AS [Episode.SynopsisLong] ,
+        [Episode.CountryOfOrigin] ,
+        CAST([Episode.PrimaryGenre] AS NVARCHAR(500)) AS [Episode.PrimaryGenre] ,
+        CAST(REPLACE([Episode.SecondaryGenre], ',', '|') AS NVARCHAR(500)) AS [Episode.SecondaryGenre] ,
+        [Episode.Distribution.Number] ,
+       CAST(CONVERT(nvarchar,  [Episode.ReleaseDate],101) AS NVARCHAR) as  [Episode.ReleaseDate],
+        CONVERT(VARCHAR(3),ass.ASS_DURATIONSCHEDULED /60 ) AS [Episode.ApproximateLength] ,
+        [Episode.Language.Primary.mode] ,
+        [Episode.LanguagePrimary] ,
+        [Episode.LanguageSecondary] ,
+        [Episode.Credits.Display.Name] ,
+        [Episode.Credits.Role] ,
+        [Episode.Credits.TalentID] ,
+        [Episode.ContactType] ,
+        SUBSTRING([Episode.ParentID],
+                  CHARINDEX(':pbs.org', [Episode.ParentID]) + 9,
+                  LEN([Episode.ParentID])) AS PBS_Parent_ID ,
+        SUBSTRING([Episode.ContentIdentifier],
+                  CHARINDEX('NOLARoot', [Episode.ContentIdentifier]) + 9, 4) AS NolaRoot ,
+        SUBSTRING([Episode.ContentIdentifier],
+                  CHARINDEX('NOLARoot', [Episode.ContentIdentifier]) + 9,
+                  LEN([Episode.ContentIdentifier])) AS Nolacode ,
+        mlvAssIsPublished.DerivedValue AS entity_status ,
+        mlvWorkflowStatus.DerivedValue AS WorkflowStatus ,
+        CASE [Episode.TitleClass]
+          WHEN 'Working'
+          THEN SUBSTRING(RTRIM(LTRIM(ass.ass_episodetitle)), 1, 120)
+          ELSE ''
+        END AS additional_akas ,
+       CASE CHARINDEX('+',VCH_CODE) WHEN 0 THEN vch_code ELSE 
+SUBSTRING(vch_code,1,CHARINDEX('+',VCH_CODE)-1) END AS us_tvpg,
+        YEAR([Episode.ReleaseDate]) AS first_broadcast_year ,
+        mlvAspectRation.DerivedValue AS aspect_ratio ,
+        CASE 
+          WHEN dea.DEA_SLU_ID_HIDEF IN (57002,57004) THEN CAST('HD' AS NVARCHAR)
+		  WHEN dea.DEA_SLU_ID_HIDEF IN (57001,57003) THEN CAST('SD' AS NVARCHAR)
+          ELSE CAST('SD' AS NVARCHAR)
+        END AS resolution ,
+        mlvISPBSMINORITYPRODUCTION.DerivedValue AS minority_production ,
+        mlvEditClass.DerivedValue AS edit_class ,
+        mlvEditName.DerivedValue AS EditName ,
+        mlvEpisodeEntityTemplate.DerivedValue AS EpisodeEntityTemplate,
 		P.ULU_DESC AS Franchise
 FROM    [TrafficData].[PBS].[vwMOSEpisode]
         JOIN Bv.EXTENDEDDATA extD ON extD.EXT_OWNERRECORD_ID = ass_id
@@ -13115,7 +13833,26 @@ FROM    [TrafficData].[PBS].[vwMOSEpisode]
 WHERE   EXT_SEXTC_ID = 607871753
         AND ulkup.ULU_CLASS = 'L03'
         AND ULU_ID = 609587740
-        AND vwMOSEpisode.Ass_id IN ( 236035781, 595764080, 589763373 )</property>
+       --YT: Orig AND 20180807 AND vwMOSEpisode.Ass_id IN ( 236035781, 595764080, 589763373 )
+
+/*9 Program Add on*/
+       AND  [Episode.ParentID] IN ( 'cid:org:pbs.org:Season2Series600817646',--Victoria on Masterpiece
+                                    'cid:org:pbs.org:Season1Series614345618',--PCAT
+                                    'cid:org:pbs.org:Season1Series617324631',--We''Meet Again
+                                                              'cid:org:pbs.org:Season1Series617324631',
+                                                              'cid:org:pbs.org:Season1Series600817646', --MAST Dist Season Series
+'cid:org:pbs.org:Season1Series618563499',
+'cid:org:pbs.org:Season1Series618586683',
+'cid:org:pbs.org:Season1Series618587481',
+'cid:org:pbs.org:Season2Series618562042',
+'cid:org:pbs.org:Season2Series618587505',
+'cid:org:pbs.org:Season3Series609718540',
+'cid:org:pbs.org:Season3Series618586648',
+'cid:org:pbs.org:Season4Series618586647',
+'cid:org:pbs.org:Season4Series618587765',
+'cid:org:pbs.org:Season1Series615807153')
+
+*/</property>
                         <property
                           dataType="System.String"
                           description="The variable that contains the SQL command to be executed."
@@ -13306,6 +14043,24 @@ WHERE   EXT_SEXTC_ID = 607871753
                               name="Episode.Organization.Role"
                               truncationRowDisposition="FailComponent" />
                             <outputColumn
+                              refId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\MOS-OTO.Outputs[OLE DB Source Output].Columns[Episode.Title.Corrected]"
+                              dataType="nText"
+                              errorOrTruncationOperation="Conversion"
+                              errorRowDisposition="FailComponent"
+                              externalMetadataColumnId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\MOS-OTO.Outputs[OLE DB Source Output].ExternalColumns[Episode.Title.Corrected]"
+                              lineageId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\MOS-OTO.Outputs[OLE DB Source Output].Columns[Episode.Title.Corrected]"
+                              name="Episode.Title.Corrected"
+                              truncationRowDisposition="FailComponent" />
+                            <outputColumn
+                              refId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\MOS-OTO.Outputs[OLE DB Source Output].Columns[Episode.Title120.Corrected]"
+                              dataType="nText"
+                              errorOrTruncationOperation="Conversion"
+                              errorRowDisposition="FailComponent"
+                              externalMetadataColumnId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\MOS-OTO.Outputs[OLE DB Source Output].ExternalColumns[Episode.Title120.Corrected]"
+                              lineageId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\MOS-OTO.Outputs[OLE DB Source Output].Columns[Episode.Title120.Corrected]"
+                              name="Episode.Title120.Corrected"
+                              truncationRowDisposition="FailComponent" />
+                            <outputColumn
                               refId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\MOS-OTO.Outputs[OLE DB Source Output].Columns[Episode.TitleClass]"
                               codePage="1252"
                               dataType="str"
@@ -13407,10 +14162,12 @@ WHERE   EXT_SEXTC_ID = 607871753
                               truncationRowDisposition="FailComponent" />
                             <outputColumn
                               refId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\MOS-OTO.Outputs[OLE DB Source Output].Columns[Episode.ApproximateLength]"
-                              dataType="i4"
+                              codePage="1252"
+                              dataType="str"
                               errorOrTruncationOperation="Conversion"
                               errorRowDisposition="FailComponent"
                               externalMetadataColumnId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\MOS-OTO.Outputs[OLE DB Source Output].ExternalColumns[Episode.ApproximateLength]"
+                              length="3"
                               lineageId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\MOS-OTO.Outputs[OLE DB Source Output].Columns[Episode.ApproximateLength]"
                               name="Episode.ApproximateLength"
                               truncationRowDisposition="FailComponent" />
@@ -13516,39 +14273,22 @@ WHERE   EXT_SEXTC_ID = 607871753
                               name="Nolacode"
                               truncationRowDisposition="FailComponent" />
                             <outputColumn
-                              refId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\MOS-OTO.Outputs[OLE DB Source Output].Columns[Episode.Title.Corrected]"
-                              dataType="nText"
-                              errorOrTruncationOperation="Conversion"
-                              errorRowDisposition="FailComponent"
-                              externalMetadataColumnId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\MOS-OTO.Outputs[OLE DB Source Output].ExternalColumns[Episode.Title.Corrected]"
-                              lineageId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\MOS-OTO.Outputs[OLE DB Source Output].Columns[Episode.Title.Corrected]"
-                              name="Episode.Title.Corrected"
-                              truncationRowDisposition="FailComponent" />
-                            <outputColumn
-                              refId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\MOS-OTO.Outputs[OLE DB Source Output].Columns[Episode.Title120.Corrected]"
-                              dataType="nText"
-                              errorOrTruncationOperation="Conversion"
-                              errorRowDisposition="FailComponent"
-                              externalMetadataColumnId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\MOS-OTO.Outputs[OLE DB Source Output].ExternalColumns[Episode.Title120.Corrected]"
-                              lineageId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\MOS-OTO.Outputs[OLE DB Source Output].Columns[Episode.Title120.Corrected]"
-                              name="Episode.Title120.Corrected"
-                              truncationRowDisposition="FailComponent" />
-                            <outputColumn
                               refId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\MOS-OTO.Outputs[OLE DB Source Output].Columns[entity_status]"
                               dataType="wstr"
                               errorOrTruncationOperation="Conversion"
                               errorRowDisposition="FailComponent"
                               externalMetadataColumnId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\MOS-OTO.Outputs[OLE DB Source Output].ExternalColumns[entity_status]"
-                              length="30"
+                              length="2000"
                               lineageId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\MOS-OTO.Outputs[OLE DB Source Output].Columns[entity_status]"
                               name="entity_status"
                               truncationRowDisposition="FailComponent" />
                             <outputColumn
                               refId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\MOS-OTO.Outputs[OLE DB Source Output].Columns[WorkflowStatus]"
-                              dataType="i4"
+                              dataType="wstr"
                               errorOrTruncationOperation="Conversion"
                               errorRowDisposition="FailComponent"
                               externalMetadataColumnId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\MOS-OTO.Outputs[OLE DB Source Output].ExternalColumns[WorkflowStatus]"
+                              length="2000"
                               lineageId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\MOS-OTO.Outputs[OLE DB Source Output].Columns[WorkflowStatus]"
                               name="WorkflowStatus"
                               truncationRowDisposition="FailComponent" />
@@ -13568,7 +14308,7 @@ WHERE   EXT_SEXTC_ID = 607871753
                               errorOrTruncationOperation="Conversion"
                               errorRowDisposition="FailComponent"
                               externalMetadataColumnId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\MOS-OTO.Outputs[OLE DB Source Output].ExternalColumns[us_tvpg]"
-                              length="40"
+                              length="10"
                               lineageId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\MOS-OTO.Outputs[OLE DB Source Output].Columns[us_tvpg]"
                               name="us_tvpg"
                               truncationRowDisposition="FailComponent" />
@@ -13587,7 +14327,7 @@ WHERE   EXT_SEXTC_ID = 607871753
                               errorOrTruncationOperation="Conversion"
                               errorRowDisposition="FailComponent"
                               externalMetadataColumnId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\MOS-OTO.Outputs[OLE DB Source Output].ExternalColumns[aspect_ratio]"
-                              length="80"
+                              length="2000"
                               lineageId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\MOS-OTO.Outputs[OLE DB Source Output].Columns[aspect_ratio]"
                               name="aspect_ratio"
                               truncationRowDisposition="FailComponent" />
@@ -13607,7 +14347,7 @@ WHERE   EXT_SEXTC_ID = 607871753
                               errorOrTruncationOperation="Conversion"
                               errorRowDisposition="FailComponent"
                               externalMetadataColumnId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\MOS-OTO.Outputs[OLE DB Source Output].ExternalColumns[minority_production]"
-                              length="5"
+                              length="2000"
                               lineageId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\MOS-OTO.Outputs[OLE DB Source Output].Columns[minority_production]"
                               name="minority_production"
                               truncationRowDisposition="FailComponent" />
@@ -13617,7 +14357,7 @@ WHERE   EXT_SEXTC_ID = 607871753
                               errorOrTruncationOperation="Conversion"
                               errorRowDisposition="FailComponent"
                               externalMetadataColumnId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\MOS-OTO.Outputs[OLE DB Source Output].ExternalColumns[edit_class]"
-                              length="50"
+                              length="2000"
                               lineageId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\MOS-OTO.Outputs[OLE DB Source Output].Columns[edit_class]"
                               name="edit_class"
                               truncationRowDisposition="FailComponent" />
@@ -13650,6 +14390,16 @@ WHERE   EXT_SEXTC_ID = 607871753
                               length="80"
                               lineageId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\MOS-OTO.Outputs[OLE DB Source Output].Columns[Franchise]"
                               name="Franchise"
+                              truncationRowDisposition="FailComponent" />
+                            <outputColumn
+                              refId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\MOS-OTO.Outputs[OLE DB Source Output].Columns[sub_languages]"
+                              dataType="wstr"
+                              errorOrTruncationOperation="Conversion"
+                              errorRowDisposition="FailComponent"
+                              externalMetadataColumnId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\MOS-OTO.Outputs[OLE DB Source Output].ExternalColumns[sub_languages]"
+                              length="40"
+                              lineageId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\MOS-OTO.Outputs[OLE DB Source Output].Columns[sub_languages]"
+                              name="sub_languages"
                               truncationRowDisposition="FailComponent" />
                           </outputColumns>
                           <externalMetadataColumns
@@ -13733,6 +14483,14 @@ WHERE   EXT_SEXTC_ID = 607871753
                               dataType="str"
                               length="11"
                               name="Episode.Organization.Role" />
+                            <externalMetadataColumn
+                              refId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\MOS-OTO.Outputs[OLE DB Source Output].ExternalColumns[Episode.Title.Corrected]"
+                              dataType="nText"
+                              name="Episode.Title.Corrected" />
+                            <externalMetadataColumn
+                              refId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\MOS-OTO.Outputs[OLE DB Source Output].ExternalColumns[Episode.Title120.Corrected]"
+                              dataType="nText"
+                              name="Episode.Title120.Corrected" />
                             <externalMetadataColumn
                               refId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\MOS-OTO.Outputs[OLE DB Source Output].ExternalColumns[Episode.TitleClass]"
                               codePage="1252"
@@ -13841,14 +14599,6 @@ WHERE   EXT_SEXTC_ID = 607871753
                               length="45"
                               name="Nolacode" />
                             <externalMetadataColumn
-                              refId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\MOS-OTO.Outputs[OLE DB Source Output].ExternalColumns[Episode.Title.Corrected]"
-                              dataType="nText"
-                              name="Episode.Title.Corrected" />
-                            <externalMetadataColumn
-                              refId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\MOS-OTO.Outputs[OLE DB Source Output].ExternalColumns[Episode.Title120.Corrected]"
-                              dataType="nText"
-                              name="Episode.Title120.Corrected" />
-                            <externalMetadataColumn
                               refId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\MOS-OTO.Outputs[OLE DB Source Output].ExternalColumns[entity_status]"
                               dataType="wstr"
                               length="2000"
@@ -13907,6 +14657,11 @@ WHERE   EXT_SEXTC_ID = 607871753
                               dataType="wstr"
                               length="80"
                               name="Franchise" />
+                            <externalMetadataColumn
+                              refId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\MOS-OTO.Outputs[OLE DB Source Output].ExternalColumns[sub_languages]"
+                              dataType="wstr"
+                              length="40"
+                              name="sub_languages" />
                           </externalMetadataColumns>
                         </output>
                         <output
@@ -13914,18 +14669,6 @@ WHERE   EXT_SEXTC_ID = 607871753
                           isErrorOut="true"
                           name="OLE DB Source Error Output">
                           <outputColumns>
-                            <outputColumn
-                              refId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\MOS-OTO.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
-                              dataType="i4"
-                              lineageId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\MOS-OTO.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
-                              name="ErrorCode"
-                              specialFlags="1" />
-                            <outputColumn
-                              refId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\MOS-OTO.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
-                              dataType="i4"
-                              lineageId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\MOS-OTO.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
-                              name="ErrorColumn"
-                              specialFlags="2" />
                             <outputColumn
                               refId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\MOS-OTO.Outputs[OLE DB Source Error Output].Columns[ass_id]"
                               dataType="i4"
@@ -14020,6 +14763,16 @@ WHERE   EXT_SEXTC_ID = 607871753
                               length="11"
                               lineageId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\MOS-OTO.Outputs[OLE DB Source Error Output].Columns[Episode.Organization.Role]"
                               name="Episode.Organization.Role" />
+                            <outputColumn
+                              refId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\MOS-OTO.Outputs[OLE DB Source Error Output].Columns[Episode.Title.Corrected]"
+                              dataType="nText"
+                              lineageId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\MOS-OTO.Outputs[OLE DB Source Error Output].Columns[Episode.Title.Corrected]"
+                              name="Episode.Title.Corrected" />
+                            <outputColumn
+                              refId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\MOS-OTO.Outputs[OLE DB Source Error Output].Columns[Episode.Title120.Corrected]"
+                              dataType="nText"
+                              lineageId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\MOS-OTO.Outputs[OLE DB Source Error Output].Columns[Episode.Title120.Corrected]"
+                              name="Episode.Title120.Corrected" />
                             <outputColumn
                               refId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\MOS-OTO.Outputs[OLE DB Source Error Output].Columns[Episode.TitleClass]"
                               codePage="1252"
@@ -14149,16 +14902,6 @@ WHERE   EXT_SEXTC_ID = 607871753
                               lineageId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\MOS-OTO.Outputs[OLE DB Source Error Output].Columns[Nolacode]"
                               name="Nolacode" />
                             <outputColumn
-                              refId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\MOS-OTO.Outputs[OLE DB Source Error Output].Columns[Episode.Title.Corrected]"
-                              dataType="nText"
-                              lineageId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\MOS-OTO.Outputs[OLE DB Source Error Output].Columns[Episode.Title.Corrected]"
-                              name="Episode.Title.Corrected" />
-                            <outputColumn
-                              refId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\MOS-OTO.Outputs[OLE DB Source Error Output].Columns[Episode.Title120.Corrected]"
-                              dataType="nText"
-                              lineageId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\MOS-OTO.Outputs[OLE DB Source Error Output].Columns[Episode.Title120.Corrected]"
-                              name="Episode.Title120.Corrected" />
-                            <outputColumn
                               refId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\MOS-OTO.Outputs[OLE DB Source Error Output].Columns[entity_status]"
                               dataType="wstr"
                               length="2000"
@@ -14200,6 +14943,18 @@ WHERE   EXT_SEXTC_ID = 607871753
                               lineageId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\MOS-OTO.Outputs[OLE DB Source Error Output].Columns[resolution]"
                               name="resolution" />
                             <outputColumn
+                              refId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\MOS-OTO.Outputs[OLE DB Source Error Output].Columns[minority_production]"
+                              dataType="wstr"
+                              length="2000"
+                              lineageId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\MOS-OTO.Outputs[OLE DB Source Error Output].Columns[minority_production]"
+                              name="minority_production" />
+                            <outputColumn
+                              refId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\MOS-OTO.Outputs[OLE DB Source Error Output].Columns[edit_class]"
+                              dataType="wstr"
+                              length="2000"
+                              lineageId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\MOS-OTO.Outputs[OLE DB Source Error Output].Columns[edit_class]"
+                              name="edit_class" />
+                            <outputColumn
                               refId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\MOS-OTO.Outputs[OLE DB Source Error Output].Columns[EditName]"
                               dataType="wstr"
                               length="2000"
@@ -14218,17 +14973,23 @@ WHERE   EXT_SEXTC_ID = 607871753
                               lineageId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\MOS-OTO.Outputs[OLE DB Source Error Output].Columns[Franchise]"
                               name="Franchise" />
                             <outputColumn
-                              refId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\MOS-OTO.Outputs[OLE DB Source Error Output].Columns[minority_production]"
+                              refId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\MOS-OTO.Outputs[OLE DB Source Error Output].Columns[sub_languages]"
                               dataType="wstr"
-                              length="2000"
-                              lineageId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\MOS-OTO.Outputs[OLE DB Source Error Output].Columns[minority_production]"
-                              name="minority_production" />
+                              length="40"
+                              lineageId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\MOS-OTO.Outputs[OLE DB Source Error Output].Columns[sub_languages]"
+                              name="sub_languages" />
                             <outputColumn
-                              refId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\MOS-OTO.Outputs[OLE DB Source Error Output].Columns[edit_class]"
-                              dataType="wstr"
-                              length="2000"
-                              lineageId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\MOS-OTO.Outputs[OLE DB Source Error Output].Columns[edit_class]"
-                              name="edit_class" />
+                              refId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\MOS-OTO.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                              dataType="i4"
+                              lineageId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\MOS-OTO.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                              name="ErrorCode"
+                              specialFlags="1" />
+                            <outputColumn
+                              refId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\MOS-OTO.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                              dataType="i4"
+                              lineageId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\MOS-OTO.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                              name="ErrorColumn"
+                              specialFlags="2" />
                           </outputColumns>
                           <externalMetadataColumns />
                         </output>
@@ -14371,13 +15132,14 @@ WHERE   EXT_SEXTC_ID = 607871753
                             <inputColumn
                               refId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\RL-OTO.Inputs[OLE DB Destination Input].Columns[entity_status]"
                               cachedDataType="wstr"
-                              cachedLength="30"
+                              cachedLength="2000"
                               cachedName="entity_status"
                               externalMetadataColumnId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\RL-OTO.Inputs[OLE DB Destination Input].ExternalColumns[entity_status]"
                               lineageId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\Sort.Outputs[Sort Output].Columns[entity_status]" />
                             <inputColumn
                               refId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\RL-OTO.Inputs[OLE DB Destination Input].Columns[WorkflowStatus]"
-                              cachedDataType="i4"
+                              cachedDataType="wstr"
+                              cachedLength="2000"
                               cachedName="WorkflowStatus"
                               externalMetadataColumnId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\RL-OTO.Inputs[OLE DB Destination Input].ExternalColumns[WorkFlowStatus]"
                               lineageId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\Sort.Outputs[Sort Output].Columns[WorkflowStatus]" />
@@ -14404,14 +15166,16 @@ WHERE   EXT_SEXTC_ID = 607871753
                               lineageId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\Sort.Outputs[Sort Output].Columns[Episode.SecondaryGenre]" />
                             <inputColumn
                               refId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\RL-OTO.Inputs[OLE DB Destination Input].Columns[Episode.ApproximateLength]"
-                              cachedDataType="i4"
+                              cachedCodepage="1252"
+                              cachedDataType="str"
+                              cachedLength="3"
                               cachedName="Episode.ApproximateLength"
                               externalMetadataColumnId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\RL-OTO.Inputs[OLE DB Destination Input].ExternalColumns[duration]"
                               lineageId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\Sort.Outputs[Sort Output].Columns[Episode.ApproximateLength]" />
                             <inputColumn
                               refId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\RL-OTO.Inputs[OLE DB Destination Input].Columns[us_tvpg]"
                               cachedDataType="wstr"
-                              cachedLength="40"
+                              cachedLength="10"
                               cachedName="us_tvpg"
                               externalMetadataColumnId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\RL-OTO.Inputs[OLE DB Destination Input].ExternalColumns[us_tvpg]"
                               lineageId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\Sort.Outputs[Sort Output].Columns[us_tvpg]" />
@@ -14424,7 +15188,7 @@ WHERE   EXT_SEXTC_ID = 607871753
                             <inputColumn
                               refId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\RL-OTO.Inputs[OLE DB Destination Input].Columns[aspect_ratio]"
                               cachedDataType="wstr"
-                              cachedLength="80"
+                              cachedLength="2000"
                               cachedName="aspect_ratio"
                               externalMetadataColumnId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\RL-OTO.Inputs[OLE DB Destination Input].ExternalColumns[aspect_ratio]"
                               lineageId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\Sort.Outputs[Sort Output].Columns[aspect_ratio]" />
@@ -14438,14 +15202,14 @@ WHERE   EXT_SEXTC_ID = 607871753
                             <inputColumn
                               refId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\RL-OTO.Inputs[OLE DB Destination Input].Columns[minority_production]"
                               cachedDataType="wstr"
-                              cachedLength="5"
+                              cachedLength="2000"
                               cachedName="minority_production"
                               externalMetadataColumnId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\RL-OTO.Inputs[OLE DB Destination Input].ExternalColumns[minority_production]"
                               lineageId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\Sort.Outputs[Sort Output].Columns[minority_production]" />
                             <inputColumn
                               refId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\RL-OTO.Inputs[OLE DB Destination Input].Columns[edit_class]"
                               cachedDataType="wstr"
-                              cachedLength="50"
+                              cachedLength="2000"
                               cachedName="edit_class"
                               externalMetadataColumnId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\RL-OTO.Inputs[OLE DB Destination Input].ExternalColumns[edit_class]"
                               lineageId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\Sort.Outputs[Sort Output].Columns[edit_class]" />
@@ -14477,6 +15241,20 @@ WHERE   EXT_SEXTC_ID = 607871753
                               cachedName="dr_Episode_Synp_long"
                               externalMetadataColumnId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\RL-OTO.Inputs[OLE DB Destination Input].ExternalColumns[synopsis_long]"
                               lineageId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\Derived Column.Outputs[Derived Column Output].Columns[dr_Episode_Synp_long]" />
+                            <inputColumn
+                              refId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\RL-OTO.Inputs[OLE DB Destination Input].Columns[Franchise]"
+                              cachedDataType="wstr"
+                              cachedLength="80"
+                              cachedName="Franchise"
+                              externalMetadataColumnId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\RL-OTO.Inputs[OLE DB Destination Input].ExternalColumns[Franchise]"
+                              lineageId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\Sort.Outputs[Sort Output].Columns[Franchise]" />
+                            <inputColumn
+                              refId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\RL-OTO.Inputs[OLE DB Destination Input].Columns[sub_languages]"
+                              cachedDataType="wstr"
+                              cachedLength="40"
+                              cachedName="sub_languages"
+                              externalMetadataColumnId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\RL-OTO.Inputs[OLE DB Destination Input].ExternalColumns[sub_languages]"
+                              lineageId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\Sort.Outputs[Sort Output].Columns[sub_languages]" />
                           </inputColumns>
                           <externalMetadataColumns
                             isUsed="True">
@@ -14622,6 +15400,16 @@ WHERE   EXT_SEXTC_ID = 607871753
                               dataType="wstr"
                               length="50"
                               name="edit_class" />
+                            <externalMetadataColumn
+                              refId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\RL-OTO.Inputs[OLE DB Destination Input].ExternalColumns[Franchise]"
+                              dataType="wstr"
+                              length="500"
+                              name="Franchise" />
+                            <externalMetadataColumn
+                              refId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\RL-OTO.Inputs[OLE DB Destination Input].ExternalColumns[sub_languages]"
+                              dataType="wstr"
+                              length="500"
+                              name="sub_languages" />
                           </externalMetadataColumns>
                         </input>
                       </inputs>
@@ -15104,7 +15892,9 @@ WHERE   EXT_SEXTC_ID = 607871753
                             </inputColumn>
                             <inputColumn
                               refId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\Sort.Inputs[Sort Input].Columns[Episode.ApproximateLength]"
-                              cachedDataType="i4"
+                              cachedCodepage="1252"
+                              cachedDataType="str"
+                              cachedLength="3"
                               cachedName="Episode.ApproximateLength"
                               lineageId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\MOS-OTO.Outputs[OLE DB Source Output].Columns[Episode.ApproximateLength]">
                               <properties>
@@ -15324,7 +16114,7 @@ WHERE   EXT_SEXTC_ID = 607871753
                             <inputColumn
                               refId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\Sort.Inputs[Sort Input].Columns[entity_status]"
                               cachedDataType="wstr"
-                              cachedLength="30"
+                              cachedLength="2000"
                               cachedName="entity_status"
                               lineageId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\MOS-OTO.Outputs[OLE DB Source Output].Columns[entity_status]">
                               <properties>
@@ -15340,7 +16130,8 @@ WHERE   EXT_SEXTC_ID = 607871753
                             </inputColumn>
                             <inputColumn
                               refId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\Sort.Inputs[Sort Input].Columns[WorkflowStatus]"
-                              cachedDataType="i4"
+                              cachedDataType="wstr"
+                              cachedLength="2000"
                               cachedName="WorkflowStatus"
                               lineageId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\MOS-OTO.Outputs[OLE DB Source Output].Columns[WorkflowStatus]">
                               <properties>
@@ -15374,7 +16165,7 @@ WHERE   EXT_SEXTC_ID = 607871753
                             <inputColumn
                               refId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\Sort.Inputs[Sort Input].Columns[us_tvpg]"
                               cachedDataType="wstr"
-                              cachedLength="40"
+                              cachedLength="10"
                               cachedName="us_tvpg"
                               lineageId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\MOS-OTO.Outputs[OLE DB Source Output].Columns[us_tvpg]">
                               <properties>
@@ -15407,7 +16198,7 @@ WHERE   EXT_SEXTC_ID = 607871753
                             <inputColumn
                               refId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\Sort.Inputs[Sort Input].Columns[aspect_ratio]"
                               cachedDataType="wstr"
-                              cachedLength="80"
+                              cachedLength="2000"
                               cachedName="aspect_ratio"
                               lineageId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\MOS-OTO.Outputs[OLE DB Source Output].Columns[aspect_ratio]">
                               <properties>
@@ -15441,7 +16232,7 @@ WHERE   EXT_SEXTC_ID = 607871753
                             <inputColumn
                               refId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\Sort.Inputs[Sort Input].Columns[minority_production]"
                               cachedDataType="wstr"
-                              cachedLength="5"
+                              cachedLength="2000"
                               cachedName="minority_production"
                               lineageId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\MOS-OTO.Outputs[OLE DB Source Output].Columns[minority_production]">
                               <properties>
@@ -15458,7 +16249,7 @@ WHERE   EXT_SEXTC_ID = 607871753
                             <inputColumn
                               refId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\Sort.Inputs[Sort Input].Columns[edit_class]"
                               cachedDataType="wstr"
-                              cachedLength="50"
+                              cachedLength="2000"
                               cachedName="edit_class"
                               lineageId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\MOS-OTO.Outputs[OLE DB Source Output].Columns[edit_class]">
                               <properties>
@@ -15495,6 +16286,40 @@ WHERE   EXT_SEXTC_ID = 607871753
                               cachedLength="2000"
                               cachedName="EpisodeEntityTemplate"
                               lineageId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\MOS-OTO.Outputs[OLE DB Source Output].Columns[EpisodeEntityTemplate]">
+                              <properties>
+                                <property
+                                  dataType="System.Int32"
+                                  description="Specifies the comparison options for character data."
+                                  name="NewComparisonFlags">0</property>
+                                <property
+                                  dataType="System.Int32"
+                                  description="Specifies the sort order of the column."
+                                  name="NewSortKeyPosition">0</property>
+                              </properties>
+                            </inputColumn>
+                            <inputColumn
+                              refId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\Sort.Inputs[Sort Input].Columns[Franchise]"
+                              cachedDataType="wstr"
+                              cachedLength="80"
+                              cachedName="Franchise"
+                              lineageId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\MOS-OTO.Outputs[OLE DB Source Output].Columns[Franchise]">
+                              <properties>
+                                <property
+                                  dataType="System.Int32"
+                                  description="Specifies the comparison options for character data."
+                                  name="NewComparisonFlags">0</property>
+                                <property
+                                  dataType="System.Int32"
+                                  description="Specifies the sort order of the column."
+                                  name="NewSortKeyPosition">0</property>
+                              </properties>
+                            </inputColumn>
+                            <inputColumn
+                              refId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\Sort.Inputs[Sort Input].Columns[sub_languages]"
+                              cachedDataType="wstr"
+                              cachedLength="40"
+                              cachedName="sub_languages"
+                              lineageId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\MOS-OTO.Outputs[OLE DB Source Output].Columns[sub_languages]">
                               <properties>
                                 <property
                                   dataType="System.Int32"
@@ -15876,7 +16701,9 @@ WHERE   EXT_SEXTC_ID = 607871753
                             </outputColumn>
                             <outputColumn
                               refId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\Sort.Outputs[Sort Output].Columns[Episode.ApproximateLength]"
-                              dataType="i4"
+                              codePage="1252"
+                              dataType="str"
+                              length="3"
                               lineageId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\Sort.Outputs[Sort Output].Columns[Episode.ApproximateLength]"
                               name="Episode.ApproximateLength">
                               <properties>
@@ -16057,7 +16884,7 @@ WHERE   EXT_SEXTC_ID = 607871753
                             <outputColumn
                               refId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\Sort.Outputs[Sort Output].Columns[entity_status]"
                               dataType="wstr"
-                              length="30"
+                              length="2000"
                               lineageId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\Sort.Outputs[Sort Output].Columns[entity_status]"
                               name="entity_status">
                               <properties>
@@ -16070,7 +16897,8 @@ WHERE   EXT_SEXTC_ID = 607871753
                             </outputColumn>
                             <outputColumn
                               refId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\Sort.Outputs[Sort Output].Columns[WorkflowStatus]"
-                              dataType="i4"
+                              dataType="wstr"
+                              length="2000"
                               lineageId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\Sort.Outputs[Sort Output].Columns[WorkflowStatus]"
                               name="WorkflowStatus">
                               <properties>
@@ -16098,7 +16926,7 @@ WHERE   EXT_SEXTC_ID = 607871753
                             <outputColumn
                               refId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\Sort.Outputs[Sort Output].Columns[us_tvpg]"
                               dataType="wstr"
-                              length="40"
+                              length="10"
                               lineageId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\Sort.Outputs[Sort Output].Columns[us_tvpg]"
                               name="us_tvpg">
                               <properties>
@@ -16125,7 +16953,7 @@ WHERE   EXT_SEXTC_ID = 607871753
                             <outputColumn
                               refId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\Sort.Outputs[Sort Output].Columns[aspect_ratio]"
                               dataType="wstr"
-                              length="80"
+                              length="2000"
                               lineageId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\Sort.Outputs[Sort Output].Columns[aspect_ratio]"
                               name="aspect_ratio">
                               <properties>
@@ -16153,7 +16981,7 @@ WHERE   EXT_SEXTC_ID = 607871753
                             <outputColumn
                               refId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\Sort.Outputs[Sort Output].Columns[minority_production]"
                               dataType="wstr"
-                              length="5"
+                              length="2000"
                               lineageId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\Sort.Outputs[Sort Output].Columns[minority_production]"
                               name="minority_production">
                               <properties>
@@ -16167,7 +16995,7 @@ WHERE   EXT_SEXTC_ID = 607871753
                             <outputColumn
                               refId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\Sort.Outputs[Sort Output].Columns[edit_class]"
                               dataType="wstr"
-                              length="50"
+                              length="2000"
                               lineageId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\Sort.Outputs[Sort Output].Columns[edit_class]"
                               name="edit_class">
                               <properties>
@@ -16204,6 +17032,34 @@ WHERE   EXT_SEXTC_ID = 607871753
                                   dataType="System.Int32"
                                   description="Specifies the lineage identifier of the input column that is associated with this output column."
                                   name="SortColumnId">#{Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\MOS-OTO.Outputs[OLE DB Source Output].Columns[EpisodeEntityTemplate]}</property>
+                              </properties>
+                            </outputColumn>
+                            <outputColumn
+                              refId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\Sort.Outputs[Sort Output].Columns[Franchise]"
+                              dataType="wstr"
+                              length="80"
+                              lineageId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\Sort.Outputs[Sort Output].Columns[Franchise]"
+                              name="Franchise">
+                              <properties>
+                                <property
+                                  containsID="true"
+                                  dataType="System.Int32"
+                                  description="Specifies the lineage identifier of the input column that is associated with this output column."
+                                  name="SortColumnId">#{Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\MOS-OTO.Outputs[OLE DB Source Output].Columns[Franchise]}</property>
+                              </properties>
+                            </outputColumn>
+                            <outputColumn
+                              refId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\Sort.Outputs[Sort Output].Columns[sub_languages]"
+                              dataType="wstr"
+                              length="40"
+                              lineageId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\Sort.Outputs[Sort Output].Columns[sub_languages]"
+                              name="sub_languages">
+                              <properties>
+                                <property
+                                  containsID="true"
+                                  dataType="System.Int32"
+                                  description="Specifies the lineage identifier of the input column that is associated with this output column."
+                                  name="SortColumnId">#{Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\MOS-OTO.Outputs[OLE DB Source Output].Columns[sub_languages]}</property>
                               </properties>
                             </outputColumn>
                           </outputColumns>
@@ -16452,7 +17308,22 @@ SELECT [InternalPBSID]
 							and mlvTerritory.ML_ID = 10
 		left join [PBS].[MasterLookupValues] mlvTemplate on mlvTemplate.field = 'static.Template.value'
 							and mlvTemplate.ML_ID = 10
-  where [season.UID] in ('cid:org:pbs.org:Season2Series600817646','cid:org:pbs.org:Season1Series614345618','cid:org:pbs.org:Season1Series617324631')
+  where [season.UID] in
+
+(
+'cid:org:pbs.org:Season2Series600817646','cid:org:pbs.org:Season1Series614345618','cid:org:pbs.org:Season1Series617324631',
+'cid:org:pbs.org:Season1Series600817646', --MAST Dist Season Series
+'cid:org:pbs.org:Season1Series618563499',
+'cid:org:pbs.org:Season1Series618586683',
+'cid:org:pbs.org:Season1Series618587481',
+'cid:org:pbs.org:Season2Series618562042',
+'cid:org:pbs.org:Season2Series618587505',
+'cid:org:pbs.org:Season3Series609718540',
+'cid:org:pbs.org:Season3Series618586648',
+'cid:org:pbs.org:Season4Series618586647',
+'cid:org:pbs.org:Season4Series618587765',
+'cid:org:pbs.org:Season1Series615807153')
+
 
   Order by vwMOSSeason.InternalPBSID
 
@@ -18105,8 +18976,25 @@ left join [PBS].[MasterLookupValues] mlvTerritory on mlvTerritory.field = 'stati
 					and mlvTerritory.ML_ID = 9
 left join [PBS].[MasterLookupValues] mlvTemplate on mlvTemplate.field = 'static.Template.value'
 					and mlvTemplate.ML_ID = 9
-  where [season.UID] in ('cid:org:pbs.org:Season2Series600817646','cid:org:pbs.org:Season1Series614345618','cid:org:pbs.org:Season1Series617324631')
-  ORDER by InternalPBSID
+  where [season.UID] in 
+
+(
+'cid:org:pbs.org:Season2Series600817646','cid:org:pbs.org:Season1Series614345618','cid:org:pbs.org:Season1Series617324631',
+'cid:org:pbs.org:Season1Series600817646', --MAST Dist Season Series
+'cid:org:pbs.org:Season1Series618563499',
+'cid:org:pbs.org:Season1Series618586683',
+'cid:org:pbs.org:Season1Series618587481',
+'cid:org:pbs.org:Season2Series618562042',
+'cid:org:pbs.org:Season2Series618587505',
+'cid:org:pbs.org:Season3Series609718540',
+'cid:org:pbs.org:Season3Series618586648',
+'cid:org:pbs.org:Season4Series618586647',
+'cid:org:pbs.org:Season4Series618587765',
+'cid:org:pbs.org:Season1Series615807153')
+
+
+
+ORDER by InternalPBSID
 
 
 
@@ -19805,7 +20693,24 @@ SELECT  [InternalPBSID]
 							and mlvTerritory.ML_ID = 11
 		left join [PBS].[MasterLookupValues] mlvTemplate on mlvTemplate.field = 'static.Template.value'
 							and mlvTemplate.ML_ID = 11
-where [Series.UID] in('cid:org:pbs.org:Series600817646','cid:org:pbs.org:Series614345618','cid:org:pbs.org:Series617324631')
+where [Series.UID] in
+
+(
+'cid:org:pbs.org:Series600817646',--MAST
+'cid:org:pbs.org:Series614345618', --PCAT
+'cid:org:pbs.org:Series617324631', --WEMA
+'cid:org:pbs.org:Series615807153', --GBBA
+'cid:org:pbs.org:Series600817646', --MAST Dist Season Series
+'cid:org:pbs.org:Series618563499',
+'cid:org:pbs.org:Series618586683',
+'cid:org:pbs.org:Series618587481',
+'cid:org:pbs.org:Series618562042',
+'cid:org:pbs.org:Series618587505',
+'cid:org:pbs.org:Series609718540',
+'cid:org:pbs.org:Series618586648',
+'cid:org:pbs.org:Series618586647',
+'cid:org:pbs.org:Series618587765')
+
 
 
 
@@ -26696,7 +27601,69 @@ where 'Offer'+xref.ParentID in ('Offer592707727','Offer236035779','Offer58976336
                           dataType="System.String"
                           description="The SQL command to be executed."
                           name="SqlCommand"
-                          UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">SELECT distinct
+                          UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">With cteDealQuery (dea_id) 
+	as
+	(SELECT DISTINCT
+        dea_id
+FROM    bv.DEAL dea
+        JOIN bv.dealcontent dco ON dea.DEA_ID = dco.DCO_DEA_ID
+WHERE   dco.DCO_ASS_ID IN (
+        SELECT  [ass_id]
+        FROM    pbs.vwMOSEpisode
+        WHERE   [Episode.ParentID] IN (
+                'cid:org:pbs.org:Season2Series600817646',--Victoria on Masterpiece
+                'cid:org:pbs.org:Season1Series614345618',--PCAT
+                'cid:org:pbs.org:Season1Series617324631',--We''Meet Again
+                'cid:org:pbs.org:Season1Series617324631',
+                'cid:org:pbs.org:Season1Series600817646', --MAST Dist Season Series
+                'cid:org:pbs.org:Season1Series618563499',
+                'cid:org:pbs.org:Season1Series618586683',
+                'cid:org:pbs.org:Season1Series618587481',
+                'cid:org:pbs.org:Season2Series618562042',
+                'cid:org:pbs.org:Season2Series618587505',
+                'cid:org:pbs.org:Season3Series609718540',
+                'cid:org:pbs.org:Season3Series618586648',
+                'cid:org:pbs.org:Season4Series618586647',
+                'cid:org:pbs.org:Season4Series618587765',
+                'cid:org:pbs.org:Season1Series615807153' )
+        UNION
+        SELECT  ass_id
+        FROM    bv.asset
+        WHERE   ass_id IN ( 236035781, 595764080, 589763373, 632259177 )
+                OR ASS_EPISODESLATE LIKE 'NAAT  0035%' ) 
+)
+SELECT distinct
+      paa.dea_id
+     ,[Title]
+      ,[AlliantID]
+      ,[Contract_Effective_Date]
+      ,[Contract_Execution_Date]
+      ,[Programming_service]
+      ,[RightsAndRestrictionsNotes]
+      ,[Executed_Status]
+      ,[financial_notes]
+      ,[PBSCanSecureUnderWriting]as [PBSCanSecureUnderWriting]
+      ,[underwriting_notes]
+     ,[dealid]
+	 ,mlvPBSD_Label.derivedvalue as entity_status
+	 ,mlvStaticSTCon.DerivedValue as   standard_terms__conditions
+	 ,cast(mlvWorkflowStatus.DerivedValue as int) as WorkflowStatus
+  FROM [TrafficData].[PBS].[DealPBSPAA1] paa
+  --join [RightslineETL].[dbo].Apr23_deals Apr23 on Apr23.dea_id = paa.dea_id
+  left join [TrafficData].[BV].[DEAL] ds on ds.DEA_ID = paa.dea_id
+  left JOIN trafficdata.BV.PBSDEALSTATUS pbsds ON pbsds.PBSDS_ID = ds.DEA_PBSDS_ID
+  left join [PBS].[MasterLookupValues] mlvPBSD_Label on mlvPBSD_Label.dbvalue = pbsds.PBSDS_LABEL
+				and mlvPBSD_Label.ml_id = 1
+				and field = 'trafficdata.BV.PBSDEALSTATUS.PBSDS_LABEL'
+  left join [PBS].[MasterLookupValues] mlvStaticSTCon on mlvStaticSTCon.ml_id = 1
+				and mlvStaticSTCon.field = 'static.standard_terms__conditions.value'
+  left join [PBS].[MasterLookupValues] mlvWorkflowStatus on mlvWorkflowStatus.ml_id = 1
+				and mlvWorkflowStatus.field = 'static.WorkflowStatus.value'
+join cteDealQuery q on q.dea_id = paa.dea_id
+
+
+/*
+SELECT distinct
       paa.dea_id
      ,[Title]
       ,[AlliantID]
@@ -26724,7 +27691,7 @@ where 'Offer'+xref.ParentID in ('Offer592707727','Offer236035779','Offer58976336
   left join [PBS].[MasterLookupValues] mlvWorkflowStatus on mlvWorkflowStatus.ml_id = 1
 				and mlvWorkflowStatus.field = 'static.WorkflowStatus.value'
  
-
+*/
 /* Original SQL
 SELECT  paa.dea_id ,
         [Title] ,
@@ -28098,7 +29065,70 @@ FROM    [TrafficData].[PBS].[DealPBSPAA1] paa
                           dataType="System.String"
                           description="The SQL command to be executed."
                           name="SqlCommand"
-                          UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">SELECT 
+                          UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">With cteDealQuery (dea_id) 
+	as
+	(SELECT DISTINCT
+        dea_id
+FROM    bv.DEAL dea
+        JOIN bv.dealcontent dco ON dea.DEA_ID = dco.DCO_DEA_ID
+WHERE   dco.DCO_ASS_ID IN (
+        SELECT  [ass_id]
+        FROM    pbs.vwMOSEpisode
+        WHERE   [Episode.ParentID] IN (
+                'cid:org:pbs.org:Season2Series600817646',--Victoria on Masterpiece
+                'cid:org:pbs.org:Season1Series614345618',--PCAT
+                'cid:org:pbs.org:Season1Series617324631',--We''Meet Again
+                'cid:org:pbs.org:Season1Series617324631',
+                'cid:org:pbs.org:Season1Series600817646', --MAST Dist Season Series
+                'cid:org:pbs.org:Season1Series618563499',
+                'cid:org:pbs.org:Season1Series618586683',
+                'cid:org:pbs.org:Season1Series618587481',
+                'cid:org:pbs.org:Season2Series618562042',
+                'cid:org:pbs.org:Season2Series618587505',
+                'cid:org:pbs.org:Season3Series609718540',
+                'cid:org:pbs.org:Season3Series618586648',
+                'cid:org:pbs.org:Season4Series618586647',
+                'cid:org:pbs.org:Season4Series618587765',
+                'cid:org:pbs.org:Season1Series615807153' )
+        UNION
+        SELECT  ass_id
+        FROM    bv.asset
+        WHERE   ass_id IN ( 236035781, 595764080, 589763373, 632259177 )
+                OR ASS_EPISODESLATE LIKE 'NAAT  0035%' ) 
+)
+SELECT 
+       [Title]
+      ,[AlliantID]
+      ,[Contract_Effective_Date]
+      ,[Contract_Execution_date]
+      ,[License_Term_end]
+      ,[Programming_service]
+      ,[total_pbs_fees]
+      ,[financial_notes]
+      ,[total_budget]
+      ,[cpb_funding]
+      ,cast([RevBacktoCPB] as nvarchar) as  [RevBackToCPB]
+      ,[RightsAndRestrictionsNotes]
+      ,cast([PBSCanSecureUnderWriting] as nvarchar) as [PBSCanSecureUnderWriting]
+      ,[underwriting_notes]
+     ,[DealProdAcQ].[dea_id]
+     ,[dealid]
+	 ,mlvPBSD_Label.derivedvalue as entity_status
+	 ,cast(mlvWorkflowStatus.DerivedValue as int) as WorkflowStatus
+  FROM [TrafficData].[PBS].[DealProdAcQ]
+  --join [RightsLineETL].[dbo].[Apr23_Deals] Apr23 on Apr23.dea_id = [DealProdAcQ].dea_id
+  left join [TrafficData].[BV].[DEAL] ds on ds.DEA_ID = [DealProdAcQ].dea_id
+  left JOIN trafficdata.BV.PBSDEALSTATUS pbsds ON pbsds.PBSDS_ID = ds.DEA_PBSDS_ID
+  left join [PBS].[MasterLookupValues] mlvPBSD_Label on mlvPBSD_Label.dbvalue = pbsds.PBSDS_LABEL
+				and mlvPBSD_Label.ml_id = 2
+				and field = 'trafficdata.BV.PBSDEALSTATUS.PBSDS_LABEL'
+  left join [PBS].[MasterLookupValues] mlvWorkflowStatus on mlvWorkflowStatus.ml_id = 2
+				and mlvWorkflowStatus.field = 'static.WorkflowStatus.value'
+join cteDealQuery q on q.dea_id = [DealProdAcQ].dea_id
+
+
+/*
+SELECT 
        [Title]
       ,[AlliantID]
       ,[Contract_Effective_Date]
@@ -28130,7 +29160,7 @@ FROM    [TrafficData].[PBS].[DealPBSPAA1] paa
 WHERE   dealid IN ( 'Offer592707727', 'Offer236035779', 'Offer589763368',
                     'Offer595764078', 'Offer589355320', 'Offer364979186',
                     'Offer248568171' )
-
+*/
 
 /* Original SQL
 SELECT  [Title] ,
@@ -29657,7 +30687,8 @@ WHERE   dealid IN ( 'Offer592707727', 'Offer236035779', 'Offer589763368',
                               lineageId="Package\Sequence Container 1\Deal Imports\Import Funders\ADO NET Source.Outputs[ADO NET Source Output].Columns[end]" />
                             <inputColumn
                               refId="Package\Sequence Container 1\Deal Imports\Import Funders\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[fiscal_year]"
-                              cachedDataType="i2"
+                              cachedDataType="wstr"
+                              cachedLength="10"
                               cachedName="fiscal_year"
                               externalMetadataColumnId="Package\Sequence Container 1\Deal Imports\Import Funders\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[fiscal_year]"
                               lineageId="Package\Sequence Container 1\Deal Imports\Import Funders\ADO NET Source.Outputs[ADO NET Source Output].Columns[fiscal_year]" />
@@ -29675,19 +30706,17 @@ WHERE   dealid IN ( 'Offer592707727', 'Offer236035779', 'Offer589763368',
                               externalMetadataColumnId="Package\Sequence Container 1\Deal Imports\Import Funders\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[pbs_traffic_id]"
                               lineageId="Package\Sequence Container 1\Deal Imports\Import Funders\ADO NET Source.Outputs[ADO NET Source Output].Columns[pbs_traffic_id]" />
                             <inputColumn
-                              refId="Package\Sequence Container 1\Deal Imports\Import Funders\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Offer_DEA_ID]"
-                              cachedDataType="wstr"
-                              cachedLength="105"
-                              cachedName="Offer_DEA_ID"
+                              refId="Package\Sequence Container 1\Deal Imports\Import Funders\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Dea_ID]"
+                              cachedDataType="i4"
+                              cachedName="Dea_ID"
                               externalMetadataColumnId="Package\Sequence Container 1\Deal Imports\Import Funders\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Dea_ID]"
-                              lineageId="Package\Sequence Container 1\Deal Imports\Import Funders\ADO NET Source.Outputs[ADO NET Source Output].Columns[Offer_DEA_ID]" />
+                              lineageId="Package\Sequence Container 1\Deal Imports\Import Funders\ADO NET Source.Outputs[ADO NET Source Output].Columns[Dea_ID]" />
                             <inputColumn
-                              refId="Package\Sequence Container 1\Deal Imports\Import Funders\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Org_Item_BV_ID]"
-                              cachedDataType="wstr"
-                              cachedLength="103"
-                              cachedName="Org_Item_BV_ID"
+                              refId="Package\Sequence Container 1\Deal Imports\Import Funders\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Item_BV_ID]"
+                              cachedDataType="i4"
+                              cachedName="Item_BV_ID"
                               externalMetadataColumnId="Package\Sequence Container 1\Deal Imports\Import Funders\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Item_BV_ID]"
-                              lineageId="Package\Sequence Container 1\Deal Imports\Import Funders\ADO NET Source.Outputs[ADO NET Source Output].Columns[Org_Item_BV_ID]" />
+                              lineageId="Package\Sequence Container 1\Deal Imports\Import Funders\ADO NET Source.Outputs[ADO NET Source Output].Columns[Item_BV_ID]" />
                           </inputColumns>
                           <externalMetadataColumns
                             isUsed="True">
@@ -29751,7 +30780,8 @@ WHERE   dealid IN ( 'Offer592707727', 'Offer236035779', 'Offer589763368',
                               name="end" />
                             <externalMetadataColumn
                               refId="Package\Sequence Container 1\Deal Imports\Import Funders\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[fiscal_year]"
-                              dataType="i2"
+                              dataType="wstr"
+                              length="4"
                               name="fiscal_year" />
                             <externalMetadataColumn
                               refId="Package\Sequence Container 1\Deal Imports\Import Funders\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[notes]"
@@ -30137,10 +31167,11 @@ WHERE   ( BV.DEALFUNDING.DEF_ISPRODUCERFUNDING = 0 )
                               truncationRowDisposition="FailComponent" />
                             <outputColumn
                               refId="Package\Sequence Container 1\Deal Imports\Import Funders\ADO NET Source.Outputs[ADO NET Source Output].Columns[fiscal_year]"
-                              dataType="i2"
+                              dataType="wstr"
                               errorOrTruncationOperation="Conversion"
                               errorRowDisposition="FailComponent"
                               externalMetadataColumnId="Package\Sequence Container 1\Deal Imports\Import Funders\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[fiscal_year]"
+                              length="10"
                               lineageId="Package\Sequence Container 1\Deal Imports\Import Funders\ADO NET Source.Outputs[ADO NET Source Output].Columns[fiscal_year]"
                               name="fiscal_year"
                               truncationRowDisposition="FailComponent" />
@@ -30255,7 +31286,8 @@ WHERE   ( BV.DEALFUNDING.DEF_ISPRODUCERFUNDING = 0 )
                               name="end" />
                             <externalMetadataColumn
                               refId="Package\Sequence Container 1\Deal Imports\Import Funders\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[fiscal_year]"
-                              dataType="i2"
+                              dataType="wstr"
+                              length="10"
                               name="fiscal_year" />
                             <externalMetadataColumn
                               refId="Package\Sequence Container 1\Deal Imports\Import Funders\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[notes]"
@@ -30366,7 +31398,8 @@ WHERE   ( BV.DEALFUNDING.DEF_ISPRODUCERFUNDING = 0 )
                               name="end" />
                             <outputColumn
                               refId="Package\Sequence Container 1\Deal Imports\Import Funders\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[fiscal_year]"
-                              dataType="i2"
+                              dataType="wstr"
+                              length="10"
                               lineageId="Package\Sequence Container 1\Deal Imports\Import Funders\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[fiscal_year]"
                               name="fiscal_year" />
                             <outputColumn
@@ -34804,6 +35837,44 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <NodeLayout
+          Size="252,42"
+          Id="Package\Sequence Container\Load XREF Deal To External Contact"
+          TopLeft="757,526" />
+        <EdgeLayout
+          Id="Package\Sequence Container.PrecedenceConstraints[Constraint 12]"
+          TopLeft="891.666666666667,479.333333333333">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-8.66666666666697,46.666666666667"
+              Start="0,0"
+              End="-8.66666666666697,39.166666666667">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,19.3333333333335" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,19.3333333333335"
+                    Point2="0,23.3333333333335"
+                    Point3="-4,23.3333333333335" />
+                  <mssgle:LineSegment
+                    End="-4.66666666666697,23.3333333333335" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-4.66666666666697,23.3333333333335"
+                    Point2="-8.66666666666697,23.3333333333335"
+                    Point3="-8.66666666666697,27.3333333333335" />
+                  <mssgle:LineSegment
+                    End="-8.66666666666697,39.166666666667" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
@@ -36577,6 +37648,28 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
           Id="Package\Sequence Container 1\Catalog Import Container\Import EpisodeParentSeason\MOS-EpisodeWithSeasonParent"
           TopLeft="272.5,81.5" />
         <EdgeLayout
+          Id="Package\Sequence Container 1\Catalog Import Container\Import EpisodeParentSeason.Paths[Derived Column Output]"
+          TopLeft="354.75,278">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,54"
+              Start="0,0"
+              End="0,46.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,46.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
           Id="Package\Sequence Container 1\Catalog Import Container\Import EpisodeParentSeason.Paths[Sort Output]"
           TopLeft="350,203">
           <EdgeLayout.Curve>
@@ -36624,28 +37717,6 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
                     Point3="-40,22.75" />
                   <mssgle:LineSegment
                     End="-40,30" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Sequence Container 1\Catalog Import Container\Import EpisodeParentSeason.Paths[Derived Column Output]"
-          TopLeft="354.75,278">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,54"
-              Start="0,0"
-              End="0,46.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,46.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -36800,13 +37871,13 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
           Id="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\Sort"
           TopLeft="297,161" />
         <NodeLayout
-          Size="156,42"
-          Id="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\Derived Column"
-          TopLeft="275,236" />
-        <NodeLayout
           Size="118,42"
           Id="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\RL-OTO"
           TopLeft="284,327" />
+        <NodeLayout
+          Size="156,42"
+          Id="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\Derived Column"
+          TopLeft="275,236" />
         <EdgeLayout
           Id="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly.Paths[Sort Output]"
           TopLeft="350,203">
@@ -37755,7 +38826,7 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
     design-time-name="Package\Sequence Container 1\Deal Imports\Import Deal-PBS PAA1">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="100,42"
           Id="Package\Sequence Container 1\Deal Imports\Import Deal-PBS PAA1\Sort"
@@ -37803,9 +38874,7 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -37839,9 +38908,7 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -37863,9 +38930,7 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -37896,7 +38961,7 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
     design-time-name="Package\Sequence Container 1\Deal Imports\Import Deal-ProdAcq">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="169,42"
           Id="Package\Sequence Container 1\Deal Imports\Import Deal-ProdAcq\MOS-DealProdACQ"
@@ -37944,9 +39009,7 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -37980,9 +39043,7 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -38016,9 +39077,7 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -38049,7 +39108,7 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
     design-time-name="Package\Sequence Container 1\Deal Imports\Import Funders">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="160,42"
           Id="Package\Sequence Container 1\Deal Imports\Import Funders\ADO NET Source"
@@ -38089,9 +39148,7 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -38501,6 +39558,60 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
   </TaskHost>
   <PipelineComponentMetadata
     design-time-name="Package\Sequence Container 1\Rights Imports\Import RIghts-Holdback\MOS-HoldBack">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Sequence Container\Load XREF Deal To External Contact">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="160,42"
+          Id="Package\Sequence Container\Load XREF Deal To External Contact\ADO NET Source"
+          TopLeft="132,110" />
+        <NodeLayout
+          Size="181,42"
+          Id="Package\Sequence Container\Load XREF Deal To External Contact\ADO NET Destination"
+          TopLeft="114,251" />
+        <EdgeLayout
+          Id="Package\Sequence Container\Load XREF Deal To External Contact.Paths[ADO NET Source Output]"
+          TopLeft="208.25,152">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,99"
+              Start="0,0"
+              End="0,91.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,91.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Sequence Container\Load XREF Deal To External Contact\ADO NET Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Sequence Container\Load XREF Deal To External Contact\ADO NET Destination">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
