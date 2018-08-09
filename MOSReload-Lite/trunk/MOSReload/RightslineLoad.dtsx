@@ -12,8 +12,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="RightslineLoad"
   DTS:PackageType="5"
-  DTS:VersionBuild="418"
-  DTS:VersionGUID="{B5FC26DF-A93C-4F5A-AD1B-51A7DCC59418}">
+  DTS:VersionBuild="421"
+  DTS:VersionGUID="{E548D360-CDEB-47BA-8390-50155B730C18}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">6</DTS:Property>
   <DTS:ConnectionManagers>
@@ -28,7 +28,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAQU+eAkYgL0mMSBm2DinOpAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADOVk0JsHywxOnnjmMRwRYUAAAAAASAAACgAAAAEAAAAHZZd9rPRfYATz3e0rNEpRUIAAAAA4Yj+CO2Zb4UAAAAttGSnOBjZ2unjvrw7UMYO4ot5bo</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAQU+eAkYgL0mMSBm2DinOpAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAACUTZ7DtPbHNndyXv4rTA0AAAAAASAAACgAAAAEAAAAEhRJXmN6g2SPEu5Z6iLpBgIAAAAzdB3CwRq0EoUAAAA2z59/UeSRIC85yAEykhtGU7NUgQ</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -43,7 +43,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAQU+eAkYgL0mMSBm2DinOpAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAClsuHWNZdTheWzDHyS4xvdAAAAAASAAACgAAAAEAAAAFHsj3OppXiOAqqpPfBNfAIIAAAAm1fQlRNRxzYUAAAA2xPU+3cLEcMFysz6K6kr654iC30</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAQU+eAkYgL0mMSBm2DinOpAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABbd5P3erpOsBL2yW0f017jAAAAAASAAACgAAAAEAAAAPunXfrEEQ/zB25EPKy/za4IAAAA6m0bVOGUBdsUAAAAhnAlgsT1tKg4vHR2jZclvr+h6lA</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -58,7 +58,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAQU+eAkYgL0mMSBm2DinOpAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAB2/3AbkyMV3Jf5IWhWWMzEAAAAAASAAACgAAAAEAAAAJFWb9sCs3ltMpwPfHghjicIAAAAEAjVpOvhsXoUAAAAEjeqki8YHukf9+63lItUxknbh1w</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAQU+eAkYgL0mMSBm2DinOpAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABaavfTqjQ6PAc3MlBnWJXJAAAAAASAAACgAAAAEAAAAEK4mAwp5cstfR6Rr86mfdYIAAAAg7sSvu03iVEUAAAASL68FHgooZUIoB7iXU8JPctPwZk</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -73,7 +73,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAQU+eAkYgL0mMSBm2DinOpAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACUk10Zb288OrJnZ0hmWTQSAAAAAASAAACgAAAAEAAAAB6tO6BHeFP8BLOEQr4IKQIIAAAArtas0QgvecUUAAAA7WOcDgk24qtulsvB9J5bW0Sbtj0</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAQU+eAkYgL0mMSBm2DinOpAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAn3YeiX59QnKiyQtPkGQ/zAAAAAASAAACgAAAAEAAAAAfbqRq4/IdlmeiGLgD9AWAIAAAAsG7Q/3yri8EUAAAA70CbwYSegQfwlDm5YMk7jSILBaI</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -88,7 +88,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAQU+eAkYgL0mMSBm2DinOpAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAC6kxOVABYTOBY4n3/aaWzkAAAAAASAAACgAAAAEAAAABKOmtsjeCe8lRY8VB9BNjAIAAAA92X2oxulIoQUAAAAVxWiavQkPheucfe0B6bSJvpE7+o</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAQU+eAkYgL0mMSBm2DinOpAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAwOReIFcFyG3CXUwFWImjFAAAAAASAAACgAAAAEAAAAHOrEgIvDNUPmUT8nCXPa78IAAAADA2n7GnZanMUAAAAJdTnHKw1sbr8T9t7MRRrnp1leV8</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -103,7 +103,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAQU+eAkYgL0mMSBm2DinOpAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAC/o/2RD7PsSuK1E8shWq68AAAAAASAAACgAAAAEAAAADu+6w7ZR9U5Wtd9comuhaUIAAAA0jybS3K6D7kUAAAAOq6GZcHSqVnt/i91wfWDMZQK8mg</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAQU+eAkYgL0mMSBm2DinOpAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACV22AC9WLjysj39MZLSgDcAAAAAASAAACgAAAAEAAAAObtmrFe8jLbUdRT/JAH+KgIAAAAS3gqiGvrII8UAAAAjxMTDAaniySyXo95AnpNVodV6Ek</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -219,31 +219,33 @@
                       name="ADO NET Destination Input">
                       <inputColumns>
                         <inputColumn
+                          refId="Package\Sequence Container\Load XREF Deal To External Contact\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[ParentID]"
+                          cachedDataType="wstr"
+                          cachedLength="55"
+                          cachedName="ParentID"
+                          externalMetadataColumnId="Package\Sequence Container\Load XREF Deal To External Contact\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[ParentID]"
+                          lineageId="Package\Sequence Container\Load XREF Deal To External Contact\ADO NET Source.Outputs[ADO NET Source Output].Columns[ParentID]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\Load XREF Deal To External Contact\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[ChildID]"
+                          cachedDataType="wstr"
+                          cachedLength="40"
+                          cachedName="ChildID"
+                          externalMetadataColumnId="Package\Sequence Container\Load XREF Deal To External Contact\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[ChildID]"
+                          lineageId="Package\Sequence Container\Load XREF Deal To External Contact\ADO NET Source.Outputs[ADO NET Source Output].Columns[ChildID]" />
+                        <inputColumn
                           refId="Package\Sequence Container\Load XREF Deal To External Contact\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[ContactType]"
                           cachedDataType="wstr"
-                          cachedLength="19"
+                          cachedLength="2000"
                           cachedName="ContactType"
                           externalMetadataColumnId="Package\Sequence Container\Load XREF Deal To External Contact\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[ContactType]"
                           lineageId="Package\Sequence Container\Load XREF Deal To External Contact\ADO NET Source.Outputs[ADO NET Source Output].Columns[ContactType]" />
-                        <inputColumn
-                          refId="Package\Sequence Container\Load XREF Deal To External Contact\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[dealid]"
-                          cachedDataType="i4"
-                          cachedName="dealid"
-                          externalMetadataColumnId="Package\Sequence Container\Load XREF Deal To External Contact\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[ParentID]"
-                          lineageId="Package\Sequence Container\Load XREF Deal To External Contact\ADO NET Source.Outputs[ADO NET Source Output].Columns[dealid]" />
-                        <inputColumn
-                          refId="Package\Sequence Container\Load XREF Deal To External Contact\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[BV ID]"
-                          cachedDataType="wstr"
-                          cachedLength="40"
-                          cachedName="BV ID"
-                          externalMetadataColumnId="Package\Sequence Container\Load XREF Deal To External Contact\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[ChildID]"
-                          lineageId="Package\Sequence Container\Load XREF Deal To External Contact\ADO NET Source.Outputs[ADO NET Source Output].Columns[BV ID]" />
                       </inputColumns>
                       <externalMetadataColumns
                         isUsed="True">
                         <externalMetadataColumn
                           refId="Package\Sequence Container\Load XREF Deal To External Contact\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[ParentID]"
-                          dataType="i4"
+                          dataType="wstr"
+                          length="100"
                           name="ParentID" />
                         <externalMetadataColumn
                           refId="Package\Sequence Container\Load XREF Deal To External Contact\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[ChildID]"
@@ -298,10 +300,20 @@
                       expressionType="Notify"
                       name="SqlCommand"
                       UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">select	distinct 
-		dealid,
-		[BV ID],
+		'Offer' + cast(dealid as NVARCHAR(50)) as ParentID,
+		[BV ID] as ChildID,
+		b.DerivedValue as ContactType  
+from	[TrafficData].pbs.[ExternalContactPerson] a
+join	pbs.MasterLookupValues b on b.dbvalue = a.ContactType
+		and ml_id = 14 and field = 'trafficdata.static.contacttype'
+
+/*
+select	distinct 
+		'Offer' + cast(dealid as NVARCHAR(50)) as ParentID,
+		[BV ID] as ChildID,
 		[ContactType]  
-from	[TrafficData].pbs.[ExternalContactPerson]</property>
+from	[TrafficData].pbs.[ExternalContactPerson]
+*/</property>
                     <property
                       dataType="System.Int32"
                       description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
@@ -339,23 +351,24 @@ from	[TrafficData].pbs.[ExternalContactPerson]</property>
                       name="ADO NET Source Output">
                       <outputColumns>
                         <outputColumn
-                          refId="Package\Sequence Container\Load XREF Deal To External Contact\ADO NET Source.Outputs[ADO NET Source Output].Columns[dealid]"
-                          dataType="i4"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Sequence Container\Load XREF Deal To External Contact\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[dealid]"
-                          lineageId="Package\Sequence Container\Load XREF Deal To External Contact\ADO NET Source.Outputs[ADO NET Source Output].Columns[dealid]"
-                          name="dealid"
-                          truncationRowDisposition="FailComponent" />
-                        <outputColumn
-                          refId="Package\Sequence Container\Load XREF Deal To External Contact\ADO NET Source.Outputs[ADO NET Source Output].Columns[BV ID]"
+                          refId="Package\Sequence Container\Load XREF Deal To External Contact\ADO NET Source.Outputs[ADO NET Source Output].Columns[ParentID]"
                           dataType="wstr"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Sequence Container\Load XREF Deal To External Contact\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[BV ID]"
+                          externalMetadataColumnId="Package\Sequence Container\Load XREF Deal To External Contact\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[ParentID]"
+                          length="55"
+                          lineageId="Package\Sequence Container\Load XREF Deal To External Contact\ADO NET Source.Outputs[ADO NET Source Output].Columns[ParentID]"
+                          name="ParentID"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Load XREF Deal To External Contact\ADO NET Source.Outputs[ADO NET Source Output].Columns[ChildID]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\Load XREF Deal To External Contact\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[ChildID]"
                           length="40"
-                          lineageId="Package\Sequence Container\Load XREF Deal To External Contact\ADO NET Source.Outputs[ADO NET Source Output].Columns[BV ID]"
-                          name="BV ID"
+                          lineageId="Package\Sequence Container\Load XREF Deal To External Contact\ADO NET Source.Outputs[ADO NET Source Output].Columns[ChildID]"
+                          name="ChildID"
                           truncationRowDisposition="FailComponent" />
                         <outputColumn
                           refId="Package\Sequence Container\Load XREF Deal To External Contact\ADO NET Source.Outputs[ADO NET Source Output].Columns[ContactType]"
@@ -363,7 +376,7 @@ from	[TrafficData].pbs.[ExternalContactPerson]</property>
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
                           externalMetadataColumnId="Package\Sequence Container\Load XREF Deal To External Contact\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[ContactType]"
-                          length="19"
+                          length="2000"
                           lineageId="Package\Sequence Container\Load XREF Deal To External Contact\ADO NET Source.Outputs[ADO NET Source Output].Columns[ContactType]"
                           name="ContactType"
                           truncationRowDisposition="FailComponent" />
@@ -371,18 +384,19 @@ from	[TrafficData].pbs.[ExternalContactPerson]</property>
                       <externalMetadataColumns
                         isUsed="True">
                         <externalMetadataColumn
-                          refId="Package\Sequence Container\Load XREF Deal To External Contact\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[dealid]"
-                          dataType="i4"
-                          name="dealid" />
+                          refId="Package\Sequence Container\Load XREF Deal To External Contact\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[ParentID]"
+                          dataType="wstr"
+                          length="55"
+                          name="ParentID" />
                         <externalMetadataColumn
-                          refId="Package\Sequence Container\Load XREF Deal To External Contact\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[BV ID]"
+                          refId="Package\Sequence Container\Load XREF Deal To External Contact\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[ChildID]"
                           dataType="wstr"
                           length="40"
-                          name="BV ID" />
+                          name="ChildID" />
                         <externalMetadataColumn
                           refId="Package\Sequence Container\Load XREF Deal To External Contact\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[ContactType]"
                           dataType="wstr"
-                          length="19"
+                          length="2000"
                           name="ContactType" />
                       </externalMetadataColumns>
                     </output>
@@ -392,20 +406,21 @@ from	[TrafficData].pbs.[ExternalContactPerson]</property>
                       name="ADO NET Source Error Output">
                       <outputColumns>
                         <outputColumn
-                          refId="Package\Sequence Container\Load XREF Deal To External Contact\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[dealid]"
-                          dataType="i4"
-                          lineageId="Package\Sequence Container\Load XREF Deal To External Contact\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[dealid]"
-                          name="dealid" />
+                          refId="Package\Sequence Container\Load XREF Deal To External Contact\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[ParentID]"
+                          dataType="wstr"
+                          length="55"
+                          lineageId="Package\Sequence Container\Load XREF Deal To External Contact\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[ParentID]"
+                          name="ParentID" />
                         <outputColumn
-                          refId="Package\Sequence Container\Load XREF Deal To External Contact\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[BV ID]"
+                          refId="Package\Sequence Container\Load XREF Deal To External Contact\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[ChildID]"
                           dataType="wstr"
                           length="40"
-                          lineageId="Package\Sequence Container\Load XREF Deal To External Contact\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[BV ID]"
-                          name="BV ID" />
+                          lineageId="Package\Sequence Container\Load XREF Deal To External Contact\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[ChildID]"
+                          name="ChildID" />
                         <outputColumn
                           refId="Package\Sequence Container\Load XREF Deal To External Contact\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[ContactType]"
                           dataType="wstr"
-                          length="19"
+                          length="2000"
                           lineageId="Package\Sequence Container\Load XREF Deal To External Contact\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[ContactType]"
                           name="ContactType" />
                         <outputColumn
@@ -36638,7 +36653,7 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
     design-time-name="Package\Sequence Container\Load XREF Deal To External Contact">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="160,42"
           Id="Package\Sequence Container\Load XREF Deal To External Contact\ADO NET Source"
@@ -36666,9 +36681,7 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
