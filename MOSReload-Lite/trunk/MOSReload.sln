@@ -13,13 +13,27 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "log4net", "log4net", "{885D
 		log4net\rl_RunSSIS.ps1 = log4net\rl_RunSSIS.ps1
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrafficDataRightLineMapperWebUI", "TrafficDataRightLineMapperWebUI\TrafficDataRightLineMapperWebUI.csproj", "{9A6076EC-889C-4B9F-A60F-B176AE17C03F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Development|Default = Development|Default
+		Debug|Any CPU = Debug|Any CPU
+		Development|Any CPU = Development|Any CPU
+		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{0C92E4F0-476A-4484-B640-D6235AD628AD}.Development|Default.ActiveCfg = Development
-		{0C92E4F0-476A-4484-B640-D6235AD628AD}.Development|Default.Build.0 = Development
+		{0C92E4F0-476A-4484-B640-D6235AD628AD}.Debug|Any CPU.ActiveCfg = Development
+		{0C92E4F0-476A-4484-B640-D6235AD628AD}.Debug|Any CPU.Build.0 = Development
+		{0C92E4F0-476A-4484-B640-D6235AD628AD}.Development|Any CPU.ActiveCfg = Development
+		{0C92E4F0-476A-4484-B640-D6235AD628AD}.Development|Any CPU.Build.0 = Development
+		{0C92E4F0-476A-4484-B640-D6235AD628AD}.Release|Any CPU.ActiveCfg = Development
+		{0C92E4F0-476A-4484-B640-D6235AD628AD}.Release|Any CPU.Build.0 = Development
+		{9A6076EC-889C-4B9F-A60F-B176AE17C03F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A6076EC-889C-4B9F-A60F-B176AE17C03F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A6076EC-889C-4B9F-A60F-B176AE17C03F}.Development|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A6076EC-889C-4B9F-A60F-B176AE17C03F}.Development|Any CPU.Build.0 = Debug|Any CPU
+		{9A6076EC-889C-4B9F-A60F-B176AE17C03F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A6076EC-889C-4B9F-A60F-B176AE17C03F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
