@@ -7,17 +7,17 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace TrafficDataRightLineMapperWebUI
+namespace ErrorParser
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class MasterLookupValue
+    public partial class LogTracker
     {
-        public int ID { get; set; }
-        public Nullable<int> ML_ID { get; set; }
-        public string field { get; set; }
-        public string BV_Value { get; set; }
-        public string RL_Value { get; set; }
+        public int id { get; set; }
+        public Nullable<System.DateTime> DateCreated { get; set; }
+        public string MessageType { get; set; }
+        public string Message { get; set; }
+        public string ErrorMessage { get; set; }
     }
 }

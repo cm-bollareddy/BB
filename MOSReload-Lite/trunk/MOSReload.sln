@@ -15,6 +15,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "log4net", "log4net", "{885D
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrafficDataRightLineMapperWebUI", "TrafficDataRightLineMapperWebUI\TrafficDataRightLineMapperWebUI.csproj", "{9A6076EC-889C-4B9F-A60F-B176AE17C03F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ErrorParser", "ErrorParser\ErrorParser.csproj", "{D285C653-A92C-4B43-95FC-77D55A2A20B4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -34,6 +36,12 @@ Global
 		{9A6076EC-889C-4B9F-A60F-B176AE17C03F}.Development|Any CPU.Build.0 = Debug|Any CPU
 		{9A6076EC-889C-4B9F-A60F-B176AE17C03F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9A6076EC-889C-4B9F-A60F-B176AE17C03F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D285C653-A92C-4B43-95FC-77D55A2A20B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D285C653-A92C-4B43-95FC-77D55A2A20B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D285C653-A92C-4B43-95FC-77D55A2A20B4}.Development|Any CPU.ActiveCfg = Debug|Any CPU
+		{D285C653-A92C-4B43-95FC-77D55A2A20B4}.Development|Any CPU.Build.0 = Debug|Any CPU
+		{D285C653-A92C-4B43-95FC-77D55A2A20B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D285C653-A92C-4B43-95FC-77D55A2A20B4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -12,8 +12,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="RightslineLoad"
   DTS:PackageType="5"
-  DTS:VersionBuild="421"
-  DTS:VersionGUID="{E548D360-CDEB-47BA-8390-50155B730C18}">
+  DTS:VersionBuild="422"
+  DTS:VersionGUID="{E186BBBC-2680-4A3E-8A7B-C31CED5FAAEE}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">6</DTS:Property>
   <DTS:ConnectionManagers>
@@ -28,7 +28,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAQU+eAkYgL0mMSBm2DinOpAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAACUTZ7DtPbHNndyXv4rTA0AAAAAASAAACgAAAAEAAAAEhRJXmN6g2SPEu5Z6iLpBgIAAAAzdB3CwRq0EoUAAAA2z59/UeSRIC85yAEykhtGU7NUgQ</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAQU+eAkYgL0mMSBm2DinOpAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADvfr2KYBQ9Ak43bd1G46tJAAAAAASAAACgAAAAEAAAAMUymKCeW7tCWEll+Dm7Z4EIAAAAJe5pxfaAi/8UAAAAgVUiKzvOubqaUBO8r0EgtQqJy6M</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -43,7 +43,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAQU+eAkYgL0mMSBm2DinOpAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABbd5P3erpOsBL2yW0f017jAAAAAASAAACgAAAAEAAAAPunXfrEEQ/zB25EPKy/za4IAAAA6m0bVOGUBdsUAAAAhnAlgsT1tKg4vHR2jZclvr+h6lA</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAQU+eAkYgL0mMSBm2DinOpAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABbjRNpdCjWojs+6z0QtKxwAAAAAASAAACgAAAAEAAAAL0eCxXG97c60RYz1AErXasIAAAA1bEvbXKAngsUAAAAp79bb+lg73bx7cfZV2EuG7KLXuE</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -58,7 +58,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAQU+eAkYgL0mMSBm2DinOpAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABaavfTqjQ6PAc3MlBnWJXJAAAAAASAAACgAAAAEAAAAEK4mAwp5cstfR6Rr86mfdYIAAAAg7sSvu03iVEUAAAASL68FHgooZUIoB7iXU8JPctPwZk</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAQU+eAkYgL0mMSBm2DinOpAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAC6G8VWt1ttwd6gh/liXuTUAAAAAASAAACgAAAAEAAAALKREPa3dL8tcyOQSR/5iLMIAAAAGR7vqP56aGoUAAAAWY7Pnpr5d+cfGq8OTgP/6HOlvJc</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -73,7 +73,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAQU+eAkYgL0mMSBm2DinOpAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAn3YeiX59QnKiyQtPkGQ/zAAAAAASAAACgAAAAEAAAAAfbqRq4/IdlmeiGLgD9AWAIAAAAsG7Q/3yri8EUAAAA70CbwYSegQfwlDm5YMk7jSILBaI</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAQU+eAkYgL0mMSBm2DinOpAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABmZPWn4bWkJEFp4ksdf8SLAAAAAASAAACgAAAAEAAAAFN65bHsLJd9oF7qvsyPWD8IAAAADakqnMpPEakUAAAAfo8rJTlUHX8UQQdy1qur/aFb2/o</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -88,7 +88,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAQU+eAkYgL0mMSBm2DinOpAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAwOReIFcFyG3CXUwFWImjFAAAAAASAAACgAAAAEAAAAHOrEgIvDNUPmUT8nCXPa78IAAAADA2n7GnZanMUAAAAJdTnHKw1sbr8T9t7MRRrnp1leV8</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAQU+eAkYgL0mMSBm2DinOpAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAlb0jBQlnmiovL3Zuq0DBBAAAAAASAAACgAAAAEAAAAHV7ikDsfZo65AEAlXNzb+kIAAAAO5jEFGglnsAUAAAALzxIES6d0kr12kxqv8bWeF0zBls</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -103,7 +103,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAQU+eAkYgL0mMSBm2DinOpAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACV22AC9WLjysj39MZLSgDcAAAAAASAAACgAAAAEAAAAObtmrFe8jLbUdRT/JAH+KgIAAAAS3gqiGvrII8UAAAAjxMTDAaniySyXo95AnpNVodV6Ek</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAQU+eAkYgL0mMSBm2DinOpAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAC08FjOrClD0AKcsgfao8yKAAAAAASAAACgAAAAEAAAAP7e7nikoN+yIsiBdFlRi50IAAAANEbM8JNcgL0UAAAAMOPi4SY4IwJ4nwtPQl8DM+ZN4vg</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -302,9 +302,9 @@
                       UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">select	distinct 
 		'Offer' + cast(dealid as NVARCHAR(50)) as ParentID,
 		[BV ID] as ChildID,
-		b.DerivedValue as ContactType  
+		b.rl_value as ContactType  
 from	[TrafficData].pbs.[ExternalContactPerson] a
-join	pbs.MasterLookupValues b on b.dbvalue = a.ContactType
+join	pbs.MasterLookupValues b on b.bv_value = a.ContactType
 		and ml_id = 14 and field = 'trafficdata.static.contacttype'
 
 /*
@@ -5240,8 +5240,8 @@ SELECT distinct
 	  ,substring([Episode.ParentID],charindex(':pbs.org',[Episode.ParentID])+9,len([Episode.ParentID])) as PBS_Parent_ID
 	  ,substring([Episode.ContentIdentifier],charindex('NOLARoot',[Episode.ContentIdentifier])+9,4) as NolaRoot
 	  ,substring([Episode.ContentIdentifier],charindex('NOLARoot',[Episode.ContentIdentifier])+9,len([Episode.ParentID])) as Nolacode
-	  ,mlvEpisodeEditName.DerivedValue as EditName
-	  ,mlvEpisodeEntityTemplate.DerivedValue as EpisodeEntityTemplate
+	  ,mlvEpisodeEditName.rl_value as EditName
+	  ,mlvEpisodeEntityTemplate.rl_value as EpisodeEntityTemplate
 	  ,subLan.LAN_DESC as sub_languages
   FROM [TrafficData].[PBS].[vwMOSEpisode] 
   Join Bv.EXTENDEDDATA extD on extD.EXT_OWNERRECORD_ID = ass_id 
@@ -8243,8 +8243,8 @@ SELECT
              ELSE 'Episode '
                   + CAST([TrafficData].[PBS].[vwMOSEpisode].[Episode.EpisodeNumber] AS VARCHAR(10))
         END AS [DisplayFriendlyTitle] ,
-        mlvAssIsPublished.DerivedValue AS entity_status ,
-        CAST(mlvWorkflowStatus.derivedvalue AS INT) AS WorkflowStatus ,
+        mlvAssIsPublished.rl_value AS entity_status ,
+        CAST(mlvWorkflowStatus.rl_value AS INT) AS WorkflowStatus ,
         CASE [Episode.TitleClass]
           WHEN 'Working'
           THEN CAST(SUBSTRING(RTRIM(LTRIM(ass.ass_episodetitle)), 1, 120) AS NVARCHAR(120))
@@ -8257,17 +8257,17 @@ SELECT
         END AS us_tvpg ,
         YEAR([Episode.ReleaseDate]) AS first_broadcast_year ,
         --ARLookup.SLU_DESC AS aspect_ratio ,
-        mlvAspectRation.DerivedValue AS aspect_ratio ,
+        mlvAspectRation.rl_value AS aspect_ratio ,
         CASE WHEN dea.DEA_SLU_ID_HIDEF IN ( 57002, 57004 )
              THEN CAST('HD' AS NVARCHAR)
              WHEN dea.DEA_SLU_ID_HIDEF IN ( 57001, 57003 )
              THEN CAST('SD' AS NVARCHAR)
              ELSE CAST('SD' AS NVARCHAR)
         END AS resolution ,
-        mlvISPBSMINORITYPRODUCTION.DerivedValue AS minority_production ,
-        mlvEditClass.DerivedValue AS edit_class ,
-        mlvEditName.DerivedValue AS edit_name ,
-        mlvEpisodeEntityTemplate.DerivedValue AS EpisodeEntityTemplate ,
+        mlvISPBSMINORITYPRODUCTION.rl_value AS minority_production ,
+        mlvEditClass.rl_value AS edit_class ,
+        mlvEditName.rl_value AS edit_name ,
+        mlvEpisodeEntityTemplate.rl_value AS EpisodeEntityTemplate ,
         p.ULU_DESC AS Franchise ,
         subLan.LAN_DESC AS sub_languages
 FROM    [TrafficData].[PBS].[vwMOSEpisode]
@@ -8280,15 +8280,15 @@ FROM    [TrafficData].[PBS].[vwMOSEpisode]
         LEFT JOIN bv.vchip vchip ON vchip.VCH_ID = ass.ASS_VCH_ID
         LEFT JOIN bv.Deal dea ON dea.DEA_ID = [TrafficData].[PBS].[vwMOSEpisode].DealID
         LEFT JOIN bv.SYSLOOKUP ARLookup ON ARLookup.SLU_ID = dea.DEA_SLU_ID_ASPECTRATIO
-        LEFT JOIN [PBS].[MasterLookupValues] mlvAspectRation ON mlvAspectRation.dbvalue = ARLookup.SLU_DESC
+        LEFT JOIN [PBS].[MasterLookupValues] mlvAspectRation ON mlvAspectRation.bv_value = ARLookup.SLU_DESC
                                                               AND mlvAspectRation.ML_ID = 13
                                                               AND mlvAspectRation.field = 'ASPECTRATIO_LOOKUP'
-        LEFT JOIN [PBS].[MasterLookupValues] mlvISPBSMINORITYPRODUCTION ON CAST(mlvISPBSMINORITYPRODUCTION.dbvalue AS INT) = dea.DEA_ISPBSMINORITYPRODUCTION
+        LEFT JOIN [PBS].[MasterLookupValues] mlvISPBSMINORITYPRODUCTION ON CAST(mlvISPBSMINORITYPRODUCTION.bv_value AS INT) = dea.DEA_ISPBSMINORITYPRODUCTION
                                                               AND mlvISPBSMINORITYPRODUCTION.field = 'trafficdata.BV.DEAL.DEA_ISPBSMINORITYPRODUCTION'
                                                               AND mlvISPBSMINORITYPRODUCTION.ML_ID = 3
         LEFT JOIN [PBS].[MasterLookupValues] mlvEditClass ON mlvEditClass.field = 'static.edit_class.value'
                                                              AND mlvEditClass.ML_ID = 3
-        LEFT JOIN [PBS].[MasterLookupValues] mlvAssIsPublished ON CAST(mlvAssIsPublished.dbvalue AS INT) = ass.ASS_ISPBSPUBLISHED
+        LEFT JOIN [PBS].[MasterLookupValues] mlvAssIsPublished ON CAST(mlvAssIsPublished.bv_value AS INT) = ass.ASS_ISPBSPUBLISHED
                                                               AND mlvAssIsPublished.field = 'trafficdata.BV.ASSET.ASS_ISPBSPUBLISHED'
                                                               AND mlvAssIsPublished.ML_ID = 3
         LEFT JOIN [PBS].[MasterLookupValues] mlvWorkflowStatus ON mlvWorkflowStatus.field = 'static.WorkflowStatus.value'
@@ -13659,8 +13659,8 @@ SELECT
         SUBSTRING([Episode.ContentIdentifier],
                   CHARINDEX('NOLARoot', [Episode.ContentIdentifier]) + 9,
                   LEN([Episode.ContentIdentifier])) AS Nolacode ,
-        mlvAssIsPublished.DerivedValue AS entity_status ,
-        mlvWorkflowStatus.DerivedValue AS WorkflowStatus ,
+        mlvAssIsPublished.rl_value AS entity_status ,
+        mlvWorkflowStatus.rl_value AS WorkflowStatus ,
         CASE [Episode.TitleClass]
           WHEN 'Working'
           THEN SUBSTRING(RTRIM(LTRIM(ass.ass_episodetitle)), 1, 120)
@@ -13669,16 +13669,16 @@ SELECT
        CASE CHARINDEX('+',VCH_CODE) WHEN 0 THEN vch_code ELSE 
 SUBSTRING(vch_code,1,CHARINDEX('+',VCH_CODE)-1) END AS us_tvpg,
         YEAR([Episode.ReleaseDate]) AS first_broadcast_year ,
-        mlvAspectRation.DerivedValue AS aspect_ratio ,
+        mlvAspectRation.rl_value AS aspect_ratio ,
         CASE 
           WHEN dea.DEA_SLU_ID_HIDEF IN (57002,57004) THEN CAST('HD' AS NVARCHAR)
 		  WHEN dea.DEA_SLU_ID_HIDEF IN (57001,57003) THEN CAST('SD' AS NVARCHAR)
           ELSE CAST('SD' AS NVARCHAR)
         END AS resolution ,
-        mlvISPBSMINORITYPRODUCTION.DerivedValue AS minority_production ,
-        mlvEditClass.DerivedValue AS edit_class ,
-        mlvEditName.DerivedValue AS EditName ,
-        mlvEpisodeEntityTemplate.DerivedValue AS EpisodeEntityTemplate,
+        mlvISPBSMINORITYPRODUCTION.rl_value AS minority_production ,
+        mlvEditClass.rl_value AS edit_class ,
+        mlvEditName.rl_value AS EditName ,
+        mlvEpisodeEntityTemplate.rl_value AS EpisodeEntityTemplate,
 		P.ULU_DESC AS Franchise,
 		subLan.LAN_DESC as sub_languages
 FROM    [TrafficData].[PBS].[vwMOSEpisode]
@@ -13690,15 +13690,15 @@ FROM    [TrafficData].[PBS].[vwMOSEpisode]
 		LEFT JOIN bv.vchip vchip ON vchip.VCH_ID = ass.ASS_VCH_ID
         LEFT JOIN bv.Deal dea ON dea.DEA_ID = [TrafficData].[PBS].[vwMOSEpisode].DealID
         LEFT JOIN bv.SYSLOOKUP ARLookup ON ARLookup.SLU_ID = dea.DEA_SLU_ID_ASPECTRATIO
-		left join [PBS].[MasterLookupValues] mlvAspectRation on mlvAspectRation.dbvalue = ARLookup.SLU_DESC
+		left join [PBS].[MasterLookupValues] mlvAspectRation on mlvAspectRation.bv_value = ARLookup.SLU_DESC
 			AND mlvAspectRation.ML_ID = 13
 			and mlvAspectRation.field = 'ASPECTRATIO_LOOKUP'
-        LEFT JOIN [PBS].[MasterLookupValues] mlvISPBSMINORITYPRODUCTION ON CAST(mlvISPBSMINORITYPRODUCTION.dbvalue AS INT) = dea.DEA_ISPBSMINORITYPRODUCTION
+        LEFT JOIN [PBS].[MasterLookupValues] mlvISPBSMINORITYPRODUCTION ON CAST(mlvISPBSMINORITYPRODUCTION.bv_value AS INT) = dea.DEA_ISPBSMINORITYPRODUCTION
                                                               AND mlvISPBSMINORITYPRODUCTION.field = 'trafficdata.BV.DEAL.DEA_ISPBSMINORITYPRODUCTION'
                                                               AND mlvISPBSMINORITYPRODUCTION.ML_ID = 5
         LEFT JOIN [PBS].[MasterLookupValues] mlvEditClass ON mlvEditClass.field = 'static.edit_class.value'
                                                              AND mlvEditClass.ML_ID = 5
-        LEFT JOIN [PBS].[MasterLookupValues] mlvAssIsPublished ON CAST(mlvAssIsPublished.dbvalue AS INT) = ass.ASS_ISPBSPUBLISHED
+        LEFT JOIN [PBS].[MasterLookupValues] mlvAssIsPublished ON CAST(mlvAssIsPublished.bv_value AS INT) = ass.ASS_ISPBSPUBLISHED
                                                               AND mlvAssIsPublished.field = 'trafficdata.BV.ASSET.ASS_ISPBSPUBLISHED'
                                                               AND mlvAssIsPublished.ML_ID = 5
         LEFT JOIN [PBS].[MasterLookupValues] mlvWorkflowStatus ON mlvWorkflowStatus.field = 'static.WorkflowStatus.value'
@@ -17298,9 +17298,9 @@ SELECT [InternalPBSID]
 	  ,ExeCom.com_name as [Season.ExecutiveProducer.OrganizationName]
 	  ,'Producer' as [Season.Producer.OrganizationRole]
 	  ,ProdCom.com_name as [Season.Producer.OrganizationName]
-	  ,mlvLanguage.DerivedValue as Language
-	  ,mlvTerritory.DerivedValue as Territory
-	  ,mlvTemplate.DerivedValue as Template
+	  ,mlvLanguage.rl_value as Language
+	  ,mlvTerritory.rl_value as Territory
+	  ,mlvTemplate.rl_value as Template
  ,cast( '9' as nvarchar(20)) as entity_status
   FROM [PBS].[vwMOSSeason] 
   Join bv.asset ass on ass.ass_id = vwMOSSeason.InternalPBSID
@@ -18960,9 +18960,9 @@ SELECT [InternalPBSID]
       ,[Season.Title]
       ,substring([season.ParentID],charindex(':Series',[Season.ParentID])+7,len([Season.ParentID])) as PBS_Series_ID
 	  ,substring([season.UID],charindex(':Season',[Season.UID])+1,len([Season.UID])) as PBS_Season_ID,ass.ASS_PBSNOLAROOT_CM as pbsnolaroot
-	  ,mlvLanguage.DerivedValue as Language
-	  ,mlvTerritory.DerivedValue as Territory
-	  ,mlvTemplate.DerivedValue as Template
+	  ,mlvLanguage.rl_value as Language
+	  ,mlvTerritory.rl_value as Territory
+	  ,mlvTemplate.rl_value as Template
 	  ,'Executive' as [Season.ExecutiveProducer.OrganizationRole]
 	  ,ExeCom.com_name as [Season.ExecutiveProducer.OrganizationName]
 	  ,'Producer' as [Season.Producer.OrganizationRole]
@@ -20693,8 +20693,8 @@ SELECT  [InternalPBSID]
 	  ,replace([Series.UID],'cid:org:pbs.org:','') as PBS_ID
 ,year([Series.ReleaseDate]) as 'Copyright'
 ,substring([Series.ContentIdentifier],charindex('NOLARoot',[Series.ContentIdentifier])+9,4) as NolaRoot
-	  ,mlvTerritory.DerivedValue as Territory
-	  ,mlvTemplate.DerivedValue as Template
+	  ,mlvTerritory.rl_value as Territory
+	  ,mlvTemplate.rl_value as Template
 ,[Series.genre] as genre
   FROM [PBS].[vwMOSSeries]
  JOIN  [RightsLineETL].[dbo].[Apr23_Series] Apr23 on Apr23.ULU_ID = substring([series.uid],charindex(':Series',[Series.UID])+7,len([Series.UID]))
@@ -27816,14 +27816,14 @@ SELECT distinct
       ,[PBSCanSecureUnderWriting]as [PBSCanSecureUnderWriting]
       ,[underwriting_notes]
      ,[dealid]
-	 ,mlvPBSD_Label.derivedvalue as entity_status
-	 ,mlvStaticSTCon.DerivedValue as   standard_terms__conditions
-	 ,cast(mlvWorkflowStatus.DerivedValue as int) as WorkflowStatus
+	 ,mlvPBSD_Label.rl_value as entity_status
+	 ,mlvStaticSTCon.rl_value as   standard_terms__conditions
+	 ,cast(mlvWorkflowStatus.rl_value as int) as WorkflowStatus
   FROM [TrafficData].[PBS].[DealPBSPAA1] paa
   --join [RightslineETL].[dbo].Apr23_deals Apr23 on Apr23.dea_id = paa.dea_id
   left join [TrafficData].[BV].[DEAL] ds on ds.DEA_ID = paa.dea_id
   left JOIN trafficdata.BV.PBSDEALSTATUS pbsds ON pbsds.PBSDS_ID = ds.DEA_PBSDS_ID
-  left join [PBS].[MasterLookupValues] mlvPBSD_Label on mlvPBSD_Label.dbvalue = pbsds.PBSDS_LABEL
+  left join [PBS].[MasterLookupValues] mlvPBSD_Label on mlvPBSD_Label.bv_value = pbsds.PBSDS_LABEL
 				and mlvPBSD_Label.ml_id = 1
 				and field = 'trafficdata.BV.PBSDEALSTATUS.PBSDS_LABEL'
   left join [PBS].[MasterLookupValues] mlvStaticSTCon on mlvStaticSTCon.ml_id = 1
@@ -29226,13 +29226,13 @@ SELECT
       ,[underwriting_notes]
      ,[DealProdAcQ].[dea_id]
      ,[dealid]
-	 ,mlvPBSD_Label.derivedvalue as entity_status
-	 ,cast(mlvWorkflowStatus.DerivedValue as int) as WorkflowStatus
+	 ,mlvPBSD_Label.rl_value as entity_status
+	 ,cast(mlvWorkflowStatus.rl_value as int) as WorkflowStatus
   FROM [TrafficData].[PBS].[DealProdAcQ]
   --join [RightsLineETL].[dbo].[Apr23_Deals] Apr23 on Apr23.dea_id = [DealProdAcQ].dea_id
   left join [TrafficData].[BV].[DEAL] ds on ds.DEA_ID = [DealProdAcQ].dea_id
   left JOIN trafficdata.BV.PBSDEALSTATUS pbsds ON pbsds.PBSDS_ID = ds.DEA_PBSDS_ID
-  left join [PBS].[MasterLookupValues] mlvPBSD_Label on mlvPBSD_Label.dbvalue = pbsds.PBSDS_LABEL
+  left join [PBS].[MasterLookupValues] mlvPBSD_Label on mlvPBSD_Label.bv_value = pbsds.PBSDS_LABEL
 				and mlvPBSD_Label.ml_id = 2
 				and field = 'trafficdata.BV.PBSDEALSTATUS.PBSDS_LABEL'
   left join [PBS].[MasterLookupValues] mlvWorkflowStatus on mlvWorkflowStatus.ml_id = 2
@@ -32448,15 +32448,15 @@ where right_Type = 'License'</property>
         [Usage.EffectiveTerm.Exclusive] ,
         [Usage.EffectiveTerm.Play.Model] ,
         [Usage.EffectiveTerm.Play.RecurrenceDayCount] ,
-        mlvHoldBackMedia.DerivedValue AS HoldbackMedia ,
-        mlvdestExclusive.DerivedValue AS 'Exclusivity' ,
+        mlvHoldBackMedia.rl_value AS HoldbackMedia ,
+        mlvdestExclusive.rl_value AS 'Exclusivity' ,
         SUBSTRING(vwMOSUsage.[Usage.ParentID],
                   LEN('parentid:org:pbs.org:') + 1,
                   LEN(vwMOSUsage.[Usage.ParentID])) AS [Item_BV_Parent_ID] ,
         SUBSTRING(vwMOSUsage.[Usage.UID], LEN('Usageid:org:pbs.org:') + 1,
                   LEN(vwMOSUsage.[Usage.UID])) AS [Item_BV_ID],
-		mlvTitle.DerivedValue as Title,
-		mlvTerritory.DerivedValue as Territory
+		mlvTitle.rl_value as Title,
+		mlvTerritory.rl_value as Territory
 FROM    [PBS].[vwMOSUsage]
         JOIN [rightslineETL].[dbo].Apr23_deals Apr23 ON Apr23.OfferUID = SUBSTRING(vwMOSUsage.[Usage.ParentID],
                                                               LEN('parentid:org:pbs.org:')
@@ -32473,10 +32473,11 @@ FROM    [PBS].[vwMOSUsage]
 		left join [PBS].[MasterLookupValues] mlvTerritory on mlvTerritory.field = 'static.Territory.value'
 							and mlvTerritory.ML_ID = 8
 		left join [PBS].[MasterLookupValues] mlvdestExclusive on mlvdestExclusive.field = 'PBS.vwMOSUsage.Usage.EffectiveTerm.Exclusive'
-							and mlvdestExclusive.dbvalue = [Usage.EffectiveTerm.Exclusive]
+							and mlvdestExclusive.bv_value = [Usage.EffectiveTerm.Exclusive]
 							and mlvdestExclusive.ML_ID = 8
 		left join [PBS].[MasterLookupValues] mlvHoldBackMedia on mlvHoldBackMedia.field = 'static.Holdback_Media.value'
 							and mlvHoldBackMedia.ML_ID = 8
+
 
 /*
 SELECT  [Usage.UID] ,
@@ -33867,14 +33868,14 @@ FROM    [PBS].[vwMOSUsage]
         [Usage.EffectiveTerm.Play.Model] ,
         [Usage.EffectiveTerm.Play.RecurrenceDayCount] ,
         'All Television' AS Blackout_Media ,
-		mlvdestExclusive.DerivedValue as Exclusivity,
+		mlvdestExclusive.rl_value as Exclusivity,
         SUBSTRING(vwMOSUsage.[Usage.UID], LEN('usageid:org:pbs.org:') + 1,
                   LEN(vwMOSUsage.[Usage.UID])) AS [Item_BV_ID] ,
         SUBSTRING(vwMOSUsage.[Usage.ParentID],
                   LEN('parentid:org:pbs.org:') + 1,
                   LEN(vwMOSUsage.[Usage.ParentID])) AS [Item_BV_Parent_ID],
-		mlvTitle.DerivedValue as Title,
-		mlvTerritory.DerivedValue as Territory
+		mlvTitle.rl_Value as Title,
+		mlvTerritory.rl_Value as Territory
 FROM    [PBS].[vwMOSUsage]
         JOIN [rightslineETL].[dbo].Apr23_deals Apr23 ON Apr23.OfferUID = SUBSTRING(vwMOSUsage.[Usage.ParentID],
                                                               LEN('parentid:org:pbs.org:')
@@ -33885,10 +33886,9 @@ FROM    [PBS].[vwMOSUsage]
 		left join [PBS].[MasterLookupValues] mlvTerritory on mlvTerritory.field = 'static.Territory.value'
 							and mlvTerritory.ML_ID = 6
 		left join [PBS].[MasterLookupValues] mlvdestExclusive on mlvdestExclusive.field = 'PBS.vwMOSUsage.Usage.EffectiveTerm.Exclusive'
-							and mlvdestExclusive.dbvalue = [Usage.EffectiveTerm.Exclusive]
+							and mlvdestExclusive.bv_value = [Usage.EffectiveTerm.Exclusive]
 							and mlvdestExclusive.ML_ID = 6
 WHERE   [Usage.EffectiveTerm.Use] = 'Blackouts'
-
 
 /*
 SELECT  [Usage.UID]
@@ -34721,15 +34721,15 @@ where [Usage.EffectiveTerm.Use] = 'Blackouts'
         [Usage.EffectiveTerm.Exclusive] ,
         [Usage.EffectiveTerm.Play.Model] ,
         [Usage.EffectiveTerm.Play.RecurrenceDayCount] ,
-        mlvHoldBackMedia.DerivedValue AS HoldbackMedia ,
-        mlvdestExclusive.DerivedValue AS 'Exclusivity' ,
+        mlvHoldBackMedia.rl_value AS HoldbackMedia ,
+        mlvdestExclusive.rl_value AS 'Exclusivity' ,
         SUBSTRING(vwMOSUsage.[Usage.UID], LEN('usageid:org:pbs.org:') + 1,
                   LEN(vwMOSUsage.[Usage.UID])) AS [item_bv_id] ,
         SUBSTRING(vwMOSUsage.[Usage.ParentID],
                   LEN('parentid:org:pbs.org:') + 1,
                   LEN(vwMOSUsage.[Usage.ParentID])) AS [Item_BV_Parent_ID],
-				  mlvTitle.DerivedValue as Title,
-				  mlvTerritory.DerivedValue as Territory
+				  mlvTitle.rl_value as Title,
+				  mlvTerritory.rl_value as Territory
 FROM    [PBS].[vwMOSUsage]
         JOIN [rightslineETL].[dbo].Apr23_deals Apr23 ON Apr23.OfferUID = SUBSTRING(vwMOSUsage.[Usage.ParentID],
                                                               LEN('parentid:org:pbs.org:')
@@ -34740,12 +34740,11 @@ FROM    [PBS].[vwMOSUsage]
 		left join [PBS].[MasterLookupValues] mlvTerritory on mlvTerritory.field = 'static.Territory.value'
 							and mlvTerritory.ML_ID = 7
 		left join [PBS].[MasterLookupValues] mlvdestExclusive on mlvdestExclusive.field = 'PBS.vwMOSUsage.Usage.EffectiveTerm.Exclusive'
-							and mlvdestExclusive.dbvalue = [Usage.EffectiveTerm.Exclusive]
+							and mlvdestExclusive.bv_value = [Usage.EffectiveTerm.Exclusive]
 							and mlvdestExclusive.ML_ID = 7
 		left join [PBS].[MasterLookupValues] mlvHoldBackMedia on mlvHoldBackMedia.field = 'static.Holdback_Media.value'
 							and mlvHoldBackMedia.ML_ID = 7
 WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
-
 
 /*
 SELECT  [Usage.UID] ,
@@ -37002,7 +37001,7 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
     design-time-name="Package\Sequence Container\Load xref_DealToProductionCompany">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="158,42"
           Id="Package\Sequence Container\Load xref_DealToProductionCompany\Data Conversion"
@@ -37034,9 +37033,7 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -37070,9 +37067,7 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -37248,7 +37243,7 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
     design-time-name="Package\Sequence Container\Load xref_DealToUnderwriter">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="158,42"
           Id="Package\Sequence Container\Load xref_DealToUnderwriter\Data Conversion"
@@ -37280,9 +37275,7 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -37316,9 +37309,7 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -37649,7 +37640,7 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
     design-time-name="Package\Sequence Container 1\Catalog Import Container\Import Episode Series">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="223,42"
           Id="Package\Sequence Container 1\Catalog Import Container\Import Episode Series\MOS-EpisodeWithSeriesParent"
@@ -37685,9 +37676,7 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -37721,9 +37710,7 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -37745,9 +37732,7 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -38014,7 +37999,7 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
     design-time-name="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="128,42"
           Id="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\MOS-OTO"
@@ -38062,9 +38047,7 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -38086,9 +38069,7 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -38122,9 +38103,7 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -38302,7 +38281,7 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
     design-time-name="Package\Sequence Container 1\Catalog Import Container\ImportSeasons">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="100,42"
           Id="Package\Sequence Container 1\Catalog Import Container\ImportSeasons\Sort"
@@ -38350,9 +38329,7 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -38386,9 +38363,7 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -38410,9 +38385,7 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -38448,7 +38421,7 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
     design-time-name="Package\Sequence Container 1\Catalog Import Container\ImportSeries">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="189,42"
           Id="Package\Sequence Container 1\Catalog Import Container\ImportSeries\Sort and Remove Dups"
@@ -38484,9 +38457,7 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -38508,9 +38479,7 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -38532,9 +38501,7 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -38710,6 +38677,10 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
           Id="Package\Sequence Container 1\Contact\Import ContactPerson\MOS-Person"
           TopLeft="272,50" />
         <NodeLayout
+          Size="129,42"
+          Id="Package\Sequence Container 1\Contact\Import ContactPerson\RL-Person"
+          TopLeft="259.5,270.5" />
+        <NodeLayout
           Size="100,42"
           Id="Package\Sequence Container 1\Contact\Import ContactPerson\Sort"
           TopLeft="294,117" />
@@ -38717,44 +38688,6 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
           Size="156,42"
           Id="Package\Sequence Container 1\Contact\Import ContactPerson\Derived Column"
           TopLeft="296,205" />
-        <NodeLayout
-          Size="129,42"
-          Id="Package\Sequence Container 1\Contact\Import ContactPerson\RL-Person"
-          TopLeft="259.5,270.5" />
-        <EdgeLayout
-          Id="Package\Sequence Container 1\Contact\Import ContactPerson.Paths[Derived Column Output]"
-          TopLeft="374,247">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-50,23.5"
-              Start="0,0"
-              End="-50,16">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,7.75" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,7.75"
-                    Point2="0,11.75"
-                    Point3="-4,11.75" />
-                  <mssgle:LineSegment
-                    End="-46,11.75" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-46,11.75"
-                    Point2="-50,11.75"
-                    Point3="-50,15.75" />
-                  <mssgle:LineSegment
-                    End="-50,16" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
         <EdgeLayout
           Id="Package\Sequence Container 1\Contact\Import ContactPerson.Paths[Sort Output]"
           TopLeft="344,159">
@@ -38803,6 +38736,40 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
                   Capacity="5">
                   <mssgle:LineSegment
                     End="0,17.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Sequence Container 1\Contact\Import ContactPerson.Paths[Derived Column Output]"
+          TopLeft="374,247">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-50,23.5"
+              Start="0,0"
+              End="-50,16">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,7.75" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,7.75"
+                    Point2="0,11.75"
+                    Point3="-4,11.75" />
+                  <mssgle:LineSegment
+                    End="-46,11.75" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-46,11.75"
+                    Point2="-50,11.75"
+                    Point3="-50,15.75" />
+                  <mssgle:LineSegment
+                    End="-50,16" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -38979,7 +38946,7 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
     design-time-name="Package\Sequence Container 1\Deal Imports\Import Deal-PBS PAA1">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="100,42"
           Id="Package\Sequence Container 1\Deal Imports\Import Deal-PBS PAA1\Sort"
@@ -39027,9 +38994,7 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -39063,9 +39028,7 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -39087,9 +39050,7 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -39120,7 +39081,7 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
     design-time-name="Package\Sequence Container 1\Deal Imports\Import Deal-ProdAcq">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="169,42"
           Id="Package\Sequence Container 1\Deal Imports\Import Deal-ProdAcq\MOS-DealProdACQ"
@@ -39168,9 +39129,7 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -39204,9 +39163,7 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -39240,9 +39197,7 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -39440,7 +39395,7 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
     design-time-name="Package\Sequence Container 1\Rights Imports\Import Rights IN Bv-MOS">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="160,42"
           Id="Package\Sequence Container 1\Rights Imports\Import Rights IN Bv-MOS\MOS-RightsINBV"
@@ -39488,9 +39443,7 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -39524,9 +39477,7 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -39548,9 +39499,7 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -39568,7 +39517,7 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
     design-time-name="Package\Sequence Container 1\Rights Imports\Import RIghts-Blackout">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="180,42"
           Id="Package\Sequence Container 1\Rights Imports\Import RIghts-Blackout\MOS-Rights-Blackout"
@@ -39600,9 +39549,7 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -39624,9 +39571,7 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -39657,7 +39602,7 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
     design-time-name="Package\Sequence Container 1\Rights Imports\Import RIghts-Holdback">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="150,42"
           Id="Package\Sequence Container 1\Rights Imports\Import RIghts-Holdback\MOS-HoldBack"
@@ -39689,9 +39634,7 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -39713,9 +39656,7 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>

@@ -36,6 +36,7 @@ namespace TrafficDataRightLineMapperWebUI
             int iMasterID = (int)gdMasterLookup.DataKeys[e.RowIndex].Values[0];
 
             TextBox tbValue = (TextBox)gdMasterLookup.Rows[e.RowIndex].FindControl("tbValue");
+            TextBox tbTemplate = (TextBox)gdMasterLookup.Rows[e.RowIndex].FindControl("tbTemplate");
 
 
             using (var oContext = new TrafficDataEntities())
@@ -44,6 +45,7 @@ namespace TrafficDataRightLineMapperWebUI
                 MasterLookup oMasterLookup = oContext.MasterLookups.Where(x => x.ID == iMasterID).First();
 
                 oMasterLookup.value = tbValue.Text;
+                oMasterLookup.Template = tbTemplate.Text;
 
                 oContext.SaveChanges();
 
@@ -80,7 +82,6 @@ namespace TrafficDataRightLineMapperWebUI
 
         }
 
-
         private int getSelectedMasterLookupItem()
         {
             string sID = gdMasterLookup.DataKeys[gdMasterLookup.SelectedIndex].Value.ToString();
@@ -98,9 +99,11 @@ namespace TrafficDataRightLineMapperWebUI
                 GridViewRow GrdRow = (GridViewRow)btn.Parent.Parent;
 
                 TextBox tbValue = (TextBox)GrdRow.Cells[2].FindControl("tbValue");
+                TextBox tbTemplate = (TextBox)GrdRow.Cells[2].FindControl("tbTemplate");
 
                 MasterLookup oMasterLookup = new MasterLookup();
                 oMasterLookup.value = tbValue.Text;
+                oMasterLookup.Template = tbTemplate.Text;
 
 
                 oContext.MasterLookups.Add(oMasterLookup);
@@ -156,8 +159,8 @@ namespace TrafficDataRightLineMapperWebUI
 
 
                 MasterLookupValue oMasterLookupValue = new MasterLookupValue();
-                oMasterLookupValue.dbvalue = tbDBValue.Text;
-                oMasterLookupValue.DerivedValue = tbDerivedValue.Text;
+                oMasterLookupValue.BV_Value = tbDBValue.Text;
+                oMasterLookupValue.RL_Value = tbDerivedValue.Text;
                 oMasterLookupValue.field = tbField.Text;
                 oMasterLookupValue.ML_ID = getSelectedMasterLookupItem();
 
@@ -192,8 +195,8 @@ namespace TrafficDataRightLineMapperWebUI
 
                 MasterLookupValue oMasterLookup = oContext.MasterLookupValues.Where(x => x.ID == iMasterID).First();
 
-                oMasterLookup.dbvalue = tbDBValue.Text;
-                oMasterLookup.DerivedValue = tbDerivedValue.Text;
+                oMasterLookup.BV_Value = tbDBValue.Text;
+                oMasterLookup.RL_Value = tbDerivedValue.Text;
                 oMasterLookup.field = tbField.Text;
 
                 oContext.SaveChanges();

@@ -16,5 +16,6 @@ namespace TrafficDataRightLineMapperWebUI
     {
         public int ID { get; set; }
         public string value { get; set; }
+        public string Template { get; set; }
     }
 }

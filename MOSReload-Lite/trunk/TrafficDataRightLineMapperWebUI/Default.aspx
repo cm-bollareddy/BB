@@ -15,7 +15,7 @@
 </asp:Content>
 <asp:Content runat="server" ID="BodyContent" ContentPlaceHolderID="MainContent">
     <h3>&nbsp;</h3>
-    <table width="100%" style="border:none">
+    <table width="100%" style="border: none">
         <tr>
             <td style="vertical-align: top;">
                 <table border="1" style="border: none">
@@ -39,7 +39,7 @@
                                         </asp:TemplateField>
                                         <asp:TemplateField HeaderStyle-HorizontalAlign="Right" >
                                             <HeaderTemplate>
-                                                Value
+                                                Description
                                                 <br />
                                                 <asp:TextBox ID="tbValue" runat="server" Text=''></asp:TextBox>
                                             </HeaderTemplate>
@@ -48,6 +48,21 @@
                                             </EditItemTemplate>
                                             <ItemTemplate>
                                                 <asp:Label ID="lbValue" runat="server" Text='<%# Bind("value") %>'></asp:Label>
+                                            </ItemTemplate>
+
+                                            <HeaderStyle HorizontalAlign="Right"></HeaderStyle>
+                                        </asp:TemplateField>
+                                        <asp:TemplateField HeaderStyle-HorizontalAlign="Right" >
+                                            <HeaderTemplate>
+                                                RightsLine Template
+                                                <br />
+                                                <asp:TextBox ID="tbTemplate" runat="server" Text=''></asp:TextBox>
+                                            </HeaderTemplate>
+                                            <EditItemTemplate>
+                                                <asp:TextBox ID="tbTemplate" runat="server" Text='<%# Bind("Template") %>'></asp:TextBox>
+                                            </EditItemTemplate>
+                                            <ItemTemplate>
+                                                <asp:Label ID="lbValue" runat="server" Text='<%# Bind("Template") %>'></asp:Label>
                                             </ItemTemplate>
 
                                             <HeaderStyle HorizontalAlign="Right"></HeaderStyle>
@@ -122,28 +137,28 @@
                                         </asp:TemplateField>
                                         <asp:TemplateField HeaderText="Value">
                                             <HeaderTemplate>
-                                                DB Value
+                                                BroadView Value
                                                 <br />
                                                 <asp:TextBox ID="tbDBValue" runat="server" Text=''></asp:TextBox>
                                             </HeaderTemplate>
                                             <EditItemTemplate>
-                                                <asp:TextBox ID="tbDBValue" runat="server" Text='<%# Bind("dbvalue") %>'></asp:TextBox>
+                                                <asp:TextBox ID="tbDBValue" runat="server" Text='<%# Bind("bv_value") %>'></asp:TextBox>
                                             </EditItemTemplate>
                                             <ItemTemplate>
-                                                <asp:Label ID="lbDBValue" runat="server" Text='<%# Bind("dbvalue") %>'></asp:Label>
+                                                <asp:Label ID="lbDBValue" runat="server" Text='<%# Bind("bv_value") %>'></asp:Label>
                                             </ItemTemplate>
                                         </asp:TemplateField>
                                         <asp:TemplateField HeaderText="Value">
                                             <HeaderTemplate>
-                                                Derived Value
+                                                RightsLine Value
                                                 <br />
                                                 <asp:TextBox ID="tbDerivedValue" runat="server" Text=''></asp:TextBox>
                                             </HeaderTemplate>
                                             <EditItemTemplate>
-                                                <asp:TextBox ID="tbDerivedValue" runat="server" Text='<%# Bind("derivedvalue") %>'></asp:TextBox>
+                                                <asp:TextBox ID="tbDerivedValue" runat="server" Text='<%# Bind("rl_value") %>'></asp:TextBox>
                                             </EditItemTemplate>
                                             <ItemTemplate>
-                                                <asp:Label ID="lbDerivedValue" runat="server" Text='<%# Bind("derivedvalue") %>'></asp:Label>
+                                                <asp:Label ID="lbDerivedValue" runat="server" Text='<%# Bind("rl_value") %>'></asp:Label>
                                             </ItemTemplate>
                                         </asp:TemplateField>
                                         <asp:CommandField ShowEditButton="True" />

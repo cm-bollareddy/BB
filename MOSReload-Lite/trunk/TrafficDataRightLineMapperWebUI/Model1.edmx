@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="TrafficDataModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+    <Schema Namespace="TrafficDataModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
         <EntityContainer Name="TrafficDataModelStoreContainer">
           <EntitySet Name="MasterLookup" EntityType="TrafficDataModel.Store.MasterLookup" store:Type="Tables" Schema="PBS" />
           <EntitySet Name="MasterLookupValues" EntityType="TrafficDataModel.Store.MasterLookupValues" store:Type="Tables" Schema="PBS" />
@@ -15,6 +15,7 @@
           </Key>
           <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
           <Property Name="value" Type="nvarchar" MaxLength="500" />
+          <Property Name="Template" Type="nvarchar" MaxLength="500" />
         </EntityType>
         <EntityType Name="MasterLookupValues">
           <Key>
@@ -23,11 +24,10 @@
           <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
           <Property Name="ML_ID" Type="int" />
           <Property Name="field" Type="varchar" MaxLength="2000" />
-          <Property Name="dbvalue" Type="nvarchar" MaxLength="2000" />
-          <Property Name="DerivedValue" Type="nvarchar" MaxLength="2000" />
+          <Property Name="BV_Value" Type="nvarchar" MaxLength="2000" />
+          <Property Name="RL_Value" Type="nvarchar" MaxLength="2000" />
         </EntityType>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="TrafficDataModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
@@ -41,6 +41,7 @@
           </Key>
           <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="value" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+          <Property Type="String" Name="Template" MaxLength="500" FixedLength="false" Unicode="true" />
         </EntityType>
         <EntityType Name="MasterLookupValue">
           <Key>
@@ -49,8 +50,8 @@
           <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="ML_ID" Type="Int32" />
           <Property Name="field" Type="String" MaxLength="2000" Unicode="false" FixedLength="false" />
-          <Property Name="dbvalue" Type="String" MaxLength="2000" Unicode="true" FixedLength="false" />
-          <Property Name="DerivedValue" Type="String" MaxLength="2000" Unicode="true" FixedLength="false" />
+          <Property Type="String" Name="BV_Value" MaxLength="2000" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="RL_Value" MaxLength="2000" FixedLength="false" Unicode="true" />
         </EntityType>
       </Schema>
     </edmx:ConceptualModels>
@@ -61,6 +62,7 @@
           <EntitySetMapping Name="MasterLookups">
             <EntityTypeMapping TypeName="TrafficDataModel.MasterLookup">
               <MappingFragment StoreEntitySet="MasterLookup">
+                <ScalarProperty Name="Template" ColumnName="Template" />
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="value" ColumnName="value" />
               </MappingFragment>
@@ -69,12 +71,12 @@
           <EntitySetMapping Name="MasterLookupValues">
             <EntityTypeMapping TypeName="TrafficDataModel.MasterLookupValue">
               <MappingFragment StoreEntitySet="MasterLookupValues">
+                <ScalarProperty Name="RL_Value" ColumnName="RL_Value" />
+                <ScalarProperty Name="BV_Value" ColumnName="BV_Value" />
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="ML_ID" ColumnName="ML_ID" />
                 <ScalarProperty Name="field" ColumnName="field" />
-                <ScalarProperty Name="dbvalue" ColumnName="dbvalue" />
-                <ScalarProperty Name="DerivedValue" ColumnName="DerivedValue" />
-              </MappingFragment>
+                </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
         </EntityContainerMapping>
