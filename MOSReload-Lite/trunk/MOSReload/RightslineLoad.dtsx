@@ -12,8 +12,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="RightslineLoad"
   DTS:PackageType="5"
-  DTS:VersionBuild="440"
-  DTS:VersionGUID="{B352E22A-C14F-4EEF-B48D-FB15F30C11A0}">
+  DTS:VersionBuild="462"
+  DTS:VersionGUID="{6A287F13-8264-4D7A-B9BD-3C42E1CF74D3}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">6</DTS:Property>
   <DTS:ConnectionManagers>
@@ -28,7 +28,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA+vZle3O0r0qczwMXhgPmpAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACV9JnCNwmrSkjGvfMOc4yyAAAAAASAAACgAAAAEAAAAMIHZR93kFu1ddGpXgJgzQEIAAAA30Nby04XotQUAAAAlD5vQPW8vCCdAQwKrFTKtb+bO6U</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA+vZle3O0r0qczwMXhgPmpAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADhxvSih5kJtPeYJzZSC62KAAAAAASAAACgAAAAEAAAAG9g7EZAYIu51LLvfQ23NwUIAAAAsL4tS5MFwKgUAAAA43/MMXrFBm3vnG+6Ixmf0k5tBv4</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -43,7 +43,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA+vZle3O0r0qczwMXhgPmpAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADrwl8bEmCattjaNuPLnkfIAAAAAASAAACgAAAAEAAAAFuhAebbtU8pYqLNCl++DjYIAAAABYbyR/WSsj4UAAAAM2WQELDqSdVzU/WL0kDxlMfuuks</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA+vZle3O0r0qczwMXhgPmpAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADnGxJ45lU40+PSqbME9uUGAAAAAASAAACgAAAAEAAAADik3GyEcWKNN/HuiXHiS34IAAAAwuTStM3fHWMUAAAAmrwZo50hmWkvS51QuNtAZ9kwCCU</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -58,7 +58,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA+vZle3O0r0qczwMXhgPmpAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAc3Ln+R1KBof3mxDhnKkZpAAAAAASAAACgAAAAEAAAAA6CyoYcQak9qVkZi878LjsIAAAAoU4AojndtC8UAAAAoTzOVxlysMwBq6FC45oTqlESA8o</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA+vZle3O0r0qczwMXhgPmpAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACEh31q6YHbRyIG8kQ3PDcWAAAAAASAAACgAAAAEAAAAJzgfi/AvsoBeHcuMPbWOl0IAAAAf6OIP6Tp8AQUAAAAlB2UfDiGcuHQAQFEadnHC2bbaZc</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -73,7 +73,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA+vZle3O0r0qczwMXhgPmpAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAoWxowytInu34ykulvLSp9AAAAAASAAACgAAAAEAAAAEHgh/I9miZZjwHViz1t5Y0IAAAAoPxWqTSlX1YUAAAAV181G1eMHacQKKjCOXZdWg1WjCE</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA+vZle3O0r0qczwMXhgPmpAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABt3noD4V7FhEnH4bKSiMFKAAAAAASAAACgAAAAEAAAAN7/wtPcIJg4opWfbGtY1i0IAAAAM9jY7VrCcXIUAAAAW1iGZGvvkjE25LhQCa20u7cbrco</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -88,7 +88,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA+vZle3O0r0qczwMXhgPmpAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAA1F8LVkZ/1RF2S0ttdtsYRAAAAAASAAACgAAAAEAAAANaY589304hbsXPcgdHcUsMIAAAANHGZ4huq/r0UAAAA+x1bqfoEEAvcwM0PlEuKGD4HVho</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA+vZle3O0r0qczwMXhgPmpAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACC8djz66gJYrWdN1KpGlqeAAAAAASAAACgAAAAEAAAAHjKDrMgblqy/+lcxZ7X2cwIAAAA5iAvefbnsEIUAAAAQbTU18PAFLSqBR396IEfWIEwWrc</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -103,7 +103,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA+vZle3O0r0qczwMXhgPmpAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAQ8+19hH8SyY8/Pt+prft+AAAAAASAAACgAAAAEAAAALXcnqtvlTkkdAYIn9DZItQIAAAAfMgP8tu3jkwUAAAAnShuumE3He80Aq+KZUhwVSRpl6Y</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA+vZle3O0r0qczwMXhgPmpAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACM50NDVqDg6deXLDHzPnx2AAAAAASAAACgAAAAEAAAAHFCM1CQaYXjOXPs0Hb/R7gIAAAAXj2B8DAdEYwUAAAAXbpzhHntQqKUpUP58Ueik3XlhJk</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -1253,7 +1253,7 @@ SELECT distinct
                         <inputColumn
                           refId="Package\Sequence Container\Load xref_DealToFunder\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[ChildID]"
                           cachedDataType="wstr"
-                          cachedLength="103"
+                          cachedLength="112"
                           cachedName="ChildID"
                           externalMetadataColumnId="Package\Sequence Container\Load xref_DealToFunder\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[ChildID]"
                           lineageId="Package\Sequence Container\Load xref_DealToFunder\ADO NET Source.Outputs[ADO NET Source Output].Columns[ChildID]" />
@@ -1317,12 +1317,13 @@ SELECT distinct
 from
 (
 SELECT	DISTINCT 
-		'Offer'+CAST(a.Dea_ID AS NVARCHAR(100)) as ParentID,
-		'org'+CAST(Item_BV_ID AS NVARCHAR(100)) as ChildID
+		'Offer'+CAST(a.Dea_ID AS NVARCHAR(100)) as ParentID
+		 ,'org'+CAST(a.Item_BV_ID AS NVARCHAR) + ':' +  'Offer' + cast(a.Dea_ID as nvarchar) + ':DealFunderID' +  cast(a.dealfundingid as nvarchar) as ChildID
 FROM [TrafficData].[PBS].[vwFunders] a
 join [RightsLineETL-EA].dbo.Apr23_Deals z on z.dea_id = a.Dea_ID
 ) q
 where q.ChildID is not null
+
 
 /*
 select [ParentID],ChildID
@@ -1402,7 +1403,7 @@ where [ChildID] is not null
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
                           externalMetadataColumnId="Package\Sequence Container\Load xref_DealToFunder\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[ChildID]"
-                          length="103"
+                          length="112"
                           lineageId="Package\Sequence Container\Load xref_DealToFunder\ADO NET Source.Outputs[ADO NET Source Output].Columns[ChildID]"
                           name="ChildID"
                           truncationRowDisposition="FailComponent" />
@@ -1417,7 +1418,7 @@ where [ChildID] is not null
                         <externalMetadataColumn
                           refId="Package\Sequence Container\Load xref_DealToFunder\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[ChildID]"
                           dataType="wstr"
-                          length="103"
+                          length="112"
                           name="ChildID" />
                       </externalMetadataColumns>
                     </output>
@@ -1435,7 +1436,7 @@ where [ChildID] is not null
                         <outputColumn
                           refId="Package\Sequence Container\Load xref_DealToFunder\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[ChildID]"
                           dataType="wstr"
-                          length="103"
+                          length="112"
                           lineageId="Package\Sequence Container\Load xref_DealToFunder\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[ChildID]"
                           name="ChildID" />
                         <outputColumn
@@ -8523,6 +8524,24 @@ SELECT
         [Episode.Organization.domain] ,
         [Episode.Organization.OrganizationID] ,
         [Episode.Organization.Role] ,
+        PBS.MoveArticleOfSpeach(CASE WHEN ass.ASS_EPISODETITLE IS NULL
+                                     THEN 'Episode '
+                                          + CAST([TrafficData].[PBS].[vwMOSEpisode].[Episode.Distribution.Number] AS VARCHAR(10))
+                                     WHEN RTRIM(LTRIM(ass.ass_episodetitle)) = ''
+                                     THEN 'Episode '
+                                          + CAST([TrafficData].[PBS].[vwMOSEpisode].[Episode.Distribution.Number] AS VARCHAR(10))
+                                     ELSE RTRIM(LTRIM(ass.ASS_EPISODETITLE))
+                                END) [Episode.Title.Corrected] ,
+        PBS.MoveArticleOfSpeach(CASE WHEN ass.ASS_EPISODETITLE IS NULL
+                                     THEN 'Episode '
+                                          + CAST([TrafficData].[PBS].[vwMOSEpisode].[Episode.Distribution.Number] AS VARCHAR(10))
+                                     WHEN RTRIM(LTRIM(ass.ass_episodetitle)) = ''
+                                     THEN 'Episode '
+                                          + CAST([TrafficData].[PBS].[vwMOSEpisode].[Episode.Distribution.Number] AS VARCHAR(10))
+                                     ELSE SUBSTRING(RTRIM(LTRIM(ass.ass_episodetitle)),
+                                                    1, 120)
+                                END) AS [Episode.Title120.Corrected] ,
+		/*
         PBS.MoveArticleOfSpeach(CASE WHEN ass.ASS_EPISODETITLE IS NOT NULL
                                      THEN RTRIM(LTRIM(ass.ASS_EPISODETITLE))
                                      ELSE 'Episode '
@@ -8534,6 +8553,7 @@ SELECT
                                      ELSE 'Episode '
                                           + CAST([TrafficData].[PBS].[vwMOSEpisode].[Episode.EpisodeNumber] AS VARCHAR(10))
                                 END) AS [Episode.Title120.Corrected] ,
+		*/
         [Episode.TitleClass] ,
         [Episode.EpisodeNumber] ,
         [Episode.EpisodeClass] ,
@@ -8560,10 +8580,20 @@ SELECT
         SUBSTRING([Episode.ContentIdentifier],
                   CHARINDEX('NOLARoot', [Episode.ContentIdentifier]) + 9,
                   LEN([Episode.ParentID])) AS Nolacode ,
+        CASE WHEN ass.ASS_EPISODETITLE IS NULL
+             THEN 'Episode '
+                  + CAST([TrafficData].[PBS].[vwMOSEpisode].[Episode.Distribution.Number] AS VARCHAR(10))
+             WHEN RTRIM(LTRIM(ass.ass_episodetitle)) = ''
+             THEN 'Episode '
+                  + CAST([TrafficData].[PBS].[vwMOSEpisode].[Episode.Distribution.Number] AS VARCHAR(10))
+             ELSE RTRIM(LTRIM(ass.ASS_EPISODETITLE))
+        END AS [DisplayFriendlyTitle] , 
+		/*
         CASE WHEN ass.ASS_EPISODETITLE IS NOT NULL THEN ass.ASS_EPISODETITLE
              ELSE 'Episode '
                   + CAST([TrafficData].[PBS].[vwMOSEpisode].[Episode.EpisodeNumber] AS VARCHAR(10))
         END AS [DisplayFriendlyTitle] ,
+		*/
         mlvAssIsPublished.rl_value AS entity_status ,
         CAST(mlvWorkflowStatus.rl_value AS INT) AS WorkflowStatus ,
         CASE [Episode.TitleClass]
@@ -8644,7 +8674,8 @@ WHERE   EXT_SEXTC_ID = 607871753 -- RightslineTemplate Column
                                     'cid:org:pbs.org:Season3Series618586648',
                                     'cid:org:pbs.org:Season4Series618586647',
                                     'cid:org:pbs.org:Season4Series618587765',
-                                    'cid:org:pbs.org:Season1Series615807153' )</property>
+                                    'cid:org:pbs.org:Season1Series615807153' )
+OR ass.ass_id = 459172855</property>
                         <property
                           dataType="System.String"
                           description="The variable that contains the SQL command to be executed."
@@ -23648,9 +23679,8 @@ SELECT [Series.UID]
                           <inputColumns>
                             <inputColumn
                               refId="Package\Sequence Container 1\Contact\Import Company\Derived Column.Inputs[Derived Column Input].Columns[PBSContactType]"
-                              cachedCodepage="1252"
-                              cachedDataType="str"
-                              cachedLength="19"
+                              cachedDataType="wstr"
+                              cachedLength="2000"
                               cachedName="PBSContactType"
                               lineageId="Package\Sequence Container 1\Contact\Import Company\Sort.Outputs[Sort Output].Columns[PBSContactType]" />
                             <inputColumn
@@ -23892,12 +23922,11 @@ join [RightsLineETL].[dbo].[Apr23_Deals] Apr23 on Apr23.DEA_ID = substring(xref.
                           <outputColumns>
                             <outputColumn
                               refId="Package\Sequence Container 1\Contact\Import Company\MOS-Company.Outputs[OLE DB Source Output].Columns[PBSContactType]"
-                              codePage="1252"
-                              dataType="str"
+                              dataType="wstr"
                               errorOrTruncationOperation="Conversion"
                               errorRowDisposition="FailComponent"
                               externalMetadataColumnId="Package\Sequence Container 1\Contact\Import Company\MOS-Company.Outputs[OLE DB Source Output].ExternalColumns[PBSContactType]"
-                              length="19"
+                              length="2000"
                               lineageId="Package\Sequence Container 1\Contact\Import Company\MOS-Company.Outputs[OLE DB Source Output].Columns[PBSContactType]"
                               name="PBSContactType"
                               truncationRowDisposition="FailComponent" />
@@ -24016,9 +24045,8 @@ join [RightsLineETL].[dbo].[Apr23_Deals] Apr23 on Apr23.DEA_ID = substring(xref.
                             isUsed="True">
                             <externalMetadataColumn
                               refId="Package\Sequence Container 1\Contact\Import Company\MOS-Company.Outputs[OLE DB Source Output].ExternalColumns[PBSContactType]"
-                              codePage="1252"
-                              dataType="str"
-                              length="19"
+                              dataType="wstr"
+                              length="2000"
                               name="PBSContactType" />
                             <externalMetadataColumn
                               refId="Package\Sequence Container 1\Contact\Import Company\MOS-Company.Outputs[OLE DB Source Output].ExternalColumns[CommonName]"
@@ -24084,9 +24112,8 @@ join [RightsLineETL].[dbo].[Apr23_Deals] Apr23 on Apr23.DEA_ID = substring(xref.
                           <outputColumns>
                             <outputColumn
                               refId="Package\Sequence Container 1\Contact\Import Company\MOS-Company.Outputs[OLE DB Source Error Output].Columns[PBSContactType]"
-                              codePage="1252"
-                              dataType="str"
-                              length="19"
+                              dataType="wstr"
+                              length="2000"
                               lineageId="Package\Sequence Container 1\Contact\Import Company\MOS-Company.Outputs[OLE DB Source Error Output].Columns[PBSContactType]"
                               name="PBSContactType" />
                             <outputColumn
@@ -24448,9 +24475,8 @@ join [RightsLineETL].[dbo].[Apr23_Deals] Apr23 on Apr23.DEA_ID = substring(xref.
                           <inputColumns>
                             <inputColumn
                               refId="Package\Sequence Container 1\Contact\Import Company\Sort.Inputs[Sort Input].Columns[PBSContactType]"
-                              cachedCodepage="1252"
-                              cachedDataType="str"
-                              cachedLength="19"
+                              cachedDataType="wstr"
+                              cachedLength="2000"
                               cachedName="PBSContactType"
                               lineageId="Package\Sequence Container 1\Contact\Import Company\MOS-Company.Outputs[OLE DB Source Output].Columns[PBSContactType]">
                               <properties>
@@ -24663,9 +24689,8 @@ join [RightsLineETL].[dbo].[Apr23_Deals] Apr23 on Apr23.DEA_ID = substring(xref.
                           <outputColumns>
                             <outputColumn
                               refId="Package\Sequence Container 1\Contact\Import Company\Sort.Outputs[Sort Output].Columns[PBSContactType]"
-                              codePage="1252"
-                              dataType="str"
-                              length="19"
+                              dataType="wstr"
+                              length="2000"
                               lineageId="Package\Sequence Container 1\Contact\Import Company\Sort.Outputs[Sort Output].Columns[PBSContactType]"
                               name="PBSContactType">
                               <properties>
@@ -24886,9 +24911,8 @@ join [RightsLineETL].[dbo].[Apr23_Deals] Apr23 on Apr23.DEA_ID = substring(xref.
                           <inputColumns>
                             <inputColumn
                               refId="Package\Sequence Container 1\Contact\Import ContactPerson\Derived Column.Inputs[Derived Column Input].Columns[ContactType]"
-                              cachedCodepage="1252"
-                              cachedDataType="str"
-                              cachedLength="19"
+                              cachedDataType="wstr"
+                              cachedLength="2000"
                               cachedName="ContactType"
                               lineageId="Package\Sequence Container 1\Contact\Import ContactPerson\Sort.Outputs[Sort Output].Columns[ContactType]" />
                             <inputColumn
@@ -24933,9 +24957,8 @@ join [RightsLineETL].[dbo].[Apr23_Deals] Apr23 on Apr23.DEA_ID = substring(xref.
                               lineageId="Package\Sequence Container 1\Contact\Import ContactPerson\Sort.Outputs[Sort Output].Columns[AddressLine2]" />
                             <inputColumn
                               refId="Package\Sequence Container 1\Contact\Import ContactPerson\Derived Column.Inputs[Derived Column Input].Columns[AddressType]"
-                              cachedCodepage="1252"
-                              cachedDataType="str"
-                              cachedLength="5"
+                              cachedDataType="wstr"
+                              cachedLength="2000"
                               cachedName="AddressType"
                               lineageId="Package\Sequence Container 1\Contact\Import ContactPerson\Sort.Outputs[Sort Output].Columns[AddressType]" />
                           </inputColumns>
@@ -25271,12 +25294,11 @@ select * from pbs.ExternalContactPerson where dealid in( '592707727','236035779'
                               truncationRowDisposition="FailComponent" />
                             <outputColumn
                               refId="Package\Sequence Container 1\Contact\Import ContactPerson\MOS-Person.Outputs[OLE DB Source Output].Columns[ContactType]"
-                              codePage="1252"
-                              dataType="str"
+                              dataType="wstr"
                               errorOrTruncationOperation="Conversion"
                               errorRowDisposition="FailComponent"
                               externalMetadataColumnId="Package\Sequence Container 1\Contact\Import ContactPerson\MOS-Person.Outputs[OLE DB Source Output].ExternalColumns[ContactType]"
-                              length="19"
+                              length="2000"
                               lineageId="Package\Sequence Container 1\Contact\Import ContactPerson\MOS-Person.Outputs[OLE DB Source Output].Columns[ContactType]"
                               name="ContactType"
                               truncationRowDisposition="FailComponent" />
@@ -25395,12 +25417,11 @@ select * from pbs.ExternalContactPerson where dealid in( '592707727','236035779'
                               truncationRowDisposition="FailComponent" />
                             <outputColumn
                               refId="Package\Sequence Container 1\Contact\Import ContactPerson\MOS-Person.Outputs[OLE DB Source Output].Columns[AddressType]"
-                              codePage="1252"
-                              dataType="str"
+                              dataType="wstr"
                               errorOrTruncationOperation="Conversion"
                               errorRowDisposition="FailComponent"
                               externalMetadataColumnId="Package\Sequence Container 1\Contact\Import ContactPerson\MOS-Person.Outputs[OLE DB Source Output].ExternalColumns[AddressType]"
-                              length="5"
+                              length="2000"
                               lineageId="Package\Sequence Container 1\Contact\Import ContactPerson\MOS-Person.Outputs[OLE DB Source Output].Columns[AddressType]"
                               name="AddressType"
                               truncationRowDisposition="FailComponent" />
@@ -25432,9 +25453,8 @@ select * from pbs.ExternalContactPerson where dealid in( '592707727','236035779'
                               name="DealID" />
                             <externalMetadataColumn
                               refId="Package\Sequence Container 1\Contact\Import ContactPerson\MOS-Person.Outputs[OLE DB Source Output].ExternalColumns[ContactType]"
-                              codePage="1252"
-                              dataType="str"
-                              length="19"
+                              dataType="wstr"
+                              length="2000"
                               name="ContactType" />
                             <externalMetadataColumn
                               refId="Package\Sequence Container 1\Contact\Import ContactPerson\MOS-Person.Outputs[OLE DB Source Output].ExternalColumns[Firstname]"
@@ -25496,9 +25516,8 @@ select * from pbs.ExternalContactPerson where dealid in( '592707727','236035779'
                               name="AddressLine2" />
                             <externalMetadataColumn
                               refId="Package\Sequence Container 1\Contact\Import ContactPerson\MOS-Person.Outputs[OLE DB Source Output].ExternalColumns[AddressType]"
-                              codePage="1252"
-                              dataType="str"
-                              length="5"
+                              dataType="wstr"
+                              length="2000"
                               name="AddressType" />
                             <externalMetadataColumn
                               refId="Package\Sequence Container 1\Contact\Import ContactPerson\MOS-Person.Outputs[OLE DB Source Output].ExternalColumns[BV ID]"
@@ -25523,9 +25542,8 @@ select * from pbs.ExternalContactPerson where dealid in( '592707727','236035779'
                               name="DealID" />
                             <outputColumn
                               refId="Package\Sequence Container 1\Contact\Import ContactPerson\MOS-Person.Outputs[OLE DB Source Error Output].Columns[ContactType]"
-                              codePage="1252"
-                              dataType="str"
-                              length="19"
+                              dataType="wstr"
+                              length="2000"
                               lineageId="Package\Sequence Container 1\Contact\Import ContactPerson\MOS-Person.Outputs[OLE DB Source Error Output].Columns[ContactType]"
                               name="ContactType" />
                             <outputColumn
@@ -25599,9 +25617,8 @@ select * from pbs.ExternalContactPerson where dealid in( '592707727','236035779'
                               name="AddressLine2" />
                             <outputColumn
                               refId="Package\Sequence Container 1\Contact\Import ContactPerson\MOS-Person.Outputs[OLE DB Source Error Output].Columns[AddressType]"
-                              codePage="1252"
-                              dataType="str"
-                              length="5"
+                              dataType="wstr"
+                              length="2000"
                               lineageId="Package\Sequence Container 1\Contact\Import ContactPerson\MOS-Person.Outputs[OLE DB Source Error Output].Columns[AddressType]"
                               name="AddressType" />
                             <outputColumn
@@ -25794,21 +25811,21 @@ select * from pbs.ExternalContactPerson where dealid in( '592707727','236035779'
                             <inputColumn
                               refId="Package\Sequence Container 1\Contact\Import ContactPerson\RL-Person.Inputs[OLE DB Destination Input].Columns[dr_AddressLine1]"
                               cachedDataType="wstr"
-                              cachedLength="1000"
+                              cachedLength="120"
                               cachedName="dr_AddressLine1"
                               externalMetadataColumnId="Package\Sequence Container 1\Contact\Import ContactPerson\RL-Person.Inputs[OLE DB Destination Input].ExternalColumns[additional_address_line_1]"
                               lineageId="Package\Sequence Container 1\Contact\Import ContactPerson\Derived Column.Outputs[Derived Column Output].Columns[dr_AddressLine1]" />
                             <inputColumn
                               refId="Package\Sequence Container 1\Contact\Import ContactPerson\RL-Person.Inputs[OLE DB Destination Input].Columns[dr_AddressType]"
                               cachedDataType="wstr"
-                              cachedLength="50"
+                              cachedLength="5"
                               cachedName="dr_AddressType"
                               externalMetadataColumnId="Package\Sequence Container 1\Contact\Import ContactPerson\RL-Person.Inputs[OLE DB Destination Input].ExternalColumns[additional_address_type]"
                               lineageId="Package\Sequence Container 1\Contact\Import ContactPerson\Derived Column.Outputs[Derived Column Output].Columns[dr_AddressType]" />
                             <inputColumn
                               refId="Package\Sequence Container 1\Contact\Import ContactPerson\RL-Person.Inputs[OLE DB Destination Input].Columns[dr_AddressLine2]"
                               cachedDataType="wstr"
-                              cachedLength="1000"
+                              cachedLength="80"
                               cachedName="dr_AddressLine2"
                               externalMetadataColumnId="Package\Sequence Container 1\Contact\Import ContactPerson\RL-Person.Inputs[OLE DB Destination Input].ExternalColumns[additional_address_line_2]"
                               lineageId="Package\Sequence Container 1\Contact\Import ContactPerson\Derived Column.Outputs[Derived Column Output].Columns[dr_AddressLine2]" />
@@ -25947,9 +25964,8 @@ select * from pbs.ExternalContactPerson where dealid in( '592707727','236035779'
                           <inputColumns>
                             <inputColumn
                               refId="Package\Sequence Container 1\Contact\Import ContactPerson\Sort.Inputs[Sort Input].Columns[ContactType]"
-                              cachedCodepage="1252"
-                              cachedDataType="str"
-                              cachedLength="19"
+                              cachedDataType="wstr"
+                              cachedLength="2000"
                               cachedName="ContactType"
                               lineageId="Package\Sequence Container 1\Contact\Import ContactPerson\MOS-Person.Outputs[OLE DB Source Output].Columns[ContactType]">
                               <properties>
@@ -26172,9 +26188,8 @@ select * from pbs.ExternalContactPerson where dealid in( '592707727','236035779'
                             </inputColumn>
                             <inputColumn
                               refId="Package\Sequence Container 1\Contact\Import ContactPerson\Sort.Inputs[Sort Input].Columns[AddressType]"
-                              cachedCodepage="1252"
-                              cachedDataType="str"
-                              cachedLength="5"
+                              cachedDataType="wstr"
+                              cachedLength="2000"
                               cachedName="AddressType"
                               lineageId="Package\Sequence Container 1\Contact\Import ContactPerson\MOS-Person.Outputs[OLE DB Source Output].Columns[AddressType]">
                               <properties>
@@ -26200,9 +26215,8 @@ select * from pbs.ExternalContactPerson where dealid in( '592707727','236035779'
                           <outputColumns>
                             <outputColumn
                               refId="Package\Sequence Container 1\Contact\Import ContactPerson\Sort.Outputs[Sort Output].Columns[ContactType]"
-                              codePage="1252"
-                              dataType="str"
-                              length="19"
+                              dataType="wstr"
+                              length="2000"
                               lineageId="Package\Sequence Container 1\Contact\Import ContactPerson\Sort.Outputs[Sort Output].Columns[ContactType]"
                               name="ContactType">
                               <properties>
@@ -26389,9 +26403,8 @@ select * from pbs.ExternalContactPerson where dealid in( '592707727','236035779'
                             </outputColumn>
                             <outputColumn
                               refId="Package\Sequence Container 1\Contact\Import ContactPerson\Sort.Outputs[Sort Output].Columns[AddressType]"
-                              codePage="1252"
-                              dataType="str"
-                              length="5"
+                              dataType="wstr"
+                              length="2000"
                               lineageId="Package\Sequence Container 1\Contact\Import ContactPerson\Sort.Outputs[Sort Output].Columns[AddressType]"
                               name="AddressType">
                               <properties>
@@ -26592,13 +26605,14 @@ SELECT distinct cast('Underwriter' as nvarchar(20)) as PBSContactType
      ,[FUNDERNAME]
      ,cast(rtrim(ltrim([Funder_Type])) as nvarchar(100))as Funder_Type
      ,cast(rtrim(ltrim([Funder_Class])) as nvarchar(100)) as Funder_Class
-     ,[CPB_Share_Funder]
+     ,CPB_Share_Funder
     ,[CommonName] as entity_title
 from pbs.UnderWriter ext
-join [RightsLineETL-SixPrograms].[dbo].xref_DealToUnderwriter xref on xref.ChildID = replace(ext.item_bv_id,'org','')
+join [RightsLineETL-light].[dbo].xref_DealToUnderwriter xref on xref.ChildID = ext.item_bv_id
 --left join [RightsLineETL].[dbo].[Apr23_Deals] Apr23 on Apr23.DEA_ID = replace(xref.ParentID,'cid:org:pbs.org:Offer','')
 
-join cteDealQuery cte on cte.dea_id = replace(xref.ParentID,'cid:org:pbs.org:Offer','')
+join cteDealQuery cte on cte.dea_id = replace(xref.ParentID,'Offer','')
+
 
 /*
 SELECT distinct cast('Underwriter' as nvarchar(20)) as PBSContactType
@@ -26800,12 +26814,11 @@ where 'Offer'+xref.ParentID in ('Offer592707727','Offer236035779','Offer58976336
                               truncationRowDisposition="FailComponent" />
                             <outputColumn
                               refId="Package\Sequence Container 1\Contact\Import Underwriter\MOS-UNderwriter.Outputs[OLE DB Source Output].Columns[CPB_Share_Funder]"
-                              codePage="1252"
-                              dataType="str"
+                              dataType="wstr"
                               errorOrTruncationOperation="Conversion"
                               errorRowDisposition="FailComponent"
                               externalMetadataColumnId="Package\Sequence Container 1\Contact\Import Underwriter\MOS-UNderwriter.Outputs[OLE DB Source Output].ExternalColumns[CPB_Share_Funder]"
-                              length="3"
+                              length="2000"
                               lineageId="Package\Sequence Container 1\Contact\Import Underwriter\MOS-UNderwriter.Outputs[OLE DB Source Output].Columns[CPB_Share_Funder]"
                               name="CPB_Share_Funder"
                               truncationRowDisposition="FailComponent" />
@@ -26923,9 +26936,8 @@ where 'Offer'+xref.ParentID in ('Offer592707727','Offer236035779','Offer58976336
                               name="Funder_Class" />
                             <externalMetadataColumn
                               refId="Package\Sequence Container 1\Contact\Import Underwriter\MOS-UNderwriter.Outputs[OLE DB Source Output].ExternalColumns[CPB_Share_Funder]"
-                              codePage="1252"
-                              dataType="str"
-                              length="3"
+                              dataType="wstr"
+                              length="2000"
                               name="CPB_Share_Funder" />
                             <externalMetadataColumn
                               refId="Package\Sequence Container 1\Contact\Import Underwriter\MOS-UNderwriter.Outputs[OLE DB Source Output].ExternalColumns[entity_title]"
@@ -27036,9 +27048,8 @@ where 'Offer'+xref.ParentID in ('Offer592707727','Offer236035779','Offer58976336
                               name="FUNDERNAME" />
                             <outputColumn
                               refId="Package\Sequence Container 1\Contact\Import Underwriter\MOS-UNderwriter.Outputs[OLE DB Source Error Output].Columns[CPB_Share_Funder]"
-                              codePage="1252"
-                              dataType="str"
-                              length="3"
+                              dataType="wstr"
+                              length="2000"
                               lineageId="Package\Sequence Container 1\Contact\Import Underwriter\MOS-UNderwriter.Outputs[OLE DB Source Error Output].Columns[CPB_Share_Funder]"
                               name="CPB_Share_Funder" />
                             <outputColumn
@@ -27180,9 +27191,8 @@ where 'Offer'+xref.ParentID in ('Offer592707727','Offer236035779','Offer58976336
                               lineageId="Package\Sequence Container 1\Contact\Import Underwriter\Sort.Outputs[Sort Output].Columns[State_or_Province]" />
                             <inputColumn
                               refId="Package\Sequence Container 1\Contact\Import Underwriter\RL Dest - Underwriter.Inputs[OLE DB Destination Input].Columns[CPB_Share_Funder]"
-                              cachedCodepage="1252"
-                              cachedDataType="str"
-                              cachedLength="3"
+                              cachedDataType="wstr"
+                              cachedLength="2000"
                               cachedName="CPB_Share_Funder"
                               externalMetadataColumnId="Package\Sequence Container 1\Contact\Import Underwriter\RL Dest - Underwriter.Inputs[OLE DB Destination Input].ExternalColumns[CPB_Share_Funder]"
                               lineageId="Package\Sequence Container 1\Contact\Import Underwriter\Sort.Outputs[Sort Output].Columns[CPB_Share_Funder]" />
@@ -27287,8 +27297,8 @@ where 'Offer'+xref.ParentID in ('Offer592707727','Offer236035779','Offer58976336
                               name="State_or_Province" />
                             <externalMetadataColumn
                               refId="Package\Sequence Container 1\Contact\Import Underwriter\RL Dest - Underwriter.Inputs[OLE DB Destination Input].ExternalColumns[CPB_Share_Funder]"
-                              codePage="1252"
-                              dataType="text"
+                              dataType="wstr"
+                              length="2000"
                               name="CPB_Share_Funder" />
                             <externalMetadataColumn
                               refId="Package\Sequence Container 1\Contact\Import Underwriter\RL Dest - Underwriter.Inputs[OLE DB Destination Input].ExternalColumns[phone_primary]"
@@ -27649,9 +27659,8 @@ where 'Offer'+xref.ParentID in ('Offer592707727','Offer236035779','Offer58976336
                             </inputColumn>
                             <inputColumn
                               refId="Package\Sequence Container 1\Contact\Import Underwriter\Sort.Inputs[Sort Input].Columns[CPB_Share_Funder]"
-                              cachedCodepage="1252"
-                              cachedDataType="str"
-                              cachedLength="3"
+                              cachedDataType="wstr"
+                              cachedLength="2000"
                               cachedName="CPB_Share_Funder"
                               lineageId="Package\Sequence Container 1\Contact\Import Underwriter\MOS-UNderwriter.Outputs[OLE DB Source Output].Columns[CPB_Share_Funder]">
                               <properties>
@@ -27918,9 +27927,8 @@ where 'Offer'+xref.ParentID in ('Offer592707727','Offer236035779','Offer58976336
                             </outputColumn>
                             <outputColumn
                               refId="Package\Sequence Container 1\Contact\Import Underwriter\Sort.Outputs[Sort Output].Columns[CPB_Share_Funder]"
-                              codePage="1252"
-                              dataType="str"
-                              length="3"
+                              dataType="wstr"
+                              length="2000"
                               lineageId="Package\Sequence Container 1\Contact\Import Underwriter\Sort.Outputs[Sort Output].Columns[CPB_Share_Funder]"
                               name="CPB_Share_Funder">
                               <properties>
@@ -30227,7 +30235,6 @@ select	distinct 'MasterOffer' + cast(d.MDL_ID as nvarchar(100)) as Item_BV_ID,
 		e.Programming_service,
 		mlvPBSD_Label.rl_value AS entity_status ,
 		CAST(mlvWorkflowStatus.rl_value AS INT) AS WorkflowStatus,
-		cast('No' as nvarchar) as [RevBackToCPB],
 		cast('No' as nvarchar) as [PBSCanSecureUnderWriting],
 		0 as fee,
 		0 as total_budget,
@@ -30370,16 +30377,6 @@ LEFT JOIN [PBS].[MasterLookupValues] mlvWorkflowStatus ON mlvWorkflowStatus.ml_i
                               name="Programming_service"
                               truncationRowDisposition="FailComponent" />
                             <outputColumn
-                              refId="Package\Sequence Container 1\Deal Imports\Import Deal-PBS Prod and Acq Merged\MOS-DealPbs ProdAcq Merged Data.Outputs[OLE DB Source Output].Columns[RevBackToCPB]"
-                              dataType="wstr"
-                              errorOrTruncationOperation="Conversion"
-                              errorRowDisposition="FailComponent"
-                              externalMetadataColumnId="Package\Sequence Container 1\Deal Imports\Import Deal-PBS Prod and Acq Merged\MOS-DealPbs ProdAcq Merged Data.Outputs[OLE DB Source Output].ExternalColumns[RevBackToCPB]"
-                              length="30"
-                              lineageId="Package\Sequence Container 1\Deal Imports\Import Deal-PBS Prod and Acq Merged\MOS-DealPbs ProdAcq Merged Data.Outputs[OLE DB Source Output].Columns[RevBackToCPB]"
-                              name="RevBackToCPB"
-                              truncationRowDisposition="FailComponent" />
-                            <outputColumn
                               refId="Package\Sequence Container 1\Deal Imports\Import Deal-PBS Prod and Acq Merged\MOS-DealPbs ProdAcq Merged Data.Outputs[OLE DB Source Output].Columns[PBSCanSecureUnderWriting]"
                               dataType="wstr"
                               errorOrTruncationOperation="Conversion"
@@ -30459,11 +30456,6 @@ LEFT JOIN [PBS].[MasterLookupValues] mlvWorkflowStatus ON mlvWorkflowStatus.ml_i
                               length="33"
                               name="Programming_service" />
                             <externalMetadataColumn
-                              refId="Package\Sequence Container 1\Deal Imports\Import Deal-PBS Prod and Acq Merged\MOS-DealPbs ProdAcq Merged Data.Outputs[OLE DB Source Output].ExternalColumns[RevBackToCPB]"
-                              dataType="wstr"
-                              length="30"
-                              name="RevBackToCPB" />
-                            <externalMetadataColumn
                               refId="Package\Sequence Container 1\Deal Imports\Import Deal-PBS Prod and Acq Merged\MOS-DealPbs ProdAcq Merged Data.Outputs[OLE DB Source Output].ExternalColumns[PBSCanSecureUnderWriting]"
                               dataType="wstr"
                               length="30"
@@ -30527,12 +30519,6 @@ LEFT JOIN [PBS].[MasterLookupValues] mlvWorkflowStatus ON mlvWorkflowStatus.ml_i
                               dataType="i4"
                               lineageId="Package\Sequence Container 1\Deal Imports\Import Deal-PBS Prod and Acq Merged\MOS-DealPbs ProdAcq Merged Data.Outputs[OLE DB Source Error Output].Columns[WorkflowStatus]"
                               name="WorkflowStatus" />
-                            <outputColumn
-                              refId="Package\Sequence Container 1\Deal Imports\Import Deal-PBS Prod and Acq Merged\MOS-DealPbs ProdAcq Merged Data.Outputs[OLE DB Source Error Output].Columns[RevBackToCPB]"
-                              dataType="wstr"
-                              length="30"
-                              lineageId="Package\Sequence Container 1\Deal Imports\Import Deal-PBS Prod and Acq Merged\MOS-DealPbs ProdAcq Merged Data.Outputs[OLE DB Source Error Output].Columns[RevBackToCPB]"
-                              name="RevBackToCPB" />
                             <outputColumn
                               refId="Package\Sequence Container 1\Deal Imports\Import Deal-PBS Prod and Acq Merged\MOS-DealPbs ProdAcq Merged Data.Outputs[OLE DB Source Error Output].Columns[PBSCanSecureUnderWriting]"
                               dataType="wstr"
@@ -30783,11 +30769,6 @@ LEFT JOIN [PBS].[MasterLookupValues] mlvWorkflowStatus ON mlvWorkflowStatus.ml_i
                               dataType="numeric"
                               name="cpb_funding"
                               precision="18" />
-                            <externalMetadataColumn
-                              refId="Package\Sequence Container 1\Deal Imports\Import Deal-PBS Prod and Acq Merged\RL-DealPBS Prod and Acq Merged.Inputs[OLE DB Destination Input].ExternalColumns[producerlicensor_shares_revenue_back_to_cpb]"
-                              dataType="wstr"
-                              length="100"
-                              name="producerlicensor_shares_revenue_back_to_cpb" />
                             <externalMetadataColumn
                               refId="Package\Sequence Container 1\Deal Imports\Import Deal-PBS Prod and Acq Merged\RL-DealPBS Prod and Acq Merged.Inputs[OLE DB Destination Input].ExternalColumns[producer_can_secure_underwriting]"
                               dataType="wstr"
@@ -31095,8 +31076,6 @@ WITH    cteMergedDeals ( Dea_ID )
             [financial_notes] ,
             [total_budget] ,
             [cpb_funding] ,
-            --CAST([RevBacktoCPB] AS NVARCHAR) AS [RevBackToCPB] ,
-           cast('No' as nvarchar) as [RevBackToCPB], 
             [RightsAndRestrictionsNotes] ,
             CAST([PBSCanSecureUnderWriting] AS NVARCHAR) AS [PBSCanSecureUnderWriting] ,
             [DealProdAcQ].[dea_id] ,
@@ -31358,16 +31337,6 @@ join cteDealQuery q on q.dea_id = [DealProdAcQ].dea_id
                               name="dealid"
                               truncationRowDisposition="FailComponent" />
                             <outputColumn
-                              refId="Package\Sequence Container 1\Deal Imports\Import Deal-ProdAcq\MOS-DealProdACQ.Outputs[OLE DB Source Output].Columns[RevBackToCPB]"
-                              dataType="wstr"
-                              errorOrTruncationOperation="Conversion"
-                              errorRowDisposition="FailComponent"
-                              externalMetadataColumnId="Package\Sequence Container 1\Deal Imports\Import Deal-ProdAcq\MOS-DealProdACQ.Outputs[OLE DB Source Output].ExternalColumns[RevBackToCPB]"
-                              length="30"
-                              lineageId="Package\Sequence Container 1\Deal Imports\Import Deal-ProdAcq\MOS-DealProdACQ.Outputs[OLE DB Source Output].Columns[RevBackToCPB]"
-                              name="RevBackToCPB"
-                              truncationRowDisposition="FailComponent" />
-                            <outputColumn
                               refId="Package\Sequence Container 1\Deal Imports\Import Deal-ProdAcq\MOS-DealProdACQ.Outputs[OLE DB Source Output].Columns[entity_status]"
                               dataType="wstr"
                               errorOrTruncationOperation="Conversion"
@@ -31461,11 +31430,6 @@ join cteDealQuery q on q.dea_id = [DealProdAcQ].dea_id
                               length="35"
                               name="dealid" />
                             <externalMetadataColumn
-                              refId="Package\Sequence Container 1\Deal Imports\Import Deal-ProdAcq\MOS-DealProdACQ.Outputs[OLE DB Source Output].ExternalColumns[RevBackToCPB]"
-                              dataType="wstr"
-                              length="30"
-                              name="RevBackToCPB" />
-                            <externalMetadataColumn
                               refId="Package\Sequence Container 1\Deal Imports\Import Deal-ProdAcq\MOS-DealProdACQ.Outputs[OLE DB Source Output].ExternalColumns[entity_status]"
                               dataType="wstr"
                               length="2000"
@@ -31543,12 +31507,6 @@ join cteDealQuery q on q.dea_id = [DealProdAcQ].dea_id
                               dataType="i4"
                               lineageId="Package\Sequence Container 1\Deal Imports\Import Deal-ProdAcq\MOS-DealProdACQ.Outputs[OLE DB Source Error Output].Columns[cpb_funding]"
                               name="cpb_funding" />
-                            <outputColumn
-                              refId="Package\Sequence Container 1\Deal Imports\Import Deal-ProdAcq\MOS-DealProdACQ.Outputs[OLE DB Source Error Output].Columns[RevBackToCPB]"
-                              dataType="wstr"
-                              length="30"
-                              lineageId="Package\Sequence Container 1\Deal Imports\Import Deal-ProdAcq\MOS-DealProdACQ.Outputs[OLE DB Source Error Output].Columns[RevBackToCPB]"
-                              name="RevBackToCPB" />
                             <outputColumn
                               refId="Package\Sequence Container 1\Deal Imports\Import Deal-ProdAcq\MOS-DealProdACQ.Outputs[OLE DB Source Error Output].Columns[RightsAndRestrictionsNotes]"
                               dataType="wstr"
@@ -31723,13 +31681,6 @@ join cteDealQuery q on q.dea_id = [DealProdAcQ].dea_id
                               externalMetadataColumnId="Package\Sequence Container 1\Deal Imports\Import Deal-ProdAcq\RL-DealProdACQ.Inputs[OLE DB Destination Input].ExternalColumns[fee]"
                               lineageId="Package\Sequence Container 1\Deal Imports\Import Deal-ProdAcq\Sort 1.Outputs[Sort Output].Columns[total_pbs_fees]" />
                             <inputColumn
-                              refId="Package\Sequence Container 1\Deal Imports\Import Deal-ProdAcq\RL-DealProdACQ.Inputs[OLE DB Destination Input].Columns[RevBackToCPB]"
-                              cachedDataType="wstr"
-                              cachedLength="30"
-                              cachedName="RevBackToCPB"
-                              externalMetadataColumnId="Package\Sequence Container 1\Deal Imports\Import Deal-ProdAcq\RL-DealProdACQ.Inputs[OLE DB Destination Input].ExternalColumns[producerlicensor_shares_revenue_back_to_cpb]"
-                              lineageId="Package\Sequence Container 1\Deal Imports\Import Deal-ProdAcq\Sort 1.Outputs[Sort Output].Columns[RevBackToCPB]" />
-                            <inputColumn
                               refId="Package\Sequence Container 1\Deal Imports\Import Deal-ProdAcq\RL-DealProdACQ.Inputs[OLE DB Destination Input].Columns[dr_programming_service]"
                               cachedDataType="wstr"
                               cachedLength="33"
@@ -31837,11 +31788,6 @@ join cteDealQuery q on q.dea_id = [DealProdAcQ].dea_id
                               dataType="numeric"
                               name="cpb_funding"
                               precision="18" />
-                            <externalMetadataColumn
-                              refId="Package\Sequence Container 1\Deal Imports\Import Deal-ProdAcq\RL-DealProdACQ.Inputs[OLE DB Destination Input].ExternalColumns[producerlicensor_shares_revenue_back_to_cpb]"
-                              dataType="wstr"
-                              length="100"
-                              name="producerlicensor_shares_revenue_back_to_cpb" />
                             <externalMetadataColumn
                               refId="Package\Sequence Container 1\Deal Imports\Import Deal-ProdAcq\RL-DealProdACQ.Inputs[OLE DB Destination Input].ExternalColumns[rights_and_restrictions_notes]"
                               dataType="wstr"
@@ -32167,23 +32113,6 @@ join cteDealQuery q on q.dea_id = [DealProdAcQ].dea_id
                               </properties>
                             </inputColumn>
                             <inputColumn
-                              refId="Package\Sequence Container 1\Deal Imports\Import Deal-ProdAcq\Sort 1.Inputs[Sort Input].Columns[RevBackToCPB]"
-                              cachedDataType="wstr"
-                              cachedLength="30"
-                              cachedName="RevBackToCPB"
-                              lineageId="Package\Sequence Container 1\Deal Imports\Import Deal-ProdAcq\MOS-DealProdACQ.Outputs[OLE DB Source Output].Columns[RevBackToCPB]">
-                              <properties>
-                                <property
-                                  dataType="System.Int32"
-                                  description="Specifies the comparison options for character data."
-                                  name="NewComparisonFlags">0</property>
-                                <property
-                                  dataType="System.Int32"
-                                  description="Specifies the sort order of the column."
-                                  name="NewSortKeyPosition">0</property>
-                              </properties>
-                            </inputColumn>
-                            <inputColumn
                               refId="Package\Sequence Container 1\Deal Imports\Import Deal-ProdAcq\Sort 1.Inputs[Sort Input].Columns[entity_status]"
                               cachedDataType="wstr"
                               cachedLength="30"
@@ -32425,20 +32354,6 @@ join cteDealQuery q on q.dea_id = [DealProdAcQ].dea_id
                               </properties>
                             </outputColumn>
                             <outputColumn
-                              refId="Package\Sequence Container 1\Deal Imports\Import Deal-ProdAcq\Sort 1.Outputs[Sort Output].Columns[RevBackToCPB]"
-                              dataType="wstr"
-                              length="30"
-                              lineageId="Package\Sequence Container 1\Deal Imports\Import Deal-ProdAcq\Sort 1.Outputs[Sort Output].Columns[RevBackToCPB]"
-                              name="RevBackToCPB">
-                              <properties>
-                                <property
-                                  containsID="true"
-                                  dataType="System.Int32"
-                                  description="Specifies the lineage identifier of the input column that is associated with this output column."
-                                  name="SortColumnId">#{Package\Sequence Container 1\Deal Imports\Import Deal-ProdAcq\MOS-DealProdACQ.Outputs[OLE DB Source Output].Columns[RevBackToCPB]}</property>
-                              </properties>
-                            </outputColumn>
-                            <outputColumn
                               refId="Package\Sequence Container 1\Deal Imports\Import Deal-ProdAcq\Sort 1.Outputs[Sort Output].Columns[entity_status]"
                               dataType="wstr"
                               length="30"
@@ -32557,14 +32472,14 @@ join cteDealQuery q on q.dea_id = [DealProdAcQ].dea_id
                             <inputColumn
                               refId="Package\Sequence Container 1\Deal Imports\Import Funders\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[entity_title]"
                               cachedDataType="wstr"
-                              cachedLength="30"
+                              cachedLength="2000"
                               cachedName="entity_title"
                               externalMetadataColumnId="Package\Sequence Container 1\Deal Imports\Import Funders\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[entity_title]"
                               lineageId="Package\Sequence Container 1\Deal Imports\Import Funders\ADO NET Source.Outputs[ADO NET Source Output].Columns[entity_title]" />
                             <inputColumn
                               refId="Package\Sequence Container 1\Deal Imports\Import Funders\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[entity_template]"
                               cachedDataType="wstr"
-                              cachedLength="2"
+                              cachedLength="2000"
                               cachedName="entity_template"
                               externalMetadataColumnId="Package\Sequence Container 1\Deal Imports\Import Funders\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[entity_template]"
                               lineageId="Package\Sequence Container 1\Deal Imports\Import Funders\ADO NET Source.Outputs[ADO NET Source Output].Columns[entity_template]" />
@@ -32597,13 +32512,6 @@ join cteDealQuery q on q.dea_id = [DealProdAcQ].dea_id
                               externalMetadataColumnId="Package\Sequence Container 1\Deal Imports\Import Funders\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[funding_type]"
                               lineageId="Package\Sequence Container 1\Deal Imports\Import Funders\ADO NET Source.Outputs[ADO NET Source Output].Columns[funding_type]" />
                             <inputColumn
-                              refId="Package\Sequence Container 1\Deal Imports\Import Funders\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[on_air_credit]"
-                              cachedDataType="wstr"
-                              cachedLength="3"
-                              cachedName="on_air_credit"
-                              externalMetadataColumnId="Package\Sequence Container 1\Deal Imports\Import Funders\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[on_air_credit]"
-                              lineageId="Package\Sequence Container 1\Deal Imports\Import Funders\ADO NET Source.Outputs[ADO NET Source Output].Columns[on_air_credit]" />
-                            <inputColumn
                               refId="Package\Sequence Container 1\Deal Imports\Import Funders\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[funder_role]"
                               cachedDataType="wstr"
                               cachedLength="11"
@@ -32620,13 +32528,15 @@ join cteDealQuery q on q.dea_id = [DealProdAcQ].dea_id
                               lineageId="Package\Sequence Container 1\Deal Imports\Import Funders\ADO NET Source.Outputs[ADO NET Source Output].Columns[table_fee]" />
                             <inputColumn
                               refId="Package\Sequence Container 1\Deal Imports\Import Funders\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[start]"
-                              cachedDataType="dbDate"
+                              cachedDataType="wstr"
+                              cachedLength="10"
                               cachedName="start"
                               externalMetadataColumnId="Package\Sequence Container 1\Deal Imports\Import Funders\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[start]"
                               lineageId="Package\Sequence Container 1\Deal Imports\Import Funders\ADO NET Source.Outputs[ADO NET Source Output].Columns[start]" />
                             <inputColumn
                               refId="Package\Sequence Container 1\Deal Imports\Import Funders\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[end]"
-                              cachedDataType="dbDate"
+                              cachedDataType="wstr"
+                              cachedLength="10"
                               cachedName="end"
                               externalMetadataColumnId="Package\Sequence Container 1\Deal Imports\Import Funders\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[end]"
                               lineageId="Package\Sequence Container 1\Deal Imports\Import Funders\ADO NET Source.Outputs[ADO NET Source Output].Columns[end]" />
@@ -32657,19 +32567,25 @@ join cteDealQuery q on q.dea_id = [DealProdAcQ].dea_id
                               externalMetadataColumnId="Package\Sequence Container 1\Deal Imports\Import Funders\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Dea_ID]"
                               lineageId="Package\Sequence Container 1\Deal Imports\Import Funders\ADO NET Source.Outputs[ADO NET Source Output].Columns[Dea_ID]" />
                             <inputColumn
-                              refId="Package\Sequence Container 1\Deal Imports\Import Funders\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Org_Item_BV_ID]"
+                              refId="Package\Sequence Container 1\Deal Imports\Import Funders\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Item_BV_ID]"
                               cachedDataType="wstr"
-                              cachedLength="103"
-                              cachedName="Org_Item_BV_ID"
+                              cachedLength="112"
+                              cachedName="Item_BV_ID"
                               externalMetadataColumnId="Package\Sequence Container 1\Deal Imports\Import Funders\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Item_BV_ID]"
-                              lineageId="Package\Sequence Container 1\Deal Imports\Import Funders\ADO NET Source.Outputs[ADO NET Source Output].Columns[Org_Item_BV_ID]" />
+                              lineageId="Package\Sequence Container 1\Deal Imports\Import Funders\ADO NET Source.Outputs[ADO NET Source Output].Columns[Item_BV_ID]" />
+                            <inputColumn
+                              refId="Package\Sequence Container 1\Deal Imports\Import Funders\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[DealFundingID]"
+                              cachedDataType="i4"
+                              cachedName="DealFundingID"
+                              externalMetadataColumnId="Package\Sequence Container 1\Deal Imports\Import Funders\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[DealFundingID]"
+                              lineageId="Package\Sequence Container 1\Deal Imports\Import Funders\ADO NET Source.Outputs[ADO NET Source Output].Columns[DealFundingID]" />
                           </inputColumns>
                           <externalMetadataColumns
                             isUsed="True">
                             <externalMetadataColumn
-                              refId="Package\Sequence Container 1\Deal Imports\Import Funders\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[DealFunding_ID]"
+                              refId="Package\Sequence Container 1\Deal Imports\Import Funders\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[FunderID]"
                               dataType="i4"
-                              name="DealFunding_ID" />
+                              name="FunderID" />
                             <externalMetadataColumn
                               refId="Package\Sequence Container 1\Deal Imports\Import Funders\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[entity_title]"
                               dataType="wstr"
@@ -32718,11 +32634,13 @@ join cteDealQuery q on q.dea_id = [DealProdAcQ].dea_id
                               scale="2" />
                             <externalMetadataColumn
                               refId="Package\Sequence Container 1\Deal Imports\Import Funders\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[start]"
-                              dataType="dbTimeStamp"
+                              dataType="wstr"
+                              length="50"
                               name="start" />
                             <externalMetadataColumn
                               refId="Package\Sequence Container 1\Deal Imports\Import Funders\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[end]"
-                              dataType="dbTimeStamp"
+                              dataType="wstr"
+                              length="50"
                               name="end" />
                             <externalMetadataColumn
                               refId="Package\Sequence Container 1\Deal Imports\Import Funders\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[fiscal_year]"
@@ -32748,6 +32666,10 @@ join cteDealQuery q on q.dea_id = [DealProdAcQ].dea_id
                               dataType="wstr"
                               length="80"
                               name="Item_BV_ID" />
+                            <externalMetadataColumn
+                              refId="Package\Sequence Container 1\Deal Imports\Import Funders\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[DealFundingID]"
+                              dataType="i8"
+                              name="DealFundingID" />
                           </externalMetadataColumns>
                         </input>
                       </inputs>
@@ -32823,10 +32745,68 @@ WHERE   dco.DCO_ASS_ID IN (
 )
 select	'org' + cast(vw.item_bv_id as nvarchar(100)) as Org_Item_BV_ID
 		,'Offer' + cast(vw.Dea_ID as nvarchar(100)) as Offer_DEA_ID
-		,vw.* from pbs.vwFunders vw
+		,vw.[entity_title]
+      ,vw.[entity_template]
+      ,vw.[underwriter]
+      ,vw.[local_underwriting_option]
+      ,vw.[explanation_and_notes]
+      ,vw.[accounting_class]
+      ,vw.[funding_type]
+      ,vw.[on_air_credit1]
+      ,vw.[funder_role]
+      ,vw.[table_fee]
+	  ,CONVERT(nvarchar(10), vw.[start],101) as start
+      ,CONVERT(nvarchar(10), vw.[end],101) as [end]
+      ,vw.[fiscal_year]
+      ,vw.[notes]
+      ,vw.[pbs_traffic_id]
+      ,vw.[Dea_ID]
+     ,'org'+CAST(vw.Item_BV_ID AS NVARCHAR) + ':' +  'Offer' + cast(vw.Dea_ID as nvarchar) + ':DealFunderID' +  cast(vw.dealfundingid as nvarchar) as Item_BV_ID
+     ,vw.dealfundingid as DealFundingID
+from pbs.vwFunders vw
 join [RightsLineETL].[dbo].[Apr23_Deals]AD on AD.Dea_ID = vw.Dea_ID
 join cteDealQuery cte on cte.dea_id = vw.Dea_ID
 
+
+
+/*
+With cteDealQuery (dea_id) 
+	as
+	(SELECT DISTINCT
+        dea_id
+FROM    bv.DEAL dea
+        JOIN bv.dealcontent dco ON dea.DEA_ID = dco.DCO_DEA_ID
+WHERE   dco.DCO_ASS_ID IN (
+        SELECT  [ass_id]
+        FROM    pbs.vwMOSEpisode
+        WHERE   [Episode.ParentID] IN (
+                'cid:org:pbs.org:Season2Series600817646',--Victoria on Masterpiece
+                'cid:org:pbs.org:Season1Series614345618',--PCAT
+                'cid:org:pbs.org:Season1Series617324631',--We''Meet Again
+                'cid:org:pbs.org:Season1Series617324631',
+                'cid:org:pbs.org:Season1Series600817646', --MAST Dist Season Series
+                'cid:org:pbs.org:Season1Series618563499',
+                'cid:org:pbs.org:Season1Series618586683',
+                'cid:org:pbs.org:Season1Series618587481',
+                'cid:org:pbs.org:Season2Series618562042',
+                'cid:org:pbs.org:Season2Series618587505',
+                'cid:org:pbs.org:Season3Series609718540',
+                'cid:org:pbs.org:Season3Series618586648',
+                'cid:org:pbs.org:Season4Series618586647',
+                'cid:org:pbs.org:Season4Series618587765',
+                'cid:org:pbs.org:Season1Series615807153' )
+        UNION
+        SELECT  ass_id
+        FROM    bv.asset
+        WHERE   ass_id IN ( 236035781, 595764080, 589763373, 632259177 )
+                OR ASS_EPISODESLATE LIKE 'NAAT  0035%' ) 
+)
+select	'org' + cast(vw.item_bv_id as nvarchar(100)) as Org_Item_BV_ID
+		,'Offer' + cast(vw.Dea_ID as nvarchar(100)) as Offer_DEA_ID
+		,vw.* from pbs.vwFunders vw
+join [RightsLineETL].[dbo].[Apr23_Deals]AD on AD.Dea_ID = vw.Dea_ID
+join cteDealQuery cte on cte.dea_id = vw.Dea_ID
+*/
 
 /*
 select	'org' + cast(vw.item_bv_id as nvarchar(100)) as Org_Item_BV_ID
@@ -33037,7 +33017,7 @@ WHERE   ( BV.DEALFUNDING.DEF_ISPRODUCERFUNDING = 0 )
                               errorOrTruncationOperation="Conversion"
                               errorRowDisposition="FailComponent"
                               externalMetadataColumnId="Package\Sequence Container 1\Deal Imports\Import Funders\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[entity_title]"
-                              length="30"
+                              length="2000"
                               lineageId="Package\Sequence Container 1\Deal Imports\Import Funders\ADO NET Source.Outputs[ADO NET Source Output].Columns[entity_title]"
                               name="entity_title"
                               truncationRowDisposition="FailComponent" />
@@ -33047,7 +33027,7 @@ WHERE   ( BV.DEALFUNDING.DEF_ISPRODUCERFUNDING = 0 )
                               errorOrTruncationOperation="Conversion"
                               errorRowDisposition="FailComponent"
                               externalMetadataColumnId="Package\Sequence Container 1\Deal Imports\Import Funders\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[entity_template]"
-                              length="2"
+                              length="2000"
                               lineageId="Package\Sequence Container 1\Deal Imports\Import Funders\ADO NET Source.Outputs[ADO NET Source Output].Columns[entity_template]"
                               name="entity_template"
                               truncationRowDisposition="FailComponent" />
@@ -33102,14 +33082,14 @@ WHERE   ( BV.DEALFUNDING.DEF_ISPRODUCERFUNDING = 0 )
                               name="funding_type"
                               truncationRowDisposition="FailComponent" />
                             <outputColumn
-                              refId="Package\Sequence Container 1\Deal Imports\Import Funders\ADO NET Source.Outputs[ADO NET Source Output].Columns[on_air_credit]"
+                              refId="Package\Sequence Container 1\Deal Imports\Import Funders\ADO NET Source.Outputs[ADO NET Source Output].Columns[on_air_credit1]"
                               dataType="wstr"
                               errorOrTruncationOperation="Conversion"
                               errorRowDisposition="FailComponent"
-                              externalMetadataColumnId="Package\Sequence Container 1\Deal Imports\Import Funders\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[on_air_credit]"
-                              length="3"
-                              lineageId="Package\Sequence Container 1\Deal Imports\Import Funders\ADO NET Source.Outputs[ADO NET Source Output].Columns[on_air_credit]"
-                              name="on_air_credit"
+                              externalMetadataColumnId="Package\Sequence Container 1\Deal Imports\Import Funders\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[on_air_credit1]"
+                              length="2000"
+                              lineageId="Package\Sequence Container 1\Deal Imports\Import Funders\ADO NET Source.Outputs[ADO NET Source Output].Columns[on_air_credit1]"
+                              name="on_air_credit1"
                               truncationRowDisposition="FailComponent" />
                             <outputColumn
                               refId="Package\Sequence Container 1\Deal Imports\Import Funders\ADO NET Source.Outputs[ADO NET Source Output].Columns[funder_role]"
@@ -33134,19 +33114,21 @@ WHERE   ( BV.DEALFUNDING.DEF_ISPRODUCERFUNDING = 0 )
                               truncationRowDisposition="FailComponent" />
                             <outputColumn
                               refId="Package\Sequence Container 1\Deal Imports\Import Funders\ADO NET Source.Outputs[ADO NET Source Output].Columns[start]"
-                              dataType="dbDate"
+                              dataType="wstr"
                               errorOrTruncationOperation="Conversion"
                               errorRowDisposition="FailComponent"
                               externalMetadataColumnId="Package\Sequence Container 1\Deal Imports\Import Funders\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[start]"
+                              length="10"
                               lineageId="Package\Sequence Container 1\Deal Imports\Import Funders\ADO NET Source.Outputs[ADO NET Source Output].Columns[start]"
                               name="start"
                               truncationRowDisposition="FailComponent" />
                             <outputColumn
                               refId="Package\Sequence Container 1\Deal Imports\Import Funders\ADO NET Source.Outputs[ADO NET Source Output].Columns[end]"
-                              dataType="dbDate"
+                              dataType="wstr"
                               errorOrTruncationOperation="Conversion"
                               errorRowDisposition="FailComponent"
                               externalMetadataColumnId="Package\Sequence Container 1\Deal Imports\Import Funders\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[end]"
+                              length="10"
                               lineageId="Package\Sequence Container 1\Deal Imports\Import Funders\ADO NET Source.Outputs[ADO NET Source Output].Columns[end]"
                               name="end"
                               truncationRowDisposition="FailComponent" />
@@ -33190,12 +33172,22 @@ WHERE   ( BV.DEALFUNDING.DEF_ISPRODUCERFUNDING = 0 )
                               truncationRowDisposition="FailComponent" />
                             <outputColumn
                               refId="Package\Sequence Container 1\Deal Imports\Import Funders\ADO NET Source.Outputs[ADO NET Source Output].Columns[Item_BV_ID]"
-                              dataType="i4"
+                              dataType="wstr"
                               errorOrTruncationOperation="Conversion"
                               errorRowDisposition="FailComponent"
                               externalMetadataColumnId="Package\Sequence Container 1\Deal Imports\Import Funders\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Item_BV_ID]"
+                              length="112"
                               lineageId="Package\Sequence Container 1\Deal Imports\Import Funders\ADO NET Source.Outputs[ADO NET Source Output].Columns[Item_BV_ID]"
                               name="Item_BV_ID"
+                              truncationRowDisposition="FailComponent" />
+                            <outputColumn
+                              refId="Package\Sequence Container 1\Deal Imports\Import Funders\ADO NET Source.Outputs[ADO NET Source Output].Columns[DealFundingID]"
+                              dataType="i4"
+                              errorOrTruncationOperation="Conversion"
+                              errorRowDisposition="FailComponent"
+                              externalMetadataColumnId="Package\Sequence Container 1\Deal Imports\Import Funders\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[DealFundingID]"
+                              lineageId="Package\Sequence Container 1\Deal Imports\Import Funders\ADO NET Source.Outputs[ADO NET Source Output].Columns[DealFundingID]"
+                              name="DealFundingID"
                               truncationRowDisposition="FailComponent" />
                           </outputColumns>
                           <externalMetadataColumns
@@ -33213,12 +33205,12 @@ WHERE   ( BV.DEALFUNDING.DEF_ISPRODUCERFUNDING = 0 )
                             <externalMetadataColumn
                               refId="Package\Sequence Container 1\Deal Imports\Import Funders\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[entity_title]"
                               dataType="wstr"
-                              length="30"
+                              length="2000"
                               name="entity_title" />
                             <externalMetadataColumn
                               refId="Package\Sequence Container 1\Deal Imports\Import Funders\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[entity_template]"
                               dataType="wstr"
-                              length="2"
+                              length="2000"
                               name="entity_template" />
                             <externalMetadataColumn
                               refId="Package\Sequence Container 1\Deal Imports\Import Funders\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[underwriter]"
@@ -33246,10 +33238,10 @@ WHERE   ( BV.DEALFUNDING.DEF_ISPRODUCERFUNDING = 0 )
                               length="11"
                               name="funding_type" />
                             <externalMetadataColumn
-                              refId="Package\Sequence Container 1\Deal Imports\Import Funders\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[on_air_credit]"
+                              refId="Package\Sequence Container 1\Deal Imports\Import Funders\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[on_air_credit1]"
                               dataType="wstr"
-                              length="3"
-                              name="on_air_credit" />
+                              length="2000"
+                              name="on_air_credit1" />
                             <externalMetadataColumn
                               refId="Package\Sequence Container 1\Deal Imports\Import Funders\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[funder_role]"
                               dataType="wstr"
@@ -33263,11 +33255,13 @@ WHERE   ( BV.DEALFUNDING.DEF_ISPRODUCERFUNDING = 0 )
                               scale="2" />
                             <externalMetadataColumn
                               refId="Package\Sequence Container 1\Deal Imports\Import Funders\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[start]"
-                              dataType="dbDate"
+                              dataType="wstr"
+                              length="10"
                               name="start" />
                             <externalMetadataColumn
                               refId="Package\Sequence Container 1\Deal Imports\Import Funders\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[end]"
-                              dataType="dbDate"
+                              dataType="wstr"
+                              length="10"
                               name="end" />
                             <externalMetadataColumn
                               refId="Package\Sequence Container 1\Deal Imports\Import Funders\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[fiscal_year]"
@@ -33289,8 +33283,13 @@ WHERE   ( BV.DEALFUNDING.DEF_ISPRODUCERFUNDING = 0 )
                               name="Dea_ID" />
                             <externalMetadataColumn
                               refId="Package\Sequence Container 1\Deal Imports\Import Funders\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Item_BV_ID]"
-                              dataType="i4"
+                              dataType="wstr"
+                              length="112"
                               name="Item_BV_ID" />
+                            <externalMetadataColumn
+                              refId="Package\Sequence Container 1\Deal Imports\Import Funders\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[DealFundingID]"
+                              dataType="i4"
+                              name="DealFundingID" />
                           </externalMetadataColumns>
                         </output>
                         <output
@@ -33313,13 +33312,13 @@ WHERE   ( BV.DEALFUNDING.DEF_ISPRODUCERFUNDING = 0 )
                             <outputColumn
                               refId="Package\Sequence Container 1\Deal Imports\Import Funders\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[entity_title]"
                               dataType="wstr"
-                              length="30"
+                              length="2000"
                               lineageId="Package\Sequence Container 1\Deal Imports\Import Funders\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[entity_title]"
                               name="entity_title" />
                             <outputColumn
                               refId="Package\Sequence Container 1\Deal Imports\Import Funders\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[entity_template]"
                               dataType="wstr"
-                              length="2"
+                              length="2000"
                               lineageId="Package\Sequence Container 1\Deal Imports\Import Funders\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[entity_template]"
                               name="entity_template" />
                             <outputColumn
@@ -33353,11 +33352,11 @@ WHERE   ( BV.DEALFUNDING.DEF_ISPRODUCERFUNDING = 0 )
                               lineageId="Package\Sequence Container 1\Deal Imports\Import Funders\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[funding_type]"
                               name="funding_type" />
                             <outputColumn
-                              refId="Package\Sequence Container 1\Deal Imports\Import Funders\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[on_air_credit]"
+                              refId="Package\Sequence Container 1\Deal Imports\Import Funders\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[on_air_credit1]"
                               dataType="wstr"
-                              length="3"
-                              lineageId="Package\Sequence Container 1\Deal Imports\Import Funders\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[on_air_credit]"
-                              name="on_air_credit" />
+                              length="2000"
+                              lineageId="Package\Sequence Container 1\Deal Imports\Import Funders\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[on_air_credit1]"
+                              name="on_air_credit1" />
                             <outputColumn
                               refId="Package\Sequence Container 1\Deal Imports\Import Funders\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[funder_role]"
                               dataType="wstr"
@@ -33373,12 +33372,14 @@ WHERE   ( BV.DEALFUNDING.DEF_ISPRODUCERFUNDING = 0 )
                               scale="2" />
                             <outputColumn
                               refId="Package\Sequence Container 1\Deal Imports\Import Funders\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[start]"
-                              dataType="dbDate"
+                              dataType="wstr"
+                              length="10"
                               lineageId="Package\Sequence Container 1\Deal Imports\Import Funders\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[start]"
                               name="start" />
                             <outputColumn
                               refId="Package\Sequence Container 1\Deal Imports\Import Funders\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[end]"
-                              dataType="dbDate"
+                              dataType="wstr"
+                              length="10"
                               lineageId="Package\Sequence Container 1\Deal Imports\Import Funders\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[end]"
                               name="end" />
                             <outputColumn
@@ -33405,9 +33406,15 @@ WHERE   ( BV.DEALFUNDING.DEF_ISPRODUCERFUNDING = 0 )
                               name="Dea_ID" />
                             <outputColumn
                               refId="Package\Sequence Container 1\Deal Imports\Import Funders\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Item_BV_ID]"
-                              dataType="i4"
+                              dataType="wstr"
+                              length="112"
                               lineageId="Package\Sequence Container 1\Deal Imports\Import Funders\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Item_BV_ID]"
                               name="Item_BV_ID" />
+                            <outputColumn
+                              refId="Package\Sequence Container 1\Deal Imports\Import Funders\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[DealFundingID]"
+                              dataType="i4"
+                              lineageId="Package\Sequence Container 1\Deal Imports\Import Funders\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[DealFundingID]"
+                              name="DealFundingID" />
                             <outputColumn
                               refId="Package\Sequence Container 1\Deal Imports\Import Funders\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[ErrorCode]"
                               dataType="i4"
@@ -33445,7 +33452,7 @@ WHERE   ( BV.DEALFUNDING.DEF_ISPRODUCERFUNDING = 0 )
               DTS:LocaleID="-1"
               DTS:ObjectName="Update PAA Dupes"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2012; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="2">
+              DTS:ThreadHint="1">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -33462,7 +33469,7 @@ WHERE   ( BV.DEALFUNDING.DEF_ISPRODUCERFUNDING = 0 )
               DTS:LocaleID="-1"
               DTS:ObjectName="Update PRoadAndQ Dupes"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2012; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="1">
+              DTS:ThreadHint="2">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -33521,7 +33528,7 @@ WHERE   ( BV.DEALFUNDING.DEF_ISPRODUCERFUNDING = 0 )
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
               SQLTask:Connection="{A488E997-BD99-4317-A838-A28E59F2F73F}"
-              SQLTask:SqlStatementSource="truncate table dbo.RightsLine_Season_Ids;&#xA;truncate table dbo.RightsLine_SeasonContainer_Ids;&#xA;truncate table dbo.RightsLine_Series_Ids;&#xA;truncate table dbo.RightsLine_Episode_ParentSeason_ids;&#xA;truncate table dbo.RightsLine_OneTimeOnly_Ids;&#xA;&#xA;truncate table dbo.RightsLine_Rights_Blackout_ids;&#xA;truncate table dbo.RightsLine_Rights_Holdback_ids;&#xA;truncate table dbo.RightsLine_Rights_In_BV_ids;&#xA;&#xA;truncate table dbo.RightsLine_Deal_PBSPAA1_ids;&#xA;truncate table dbo.RightsLine_Deal_ProductionAndAcquisition_ids;&#xA;truncate table dbo.xref_DealToBlackout_ids;&#xA;truncate table dbo.xref_DealToEpisode_ids;&#xA;truncate table dbo.xref_DealToFunder_ids;&#xA;truncate table dbo.xref_DealToHoldback_ids;&#xA;truncate table dbo.xref_DealToProductionCompany_ids;&#xA;truncate table dbo.xref_DealToRightsIn_ids;&#xA;truncate table dbo.xref_DealToSeason_ids;&#xA;truncate table dbo.xref_DealToUnderwriter_ids;&#xA;truncate table dbo.xref_DealRightsRelationshipToCatalog_ids;&#xA;truncate table dbo.xref_DealFunderRelationshipToCatalog_ids;&#xA;truncate table dbo.RightsLine_Deal_PBSPAA1_WorkflowState;&#xA;truncate table dbo.RightsLine_Deal_ProductionAndAcquisition_WorkflowState;&#xA;truncate table dbo.RightsLine_Episode_ParentSeason_WorkflowState;&#xA;truncate table dbo.RightsLine_OneTimeOnly_WorkflowState;&#xA;&#xA;truncate table dbo.RightsLine_Underwriter_Ids;&#xA;truncate table dbo.RightsLine_ExternalContactPerson_Ids&#xA;truncate table dbo.RightsLine_ExternalCompany_Ids;&#xA;truncate table dbo.RightsLine_Funders_Ids;&#xA;&#xA;truncate table dbo.RightsLine_Deal_PBSPAA1_Merged_ids;&#xA;truncate table dbo.RightsLine_Deal_ProductionAndAcquisition_Merged_ids;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+              SQLTask:SqlStatementSource="truncate table dbo.RightsLine_Season_Ids;&#xA;truncate table dbo.RightsLine_SeasonContainer_Ids;&#xA;truncate table dbo.RightsLine_Series_Ids;&#xA;truncate table dbo.RightsLine_Episode_ParentSeason_ids;&#xA;truncate table dbo.RightsLine_OneTimeOnly_Ids;&#xA;&#xA;truncate table dbo.RightsLine_Rights_Blackout_ids;&#xA;truncate table dbo.RightsLine_Rights_Holdback_ids;&#xA;truncate table dbo.RightsLine_Rights_In_BV_ids;&#xA;&#xA;truncate table dbo.RightsLine_Deal_PBSPAA1_ids;&#xA;truncate table dbo.RightsLine_Deal_ProductionAndAcquisition_ids;&#xA;truncate table dbo.xref_DealToBlackout_ids;&#xA;truncate table dbo.xref_DealToEpisode_ids;&#xA;truncate table dbo.xref_DealToFunder_ids;&#xA;truncate table dbo.xref_DealToHoldback_ids;&#xA;truncate table dbo.xref_DealToProductionCompany_ids;&#xA;truncate table dbo.xref_DealToRightsIn_ids;&#xA;truncate table dbo.xref_DealToSeason_ids;&#xA;truncate table dbo.xref_DealToUnderwriter_ids;&#xA;truncate table dbo.xref_DealRightsRelationshipToCatalog_ids;&#xA;truncate table dbo.xref_DealFunderRelationshipToCatalog_ids;&#xA;truncate table dbo.RightsLine_Deal_PBSPAA1_WorkflowState;&#xA;truncate table dbo.RightsLine_Deal_ProductionAndAcquisition_WorkflowState;&#xA;truncate table dbo.RightsLine_Episode_ParentSeason_WorkflowState;&#xA;truncate table dbo.RightsLine_OneTimeOnly_WorkflowState;&#xA;&#xA;truncate table dbo.RightsLine_Underwriter_Ids;&#xA;truncate table dbo.RightsLine_ExternalContactPerson_Ids&#xA;truncate table dbo.RightsLine_ExternalCompany_Ids;&#xA;truncate table dbo.RightsLine_Funders_Ids;&#xA;&#xA;truncate table dbo.RightsLine_Deal_PBSPAA1_Merged_ids;&#xA;truncate table dbo.RightsLine_Deal_ProductionAndAcquisition_Merged_ids;&#xA;&#xA;truncate table dbo.xref_FunderToUnderwriterRel_ids;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
           </DTS:ObjectData>
         </DTS:Executable>
         <DTS:Executable
@@ -35811,7 +35818,7 @@ FROM    [PBS].[vwMOSUsage]
         [Usage.EffectiveTerm.Exclusive] ,
         [Usage.EffectiveTerm.Play.Model] ,
         [Usage.EffectiveTerm.Play.RecurrenceDayCount] ,
-        'All Television' AS Blackout_Media ,
+        cast(mlvBlackoutMedia.RL_Value as varchar) AS Blackout_Media ,
 		mlvdestExclusive.rl_value as Exclusivity,
         SUBSTRING(vwMOSUsage.[Usage.UID], LEN('usageid:org:pbs.org:') + 1,
                   LEN(vwMOSUsage.[Usage.UID])) AS [Item_BV_ID] ,
@@ -35832,7 +35839,12 @@ FROM    [PBS].[vwMOSUsage]
 		left join [PBS].[MasterLookupValues] mlvdestExclusive on mlvdestExclusive.field = 'PBS.vwMOSUsage.Usage.EffectiveTerm.Exclusive'
 							and mlvdestExclusive.bv_value = [Usage.EffectiveTerm.Exclusive]
 							and mlvdestExclusive.ML_ID = 6
+		left join [PBS].[MasterLookupValues] mlvBlackoutMedia on mlvTerritory.field = 'static.Blackout_Media.value'
+							and mlvTerritory.ML_ID = 6
 WHERE   [Usage.EffectiveTerm.Use] = 'Blackouts'
+
+
+
 
 /*
 SELECT  [Usage.UID]
@@ -36095,7 +36107,7 @@ where [Usage.EffectiveTerm.Use] = 'Blackouts'
                               refId="Package\Sequence Container 1\Rights Imports\Import RIghts-Blackout\MOS-Rights-Blackout.Outputs[OLE DB Source Output].ExternalColumns[Blackout_Media]"
                               codePage="1252"
                               dataType="str"
-                              length="14"
+                              length="30"
                               name="Blackout_Media" />
                             <externalMetadataColumn
                               refId="Package\Sequence Container 1\Rights Imports\Import RIghts-Blackout\MOS-Rights-Blackout.Outputs[OLE DB Source Output].ExternalColumns[Usage.UID]"
@@ -36199,7 +36211,7 @@ where [Usage.EffectiveTerm.Use] = 'Blackouts'
                               refId="Package\Sequence Container 1\Rights Imports\Import RIghts-Blackout\MOS-Rights-Blackout.Outputs[OLE DB Source Error Output].Columns[Blackout_Media]"
                               codePage="1252"
                               dataType="str"
-                              length="14"
+                              length="30"
                               lineageId="Package\Sequence Container 1\Rights Imports\Import RIghts-Blackout\MOS-Rights-Blackout.Outputs[OLE DB Source Error Output].Columns[Blackout_Media]"
                               name="Blackout_Media" />
                             <outputColumn
@@ -37510,6 +37522,10 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
           Id="Package\Sequence Container\Load xref_DealToUnderwriter"
           TopLeft="796,334.333333333333" />
         <NodeLayout
+          Size="232,42"
+          Id="Package\Sequence Container\load xref_MergedDealToEpisode"
+          TopLeft="385,479" />
+        <NodeLayout
           Size="255,42"
           Id="Package\Sequence Container\Load xref_SeasonContainerToSeason"
           TopLeft="357,642.333333333333" />
@@ -37679,6 +37695,40 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
                     Point3="-8.66666666666697,27.3333333333335" />
                   <mssgle:LineSegment
                     End="-8.66666666666697,39.166666666667" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Sequence Container.PrecedenceConstraints[Constraint 13]"
+          TopLeft="509.5,451.333333333333">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-8.5,27.666666666667"
+              Start="0,0"
+              End="-8.5,20.166666666667">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,9.83333333333351" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,9.83333333333351"
+                    Point2="0,13.8333333333335"
+                    Point3="-4,13.8333333333335" />
+                  <mssgle:LineSegment
+                    End="-4.5,13.8333333333335" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-4.5,13.8333333333335"
+                    Point2="-8.5,13.8333333333335"
+                    Point3="-8.5,17.8333333333335" />
+                  <mssgle:LineSegment
+                    End="-8.5,20.166666666667" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -37903,44 +37953,6 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
                   Capacity="5">
                   <mssgle:LineSegment
                     End="0,27.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="232,42"
-          Id="Package\Sequence Container\load xref_MergedDealToEpisode"
-          TopLeft="385,479" />
-        <EdgeLayout
-          Id="Package\Sequence Container.PrecedenceConstraints[Constraint 13]"
-          TopLeft="509.5,451.333333333333">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-8.5,27.666666666667"
-              Start="0,0"
-              End="-8.5,20.166666666667">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,9.83333333333351" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,9.83333333333351"
-                    Point2="0,13.8333333333335"
-                    Point3="-4,13.8333333333335" />
-                  <mssgle:LineSegment
-                    End="-4.5,13.8333333333335" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-4.5,13.8333333333335"
-                    Point2="-8.5,13.8333333333335"
-                    Point3="-8.5,17.8333333333335" />
-                  <mssgle:LineSegment
-                    End="-8.5,20.166666666667" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -38241,6 +38253,14 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
           Id="Package\Sequence Container 1\Deal Imports\Import Deal-PBS PAA1"
           TopLeft="36.9047619047619,127.809523809524" />
         <NodeLayout
+          Size="225,42"
+          Id="Package\Sequence Container 1\Deal Imports\Import Deal-PBS PAA1 Merged"
+          TopLeft="23.9999999999998,280" />
+        <NodeLayout
+          Size="264,42"
+          Id="Package\Sequence Container 1\Deal Imports\Import Deal-PBS Prod and Acq Merged"
+          TopLeft="5.99999999999977,406" />
+        <NodeLayout
           Size="180,42"
           Id="Package\Sequence Container 1\Deal Imports\Import Deal-ProdAcq"
           TopLeft="35.9999999999998,45.5000000000013" />
@@ -38249,13 +38269,9 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
           Id="Package\Sequence Container 1\Deal Imports\Import Funders"
           TopLeft="58,213" />
         <NodeLayout
-          Size="225,42"
-          Id="Package\Sequence Container 1\Deal Imports\Import Deal-PBS PAA1 Merged"
-          TopLeft="23.9999999999998,280" />
-        <NodeLayout
-          Size="264,42"
-          Id="Package\Sequence Container 1\Deal Imports\Import Deal-PBS Prod and Acq Merged"
-          TopLeft="5.99999999999977,406" />
+          Size="169,42"
+          Id="Package\Sequence Container 1\Deal Imports\Update PAA Dupes"
+          TopLeft="58,350" />
         <NodeLayout
           Size="206,42"
           Id="Package\Sequence Container 1\Deal Imports\Update PRoadAndQ Dupes"
@@ -38282,10 +38298,6 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="169,42"
-          Id="Package\Sequence Container 1\Deal Imports\Update PAA Dupes"
-          TopLeft="58,350" />
         <EdgeLayout
           Id="Package\Sequence Container 1\Deal Imports.PrecedenceConstraints[Constraint 1]"
           TopLeft="139.5,322">
@@ -38839,7 +38851,7 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
     design-time-name="Package\Sequence Container\Load xref_DealToEpisode">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="152,42"
           Id="Package\Sequence Container\Load xref_DealToEpisode\OLE DB Source"
@@ -38867,7 +38879,9 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -38898,7 +38912,7 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
     design-time-name="Package\Sequence Container\Load xref_DealToFunder">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="160,42"
           Id="Package\Sequence Container\Load xref_DealToFunder\ADO NET Source"
@@ -38926,9 +38940,7 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -39289,7 +39301,7 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
     design-time-name="Package\Sequence Container\Load xref_DealToUnderwriter">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="158,42"
           Id="Package\Sequence Container\Load xref_DealToUnderwriter\Data Conversion"
@@ -39321,9 +39333,7 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -39357,9 +39367,7 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -39375,6 +39383,62 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\Sequence Container\Load xref_DealToUnderwriter\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Sequence Container\load xref_MergedDealToEpisode">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="160,42"
+          Id="Package\Sequence Container\load xref_MergedDealToEpisode\ADO NET Source"
+          TopLeft="285,92" />
+        <NodeLayout
+          Size="181,42"
+          Id="Package\Sequence Container\load xref_MergedDealToEpisode\ADO NET Destination"
+          TopLeft="269,234" />
+        <EdgeLayout
+          Id="Package\Sequence Container\load xref_MergedDealToEpisode.Paths[ADO NET Source Output]"
+          TopLeft="362.25,134">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,100"
+              Start="0,0"
+              End="0,92.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,92.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Sequence Container\load xref_MergedDealToEpisode\ADO NET Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Sequence Container\load xref_MergedDealToEpisode\ADO NET Source">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -39690,7 +39754,7 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
     design-time-name="Package\Sequence Container 1\Catalog Import Container\Import Episode Series">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="223,42"
           Id="Package\Sequence Container 1\Catalog Import Container\Import Episode Series\MOS-EpisodeWithSeriesParent"
@@ -39726,7 +39790,9 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -39760,7 +39826,9 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -39782,7 +39850,9 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -39818,7 +39888,7 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
     design-time-name="Package\Sequence Container 1\Catalog Import Container\Import EpisodeParentSeason">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="100,42"
           Id="Package\Sequence Container 1\Catalog Import Container\Import EpisodeParentSeason\Sort"
@@ -39854,7 +39924,9 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -39888,7 +39960,9 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -39910,7 +39984,9 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -40049,7 +40125,7 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
     design-time-name="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="128,42"
           Id="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\MOS-OTO"
@@ -40097,7 +40173,9 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -40119,7 +40197,9 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -40153,7 +40233,9 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -40184,7 +40266,7 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
     design-time-name="Package\Sequence Container 1\Catalog Import Container\Import SeasonContainer">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="185,42"
           Id="Package\Sequence Container 1\Catalog Import Container\Import SeasonContainer\MOS-SeasonContainer"
@@ -40232,7 +40314,9 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -40266,7 +40350,9 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -40300,7 +40386,9 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -40331,15 +40419,11 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
     design-time-name="Package\Sequence Container 1\Catalog Import Container\ImportSeasons">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="100,42"
           Id="Package\Sequence Container 1\Catalog Import Container\ImportSeasons\Sort"
           TopLeft="303,162" />
-        <NodeLayout
-          Size="130,42"
-          Id="Package\Sequence Container 1\Catalog Import Container\ImportSeasons\RL-Season"
-          TopLeft="294.5,361.5" />
         <NodeLayout
           Size="140,42"
           Id="Package\Sequence Container 1\Catalog Import Container\ImportSeasons\MOS-Season"
@@ -40348,6 +40432,10 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
           Size="156,42"
           Id="Package\Sequence Container 1\Catalog Import Container\ImportSeasons\Derived Column"
           TopLeft="289,257" />
+        <NodeLayout
+          Size="130,42"
+          Id="Package\Sequence Container 1\Catalog Import Container\ImportSeasons\RL-Season"
+          TopLeft="294.5,361.5" />
         <EdgeLayout
           Id="Package\Sequence Container 1\Catalog Import Container\ImportSeasons.Paths[Sort Output]"
           TopLeft="353,204">
@@ -40379,7 +40467,9 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -40413,7 +40503,9 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -40435,25 +40527,14 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\Sequence Container 1\Catalog Import Container\ImportSeasons\RL-Season">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\Sequence Container 1\Catalog Import Container\ImportSeasons\MOS-Season">
     <Properties>
@@ -40467,11 +40548,28 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
       </Property>
     </Properties>
   </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Sequence Container 1\Catalog Import Container\ImportSeasons\RL-Season">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <TaskHost
     design-time-name="Package\Sequence Container 1\Catalog Import Container\ImportSeries">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="125,42"
+          Id="Package\Sequence Container 1\Catalog Import Container\ImportSeries\RL-Series"
+          TopLeft="356,320" />
         <NodeLayout
           Size="189,42"
           Id="Package\Sequence Container 1\Catalog Import Container\ImportSeries\Sort and Remove Dups"
@@ -40481,35 +40579,9 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
           Id="Package\Sequence Container 1\Catalog Import Container\ImportSeries\Add Derived Cols"
           TopLeft="336,245" />
         <NodeLayout
-          Size="125,42"
-          Id="Package\Sequence Container 1\Catalog Import Container\ImportSeries\RL-Series"
-          TopLeft="356,320" />
-        <NodeLayout
           Size="171,42"
           Id="Package\Sequence Container 1\Catalog Import Container\ImportSeries\MOS-Source-Series"
           TopLeft="335.5,77.5" />
-        <EdgeLayout
-          Id="Package\Sequence Container 1\Catalog Import Container\ImportSeries.Paths[Sort Output]"
-          TopLeft="416.5,206">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,39"
-              Start="0,0"
-              End="0,31.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,31.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
         <EdgeLayout
           Id="Package\Sequence Container 1\Catalog Import Container\ImportSeries.Paths[OLE DB Source Output]"
           TopLeft="418.75,119.5">
@@ -40529,7 +40601,9 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -40551,7 +40625,33 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Sequence Container 1\Catalog Import Container\ImportSeries.Paths[Sort Output]"
+          TopLeft="416.5,206">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,39"
+              Start="0,0"
+              End="0,31.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,31.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -40873,7 +40973,7 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
     design-time-name="Package\Sequence Container 1\Contact\Import Underwriter">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="163,42"
           Id="Package\Sequence Container 1\Contact\Import Underwriter\MOS-UNderwriter"
@@ -40921,9 +41021,7 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -40945,9 +41043,7 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -40981,9 +41077,7 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -41014,11 +41108,11 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
     design-time-name="Package\Sequence Container 1\Deal Imports\Import Deal-PBS PAA1">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="100,42"
-          Id="Package\Sequence Container 1\Deal Imports\Import Deal-PBS PAA1\Sort"
-          TopLeft="772,276" />
+          Size="160,42"
+          Id="Package\Sequence Container 1\Deal Imports\Import Deal-PBS PAA1\RL-DealPBSPAA1"
+          TopLeft="467,333" />
         <NodeLayout
           Size="169,42"
           Id="Package\Sequence Container 1\Deal Imports\Import Deal-PBS PAA1\MOS-DealPbsPAA1"
@@ -41028,43 +41122,9 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
           Id="Package\Sequence Container 1\Deal Imports\Import Deal-PBS PAA1\Derived Column"
           TopLeft="476,243" />
         <NodeLayout
-          Size="160,42"
-          Id="Package\Sequence Container 1\Deal Imports\Import Deal-PBS PAA1\RL-DealPBSPAA1"
-          TopLeft="467,333" />
-        <EdgeLayout
-          Id="Package\Sequence Container 1\Deal Imports\Import Deal-PBS PAA1.Paths[Sort Output]"
-          TopLeft="772,297">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-140,-33"
-              Start="0,0"
-              End="-132.5,-33">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="-66,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-66,0"
-                    Point2="-70,0"
-                    Point3="-70,-4" />
-                  <mssgle:LineSegment
-                    End="-70,-29" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-70,-29"
-                    Point2="-70,-33"
-                    Point3="-74,-33" />
-                  <mssgle:LineSegment
-                    End="-132.5,-33" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
+          Size="100,42"
+          Id="Package\Sequence Container 1\Deal Imports\Import Deal-PBS PAA1\Sort"
+          TopLeft="772,276" />
         <EdgeLayout
           Id="Package\Sequence Container 1\Deal Imports\Import Deal-PBS PAA1.Paths[OLE DB Source Output]"
           TopLeft="546.5,196">
@@ -41096,7 +41156,9 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -41118,12 +41180,63 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Sequence Container 1\Deal Imports\Import Deal-PBS PAA1.Paths[Sort Output]"
+          TopLeft="772,297">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-140,-33"
+              Start="0,0"
+              End="-132.5,-33">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="-66,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-66,0"
+                    Point2="-70,0"
+                    Point3="-70,-4" />
+                  <mssgle:LineSegment
+                    End="-70,-29" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-70,-29"
+                    Point2="-70,-33"
+                    Point3="-74,-33" />
+                  <mssgle:LineSegment
+                    End="-132.5,-33" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Sequence Container 1\Deal Imports\Import Deal-PBS PAA1\RL-DealPBSPAA1">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\Sequence Container 1\Deal Imports\Import Deal-PBS PAA1\MOS-DealPbsPAA1">
     <Properties>
@@ -41132,8 +41245,129 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
       </Property>
     </Properties>
   </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Sequence Container 1\Deal Imports\Import Deal-PBS PAA1 Merged">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="207,42"
+          Id="Package\Sequence Container 1\Deal Imports\Import Deal-PBS PAA1 Merged\MOS-DealPbsPAA1 Merged"
+          TopLeft="462,154" />
+        <NodeLayout
+          Size="160,42"
+          Id="Package\Sequence Container 1\Deal Imports\Import Deal-PBS PAA1 Merged\RL-DealPBSPAA1"
+          TopLeft="467,333" />
+        <EdgeLayout
+          Id="Package\Sequence Container 1\Deal Imports\Import Deal-PBS PAA1 Merged.Paths[OLE DB Source Output]"
+          TopLeft="565.5,196">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-18.5,137"
+              Start="0,0"
+              End="-18.5,129.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,64.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,64.5"
+                    Point2="0,68.5"
+                    Point3="-4,68.5" />
+                  <mssgle:LineSegment
+                    End="-14.5,68.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-14.5,68.5"
+                    Point2="-18.5,68.5"
+                    Point3="-18.5,72.5" />
+                  <mssgle:LineSegment
+                    End="-18.5,129.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Sequence Container 1\Deal Imports\Import Deal-PBS PAA1\RL-DealPBSPAA1">
+    design-time-name="Package\Sequence Container 1\Deal Imports\Import Deal-PBS PAA1 Merged\MOS-DealPbsPAA1 Merged">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Sequence Container 1\Deal Imports\Import Deal-PBS PAA1 Merged\RL-DealPBSPAA1">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Sequence Container 1\Deal Imports\Import Deal-PBS Prod and Acq Merged">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="250,42"
+          Id="Package\Sequence Container 1\Deal Imports\Import Deal-PBS Prod and Acq Merged\MOS-DealPbs ProdAcq Merged Data"
+          TopLeft="462,154" />
+        <NodeLayout
+          Size="240,42"
+          Id="Package\Sequence Container 1\Deal Imports\Import Deal-PBS Prod and Acq Merged\RL-DealPBS Prod and Acq Merged"
+          TopLeft="467,333" />
+        <EdgeLayout
+          Id="Package\Sequence Container 1\Deal Imports\Import Deal-PBS Prod and Acq Merged.Paths[OLE DB Source Output]"
+          TopLeft="587,196">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,137"
+              Start="0,0"
+              End="0,129.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,129.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Sequence Container 1\Deal Imports\Import Deal-PBS Prod and Acq Merged\MOS-DealPbs ProdAcq Merged Data">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Sequence Container 1\Deal Imports\Import Deal-PBS Prod and Acq Merged\RL-DealPBS Prod and Acq Merged">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -41149,23 +41383,59 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
     design-time-name="Package\Sequence Container 1\Deal Imports\Import Deal-ProdAcq">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="169,42"
           Id="Package\Sequence Container 1\Deal Imports\Import Deal-ProdAcq\MOS-DealProdACQ"
           TopLeft="457,250" />
         <NodeLayout
-          Size="159,42"
-          Id="Package\Sequence Container 1\Deal Imports\Import Deal-ProdAcq\RL-DealProdACQ"
-          TopLeft="465,445" />
-        <NodeLayout
           Size="156,42"
           Id="Package\Sequence Container 1\Deal Imports\Import Deal-ProdAcq\Derived Column"
           TopLeft="433,336" />
         <NodeLayout
+          Size="159,42"
+          Id="Package\Sequence Container 1\Deal Imports\Import Deal-ProdAcq\RL-DealProdACQ"
+          TopLeft="465,445" />
+        <NodeLayout
           Size="109,42"
           Id="Package\Sequence Container 1\Deal Imports\Import Deal-ProdAcq\Sort 1"
           TopLeft="724,320" />
+        <EdgeLayout
+          Id="Package\Sequence Container 1\Deal Imports\Import Deal-ProdAcq.Paths[Sort Output]"
+          TopLeft="724,341">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-135,16"
+              Start="0,0"
+              End="-127.5,16">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="-63.5,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-63.5,0"
+                    Point2="-67.5,0"
+                    Point3="-67.5,4" />
+                  <mssgle:LineSegment
+                    End="-67.5,12" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-67.5,12"
+                    Point2="-67.5,16"
+                    Point3="-71.5,16" />
+                  <mssgle:LineSegment
+                    End="-127.5,16" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\Sequence Container 1\Deal Imports\Import Deal-ProdAcq.Paths[OLE DB Source Output]"
           TopLeft="541.5,292">
@@ -41197,7 +41467,9 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -41231,41 +41503,9 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Sequence Container 1\Deal Imports\Import Deal-ProdAcq.Paths[Sort Output]"
-          TopLeft="724,341">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-135,16"
-              Start="0,0"
-              End="-127.5,16">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="-63.5,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-63.5,0"
-                    Point2="-67.5,0"
-                    Point3="-67.5,4" />
-                  <mssgle:LineSegment
-                    End="-67.5,12" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-67.5,12"
-                    Point2="-67.5,16"
-                    Point3="-71.5,16" />
-                  <mssgle:LineSegment
-                    End="-127.5,16" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -41304,33 +41544,33 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
         <NodeLayout
           Size="181,42"
           Id="Package\Sequence Container 1\Deal Imports\Import Funders\ADO NET Destination"
-          TopLeft="224,379" />
+          TopLeft="233,270" />
         <EdgeLayout
           Id="Package\Sequence Container 1\Deal Imports\Import Funders.Paths[ADO NET Source Output]"
           TopLeft="291,166">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="23.5,213"
+              EndConnector="32.5,104"
               Start="0,0"
-              End="23.5,205.5">
+              End="32.5,96.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,102.5" />
+                    End="0,48" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,102.5"
-                    Point2="0,106.5"
-                    Point3="4,106.5" />
+                    Point1="0,48"
+                    Point2="0,52"
+                    Point3="4,52" />
                   <mssgle:LineSegment
-                    End="19.5,106.5" />
+                    End="28.5,52" />
                   <mssgle:CubicBezierSegment
-                    Point1="19.5,106.5"
-                    Point2="23.5,106.5"
-                    Point3="23.5,110.5" />
+                    Point1="28.5,52"
+                    Point2="32.5,52"
+                    Point3="32.5,56" />
                   <mssgle:LineSegment
-                    End="23.5,205.5" />
+                    End="32.5,96.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -41342,14 +41582,6 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\Sequence Container 1\Deal Imports\Import Funders\ADO NET Destination">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\Sequence Container 1\Deal Imports\Import Funders\ADO NET Source">
     <Properties>
@@ -41752,184 +41984,8 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
       </Property>
     </Properties>
   </PipelineComponentMetadata>
-  <TaskHost
-    design-time-name="Package\Sequence Container 1\Deal Imports\Import Deal-PBS PAA1 Merged">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="207,42"
-          Id="Package\Sequence Container 1\Deal Imports\Import Deal-PBS PAA1 Merged\MOS-DealPbsPAA1 Merged"
-          TopLeft="462,154" />
-        <NodeLayout
-          Size="160,42"
-          Id="Package\Sequence Container 1\Deal Imports\Import Deal-PBS PAA1 Merged\RL-DealPBSPAA1"
-          TopLeft="467,333" />
-        <EdgeLayout
-          Id="Package\Sequence Container 1\Deal Imports\Import Deal-PBS PAA1 Merged.Paths[OLE DB Source Output]"
-          TopLeft="565.5,196">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-18.5,137"
-              Start="0,0"
-              End="-18.5,129.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,64.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,64.5"
-                    Point2="0,68.5"
-                    Point3="-4,68.5" />
-                  <mssgle:LineSegment
-                    End="-14.5,68.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-14.5,68.5"
-                    Point2="-18.5,68.5"
-                    Point3="-18.5,72.5" />
-                  <mssgle:LineSegment
-                    End="-18.5,129.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Sequence Container 1\Deal Imports\Import Deal-PBS PAA1 Merged\MOS-DealPbsPAA1 Merged">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Sequence Container 1\Deal Imports\Import Deal-PBS PAA1 Merged\RL-DealPBSPAA1">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <TaskHost
-    design-time-name="Package\Sequence Container 1\Deal Imports\Import Deal-PBS Prod and Acq Merged">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="250,42"
-          Id="Package\Sequence Container 1\Deal Imports\Import Deal-PBS Prod and Acq Merged\MOS-DealPbs ProdAcq Merged Data"
-          TopLeft="462,154" />
-        <NodeLayout
-          Size="240,42"
-          Id="Package\Sequence Container 1\Deal Imports\Import Deal-PBS Prod and Acq Merged\RL-DealPBS Prod and Acq Merged"
-          TopLeft="467,333" />
-        <EdgeLayout
-          Id="Package\Sequence Container 1\Deal Imports\Import Deal-PBS Prod and Acq Merged.Paths[OLE DB Source Output]"
-          TopLeft="587,196">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,137"
-              Start="0,0"
-              End="0,129.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,129.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\Sequence Container 1\Deal Imports\Import Deal-PBS Prod and Acq Merged\MOS-DealPbs ProdAcq Merged Data">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Sequence Container 1\Deal Imports\Import Deal-PBS Prod and Acq Merged\RL-DealPBS Prod and Acq Merged">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <TaskHost
-    design-time-name="Package\Sequence Container\load xref_MergedDealToEpisode">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="160,42"
-          Id="Package\Sequence Container\load xref_MergedDealToEpisode\ADO NET Source"
-          TopLeft="285,92" />
-        <NodeLayout
-          Size="181,42"
-          Id="Package\Sequence Container\load xref_MergedDealToEpisode\ADO NET Destination"
-          TopLeft="269,234" />
-        <EdgeLayout
-          Id="Package\Sequence Container\load xref_MergedDealToEpisode.Paths[ADO NET Source Output]"
-          TopLeft="362.25,134">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,100"
-              Start="0,0"
-              End="0,92.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,92.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\Sequence Container\load xref_MergedDealToEpisode\ADO NET Source">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Sequence Container\load xref_MergedDealToEpisode\ADO NET Destination">
+    design-time-name="Package\Sequence Container 1\Deal Imports\Import Funders\ADO NET Destination">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
