@@ -12,8 +12,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="RightslineLoad"
   DTS:PackageType="5"
-  DTS:VersionBuild="462"
-  DTS:VersionGUID="{6A287F13-8264-4D7A-B9BD-3C42E1CF74D3}">
+  DTS:VersionBuild="463"
+  DTS:VersionGUID="{D400901E-6745-40F4-87FD-E514C12D1A53}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">6</DTS:Property>
   <DTS:ConnectionManagers>
@@ -28,7 +28,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA+vZle3O0r0qczwMXhgPmpAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADhxvSih5kJtPeYJzZSC62KAAAAAASAAACgAAAAEAAAAG9g7EZAYIu51LLvfQ23NwUIAAAAsL4tS5MFwKgUAAAA43/MMXrFBm3vnG+6Ixmf0k5tBv4</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA+vZle3O0r0qczwMXhgPmpAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACcsKNUvr5T7lkYsCXpP5S4AAAAAASAAACgAAAAEAAAAM3JwKClwP9DxrItA4dhvvYIAAAAE6vWfKlCK5kUAAAAlnbOCLOqUT3Qic/+4xd6hWk4SjY</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -43,7 +43,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA+vZle3O0r0qczwMXhgPmpAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADnGxJ45lU40+PSqbME9uUGAAAAAASAAACgAAAAEAAAADik3GyEcWKNN/HuiXHiS34IAAAAwuTStM3fHWMUAAAAmrwZo50hmWkvS51QuNtAZ9kwCCU</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA+vZle3O0r0qczwMXhgPmpAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADMnCd7/qkI9q6J3OjW6uA6AAAAAASAAACgAAAAEAAAAHXIx3955dqOzFBHG/h7eRQIAAAAFne4zynOje4UAAAAp8+BUT5VAQP8d17zuGbfQbRpbM0</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -58,7 +58,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA+vZle3O0r0qczwMXhgPmpAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACEh31q6YHbRyIG8kQ3PDcWAAAAAASAAACgAAAAEAAAAJzgfi/AvsoBeHcuMPbWOl0IAAAAf6OIP6Tp8AQUAAAAlB2UfDiGcuHQAQFEadnHC2bbaZc</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA+vZle3O0r0qczwMXhgPmpAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABYlOFvEInEPnjSfxDRmi1PAAAAAASAAACgAAAAEAAAAKpHz80WFonTlQQRnEazgMAIAAAAyqEnq4C+8DYUAAAADWf0/aJWZ6N+SiXjve0dNSRlmy8</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -73,7 +73,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA+vZle3O0r0qczwMXhgPmpAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABt3noD4V7FhEnH4bKSiMFKAAAAAASAAACgAAAAEAAAAN7/wtPcIJg4opWfbGtY1i0IAAAAM9jY7VrCcXIUAAAAW1iGZGvvkjE25LhQCa20u7cbrco</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA+vZle3O0r0qczwMXhgPmpAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAB4sYWAAPPC56W0dsp6DVidAAAAAASAAACgAAAAEAAAADYPUe37YqL4y6Tu1IWerlQIAAAAbOusXzoNLq8UAAAAjE5gE84KrxLndkiSmjfK8L0WEoc</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -88,7 +88,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA+vZle3O0r0qczwMXhgPmpAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACC8djz66gJYrWdN1KpGlqeAAAAAASAAACgAAAAEAAAAHjKDrMgblqy/+lcxZ7X2cwIAAAA5iAvefbnsEIUAAAAQbTU18PAFLSqBR396IEfWIEwWrc</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA+vZle3O0r0qczwMXhgPmpAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAA+Q1jNjusHUhEUUOfJ0V6yAAAAAASAAACgAAAAEAAAAHelW/SkjYZPQp2GzuYJuxgIAAAA4bzFJUaMiCoUAAAAl/4m6nFOzmnG84MLrFqZ6GAt3Xc</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -103,7 +103,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA+vZle3O0r0qczwMXhgPmpAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACM50NDVqDg6deXLDHzPnx2AAAAAASAAACgAAAAEAAAAHFCM1CQaYXjOXPs0Hb/R7gIAAAAXj2B8DAdEYwUAAAAXbpzhHntQqKUpUP58Ueik3XlhJk</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA+vZle3O0r0qczwMXhgPmpAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABHF2ybb1fS4ZI1heXgqgI8AAAAAASAAACgAAAAEAAAAEYjH3V/rGT1nXNufgNu2ioIAAAALYcSnipk+30UAAAAe442g7WkBZgIC0eVbNMu25p/4ns</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -32579,6 +32579,13 @@ join cteDealQuery q on q.dea_id = [DealProdAcQ].dea_id
                               cachedName="DealFundingID"
                               externalMetadataColumnId="Package\Sequence Container 1\Deal Imports\Import Funders\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[DealFundingID]"
                               lineageId="Package\Sequence Container 1\Deal Imports\Import Funders\ADO NET Source.Outputs[ADO NET Source Output].Columns[DealFundingID]" />
+                            <inputColumn
+                              refId="Package\Sequence Container 1\Deal Imports\Import Funders\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[on_air_credit1]"
+                              cachedDataType="wstr"
+                              cachedLength="2000"
+                              cachedName="on_air_credit1"
+                              externalMetadataColumnId="Package\Sequence Container 1\Deal Imports\Import Funders\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[on_air_credit]"
+                              lineageId="Package\Sequence Container 1\Deal Imports\Import Funders\ADO NET Source.Outputs[ADO NET Source Output].Columns[on_air_credit1]" />
                           </inputColumns>
                           <externalMetadataColumns
                             isUsed="True">

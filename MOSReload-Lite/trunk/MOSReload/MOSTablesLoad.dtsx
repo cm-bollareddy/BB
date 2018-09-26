@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="MOSTablesLoad"
   DTS:PackageType="5"
-  DTS:VersionBuild="55"
-  DTS:VersionGUID="{95B956B7-D130-487C-8A24-972B8AB57408}">
+  DTS:VersionBuild="58"
+  DTS:VersionGUID="{FB90B43E-E4F9-4637-93D5-C2578C06DA0E}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">6</DTS:Property>
   <DTS:ConnectionManagers>
@@ -27,7 +27,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA+vZle3O0r0qczwMXhgPmpAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABCwNompjK9vMSfFPPmVxITAAAAAASAAACgAAAAEAAAANAczALpJpjDLIaN+Bu1rkEYAAAAPO4lHaztTkGHHMEi66Q61Owqhrblk7G1FAAAAJZJhGjGlxVSmISuiZ3QV/UhZJjA</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA+vZle3O0r0qczwMXhgPmpAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACpx6EHSLaFWmqA9Uuo/a5NAAAAAASAAACgAAAAEAAAAJ7FR7InRbYOTSZ2oLafYCAYAAAAK3KFPecaHsP+Syy2kN7tA/tSOB99JPZdFAAAANhj4CFjdKy+pTAk3rxf1CsY6VZU</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -42,7 +42,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA+vZle3O0r0qczwMXhgPmpAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABfyBH4gWWVyP+RryVFFWyxAAAAAASAAACgAAAAEAAAAAS/bHvzZbURiJ5ppFlfx3cYAAAA37DDftUD2mGRCtDOXlo5LtHS5Qkm458RFAAAACdZjJBKpM902B48NS/wzGE4/XIe</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA+vZle3O0r0qczwMXhgPmpAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABsDFsGxfNx48UT1C3ywuxhAAAAAASAAACgAAAAEAAAAB0eLmOLJ/wYL2/lT7NlKPYYAAAAKRFdUCPYLUMfY914yQF0NFUVPDGTAZ/9FAAAAMnMFNq39skV+0xs5ioupNN6a0Mq</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -1346,31 +1346,17 @@ FROM    trafficdata.[PBS].[vwMOSEpisode]
                     <inputColumn
                       refId="Package\Load MOSCompilation\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Compilation.UID]"
                       cachedDataType="wstr"
-                      cachedLength="46"
+                      cachedLength="58"
                       cachedName="Compilation.UID"
                       externalMetadataColumnId="Package\Load MOSCompilation\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Compilation.UID]"
                       lineageId="Package\Load MOSCompilation\ADO NET Source.Outputs[ADO NET Source Output].Columns[Compilation.UID]" />
                     <inputColumn
                       refId="Package\Load MOSCompilation\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Compilation.ContentIdentifier]"
                       cachedDataType="wstr"
-                      cachedLength="46"
+                      cachedLength="63"
                       cachedName="Compilation.ContentIdentifier"
                       externalMetadataColumnId="Package\Load MOSCompilation\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Compilation.ContentIdentifier]"
                       lineageId="Package\Load MOSCompilation\ADO NET Source.Outputs[ADO NET Source Output].Columns[Compilation.ContentIdentifier]" />
-                    <inputColumn
-                      refId="Package\Load MOSCompilation\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Compilation.Entry.EntryNumber]"
-                      cachedDataType="wstr"
-                      cachedLength="5"
-                      cachedName="Compilation.Entry.EntryNumber"
-                      externalMetadataColumnId="Package\Load MOSCompilation\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Compilation.Entry.EntryNumber]"
-                      lineageId="Package\Load MOSCompilation\ADO NET Source.Outputs[ADO NET Source Output].Columns[Compilation.Entry.EntryNumber]" />
-                    <inputColumn
-                      refId="Package\Load MOSCompilation\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Compilation.Entry.Class]"
-                      cachedDataType="wstr"
-                      cachedLength="11"
-                      cachedName="Compilation.Entry.Class"
-                      externalMetadataColumnId="Package\Load MOSCompilation\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Compilation.Entry.Class]"
-                      lineageId="Package\Load MOSCompilation\ADO NET Source.Outputs[ADO NET Source Output].Columns[Compilation.Entry.Class]" />
                     <inputColumn
                       refId="Package\Load MOSCompilation\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Compilation.ReleaseDate]"
                       cachedDataType="wstr"
@@ -1398,47 +1384,37 @@ FROM    trafficdata.[PBS].[vwMOSEpisode]
                     <externalMetadataColumn
                       refId="Package\Load MOSCompilation\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Compilation.StructuralType]"
                       dataType="wstr"
-                      length="500"
+                      length="11"
                       name="Compilation.StructuralType" />
                     <externalMetadataColumn
                       refId="Package\Load MOSCompilation\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Compilation.Referent Type]"
                       dataType="wstr"
-                      length="500"
+                      length="11"
                       name="Compilation.Referent Type" />
                     <externalMetadataColumn
                       refId="Package\Load MOSCompilation\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Compilation.UID]"
                       dataType="wstr"
-                      length="500"
+                      length="58"
                       name="Compilation.UID" />
                     <externalMetadataColumn
                       refId="Package\Load MOSCompilation\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Compilation.ContentIdentifier]"
                       dataType="wstr"
-                      length="500"
+                      length="63"
                       name="Compilation.ContentIdentifier" />
-                    <externalMetadataColumn
-                      refId="Package\Load MOSCompilation\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Compilation.Entry.EntryNumber]"
-                      dataType="wstr"
-                      length="500"
-                      name="Compilation.Entry.EntryNumber" />
-                    <externalMetadataColumn
-                      refId="Package\Load MOSCompilation\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Compilation.Entry.Class]"
-                      dataType="wstr"
-                      length="500"
-                      name="Compilation.Entry.Class" />
                     <externalMetadataColumn
                       refId="Package\Load MOSCompilation\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Compilation.ReleaseDate]"
                       dataType="wstr"
-                      length="500"
+                      length="5"
                       name="Compilation.ReleaseDate" />
                     <externalMetadataColumn
                       refId="Package\Load MOSCompilation\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Compilation.Title]"
                       dataType="wstr"
-                      length="500"
+                      length="80"
                       name="Compilation.Title" />
                     <externalMetadataColumn
                       refId="Package\Load MOSCompilation\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Compilation.CompilationClass]"
                       dataType="wstr"
-                      length="500"
+                      length="9"
                       name="Compilation.CompilationClass" />
                   </externalMetadataColumns>
                 </input>
@@ -1482,16 +1458,15 @@ FROM    trafficdata.[PBS].[vwMOSEpisode]
                   description="Specifies the SQL statement used by the component to extract data."
                   expressionType="Notify"
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">SELECT [Compilation.StructuralType]
-      ,[Compilation.Referent Type]
-      ,[Compilation.UID]
-      ,[Compilation.ContentIdentifier]
-      ,[Compilation.Entry.EntryNumber]
-      ,[Compilation.Entry.Class]
-      ,[Compilation.ReleaseDate]
-      ,[Compilation.Title]
-      ,[Compilation.CompilationClass]
-  FROM [PBS].[vwMOSCompilation]</property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">select	distinct
+		[Compilation.StructuralType],
+		[Compilation.Referent Type],
+		[Compilation.UID],
+		[Compilation.ContentIdentifier],
+		[Compilation.ReleaseDate],
+		[Compilation.Title],
+		[Compilation.CompilationClass]
+from	[PBS].[vwMOSCompilation]</property>
                 <property
                   dataType="System.Int32"
                   description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
@@ -1554,7 +1529,7 @@ FROM    trafficdata.[PBS].[vwMOSEpisode]
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Load MOSCompilation\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Compilation.UID]"
-                      length="46"
+                      length="58"
                       lineageId="Package\Load MOSCompilation\ADO NET Source.Outputs[ADO NET Source Output].Columns[Compilation.UID]"
                       name="Compilation.UID"
                       truncationRowDisposition="FailComponent" />
@@ -1564,29 +1539,9 @@ FROM    trafficdata.[PBS].[vwMOSEpisode]
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Load MOSCompilation\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Compilation.ContentIdentifier]"
-                      length="46"
+                      length="63"
                       lineageId="Package\Load MOSCompilation\ADO NET Source.Outputs[ADO NET Source Output].Columns[Compilation.ContentIdentifier]"
                       name="Compilation.ContentIdentifier"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Load MOSCompilation\ADO NET Source.Outputs[ADO NET Source Output].Columns[Compilation.Entry.EntryNumber]"
-                      dataType="wstr"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Load MOSCompilation\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Compilation.Entry.EntryNumber]"
-                      length="5"
-                      lineageId="Package\Load MOSCompilation\ADO NET Source.Outputs[ADO NET Source Output].Columns[Compilation.Entry.EntryNumber]"
-                      name="Compilation.Entry.EntryNumber"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Load MOSCompilation\ADO NET Source.Outputs[ADO NET Source Output].Columns[Compilation.Entry.Class]"
-                      dataType="wstr"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Load MOSCompilation\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Compilation.Entry.Class]"
-                      length="11"
-                      lineageId="Package\Load MOSCompilation\ADO NET Source.Outputs[ADO NET Source Output].Columns[Compilation.Entry.Class]"
-                      name="Compilation.Entry.Class"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\Load MOSCompilation\ADO NET Source.Outputs[ADO NET Source Output].Columns[Compilation.ReleaseDate]"
@@ -1634,23 +1589,13 @@ FROM    trafficdata.[PBS].[vwMOSEpisode]
                     <externalMetadataColumn
                       refId="Package\Load MOSCompilation\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Compilation.UID]"
                       dataType="wstr"
-                      length="46"
+                      length="58"
                       name="Compilation.UID" />
                     <externalMetadataColumn
                       refId="Package\Load MOSCompilation\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Compilation.ContentIdentifier]"
                       dataType="wstr"
-                      length="46"
+                      length="63"
                       name="Compilation.ContentIdentifier" />
-                    <externalMetadataColumn
-                      refId="Package\Load MOSCompilation\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Compilation.Entry.EntryNumber]"
-                      dataType="wstr"
-                      length="5"
-                      name="Compilation.Entry.EntryNumber" />
-                    <externalMetadataColumn
-                      refId="Package\Load MOSCompilation\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Compilation.Entry.Class]"
-                      dataType="wstr"
-                      length="11"
-                      name="Compilation.Entry.Class" />
                     <externalMetadataColumn
                       refId="Package\Load MOSCompilation\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Compilation.ReleaseDate]"
                       dataType="wstr"
@@ -1688,27 +1633,15 @@ FROM    trafficdata.[PBS].[vwMOSEpisode]
                     <outputColumn
                       refId="Package\Load MOSCompilation\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Compilation.UID]"
                       dataType="wstr"
-                      length="46"
+                      length="58"
                       lineageId="Package\Load MOSCompilation\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Compilation.UID]"
                       name="Compilation.UID" />
                     <outputColumn
                       refId="Package\Load MOSCompilation\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Compilation.ContentIdentifier]"
                       dataType="wstr"
-                      length="46"
+                      length="63"
                       lineageId="Package\Load MOSCompilation\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Compilation.ContentIdentifier]"
                       name="Compilation.ContentIdentifier" />
-                    <outputColumn
-                      refId="Package\Load MOSCompilation\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Compilation.Entry.EntryNumber]"
-                      dataType="wstr"
-                      length="5"
-                      lineageId="Package\Load MOSCompilation\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Compilation.Entry.EntryNumber]"
-                      name="Compilation.Entry.EntryNumber" />
-                    <outputColumn
-                      refId="Package\Load MOSCompilation\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Compilation.Entry.Class]"
-                      dataType="wstr"
-                      length="11"
-                      lineageId="Package\Load MOSCompilation\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Compilation.Entry.Class]"
-                      name="Compilation.Entry.Class" />
                     <outputColumn
                       refId="Package\Load MOSCompilation\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Compilation.ReleaseDate]"
                       dataType="wstr"
@@ -1751,6 +1684,321 @@ FROM    trafficdata.[PBS].[vwMOSEpisode]
               endId="Package\Load MOSCompilation\ADO NET Destination.Inputs[ADO NET Destination Input]"
               name="ADO NET Source Output"
               startId="Package\Load MOSCompilation\ADO NET Source.Outputs[ADO NET Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Load MOSCompilation Entry"
+      DTS:CreationName="SSIS.Pipeline.3"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{0c494562-751b-4ccb-832a-d1d8c130df2e}"
+      DTS:ExecutableType="SSIS.Pipeline.3"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Load MOSCompilation Entry"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Load MOSCompilation Entry\ADO NET Destination"
+              componentClassID="{874F7595-FB5F-40FF-96AF-FBFF8250E3EF}"
+              contactInfo="Loads data into an ADO.NET-compliant database that uses a database table or view. Load data into a new or existing table. For example, use an ADO.NET provider for ODBC to load data into an ODBC destination.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;2"
+              description="Loads data into an ADO.NET-compliant database that uses a database table or view. Load data into a new or existing table. For example, use an ADO.NET provider for ODBC to load data into an ODBC destination."
+              name="ADO NET Destination"
+              usesDispositions="true"
+              version="2">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="The Destination database table name."
+                  expressionType="Notify"
+                  name="TableOrViewName"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version= 11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">"PBS"."MOSCompilationEntry"</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specify the number of rows per batch. The default is 0 which uses the same size as SSIS internal buffer. "
+                  expressionType="Notify"
+                  name="BatchSize">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out. A value of 0 indicates infinite time-out. "
+                  expressionType="Notify"
+                  name="CommandTimeout">30</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether to use the SqlBulkCopy interface to improve the performance of bulk insert operations. Only certain providers support this interface."
+                  expressionType="Notify"
+                  name="UseBulkInsertWhenPossible">true</property>
+                <property
+                  dataType="System.String"
+                  name="UserComponentTypeName">Microsoft.SqlServer.Dts.Pipeline.ADONETDestination, Microsoft.SqlServer.ADONETDest, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Load MOSCompilation Entry\ADO NET Destination.Connections[IDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[db19-uat.MOS.mosuser]"
+                  connectionManagerRefId="Package.ConnectionManagers[db19-uat.MOS.mosuser]"
+                  description="Managed connection manager"
+                  name="IDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Load MOSCompilation Entry\ADO NET Destination.Inputs[ADO NET Destination Input]"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="ADO NET Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Load MOSCompilation Entry\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Compilation.UID]"
+                      cachedDataType="wstr"
+                      cachedLength="58"
+                      cachedName="Compilation.UID"
+                      externalMetadataColumnId="Package\Load MOSCompilation Entry\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Compilation.UID]"
+                      lineageId="Package\Load MOSCompilation Entry\ADO NET Source.Outputs[ADO NET Source Output].Columns[Compilation.UID]" />
+                    <inputColumn
+                      refId="Package\Load MOSCompilation Entry\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Compilation.Entry.ContentIdentifier]"
+                      cachedDataType="wstr"
+                      cachedLength="54"
+                      cachedName="Compilation.Entry.ContentIdentifier"
+                      externalMetadataColumnId="Package\Load MOSCompilation Entry\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Compilation.Entry.ContentIdentifier]"
+                      lineageId="Package\Load MOSCompilation Entry\ADO NET Source.Outputs[ADO NET Source Output].Columns[Compilation.Entry.ContentIdentifier]" />
+                    <inputColumn
+                      refId="Package\Load MOSCompilation Entry\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Compilation.Entry.EntryNumber]"
+                      cachedDataType="i4"
+                      cachedName="Compilation.Entry.EntryNumber"
+                      externalMetadataColumnId="Package\Load MOSCompilation Entry\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Compilation.Entry.EntryNumber]"
+                      lineageId="Package\Load MOSCompilation Entry\ADO NET Source.Outputs[ADO NET Source Output].Columns[Compilation.Entry.EntryNumber]" />
+                    <inputColumn
+                      refId="Package\Load MOSCompilation Entry\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Compilation.Entry.Class]"
+                      cachedDataType="wstr"
+                      cachedLength="11"
+                      cachedName="Compilation.Entry.Class"
+                      externalMetadataColumnId="Package\Load MOSCompilation Entry\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Compilation.Entry.Class]"
+                      lineageId="Package\Load MOSCompilation Entry\ADO NET Source.Outputs[ADO NET Source Output].Columns[Compilation.Entry.Class]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Load MOSCompilation Entry\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Compilation.UID]"
+                      dataType="wstr"
+                      length="63"
+                      name="Compilation.UID" />
+                    <externalMetadataColumn
+                      refId="Package\Load MOSCompilation Entry\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Compilation.Entry.ContentIdentifier]"
+                      dataType="wstr"
+                      length="54"
+                      name="Compilation.Entry.ContentIdentifier" />
+                    <externalMetadataColumn
+                      refId="Package\Load MOSCompilation Entry\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Compilation.Entry.EntryNumber]"
+                      dataType="i4"
+                      name="Compilation.Entry.EntryNumber" />
+                    <externalMetadataColumn
+                      refId="Package\Load MOSCompilation Entry\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Compilation.Entry.Class]"
+                      dataType="wstr"
+                      length="11"
+                      name="Compilation.Entry.Class" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Load MOSCompilation Entry\ADO NET Destination.Outputs[ADO NET Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="ADO NET Destination Error Output"
+                  synchronousInputId="Package\Load MOSCompilation Entry\ADO NET Destination.Inputs[ADO NET Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load MOSCompilation Entry\ADO NET Destination.Outputs[ADO NET Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Load MOSCompilation Entry\ADO NET Destination.Outputs[ADO NET Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Load MOSCompilation Entry\ADO NET Destination.Outputs[ADO NET Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Load MOSCompilation Entry\ADO NET Destination.Outputs[ADO NET Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Load MOSCompilation Entry\ADO NET Source"
+              componentClassID="{874F7595-FB5F-40FF-96AF-FBFF8250E3EF}"
+              contactInfo="Consumes data from SQL Server, OLE DB, ODBC, or Oracle, using the corresponding .NET Framework data provider. Use a Transact-SQL statement to define the result set. For example, extract data from SQL Server with the .NET Framework data provider for SQL Server.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="Consumes data from SQL Server, OLE DB, ODBC, or Oracle, using the corresponding .NET Framework data provider. Use a Transact-SQL statement to define the result set. For example, extract data from SQL Server with the .NET Framework data provider for SQL Server."
+              name="ADO NET Source"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Specifies the SQL statement used by the component to extract data."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">select	
+		[Compilation.UID],
+		[Compilation.Entry.ContentIdentifier],
+		[Compilation.Entry.EntryNumber],
+		[Compilation.Entry.Class]
+from	[PBS].[vwMOSCompilation]</property>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">30</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether to allow non-string external columns to be implicitly converted to strings at the output columns."
+                  name="AllowImplicitStringConversion">true</property>
+                <property
+                  dataType="System.String"
+                  description="The Source database table name."
+                  expressionType="Notify"
+                  name="TableOrViewName"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version= 11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">"PBS"."vwMOSSeason"</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specify the mode to retrieve external column information"
+                  name="AccessMode"
+                  typeConverter="Microsoft.SqlServer.Dts.Pipeline.DataReaderSourceAdapter+EnumToStringConverter, Microsoft.SqlServer.ADONETSrc, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">2</property>
+                <property
+                  dataType="System.String"
+                  name="UserComponentTypeName">Microsoft.SqlServer.Dts.Pipeline.DataReaderSourceAdapter, Microsoft.SqlServer.ADONETSrc, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Load MOSCompilation Entry\ADO NET Source.Connections[IDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[db19-uat.TrafficData.TrafficDataReader]"
+                  connectionManagerRefId="Package.ConnectionManagers[db19-uat.TrafficData.TrafficDataReader]"
+                  description="Managed connection manager"
+                  name="IDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Load MOSCompilation Entry\ADO NET Source.Outputs[ADO NET Source Output]"
+                  name="ADO NET Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load MOSCompilation Entry\ADO NET Source.Outputs[ADO NET Source Output].Columns[Compilation.UID]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load MOSCompilation Entry\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Compilation.UID]"
+                      length="58"
+                      lineageId="Package\Load MOSCompilation Entry\ADO NET Source.Outputs[ADO NET Source Output].Columns[Compilation.UID]"
+                      name="Compilation.UID"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Load MOSCompilation Entry\ADO NET Source.Outputs[ADO NET Source Output].Columns[Compilation.Entry.ContentIdentifier]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load MOSCompilation Entry\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Compilation.Entry.ContentIdentifier]"
+                      length="54"
+                      lineageId="Package\Load MOSCompilation Entry\ADO NET Source.Outputs[ADO NET Source Output].Columns[Compilation.Entry.ContentIdentifier]"
+                      name="Compilation.Entry.ContentIdentifier"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Load MOSCompilation Entry\ADO NET Source.Outputs[ADO NET Source Output].Columns[Compilation.Entry.EntryNumber]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load MOSCompilation Entry\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Compilation.Entry.EntryNumber]"
+                      lineageId="Package\Load MOSCompilation Entry\ADO NET Source.Outputs[ADO NET Source Output].Columns[Compilation.Entry.EntryNumber]"
+                      name="Compilation.Entry.EntryNumber"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Load MOSCompilation Entry\ADO NET Source.Outputs[ADO NET Source Output].Columns[Compilation.Entry.Class]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load MOSCompilation Entry\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Compilation.Entry.Class]"
+                      length="11"
+                      lineageId="Package\Load MOSCompilation Entry\ADO NET Source.Outputs[ADO NET Source Output].Columns[Compilation.Entry.Class]"
+                      name="Compilation.Entry.Class"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Load MOSCompilation Entry\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Compilation.UID]"
+                      dataType="wstr"
+                      length="58"
+                      name="Compilation.UID" />
+                    <externalMetadataColumn
+                      refId="Package\Load MOSCompilation Entry\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Compilation.Entry.ContentIdentifier]"
+                      dataType="wstr"
+                      length="54"
+                      name="Compilation.Entry.ContentIdentifier" />
+                    <externalMetadataColumn
+                      refId="Package\Load MOSCompilation Entry\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Compilation.Entry.EntryNumber]"
+                      dataType="i4"
+                      name="Compilation.Entry.EntryNumber" />
+                    <externalMetadataColumn
+                      refId="Package\Load MOSCompilation Entry\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Compilation.Entry.Class]"
+                      dataType="wstr"
+                      length="11"
+                      name="Compilation.Entry.Class" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Load MOSCompilation Entry\ADO NET Source.Outputs[ADO NET Source Error Output]"
+                  isErrorOut="true"
+                  name="ADO NET Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load MOSCompilation Entry\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Compilation.UID]"
+                      dataType="wstr"
+                      length="58"
+                      lineageId="Package\Load MOSCompilation Entry\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Compilation.UID]"
+                      name="Compilation.UID" />
+                    <outputColumn
+                      refId="Package\Load MOSCompilation Entry\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Compilation.Entry.ContentIdentifier]"
+                      dataType="wstr"
+                      length="54"
+                      lineageId="Package\Load MOSCompilation Entry\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Compilation.Entry.ContentIdentifier]"
+                      name="Compilation.Entry.ContentIdentifier" />
+                    <outputColumn
+                      refId="Package\Load MOSCompilation Entry\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Compilation.Entry.EntryNumber]"
+                      dataType="i4"
+                      lineageId="Package\Load MOSCompilation Entry\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Compilation.Entry.EntryNumber]"
+                      name="Compilation.Entry.EntryNumber" />
+                    <outputColumn
+                      refId="Package\Load MOSCompilation Entry\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Compilation.Entry.Class]"
+                      dataType="wstr"
+                      length="11"
+                      lineageId="Package\Load MOSCompilation Entry\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Compilation.Entry.Class]"
+                      name="Compilation.Entry.Class" />
+                    <outputColumn
+                      refId="Package\Load MOSCompilation Entry\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Load MOSCompilation Entry\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Load MOSCompilation Entry\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Load MOSCompilation Entry\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Load MOSCompilation Entry.Paths[ADO NET Source Output]"
+              endId="Package\Load MOSCompilation Entry\ADO NET Destination.Inputs[ADO NET Destination Input]"
+              name="ADO NET Source Output"
+              startId="Package\Load MOSCompilation Entry\ADO NET Source.Outputs[ADO NET Source Output]" />
           </paths>
         </pipeline>
       </DTS:ObjectData>
@@ -2694,172 +2942,180 @@ FROM    trafficdata.[PBS].[vwMOSEpisode]
                       cachedDataType="wstr"
                       cachedLength="40"
                       cachedName="pbsReleaseKey.ID"
-                      externalMetadataColumnId="Package\Load MOSManifestation\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[pbsReleaseKeyID]"
+                      externalMetadataColumnId="Package\Load MOSManifestation\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[pbsReleaseKey.ID]"
                       lineageId="Package\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Output].Columns[pbsReleaseKey.ID]" />
                     <inputColumn
-                      refId="Package\Load MOSManifestation\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Manifestation.ReferentType]"
+                      refId="Package\Load MOSManifestation\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Manifestation.StructuralType]"
                       cachedDataType="wstr"
-                      cachedLength="3"
-                      cachedName="Manifestation.ReferentType"
-                      externalMetadataColumnId="Package\Load MOSManifestation\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[ManifestationReferentType]"
-                      lineageId="Package\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Output].Columns[Manifestation.ReferentType]" />
+                      cachedLength="11"
+                      cachedName="Manifestation.StructuralType"
+                      externalMetadataColumnId="Package\Load MOSManifestation\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Manifestation.StructuralType]"
+                      lineageId="Package\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Output].Columns[Manifestation.StructuralType]" />
                     <inputColumn
                       refId="Package\Load MOSManifestation\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Manifestation.UID]"
                       cachedDataType="wstr"
-                      cachedLength="58"
+                      cachedLength="59"
                       cachedName="Manifestation.UID"
-                      externalMetadataColumnId="Package\Load MOSManifestation\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[ManifestationUID]"
+                      externalMetadataColumnId="Package\Load MOSManifestation\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Manifestation.UID]"
                       lineageId="Package\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Output].Columns[Manifestation.UID]" />
                     <inputColumn
                       refId="Package\Load MOSManifestation\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Manifestation.ContentIdentifier]"
                       cachedDataType="wstr"
-                      cachedLength="179"
+                      cachedLength="275"
                       cachedName="Manifestation.ContentIdentifier"
-                      externalMetadataColumnId="Package\Load MOSManifestation\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[ManifestationContentIdentifier]"
+                      externalMetadataColumnId="Package\Load MOSManifestation\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Manifestation.ContentIdentifier]"
                       lineageId="Package\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Output].Columns[Manifestation.ContentIdentifier]" />
                     <inputColumn
                       refId="Package\Load MOSManifestation\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Manifestation.ParentID]"
                       cachedDataType="wstr"
-                      cachedLength="59"
+                      cachedLength="53"
                       cachedName="Manifestation.ParentID"
-                      externalMetadataColumnId="Package\Load MOSManifestation\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[ManifestationParentID]"
+                      externalMetadataColumnId="Package\Load MOSManifestation\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Manifestation.ParentID]"
                       lineageId="Package\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Output].Columns[Manifestation.ParentID]" />
                     <inputColumn
-                      refId="Package\Load MOSManifestation\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Manifestation.UseWindow.Term]"
-                      cachedDataType="wstr"
-                      cachedLength="3"
-                      cachedName="Manifestation.UseWindow.Term"
-                      externalMetadataColumnId="Package\Load MOSManifestation\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[ManifestationUseWindowTerm]"
-                      lineageId="Package\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Output].Columns[Manifestation.UseWindow.Term]" />
+                      refId="Package\Load MOSManifestation\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Manifestation.UseWindow.TermStart]"
+                      cachedDataType="dbDate"
+                      cachedName="Manifestation.UseWindow.TermStart"
+                      externalMetadataColumnId="Package\Load MOSManifestation\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Manifestation.UseWindow.TermStart]"
+                      lineageId="Package\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Output].Columns[Manifestation.UseWindow.TermStart]" />
+                    <inputColumn
+                      refId="Package\Load MOSManifestation\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Manifestation.UseWindow.TermEnd]"
+                      cachedDataType="dbDate"
+                      cachedName="Manifestation.UseWindow.TermEnd"
+                      externalMetadataColumnId="Package\Load MOSManifestation\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Manifestation.UseWindow.TermEnd]"
+                      lineageId="Package\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Output].Columns[Manifestation.UseWindow.TermEnd]" />
                     <inputColumn
                       refId="Package\Load MOSManifestation\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Manifestation.Class]"
                       cachedDataType="wstr"
-                      cachedLength="3"
+                      cachedLength="50"
                       cachedName="Manifestation.Class"
-                      externalMetadataColumnId="Package\Load MOSManifestation\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[ManifestationClass]"
+                      externalMetadataColumnId="Package\Load MOSManifestation\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Manifestation.Class]"
                       lineageId="Package\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Output].Columns[Manifestation.Class]" />
                     <inputColumn
                       refId="Package\Load MOSManifestation\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Manifestation.Edit.Class]"
                       cachedDataType="wstr"
-                      cachedLength="3"
+                      cachedLength="50"
                       cachedName="Manifestation.Edit.Class"
-                      externalMetadataColumnId="Package\Load MOSManifestation\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[ManifestationEditClass]"
+                      externalMetadataColumnId="Package\Load MOSManifestation\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Manifestation.Edit.Class]"
                       lineageId="Package\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Output].Columns[Manifestation.Edit.Class]" />
                     <inputColumn
                       refId="Package\Load MOSManifestation\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Manifestation.Edit.Use]"
                       cachedDataType="wstr"
-                      cachedLength="3"
+                      cachedLength="9"
                       cachedName="Manifestation.Edit.Use"
-                      externalMetadataColumnId="Package\Load MOSManifestation\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[ManifestationEditUse]"
+                      externalMetadataColumnId="Package\Load MOSManifestation\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Manifestation.Edit.Use]"
                       lineageId="Package\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Output].Columns[Manifestation.Edit.Use]" />
                     <inputColumn
                       refId="Package\Load MOSManifestation\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Manifestation.ReleaseDate]"
                       cachedDataType="wstr"
                       cachedLength="3"
                       cachedName="Manifestation.ReleaseDate"
-                      externalMetadataColumnId="Package\Load MOSManifestation\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[ManifestationReleaseDate]"
+                      externalMetadataColumnId="Package\Load MOSManifestation\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Manifestation.ReleaseDate]"
                       lineageId="Package\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Output].Columns[Manifestation.ReleaseDate]" />
                     <inputColumn
                       refId="Package\Load MOSManifestation\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Manifestation.ActualLength]"
                       cachedDataType="wstr"
                       cachedLength="500"
                       cachedName="Manifestation.ActualLength"
-                      externalMetadataColumnId="Package\Load MOSManifestation\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[ManifestationActualLength]"
+                      externalMetadataColumnId="Package\Load MOSManifestation\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Manifestation.ActualLength]"
                       lineageId="Package\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Output].Columns[Manifestation.ActualLength]" />
                     <inputColumn
                       refId="Package\Load MOSManifestation\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Manifestation.Title]"
                       cachedDataType="wstr"
-                      cachedLength="3"
+                      cachedLength="80"
                       cachedName="Manifestation.Title"
-                      externalMetadataColumnId="Package\Load MOSManifestation\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[ManifestationTitle]"
+                      externalMetadataColumnId="Package\Load MOSManifestation\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Manifestation.Title]"
                       lineageId="Package\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Output].Columns[Manifestation.Title]" />
                     <inputColumn
                       refId="Package\Load MOSManifestation\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Manifestation.Audio.Language.CloseCaptioning]"
                       cachedDataType="wstr"
-                      cachedLength="3"
+                      cachedLength="2"
                       cachedName="Manifestation.Audio.Language.CloseCaptioning"
-                      externalMetadataColumnId="Package\Load MOSManifestation\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[ManifestationAudioLanguageCloseCaptioning]"
+                      externalMetadataColumnId="Package\Load MOSManifestation\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Manifestation.Audio.Language.CloseCaptioning]"
                       lineageId="Package\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Output].Columns[Manifestation.Audio.Language.CloseCaptioning]" />
                     <inputColumn
                       refId="Package\Load MOSManifestation\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Manifestation.VideoVChip]"
                       cachedDataType="wstr"
                       cachedLength="10"
                       cachedName="Manifestation.VideoVChip"
-                      externalMetadataColumnId="Package\Load MOSManifestation\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[ManifestationVideoVChip]"
+                      externalMetadataColumnId="Package\Load MOSManifestation\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Manifestation.VideoVChip]"
                       lineageId="Package\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Output].Columns[Manifestation.VideoVChip]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Load MOSManifestation\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[pbsReleaseKeyID]"
+                      refId="Package\Load MOSManifestation\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[pbsReleaseKey.ID]"
                       dataType="wstr"
-                      length="500"
-                      name="pbsReleaseKeyID" />
+                      length="40"
+                      name="pbsReleaseKey.ID" />
                     <externalMetadataColumn
-                      refId="Package\Load MOSManifestation\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[ManifestationReferentType]"
+                      refId="Package\Load MOSManifestation\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Manifestation.StructuralType]"
                       dataType="wstr"
-                      length="500"
-                      name="ManifestationReferentType" />
+                      length="11"
+                      name="Manifestation.StructuralType" />
                     <externalMetadataColumn
-                      refId="Package\Load MOSManifestation\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[ManifestationUID]"
+                      refId="Package\Load MOSManifestation\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Manifestation.UID]"
                       dataType="wstr"
-                      length="500"
-                      name="ManifestationUID" />
+                      length="59"
+                      name="Manifestation.UID" />
                     <externalMetadataColumn
-                      refId="Package\Load MOSManifestation\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[ManifestationContentIdentifier]"
+                      refId="Package\Load MOSManifestation\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Manifestation.ContentIdentifier]"
                       dataType="wstr"
-                      length="500"
-                      name="ManifestationContentIdentifier" />
+                      length="275"
+                      name="Manifestation.ContentIdentifier" />
                     <externalMetadataColumn
-                      refId="Package\Load MOSManifestation\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[ManifestationParentID]"
+                      refId="Package\Load MOSManifestation\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Manifestation.ParentID]"
                       dataType="wstr"
-                      length="500"
-                      name="ManifestationParentID" />
+                      length="53"
+                      name="Manifestation.ParentID" />
                     <externalMetadataColumn
-                      refId="Package\Load MOSManifestation\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[ManifestationUseWindowTerm]"
-                      dataType="wstr"
-                      length="500"
-                      name="ManifestationUseWindowTerm" />
+                      refId="Package\Load MOSManifestation\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Manifestation.UseWindow.TermStart]"
+                      dataType="dbTimeStamp"
+                      name="Manifestation.UseWindow.TermStart" />
                     <externalMetadataColumn
-                      refId="Package\Load MOSManifestation\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[ManifestationClass]"
-                      dataType="wstr"
-                      length="500"
-                      name="ManifestationClass" />
+                      refId="Package\Load MOSManifestation\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Manifestation.UseWindow.TermEnd]"
+                      dataType="dbTimeStamp"
+                      name="Manifestation.UseWindow.TermEnd" />
                     <externalMetadataColumn
-                      refId="Package\Load MOSManifestation\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[ManifestationEditClass]"
+                      refId="Package\Load MOSManifestation\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Manifestation.Class]"
                       dataType="wstr"
-                      length="500"
-                      name="ManifestationEditClass" />
+                      length="50"
+                      name="Manifestation.Class" />
                     <externalMetadataColumn
-                      refId="Package\Load MOSManifestation\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[ManifestationEditUse]"
+                      refId="Package\Load MOSManifestation\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Manifestation.Edit.Class]"
                       dataType="wstr"
-                      length="500"
-                      name="ManifestationEditUse" />
+                      length="50"
+                      name="Manifestation.Edit.Class" />
                     <externalMetadataColumn
-                      refId="Package\Load MOSManifestation\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[ManifestationReleaseDate]"
+                      refId="Package\Load MOSManifestation\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Manifestation.Edit.Use]"
                       dataType="wstr"
-                      length="500"
-                      name="ManifestationReleaseDate" />
+                      length="9"
+                      name="Manifestation.Edit.Use" />
                     <externalMetadataColumn
-                      refId="Package\Load MOSManifestation\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[ManifestationActualLength]"
+                      refId="Package\Load MOSManifestation\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Manifestation.ReleaseDate]"
                       dataType="wstr"
-                      length="500"
-                      name="ManifestationActualLength" />
+                      length="3"
+                      name="Manifestation.ReleaseDate" />
                     <externalMetadataColumn
-                      refId="Package\Load MOSManifestation\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[ManifestationTitle]"
+                      refId="Package\Load MOSManifestation\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Manifestation.ActualLength]"
                       dataType="wstr"
                       length="500"
-                      name="ManifestationTitle" />
+                      name="Manifestation.ActualLength" />
                     <externalMetadataColumn
-                      refId="Package\Load MOSManifestation\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[ManifestationAudioLanguageCloseCaptioning]"
+                      refId="Package\Load MOSManifestation\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Manifestation.Title]"
                       dataType="wstr"
-                      length="500"
-                      name="ManifestationAudioLanguageCloseCaptioning" />
+                      length="80"
+                      name="Manifestation.Title" />
                     <externalMetadataColumn
-                      refId="Package\Load MOSManifestation\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[ManifestationVideoVChip]"
+                      refId="Package\Load MOSManifestation\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Manifestation.Audio.Language.CloseCaptioning]"
                       dataType="wstr"
-                      length="500"
-                      name="ManifestationVideoVChip" />
+                      length="2"
+                      name="Manifestation.Audio.Language.CloseCaptioning" />
+                    <externalMetadataColumn
+                      refId="Package\Load MOSManifestation\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Manifestation.VideoVChip]"
+                      dataType="wstr"
+                      length="10"
+                      name="Manifestation.VideoVChip" />
                   </externalMetadataColumns>
                 </input>
               </inputs>
@@ -2902,20 +3158,7 @@ FROM    trafficdata.[PBS].[vwMOSEpisode]
                   description="Specifies the SQL statement used by the component to extract data."
                   expressionType="Notify"
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">SELECT [pbsReleaseKey.ID]
-      ,[Manifestation.ReferentType]
-      ,[Manifestation.ParentID]
-      ,[Manifestation.ContentIdentifier]
-      ,[Manifestation.UID]
-      ,[Manifestation.UseWindow.Term]
-      ,[Manifestation.Class]
-      ,[Manifestation.Edit.Class]
-      ,[Manifestation.Edit.Use]
-      ,[Manifestation.ReleaseDate]
-      ,[Manifestation.ActualLength]
-      ,[Manifestation.Title]
-      ,[Manifestation.Audio.Language.CloseCaptioning]
-      ,[Manifestation.VideoVChip]
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">SELECT *
   FROM [PBS].[vwMOSManifestation]</property>
                 <property
                   dataType="System.Int32"
@@ -2964,34 +3207,14 @@ FROM    trafficdata.[PBS].[vwMOSEpisode]
                       name="pbsReleaseKey.ID"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Output].Columns[Manifestation.ReferentType]"
+                      refId="Package\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Output].Columns[Manifestation.StructuralType]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Manifestation.ReferentType]"
-                      length="3"
-                      lineageId="Package\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Output].Columns[Manifestation.ReferentType]"
-                      name="Manifestation.ReferentType"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Output].Columns[Manifestation.ParentID]"
-                      dataType="wstr"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Manifestation.ParentID]"
-                      length="59"
-                      lineageId="Package\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Output].Columns[Manifestation.ParentID]"
-                      name="Manifestation.ParentID"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Output].Columns[Manifestation.ContentIdentifier]"
-                      dataType="wstr"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Manifestation.ContentIdentifier]"
-                      length="179"
-                      lineageId="Package\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Output].Columns[Manifestation.ContentIdentifier]"
-                      name="Manifestation.ContentIdentifier"
+                      externalMetadataColumnId="Package\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Manifestation.StructuralType]"
+                      length="11"
+                      lineageId="Package\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Output].Columns[Manifestation.StructuralType]"
+                      name="Manifestation.StructuralType"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Output].Columns[Manifestation.UID]"
@@ -2999,19 +3222,47 @@ FROM    trafficdata.[PBS].[vwMOSEpisode]
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Manifestation.UID]"
-                      length="58"
+                      length="59"
                       lineageId="Package\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Output].Columns[Manifestation.UID]"
                       name="Manifestation.UID"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Output].Columns[Manifestation.UseWindow.Term]"
+                      refId="Package\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Output].Columns[Manifestation.ContentIdentifier]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Manifestation.UseWindow.Term]"
-                      length="3"
-                      lineageId="Package\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Output].Columns[Manifestation.UseWindow.Term]"
-                      name="Manifestation.UseWindow.Term"
+                      externalMetadataColumnId="Package\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Manifestation.ContentIdentifier]"
+                      length="275"
+                      lineageId="Package\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Output].Columns[Manifestation.ContentIdentifier]"
+                      name="Manifestation.ContentIdentifier"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Output].Columns[Manifestation.ParentID]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Manifestation.ParentID]"
+                      length="53"
+                      lineageId="Package\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Output].Columns[Manifestation.ParentID]"
+                      name="Manifestation.ParentID"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Output].Columns[Manifestation.UseWindow.TermStart]"
+                      dataType="dbDate"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Manifestation.UseWindow.TermStart]"
+                      lineageId="Package\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Output].Columns[Manifestation.UseWindow.TermStart]"
+                      name="Manifestation.UseWindow.TermStart"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Output].Columns[Manifestation.UseWindow.TermEnd]"
+                      dataType="dbDate"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Manifestation.UseWindow.TermEnd]"
+                      lineageId="Package\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Output].Columns[Manifestation.UseWindow.TermEnd]"
+                      name="Manifestation.UseWindow.TermEnd"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Output].Columns[Manifestation.Class]"
@@ -3019,7 +3270,7 @@ FROM    trafficdata.[PBS].[vwMOSEpisode]
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Manifestation.Class]"
-                      length="3"
+                      length="50"
                       lineageId="Package\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Output].Columns[Manifestation.Class]"
                       name="Manifestation.Class"
                       truncationRowDisposition="FailComponent" />
@@ -3029,7 +3280,7 @@ FROM    trafficdata.[PBS].[vwMOSEpisode]
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Manifestation.Edit.Class]"
-                      length="3"
+                      length="50"
                       lineageId="Package\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Output].Columns[Manifestation.Edit.Class]"
                       name="Manifestation.Edit.Class"
                       truncationRowDisposition="FailComponent" />
@@ -3039,7 +3290,7 @@ FROM    trafficdata.[PBS].[vwMOSEpisode]
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Manifestation.Edit.Use]"
-                      length="3"
+                      length="9"
                       lineageId="Package\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Output].Columns[Manifestation.Edit.Use]"
                       name="Manifestation.Edit.Use"
                       truncationRowDisposition="FailComponent" />
@@ -3069,7 +3320,7 @@ FROM    trafficdata.[PBS].[vwMOSEpisode]
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Manifestation.Title]"
-                      length="3"
+                      length="80"
                       lineageId="Package\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Output].Columns[Manifestation.Title]"
                       name="Manifestation.Title"
                       truncationRowDisposition="FailComponent" />
@@ -3079,7 +3330,7 @@ FROM    trafficdata.[PBS].[vwMOSEpisode]
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Manifestation.Audio.Language.CloseCaptioning]"
-                      length="3"
+                      length="2"
                       lineageId="Package\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Output].Columns[Manifestation.Audio.Language.CloseCaptioning]"
                       name="Manifestation.Audio.Language.CloseCaptioning"
                       truncationRowDisposition="FailComponent" />
@@ -3102,44 +3353,47 @@ FROM    trafficdata.[PBS].[vwMOSEpisode]
                       length="40"
                       name="pbsReleaseKey.ID" />
                     <externalMetadataColumn
-                      refId="Package\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Manifestation.ReferentType]"
+                      refId="Package\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Manifestation.StructuralType]"
                       dataType="wstr"
-                      length="3"
-                      name="Manifestation.ReferentType" />
-                    <externalMetadataColumn
-                      refId="Package\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Manifestation.ParentID]"
-                      dataType="wstr"
-                      length="59"
-                      name="Manifestation.ParentID" />
-                    <externalMetadataColumn
-                      refId="Package\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Manifestation.ContentIdentifier]"
-                      dataType="wstr"
-                      length="179"
-                      name="Manifestation.ContentIdentifier" />
+                      length="11"
+                      name="Manifestation.StructuralType" />
                     <externalMetadataColumn
                       refId="Package\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Manifestation.UID]"
                       dataType="wstr"
-                      length="58"
+                      length="59"
                       name="Manifestation.UID" />
                     <externalMetadataColumn
-                      refId="Package\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Manifestation.UseWindow.Term]"
+                      refId="Package\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Manifestation.ContentIdentifier]"
                       dataType="wstr"
-                      length="3"
-                      name="Manifestation.UseWindow.Term" />
+                      length="275"
+                      name="Manifestation.ContentIdentifier" />
+                    <externalMetadataColumn
+                      refId="Package\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Manifestation.ParentID]"
+                      dataType="wstr"
+                      length="53"
+                      name="Manifestation.ParentID" />
+                    <externalMetadataColumn
+                      refId="Package\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Manifestation.UseWindow.TermStart]"
+                      dataType="dbDate"
+                      name="Manifestation.UseWindow.TermStart" />
+                    <externalMetadataColumn
+                      refId="Package\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Manifestation.UseWindow.TermEnd]"
+                      dataType="dbDate"
+                      name="Manifestation.UseWindow.TermEnd" />
                     <externalMetadataColumn
                       refId="Package\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Manifestation.Class]"
                       dataType="wstr"
-                      length="3"
+                      length="50"
                       name="Manifestation.Class" />
                     <externalMetadataColumn
                       refId="Package\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Manifestation.Edit.Class]"
                       dataType="wstr"
-                      length="3"
+                      length="50"
                       name="Manifestation.Edit.Class" />
                     <externalMetadataColumn
                       refId="Package\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Manifestation.Edit.Use]"
                       dataType="wstr"
-                      length="3"
+                      length="9"
                       name="Manifestation.Edit.Use" />
                     <externalMetadataColumn
                       refId="Package\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Manifestation.ReleaseDate]"
@@ -3154,12 +3408,12 @@ FROM    trafficdata.[PBS].[vwMOSEpisode]
                     <externalMetadataColumn
                       refId="Package\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Manifestation.Title]"
                       dataType="wstr"
-                      length="3"
+                      length="80"
                       name="Manifestation.Title" />
                     <externalMetadataColumn
                       refId="Package\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Manifestation.Audio.Language.CloseCaptioning]"
                       dataType="wstr"
-                      length="3"
+                      length="2"
                       name="Manifestation.Audio.Language.CloseCaptioning" />
                     <externalMetadataColumn
                       refId="Package\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Manifestation.VideoVChip]"
@@ -3180,51 +3434,55 @@ FROM    trafficdata.[PBS].[vwMOSEpisode]
                       lineageId="Package\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[pbsReleaseKey.ID]"
                       name="pbsReleaseKey.ID" />
                     <outputColumn
-                      refId="Package\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Manifestation.ReferentType]"
+                      refId="Package\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Manifestation.StructuralType]"
                       dataType="wstr"
-                      length="3"
-                      lineageId="Package\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Manifestation.ReferentType]"
-                      name="Manifestation.ReferentType" />
-                    <outputColumn
-                      refId="Package\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Manifestation.ParentID]"
-                      dataType="wstr"
-                      length="59"
-                      lineageId="Package\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Manifestation.ParentID]"
-                      name="Manifestation.ParentID" />
-                    <outputColumn
-                      refId="Package\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Manifestation.ContentIdentifier]"
-                      dataType="wstr"
-                      length="179"
-                      lineageId="Package\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Manifestation.ContentIdentifier]"
-                      name="Manifestation.ContentIdentifier" />
+                      length="11"
+                      lineageId="Package\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Manifestation.StructuralType]"
+                      name="Manifestation.StructuralType" />
                     <outputColumn
                       refId="Package\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Manifestation.UID]"
                       dataType="wstr"
-                      length="58"
+                      length="59"
                       lineageId="Package\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Manifestation.UID]"
                       name="Manifestation.UID" />
                     <outputColumn
-                      refId="Package\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Manifestation.UseWindow.Term]"
+                      refId="Package\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Manifestation.ContentIdentifier]"
                       dataType="wstr"
-                      length="3"
-                      lineageId="Package\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Manifestation.UseWindow.Term]"
-                      name="Manifestation.UseWindow.Term" />
+                      length="275"
+                      lineageId="Package\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Manifestation.ContentIdentifier]"
+                      name="Manifestation.ContentIdentifier" />
+                    <outputColumn
+                      refId="Package\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Manifestation.ParentID]"
+                      dataType="wstr"
+                      length="53"
+                      lineageId="Package\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Manifestation.ParentID]"
+                      name="Manifestation.ParentID" />
+                    <outputColumn
+                      refId="Package\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Manifestation.UseWindow.TermStart]"
+                      dataType="dbDate"
+                      lineageId="Package\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Manifestation.UseWindow.TermStart]"
+                      name="Manifestation.UseWindow.TermStart" />
+                    <outputColumn
+                      refId="Package\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Manifestation.UseWindow.TermEnd]"
+                      dataType="dbDate"
+                      lineageId="Package\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Manifestation.UseWindow.TermEnd]"
+                      name="Manifestation.UseWindow.TermEnd" />
                     <outputColumn
                       refId="Package\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Manifestation.Class]"
                       dataType="wstr"
-                      length="3"
+                      length="50"
                       lineageId="Package\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Manifestation.Class]"
                       name="Manifestation.Class" />
                     <outputColumn
                       refId="Package\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Manifestation.Edit.Class]"
                       dataType="wstr"
-                      length="3"
+                      length="50"
                       lineageId="Package\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Manifestation.Edit.Class]"
                       name="Manifestation.Edit.Class" />
                     <outputColumn
                       refId="Package\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Manifestation.Edit.Use]"
                       dataType="wstr"
-                      length="3"
+                      length="9"
                       lineageId="Package\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Manifestation.Edit.Use]"
                       name="Manifestation.Edit.Use" />
                     <outputColumn
@@ -3242,13 +3500,13 @@ FROM    trafficdata.[PBS].[vwMOSEpisode]
                     <outputColumn
                       refId="Package\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Manifestation.Title]"
                       dataType="wstr"
-                      length="3"
+                      length="80"
                       lineageId="Package\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Manifestation.Title]"
                       name="Manifestation.Title" />
                     <outputColumn
                       refId="Package\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Manifestation.Audio.Language.CloseCaptioning]"
                       dataType="wstr"
-                      length="3"
+                      length="2"
                       lineageId="Package\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Manifestation.Audio.Language.CloseCaptioning]"
                       name="Manifestation.Audio.Language.CloseCaptioning" />
                     <outputColumn
@@ -8548,6 +8806,14 @@ FROM trafficdata.[PBS].vwMOSEpisodeContactAgnostic</property>
       DTS:ObjectName="Constraint 16"
       DTS:To="Package\Load EpsiodeCredits ExcutiveProducer" />
     <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 17]"
+      DTS:CreationName=""
+      DTS:DTSID="{B52B0693-C84A-4A53-8719-578ADFCEA125}"
+      DTS:From="Package\Load MOSCompilation"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 17"
+      DTS:To="Package\Load MOSCompilation Entry" />
+    <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 2]"
       DTS:CreationName=""
       DTS:DTSID="{603B9CED-AE5F-4F3A-8663-AEC85A178D7B}"
@@ -8894,30 +9160,30 @@ FROM trafficdata.[PBS].vwMOSEpisodeContactAgnostic</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 14]"
-          TopLeft="560.777777777778,87">
+          TopLeft="569.5,87">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="138.222222222222,230.75"
+              EndConnector="129.5,230.75"
               Start="0,0"
-              End="138.222222222222,223.25">
+              End="129.5,223.25">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,104.935655883399" />
+                    End="0,111.375" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,104.935655883399"
-                    Point2="0,108.935655883399"
-                    Point3="4,108.935655883399" />
+                    Point1="0,111.375"
+                    Point2="0,115.375"
+                    Point3="4,115.375" />
                   <mssgle:LineSegment
-                    End="134.222222222222,108.935655883399" />
+                    End="125.5,115.375" />
                   <mssgle:CubicBezierSegment
-                    Point1="134.222222222222,108.935655883399"
-                    Point2="138.222222222222,108.935655883399"
-                    Point3="138.222222222222,112.935655883399" />
+                    Point1="125.5,115.375"
+                    Point2="129.5,115.375"
+                    Point3="129.5,119.375" />
                   <mssgle:LineSegment
-                    End="138.222222222222,223.25" />
+                    End="129.5,223.25" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -9254,6 +9520,44 @@ FROM trafficdata.[PBS].vwMOSEpisodeContactAgnostic</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <NodeLayout
+          Size="212,42"
+          Id="Package\Load MOSCompilation Entry"
+          TopLeft="569,454" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 17]"
+          TopLeft="699,359.75">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-24,94.25"
+              Start="0,0"
+              End="-24,86.75">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,43.125" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,43.125"
+                    Point2="0,47.125"
+                    Point3="-4,47.125" />
+                  <mssgle:LineSegment
+                    End="-20,47.125" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-20,47.125"
+                    Point2="-24,47.125"
+                    Point3="-24,51.125" />
+                  <mssgle:LineSegment
+                    End="-24,86.75" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </Package>
@@ -9453,7 +9757,7 @@ FROM trafficdata.[PBS].vwMOSEpisodeContactAgnostic</property>
     design-time-name="Package\Load MOSCompilation">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="160,42"
           Id="Package\Load MOSCompilation\ADO NET Source"
@@ -9493,9 +9797,7 @@ FROM trafficdata.[PBS].vwMOSEpisodeContactAgnostic</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -10449,6 +10751,72 @@ FROM trafficdata.[PBS].vwMOSEpisodeContactAgnostic</property>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\xref Series Org\ADO NET Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Load MOSCompilation Entry">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="181,42"
+          Id="Package\Load MOSCompilation Entry\ADO NET Destination"
+          TopLeft="166,246" />
+        <NodeLayout
+          Size="160,42"
+          Id="Package\Load MOSCompilation Entry\ADO NET Source"
+          TopLeft="185,97" />
+        <EdgeLayout
+          Id="Package\Load MOSCompilation Entry.Paths[ADO NET Source Output]"
+          TopLeft="265,139">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-8.5,107"
+              Start="0,0"
+              End="-8.5,99.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,49.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,49.5"
+                    Point2="0,53.5"
+                    Point3="-4,53.5" />
+                  <mssgle:LineSegment
+                    End="-4.5,53.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-4.5,53.5"
+                    Point2="-8.5,53.5"
+                    Point3="-8.5,57.5" />
+                  <mssgle:LineSegment
+                    End="-8.5,99.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load MOSCompilation Entry\ADO NET Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load MOSCompilation Entry\ADO NET Source">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
