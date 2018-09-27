@@ -12,8 +12,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="RightslineLoad"
   DTS:PackageType="5"
-  DTS:VersionBuild="463"
-  DTS:VersionGUID="{D400901E-6745-40F4-87FD-E514C12D1A53}">
+  DTS:VersionBuild="464"
+  DTS:VersionGUID="{15DB01DB-F41F-4202-BC46-A7A9A1FE0938}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">6</DTS:Property>
   <DTS:ConnectionManagers>
@@ -24,12 +24,7 @@
       DTS:ObjectName="ADO.NET-Rightsline">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=db19-uat;User ID=;Initial Catalog=RightsLineETL-Light;Integrated Security=True;Application Name=SSIS-Package-{71E29813-C634-400C-947F-2B4708DBD8E0}db19-uat.RightsLineETL;">
-          <DTS:Password
-            DTS:Name="Password"
-            Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA+vZle3O0r0qczwMXhgPmpAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACcsKNUvr5T7lkYsCXpP5S4AAAAAASAAACgAAAAEAAAAM3JwKClwP9DxrItA4dhvvYIAAAAE6vWfKlCK5kUAAAAlnbOCLOqUT3Qic/+4xd6hWk4SjY</DTS:Password>
-        </DTS:ConnectionManager>
+          DTS:ConnectionString="Data Source=db19-uat;Initial Catalog=RightsLineETL-Light;Integrated Security=True;Application Name=SSIS-Package-{71E29813-C634-400C-947F-2B4708DBD8E0}db19-uat.RightsLineETL;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -39,12 +34,7 @@
       DTS:ObjectName="ADO.NET-TrafficData">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=db19-uat;User ID=;Initial Catalog=TrafficData;Integrated Security=True;Application Name=SSIS-RightslineLoad-{39B52C15-5840-48C4-B58F-F9A976E2C894}db19-uat.TrafficData2;">
-          <DTS:Password
-            DTS:Name="Password"
-            Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA+vZle3O0r0qczwMXhgPmpAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADMnCd7/qkI9q6J3OjW6uA6AAAAAASAAACgAAAAEAAAAHXIx3955dqOzFBHG/h7eRQIAAAAFne4zynOje4UAAAAp8+BUT5VAQP8d17zuGbfQbRpbM0</DTS:Password>
-        </DTS:ConnectionManager>
+          DTS:ConnectionString="Data Source=db19-uat;Initial Catalog=TrafficData;Integrated Security=True;Application Name=SSIS-RightslineLoad-{39B52C15-5840-48C4-B58F-F9A976E2C894}db19-uat.TrafficData2;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -58,7 +48,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA+vZle3O0r0qczwMXhgPmpAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABYlOFvEInEPnjSfxDRmi1PAAAAAASAAACgAAAAEAAAAKpHz80WFonTlQQRnEazgMAIAAAAyqEnq4C+8DYUAAAADWf0/aJWZ6N+SiXjve0dNSRlmy8</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAArQUwPWSOn0KLzrEGz12ruAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABcQ+an3DinrFNlz4Z14jZuAAAAAASAAACgAAAAEAAAAFUwuZ4nC4HeV/Zljjk1saoIAAAA9wo+TgIuE+4UAAAAsm5PqcsMaP7ZIkS0MdaJVGhJD1s</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -69,12 +59,7 @@
       DTS:ObjectName="db19-uat.TrafficData">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=db19-uat;User ID=;Initial Catalog=TrafficData;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;">
-          <DTS:Password
-            DTS:Name="Password"
-            Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA+vZle3O0r0qczwMXhgPmpAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAB4sYWAAPPC56W0dsp6DVidAAAAAASAAACgAAAAEAAAADYPUe37YqL4y6Tu1IWerlQIAAAAbOusXzoNLq8UAAAAjE5gE84KrxLndkiSmjfK8L0WEoc</DTS:Password>
-        </DTS:ConnectionManager>
+          DTS:ConnectionString="Data Source=db19-uat;Initial Catalog=TrafficData;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -84,12 +69,7 @@
       DTS:ObjectName="Rightsline-Dest">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=db19-uat;User ID=;Initial Catalog=RightsLineETL-Light;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;">
-          <DTS:Password
-            DTS:Name="Password"
-            Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA+vZle3O0r0qczwMXhgPmpAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAA+Q1jNjusHUhEUUOfJ0V6yAAAAAASAAACgAAAAEAAAAHelW/SkjYZPQp2GzuYJuxgIAAAA4bzFJUaMiCoUAAAAl/4m6nFOzmnG84MLrFqZ6GAt3Xc</DTS:Password>
-        </DTS:ConnectionManager>
+          DTS:ConnectionString="Data Source=db19-uat;Initial Catalog=RightsLineETL-Light;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -99,12 +79,7 @@
       DTS:ObjectName="Rightsline-Dest 1">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=db19-uat;User ID=;Initial Catalog=RightsLineETL-Light;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;">
-          <DTS:Password
-            DTS:Name="Password"
-            Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA+vZle3O0r0qczwMXhgPmpAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABHF2ybb1fS4ZI1heXgqgI8AAAAAASAAACgAAAAEAAAAEYjH3V/rGT1nXNufgNu2ioIAAAALYcSnipk+30UAAAAe442g7WkBZgIC0eVbNMu25p/4ns</DTS:Password>
-        </DTS:ConnectionManager>
+          DTS:ConnectionString="Data Source=db19-uat;Initial Catalog=RightsLineETL-Light;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
@@ -33459,7 +33434,7 @@ WHERE   ( BV.DEALFUNDING.DEF_ISPRODUCERFUNDING = 0 )
               DTS:LocaleID="-1"
               DTS:ObjectName="Update PAA Dupes"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2012; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="1">
+              DTS:ThreadHint="2">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -33476,7 +33451,7 @@ WHERE   ( BV.DEALFUNDING.DEF_ISPRODUCERFUNDING = 0 )
               DTS:LocaleID="-1"
               DTS:ObjectName="Update PRoadAndQ Dupes"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2012; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="2">
+              DTS:ThreadHint="1">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -41590,6 +41565,14 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
+    design-time-name="Package\Sequence Container 1\Deal Imports\Import Funders\ADO NET Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
     design-time-name="Package\Sequence Container 1\Deal Imports\Import Funders\ADO NET Source">
     <Properties>
       <Property>
@@ -41985,14 +41968,6 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
   </TaskHost>
   <PipelineComponentMetadata
     design-time-name="Package\Sequence Container 1\Rights Imports\Import RIghts-Holdback\MOS-HoldBack">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Sequence Container 1\Deal Imports\Import Funders\ADO NET Destination">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
