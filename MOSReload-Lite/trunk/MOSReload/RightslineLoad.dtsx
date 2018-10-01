@@ -8,12 +8,12 @@
   DTS:DTSID="{6CAC6FBD-DC5F-4BD2-B38F-E46769929427}"
   DTS:EnableConfig="True"
   DTS:ExecutableType="SSIS.Package.3"
-  DTS:LastModifiedProductVersion="11.0.5583.0"
+  DTS:LastModifiedProductVersion="13.0.2165.0"
   DTS:LocaleID="1033"
   DTS:ObjectName="RightslineLoad"
   DTS:PackageType="5"
-  DTS:VersionBuild="464"
-  DTS:VersionGUID="{15DB01DB-F41F-4202-BC46-A7A9A1FE0938}">
+  DTS:VersionBuild="465"
+  DTS:VersionGUID="{AE15EEBD-C742-4D8A-BEF7-407C6FB8D3D4}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">6</DTS:Property>
   <DTS:ConnectionManagers>
@@ -44,12 +44,7 @@
       DTS:ObjectName="alliantDB">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=alliantdb-prod;User ID=kwalikar;Initial Catalog=pbs_master;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
-          <DTS:Password
-            DTS:Name="Password"
-            Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAArQUwPWSOn0KLzrEGz12ruAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABcQ+an3DinrFNlz4Z14jZuAAAAAASAAACgAAAAEAAAAFUwuZ4nC4HeV/Zljjk1saoIAAAA9wo+TgIuE+4UAAAAsm5PqcsMaP7ZIkS0MdaJVGhJD1s</DTS:Password>
-        </DTS:ConnectionManager>
+          DTS:ConnectionString="Data Source=alliantdb-prod;User ID=kwalikar;Initial Catalog=pbs_master;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -146,7 +141,7 @@
               <components>
                 <component
                   refId="Package\Sequence Container\Load XREF Deal To External Contact\ADO NET Destination"
-                  componentClassID="{874F7595-FB5F-40FF-96AF-FBFF8250E3EF}"
+                  componentClassID="DTS.ManagedComponentWrapper.3"
                   contactInfo="Loads data into an ADO.NET-compliant database that uses a database table or view. Load data into a new or existing table. For example, use an ADO.NET provider for ODBC to load data into an ODBC destination.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;2"
                   description="Loads data into an ADO.NET-compliant database that uses a database table or view. Load data into a new or existing table. For example, use an ADO.NET provider for ODBC to load data into an ODBC destination."
                   name="ADO NET Destination"
@@ -158,7 +153,7 @@
                       description="The Destination database table name."
                       expressionType="Notify"
                       name="TableOrViewName"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version= 11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">"dbo"."xref_DealToExternalContactPerson"</property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">"dbo"."xref_DealToExternalContactPerson"</property>
                     <property
                       dataType="System.Int32"
                       description="Specify the number of rows per batch. The default is 0 which uses the same size as SSIS internal buffer. "
@@ -262,7 +257,7 @@
                 </component>
                 <component
                   refId="Package\Sequence Container\Load XREF Deal To External Contact\ADO NET Source"
-                  componentClassID="{874F7595-FB5F-40FF-96AF-FBFF8250E3EF}"
+                  componentClassID="DTS.ManagedComponentWrapper.3"
                   contactInfo="Consumes data from SQL Server, OLE DB, ODBC, or Oracle, using the corresponding .NET Framework data provider. Use a Transact-SQL statement to define the result set. For example, extract data from SQL Server with the .NET Framework data provider for SQL Server.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
                   description="Consumes data from SQL Server, OLE DB, ODBC, or Oracle, using the corresponding .NET Framework data provider. Use a Transact-SQL statement to define the result set. For example, extract data from SQL Server with the .NET Framework data provider for SQL Server."
                   name="ADO NET Source"
@@ -442,7 +437,7 @@ from	[TrafficData].pbs.[ExternalContactPerson]
               <components>
                 <component
                   refId="Package\Sequence Container\Load xref_DealToBlackout\Data Conversion"
-                  componentClassID="{62B1106C-7DB8-4EC8-ADD6-4C664DFFC54A}"
+                  componentClassID="DTSTransform.DataConvert.3"
                   contactInfo="Data Conversion;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
                   description="Data Conversion"
                   name="Data Conversion"
@@ -548,7 +543,7 @@ from	[TrafficData].pbs.[ExternalContactPerson]
                 </component>
                 <component
                   refId="Package\Sequence Container\Load xref_DealToBlackout\OLE DB Destination"
-                  componentClassID="{4ADA7EAA-136C-4215-8098-D7A7C27FC0D1}"
+                  componentClassID="DTSAdapter.OLEDBDestination.3"
                   contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
                   description="OLE DB Destination"
                   name="OLE DB Destination"
@@ -675,7 +670,7 @@ from	[TrafficData].pbs.[ExternalContactPerson]
                 </component>
                 <component
                   refId="Package\Sequence Container\Load xref_DealToBlackout\OLE DB Source"
-                  componentClassID="{165A526D-D5DE-47FF-96A6-F8274C19826B}"
+                  componentClassID="DTSAdapter.OLEDBSource.3"
                   contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
                   description="OLE DB Source"
                   name="OLE DB Source"
@@ -855,7 +850,7 @@ SELECT  distinct
               <components>
                 <component
                   refId="Package\Sequence Container\Load xref_DealToEpisode\OLE DB Destination"
-                  componentClassID="{4ADA7EAA-136C-4215-8098-D7A7C27FC0D1}"
+                  componentClassID="DTSAdapter.OLEDBDestination.3"
                   contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
                   description="OLE DB Destination"
                   name="OLE DB Destination"
@@ -981,7 +976,7 @@ SELECT  distinct
                 </component>
                 <component
                   refId="Package\Sequence Container\Load xref_DealToEpisode\OLE DB Source"
-                  componentClassID="{165A526D-D5DE-47FF-96A6-F8274C19826B}"
+                  componentClassID="DTSAdapter.OLEDBSource.3"
                   contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
                   description="OLE DB Source"
                   name="OLE DB Source"
@@ -1171,7 +1166,7 @@ SELECT distinct
               <components>
                 <component
                   refId="Package\Sequence Container\Load xref_DealToFunder\ADO NET Destination"
-                  componentClassID="{874F7595-FB5F-40FF-96AF-FBFF8250E3EF}"
+                  componentClassID="DTS.ManagedComponentWrapper.3"
                   contactInfo="Loads data into an ADO.NET-compliant database that uses a database table or view. Load data into a new or existing table. For example, use an ADO.NET provider for ODBC to load data into an ODBC destination.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;2"
                   description="Loads data into an ADO.NET-compliant database that uses a database table or view. Load data into a new or existing table. For example, use an ADO.NET provider for ODBC to load data into an ODBC destination."
                   name="ADO NET Destination"
@@ -1183,7 +1178,7 @@ SELECT distinct
                       description="The Destination database table name."
                       expressionType="Notify"
                       name="TableOrViewName"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version= 11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">"dbo"."xref_DealToFunder"</property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">"dbo"."xref_DealToFunder"</property>
                     <property
                       dataType="System.Int32"
                       description="Specify the number of rows per batch. The default is 0 which uses the same size as SSIS internal buffer. "
@@ -1275,7 +1270,7 @@ SELECT distinct
                 </component>
                 <component
                   refId="Package\Sequence Container\Load xref_DealToFunder\ADO NET Source"
-                  componentClassID="{874F7595-FB5F-40FF-96AF-FBFF8250E3EF}"
+                  componentClassID="DTS.ManagedComponentWrapper.3"
                   contactInfo="Consumes data from SQL Server, OLE DB, ODBC, or Oracle, using the corresponding .NET Framework data provider. Use a Transact-SQL statement to define the result set. For example, extract data from SQL Server with the .NET Framework data provider for SQL Server.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
                   description="Consumes data from SQL Server, OLE DB, ODBC, or Oracle, using the corresponding .NET Framework data provider. Use a Transact-SQL statement to define the result set. For example, extract data from SQL Server with the .NET Framework data provider for SQL Server."
                   name="ADO NET Source"
@@ -1458,7 +1453,7 @@ where [ChildID] is not null
               <components>
                 <component
                   refId="Package\Sequence Container\Load xref_DealToHoldback\Data Conversion"
-                  componentClassID="{62B1106C-7DB8-4EC8-ADD6-4C664DFFC54A}"
+                  componentClassID="DTSTransform.DataConvert.3"
                   contactInfo="Data Conversion;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
                   description="Data Conversion"
                   name="Data Conversion"
@@ -1564,7 +1559,7 @@ where [ChildID] is not null
                 </component>
                 <component
                   refId="Package\Sequence Container\Load xref_DealToHoldback\OLE DB Destination"
-                  componentClassID="{4ADA7EAA-136C-4215-8098-D7A7C27FC0D1}"
+                  componentClassID="DTSAdapter.OLEDBDestination.3"
                   contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
                   description="OLE DB Destination"
                   name="OLE DB Destination"
@@ -1691,7 +1686,7 @@ where [ChildID] is not null
                 </component>
                 <component
                   refId="Package\Sequence Container\Load xref_DealToHoldback\OLE DB Source"
-                  componentClassID="{165A526D-D5DE-47FF-96A6-F8274C19826B}"
+                  componentClassID="DTSAdapter.OLEDBSource.3"
                   contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
                   description="OLE DB Source"
                   name="OLE DB Source"
@@ -1872,7 +1867,7 @@ SELECT distinct
               <components>
                 <component
                   refId="Package\Sequence Container\Load xref_DealToProductionCompany\ADO NET Destination"
-                  componentClassID="{874F7595-FB5F-40FF-96AF-FBFF8250E3EF}"
+                  componentClassID="DTS.ManagedComponentWrapper.3"
                   contactInfo="Loads data into an ADO.NET-compliant database that uses a database table or view. Load data into a new or existing table. For example, use an ADO.NET provider for ODBC to load data into an ODBC destination.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;2"
                   description="Loads data into an ADO.NET-compliant database that uses a database table or view. Load data into a new or existing table. For example, use an ADO.NET provider for ODBC to load data into an ODBC destination."
                   name="ADO NET Destination"
@@ -1884,7 +1879,7 @@ SELECT distinct
                       description="The Destination database table name."
                       expressionType="Notify"
                       name="TableOrViewName"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version= 11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">"dbo"."xref_DealToProductionCompany"</property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">"dbo"."xref_DealToProductionCompany"</property>
                     <property
                       dataType="System.Int32"
                       description="Specify the number of rows per batch. The default is 0 which uses the same size as SSIS internal buffer. "
@@ -1976,7 +1971,7 @@ SELECT distinct
                 </component>
                 <component
                   refId="Package\Sequence Container\Load xref_DealToProductionCompany\Data Conversion"
-                  componentClassID="{62B1106C-7DB8-4EC8-ADD6-4C664DFFC54A}"
+                  componentClassID="DTSTransform.DataConvert.3"
                   contactInfo="Data Conversion;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
                   description="Data Conversion"
                   name="Data Conversion"
@@ -2080,7 +2075,7 @@ SELECT distinct
                 </component>
                 <component
                   refId="Package\Sequence Container\Load xref_DealToProductionCompany\OLE DB Source"
-                  componentClassID="{165A526D-D5DE-47FF-96A6-F8274C19826B}"
+                  componentClassID="DTSAdapter.OLEDBSource.3"
                   contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
                   description="OLE DB Source"
                   name="OLE DB Source"
@@ -2244,7 +2239,7 @@ where  [Offer.Organization.OrganizationID] is not null</property>
               <components>
                 <component
                   refId="Package\Sequence Container\Load xref_DealToRightsIn\Data Conversion"
-                  componentClassID="{62B1106C-7DB8-4EC8-ADD6-4C664DFFC54A}"
+                  componentClassID="DTSTransform.DataConvert.3"
                   contactInfo="Data Conversion;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
                   description="Data Conversion"
                   name="Data Conversion"
@@ -2350,7 +2345,7 @@ where  [Offer.Organization.OrganizationID] is not null</property>
                 </component>
                 <component
                   refId="Package\Sequence Container\Load xref_DealToRightsIn\OLE DB Destination"
-                  componentClassID="{4ADA7EAA-136C-4215-8098-D7A7C27FC0D1}"
+                  componentClassID="DTSAdapter.OLEDBDestination.3"
                   contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
                   description="OLE DB Destination"
                   name="OLE DB Destination"
@@ -2477,7 +2472,7 @@ where  [Offer.Organization.OrganizationID] is not null</property>
                 </component>
                 <component
                   refId="Package\Sequence Container\Load xref_DealToRightsIn\OLE DB Source"
-                  componentClassID="{165A526D-D5DE-47FF-96A6-F8274C19826B}"
+                  componentClassID="DTSAdapter.OLEDBSource.3"
                   contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
                   description="OLE DB Source"
                   name="OLE DB Source"
@@ -2659,7 +2654,7 @@ SELECT distinct
               <components>
                 <component
                   refId="Package\Sequence Container\Load xref_DealToSeason\OLE DB Destination"
-                  componentClassID="{4ADA7EAA-136C-4215-8098-D7A7C27FC0D1}"
+                  componentClassID="DTSAdapter.OLEDBDestination.3"
                   contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
                   description="OLE DB Destination"
                   name="OLE DB Destination"
@@ -2786,7 +2781,7 @@ SELECT distinct
                 </component>
                 <component
                   refId="Package\Sequence Container\Load xref_DealToSeason\OLE DB Source"
-                  componentClassID="{165A526D-D5DE-47FF-96A6-F8274C19826B}"
+                  componentClassID="DTSAdapter.OLEDBSource.3"
                   contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
                   description="OLE DB Source"
                   name="OLE DB Source"
@@ -2954,7 +2949,7 @@ SELECT distinct
               <components>
                 <component
                   refId="Package\Sequence Container\Load xref_DealToUnderwriter\ADO NET Destination"
-                  componentClassID="{874F7595-FB5F-40FF-96AF-FBFF8250E3EF}"
+                  componentClassID="DTS.ManagedComponentWrapper.3"
                   contactInfo="Loads data into an ADO.NET-compliant database that uses a database table or view. Load data into a new or existing table. For example, use an ADO.NET provider for ODBC to load data into an ODBC destination.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;2"
                   description="Loads data into an ADO.NET-compliant database that uses a database table or view. Load data into a new or existing table. For example, use an ADO.NET provider for ODBC to load data into an ODBC destination."
                   name="ADO NET Destination"
@@ -2966,7 +2961,7 @@ SELECT distinct
                       description="The Destination database table name."
                       expressionType="Notify"
                       name="TableOrViewName"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version= 11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">"dbo"."xref_DealToUnderwriter"</property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">"dbo"."xref_DealToUnderwriter"</property>
                     <property
                       dataType="System.Int32"
                       description="Specify the number of rows per batch. The default is 0 which uses the same size as SSIS internal buffer. "
@@ -3058,7 +3053,7 @@ SELECT distinct
                 </component>
                 <component
                   refId="Package\Sequence Container\Load xref_DealToUnderwriter\Data Conversion"
-                  componentClassID="{62B1106C-7DB8-4EC8-ADD6-4C664DFFC54A}"
+                  componentClassID="DTSTransform.DataConvert.3"
                   contactInfo="Data Conversion;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
                   description="Data Conversion"
                   name="Data Conversion"
@@ -3162,7 +3157,7 @@ SELECT distinct
                 </component>
                 <component
                   refId="Package\Sequence Container\Load xref_DealToUnderwriter\OLE DB Source"
-                  componentClassID="{165A526D-D5DE-47FF-96A6-F8274C19826B}"
+                  componentClassID="DTSAdapter.OLEDBSource.3"
                   contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
                   description="OLE DB Source"
                   name="OLE DB Source"
@@ -3324,7 +3319,7 @@ join	pbs.underwriter b on replace(b.item_bv_id,'org','') = a.item_bv_id</propert
               <components>
                 <component
                   refId="Package\Sequence Container\load xref_MergedDealToEpisode\ADO NET Destination"
-                  componentClassID="{874F7595-FB5F-40FF-96AF-FBFF8250E3EF}"
+                  componentClassID="DTS.ManagedComponentWrapper.3"
                   contactInfo="Loads data into an ADO.NET-compliant database that uses a database table or view. Load data into a new or existing table. For example, use an ADO.NET provider for ODBC to load data into an ODBC destination.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;2"
                   description="Loads data into an ADO.NET-compliant database that uses a database table or view. Load data into a new or existing table. For example, use an ADO.NET provider for ODBC to load data into an ODBC destination."
                   name="ADO NET Destination"
@@ -3336,7 +3331,7 @@ join	pbs.underwriter b on replace(b.item_bv_id,'org','') = a.item_bv_id</propert
                       description="The Destination database table name."
                       expressionType="Notify"
                       name="TableOrViewName"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version= 11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">"dbo"."xref_MergedDealToEpisode"</property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">"dbo"."xref_MergedDealToEpisode"</property>
                     <property
                       dataType="System.Int32"
                       description="Specify the number of rows per batch. The default is 0 which uses the same size as SSIS internal buffer. "
@@ -3438,7 +3433,7 @@ join	pbs.underwriter b on replace(b.item_bv_id,'org','') = a.item_bv_id</propert
                 </component>
                 <component
                   refId="Package\Sequence Container\load xref_MergedDealToEpisode\ADO NET Source"
-                  componentClassID="{874F7595-FB5F-40FF-96AF-FBFF8250E3EF}"
+                  componentClassID="DTS.ManagedComponentWrapper.3"
                   contactInfo="Consumes data from SQL Server, OLE DB, ODBC, or Oracle, using the corresponding .NET Framework data provider. Use a Transact-SQL statement to define the result set. For example, extract data from SQL Server with the .NET Framework data provider for SQL Server.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
                   description="Consumes data from SQL Server, OLE DB, ODBC, or Oracle, using the corresponding .NET Framework data provider. Use a Transact-SQL statement to define the result set. For example, extract data from SQL Server with the .NET Framework data provider for SQL Server."
                   name="ADO NET Source"
@@ -3636,7 +3631,7 @@ join TrafficData.BV.MASTERDEAL D on d.MDL_ID = c.DEA_MDL_ID</property>
               <components>
                 <component
                   refId="Package\Sequence Container\Load xref_SeasonContainerToSeason\OLE DB Destination"
-                  componentClassID="{4ADA7EAA-136C-4215-8098-D7A7C27FC0D1}"
+                  componentClassID="DTSAdapter.OLEDBDestination.3"
                   contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
                   description="OLE DB Destination"
                   name="OLE DB Destination"
@@ -3763,7 +3758,7 @@ join TrafficData.BV.MASTERDEAL D on d.MDL_ID = c.DEA_MDL_ID</property>
                 </component>
                 <component
                   refId="Package\Sequence Container\Load xref_SeasonContainerToSeason\OLE DB Source"
-                  componentClassID="{165A526D-D5DE-47FF-96A6-F8274C19826B}"
+                  componentClassID="DTSAdapter.OLEDBSource.3"
                   contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
                   description="OLE DB Source"
                   name="OLE DB Source"
@@ -3918,7 +3913,7 @@ join TrafficData.BV.MASTERDEAL D on d.MDL_ID = c.DEA_MDL_ID</property>
               <components>
                 <component
                   refId="Package\Sequence Container\Load xref_SeasonToEpisode\OLE DB Destination"
-                  componentClassID="{4ADA7EAA-136C-4215-8098-D7A7C27FC0D1}"
+                  componentClassID="DTSAdapter.OLEDBDestination.3"
                   contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
                   description="OLE DB Destination"
                   name="OLE DB Destination"
@@ -4055,7 +4050,7 @@ join TrafficData.BV.MASTERDEAL D on d.MDL_ID = c.DEA_MDL_ID</property>
                 </component>
                 <component
                   refId="Package\Sequence Container\Load xref_SeasonToEpisode\OLE DB Source"
-                  componentClassID="{165A526D-D5DE-47FF-96A6-F8274C19826B}"
+                  componentClassID="DTSAdapter.OLEDBSource.3"
                   contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
                   description="OLE DB Source"
                   name="OLE DB Source"
@@ -4243,7 +4238,7 @@ SELECT distinct [ass_id]
               <components>
                 <component
                   refId="Package\Sequence Container\Load xref_SeriesToEpisode\OLE DB Destination"
-                  componentClassID="{4ADA7EAA-136C-4215-8098-D7A7C27FC0D1}"
+                  componentClassID="DTSAdapter.OLEDBDestination.3"
                   contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
                   description="OLE DB Destination"
                   name="OLE DB Destination"
@@ -4380,7 +4375,7 @@ SELECT distinct [ass_id]
                 </component>
                 <component
                   refId="Package\Sequence Container\Load xref_SeriesToEpisode\OLE DB Source"
-                  componentClassID="{165A526D-D5DE-47FF-96A6-F8274C19826B}"
+                  componentClassID="DTSAdapter.OLEDBSource.3"
                   contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
                   description="OLE DB Source"
                   name="OLE DB Source"
@@ -4570,7 +4565,7 @@ SELECT distinct [ass_id]
               <components>
                 <component
                   refId="Package\Sequence Container\Load xref_SeriesToSeason\OLE DB Destination"
-                  componentClassID="{4ADA7EAA-136C-4215-8098-D7A7C27FC0D1}"
+                  componentClassID="DTSAdapter.OLEDBDestination.3"
                   contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
                   description="OLE DB Destination"
                   name="OLE DB Destination"
@@ -4697,7 +4692,7 @@ SELECT distinct [ass_id]
                 </component>
                 <component
                   refId="Package\Sequence Container\Load xref_SeriesToSeason\OLE DB Source"
-                  componentClassID="{165A526D-D5DE-47FF-96A6-F8274C19826B}"
+                  componentClassID="DTSAdapter.OLEDBSource.3"
                   contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
                   description="OLE DB Source"
                   name="OLE DB Source"
@@ -4864,7 +4859,7 @@ SELECT distinct
               <components>
                 <component
                   refId="Package\Sequence Container\Load xref_SeriesToSeasonContainer\OLE DB Destination"
-                  componentClassID="{4ADA7EAA-136C-4215-8098-D7A7C27FC0D1}"
+                  componentClassID="DTSAdapter.OLEDBDestination.3"
                   contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
                   description="OLE DB Destination"
                   name="OLE DB Destination"
@@ -4991,7 +4986,7 @@ SELECT distinct
                 </component>
                 <component
                   refId="Package\Sequence Container\Load xref_SeriesToSeasonContainer\OLE DB Source"
-                  componentClassID="{165A526D-D5DE-47FF-96A6-F8274C19826B}"
+                  componentClassID="DTSAdapter.OLEDBSource.3"
                   contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
                   description="OLE DB Source"
                   name="OLE DB Source"
@@ -5285,7 +5280,7 @@ SELECT distinct
                   <components>
                     <component
                       refId="Package\Sequence Container 1\Catalog Import Container\Import Episode Series\Derived Column"
-                      componentClassID="{49928E82-9C4E-49F0-AABE-3812B82707EC}"
+                      componentClassID="DTSTransform.DerivedColumn.3"
                       contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
                       description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
                       name="Derived Column"
@@ -5475,7 +5470,7 @@ SELECT distinct
                     </component>
                     <component
                       refId="Package\Sequence Container 1\Catalog Import Container\Import Episode Series\MOS-EpisodeWithSeriesParent"
-                      componentClassID="{165A526D-D5DE-47FF-96A6-F8274C19826B}"
+                      componentClassID="DTSAdapter.OLEDBSource.3"
                       contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
                       description="OLE DB Source"
                       name="MOS-EpisodeWithSeriesParent"
@@ -6615,7 +6610,7 @@ SELECT
                     </component>
                     <component
                       refId="Package\Sequence Container 1\Catalog Import Container\Import Episode Series\RL-Episode"
-                      componentClassID="{4ADA7EAA-136C-4215-8098-D7A7C27FC0D1}"
+                      componentClassID="DTSAdapter.OLEDBDestination.3"
                       contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
                       description="OLE DB Destination"
                       name="RL-Episode"
@@ -6915,7 +6910,7 @@ SELECT
                     </component>
                     <component
                       refId="Package\Sequence Container 1\Catalog Import Container\Import Episode Series\Sort"
-                      componentClassID="{5B1A3FF5-D366-4D75-AD1F-F19A36FCBEDB}"
+                      componentClassID="DTSTransform.Sort.3"
                       contactInfo="Sort;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
                       description="Sorts input data in ascending or descending order when it cannot be sorted at its source. For example, sort sales data by 'customer id' before it is written to a flat file and delivered to another department. Note: We do not recommend this transformation for large data flows."
                       name="Sort"
@@ -8263,7 +8258,7 @@ SELECT
                   <components>
                     <component
                       refId="Package\Sequence Container 1\Catalog Import Container\Import EpisodeParentSeason\Derived Column"
-                      componentClassID="{49928E82-9C4E-49F0-AABE-3812B82707EC}"
+                      componentClassID="DTSTransform.DerivedColumn.3"
                       contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
                       description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
                       name="Derived Column"
@@ -8461,7 +8456,7 @@ SELECT
                     </component>
                     <component
                       refId="Package\Sequence Container 1\Catalog Import Container\Import EpisodeParentSeason\MOS-EpisodeWithSeasonParent"
-                      componentClassID="{165A526D-D5DE-47FF-96A6-F8274C19826B}"
+                      componentClassID="DTSAdapter.OLEDBSource.3"
                       contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
                       description="OLE DB Source"
                       name="MOS-EpisodeWithSeasonParent"
@@ -9811,7 +9806,7 @@ OR ass.ass_id = 459172855</property>
                     </component>
                     <component
                       refId="Package\Sequence Container 1\Catalog Import Container\Import EpisodeParentSeason\RL-Episode"
-                      componentClassID="{4ADA7EAA-136C-4215-8098-D7A7C27FC0D1}"
+                      componentClassID="DTSAdapter.OLEDBDestination.3"
                       contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
                       description="OLE DB Destination"
                       name="RL-Episode"
@@ -10252,7 +10247,7 @@ OR ass.ass_id = 459172855</property>
                     </component>
                     <component
                       refId="Package\Sequence Container 1\Catalog Import Container\Import EpisodeParentSeason\Sort"
-                      componentClassID="{5B1A3FF5-D366-4D75-AD1F-F19A36FCBEDB}"
+                      componentClassID="DTSTransform.Sort.3"
                       contactInfo="Sort;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
                       description="Sorts input data in ascending or descending order when it cannot be sorted at its source. For example, sort sales data by 'customer id' before it is written to a flat file and delivered to another department. Note: We do not recommend this transformation for large data flows."
                       name="Sort"
@@ -11942,7 +11937,7 @@ OR ass.ass_id = 459172855</property>
                   <components>
                     <component
                       refId="Package\Sequence Container 1\Catalog Import Container\Import EpisodeParentSeason ADONET\ADO NET Destination"
-                      componentClassID="{874F7595-FB5F-40FF-96AF-FBFF8250E3EF}"
+                      componentClassID="DTS.ManagedComponentWrapper.3"
                       contactInfo="Loads data into an ADO.NET-compliant database that uses a database table or view. Load data into a new or existing table. For example, use an ADO.NET provider for ODBC to load data into an ODBC destination.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;2"
                       description="Loads data into an ADO.NET-compliant database that uses a database table or view. Load data into a new or existing table. For example, use an ADO.NET provider for ODBC to load data into an ODBC destination."
                       name="ADO NET Destination"
@@ -11954,7 +11949,7 @@ OR ass.ass_id = 459172855</property>
                           description="The Destination database table name."
                           expressionType="Notify"
                           name="TableOrViewName"
-                          UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version= 11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">"dbo"."RightsLine_Episode_ParentSeason"</property>
+                          UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">"dbo"."RightsLine_Episode_ParentSeason"</property>
                         <property
                           dataType="System.Int32"
                           description="Specify the number of rows per batch. The default is 0 which uses the same size as SSIS internal buffer. "
@@ -12310,7 +12305,7 @@ OR ass.ass_id = 459172855</property>
                     </component>
                     <component
                       refId="Package\Sequence Container 1\Catalog Import Container\Import EpisodeParentSeason ADONET\ADO NET Source"
-                      componentClassID="{874F7595-FB5F-40FF-96AF-FBFF8250E3EF}"
+                      componentClassID="DTS.ManagedComponentWrapper.3"
                       contactInfo="Consumes data from SQL Server, OLE DB, ODBC, or Oracle, using the corresponding .NET Framework data provider. Use a Transact-SQL statement to define the result set. For example, extract data from SQL Server with the .NET Framework data provider for SQL Server.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
                       description="Consumes data from SQL Server, OLE DB, ODBC, or Oracle, using the corresponding .NET Framework data provider. Use a Transact-SQL statement to define the result set. For example, extract data from SQL Server with the .NET Framework data provider for SQL Server."
                       name="ADO NET Source"
@@ -13448,7 +13443,7 @@ SELECT
                     </component>
                     <component
                       refId="Package\Sequence Container 1\Catalog Import Container\Import EpisodeParentSeason ADONET\Derived Column"
-                      componentClassID="{49928E82-9C4E-49F0-AABE-3812B82707EC}"
+                      componentClassID="DTSTransform.DerivedColumn.3"
                       contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
                       description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
                       name="Derived Column"
@@ -13719,7 +13714,7 @@ SELECT
                   <components>
                     <component
                       refId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\Derived Column"
-                      componentClassID="{49928E82-9C4E-49F0-AABE-3812B82707EC}"
+                      componentClassID="DTSTransform.DerivedColumn.3"
                       contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
                       description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
                       name="Derived Column"
@@ -13911,7 +13906,7 @@ SELECT
                     </component>
                     <component
                       refId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\MOS-OTO"
-                      componentClassID="{165A526D-D5DE-47FF-96A6-F8274C19826B}"
+                      componentClassID="DTSAdapter.OLEDBSource.3"
                       contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
                       description="OLE DB Source"
                       name="MOS-OTO"
@@ -15333,7 +15328,7 @@ WHERE   EXT_SEXTC_ID = 607871753
                     </component>
                     <component
                       refId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\RL-OTO"
-                      componentClassID="{4ADA7EAA-136C-4215-8098-D7A7C27FC0D1}"
+                      componentClassID="DTSAdapter.OLEDBDestination.3"
                       contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
                       description="OLE DB Destination"
                       name="RL-OTO"
@@ -15776,7 +15771,7 @@ WHERE   EXT_SEXTC_ID = 607871753
                     </component>
                     <component
                       refId="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\Sort"
-                      componentClassID="{5B1A3FF5-D366-4D75-AD1F-F19A36FCBEDB}"
+                      componentClassID="DTSTransform.Sort.3"
                       contactInfo="Sort;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
                       description="Sorts input data in ascending or descending order when it cannot be sorted at its source. For example, sort sales data by 'customer id' before it is written to a flat file and delivered to another department. Note: We do not recommend this transformation for large data flows."
                       name="Sort"
@@ -17440,7 +17435,7 @@ WHERE   EXT_SEXTC_ID = 607871753
                   <components>
                     <component
                       refId="Package\Sequence Container 1\Catalog Import Container\Import SeasonContainer\Derived Column"
-                      componentClassID="{49928E82-9C4E-49F0-AABE-3812B82707EC}"
+                      componentClassID="DTSTransform.DerivedColumn.3"
                       contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
                       description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
                       name="Derived Column"
@@ -17582,7 +17577,7 @@ WHERE   EXT_SEXTC_ID = 607871753
                     </component>
                     <component
                       refId="Package\Sequence Container 1\Catalog Import Container\Import SeasonContainer\MOS-SeasonContainer"
-                      componentClassID="{165A526D-D5DE-47FF-96A6-F8274C19826B}"
+                      componentClassID="DTSAdapter.OLEDBSource.3"
                       contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
                       description="OLE DB Source"
                       name="MOS-SeasonContainer"
@@ -18215,7 +18210,7 @@ SELECT [InternalPBSID]
                     </component>
                     <component
                       refId="Package\Sequence Container 1\Catalog Import Container\Import SeasonContainer\RL-SeasonContainer"
-                      componentClassID="{4ADA7EAA-136C-4215-8098-D7A7C27FC0D1}"
+                      componentClassID="DTSAdapter.OLEDBDestination.3"
                       contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
                       description="OLE DB Destination"
                       name="RL-SeasonContainer"
@@ -18400,7 +18395,7 @@ SELECT [InternalPBSID]
                     </component>
                     <component
                       refId="Package\Sequence Container 1\Catalog Import Container\Import SeasonContainer\Sort"
-                      componentClassID="{5B1A3FF5-D366-4D75-AD1F-F19A36FCBEDB}"
+                      componentClassID="DTSTransform.Sort.3"
                       contactInfo="Sort;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
                       description="Sorts input data in ascending or descending order when it cannot be sorted at its source. For example, sort sales data by 'customer id' before it is written to a flat file and delivered to another department. Note: We do not recommend this transformation for large data flows."
                       name="Sort"
@@ -19101,7 +19096,7 @@ SELECT [InternalPBSID]
                   <components>
                     <component
                       refId="Package\Sequence Container 1\Catalog Import Container\ImportSeasons\Derived Column"
-                      componentClassID="{49928E82-9C4E-49F0-AABE-3812B82707EC}"
+                      componentClassID="DTSTransform.DerivedColumn.3"
                       contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
                       description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
                       name="Derived Column"
@@ -19272,7 +19267,7 @@ SELECT [InternalPBSID]
                     </component>
                     <component
                       refId="Package\Sequence Container 1\Catalog Import Container\ImportSeasons\MOS-Season"
-                      componentClassID="{165A526D-D5DE-47FF-96A6-F8274C19826B}"
+                      componentClassID="DTSAdapter.OLEDBSource.3"
                       contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
                       description="OLE DB Source"
                       name="MOS-Season"
@@ -19911,7 +19906,7 @@ SELECT  [InternalPBSID]
                     </component>
                     <component
                       refId="Package\Sequence Container 1\Catalog Import Container\ImportSeasons\RL-Season"
-                      componentClassID="{4ADA7EAA-136C-4215-8098-D7A7C27FC0D1}"
+                      componentClassID="DTSAdapter.OLEDBDestination.3"
                       contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
                       description="OLE DB Destination"
                       name="RL-Season"
@@ -20180,7 +20175,7 @@ SELECT  [InternalPBSID]
                     </component>
                     <component
                       refId="Package\Sequence Container 1\Catalog Import Container\ImportSeasons\Sort"
-                      componentClassID="{5B1A3FF5-D366-4D75-AD1F-F19A36FCBEDB}"
+                      componentClassID="DTSTransform.Sort.3"
                       contactInfo="Sort;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
                       description="Sorts input data in ascending or descending order when it cannot be sorted at its source. For example, sort sales data by 'customer id' before it is written to a flat file and delivered to another department. Note: We do not recommend this transformation for large data flows."
                       name="Sort"
@@ -20881,7 +20876,7 @@ SELECT  [InternalPBSID]
                   <components>
                     <component
                       refId="Package\Sequence Container 1\Catalog Import Container\ImportSeries\Add Derived Cols"
-                      componentClassID="{49928E82-9C4E-49F0-AABE-3812B82707EC}"
+                      componentClassID="DTSTransform.DerivedColumn.3"
                       contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
                       description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
                       name="Add Derived Cols"
@@ -21079,7 +21074,7 @@ SELECT  [InternalPBSID]
                     </component>
                     <component
                       refId="Package\Sequence Container 1\Catalog Import Container\ImportSeries\MOS-Source-Series"
-                      componentClassID="{165A526D-D5DE-47FF-96A6-F8274C19826B}"
+                      componentClassID="DTSAdapter.OLEDBSource.3"
                       contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
                       description="OLE DB Source"
                       name="MOS-Source-Series"
@@ -22079,7 +22074,7 @@ SELECT [Series.UID]
                     </component>
                     <component
                       refId="Package\Sequence Container 1\Catalog Import Container\ImportSeries\RL-Series"
-                      componentClassID="{4ADA7EAA-136C-4215-8098-D7A7C27FC0D1}"
+                      componentClassID="DTSAdapter.OLEDBDestination.3"
                       contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
                       description="OLE DB Destination"
                       name="RL-Series"
@@ -22358,7 +22353,7 @@ SELECT [Series.UID]
                     </component>
                     <component
                       refId="Package\Sequence Container 1\Catalog Import Container\ImportSeries\Sort and Remove Dups"
-                      componentClassID="{5B1A3FF5-D366-4D75-AD1F-F19A36FCBEDB}"
+                      componentClassID="DTSTransform.Sort.3"
                       contactInfo="Sort;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
                       description="Sorts input data in ascending or descending order when it cannot be sorted at its source. For example, sort sales data by 'customer id' before it is written to a flat file and delivered to another department. Note: We do not recommend this transformation for large data flows."
                       name="Sort and Remove Dups"
@@ -23641,7 +23636,7 @@ SELECT [Series.UID]
                   <components>
                     <component
                       refId="Package\Sequence Container 1\Contact\Import Company\Derived Column"
-                      componentClassID="{49928E82-9C4E-49F0-AABE-3812B82707EC}"
+                      componentClassID="DTSTransform.DerivedColumn.3"
                       contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
                       description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
                       name="Derived Column"
@@ -23753,7 +23748,7 @@ SELECT [Series.UID]
                     </component>
                     <component
                       refId="Package\Sequence Container 1\Contact\Import Company\MOS-Company"
-                      componentClassID="{165A526D-D5DE-47FF-96A6-F8274C19826B}"
+                      componentClassID="DTSAdapter.OLEDBSource.3"
                       contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
                       description="OLE DB Source"
                       name="MOS-Company"
@@ -24176,7 +24171,7 @@ join [RightsLineETL].[dbo].[Apr23_Deals] Apr23 on Apr23.DEA_ID = substring(xref.
                     </component>
                     <component
                       refId="Package\Sequence Container 1\Contact\Import Company\RL Dest - Company"
-                      componentClassID="{4ADA7EAA-136C-4215-8098-D7A7C27FC0D1}"
+                      componentClassID="DTSAdapter.OLEDBDestination.3"
                       contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
                       description="OLE DB Destination"
                       name="RL Dest - Company"
@@ -24427,7 +24422,7 @@ join [RightsLineETL].[dbo].[Apr23_Deals] Apr23 on Apr23.DEA_ID = substring(xref.
                     </component>
                     <component
                       refId="Package\Sequence Container 1\Contact\Import Company\Sort"
-                      componentClassID="{5B1A3FF5-D366-4D75-AD1F-F19A36FCBEDB}"
+                      componentClassID="DTSTransform.Sort.3"
                       contactInfo="Sort;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
                       description="Sorts input data in ascending or descending order when it cannot be sorted at its source. For example, sort sales data by 'customer id' before it is written to a flat file and delivered to another department. Note: We do not recommend this transformation for large data flows."
                       name="Sort"
@@ -24873,7 +24868,7 @@ join [RightsLineETL].[dbo].[Apr23_Deals] Apr23 on Apr23.DEA_ID = substring(xref.
                   <components>
                     <component
                       refId="Package\Sequence Container 1\Contact\Import ContactPerson\Derived Column"
-                      componentClassID="{49928E82-9C4E-49F0-AABE-3812B82707EC}"
+                      componentClassID="DTSTransform.DerivedColumn.3"
                       contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
                       description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
                       name="Derived Column"
@@ -25162,7 +25157,7 @@ join [RightsLineETL].[dbo].[Apr23_Deals] Apr23 on Apr23.DEA_ID = substring(xref.
                     </component>
                     <component
                       refId="Package\Sequence Container 1\Contact\Import ContactPerson\MOS-Person"
-                      componentClassID="{165A526D-D5DE-47FF-96A6-F8274C19826B}"
+                      componentClassID="DTSAdapter.OLEDBSource.3"
                       contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
                       description="OLE DB Source"
                       name="MOS-Person"
@@ -25626,7 +25621,7 @@ select * from pbs.ExternalContactPerson where dealid in( '592707727','236035779'
                     </component>
                     <component
                       refId="Package\Sequence Container 1\Contact\Import ContactPerson\RL-Person"
-                      componentClassID="{4ADA7EAA-136C-4215-8098-D7A7C27FC0D1}"
+                      componentClassID="DTSAdapter.OLEDBDestination.3"
                       contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
                       description="OLE DB Destination"
                       name="RL-Person"
@@ -25916,7 +25911,7 @@ select * from pbs.ExternalContactPerson where dealid in( '592707727','236035779'
                     </component>
                     <component
                       refId="Package\Sequence Container 1\Contact\Import ContactPerson\Sort"
-                      componentClassID="{5B1A3FF5-D366-4D75-AD1F-F19A36FCBEDB}"
+                      componentClassID="DTSTransform.Sort.3"
                       contactInfo="Sort;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
                       description="Sorts input data in ascending or descending order when it cannot be sorted at its source. For example, sort sales data by 'customer id' before it is written to a flat file and delivered to another department. Note: We do not recommend this transformation for large data flows."
                       name="Sort"
@@ -26432,7 +26427,7 @@ select * from pbs.ExternalContactPerson where dealid in( '592707727','236035779'
                   <components>
                     <component
                       refId="Package\Sequence Container 1\Contact\Import Underwriter\Data Conversion"
-                      componentClassID="{62B1106C-7DB8-4EC8-ADD6-4C664DFFC54A}"
+                      componentClassID="DTSTransform.DataConvert.3"
                       contactInfo="Data Conversion;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
                       description="Data Conversion"
                       name="Data Conversion"
@@ -26510,7 +26505,7 @@ select * from pbs.ExternalContactPerson where dealid in( '592707727','236035779'
                     </component>
                     <component
                       refId="Package\Sequence Container 1\Contact\Import Underwriter\MOS-UNderwriter"
-                      componentClassID="{165A526D-D5DE-47FF-96A6-F8274C19826B}"
+                      componentClassID="DTSAdapter.OLEDBSource.3"
                       contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
                       description="OLE DB Source"
                       name="MOS-UNderwriter"
@@ -27052,7 +27047,7 @@ where 'Offer'+xref.ParentID in ('Offer592707727','Offer236035779','Offer58976336
                     </component>
                     <component
                       refId="Package\Sequence Container 1\Contact\Import Underwriter\RL Dest - Underwriter"
-                      componentClassID="{4ADA7EAA-136C-4215-8098-D7A7C27FC0D1}"
+                      componentClassID="DTSAdapter.OLEDBDestination.3"
                       contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
                       description="OLE DB Destination"
                       name="RL Dest - Underwriter"
@@ -27340,7 +27335,7 @@ where 'Offer'+xref.ParentID in ('Offer592707727','Offer236035779','Offer58976336
                     </component>
                     <component
                       refId="Package\Sequence Container 1\Contact\Import Underwriter\Sort"
-                      componentClassID="{5B1A3FF5-D366-4D75-AD1F-F19A36FCBEDB}"
+                      componentClassID="DTSTransform.Sort.3"
                       contactInfo="Sort;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
                       description="Sorts input data in ascending or descending order when it cannot be sorted at its source. For example, sort sales data by 'customer id' before it is written to a flat file and delivered to another department. Note: We do not recommend this transformation for large data flows."
                       name="Sort"
@@ -28000,7 +27995,7 @@ where 'Offer'+xref.ParentID in ('Offer592707727','Offer236035779','Offer58976336
                   <components>
                     <component
                       refId="Package\Sequence Container 1\Deal Imports\Import Deal-PBS PAA1\Derived Column"
-                      componentClassID="{49928E82-9C4E-49F0-AABE-3812B82707EC}"
+                      componentClassID="DTSTransform.DerivedColumn.3"
                       contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
                       description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
                       name="Derived Column"
@@ -28230,7 +28225,7 @@ where 'Offer'+xref.ParentID in ('Offer592707727','Offer236035779','Offer58976336
                     </component>
                     <component
                       refId="Package\Sequence Container 1\Deal Imports\Import Deal-PBS PAA1\MOS-DealPbsPAA1"
-                      componentClassID="{165A526D-D5DE-47FF-96A6-F8274C19826B}"
+                      componentClassID="DTSAdapter.OLEDBSource.3"
                       contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
                       description="OLE DB Source"
                       name="MOS-DealPbsPAA1"
@@ -28713,7 +28708,7 @@ where not exists
                     </component>
                     <component
                       refId="Package\Sequence Container 1\Deal Imports\Import Deal-PBS PAA1\RL-DealPBSPAA1"
-                      componentClassID="{4ADA7EAA-136C-4215-8098-D7A7C27FC0D1}"
+                      componentClassID="DTSAdapter.OLEDBDestination.3"
                       contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
                       description="OLE DB Destination"
                       name="RL-DealPBSPAA1"
@@ -28973,7 +28968,7 @@ where not exists
                     </component>
                     <component
                       refId="Package\Sequence Container 1\Deal Imports\Import Deal-PBS PAA1\Sort"
-                      componentClassID="{5B1A3FF5-D366-4D75-AD1F-F19A36FCBEDB}"
+                      componentClassID="DTSTransform.Sort.3"
                       contactInfo="Sort;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
                       description="Sorts input data in ascending or descending order when it cannot be sorted at its source. For example, sort sales data by 'customer id' before it is written to a flat file and delivered to another department. Note: We do not recommend this transformation for large data flows."
                       name="Sort"
@@ -29479,7 +29474,7 @@ where not exists
                   <components>
                     <component
                       refId="Package\Sequence Container 1\Deal Imports\Import Deal-PBS PAA1 Merged\MOS-DealPbsPAA1 Merged"
-                      componentClassID="{165A526D-D5DE-47FF-96A6-F8274C19826B}"
+                      componentClassID="DTSAdapter.OLEDBSource.3"
                       contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
                       description="OLE DB Source"
                       name="MOS-DealPbsPAA1 Merged"
@@ -29878,7 +29873,7 @@ join cteDealQuery  F on f.dea_id =  e.dea_id
                     </component>
                     <component
                       refId="Package\Sequence Container 1\Deal Imports\Import Deal-PBS PAA1 Merged\RL-DealPBSPAA1"
-                      componentClassID="{4ADA7EAA-136C-4215-8098-D7A7C27FC0D1}"
+                      componentClassID="DTSAdapter.OLEDBDestination.3"
                       contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
                       description="OLE DB Destination"
                       name="RL-DealPBSPAA1"
@@ -30150,7 +30145,7 @@ join cteDealQuery  F on f.dea_id =  e.dea_id
                   <components>
                     <component
                       refId="Package\Sequence Container 1\Deal Imports\Import Deal-PBS Prod and Acq Merged\MOS-DealPbs ProdAcq Merged Data"
-                      componentClassID="{165A526D-D5DE-47FF-96A6-F8274C19826B}"
+                      componentClassID="DTSAdapter.OLEDBSource.3"
                       contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
                       description="OLE DB Source"
                       name="MOS-DealPbs ProdAcq Merged Data"
@@ -30539,7 +30534,7 @@ LEFT JOIN [PBS].[MasterLookupValues] mlvWorkflowStatus ON mlvWorkflowStatus.ml_i
                     </component>
                     <component
                       refId="Package\Sequence Container 1\Deal Imports\Import Deal-PBS Prod and Acq Merged\RL-DealPBS Prod and Acq Merged"
-                      componentClassID="{4ADA7EAA-136C-4215-8098-D7A7C27FC0D1}"
+                      componentClassID="DTSAdapter.OLEDBDestination.3"
                       contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
                       description="OLE DB Destination"
                       name="RL-DealPBS Prod and Acq Merged"
@@ -30809,7 +30804,7 @@ LEFT JOIN [PBS].[MasterLookupValues] mlvWorkflowStatus ON mlvWorkflowStatus.ml_i
                   <components>
                     <component
                       refId="Package\Sequence Container 1\Deal Imports\Import Deal-ProdAcq\Derived Column"
-                      componentClassID="{49928E82-9C4E-49F0-AABE-3812B82707EC}"
+                      componentClassID="DTSTransform.DerivedColumn.3"
                       contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
                       description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
                       name="Derived Column"
@@ -30950,7 +30945,7 @@ LEFT JOIN [PBS].[MasterLookupValues] mlvWorkflowStatus ON mlvWorkflowStatus.ml_i
                     </component>
                     <component
                       refId="Package\Sequence Container 1\Deal Imports\Import Deal-ProdAcq\MOS-DealProdACQ"
-                      componentClassID="{165A526D-D5DE-47FF-96A6-F8274C19826B}"
+                      componentClassID="DTSAdapter.OLEDBSource.3"
                       contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
                       description="OLE DB Source"
                       name="MOS-DealProdACQ"
@@ -31535,7 +31530,7 @@ join cteDealQuery q on q.dea_id = [DealProdAcQ].dea_id
                     </component>
                     <component
                       refId="Package\Sequence Container 1\Deal Imports\Import Deal-ProdAcq\RL-DealProdACQ"
-                      componentClassID="{4ADA7EAA-136C-4215-8098-D7A7C27FC0D1}"
+                      componentClassID="DTSAdapter.OLEDBDestination.3"
                       contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
                       description="OLE DB Destination"
                       name="RL-DealProdACQ"
@@ -31827,7 +31822,7 @@ join cteDealQuery q on q.dea_id = [DealProdAcQ].dea_id
                     </component>
                     <component
                       refId="Package\Sequence Container 1\Deal Imports\Import Deal-ProdAcq\Sort 1"
-                      componentClassID="{5B1A3FF5-D366-4D75-AD1F-F19A36FCBEDB}"
+                      componentClassID="DTSTransform.Sort.3"
                       contactInfo="Sort;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
                       description="Sorts input data in ascending or descending order when it cannot be sorted at its source. For example, sort sales data by 'customer id' before it is written to a flat file and delivered to another department. Note: We do not recommend this transformation for large data flows."
                       name="Sort 1"
@@ -32397,7 +32392,7 @@ join cteDealQuery q on q.dea_id = [DealProdAcQ].dea_id
                   <components>
                     <component
                       refId="Package\Sequence Container 1\Deal Imports\Import Funders\ADO NET Destination"
-                      componentClassID="{874F7595-FB5F-40FF-96AF-FBFF8250E3EF}"
+                      componentClassID="DTS.ManagedComponentWrapper.3"
                       contactInfo="Loads data into an ADO.NET-compliant database that uses a database table or view. Load data into a new or existing table. For example, use an ADO.NET provider for ODBC to load data into an ODBC destination.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;2"
                       description="Loads data into an ADO.NET-compliant database that uses a database table or view. Load data into a new or existing table. For example, use an ADO.NET provider for ODBC to load data into an ODBC destination."
                       name="ADO NET Destination"
@@ -32409,7 +32404,7 @@ join cteDealQuery q on q.dea_id = [DealProdAcQ].dea_id
                           description="The Destination database table name."
                           expressionType="Notify"
                           name="TableOrViewName"
-                          UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version= 11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">"dbo"."RightsLine_Funders"</property>
+                          UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">"dbo"."RightsLine_Funders"</property>
                         <property
                           dataType="System.Int32"
                           description="Specify the number of rows per batch. The default is 0 which uses the same size as SSIS internal buffer. "
@@ -32682,7 +32677,7 @@ join cteDealQuery q on q.dea_id = [DealProdAcQ].dea_id
                     </component>
                     <component
                       refId="Package\Sequence Container 1\Deal Imports\Import Funders\ADO NET Source"
-                      componentClassID="{874F7595-FB5F-40FF-96AF-FBFF8250E3EF}"
+                      componentClassID="DTS.ManagedComponentWrapper.3"
                       contactInfo="Consumes data from SQL Server, OLE DB, ODBC, or Oracle, using the corresponding .NET Framework data provider. Use a Transact-SQL statement to define the result set. For example, extract data from SQL Server with the .NET Framework data provider for SQL Server.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
                       description="Consumes data from SQL Server, OLE DB, ODBC, or Oracle, using the corresponding .NET Framework data provider. Use a Transact-SQL statement to define the result set. For example, extract data from SQL Server with the .NET Framework data provider for SQL Server."
                       name="ADO NET Source"
@@ -33434,7 +33429,7 @@ WHERE   ( BV.DEALFUNDING.DEF_ISPRODUCERFUNDING = 0 )
               DTS:LocaleID="-1"
               DTS:ObjectName="Update PAA Dupes"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2012; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="2">
+              DTS:ThreadHint="1">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -33451,7 +33446,7 @@ WHERE   ( BV.DEALFUNDING.DEF_ISPRODUCERFUNDING = 0 )
               DTS:LocaleID="-1"
               DTS:ObjectName="Update PRoadAndQ Dupes"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2012; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="1">
+              DTS:ThreadHint="2">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -33541,7 +33536,7 @@ WHERE   ( BV.DEALFUNDING.DEF_ISPRODUCERFUNDING = 0 )
                   <components>
                     <component
                       refId="Package\Sequence Container 1\Rights Imports\AlliantRightsIn\AlliantRights"
-                      componentClassID="{165A526D-D5DE-47FF-96A6-F8274C19826B}"
+                      componentClassID="DTSAdapter.OLEDBSource.3"
                       contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
                       description="OLE DB Source"
                       name="AlliantRights"
@@ -33814,7 +33809,7 @@ where right_Type = 'License'</property>
                     </component>
                     <component
                       refId="Package\Sequence Container 1\Rights Imports\AlliantRightsIn\Derived Column"
-                      componentClassID="{49928E82-9C4E-49F0-AABE-3812B82707EC}"
+                      componentClassID="DTSTransform.DerivedColumn.3"
                       contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
                       description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
                       name="Derived Column"
@@ -33987,7 +33982,7 @@ where right_Type = 'License'</property>
                     </component>
                     <component
                       refId="Package\Sequence Container 1\Rights Imports\AlliantRightsIn\RL-RightsIn"
-                      componentClassID="{4ADA7EAA-136C-4215-8098-D7A7C27FC0D1}"
+                      componentClassID="DTSAdapter.OLEDBDestination.3"
                       contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
                       description="OLE DB Destination"
                       name="RL-RightsIn"
@@ -34205,7 +34200,7 @@ where right_Type = 'License'</property>
                   <components>
                     <component
                       refId="Package\Sequence Container 1\Rights Imports\Import Rights IN Bv-MOS\Derived Column"
-                      componentClassID="{49928E82-9C4E-49F0-AABE-3812B82707EC}"
+                      componentClassID="DTSTransform.DerivedColumn.3"
                       contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
                       description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
                       name="Derived Column"
@@ -34349,7 +34344,7 @@ where right_Type = 'License'</property>
                     </component>
                     <component
                       refId="Package\Sequence Container 1\Rights Imports\Import Rights IN Bv-MOS\MOS-RightsINBV"
-                      componentClassID="{165A526D-D5DE-47FF-96A6-F8274C19826B}"
+                      componentClassID="DTSAdapter.OLEDBSource.3"
                       contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
                       description="OLE DB Source"
                       name="MOS-RightsINBV"
@@ -34837,7 +34832,7 @@ FROM    [PBS].[vwMOSUsage]
                     </component>
                     <component
                       refId="Package\Sequence Container 1\Rights Imports\Import Rights IN Bv-MOS\RL-RightsInBV"
-                      componentClassID="{4ADA7EAA-136C-4215-8098-D7A7C27FC0D1}"
+                      componentClassID="DTSAdapter.OLEDBDestination.3"
                       contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
                       description="OLE DB Destination"
                       name="RL-RightsInBV"
@@ -35044,7 +35039,7 @@ FROM    [PBS].[vwMOSUsage]
                     </component>
                     <component
                       refId="Package\Sequence Container 1\Rights Imports\Import Rights IN Bv-MOS\Sort"
-                      componentClassID="{5B1A3FF5-D366-4D75-AD1F-F19A36FCBEDB}"
+                      componentClassID="DTSTransform.Sort.3"
                       contactInfo="Sort;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
                       description="Sorts input data in ascending or descending order when it cannot be sorted at its source. For example, sort sales data by 'customer id' before it is written to a flat file and delivered to another department. Note: We do not recommend this transformation for large data flows."
                       name="Sort"
@@ -35595,7 +35590,7 @@ FROM    [PBS].[vwMOSUsage]
                   <components>
                     <component
                       refId="Package\Sequence Container 1\Rights Imports\Import RIghts-Blackout\Derived Column"
-                      componentClassID="{49928E82-9C4E-49F0-AABE-3812B82707EC}"
+                      componentClassID="DTSTransform.DerivedColumn.3"
                       contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
                       description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
                       name="Derived Column"
@@ -35768,7 +35763,7 @@ FROM    [PBS].[vwMOSUsage]
                     </component>
                     <component
                       refId="Package\Sequence Container 1\Rights Imports\Import RIghts-Blackout\MOS-Rights-Blackout"
-                      componentClassID="{165A526D-D5DE-47FF-96A6-F8274C19826B}"
+                      componentClassID="DTSAdapter.OLEDBSource.3"
                       contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
                       description="OLE DB Source"
                       name="MOS-Rights-Blackout"
@@ -36247,7 +36242,7 @@ where [Usage.EffectiveTerm.Use] = 'Blackouts'
                     </component>
                     <component
                       refId="Package\Sequence Container 1\Rights Imports\Import RIghts-Blackout\RL-blackouts"
-                      componentClassID="{4ADA7EAA-136C-4215-8098-D7A7C27FC0D1}"
+                      componentClassID="DTSAdapter.OLEDBDestination.3"
                       contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
                       description="OLE DB Destination"
                       name="RL-blackouts"
@@ -36484,7 +36479,7 @@ where [Usage.EffectiveTerm.Use] = 'Blackouts'
                   <components>
                     <component
                       refId="Package\Sequence Container 1\Rights Imports\Import RIghts-Holdback\Derived Column"
-                      componentClassID="{49928E82-9C4E-49F0-AABE-3812B82707EC}"
+                      componentClassID="DTSTransform.DerivedColumn.3"
                       contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
                       description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
                       name="Derived Column"
@@ -36627,7 +36622,7 @@ where [Usage.EffectiveTerm.Use] = 'Blackouts'
                     </component>
                     <component
                       refId="Package\Sequence Container 1\Rights Imports\Import RIghts-Holdback\MOS-HoldBack"
-                      componentClassID="{165A526D-D5DE-47FF-96A6-F8274C19826B}"
+                      componentClassID="DTSAdapter.OLEDBSource.3"
                       contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
                       description="OLE DB Source"
                       name="MOS-HoldBack"
@@ -37112,7 +37107,7 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
                     </component>
                     <component
                       refId="Package\Sequence Container 1\Rights Imports\Import RIghts-Holdback\RL-Holdback"
-                      componentClassID="{4ADA7EAA-136C-4215-8098-D7A7C27FC0D1}"
+                      componentClassID="DTSAdapter.OLEDBDestination.3"
                       contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
                       description="OLE DB Destination"
                       name="RL-Holdback"
@@ -37360,6 +37355,1064 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
               DTS:ObjectName="Constraint 3"
               DTS:To="Package\Sequence Container 1\Rights Imports\Import Rights IN Bv-MOS" />
           </DTS:PrecedenceConstraints>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\Sequence Container 1\RightsOptionType"
+          DTS:CreationName="STOCK:SEQUENCE"
+          DTS:Description="Sequence Container"
+          DTS:Disabled="True"
+          DTS:DTSID="{04FE89E5-3DDF-47D0-A63F-C7723C981551}"
+          DTS:ExecutableType="STOCK:SEQUENCE"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="RightsOptionType">
+          <DTS:Variables />
+          <DTS:Executables>
+            <DTS:Executable
+              DTS:refId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes"
+              DTS:CreationName="SSIS.Pipeline.3"
+              DTS:Description="Data Flow Task"
+              DTS:Disabled="True"
+              DTS:DTSID="{5dc8ada8-47d8-4bc5-95d6-8bc65a63ede7}"
+              DTS:ExecutableType="SSIS.Pipeline.3"
+              DTS:LocaleID="-1"
+              DTS:ObjectName="Import RightsOptionsTypes"
+              DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+              <DTS:Variables />
+              <DTS:ObjectData>
+                <pipeline
+                  version="1">
+                  <components>
+                    <component
+                      refId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Destination"
+                      componentClassID="DTS.ManagedComponentWrapper.3"
+                      contactInfo="Loads data into an ADO.NET-compliant database that uses a database table or view. Load data into a new or existing table. For example, use an ADO.NET provider for ODBC to load data into an ODBC destination.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;2"
+                      description="Loads data into an ADO.NET-compliant database that uses a database table or view. Load data into a new or existing table. For example, use an ADO.NET provider for ODBC to load data into an ODBC destination."
+                      name="ADO NET Destination"
+                      usesDispositions="true"
+                      version="2">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="The Destination database table name."
+                          expressionType="Notify"
+                          name="TableOrViewName"
+                          UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">"dbo"."RightsLine_Funders"</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specify the number of rows per batch. The default is 0 which uses the same size as SSIS internal buffer. "
+                          expressionType="Notify"
+                          name="BatchSize">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="The number of seconds before a command times out. A value of 0 indicates infinite time-out. "
+                          expressionType="Notify"
+                          name="CommandTimeout">30</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Specifies whether to use the SqlBulkCopy interface to improve the performance of bulk insert operations. Only certain providers support this interface."
+                          expressionType="Notify"
+                          name="UseBulkInsertWhenPossible">true</property>
+                        <property
+                          dataType="System.String"
+                          name="UserComponentTypeName">Microsoft.SqlServer.Dts.Pipeline.ADONETDestination, Microsoft.SqlServer.ADONETDest, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91</property>
+                      </properties>
+                      <connections>
+                        <connection
+                          refId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Destination.Connections[IDbConnection]"
+                          connectionManagerID="Package.ConnectionManagers[ADO.NET-Rightsline]"
+                          connectionManagerRefId="Package.ConnectionManagers[ADO.NET-Rightsline]"
+                          description="Managed connection manager"
+                          name="IDbConnection" />
+                      </connections>
+                      <inputs>
+                        <input
+                          refId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Destination.Inputs[ADO NET Destination Input]"
+                          errorRowDisposition="FailComponent"
+                          hasSideEffects="true"
+                          name="ADO NET Destination Input">
+                          <inputColumns>
+                            <inputColumn
+                              refId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[entity_title]"
+                              cachedDataType="wstr"
+                              cachedLength="2000"
+                              cachedName="entity_title"
+                              externalMetadataColumnId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[entity_title]"
+                              lineageId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Output].Columns[entity_title]" />
+                            <inputColumn
+                              refId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[entity_template]"
+                              cachedDataType="wstr"
+                              cachedLength="2000"
+                              cachedName="entity_template"
+                              externalMetadataColumnId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[entity_template]"
+                              lineageId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Output].Columns[entity_template]" />
+                            <inputColumn
+                              refId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[local_underwriting_option]"
+                              cachedDataType="wstr"
+                              cachedLength="49"
+                              cachedName="local_underwriting_option"
+                              externalMetadataColumnId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[local_underwriting_option]"
+                              lineageId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Output].Columns[local_underwriting_option]" />
+                            <inputColumn
+                              refId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[explanation_and_notes]"
+                              cachedDataType="wstr"
+                              cachedLength="1"
+                              cachedName="explanation_and_notes"
+                              externalMetadataColumnId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[explanation_and_notes]"
+                              lineageId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Output].Columns[explanation_and_notes]" />
+                            <inputColumn
+                              refId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[accounting_class]"
+                              cachedDataType="wstr"
+                              cachedLength="8"
+                              cachedName="accounting_class"
+                              externalMetadataColumnId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[accounting_class]"
+                              lineageId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Output].Columns[accounting_class]" />
+                            <inputColumn
+                              refId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[funding_type]"
+                              cachedDataType="wstr"
+                              cachedLength="11"
+                              cachedName="funding_type"
+                              externalMetadataColumnId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[funding_type]"
+                              lineageId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Output].Columns[funding_type]" />
+                            <inputColumn
+                              refId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[funder_role]"
+                              cachedDataType="wstr"
+                              cachedLength="11"
+                              cachedName="funder_role"
+                              externalMetadataColumnId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[funder_role]"
+                              lineageId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Output].Columns[funder_role]" />
+                            <inputColumn
+                              refId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[table_fee]"
+                              cachedDataType="numeric"
+                              cachedName="table_fee"
+                              cachedPrecision="15"
+                              cachedScale="2"
+                              externalMetadataColumnId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[table_fee]"
+                              lineageId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Output].Columns[table_fee]" />
+                            <inputColumn
+                              refId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[start]"
+                              cachedDataType="wstr"
+                              cachedLength="10"
+                              cachedName="start"
+                              externalMetadataColumnId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[start]"
+                              lineageId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Output].Columns[start]" />
+                            <inputColumn
+                              refId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[end]"
+                              cachedDataType="wstr"
+                              cachedLength="10"
+                              cachedName="end"
+                              externalMetadataColumnId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[end]"
+                              lineageId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Output].Columns[end]" />
+                            <inputColumn
+                              refId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[fiscal_year]"
+                              cachedDataType="wstr"
+                              cachedLength="10"
+                              cachedName="fiscal_year"
+                              externalMetadataColumnId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[fiscal_year]"
+                              lineageId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Output].Columns[fiscal_year]" />
+                            <inputColumn
+                              refId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[notes]"
+                              cachedDataType="wstr"
+                              cachedLength="1"
+                              cachedName="notes"
+                              externalMetadataColumnId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[notes]"
+                              lineageId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Output].Columns[notes]" />
+                            <inputColumn
+                              refId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[pbs_traffic_id]"
+                              cachedDataType="i4"
+                              cachedName="pbs_traffic_id"
+                              externalMetadataColumnId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[pbs_traffic_id]"
+                              lineageId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Output].Columns[pbs_traffic_id]" />
+                            <inputColumn
+                              refId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Dea_ID]"
+                              cachedDataType="i4"
+                              cachedName="Dea_ID"
+                              externalMetadataColumnId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Dea_ID]"
+                              lineageId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Output].Columns[Dea_ID]" />
+                            <inputColumn
+                              refId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Item_BV_ID]"
+                              cachedDataType="wstr"
+                              cachedLength="112"
+                              cachedName="Item_BV_ID"
+                              externalMetadataColumnId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Item_BV_ID]"
+                              lineageId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Output].Columns[Item_BV_ID]" />
+                            <inputColumn
+                              refId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[DealFundingID]"
+                              cachedDataType="i4"
+                              cachedName="DealFundingID"
+                              externalMetadataColumnId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[DealFundingID]"
+                              lineageId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Output].Columns[DealFundingID]" />
+                            <inputColumn
+                              refId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[on_air_credit1]"
+                              cachedDataType="wstr"
+                              cachedLength="2000"
+                              cachedName="on_air_credit1"
+                              externalMetadataColumnId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[on_air_credit]"
+                              lineageId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Output].Columns[on_air_credit1]" />
+                          </inputColumns>
+                          <externalMetadataColumns
+                            isUsed="True">
+                            <externalMetadataColumn
+                              refId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[FunderID]"
+                              dataType="i4"
+                              name="FunderID" />
+                            <externalMetadataColumn
+                              refId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[entity_title]"
+                              dataType="wstr"
+                              length="500"
+                              name="entity_title" />
+                            <externalMetadataColumn
+                              refId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[entity_template]"
+                              dataType="wstr"
+                              length="500"
+                              name="entity_template" />
+                            <externalMetadataColumn
+                              refId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[local_underwriting_option]"
+                              dataType="wstr"
+                              length="500"
+                              name="local_underwriting_option" />
+                            <externalMetadataColumn
+                              refId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[explanation_and_notes]"
+                              dataType="wstr"
+                              length="2147483647"
+                              name="explanation_and_notes" />
+                            <externalMetadataColumn
+                              refId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[accounting_class]"
+                              dataType="wstr"
+                              length="500"
+                              name="accounting_class" />
+                            <externalMetadataColumn
+                              refId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[funding_type]"
+                              dataType="wstr"
+                              length="80"
+                              name="funding_type" />
+                            <externalMetadataColumn
+                              refId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[on_air_credit]"
+                              dataType="wstr"
+                              length="10"
+                              name="on_air_credit" />
+                            <externalMetadataColumn
+                              refId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[funder_role]"
+                              dataType="wstr"
+                              length="50"
+                              name="funder_role" />
+                            <externalMetadataColumn
+                              refId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[table_fee]"
+                              dataType="numeric"
+                              name="table_fee"
+                              precision="15"
+                              scale="2" />
+                            <externalMetadataColumn
+                              refId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[start]"
+                              dataType="wstr"
+                              length="50"
+                              name="start" />
+                            <externalMetadataColumn
+                              refId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[end]"
+                              dataType="wstr"
+                              length="50"
+                              name="end" />
+                            <externalMetadataColumn
+                              refId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[fiscal_year]"
+                              dataType="wstr"
+                              length="4"
+                              name="fiscal_year" />
+                            <externalMetadataColumn
+                              refId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[notes]"
+                              dataType="wstr"
+                              length="2147483647"
+                              name="notes" />
+                            <externalMetadataColumn
+                              refId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[pbs_traffic_id]"
+                              dataType="i8"
+                              name="pbs_traffic_id" />
+                            <externalMetadataColumn
+                              refId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Dea_ID]"
+                              dataType="wstr"
+                              length="80"
+                              name="Dea_ID" />
+                            <externalMetadataColumn
+                              refId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Item_BV_ID]"
+                              dataType="wstr"
+                              length="80"
+                              name="Item_BV_ID" />
+                            <externalMetadataColumn
+                              refId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[DealFundingID]"
+                              dataType="i8"
+                              name="DealFundingID" />
+                          </externalMetadataColumns>
+                        </input>
+                      </inputs>
+                      <outputs>
+                        <output
+                          refId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Destination.Outputs[ADO NET Destination Error Output]"
+                          exclusionGroup="1"
+                          isErrorOut="true"
+                          name="ADO NET Destination Error Output"
+                          synchronousInputId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Destination.Inputs[ADO NET Destination Input]">
+                          <outputColumns>
+                            <outputColumn
+                              refId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Destination.Outputs[ADO NET Destination Error Output].Columns[ErrorCode]"
+                              dataType="i4"
+                              lineageId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Destination.Outputs[ADO NET Destination Error Output].Columns[ErrorCode]"
+                              name="ErrorCode"
+                              specialFlags="1" />
+                            <outputColumn
+                              refId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Destination.Outputs[ADO NET Destination Error Output].Columns[ErrorColumn]"
+                              dataType="i4"
+                              lineageId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Destination.Outputs[ADO NET Destination Error Output].Columns[ErrorColumn]"
+                              name="ErrorColumn"
+                              specialFlags="2" />
+                          </outputColumns>
+                          <externalMetadataColumns />
+                        </output>
+                      </outputs>
+                    </component>
+                    <component
+                      refId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source"
+                      componentClassID="DTS.ManagedComponentWrapper.3"
+                      contactInfo="Consumes data from SQL Server, OLE DB, ODBC, or Oracle, using the corresponding .NET Framework data provider. Use a Transact-SQL statement to define the result set. For example, extract data from SQL Server with the .NET Framework data provider for SQL Server.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+                      description="Consumes data from SQL Server, OLE DB, ODBC, or Oracle, using the corresponding .NET Framework data provider. Use a Transact-SQL statement to define the result set. For example, extract data from SQL Server with the .NET Framework data provider for SQL Server."
+                      name="ADO NET Source"
+                      usesDispositions="true"
+                      version="4">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the SQL statement used by the component to extract data."
+                          expressionType="Notify"
+                          name="SqlCommand"
+                          UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">With cteDealQuery (dea_id) 
+	as
+	(SELECT DISTINCT
+        dea_id
+FROM    bv.DEAL dea
+        JOIN bv.dealcontent dco ON dea.DEA_ID = dco.DCO_DEA_ID
+WHERE   dco.DCO_ASS_ID IN (
+        SELECT  [ass_id]
+        FROM    pbs.vwMOSEpisode
+        WHERE   [Episode.ParentID] IN (
+                'cid:org:pbs.org:Season2Series600817646',--Victoria on Masterpiece
+                'cid:org:pbs.org:Season1Series614345618',--PCAT
+                'cid:org:pbs.org:Season1Series617324631',--We''Meet Again
+                'cid:org:pbs.org:Season1Series617324631',
+                'cid:org:pbs.org:Season1Series600817646', --MAST Dist Season Series
+                'cid:org:pbs.org:Season1Series618563499',
+                'cid:org:pbs.org:Season1Series618586683',
+                'cid:org:pbs.org:Season1Series618587481',
+                'cid:org:pbs.org:Season2Series618562042',
+                'cid:org:pbs.org:Season2Series618587505',
+                'cid:org:pbs.org:Season3Series609718540',
+                'cid:org:pbs.org:Season3Series618586648',
+                'cid:org:pbs.org:Season4Series618586647',
+                'cid:org:pbs.org:Season4Series618587765',
+                'cid:org:pbs.org:Season1Series615807153' )
+        UNION
+        SELECT  ass_id
+        FROM    bv.asset
+        WHERE   ass_id IN ( 236035781, 595764080, 589763373, 632259177 )
+                OR ASS_EPISODESLATE LIKE 'NAAT  0035%' ) 
+)
+select	'org' + cast(vw.item_bv_id as nvarchar(100)) as Org_Item_BV_ID
+		,'Offer' + cast(vw.Dea_ID as nvarchar(100)) as Offer_DEA_ID
+		,vw.[entity_title]
+      ,vw.[entity_template]
+      ,vw.[underwriter]
+      ,vw.[local_underwriting_option]
+      ,vw.[explanation_and_notes]
+      ,vw.[accounting_class]
+      ,vw.[funding_type]
+      ,vw.[on_air_credit1]
+      ,vw.[funder_role]
+      ,vw.[table_fee]
+	  ,CONVERT(nvarchar(10), vw.[start],101) as start
+      ,CONVERT(nvarchar(10), vw.[end],101) as [end]
+      ,vw.[fiscal_year]
+      ,vw.[notes]
+      ,vw.[pbs_traffic_id]
+      ,vw.[Dea_ID]
+     ,'org'+CAST(vw.Item_BV_ID AS NVARCHAR) + ':' +  'Offer' + cast(vw.Dea_ID as nvarchar) + ':DealFunderID' +  cast(vw.dealfundingid as nvarchar) as Item_BV_ID
+     ,vw.dealfundingid as DealFundingID
+from pbs.vwFunders vw
+join [RightsLineETL].[dbo].[Apr23_Deals]AD on AD.Dea_ID = vw.Dea_ID
+join cteDealQuery cte on cte.dea_id = vw.Dea_ID
+
+
+
+/*
+With cteDealQuery (dea_id) 
+	as
+	(SELECT DISTINCT
+        dea_id
+FROM    bv.DEAL dea
+        JOIN bv.dealcontent dco ON dea.DEA_ID = dco.DCO_DEA_ID
+WHERE   dco.DCO_ASS_ID IN (
+        SELECT  [ass_id]
+        FROM    pbs.vwMOSEpisode
+        WHERE   [Episode.ParentID] IN (
+                'cid:org:pbs.org:Season2Series600817646',--Victoria on Masterpiece
+                'cid:org:pbs.org:Season1Series614345618',--PCAT
+                'cid:org:pbs.org:Season1Series617324631',--We''Meet Again
+                'cid:org:pbs.org:Season1Series617324631',
+                'cid:org:pbs.org:Season1Series600817646', --MAST Dist Season Series
+                'cid:org:pbs.org:Season1Series618563499',
+                'cid:org:pbs.org:Season1Series618586683',
+                'cid:org:pbs.org:Season1Series618587481',
+                'cid:org:pbs.org:Season2Series618562042',
+                'cid:org:pbs.org:Season2Series618587505',
+                'cid:org:pbs.org:Season3Series609718540',
+                'cid:org:pbs.org:Season3Series618586648',
+                'cid:org:pbs.org:Season4Series618586647',
+                'cid:org:pbs.org:Season4Series618587765',
+                'cid:org:pbs.org:Season1Series615807153' )
+        UNION
+        SELECT  ass_id
+        FROM    bv.asset
+        WHERE   ass_id IN ( 236035781, 595764080, 589763373, 632259177 )
+                OR ASS_EPISODESLATE LIKE 'NAAT  0035%' ) 
+)
+select	'org' + cast(vw.item_bv_id as nvarchar(100)) as Org_Item_BV_ID
+		,'Offer' + cast(vw.Dea_ID as nvarchar(100)) as Offer_DEA_ID
+		,vw.* from pbs.vwFunders vw
+join [RightsLineETL].[dbo].[Apr23_Deals]AD on AD.Dea_ID = vw.Dea_ID
+join cteDealQuery cte on cte.dea_id = vw.Dea_ID
+*/
+
+/*
+select	'org' + cast(vw.item_bv_id as nvarchar(100)) as Org_Item_BV_ID
+		,'Offer' + cast(vw.Dea_ID as nvarchar(100)) as Offer_DEA_ID
+		,vw.* from pbs.vwFunders vw
+join [RightsLineETL].[dbo].[Apr23_Deals]AD on AD.Dea_ID = vw.Dea_ID
+where AD.OfferUID in ('Offer592707727','Offer236035779','Offer589763368','Offer595764078','Offer589355320','Offer364979186','Offer248568171')
+*/
+
+/*
+select	 distinct *
+from
+(
+	Select
+      'Funding Information (Combined)'as entity_title,
+      '47' as entity_template,
+	  BV.COMPANY.COM_NAME as underwriter,
+      case BV.deal.DEA_SLU_ID_PBSUNDERWRITINGTYPE
+			when 48001 then 'Available'
+			when 48002 then 'Not Available'
+			when 48003 then 'Available except to Competitors (List Below)'
+			when 48004 then 'Available with Producer Approval (Describe Below)'
+			else 'Not Available'
+		end as local_underwriting_option,
+      '' as explanation_and_notes,
+      case 
+	  	when BV.COMPANY.COM_NAME LIKE 'PBS%' then 'Internal'
+		else 'External'
+	  end as accounting_class,
+	  case BV.DEALFUNDING.DEF_SLU_ID_FUNDINGTYPE
+			when 32002 then 'Production'
+			when 32003 then 'Production'
+			when 32001 then 'Acquisition'
+			else ''
+	  end as [funding_type],
+      BV.DEALFUNDING.DEF_ISCREDITED as on_air_credit,
+
+      --'Other' as [funder_role],
+
+	case
+		when BV.DEALFUNDING.DEF_ISPRODUCERFUNDING = 1 then 'Producer'
+	
+		when BV.DEALFUNDING.DEF_ISPRODUCERFUNDING = 0 then
+			case
+				when BV.COMPANY.COM_NAME LIKE 'PBS%' then 'Distributor'
+				else 'Underwriter'
+			end
+		else 'Other'
+	end as funder_role,
+
+      BV.DEALFUNDING.DEF_AMOUNT as table_fee,
+      BV.DEALFUNDING.DEF_BEGINDATE as [start],
+      BV.DEALFUNDING.DEF_ENDDATE as [end],
+      BV.DEALFUNDING.DEF_FISCALYEAR as [fiscal_year],
+      '' as notes ,
+      BV.DEALFUNDING.DEF_ID as pbs_traffic_id ,
+	  BV.DEALFUNDING.DEF_DEA_ID as [Dea_ID],
+	  BV.DEALFUNDING.DEF_ID as [Item_BV_ID] 
+FROM    BV.DEALFUNDING
+        JOIN BV.COMPANY ON BV.DEALFUNDING.DEF_COM_ID_FUNDER = BV.COMPANY.COM_ID
+		join BV.deal on bv.deal.DEA_ID = BV.DEALFUNDING.DEF_DEA_ID
+WHERE   ( BV.DEALFUNDING.DEF_ISPRODUCERFUNDING = 0 )
+        AND ( BV.COMPANY.COM_NAME LIKE N'PBS%' )
+        AND ( BV.COMPANY.COM_ISPRODUCER = 0 )	
+union
+	Select
+      'Funding Information (Combined)'as entity_title,
+      '47' as entity_template,
+	  BV.COMPANY.COM_NAME as underwriter,
+      case BV.deal.DEA_SLU_ID_PBSUNDERWRITINGTYPE
+			when 48001 then 'Available'
+			when 48002 then 'Not Available'
+			when 48003 then 'Available except to Competitors (List Below)'
+			when 48004 then 'Available with Producer Approval (Describe Below)'
+			else 'Not Available'
+		end as local_underwriting_option,
+      '' as explanation_and_notes,
+      case 
+	  	when BV.COMPANY.COM_NAME LIKE 'PBS%' then 'Internal'
+		else 'External'
+	  end as accounting_class,
+	  case BV.MASTERDEALFUNDING.MDF_SLU_ID_FUNDINGTYPE
+			when 32002 then 'Production'
+			when 32003 then 'Production'
+			when 32001 then 'Acquisition'
+			else ''
+	  end as [funding_type],
+      BV.MASTERDEALFUNDING.MDF_ISCREDITED as on_air_credit,
+
+      --'Other' as [funding_role],
+
+	case
+		when BV.MASTERDEALFUNDING.MDF_ISPRODUCERFUNDING = 1 then 'Producer'
+	
+		when BV.MASTERDEALFUNDING.MDF_ISPRODUCERFUNDING = 0 then
+			case
+				when BV.COMPANY.COM_NAME LIKE 'PBS%' then 'Distributor'
+				else 'Underwriter'
+			end
+		else 'Other'
+	end as funder_role,
+
+
+      BV.MASTERDEALFUNDING.MDF_AMOUNT as table_fee,
+      BV.MASTERDEALFUNDING.MDF_BEGINDATE as [start],
+      BV.MASTERDEALFUNDING.MDF_ENDDATE as [end],
+      BV.MASTERDEALFUNDING.MDF_FISCALYEAR as [fiscal_year],
+      '' as notes ,
+      BV.MASTERDEALFUNDING.MDF_ID as pbs_traffic_id ,
+	  bv.deal.DEA_ID as [Dea_ID],
+	  BV.MASTERDEALFUNDING.MDF_ID as [Item_BV_ID] 
+FROM    BV.MASTERDEALFUNDING
+		join bv.deal on BV.MASTERDEALFUNDING.MDF_MDL_ID = bv.deal.DEA_MDL_ID
+        JOIN BV.COMPANY ON BV.MASTERDEALFUNDING.MDF_COM_ID_FUNDER = BV.COMPANY.COM_ID
+        JOIN bv.SYSLOOKUP z ON z.SLU_ID = BV.MASTERDEALFUNDING.MDF_SLU_ID_FUNDINGTYPE
+WHERE   ( BV.MASTERDEALFUNDING.MDF_ISPRODUCERFUNDING = 0 )
+) as q
+
+*/
+
+/*
+SELECT 
+		BV.DEALFUNDING.DEF_DEA_ID as Dea_ID,
+        CAST(BV.COMPANY.COM_NAME AS NVARCHAR(80)) as CompanyName,
+        BV.DEALFUNDING.DEF_AMOUNT as Amount,
+        BV.DEALFUNDING.DEF_SHAREAMOUNT as ShareAmount ,
+        case BV.DEALFUNDING.DEF_ISCREDITED
+				when 1 then 'Yes'
+				 else 'No' end as ISCREDITED,
+        BV.DEALFUNDING.DEF_BEGINDATE as BeginDate,
+        BV.DEALFUNDING.DEF_ENDDATE as EndDate,
+        case BV.DEALFUNDING.DEF_ISPRODUCERFUNDING
+				when 1 then 'Yes'
+				 else 'No' end as ISPRODUCERFUNDING,
+        BV.DEALFUNDING.DEF_FISCALYEAR as FiscalYear,
+        CAST(SLU_CODE AS NVARCHAR(80)) as FUNDINGTYPE ,
+        case BV.COMPANY.COM_ISPRODUCER
+				when 1 then 'Yes'
+				 else 'No' end as ISPRODUCER,
+		BV.DEALFUNDING.DEF_ID  as ITEM_BV_ID,
+'Other' as funding_role
+FROM    BV.DEALFUNDING
+        JOIN BV.COMPANY ON BV.DEALFUNDING.DEF_COM_ID_FUNDER = BV.COMPANY.COM_ID
+join bv.SYSLOOKUP z on z.SLU_ID = BV.DEALFUNDING.DEF_SLU_ID_FUNDINGTYPE
+WHERE   ( BV.DEALFUNDING.DEF_ISPRODUCERFUNDING = 0 )
+        AND ( BV.COMPANY.COM_NAME LIKE N'PBS%' )
+        AND ( BV.COMPANY.COM_ISPRODUCER = 0 )
+*/</property>
+                        <property
+                          dataType="System.Int32"
+                          description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                          name="CommandTimeout">30</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether to allow non-string external columns to be implicitly converted to strings at the output columns."
+                          name="AllowImplicitStringConversion">true</property>
+                        <property
+                          dataType="System.String"
+                          description="The Source database table name."
+                          expressionType="Notify"
+                          name="TableOrViewName"
+                          UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version= 11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specify the mode to retrieve external column information"
+                          name="AccessMode"
+                          typeConverter="Microsoft.SqlServer.Dts.Pipeline.DataReaderSourceAdapter+EnumToStringConverter, Microsoft.SqlServer.ADONETSrc, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">2</property>
+                        <property
+                          dataType="System.String"
+                          name="UserComponentTypeName">Microsoft.SqlServer.Dts.Pipeline.DataReaderSourceAdapter, Microsoft.SqlServer.ADONETSrc, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91</property>
+                      </properties>
+                      <connections>
+                        <connection
+                          refId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Connections[IDbConnection]"
+                          connectionManagerID="Package.ConnectionManagers[ADO.NET-TrafficData]"
+                          connectionManagerRefId="Package.ConnectionManagers[ADO.NET-TrafficData]"
+                          description="Managed connection manager"
+                          name="IDbConnection" />
+                      </connections>
+                      <outputs>
+                        <output
+                          refId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Output]"
+                          name="ADO NET Source Output">
+                          <outputColumns>
+                            <outputColumn
+                              refId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Output].Columns[Org_Item_BV_ID]"
+                              dataType="wstr"
+                              errorOrTruncationOperation="Conversion"
+                              errorRowDisposition="FailComponent"
+                              externalMetadataColumnId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Org_Item_BV_ID]"
+                              length="103"
+                              lineageId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Output].Columns[Org_Item_BV_ID]"
+                              name="Org_Item_BV_ID"
+                              truncationRowDisposition="FailComponent" />
+                            <outputColumn
+                              refId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Output].Columns[Offer_DEA_ID]"
+                              dataType="wstr"
+                              errorOrTruncationOperation="Conversion"
+                              errorRowDisposition="FailComponent"
+                              externalMetadataColumnId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Offer_DEA_ID]"
+                              length="105"
+                              lineageId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Output].Columns[Offer_DEA_ID]"
+                              name="Offer_DEA_ID"
+                              truncationRowDisposition="FailComponent" />
+                            <outputColumn
+                              refId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Output].Columns[entity_title]"
+                              dataType="wstr"
+                              errorOrTruncationOperation="Conversion"
+                              errorRowDisposition="FailComponent"
+                              externalMetadataColumnId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[entity_title]"
+                              length="2000"
+                              lineageId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Output].Columns[entity_title]"
+                              name="entity_title"
+                              truncationRowDisposition="FailComponent" />
+                            <outputColumn
+                              refId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Output].Columns[entity_template]"
+                              dataType="wstr"
+                              errorOrTruncationOperation="Conversion"
+                              errorRowDisposition="FailComponent"
+                              externalMetadataColumnId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[entity_template]"
+                              length="2000"
+                              lineageId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Output].Columns[entity_template]"
+                              name="entity_template"
+                              truncationRowDisposition="FailComponent" />
+                            <outputColumn
+                              refId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Output].Columns[underwriter]"
+                              dataType="wstr"
+                              errorOrTruncationOperation="Conversion"
+                              errorRowDisposition="FailComponent"
+                              externalMetadataColumnId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[underwriter]"
+                              length="80"
+                              lineageId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Output].Columns[underwriter]"
+                              name="underwriter"
+                              truncationRowDisposition="FailComponent" />
+                            <outputColumn
+                              refId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Output].Columns[local_underwriting_option]"
+                              dataType="wstr"
+                              errorOrTruncationOperation="Conversion"
+                              errorRowDisposition="FailComponent"
+                              externalMetadataColumnId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[local_underwriting_option]"
+                              length="49"
+                              lineageId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Output].Columns[local_underwriting_option]"
+                              name="local_underwriting_option"
+                              truncationRowDisposition="FailComponent" />
+                            <outputColumn
+                              refId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Output].Columns[explanation_and_notes]"
+                              dataType="wstr"
+                              errorOrTruncationOperation="Conversion"
+                              errorRowDisposition="FailComponent"
+                              externalMetadataColumnId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[explanation_and_notes]"
+                              length="1"
+                              lineageId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Output].Columns[explanation_and_notes]"
+                              name="explanation_and_notes"
+                              truncationRowDisposition="FailComponent" />
+                            <outputColumn
+                              refId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Output].Columns[accounting_class]"
+                              dataType="wstr"
+                              errorOrTruncationOperation="Conversion"
+                              errorRowDisposition="FailComponent"
+                              externalMetadataColumnId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[accounting_class]"
+                              length="8"
+                              lineageId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Output].Columns[accounting_class]"
+                              name="accounting_class"
+                              truncationRowDisposition="FailComponent" />
+                            <outputColumn
+                              refId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Output].Columns[funding_type]"
+                              dataType="wstr"
+                              errorOrTruncationOperation="Conversion"
+                              errorRowDisposition="FailComponent"
+                              externalMetadataColumnId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[funding_type]"
+                              length="11"
+                              lineageId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Output].Columns[funding_type]"
+                              name="funding_type"
+                              truncationRowDisposition="FailComponent" />
+                            <outputColumn
+                              refId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Output].Columns[on_air_credit1]"
+                              dataType="wstr"
+                              errorOrTruncationOperation="Conversion"
+                              errorRowDisposition="FailComponent"
+                              externalMetadataColumnId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[on_air_credit1]"
+                              length="2000"
+                              lineageId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Output].Columns[on_air_credit1]"
+                              name="on_air_credit1"
+                              truncationRowDisposition="FailComponent" />
+                            <outputColumn
+                              refId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Output].Columns[funder_role]"
+                              dataType="wstr"
+                              errorOrTruncationOperation="Conversion"
+                              errorRowDisposition="FailComponent"
+                              externalMetadataColumnId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[funder_role]"
+                              length="11"
+                              lineageId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Output].Columns[funder_role]"
+                              name="funder_role"
+                              truncationRowDisposition="FailComponent" />
+                            <outputColumn
+                              refId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Output].Columns[table_fee]"
+                              dataType="numeric"
+                              errorOrTruncationOperation="Conversion"
+                              errorRowDisposition="FailComponent"
+                              externalMetadataColumnId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[table_fee]"
+                              lineageId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Output].Columns[table_fee]"
+                              name="table_fee"
+                              precision="15"
+                              scale="2"
+                              truncationRowDisposition="FailComponent" />
+                            <outputColumn
+                              refId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Output].Columns[start]"
+                              dataType="wstr"
+                              errorOrTruncationOperation="Conversion"
+                              errorRowDisposition="FailComponent"
+                              externalMetadataColumnId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[start]"
+                              length="10"
+                              lineageId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Output].Columns[start]"
+                              name="start"
+                              truncationRowDisposition="FailComponent" />
+                            <outputColumn
+                              refId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Output].Columns[end]"
+                              dataType="wstr"
+                              errorOrTruncationOperation="Conversion"
+                              errorRowDisposition="FailComponent"
+                              externalMetadataColumnId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[end]"
+                              length="10"
+                              lineageId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Output].Columns[end]"
+                              name="end"
+                              truncationRowDisposition="FailComponent" />
+                            <outputColumn
+                              refId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Output].Columns[fiscal_year]"
+                              dataType="wstr"
+                              errorOrTruncationOperation="Conversion"
+                              errorRowDisposition="FailComponent"
+                              externalMetadataColumnId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[fiscal_year]"
+                              length="10"
+                              lineageId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Output].Columns[fiscal_year]"
+                              name="fiscal_year"
+                              truncationRowDisposition="FailComponent" />
+                            <outputColumn
+                              refId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Output].Columns[notes]"
+                              dataType="wstr"
+                              errorOrTruncationOperation="Conversion"
+                              errorRowDisposition="FailComponent"
+                              externalMetadataColumnId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[notes]"
+                              length="1"
+                              lineageId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Output].Columns[notes]"
+                              name="notes"
+                              truncationRowDisposition="FailComponent" />
+                            <outputColumn
+                              refId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Output].Columns[pbs_traffic_id]"
+                              dataType="i4"
+                              errorOrTruncationOperation="Conversion"
+                              errorRowDisposition="FailComponent"
+                              externalMetadataColumnId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[pbs_traffic_id]"
+                              lineageId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Output].Columns[pbs_traffic_id]"
+                              name="pbs_traffic_id"
+                              truncationRowDisposition="FailComponent" />
+                            <outputColumn
+                              refId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Output].Columns[Dea_ID]"
+                              dataType="i4"
+                              errorOrTruncationOperation="Conversion"
+                              errorRowDisposition="FailComponent"
+                              externalMetadataColumnId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Dea_ID]"
+                              lineageId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Output].Columns[Dea_ID]"
+                              name="Dea_ID"
+                              truncationRowDisposition="FailComponent" />
+                            <outputColumn
+                              refId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Output].Columns[Item_BV_ID]"
+                              dataType="wstr"
+                              errorOrTruncationOperation="Conversion"
+                              errorRowDisposition="FailComponent"
+                              externalMetadataColumnId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Item_BV_ID]"
+                              length="112"
+                              lineageId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Output].Columns[Item_BV_ID]"
+                              name="Item_BV_ID"
+                              truncationRowDisposition="FailComponent" />
+                            <outputColumn
+                              refId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Output].Columns[DealFundingID]"
+                              dataType="i4"
+                              errorOrTruncationOperation="Conversion"
+                              errorRowDisposition="FailComponent"
+                              externalMetadataColumnId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[DealFundingID]"
+                              lineageId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Output].Columns[DealFundingID]"
+                              name="DealFundingID"
+                              truncationRowDisposition="FailComponent" />
+                          </outputColumns>
+                          <externalMetadataColumns
+                            isUsed="True">
+                            <externalMetadataColumn
+                              refId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Org_Item_BV_ID]"
+                              dataType="wstr"
+                              length="103"
+                              name="Org_Item_BV_ID" />
+                            <externalMetadataColumn
+                              refId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Offer_DEA_ID]"
+                              dataType="wstr"
+                              length="105"
+                              name="Offer_DEA_ID" />
+                            <externalMetadataColumn
+                              refId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[entity_title]"
+                              dataType="wstr"
+                              length="2000"
+                              name="entity_title" />
+                            <externalMetadataColumn
+                              refId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[entity_template]"
+                              dataType="wstr"
+                              length="2000"
+                              name="entity_template" />
+                            <externalMetadataColumn
+                              refId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[underwriter]"
+                              dataType="wstr"
+                              length="80"
+                              name="underwriter" />
+                            <externalMetadataColumn
+                              refId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[local_underwriting_option]"
+                              dataType="wstr"
+                              length="49"
+                              name="local_underwriting_option" />
+                            <externalMetadataColumn
+                              refId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[explanation_and_notes]"
+                              dataType="wstr"
+                              length="1"
+                              name="explanation_and_notes" />
+                            <externalMetadataColumn
+                              refId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[accounting_class]"
+                              dataType="wstr"
+                              length="8"
+                              name="accounting_class" />
+                            <externalMetadataColumn
+                              refId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[funding_type]"
+                              dataType="wstr"
+                              length="11"
+                              name="funding_type" />
+                            <externalMetadataColumn
+                              refId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[on_air_credit1]"
+                              dataType="wstr"
+                              length="2000"
+                              name="on_air_credit1" />
+                            <externalMetadataColumn
+                              refId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[funder_role]"
+                              dataType="wstr"
+                              length="11"
+                              name="funder_role" />
+                            <externalMetadataColumn
+                              refId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[table_fee]"
+                              dataType="numeric"
+                              name="table_fee"
+                              precision="15"
+                              scale="2" />
+                            <externalMetadataColumn
+                              refId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[start]"
+                              dataType="wstr"
+                              length="10"
+                              name="start" />
+                            <externalMetadataColumn
+                              refId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[end]"
+                              dataType="wstr"
+                              length="10"
+                              name="end" />
+                            <externalMetadataColumn
+                              refId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[fiscal_year]"
+                              dataType="wstr"
+                              length="10"
+                              name="fiscal_year" />
+                            <externalMetadataColumn
+                              refId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[notes]"
+                              dataType="wstr"
+                              length="1"
+                              name="notes" />
+                            <externalMetadataColumn
+                              refId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[pbs_traffic_id]"
+                              dataType="i4"
+                              name="pbs_traffic_id" />
+                            <externalMetadataColumn
+                              refId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Dea_ID]"
+                              dataType="i4"
+                              name="Dea_ID" />
+                            <externalMetadataColumn
+                              refId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Item_BV_ID]"
+                              dataType="wstr"
+                              length="112"
+                              name="Item_BV_ID" />
+                            <externalMetadataColumn
+                              refId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[DealFundingID]"
+                              dataType="i4"
+                              name="DealFundingID" />
+                          </externalMetadataColumns>
+                        </output>
+                        <output
+                          refId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Error Output]"
+                          isErrorOut="true"
+                          name="ADO NET Source Error Output">
+                          <outputColumns>
+                            <outputColumn
+                              refId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Org_Item_BV_ID]"
+                              dataType="wstr"
+                              length="103"
+                              lineageId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Org_Item_BV_ID]"
+                              name="Org_Item_BV_ID" />
+                            <outputColumn
+                              refId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Offer_DEA_ID]"
+                              dataType="wstr"
+                              length="105"
+                              lineageId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Offer_DEA_ID]"
+                              name="Offer_DEA_ID" />
+                            <outputColumn
+                              refId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[entity_title]"
+                              dataType="wstr"
+                              length="2000"
+                              lineageId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[entity_title]"
+                              name="entity_title" />
+                            <outputColumn
+                              refId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[entity_template]"
+                              dataType="wstr"
+                              length="2000"
+                              lineageId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[entity_template]"
+                              name="entity_template" />
+                            <outputColumn
+                              refId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[underwriter]"
+                              dataType="wstr"
+                              length="80"
+                              lineageId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[underwriter]"
+                              name="underwriter" />
+                            <outputColumn
+                              refId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[local_underwriting_option]"
+                              dataType="wstr"
+                              length="49"
+                              lineageId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[local_underwriting_option]"
+                              name="local_underwriting_option" />
+                            <outputColumn
+                              refId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[explanation_and_notes]"
+                              dataType="wstr"
+                              length="1"
+                              lineageId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[explanation_and_notes]"
+                              name="explanation_and_notes" />
+                            <outputColumn
+                              refId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[accounting_class]"
+                              dataType="wstr"
+                              length="8"
+                              lineageId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[accounting_class]"
+                              name="accounting_class" />
+                            <outputColumn
+                              refId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[funding_type]"
+                              dataType="wstr"
+                              length="11"
+                              lineageId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[funding_type]"
+                              name="funding_type" />
+                            <outputColumn
+                              refId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[on_air_credit1]"
+                              dataType="wstr"
+                              length="2000"
+                              lineageId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[on_air_credit1]"
+                              name="on_air_credit1" />
+                            <outputColumn
+                              refId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[funder_role]"
+                              dataType="wstr"
+                              length="11"
+                              lineageId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[funder_role]"
+                              name="funder_role" />
+                            <outputColumn
+                              refId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[table_fee]"
+                              dataType="numeric"
+                              lineageId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[table_fee]"
+                              name="table_fee"
+                              precision="15"
+                              scale="2" />
+                            <outputColumn
+                              refId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[start]"
+                              dataType="wstr"
+                              length="10"
+                              lineageId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[start]"
+                              name="start" />
+                            <outputColumn
+                              refId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[end]"
+                              dataType="wstr"
+                              length="10"
+                              lineageId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[end]"
+                              name="end" />
+                            <outputColumn
+                              refId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[fiscal_year]"
+                              dataType="wstr"
+                              length="10"
+                              lineageId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[fiscal_year]"
+                              name="fiscal_year" />
+                            <outputColumn
+                              refId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[notes]"
+                              dataType="wstr"
+                              length="1"
+                              lineageId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[notes]"
+                              name="notes" />
+                            <outputColumn
+                              refId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[pbs_traffic_id]"
+                              dataType="i4"
+                              lineageId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[pbs_traffic_id]"
+                              name="pbs_traffic_id" />
+                            <outputColumn
+                              refId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Dea_ID]"
+                              dataType="i4"
+                              lineageId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Dea_ID]"
+                              name="Dea_ID" />
+                            <outputColumn
+                              refId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Item_BV_ID]"
+                              dataType="wstr"
+                              length="112"
+                              lineageId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Item_BV_ID]"
+                              name="Item_BV_ID" />
+                            <outputColumn
+                              refId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[DealFundingID]"
+                              dataType="i4"
+                              lineageId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[DealFundingID]"
+                              name="DealFundingID" />
+                            <outputColumn
+                              refId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[ErrorCode]"
+                              dataType="i4"
+                              lineageId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[ErrorCode]"
+                              name="ErrorCode"
+                              specialFlags="1" />
+                            <outputColumn
+                              refId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[ErrorColumn]"
+                              dataType="i4"
+                              lineageId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[ErrorColumn]"
+                              name="ErrorColumn"
+                              specialFlags="2" />
+                          </outputColumns>
+                          <externalMetadataColumns />
+                        </output>
+                      </outputs>
+                    </component>
+                  </components>
+                  <paths>
+                    <path
+                      refId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes.Paths[ADO NET Source Output]"
+                      endId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Destination.Inputs[ADO NET Destination Input]"
+                      name="ADO NET Source Output"
+                      startId="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source.Outputs[ADO NET Source Output]" />
+                  </paths>
+                </pipeline>
+              </DTS:ObjectData>
+            </DTS:Executable>
+          </DTS:Executables>
         </DTS:Executable>
         <DTS:Executable
           DTS:refId="Package\Sequence Container 1\Test to truncate XREFIDs"
@@ -38640,11 +39693,22 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <NodeLayout
+          Size="209,42"
+          Id="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes"
+          TopLeft="91.2857142857142,11.2857142857142" />
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="1496,986"
-          Size="1496,1029"
+          PanelSize="305,108"
+          Size="305,151"
+          Id="Package\Sequence Container 1\RightsOptionType"
+          TopLeft="1519.33333333333,311" />
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="1774,986"
+          Size="1774,1029"
           Id="Package\Sequence Container 1"
           TopLeft="693.666666666667,1386" />
         <EdgeLayout
@@ -38653,9 +39717,9 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-46.1666666666661,433.333333333333"
+              EndConnector="92.8333333333339,433.333333333333"
               Start="0,0"
-              End="-46.1666666666661,425.833333333333">
+              End="92.8333333333339,425.833333333333">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
@@ -38664,15 +39728,15 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
                   <mssgle:CubicBezierSegment
                     Point1="0,212.666666666667"
                     Point2="0,216.666666666667"
-                    Point3="-4,216.666666666667" />
+                    Point3="4,216.666666666667" />
                   <mssgle:LineSegment
-                    End="-42.1666666666661,216.666666666667" />
+                    End="88.8333333333339,216.666666666667" />
                   <mssgle:CubicBezierSegment
-                    Point1="-42.1666666666661,216.666666666667"
-                    Point2="-46.1666666666661,216.666666666667"
-                    Point3="-46.1666666666661,220.666666666667" />
+                    Point1="88.8333333333339,216.666666666667"
+                    Point2="92.8333333333339,216.666666666667"
+                    Point3="92.8333333333339,220.666666666667" />
                   <mssgle:LineSegment
-                    End="-46.1666666666661,425.833333333333" />
+                    End="92.8333333333339,425.833333333333" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -40669,7 +41733,7 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
     design-time-name="Package\Sequence Container 1\Contact\Import Company">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="172,42"
           Id="Package\Sequence Container 1\Contact\Import Company\RL Dest - Company"
@@ -40717,9 +41781,7 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -40747,9 +41809,7 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -40771,9 +41831,7 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -41365,7 +42423,7 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
     design-time-name="Package\Sequence Container 1\Deal Imports\Import Deal-ProdAcq">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="169,42"
           Id="Package\Sequence Container 1\Deal Imports\Import Deal-ProdAcq\MOS-DealProdACQ"
@@ -41413,9 +42471,7 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -41449,9 +42505,7 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -41485,9 +42539,7 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -41974,5 +43026,55 @@ WHERE   [Usage.EffectiveTerm.Use] = 'Holdback'
       </Property>
     </Properties>
   </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="181,42"
+          Id="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Destination"
+          TopLeft="233,270" />
+        <NodeLayout
+          Size="160,42"
+          Id="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes\ADO NET Source"
+          TopLeft="211,124" />
+        <EdgeLayout
+          Id="Package\Sequence Container 1\RightsOptionType\Import RightsOptionsTypes.Paths[ADO NET Source Output]"
+          TopLeft="291,166">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="32.5,104"
+              Start="0,0"
+              End="32.5,96.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,48" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,48"
+                    Point2="0,52"
+                    Point3="4,52" />
+                  <mssgle:LineSegment
+                    End="28.5,52" />
+                  <mssgle:CubicBezierSegment
+                    Point1="28.5,52"
+                    Point2="32.5,52"
+                    Point3="32.5,56" />
+                  <mssgle:LineSegment
+                    End="32.5,96.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
 </Objects>]]></DTS:DesignTimeProperties>
 </DTS:Executable>
