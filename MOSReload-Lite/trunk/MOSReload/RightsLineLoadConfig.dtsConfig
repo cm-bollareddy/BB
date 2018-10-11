@@ -153,38 +153,6 @@
   <Configuration ConfiguredType="Property" Path="\Package.Connections[Rightsline-Dest].Properties[UserName]" ValueType="String">
     <ConfiguredValue></ConfiguredValue>
   </Configuration>
-  <!--
-  <Configuration ConfiguredType="Property" Path="\Package.Connections[Rightsline-Dest 1].Properties[ConnectionString]" ValueType="String">
-    <ConfiguredValue>Data Source=db19-uat;Initial Catalog=RightsLineETL-Light;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;</ConfiguredValue>
-  </Configuration>
-  <Configuration ConfiguredType="Property" Path="\Package.Connections[Rightsline-Dest 1].Properties[Description]" ValueType="String">
-    <ConfiguredValue></ConfiguredValue>
-  </Configuration>
-  <Configuration ConfiguredType="Property" Path="\Package.Connections[Rightsline-Dest 1].Properties[InitialCatalog]" ValueType="String">
-    <ConfiguredValue>RightsLineETL-Light</ConfiguredValue>
-  </Configuration>
-  <Configuration ConfiguredType="Property" Path="\Package.Connections[Rightsline-Dest 1].Properties[Name]" ValueType="String">
-    <ConfiguredValue>Rightsline-Dest 1</ConfiguredValue>
-  </Configuration>
-  <Configuration ConfiguredType="Property" Path="\Package.Connections[Rightsline-Dest 1].Properties[Password]" ValueType="String">
-    <ConfiguredValue></ConfiguredValue>
-  </Configuration>
-  <Configuration ConfiguredType="Property" Path="\Package.Connections[Rightsline-Dest 1].Properties[ProtectionLevel]" ValueType="Int32">
-    <ConfiguredValue>1</ConfiguredValue>
-  </Configuration>
-  <Configuration ConfiguredType="Property" Path="\Package.Connections[Rightsline-Dest 1].Properties[RetainSameConnection]" ValueType="Boolean">
-    <ConfiguredValue>0</ConfiguredValue>
-  </Configuration>
-  <Configuration ConfiguredType="Property" Path="\Package.Connections[Rightsline-Dest 1].Properties[Scope]" ValueType="Int32">
-    <ConfiguredValue>0</ConfiguredValue>
-  </Configuration>
-  <Configuration ConfiguredType="Property" Path="\Package.Connections[Rightsline-Dest 1].Properties[ServerName]" ValueType="String">
-    <ConfiguredValue>db19-uat</ConfiguredValue>
-  </Configuration>
-  <Configuration ConfiguredType="Property" Path="\Package.Connections[Rightsline-Dest 1].Properties[UserName]" ValueType="String">
-    <ConfiguredValue></ConfiguredValue>
-  </Configuration>
-  -->
   <Configuration ConfiguredType="Property" Path="\Package.Variables[User::DoTruncateXREFIDs].Properties[Description]" ValueType="String">
     <ConfiguredValue></ConfiguredValue>
   </Configuration>
@@ -210,6 +178,6 @@
     <ConfiguredValue>0</ConfiguredValue>
   </Configuration>
   <Configuration ConfiguredType="Property" Path="\Package.Variables[User::DoTruncateXREFIDs].Properties[Value]" ValueType="Boolean">
-    <ConfiguredValue>0</ConfiguredValue>
+    <ConfiguredValue>1</ConfiguredValue>
   </Configuration>
 </DTSConfiguration>
