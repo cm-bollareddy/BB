@@ -12,8 +12,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="RightslineLoad"
   DTS:PackageType="5"
-  DTS:VersionBuild="495"
-  DTS:VersionGUID="{18CA4564-46CB-484B-831F-1CFC7AC8D888}">
+  DTS:VersionBuild="496"
+  DTS:VersionGUID="{27C0489C-D8F2-4F7F-8601-AF35B5E36872}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">6</DTS:Property>
   <DTS:ConnectionManagers>
@@ -28,7 +28,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA+vZle3O0r0qczwMXhgPmpAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABXz8lx51sONTZM60lJloViAAAAAASAAACgAAAAEAAAADp/l/HGapr4LpUfkHixs/4IAAAANemD0iVMw4cUAAAASyZmdtqZ5ljUkFUIsM0KK2oZe/w</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA+vZle3O0r0qczwMXhgPmpAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAC0XSgmEDoi/pm4yesR48VtAAAAAASAAACgAAAAEAAAAIfO02575zKVO/CwIvPPxg4IAAAAvE5aDLGsVg0UAAAACh8P0SlIjdMFxxeD+iLYhMEi59k</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -43,7 +43,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA+vZle3O0r0qczwMXhgPmpAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABhCbCJqdrAOjW7CqB6pCOKAAAAAASAAACgAAAAEAAAAF6/ywRLDhr09FgLL5a05iwIAAAAy45KN68nwAAUAAAAbW7NGZ+VzWBKqFNClRdRuDQsHUk</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA+vZle3O0r0qczwMXhgPmpAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADI+D2G39LbrDGxx6l9TyxKAAAAAASAAACgAAAAEAAAAJLNS3TZzSiVjV+7FrRYN1gIAAAAITrRKuqcDOQUAAAANVwO33wnSrbtvvF/yAd6OSRcne8</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -58,7 +58,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA+vZle3O0r0qczwMXhgPmpAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABkG+2cCiCx7JrVhuc5gIywAAAAAASAAACgAAAAEAAAAH77C+yOo2ufO6G9NOM1SeYQAAAAQVcI8/VrQmVkHtp17uuciBQAAACk0VnU+OvlsynaBLvg74ujX4XnBA</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA+vZle3O0r0qczwMXhgPmpAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACi0+ULvvFCXirOpuwF1yceAAAAAASAAACgAAAAEAAAACJDUYOS/cDi8yK1XNUuBD4QAAAAh399+8lI6ylVCVnSi+4wvRQAAABIUati3AFOj+yTMbK8oqtjRUgjhw</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -73,7 +73,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA+vZle3O0r0qczwMXhgPmpAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAA4Dcp9NGMtBFlb+SMZ8azsAAAAAASAAACgAAAAEAAAAE8vOd96cf6IsWFZFvyfXFYIAAAAiX6G/Z0ywFcUAAAAHkFYgVm4ZHcocmAvXHNYPxnY41M</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA+vZle3O0r0qczwMXhgPmpAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABdadSdQ71rPiRFL+GylUQYAAAAAASAAACgAAAAEAAAALLBpV2p9+sQ9EXSOGhlKM4IAAAAojB5Ihtgfs4UAAAA4Z1/tkjUTzRksDvbSo1FttV+NVY</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -88,7 +88,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA+vZle3O0r0qczwMXhgPmpAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADJ6MGOCAHf3VQsoDoKlghlAAAAAASAAACgAAAAEAAAADh0PjXJzFRXfOjoApk7dLMIAAAAMgdN7IegXbcUAAAAQ4wQNPgJBACZzNHMpdJ0WUf0pqw</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA+vZle3O0r0qczwMXhgPmpAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADdZrzz55Pe0XtQGm5vH562AAAAAASAAACgAAAAEAAAAEsGQjb+ghkg1qUwUX44OqoIAAAA7PYx7hZfLH0UAAAAnLeqjrsOwEv8rLbWz9pY529QbkA</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -3868,7 +3868,7 @@ FROM    (
                     <property
                       dataType="System.Int32"
                       description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
-                      name="CommandTimeout">30</property>
+                      name="CommandTimeout">0</property>
                     <property
                       dataType="System.Boolean"
                       description="Indicates whether to allow non-string external columns to be implicitly converted to strings at the output columns."
