@@ -76,7 +76,7 @@
     <ConfiguredValue>alliantDB</ConfiguredValue>
   </Configuration>
   <Configuration ConfiguredType="Property" Path="\Package.Connections[alliantDB].Properties[Password]" ValueType="String">
-    <ConfiguredValue></ConfiguredValue>
+    <ConfiguredValue>alliant</ConfiguredValue>
   </Configuration>
   <Configuration ConfiguredType="Property" Path="\Package.Connections[alliantDB].Properties[ProtectionLevel]" ValueType="Int32">
     <ConfiguredValue>1</ConfiguredValue>
@@ -153,6 +153,7 @@
   <Configuration ConfiguredType="Property" Path="\Package.Connections[Rightsline-Dest].Properties[UserName]" ValueType="String">
     <ConfiguredValue></ConfiguredValue>
   </Configuration>
+  <!--
   <Configuration ConfiguredType="Property" Path="\Package.Connections[Rightsline-Dest 1].Properties[ConnectionString]" ValueType="String">
     <ConfiguredValue>Data Source=db19-uat;Initial Catalog=RightsLineETL-Light;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;</ConfiguredValue>
   </Configuration>
@@ -183,6 +184,7 @@
   <Configuration ConfiguredType="Property" Path="\Package.Connections[Rightsline-Dest 1].Properties[UserName]" ValueType="String">
     <ConfiguredValue></ConfiguredValue>
   </Configuration>
+  -->
   <Configuration ConfiguredType="Property" Path="\Package.Variables[User::DoTruncateXREFIDs].Properties[Description]" ValueType="String">
     <ConfiguredValue></ConfiguredValue>
   </Configuration>
@@ -208,6 +210,6 @@
     <ConfiguredValue>0</ConfiguredValue>
   </Configuration>
   <Configuration ConfiguredType="Property" Path="\Package.Variables[User::DoTruncateXREFIDs].Properties[Value]" ValueType="Boolean">
-    <ConfiguredValue>1</ConfiguredValue>
+    <ConfiguredValue>0</ConfiguredValue>
   </Configuration>
 </DTSConfiguration>
