@@ -12,8 +12,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="RightslineLoad"
   DTS:PackageType="5"
-  DTS:VersionBuild="500"
-  DTS:VersionGUID="{DEAA3245-6567-44BB-92ED-DA1FFAE88190}">
+  DTS:VersionBuild="502"
+  DTS:VersionGUID="{226FD5DF-3732-4076-B917-CA6D08E730B9}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">6</DTS:Property>
   <DTS:ConnectionManagers>
@@ -28,7 +28,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA+vZle3O0r0qczwMXhgPmpAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADJECXHvWSjhgM7T5ima/uqAAAAAASAAACgAAAAEAAAALIb7IeupIK59r8a+uU+3w8IAAAAW3XEEd1F3ogUAAAAtcHLNMido6zTYEw5+NUwBESnats</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAArQUwPWSOn0KLzrEGz12ruAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACwaw5hdf8U/rnV5bXaT0JWAAAAAASAAACgAAAAEAAAAOzrj1EPi6GDvPHC8UYBnuEIAAAAs32wF3TcVk0UAAAAvDUWgqpYGiybqnKHAd8YkChMLN0</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -43,7 +43,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA+vZle3O0r0qczwMXhgPmpAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACx60jMAgezCTl6OUI+1t3NAAAAAASAAACgAAAAEAAAAEreBt6NCv+IJh+8oO50LLAIAAAAeZvb5c+pJ24UAAAAB0/xifxE51lBK1Bift7Ty8akdcM</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAArQUwPWSOn0KLzrEGz12ruAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAA+zhQ6Vrh5vJu5YMq6PJicAAAAAASAAACgAAAAEAAAAKozm5hrxWANL62l7zf+2cAIAAAA0XoNKGE95QUUAAAAwJJEQ77jTk/I6oN61C5d5MwEegk</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -58,7 +58,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA+vZle3O0r0qczwMXhgPmpAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABMK8ln/adoGz8/zyx7lA8QAAAAAASAAACgAAAAEAAAANl8l8d4rko6W1KZLRaMIrUQAAAA55xf+Vdaf4yTWqAlh3cVFBQAAABkRhJ26X3CKUbrVq0rXijOnrnCBA</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAArQUwPWSOn0KLzrEGz12ruAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABQrRg5kCjiaZNoiEclqx1iAAAAAASAAACgAAAAEAAAAB4ovWXxiYKuC6CtfAPWCVcQAAAAXaeu1eK96hBgXKpRYQI52BQAAAAAk0i3jJduP+LT3AxfuARZQAzRfQ</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -73,7 +73,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA+vZle3O0r0qczwMXhgPmpAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABLPXRG3QdHQgis2EGuDHuAAAAAAASAAACgAAAAEAAAAKfxXtJUlMv31YP4Tdokv4MQAAAAAMUXMcZEKJdlfBlJa734GxQAAABGgK43pMwmwO/PJ2QzvcaI0ZesKQ</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAArQUwPWSOn0KLzrEGz12ruAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACupDF3V37qlvh57RGymoRCAAAAAASAAACgAAAAEAAAAGFUE+5nNFzgkubD6u2igQIQAAAAf4HXRbGx8bhOAeDJVQY2LxQAAAAE2thHC9WSknDUMA5khlkj54FQsA</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -84,12 +84,7 @@
       DTS:ObjectName="db19-uat.TrafficData">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=db19-uat;User ID=;Initial Catalog=TrafficData;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;">
-          <DTS:Password
-            DTS:Name="Password"
-            Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA+vZle3O0r0qczwMXhgPmpAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAfH95g1ii4OkJ/yU1Wl2AsAAAAAASAAACgAAAAEAAAAGiI15VrgFBD1LjfBtcUQxUIAAAAb1YTn0WpAtUUAAAAbBV/F3Z17nNdRckcJZ0VFG2j6ck</DTS:Password>
-        </DTS:ConnectionManager>
+          DTS:ConnectionString="Data Source=db19-uat;Initial Catalog=TrafficData;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -103,7 +98,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA+vZle3O0r0qczwMXhgPmpAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABUQ9uwmNX6K2dbjgT7A8DWAAAAAASAAACgAAAAEAAAAABo7j19rhl14KuxUVdxfwsIAAAAmb0Hb6s0yZ8UAAAAvl1jNaHj1Q7XkLqSx+zDrB2Vr9I</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAArQUwPWSOn0KLzrEGz12ruAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADgyffM04LGTX01OFBnBMphAAAAAASAAACgAAAAEAAAAOz5a+6pyDHeSB+MuuC20LMIAAAASOQQmmfZBHQUAAAAauZUoEtyiMuLP11XMBRirbSJaC8</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -3732,8 +3727,7 @@ join TrafficData.BV.MASTERDEAL D on d.MDL_ID = c.DEA_MDL_ID</property>
                       <inputColumns>
                         <inputColumn
                           refId="Package\Sequence Container\Load Xref_RightsToEpisode\Dest xref_RightsToEpsiode.Inputs[ADO NET Destination Input].Columns[ParentID]"
-                          cachedDataType="wstr"
-                          cachedLength="500"
+                          cachedDataType="i4"
                           cachedName="ParentID"
                           externalMetadataColumnId="Package\Sequence Container\Load Xref_RightsToEpisode\Dest xref_RightsToEpsiode.Inputs[ADO NET Destination Input].ExternalColumns[ParentID]"
                           lineageId="Package\Sequence Container\Load Xref_RightsToEpisode\Source Alliant_NolaRights and vwMosEpisode.Outputs[ADO NET Source Output].Columns[ParentID]" />
@@ -3807,7 +3801,7 @@ FROM    (
                     b.rights_id AS ParentID ,
                     c.ASS_ID AS ChildID
           FROM      pbs.Alliant_NolaRights a
-                    JOIN [PBS].[Alliant_Rights] b ON b.rights_id = a.RightsSid
+                    JOIN [PBS].[Alliant_Rights] b ON b.rights_id = a.Rights_id
                     JOIN ( SELECT DISTINCT
                                     ASS_EPISODESLATE ,
                                     a.ass_id
@@ -3849,7 +3843,7 @@ FROM    (
                     b.rights_id AS ParentID ,
                     R.ASS_ID AS ChildID
           FROM      pbs.Alliant_NolaRights a
-                    JOIN [PBS].[Alliant_Rights] b ON b.rights_id = a.RightsSid
+                    JOIN [PBS].[Alliant_Rights] b ON b.rights_id = a.Rights_id
                     JOIN ( SELECT DISTINCT
                                     ASS_EPISODESLATE ,
                                     a.ass_id
@@ -3918,11 +3912,10 @@ FROM    (
                       <outputColumns>
                         <outputColumn
                           refId="Package\Sequence Container\Load Xref_RightsToEpisode\Source Alliant_NolaRights and vwMosEpisode.Outputs[ADO NET Source Output].Columns[ParentID]"
-                          dataType="wstr"
+                          dataType="i4"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
                           externalMetadataColumnId="Package\Sequence Container\Load Xref_RightsToEpisode\Source Alliant_NolaRights and vwMosEpisode.Outputs[ADO NET Source Output].ExternalColumns[ParentID]"
-                          length="500"
                           lineageId="Package\Sequence Container\Load Xref_RightsToEpisode\Source Alliant_NolaRights and vwMosEpisode.Outputs[ADO NET Source Output].Columns[ParentID]"
                           name="ParentID"
                           truncationRowDisposition="FailComponent" />
@@ -3940,8 +3933,7 @@ FROM    (
                         isUsed="True">
                         <externalMetadataColumn
                           refId="Package\Sequence Container\Load Xref_RightsToEpisode\Source Alliant_NolaRights and vwMosEpisode.Outputs[ADO NET Source Output].ExternalColumns[ParentID]"
-                          dataType="wstr"
-                          length="500"
+                          dataType="i4"
                           name="ParentID" />
                         <externalMetadataColumn
                           refId="Package\Sequence Container\Load Xref_RightsToEpisode\Source Alliant_NolaRights and vwMosEpisode.Outputs[ADO NET Source Output].ExternalColumns[ChildID]"
@@ -3956,8 +3948,7 @@ FROM    (
                       <outputColumns>
                         <outputColumn
                           refId="Package\Sequence Container\Load Xref_RightsToEpisode\Source Alliant_NolaRights and vwMosEpisode.Outputs[ADO NET Source Error Output].Columns[ParentID]"
-                          dataType="wstr"
-                          length="500"
+                          dataType="i4"
                           lineageId="Package\Sequence Container\Load Xref_RightsToEpisode\Source Alliant_NolaRights and vwMosEpisode.Outputs[ADO NET Source Error Output].Columns[ParentID]"
                           name="ParentID" />
                         <outputColumn
@@ -44382,10 +44373,6 @@ FROM    [PBS].[vwMOSUsage]
           Id="Package\Sequence Container\Execute SQL Task"
           TopLeft="395,80.3333333333333" />
         <NodeLayout
-          Size="270,42"
-          Id="Package\Sequence Container\Load xref_DealToExternalContactPerson"
-          TopLeft="757,526" />
-        <NodeLayout
           Size="204,42"
           Id="Package\Sequence Container\Load xref_DealToBlackout"
           TopLeft="404,341.222222222222" />
@@ -44393,6 +44380,10 @@ FROM    [PBS].[vwMOSUsage]
           Size="200,42"
           Id="Package\Sequence Container\Load xref_DealToEpisode"
           TopLeft="411.555555555556,175" />
+        <NodeLayout
+          Size="270,42"
+          Id="Package\Sequence Container\Load xref_DealToExternalContactPerson"
+          TopLeft="757,526" />
         <NodeLayout
           Size="197,42"
           Id="Package\Sequence Container\Load xref_DealToFunder"
@@ -45409,6 +45400,14 @@ FROM    [PBS].[vwMOSUsage]
           Id="Package\Sequence Container 1\Import RightsOptionType from Aliant"
           TopLeft="1820,255.5" />
         <NodeLayout
+          Size="215,42"
+          Id="Package\Sequence Container 1\Rights Imports\Alliant Nola to Staging Table"
+          TopLeft="25.1666666666665,106.5" />
+        <NodeLayout
+          Size="225,42"
+          Id="Package\Sequence Container 1\Rights Imports\Alliant Rights To Staging Table"
+          TopLeft="27.6666666666666,19.8333333333335" />
+        <NodeLayout
           Size="191,42"
           Id="Package\Sequence Container 1\Rights Imports\Import Alliant Rights In"
           TopLeft="29,233.666666666667" />
@@ -45424,6 +45423,10 @@ FROM    [PBS].[vwMOSUsage]
           Size="189,42"
           Id="Package\Sequence Container 1\Rights Imports\Import Rights Blackout"
           TopLeft="39.5833333333335,301.083333333333" />
+        <NodeLayout
+          Size="201,42"
+          Id="Package\Sequence Container 1\Rights Imports\Import Rights IN Bv-MOS"
+          TopLeft="36.3333333333333,492.666666666667" />
         <EdgeLayout
           Id="Package\Sequence Container 1\Rights Imports.PrecedenceConstraints[Constraint]"
           TopLeft="124.5,275.666666666667">
@@ -45514,18 +45517,6 @@ FROM    [PBS].[vwMOSUsage]
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="225,42"
-          Id="Package\Sequence Container 1\Rights Imports\Alliant Rights To Staging Table"
-          TopLeft="27.6666666666666,19.8333333333335" />
-        <NodeLayout
-          Size="201,42"
-          Id="Package\Sequence Container 1\Rights Imports\Import Rights IN Bv-MOS"
-          TopLeft="36.3333333333333,492.666666666667" />
-        <NodeLayout
-          Size="215,42"
-          Id="Package\Sequence Container 1\Rights Imports\Alliant Nola to Staging Table"
-          TopLeft="25.1666666666665,106.5" />
         <EdgeLayout
           Id="Package\Sequence Container 1\Rights Imports.PrecedenceConstraints[Constraint 3]"
           TopLeft="136.416666666667,61.8333333333335">
@@ -45593,6 +45584,10 @@ FROM    [PBS].[vwMOSUsage]
           Size="200,42"
           Id="Package\Sequence Container 1\Test to truncate XREFIDs"
           TopLeft="321,66" />
+        <NodeLayout
+          Size="250,42"
+          Id="Package\Sequence Container 1\Truncate TrafficData Staging Tables"
+          TopLeft="27.5,68" />
         <EdgeLayout
           Id="Package\Sequence Container 1.PrecedenceConstraints[Constraint]"
           TopLeft="708.24761904762,196.666666666668">
@@ -45819,7 +45814,7 @@ FROM    [PBS].[vwMOSUsage]
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="145.690476190477,32.7210460772112,16,16"
+              BoundingBox="145.690476190476,32.7210460772112,16,16"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -45857,10 +45852,6 @@ FROM    [PBS].[vwMOSUsage]
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="250,42"
-          Id="Package\Sequence Container 1\Truncate TrafficData Staging Tables"
-          TopLeft="27.5,68" />
         <EdgeLayout
           Id="Package\Sequence Container 1.PrecedenceConstraints[Constraint 8]"
           TopLeft="277.5,88">
@@ -45927,60 +45918,6 @@ FROM    [PBS].[vwMOSUsage]
       </GraphLayout>
     </LayoutInfo>
   </Package>
-  <TaskHost
-    design-time-name="Package\Sequence Container\Load xref_DealToExternalContactPerson">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="222,42"
-          Id="Package\Sequence Container\Load xref_DealToExternalContactPerson\Source ExternalContactPerson"
-          TopLeft="132,110" />
-        <NodeLayout
-          Size="268,42"
-          Id="Package\Sequence Container\Load xref_DealToExternalContactPerson\Dest xref_DealToExternalContactPerson"
-          TopLeft="114,251" />
-        <EdgeLayout
-          Id="Package\Sequence Container\Load xref_DealToExternalContactPerson.Paths[ADO NET Source Output]"
-          TopLeft="245.5,152">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,99"
-              Start="0,0"
-              End="0,91.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,91.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\Sequence Container\Load xref_DealToExternalContactPerson\Dest xref_DealToExternalContactPerson">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Sequence Container\Load xref_DealToExternalContactPerson\Source ExternalContactPerson">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
   <TaskHost
     design-time-name="Package\Sequence Container\Load xref_DealToBlackout">
     <LayoutInfo>
@@ -46155,6 +46092,60 @@ FROM    [PBS].[vwMOSUsage]
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\Sequence Container\Load xref_DealToEpisode\Source BV-ASSET and BV-Deal">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Sequence Container\Load xref_DealToExternalContactPerson">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="222,42"
+          Id="Package\Sequence Container\Load xref_DealToExternalContactPerson\Source ExternalContactPerson"
+          TopLeft="132,110" />
+        <NodeLayout
+          Size="268,42"
+          Id="Package\Sequence Container\Load xref_DealToExternalContactPerson\Dest xref_DealToExternalContactPerson"
+          TopLeft="114,251" />
+        <EdgeLayout
+          Id="Package\Sequence Container\Load xref_DealToExternalContactPerson.Paths[ADO NET Source Output]"
+          TopLeft="245.5,152">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,99"
+              Start="0,0"
+              End="0,91.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,91.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Sequence Container\Load xref_DealToExternalContactPerson\Dest xref_DealToExternalContactPerson">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Sequence Container\Load xref_DealToExternalContactPerson\Source ExternalContactPerson">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -46413,7 +46404,7 @@ FROM    [PBS].[vwMOSUsage]
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Sequence Container\Load xref_DealToProductionCompany\Dest xref_DealToProductionCompany">
+    design-time-name="Package\Sequence Container\Load xref_DealToProductionCompany\Source vwMOSOffer">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -46421,7 +46412,7 @@ FROM    [PBS].[vwMOSUsage]
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Sequence Container\Load xref_DealToProductionCompany\Source vwMOSOffer">
+    design-time-name="Package\Sequence Container\Load xref_DealToProductionCompany\Dest xref_DealToProductionCompany">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -46685,7 +46676,7 @@ FROM    [PBS].[vwMOSUsage]
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Sequence Container\Load xref_DealToUnderwriter\Dest xref_DealToUnderwriter">
+    design-time-name="Package\Sequence Container\Load xref_DealToUnderwriter\Source vwFunders And Underwriter">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -46693,7 +46684,7 @@ FROM    [PBS].[vwMOSUsage]
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Sequence Container\Load xref_DealToUnderwriter\Source vwFunders And Underwriter">
+    design-time-name="Package\Sequence Container\Load xref_DealToUnderwriter\Dest xref_DealToUnderwriter">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -47246,19 +47237,6 @@ FROM    [PBS].[vwMOSUsage]
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Sequence Container 1\Catalog Import Container\Import Episode_Parent_Series\MOS-EpisodeWithSeriesParent">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">View</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
     design-time-name="Package\Sequence Container 1\Catalog Import Container\Import Episode_Parent_Series\Dest Rightsline_Episode_ParentSeries">
     <Properties>
       <Property>
@@ -47268,6 +47246,19 @@ FROM    [PBS].[vwMOSUsage]
         <Name>TableInfoObjectType</Name>
         <Value
           type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Sequence Container 1\Catalog Import Container\Import Episode_Parent_Series\MOS-EpisodeWithSeriesParent">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">View</Value>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
@@ -47386,6 +47377,14 @@ FROM    [PBS].[vwMOSUsage]
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
+    design-time-name="Package\Sequence Container 1\Catalog Import Container\Import Episode_ParentSeason\MOS-EpisodeWithSeasonParent">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
     design-time-name="Package\Sequence Container 1\Catalog Import Container\Import Episode_ParentSeason\Dest Rightsline_Episode_ParentSeason">
     <Properties>
       <Property>
@@ -47395,14 +47394,6 @@ FROM    [PBS].[vwMOSUsage]
         <Name>TableInfoObjectType</Name>
         <Value
           type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Sequence Container 1\Catalog Import Container\Import Episode_ParentSeason\MOS-EpisodeWithSeasonParent">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
@@ -47629,14 +47620,6 @@ FROM    [PBS].[vwMOSUsage]
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\MOS-OTO">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
     design-time-name="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\Dest Rightsline_OneTimeOnly">
     <Properties>
       <Property>
@@ -47646,6 +47629,14 @@ FROM    [PBS].[vwMOSUsage]
         <Name>TableInfoObjectType</Name>
         <Value
           type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\MOS-OTO">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
@@ -47776,14 +47767,6 @@ FROM    [PBS].[vwMOSUsage]
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Sequence Container 1\Catalog Import Container\Import SeasonContainer\MOS-SeasonContainer">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
     design-time-name="Package\Sequence Container 1\Catalog Import Container\Import SeasonContainer\Dest Rightsline_SeasonContainer">
     <Properties>
       <Property>
@@ -47793,6 +47776,14 @@ FROM    [PBS].[vwMOSUsage]
         <Name>TableInfoObjectType</Name>
         <Value
           type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Sequence Container 1\Catalog Import Container\Import SeasonContainer\MOS-SeasonContainer">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
@@ -47923,19 +47914,6 @@ FROM    [PBS].[vwMOSUsage]
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Sequence Container 1\Catalog Import Container\ImportSeasons\Source vwMOSSeason">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">View</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
     design-time-name="Package\Sequence Container 1\Catalog Import Container\ImportSeasons\Dest Rightsline_Season">
     <Properties>
       <Property>
@@ -47945,6 +47923,19 @@ FROM    [PBS].[vwMOSUsage]
         <Name>TableInfoObjectType</Name>
         <Value
           type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Sequence Container 1\Catalog Import Container\ImportSeasons\Source vwMOSSeason">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">View</Value>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
@@ -48063,19 +48054,6 @@ FROM    [PBS].[vwMOSUsage]
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Sequence Container 1\Catalog Import Container\ImportSeries\Dest Rightsline_Series">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
     design-time-name="Package\Sequence Container 1\Catalog Import Container\ImportSeries\Source vwMOSSeries">
     <Properties>
       <Property>
@@ -48085,6 +48063,19 @@ FROM    [PBS].[vwMOSUsage]
         <Name>TableInfoObjectType</Name>
         <Value
           type="q2:string">View</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Sequence Container 1\Catalog Import Container\ImportSeries\Dest Rightsline_Series">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
@@ -48209,19 +48200,6 @@ FROM    [PBS].[vwMOSUsage]
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Sequence Container 1\Contact\Import ExternalCompany\Dest Rightsline_ExternalCompany">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
     design-time-name="Package\Sequence Container 1\Contact\Import ExternalCompany\Source MOS-Company">
     <Properties>
       <Property>
@@ -48231,6 +48209,19 @@ FROM    [PBS].[vwMOSUsage]
         <Name>TableInfoObjectType</Name>
         <Value
           type="q2:string">View</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Sequence Container 1\Contact\Import ExternalCompany\Dest Rightsline_ExternalCompany">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
@@ -48361,19 +48352,6 @@ FROM    [PBS].[vwMOSUsage]
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Sequence Container 1\Contact\Import ExternalContactPerson\Source MOS-Person">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">View</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
     design-time-name="Package\Sequence Container 1\Contact\Import ExternalContactPerson\Dest Rightsline_ExternalContactPerson">
     <Properties>
       <Property>
@@ -48383,6 +48361,19 @@ FROM    [PBS].[vwMOSUsage]
         <Name>TableInfoObjectType</Name>
         <Value
           type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Sequence Container 1\Contact\Import ExternalContactPerson\Source MOS-Person">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">View</Value>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
@@ -48513,14 +48504,6 @@ FROM    [PBS].[vwMOSUsage]
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Sequence Container 1\Contact\Import Underwriter\Source MOS-UNderwriter">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
     design-time-name="Package\Sequence Container 1\Contact\Import Underwriter\Dest Rightsline_Underwriter">
     <Properties>
       <Property>
@@ -48530,6 +48513,14 @@ FROM    [PBS].[vwMOSUsage]
         <Name>TableInfoObjectType</Name>
         <Value
           type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Sequence Container 1\Contact\Import Underwriter\Source MOS-UNderwriter">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
@@ -48860,14 +48851,6 @@ FROM    [PBS].[vwMOSUsage]
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Sequence Container 1\Deal Imports\Import Deal-PBS PAA1 Merged\Source MOS-DealPbsPAA1 Merged">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
     design-time-name="Package\Sequence Container 1\Deal Imports\Import Deal-PBS PAA1 Merged\Dest RightsLine_Deal_PBSPAA1">
     <Properties>
       <Property>
@@ -48877,6 +48860,14 @@ FROM    [PBS].[vwMOSUsage]
         <Name>TableInfoObjectType</Name>
         <Value
           type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Sequence Container 1\Deal Imports\Import Deal-PBS PAA1 Merged\Source MOS-DealPbsPAA1 Merged">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
@@ -48931,14 +48922,6 @@ FROM    [PBS].[vwMOSUsage]
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Sequence Container 1\Deal Imports\Import Deal-PBS Prod and Acq Merged\MOS-DealPbs ProdAcq Merged Data">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
     design-time-name="Package\Sequence Container 1\Deal Imports\Import Deal-PBS Prod and Acq Merged\Dest RightsLine_Deal_ProductionAndAcquisition_Merged">
     <Properties>
       <Property>
@@ -48948,6 +48931,14 @@ FROM    [PBS].[vwMOSUsage]
         <Name>TableInfoObjectType</Name>
         <Value
           type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Sequence Container 1\Deal Imports\Import Deal-PBS Prod and Acq Merged\MOS-DealPbs ProdAcq Merged Data">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
@@ -49373,6 +49364,14 @@ FROM    [PBS].[vwMOSUsage]
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
+    design-time-name="Package\Sequence Container 1\Deal Imports\Populate TEMP_RL_AlliantExtractContracts\Source AlliantDealFieldSource">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
     design-time-name="Package\Sequence Container 1\Deal Imports\Populate TEMP_RL_AlliantExtractContracts\Dest TEMP_RL_AlliantExtractContracts">
     <Properties>
       <Property>
@@ -49382,14 +49381,6 @@ FROM    [PBS].[vwMOSUsage]
         <Name>TableInfoObjectType</Name>
         <Value
           type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Sequence Container 1\Deal Imports\Populate TEMP_RL_AlliantExtractContracts\Source AlliantDealFieldSource">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
@@ -49526,6 +49517,114 @@ FROM    [PBS].[vwMOSUsage]
     </Properties>
   </PipelineComponentMetadata>
   <TaskHost
+    design-time-name="Package\Sequence Container 1\Rights Imports\Alliant Nola to Staging Table">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="201,42"
+          Id="Package\Sequence Container 1\Rights Imports\Alliant Nola to Staging Table\Source Alliant Nola Query"
+          TopLeft="188,82" />
+        <NodeLayout
+          Size="212,42"
+          Id="Package\Sequence Container 1\Rights Imports\Alliant Nola to Staging Table\Dest PBS Alliant_NolaRights"
+          TopLeft="184,253" />
+        <EdgeLayout
+          Id="Package\Sequence Container 1\Rights Imports\Alliant Nola to Staging Table.Paths[ADO NET Source Output]"
+          TopLeft="289.25,124">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,129"
+              Start="0,0"
+              End="0,121.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,121.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Sequence Container 1\Rights Imports\Alliant Nola to Staging Table\Dest PBS Alliant_NolaRights">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Sequence Container 1\Rights Imports\Alliant Nola to Staging Table\Source Alliant Nola Query">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Sequence Container 1\Rights Imports\Alliant Rights To Staging Table">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="177,42"
+          Id="Package\Sequence Container 1\Rights Imports\Alliant Rights To Staging Table\Source Alliant Query"
+          TopLeft="272,129" />
+        <NodeLayout
+          Size="191,42"
+          Id="Package\Sequence Container 1\Rights Imports\Alliant Rights To Staging Table\Dest PBS Alliant_Rights"
+          TopLeft="267,340" />
+        <EdgeLayout
+          Id="Package\Sequence Container 1\Rights Imports\Alliant Rights To Staging Table.Paths[ADO NET Source Output]"
+          TopLeft="361.5,171">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,169"
+              Start="0,0"
+              End="0,161.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,161.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Sequence Container 1\Rights Imports\Alliant Rights To Staging Table\Dest PBS Alliant_Rights">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Sequence Container 1\Rights Imports\Alliant Rights To Staging Table\Source Alliant Query">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
     design-time-name="Package\Sequence Container 1\Rights Imports\Import Alliant Rights In">
     <LayoutInfo>
       <GraphLayout
@@ -49642,7 +49741,7 @@ FROM    [PBS].[vwMOSUsage]
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Sequence Container 1\Rights Imports\Import BV Rights In\Source View BVRights - RightsIn">
+    design-time-name="Package\Sequence Container 1\Rights Imports\Import BV Rights In\Dest Rightsline_Rights_In">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -49650,7 +49749,7 @@ FROM    [PBS].[vwMOSUsage]
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Sequence Container 1\Rights Imports\Import BV Rights In\Dest Rightsline_Rights_In">
+    design-time-name="Package\Sequence Container 1\Rights Imports\Import BV Rights In\Source View BVRights - RightsIn">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -49749,6 +49848,14 @@ FROM    [PBS].[vwMOSUsage]
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Sequence Container 1\Rights Imports\Import Rights Blackout\Dest RightsLine_Rights_Blackout">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\Sequence Container 1\Rights Imports\Import Rights Blackout\Source View BVRights - Blackout">
     <Properties>
@@ -49873,122 +49980,6 @@ FROM    [PBS].[vwMOSUsage]
   </TaskHost>
   <PipelineComponentMetadata
     design-time-name="Package\Sequence Container 1\Rights Imports\Import Rights IN Bv-MOS\MOS-RightsINBV">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Sequence Container 1\Rights Imports\Import Rights Blackout\Dest RightsLine_Rights_Blackout">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <TaskHost
-    design-time-name="Package\Sequence Container 1\Rights Imports\Alliant Rights To Staging Table">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="177,42"
-          Id="Package\Sequence Container 1\Rights Imports\Alliant Rights To Staging Table\Source Alliant Query"
-          TopLeft="272,129" />
-        <NodeLayout
-          Size="191,42"
-          Id="Package\Sequence Container 1\Rights Imports\Alliant Rights To Staging Table\Dest PBS Alliant_Rights"
-          TopLeft="267,340" />
-        <EdgeLayout
-          Id="Package\Sequence Container 1\Rights Imports\Alliant Rights To Staging Table.Paths[ADO NET Source Output]"
-          TopLeft="361.5,171">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,169"
-              Start="0,0"
-              End="0,161.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,161.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\Sequence Container 1\Rights Imports\Alliant Rights To Staging Table\Source Alliant Query">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Sequence Container 1\Rights Imports\Alliant Rights To Staging Table\Dest PBS Alliant_Rights">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <TaskHost
-    design-time-name="Package\Sequence Container 1\Rights Imports\Alliant Nola to Staging Table">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="201,42"
-          Id="Package\Sequence Container 1\Rights Imports\Alliant Nola to Staging Table\Source Alliant Nola Query"
-          TopLeft="188,82" />
-        <NodeLayout
-          Size="212,42"
-          Id="Package\Sequence Container 1\Rights Imports\Alliant Nola to Staging Table\Dest PBS Alliant_NolaRights"
-          TopLeft="184,253" />
-        <EdgeLayout
-          Id="Package\Sequence Container 1\Rights Imports\Alliant Nola to Staging Table.Paths[ADO NET Source Output]"
-          TopLeft="289.25,124">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,129"
-              Start="0,0"
-              End="0,121.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,121.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\Sequence Container 1\Rights Imports\Alliant Nola to Staging Table\Source Alliant Nola Query">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Sequence Container 1\Rights Imports\Alliant Nola to Staging Table\Dest PBS Alliant_NolaRights">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
