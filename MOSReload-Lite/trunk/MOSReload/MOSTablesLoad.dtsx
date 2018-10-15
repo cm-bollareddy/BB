@@ -7,12 +7,12 @@
   DTS:CreatorName="BRADDOCK\ytseytlin"
   DTS:DTSID="{6AD5EEF3-43DC-4A17-84C2-E19D9FD4D2BE}"
   DTS:ExecutableType="SSIS.Package.3"
-  DTS:LastModifiedProductVersion="13.0.2165.0"
+  DTS:LastModifiedProductVersion="11.0.5583.0"
   DTS:LocaleID="1033"
   DTS:ObjectName="MOSTablesLoad"
   DTS:PackageType="5"
-  DTS:VersionBuild="60"
-  DTS:VersionGUID="{B93CA168-CE30-4522-AB93-670248503C38}">
+  DTS:VersionBuild="61"
+  DTS:VersionGUID="{B4A4D719-96BF-4DB7-9CEB-CCBD42DF11D1}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">6</DTS:Property>
   <DTS:ConnectionManagers>
@@ -27,7 +27,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAoHpJ0W7AYkC7ooRM4WVBLQAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADWE54Ngs0CNEdX+mxilgvUAAAAAASAAACgAAAAEAAAAFIbW+3pFxYxMIldQO5npjEYAAAAo62/2hOeLkzJzztsGnsYGGZaLKi0YK7UFAAAANRMgLd/yQR0FEURJiBZmp95v5Yj</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA+vZle3O0r0qczwMXhgPmpAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACJO8Wsok6OL3LjjOQBOyXGAAAAAASAAACgAAAAEAAAAC/rGbguISLxJlgoY+vSS9IYAAAAwDbXyyzHtukwJgy5l+g7a8sGPxdB20lkFAAAALLTPHvIFLgAfWRHsczW+mHFvKRb</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -42,7 +42,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAoHpJ0W7AYkC7ooRM4WVBLQAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAB6++DfdfDRRUyt22Nn3lgPAAAAAASAAACgAAAAEAAAACsaDGbjm3eIJb+zW7CCLTcYAAAAv3hLnyvnD0SscxyiYAx6TZiiPlgx7xAXFAAAAE/iCyXzL9euC3F8ebjd/tpxRARY</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA+vZle3O0r0qczwMXhgPmpAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAB0uFhrKr9fxe7/3rZhId/qAAAAAASAAACgAAAAEAAAADU16KJYxIlhH+hAgAR9eSIYAAAA9+f55hXnnxkWzCmJJWBlY/4qaKInjqALFAAAAHPoYjBjegYJtT//elvx+aN12ox1</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -82,7 +82,7 @@
           <components>
             <component
               refId="Package\Load EpsiodeCredits ExcutiveProducer\ADO NET Destination"
-              componentClassID="DTS.ManagedComponentWrapper.3"
+              componentClassID="{874F7595-FB5F-40FF-96AF-FBFF8250E3EF}"
               contactInfo="Loads data into an ADO.NET-compliant database that uses a database table or view. Load data into a new or existing table. For example, use an ADO.NET provider for ODBC to load data into an ODBC destination.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;2"
               description="Loads data into an ADO.NET-compliant database that uses a database table or view. Load data into a new or existing table. For example, use an ADO.NET provider for ODBC to load data into an ODBC destination."
               name="ADO NET Destination"
@@ -194,7 +194,7 @@
             </component>
             <component
               refId="Package\Load EpsiodeCredits ExcutiveProducer\ADO NET Source"
-              componentClassID="DTS.ManagedComponentWrapper.3"
+              componentClassID="{874F7595-FB5F-40FF-96AF-FBFF8250E3EF}"
               contactInfo="Consumes data from SQL Server, OLE DB, ODBC, or Oracle, using the corresponding .NET Framework data provider. Use a Transact-SQL statement to define the result set. For example, extract data from SQL Server with the .NET Framework data provider for SQL Server.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
               description="Consumes data from SQL Server, OLE DB, ODBC, or Oracle, using the corresponding .NET Framework data provider. Use a Transact-SQL statement to define the result set. For example, extract data from SQL Server with the .NET Framework data provider for SQL Server."
               name="ADO NET Source"
@@ -364,7 +364,7 @@ WHERE   ( TRAFFICDATA.BV.PBSDEALCONTACT.PBSDC_SLU_ID_CONTACTTYPE = 44001 )
           <components>
             <component
               refId="Package\Load Epsisode Organizations\ADO NET Destination"
-              componentClassID="DTS.ManagedComponentWrapper.3"
+              componentClassID="{874F7595-FB5F-40FF-96AF-FBFF8250E3EF}"
               contactInfo="Loads data into an ADO.NET-compliant database that uses a database table or view. Load data into a new or existing table. For example, use an ADO.NET provider for ODBC to load data into an ODBC destination.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;2"
               description="Loads data into an ADO.NET-compliant database that uses a database table or view. Load data into a new or existing table. For example, use an ADO.NET provider for ODBC to load data into an ODBC destination."
               name="ADO NET Destination"
@@ -582,7 +582,7 @@ WHERE   ( TRAFFICDATA.BV.PBSDEALCONTACT.PBSDC_SLU_ID_CONTACTTYPE = 44001 )
             </component>
             <component
               refId="Package\Load Epsisode Organizations\ADO NET Source"
-              componentClassID="DTS.ManagedComponentWrapper.3"
+              componentClassID="{874F7595-FB5F-40FF-96AF-FBFF8250E3EF}"
               contactInfo="Consumes data from SQL Server, OLE DB, ODBC, or Oracle, using the corresponding .NET Framework data provider. Use a Transact-SQL statement to define the result set. For example, extract data from SQL Server with the .NET Framework data provider for SQL Server.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
               description="Consumes data from SQL Server, OLE DB, ODBC, or Oracle, using the corresponding .NET Framework data provider. Use a Transact-SQL statement to define the result set. For example, extract data from SQL Server with the .NET Framework data provider for SQL Server."
               name="ADO NET Source"
@@ -939,7 +939,7 @@ from TrafficData.pbs.vwMOSEpisodeContactAgnostic</property>
           <components>
             <component
               refId="Package\Load MOS Credits\ADO NET Destination"
-              componentClassID="DTS.ManagedComponentWrapper.3"
+              componentClassID="{874F7595-FB5F-40FF-96AF-FBFF8250E3EF}"
               contactInfo="Loads data into an ADO.NET-compliant database that uses a database table or view. Load data into a new or existing table. For example, use an ADO.NET provider for ODBC to load data into an ODBC destination.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;2"
               description="Loads data into an ADO.NET-compliant database that uses a database table or view. Load data into a new or existing table. For example, use an ADO.NET provider for ODBC to load data into an ODBC destination."
               name="ADO NET Destination"
@@ -1067,7 +1067,7 @@ from TrafficData.pbs.vwMOSEpisodeContactAgnostic</property>
             </component>
             <component
               refId="Package\Load MOS Credits\ADO NET Source"
-              componentClassID="DTS.ManagedComponentWrapper.3"
+              componentClassID="{874F7595-FB5F-40FF-96AF-FBFF8250E3EF}"
               contactInfo="Consumes data from SQL Server, OLE DB, ODBC, or Oracle, using the corresponding .NET Framework data provider. Use a Transact-SQL statement to define the result set. For example, extract data from SQL Server with the .NET Framework data provider for SQL Server.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
               description="Consumes data from SQL Server, OLE DB, ODBC, or Oracle, using the corresponding .NET Framework data provider. Use a Transact-SQL statement to define the result set. For example, extract data from SQL Server with the .NET Framework data provider for SQL Server."
               name="ADO NET Source"
@@ -1282,7 +1282,7 @@ FROM    trafficdata.[PBS].[vwMOSEpisode]
           <components>
             <component
               refId="Package\Load MOSCompilation\ADO NET Destination"
-              componentClassID="DTS.ManagedComponentWrapper.3"
+              componentClassID="{874F7595-FB5F-40FF-96AF-FBFF8250E3EF}"
               contactInfo="Loads data into an ADO.NET-compliant database that uses a database table or view. Load data into a new or existing table. For example, use an ADO.NET provider for ODBC to load data into an ODBC destination.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;2"
               description="Loads data into an ADO.NET-compliant database that uses a database table or view. Load data into a new or existing table. For example, use an ADO.NET provider for ODBC to load data into an ODBC destination."
               name="ADO NET Destination"
@@ -1446,7 +1446,7 @@ FROM    trafficdata.[PBS].[vwMOSEpisode]
             </component>
             <component
               refId="Package\Load MOSCompilation\ADO NET Source"
-              componentClassID="DTS.ManagedComponentWrapper.3"
+              componentClassID="{874F7595-FB5F-40FF-96AF-FBFF8250E3EF}"
               contactInfo="Consumes data from SQL Server, OLE DB, ODBC, or Oracle, using the corresponding .NET Framework data provider. Use a Transact-SQL statement to define the result set. For example, extract data from SQL Server with the .NET Framework data provider for SQL Server.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
               description="Consumes data from SQL Server, OLE DB, ODBC, or Oracle, using the corresponding .NET Framework data provider. Use a Transact-SQL statement to define the result set. For example, extract data from SQL Server with the .NET Framework data provider for SQL Server."
               name="ADO NET Source"
@@ -1704,7 +1704,7 @@ from	[PBS].[vwMOSCompilation]</property>
           <components>
             <component
               refId="Package\Load MOSCompilation Entry\ADO NET Destination"
-              componentClassID="DTS.ManagedComponentWrapper.3"
+              componentClassID="{874F7595-FB5F-40FF-96AF-FBFF8250E3EF}"
               contactInfo="Loads data into an ADO.NET-compliant database that uses a database table or view. Load data into a new or existing table. For example, use an ADO.NET provider for ODBC to load data into an ODBC destination.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;2"
               description="Loads data into an ADO.NET-compliant database that uses a database table or view. Load data into a new or existing table. For example, use an ADO.NET provider for ODBC to load data into an ODBC destination."
               name="ADO NET Destination"
@@ -1830,7 +1830,7 @@ from	[PBS].[vwMOSCompilation]</property>
             </component>
             <component
               refId="Package\Load MOSCompilation Entry\ADO NET Source"
-              componentClassID="DTS.ManagedComponentWrapper.3"
+              componentClassID="{874F7595-FB5F-40FF-96AF-FBFF8250E3EF}"
               contactInfo="Consumes data from SQL Server, OLE DB, ODBC, or Oracle, using the corresponding .NET Framework data provider. Use a Transact-SQL statement to define the result set. For example, extract data from SQL Server with the .NET Framework data provider for SQL Server.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
               description="Consumes data from SQL Server, OLE DB, ODBC, or Oracle, using the corresponding .NET Framework data provider. Use a Transact-SQL statement to define the result set. For example, extract data from SQL Server with the .NET Framework data provider for SQL Server."
               name="ADO NET Source"
@@ -2019,7 +2019,7 @@ from	[PBS].[vwMOSCompilation]</property>
           <components>
             <component
               refId="Package\Load MOSEpisode\ADO NET Destination"
-              componentClassID="DTS.ManagedComponentWrapper.3"
+              componentClassID="{874F7595-FB5F-40FF-96AF-FBFF8250E3EF}"
               contactInfo="Loads data into an ADO.NET-compliant database that uses a database table or view. Load data into a new or existing table. For example, use an ADO.NET provider for ODBC to load data into an ODBC destination.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;2"
               description="Loads data into an ADO.NET-compliant database that uses a database table or view. Load data into a new or existing table. For example, use an ADO.NET provider for ODBC to load data into an ODBC destination."
               name="ADO NET Destination"
@@ -2336,7 +2336,7 @@ from	[PBS].[vwMOSCompilation]</property>
             </component>
             <component
               refId="Package\Load MOSEpisode\ADO NET Source"
-              componentClassID="DTS.ManagedComponentWrapper.3"
+              componentClassID="{874F7595-FB5F-40FF-96AF-FBFF8250E3EF}"
               contactInfo="Consumes data from SQL Server, OLE DB, ODBC, or Oracle, using the corresponding .NET Framework data provider. Use a Transact-SQL statement to define the result set. For example, extract data from SQL Server with the .NET Framework data provider for SQL Server.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
               description="Consumes data from SQL Server, OLE DB, ODBC, or Oracle, using the corresponding .NET Framework data provider. Use a Transact-SQL statement to define the result set. For example, extract data from SQL Server with the .NET Framework data provider for SQL Server."
               name="ADO NET Source"
@@ -2890,7 +2890,7 @@ from	[PBS].[vwMOSCompilation]</property>
           <components>
             <component
               refId="Package\Load MOSManifestation\ADO NET Destination"
-              componentClassID="DTS.ManagedComponentWrapper.3"
+              componentClassID="{874F7595-FB5F-40FF-96AF-FBFF8250E3EF}"
               contactInfo="Loads data into an ADO.NET-compliant database that uses a database table or view. Load data into a new or existing table. For example, use an ADO.NET provider for ODBC to load data into an ODBC destination.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;2"
               description="Loads data into an ADO.NET-compliant database that uses a database table or view. Load data into a new or existing table. For example, use an ADO.NET provider for ODBC to load data into an ODBC destination."
               name="ADO NET Destination"
@@ -3146,7 +3146,7 @@ from	[PBS].[vwMOSCompilation]</property>
             </component>
             <component
               refId="Package\Load MOSManifestation\ADO NET Source"
-              componentClassID="DTS.ManagedComponentWrapper.3"
+              componentClassID="{874F7595-FB5F-40FF-96AF-FBFF8250E3EF}"
               contactInfo="Consumes data from SQL Server, OLE DB, ODBC, or Oracle, using the corresponding .NET Framework data provider. Use a Transact-SQL statement to define the result set. For example, extract data from SQL Server with the .NET Framework data provider for SQL Server.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
               description="Consumes data from SQL Server, OLE DB, ODBC, or Oracle, using the corresponding .NET Framework data provider. Use a Transact-SQL statement to define the result set. For example, extract data from SQL Server with the .NET Framework data provider for SQL Server."
               name="ADO NET Source"
@@ -3559,7 +3559,7 @@ from	[PBS].[vwMOSCompilation]</property>
           <components>
             <component
               refId="Package\Load MOSMOSSeason\ADO NET Destination"
-              componentClassID="DTS.ManagedComponentWrapper.3"
+              componentClassID="{874F7595-FB5F-40FF-96AF-FBFF8250E3EF}"
               contactInfo="Loads data into an ADO.NET-compliant database that uses a database table or view. Load data into a new or existing table. For example, use an ADO.NET provider for ODBC to load data into an ODBC destination.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;2"
               description="Loads data into an ADO.NET-compliant database that uses a database table or view. Load data into a new or existing table. For example, use an ADO.NET provider for ODBC to load data into an ODBC destination."
               name="ADO NET Destination"
@@ -3743,7 +3743,7 @@ from	[PBS].[vwMOSCompilation]</property>
             </component>
             <component
               refId="Package\Load MOSMOSSeason\ADO NET Source"
-              componentClassID="DTS.ManagedComponentWrapper.3"
+              componentClassID="{874F7595-FB5F-40FF-96AF-FBFF8250E3EF}"
               contactInfo="Consumes data from SQL Server, OLE DB, ODBC, or Oracle, using the corresponding .NET Framework data provider. Use a Transact-SQL statement to define the result set. For example, extract data from SQL Server with the .NET Framework data provider for SQL Server.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
               description="Consumes data from SQL Server, OLE DB, ODBC, or Oracle, using the corresponding .NET Framework data provider. Use a Transact-SQL statement to define the result set. For example, extract data from SQL Server with the .NET Framework data provider for SQL Server."
               name="ADO NET Source"
@@ -4038,7 +4038,7 @@ from	[PBS].[vwMOSCompilation]</property>
           <components>
             <component
               refId="Package\Load MOSOffer\ADO NET Destination"
-              componentClassID="DTS.ManagedComponentWrapper.3"
+              componentClassID="{874F7595-FB5F-40FF-96AF-FBFF8250E3EF}"
               contactInfo="Loads data into an ADO.NET-compliant database that uses a database table or view. Load data into a new or existing table. For example, use an ADO.NET provider for ODBC to load data into an ODBC destination.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;2"
               description="Loads data into an ADO.NET-compliant database that uses a database table or view. Load data into a new or existing table. For example, use an ADO.NET provider for ODBC to load data into an ODBC destination."
               name="ADO NET Destination"
@@ -4222,7 +4222,7 @@ from	[PBS].[vwMOSCompilation]</property>
             </component>
             <component
               refId="Package\Load MOSOffer\ADO NET Source"
-              componentClassID="DTS.ManagedComponentWrapper.3"
+              componentClassID="{874F7595-FB5F-40FF-96AF-FBFF8250E3EF}"
               contactInfo="Consumes data from SQL Server, OLE DB, ODBC, or Oracle, using the corresponding .NET Framework data provider. Use a Transact-SQL statement to define the result set. For example, extract data from SQL Server with the .NET Framework data provider for SQL Server.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
               description="Consumes data from SQL Server, OLE DB, ODBC, or Oracle, using the corresponding .NET Framework data provider. Use a Transact-SQL statement to define the result set. For example, extract data from SQL Server with the .NET Framework data provider for SQL Server."
               name="ADO NET Source"
@@ -4517,7 +4517,7 @@ from TrafficData.pbs.vwMOSOffer</property>
           <components>
             <component
               refId="Package\Load MOSSeries\ADO NET Destination"
-              componentClassID="DTS.ManagedComponentWrapper.3"
+              componentClassID="{874F7595-FB5F-40FF-96AF-FBFF8250E3EF}"
               contactInfo="Loads data into an ADO.NET-compliant database that uses a database table or view. Load data into a new or existing table. For example, use an ADO.NET provider for ODBC to load data into an ODBC destination.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;2"
               description="Loads data into an ADO.NET-compliant database that uses a database table or view. Load data into a new or existing table. For example, use an ADO.NET provider for ODBC to load data into an ODBC destination."
               name="ADO NET Destination"
@@ -4784,7 +4784,7 @@ from TrafficData.pbs.vwMOSOffer</property>
             </component>
             <component
               refId="Package\Load MOSSeries\ADO NET Source"
-              componentClassID="DTS.ManagedComponentWrapper.3"
+              componentClassID="{874F7595-FB5F-40FF-96AF-FBFF8250E3EF}"
               contactInfo="Consumes data from SQL Server, OLE DB, ODBC, or Oracle, using the corresponding .NET Framework data provider. Use a Transact-SQL statement to define the result set. For example, extract data from SQL Server with the .NET Framework data provider for SQL Server.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
               description="Consumes data from SQL Server, OLE DB, ODBC, or Oracle, using the corresponding .NET Framework data provider. Use a Transact-SQL statement to define the result set. For example, extract data from SQL Server with the .NET Framework data provider for SQL Server."
               name="ADO NET Source"
@@ -5255,7 +5255,7 @@ from TrafficData.pbs.vwMOSOffer</property>
           <components>
             <component
               refId="Package\Load MOSUsage\ADO NET Destination"
-              componentClassID="DTS.ManagedComponentWrapper.3"
+              componentClassID="{874F7595-FB5F-40FF-96AF-FBFF8250E3EF}"
               contactInfo="Loads data into an ADO.NET-compliant database that uses a database table or view. Load data into a new or existing table. For example, use an ADO.NET provider for ODBC to load data into an ODBC destination.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;2"
               description="Loads data into an ADO.NET-compliant database that uses a database table or view. Load data into a new or existing table. For example, use an ADO.NET provider for ODBC to load data into an ODBC destination."
               name="ADO NET Destination"
@@ -5450,7 +5450,7 @@ from TrafficData.pbs.vwMOSOffer</property>
             </component>
             <component
               refId="Package\Load MOSUsage\ADO NET Source"
-              componentClassID="DTS.ManagedComponentWrapper.3"
+              componentClassID="{874F7595-FB5F-40FF-96AF-FBFF8250E3EF}"
               contactInfo="Consumes data from SQL Server, OLE DB, ODBC, or Oracle, using the corresponding .NET Framework data provider. Use a Transact-SQL statement to define the result set. For example, extract data from SQL Server with the .NET Framework data provider for SQL Server.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
               description="Consumes data from SQL Server, OLE DB, ODBC, or Oracle, using the corresponding .NET Framework data provider. Use a Transact-SQL statement to define the result set. For example, extract data from SQL Server with the .NET Framework data provider for SQL Server."
               name="ADO NET Source"
@@ -5757,7 +5757,7 @@ from TrafficData.pbs.vwMOSOffer</property>
           <components>
             <component
               refId="Package\Load Offer Organizations\ADO NET Destination"
-              componentClassID="DTS.ManagedComponentWrapper.3"
+              componentClassID="{874F7595-FB5F-40FF-96AF-FBFF8250E3EF}"
               contactInfo="Loads data into an ADO.NET-compliant database that uses a database table or view. Load data into a new or existing table. For example, use an ADO.NET provider for ODBC to load data into an ODBC destination.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;2"
               description="Loads data into an ADO.NET-compliant database that uses a database table or view. Load data into a new or existing table. For example, use an ADO.NET provider for ODBC to load data into an ODBC destination."
               name="ADO NET Destination"
@@ -5964,7 +5964,7 @@ from TrafficData.pbs.vwMOSOffer</property>
             </component>
             <component
               refId="Package\Load Offer Organizations\ADO NET Source"
-              componentClassID="DTS.ManagedComponentWrapper.3"
+              componentClassID="{874F7595-FB5F-40FF-96AF-FBFF8250E3EF}"
               contactInfo="Consumes data from SQL Server, OLE DB, ODBC, or Oracle, using the corresponding .NET Framework data provider. Use a Transact-SQL statement to define the result set. For example, extract data from SQL Server with the .NET Framework data provider for SQL Server.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
               description="Consumes data from SQL Server, OLE DB, ODBC, or Oracle, using the corresponding .NET Framework data provider. Use a Transact-SQL statement to define the result set. For example, extract data from SQL Server with the .NET Framework data provider for SQL Server."
               name="ADO NET Source"
@@ -6285,7 +6285,7 @@ from TrafficData.pbs.vwMOSOffer</property>
           <components>
             <component
               refId="Package\Load Series Credits\ADO NET Destination"
-              componentClassID="DTS.ManagedComponentWrapper.3"
+              componentClassID="{874F7595-FB5F-40FF-96AF-FBFF8250E3EF}"
               contactInfo="Loads data into an ADO.NET-compliant database that uses a database table or view. Load data into a new or existing table. For example, use an ADO.NET provider for ODBC to load data into an ODBC destination.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;2"
               description="Loads data into an ADO.NET-compliant database that uses a database table or view. Load data into a new or existing table. For example, use an ADO.NET provider for ODBC to load data into an ODBC destination."
               name="ADO NET Destination"
@@ -6411,7 +6411,7 @@ from TrafficData.pbs.vwMOSOffer</property>
             </component>
             <component
               refId="Package\Load Series Credits\ADO NET Source"
-              componentClassID="DTS.ManagedComponentWrapper.3"
+              componentClassID="{874F7595-FB5F-40FF-96AF-FBFF8250E3EF}"
               contactInfo="Consumes data from SQL Server, OLE DB, ODBC, or Oracle, using the corresponding .NET Framework data provider. Use a Transact-SQL statement to define the result set. For example, extract data from SQL Server with the .NET Framework data provider for SQL Server.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
               description="Consumes data from SQL Server, OLE DB, ODBC, or Oracle, using the corresponding .NET Framework data provider. Use a Transact-SQL statement to define the result set. For example, extract data from SQL Server with the .NET Framework data provider for SQL Server."
               name="ADO NET Source"
@@ -6604,7 +6604,7 @@ FROM    trafficdata.[PBS].[vwMOSEpisode]
           <components>
             <component
               refId="Package\Load Series Organizations\ADO NET Destination"
-              componentClassID="DTS.ManagedComponentWrapper.3"
+              componentClassID="{874F7595-FB5F-40FF-96AF-FBFF8250E3EF}"
               contactInfo="Loads data into an ADO.NET-compliant database that uses a database table or view. Load data into a new or existing table. For example, use an ADO.NET provider for ODBC to load data into an ODBC destination.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;2"
               description="Loads data into an ADO.NET-compliant database that uses a database table or view. Load data into a new or existing table. For example, use an ADO.NET provider for ODBC to load data into an ODBC destination."
               name="ADO NET Destination"
@@ -6816,7 +6816,7 @@ FROM    trafficdata.[PBS].[vwMOSEpisode]
             </component>
             <component
               refId="Package\Load Series Organizations\ADO NET Source"
-              componentClassID="DTS.ManagedComponentWrapper.3"
+              componentClassID="{874F7595-FB5F-40FF-96AF-FBFF8250E3EF}"
               contactInfo="Consumes data from SQL Server, OLE DB, ODBC, or Oracle, using the corresponding .NET Framework data provider. Use a Transact-SQL statement to define the result set. For example, extract data from SQL Server with the .NET Framework data provider for SQL Server.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
               description="Consumes data from SQL Server, OLE DB, ODBC, or Oracle, using the corresponding .NET Framework data provider. Use a Transact-SQL statement to define the result set. For example, extract data from SQL Server with the .NET Framework data provider for SQL Server."
               name="ADO NET Source"
@@ -7153,7 +7153,7 @@ FROM   pbs.vwMOSSeriesPerAsset</property>
           <components>
             <component
               refId="Package\Load SeriesCredits Producer\ADO NET Destination"
-              componentClassID="DTS.ManagedComponentWrapper.3"
+              componentClassID="{874F7595-FB5F-40FF-96AF-FBFF8250E3EF}"
               contactInfo="Loads data into an ADO.NET-compliant database that uses a database table or view. Load data into a new or existing table. For example, use an ADO.NET provider for ODBC to load data into an ODBC destination.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;2"
               description="Loads data into an ADO.NET-compliant database that uses a database table or view. Load data into a new or existing table. For example, use an ADO.NET provider for ODBC to load data into an ODBC destination."
               name="ADO NET Destination"
@@ -7307,7 +7307,7 @@ FROM   pbs.vwMOSSeriesPerAsset</property>
             </component>
             <component
               refId="Package\Load SeriesCredits Producer\ADO NET Source"
-              componentClassID="DTS.ManagedComponentWrapper.3"
+              componentClassID="{874F7595-FB5F-40FF-96AF-FBFF8250E3EF}"
               contactInfo="Consumes data from SQL Server, OLE DB, ODBC, or Oracle, using the corresponding .NET Framework data provider. Use a Transact-SQL statement to define the result set. For example, extract data from SQL Server with the .NET Framework data provider for SQL Server.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
               description="Consumes data from SQL Server, OLE DB, ODBC, or Oracle, using the corresponding .NET Framework data provider. Use a Transact-SQL statement to define the result set. For example, extract data from SQL Server with the .NET Framework data provider for SQL Server."
               name="ADO NET Source"
@@ -7558,7 +7558,7 @@ WHERE   ( TRAFFICDATA.BV.EXTENDEDDATA.EXT_SEXTC_ID = 607871712 )
           <components>
             <component
               refId="Package\xref Episode Org\ADO NET Destination"
-              componentClassID="DTS.ManagedComponentWrapper.3"
+              componentClassID="{874F7595-FB5F-40FF-96AF-FBFF8250E3EF}"
               contactInfo="Loads data into an ADO.NET-compliant database that uses a database table or view. Load data into a new or existing table. For example, use an ADO.NET provider for ODBC to load data into an ODBC destination.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;2"
               description="Loads data into an ADO.NET-compliant database that uses a database table or view. Load data into a new or existing table. For example, use an ADO.NET provider for ODBC to load data into an ODBC destination."
               name="ADO NET Destination"
@@ -7682,7 +7682,7 @@ WHERE   ( TRAFFICDATA.BV.EXTENDEDDATA.EXT_SEXTC_ID = 607871712 )
             </component>
             <component
               refId="Package\xref Episode Org\ADO NET Source"
-              componentClassID="DTS.ManagedComponentWrapper.3"
+              componentClassID="{874F7595-FB5F-40FF-96AF-FBFF8250E3EF}"
               contactInfo="Consumes data from SQL Server, OLE DB, ODBC, or Oracle, using the corresponding .NET Framework data provider. Use a Transact-SQL statement to define the result set. For example, extract data from SQL Server with the .NET Framework data provider for SQL Server.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
               description="Consumes data from SQL Server, OLE DB, ODBC, or Oracle, using the corresponding .NET Framework data provider. Use a Transact-SQL statement to define the result set. For example, extract data from SQL Server with the .NET Framework data provider for SQL Server."
               name="ADO NET Source"
@@ -7867,7 +7867,7 @@ FROM trafficdata.[PBS].vwMOSEpisodeContactAgnostic</property>
           <components>
             <component
               refId="Package\xref Epsiode Credits\ADO NET Destination"
-              componentClassID="DTS.ManagedComponentWrapper.3"
+              componentClassID="{874F7595-FB5F-40FF-96AF-FBFF8250E3EF}"
               contactInfo="Loads data into an ADO.NET-compliant database that uses a database table or view. Load data into a new or existing table. For example, use an ADO.NET provider for ODBC to load data into an ODBC destination.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;2"
               description="Loads data into an ADO.NET-compliant database that uses a database table or view. Load data into a new or existing table. For example, use an ADO.NET provider for ODBC to load data into an ODBC destination."
               name="ADO NET Destination"
@@ -7983,7 +7983,7 @@ FROM trafficdata.[PBS].vwMOSEpisodeContactAgnostic</property>
             </component>
             <component
               refId="Package\xref Epsiode Credits\ADO NET Source"
-              componentClassID="DTS.ManagedComponentWrapper.3"
+              componentClassID="{874F7595-FB5F-40FF-96AF-FBFF8250E3EF}"
               contactInfo="Consumes data from SQL Server, OLE DB, ODBC, or Oracle, using the corresponding .NET Framework data provider. Use a Transact-SQL statement to define the result set. For example, extract data from SQL Server with the .NET Framework data provider for SQL Server.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
               description="Consumes data from SQL Server, OLE DB, ODBC, or Oracle, using the corresponding .NET Framework data provider. Use a Transact-SQL statement to define the result set. For example, extract data from SQL Server with the .NET Framework data provider for SQL Server."
               name="ADO NET Source"
@@ -8152,7 +8152,7 @@ FROM trafficdata.[PBS].vwMOSEpisodeContactAgnostic</property>
           <components>
             <component
               refId="Package\xref Offer Org\ADO NET Destination"
-              componentClassID="DTS.ManagedComponentWrapper.3"
+              componentClassID="{874F7595-FB5F-40FF-96AF-FBFF8250E3EF}"
               contactInfo="Loads data into an ADO.NET-compliant database that uses a database table or view. Load data into a new or existing table. For example, use an ADO.NET provider for ODBC to load data into an ODBC destination.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;2"
               description="Loads data into an ADO.NET-compliant database that uses a database table or view. Load data into a new or existing table. For example, use an ADO.NET provider for ODBC to load data into an ODBC destination."
               name="ADO NET Destination"
@@ -8278,7 +8278,7 @@ FROM trafficdata.[PBS].vwMOSEpisodeContactAgnostic</property>
             </component>
             <component
               refId="Package\xref Offer Org\ADO NET Source"
-              componentClassID="DTS.ManagedComponentWrapper.3"
+              componentClassID="{874F7595-FB5F-40FF-96AF-FBFF8250E3EF}"
               contactInfo="Consumes data from SQL Server, OLE DB, ODBC, or Oracle, using the corresponding .NET Framework data provider. Use a Transact-SQL statement to define the result set. For example, extract data from SQL Server with the .NET Framework data provider for SQL Server.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
               description="Consumes data from SQL Server, OLE DB, ODBC, or Oracle, using the corresponding .NET Framework data provider. Use a Transact-SQL statement to define the result set. For example, extract data from SQL Server with the .NET Framework data provider for SQL Server."
               name="ADO NET Source"
@@ -8468,7 +8468,7 @@ FROM trafficdata.[PBS].vwMOSEpisodeContactAgnostic</property>
           <components>
             <component
               refId="Package\xref Series Org\ADO NET Destination"
-              componentClassID="DTS.ManagedComponentWrapper.3"
+              componentClassID="{874F7595-FB5F-40FF-96AF-FBFF8250E3EF}"
               contactInfo="Loads data into an ADO.NET-compliant database that uses a database table or view. Load data into a new or existing table. For example, use an ADO.NET provider for ODBC to load data into an ODBC destination.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;2"
               description="Loads data into an ADO.NET-compliant database that uses a database table or view. Load data into a new or existing table. For example, use an ADO.NET provider for ODBC to load data into an ODBC destination."
               name="ADO NET Destination"
@@ -8582,7 +8582,7 @@ FROM trafficdata.[PBS].vwMOSEpisodeContactAgnostic</property>
             </component>
             <component
               refId="Package\xref Series Org\ADO NET Source"
-              componentClassID="DTS.ManagedComponentWrapper.3"
+              componentClassID="{874F7595-FB5F-40FF-96AF-FBFF8250E3EF}"
               contactInfo="Consumes data from SQL Server, OLE DB, ODBC, or Oracle, using the corresponding .NET Framework data provider. Use a Transact-SQL statement to define the result set. For example, extract data from SQL Server with the .NET Framework data provider for SQL Server.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
               description="Consumes data from SQL Server, OLE DB, ODBC, or Oracle, using the corresponding .NET Framework data provider. Use a Transact-SQL statement to define the result set. For example, extract data from SQL Server with the .NET Framework data provider for SQL Server."
               name="ADO NET Source"
@@ -9889,7 +9889,7 @@ FROM trafficdata.[PBS].vwMOSEpisodeContactAgnostic</property>
     design-time-name="Package\Load MOSEpisode">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="160,42"
           Id="Package\Load MOSEpisode\ADO NET Source"
@@ -9929,9 +9929,7 @@ FROM trafficdata.[PBS].vwMOSEpisodeContactAgnostic</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
