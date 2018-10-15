@@ -12,8 +12,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="RightslineLoad"
   DTS:PackageType="5"
-  DTS:VersionBuild="502"
-  DTS:VersionGUID="{226FD5DF-3732-4076-B917-CA6D08E730B9}">
+  DTS:VersionBuild="503"
+  DTS:VersionGUID="{AF086D92-169A-459D-AD87-8969A19F3F75}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">6</DTS:Property>
   <DTS:ConnectionManagers>
@@ -28,7 +28,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAArQUwPWSOn0KLzrEGz12ruAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACwaw5hdf8U/rnV5bXaT0JWAAAAAASAAACgAAAAEAAAAOzrj1EPi6GDvPHC8UYBnuEIAAAAs32wF3TcVk0UAAAAvDUWgqpYGiybqnKHAd8YkChMLN0</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAArQUwPWSOn0KLzrEGz12ruAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADP8SBqssV6+6AC+RfmOVaPAAAAAASAAACgAAAAEAAAADQNP7Ai3nAJAOhLhe5aZKMIAAAA7umlhJ+RsvAUAAAAwVfbjd85sHQImUFIEYnnZype0Xw</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -43,7 +43,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAArQUwPWSOn0KLzrEGz12ruAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAA+zhQ6Vrh5vJu5YMq6PJicAAAAAASAAACgAAAAEAAAAKozm5hrxWANL62l7zf+2cAIAAAA0XoNKGE95QUUAAAAwJJEQ77jTk/I6oN61C5d5MwEegk</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAArQUwPWSOn0KLzrEGz12ruAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADx1bjTqxp2PhVYJGl/U80VAAAAAASAAACgAAAAEAAAANMRbNmpqBCPNw9gcauZXTgIAAAAxDMPMz02/lMUAAAAnojsZ6czsoh+nVQq/458WEv+yJc</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -58,7 +58,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAArQUwPWSOn0KLzrEGz12ruAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABQrRg5kCjiaZNoiEclqx1iAAAAAASAAACgAAAAEAAAAB4ovWXxiYKuC6CtfAPWCVcQAAAAXaeu1eK96hBgXKpRYQI52BQAAAAAk0i3jJduP+LT3AxfuARZQAzRfQ</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAArQUwPWSOn0KLzrEGz12ruAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAxg2uImuKkwZHa9WIi5jKHAAAAAASAAACgAAAAEAAAAKTOkvLNrCI4k9j8n/LoQXQQAAAA9KCHClZ+muqid+aHL3+JfhQAAACRg4WYzWbwd6JDwaVRxRtAPoGIeQ</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -73,7 +73,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAArQUwPWSOn0KLzrEGz12ruAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACupDF3V37qlvh57RGymoRCAAAAAASAAACgAAAAEAAAAGFUE+5nNFzgkubD6u2igQIQAAAAf4HXRbGx8bhOAeDJVQY2LxQAAAAE2thHC9WSknDUMA5khlkj54FQsA</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAArQUwPWSOn0KLzrEGz12ruAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAC0U8tf2EYc4AS4+zXDkLxHAAAAAASAAACgAAAAEAAAAAwNcbgUVGuuf3RrlD+TRiwQAAAAQKgRqBao2cyODytcEX0BhhQAAACekutEOgVvA55bYNFzwysu+lySwQ</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -98,7 +98,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAArQUwPWSOn0KLzrEGz12ruAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADgyffM04LGTX01OFBnBMphAAAAAASAAACgAAAAEAAAAOz5a+6pyDHeSB+MuuC20LMIAAAASOQQmmfZBHQUAAAAauZUoEtyiMuLP11XMBRirbSJaC8</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAArQUwPWSOn0KLzrEGz12ruAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAbSviTY73uPl4SN6QJydMmAAAAAASAAACgAAAAEAAAAEHbkq6BSSHFaivlxEh1CpkIAAAAwnYaK+mDge4UAAAArK4S69NMrBlxPsT3FSWEiWckt0A</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -29486,7 +29486,7 @@ SELECT distinct
 	 ,mlvStaticSTCon.rl_value as   standard_terms__conditions
 	 ,cast(mlvWorkflowStatus.rl_value as int) as WorkflowStatus
   FROM [TrafficData].[PBS].[DealPBSPAA1] paa
-  --join [RightslineETL].[dbo].Apr23_deals Apr23 on Apr23.dea_id = paa.dea_id
+  join [RightslineETL].[dbo].Apr23_deals Apr23 on Apr23.dea_id = paa.dea_id
   left join [TrafficData].[BV].[DEAL] ds on ds.DEA_ID = paa.dea_id
   left JOIN trafficdata.BV.PBSDEALSTATUS pbsds ON pbsds.PBSDS_ID = ds.DEA_PBSDS_ID
   left join [PBS].[MasterLookupValues] mlvPBSD_Label on mlvPBSD_Label.bv_value = pbsds.PBSDS_LABEL
@@ -34031,7 +34031,8 @@ WITH    cteMergedDeals ( Dea_ID )
             [dealid] ,
             mlvPBSD_Label.rl_value AS entity_status ,
             CAST(mlvWorkflowStatus.rl_value AS INT) AS WorkflowStatus
-    FROM    [TrafficData].[PBS].[DealProdAcQ] --join [RightsLineETL].[dbo].[Apr23_Deals] Apr23 on Apr23.dea_id = [DealProdAcQ].dea_id
+    FROM    [TrafficData].[PBS].[DealProdAcQ] 
+            join [RightsLineETL].[dbo].[Apr23_Deals] Apr23 on Apr23.dea_id = [DealProdAcQ].dea_id
             LEFT JOIN [TrafficData].[BV].[DEAL] ds ON ds.DEA_ID = [DealProdAcQ].dea_id
             LEFT JOIN trafficdata.BV.PBSDEALSTATUS pbsds ON pbsds.PBSDS_ID = ds.DEA_PBSDS_ID
             LEFT JOIN [PBS].[MasterLookupValues] mlvPBSD_Label ON mlvPBSD_Label.bv_value = pbsds.PBSDS_LABEL
@@ -45922,7 +45923,7 @@ FROM    [PBS].[vwMOSUsage]
     design-time-name="Package\Sequence Container\Load xref_DealToBlackout">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="202,42"
           Id="Package\Sequence Container\Load xref_DealToBlackout\Dest xref_DealToBlackout"
@@ -45966,7 +45967,9 @@ FROM    [PBS].[vwMOSUsage]
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -46000,7 +46003,9 @@ FROM    [PBS].[vwMOSUsage]
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -46031,7 +46036,7 @@ FROM    [PBS].[vwMOSUsage]
     design-time-name="Package\Sequence Container\Load xref_DealToEpisode">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="225,42"
           Id="Package\Sequence Container\Load xref_DealToEpisode\Source BV-ASSET and BV-Deal"
@@ -46071,7 +46076,9 @@ FROM    [PBS].[vwMOSUsage]
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -46102,7 +46109,7 @@ FROM    [PBS].[vwMOSUsage]
     design-time-name="Package\Sequence Container\Load xref_DealToExternalContactPerson">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="222,42"
           Id="Package\Sequence Container\Load xref_DealToExternalContactPerson\Source ExternalContactPerson"
@@ -46130,7 +46137,9 @@ FROM    [PBS].[vwMOSUsage]
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -46156,7 +46165,7 @@ FROM    [PBS].[vwMOSUsage]
     design-time-name="Package\Sequence Container\Load xref_DealToFunder">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="167,42"
           Id="Package\Sequence Container\Load xref_DealToFunder\Source vwFunders"
@@ -46196,7 +46205,9 @@ FROM    [PBS].[vwMOSUsage]
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -46222,7 +46233,7 @@ FROM    [PBS].[vwMOSUsage]
     design-time-name="Package\Sequence Container\Load xref_DealToHoldback">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="205,42"
           Id="Package\Sequence Container\Load xref_DealToHoldback\Dest xref_DealToHoldback"
@@ -46266,7 +46277,9 @@ FROM    [PBS].[vwMOSUsage]
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -46300,7 +46313,9 @@ FROM    [PBS].[vwMOSUsage]
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -46331,19 +46346,19 @@ FROM    [PBS].[vwMOSUsage]
     design-time-name="Package\Sequence Container\Load xref_DealToProductionCompany">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="158,42"
-          Id="Package\Sequence Container\Load xref_DealToProductionCompany\Data Conversion"
-          TopLeft="173,245" />
+          Size="175,42"
+          Id="Package\Sequence Container\Load xref_DealToProductionCompany\Source vwMOSOffer"
+          TopLeft="171,110" />
         <NodeLayout
           Size="256,42"
           Id="Package\Sequence Container\Load xref_DealToProductionCompany\Dest xref_DealToProductionCompany"
           TopLeft="236,389" />
         <NodeLayout
-          Size="175,42"
-          Id="Package\Sequence Container\Load xref_DealToProductionCompany\Source vwMOSOffer"
-          TopLeft="171,110" />
+          Size="158,42"
+          Id="Package\Sequence Container\Load xref_DealToProductionCompany\Data Conversion"
+          TopLeft="173,245" />
         <EdgeLayout
           Id="Package\Sequence Container\Load xref_DealToProductionCompany.Paths[OLE DB Source Output]"
           TopLeft="255.25,152">
@@ -46363,7 +46378,9 @@ FROM    [PBS].[vwMOSUsage]
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -46397,7 +46414,9 @@ FROM    [PBS].[vwMOSUsage]
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -46423,7 +46442,7 @@ FROM    [PBS].[vwMOSUsage]
     design-time-name="Package\Sequence Container\Load xref_DealToRightsIn">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="202,42"
           Id="Package\Sequence Container\Load xref_DealToRightsIn\Dest xref_DealToRightsIn"
@@ -46467,7 +46486,9 @@ FROM    [PBS].[vwMOSUsage]
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -46501,7 +46522,9 @@ FROM    [PBS].[vwMOSUsage]
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -46532,7 +46555,7 @@ FROM    [PBS].[vwMOSUsage]
     design-time-name="Package\Sequence Container\Load xref_DealToSeason">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="175,42"
           Id="Package\Sequence Container\Load xref_DealToSeason\Source vwMOSOffer"
@@ -46560,7 +46583,9 @@ FROM    [PBS].[vwMOSUsage]
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -46591,19 +46616,19 @@ FROM    [PBS].[vwMOSUsage]
     design-time-name="Package\Sequence Container\Load xref_DealToUnderwriter">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="158,42"
-          Id="Package\Sequence Container\Load xref_DealToUnderwriter\Data Conversion"
-          TopLeft="173,245" />
+          Size="248,42"
+          Id="Package\Sequence Container\Load xref_DealToUnderwriter\Source vwFunders And Underwriter"
+          TopLeft="171,110" />
         <NodeLayout
           Size="218,42"
           Id="Package\Sequence Container\Load xref_DealToUnderwriter\Dest xref_DealToUnderwriter"
           TopLeft="236,389" />
         <NodeLayout
-          Size="248,42"
-          Id="Package\Sequence Container\Load xref_DealToUnderwriter\Source vwFunders And Underwriter"
-          TopLeft="171,110" />
+          Size="158,42"
+          Id="Package\Sequence Container\Load xref_DealToUnderwriter\Data Conversion"
+          TopLeft="173,245" />
         <EdgeLayout
           Id="Package\Sequence Container\Load xref_DealToUnderwriter.Paths[OLE DB Source Output]"
           TopLeft="295,152">
@@ -46635,7 +46660,9 @@ FROM    [PBS].[vwMOSUsage]
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -46669,7 +46696,9 @@ FROM    [PBS].[vwMOSUsage]
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -46695,7 +46724,7 @@ FROM    [PBS].[vwMOSUsage]
     design-time-name="Package\Sequence Container\load xref_MergedDealToEpisode">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="291,42"
           Id="Package\Sequence Container\load xref_MergedDealToEpisode\Source BV-Deal MasterDeal and DealContent"
@@ -46735,7 +46764,9 @@ FROM    [PBS].[vwMOSUsage]
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -46888,7 +46919,7 @@ FROM    [PBS].[vwMOSUsage]
     design-time-name="Package\Sequence Container\Load xref_SeasonToEpisode">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="188,42"
           Id="Package\Sequence Container\Load xref_SeasonToEpisode\Source vwMOSEpisode"
@@ -46916,7 +46947,9 @@ FROM    [PBS].[vwMOSUsage]
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -46947,7 +46980,7 @@ FROM    [PBS].[vwMOSUsage]
     design-time-name="Package\Sequence Container\Load xref_SeriesToEpisode">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="188,42"
           Id="Package\Sequence Container\Load xref_SeriesToEpisode\Source vwMOSEpisode"
@@ -46975,7 +47008,9 @@ FROM    [PBS].[vwMOSUsage]
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -47006,7 +47041,7 @@ FROM    [PBS].[vwMOSUsage]
     design-time-name="Package\Sequence Container\Load xref_SeriesToSeason">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="185,42"
           Id="Package\Sequence Container\Load xref_SeriesToSeason\Source vwMOSSeason"
@@ -47034,7 +47069,9 @@ FROM    [PBS].[vwMOSUsage]
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -47126,11 +47163,7 @@ FROM    [PBS].[vwMOSUsage]
     design-time-name="Package\Sequence Container 1\Catalog Import Container\Import Episode_Parent_Series">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="223,42"
-          Id="Package\Sequence Container 1\Catalog Import Container\Import Episode_Parent_Series\MOS-EpisodeWithSeriesParent"
-          TopLeft="271.5,82.5" />
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="258,42"
           Id="Package\Sequence Container 1\Catalog Import Container\Import Episode_Parent_Series\Dest Rightsline_Episode_ParentSeries"
@@ -47139,6 +47172,10 @@ FROM    [PBS].[vwMOSUsage]
           Size="156,42"
           Id="Package\Sequence Container 1\Catalog Import Container\Import Episode_Parent_Series\Derived Column"
           TopLeft="275,236" />
+        <NodeLayout
+          Size="223,42"
+          Id="Package\Sequence Container 1\Catalog Import Container\Import Episode_Parent_Series\MOS-EpisodeWithSeriesParent"
+          TopLeft="271.5,82.5" />
         <NodeLayout
           Size="100,42"
           Id="Package\Sequence Container 1\Catalog Import Container\Import Episode_Parent_Series\Sort"
@@ -47162,7 +47199,9 @@ FROM    [PBS].[vwMOSUsage]
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -47196,7 +47235,9 @@ FROM    [PBS].[vwMOSUsage]
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -47230,7 +47271,9 @@ FROM    [PBS].[vwMOSUsage]
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -47266,23 +47309,23 @@ FROM    [PBS].[vwMOSUsage]
     design-time-name="Package\Sequence Container 1\Catalog Import Container\Import Episode_ParentSeason">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="229,42"
+          Id="Package\Sequence Container 1\Catalog Import Container\Import Episode_ParentSeason\MOS-EpisodeWithSeasonParent"
+          TopLeft="272.5,81.5" />
         <NodeLayout
           Size="100,42"
           Id="Package\Sequence Container 1\Catalog Import Container\Import Episode_ParentSeason\Sort"
           TopLeft="297,161" />
         <NodeLayout
-          Size="263,42"
-          Id="Package\Sequence Container 1\Catalog Import Container\Import Episode_ParentSeason\Dest Rightsline_Episode_ParentSeason"
-          TopLeft="290,332" />
-        <NodeLayout
           Size="156,42"
           Id="Package\Sequence Container 1\Catalog Import Container\Import Episode_ParentSeason\Derived Column"
           TopLeft="275,236" />
         <NodeLayout
-          Size="229,42"
-          Id="Package\Sequence Container 1\Catalog Import Container\Import Episode_ParentSeason\MOS-EpisodeWithSeasonParent"
-          TopLeft="272.5,81.5" />
+          Size="263,42"
+          Id="Package\Sequence Container 1\Catalog Import Container\Import Episode_ParentSeason\Dest Rightsline_Episode_ParentSeason"
+          TopLeft="290,332" />
         <EdgeLayout
           Id="Package\Sequence Container 1\Catalog Import Container\Import Episode_ParentSeason.Paths[Sort Output]"
           TopLeft="350,203">
@@ -47302,7 +47345,9 @@ FROM    [PBS].[vwMOSUsage]
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -47336,7 +47381,9 @@ FROM    [PBS].[vwMOSUsage]
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -47370,7 +47417,9 @@ FROM    [PBS].[vwMOSUsage]
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -47509,7 +47558,11 @@ FROM    [PBS].[vwMOSUsage]
     design-time-name="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="221,42"
+          Id="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\Dest Rightsline_OneTimeOnly"
+          TopLeft="284,327" />
         <NodeLayout
           Size="128,42"
           Id="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\MOS-OTO"
@@ -47518,10 +47571,6 @@ FROM    [PBS].[vwMOSUsage]
           Size="100,42"
           Id="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\Sort"
           TopLeft="297,161" />
-        <NodeLayout
-          Size="221,42"
-          Id="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\Dest Rightsline_OneTimeOnly"
-          TopLeft="284,327" />
         <NodeLayout
           Size="156,42"
           Id="Package\Sequence Container 1\Catalog Import Container\Import OneTimeOnly\Derived Column"
@@ -47557,7 +47606,9 @@ FROM    [PBS].[vwMOSUsage]
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -47579,7 +47630,9 @@ FROM    [PBS].[vwMOSUsage]
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -47613,7 +47666,9 @@ FROM    [PBS].[vwMOSUsage]
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -47644,15 +47699,15 @@ FROM    [PBS].[vwMOSUsage]
     design-time-name="Package\Sequence Container 1\Catalog Import Container\Import SeasonContainer">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="185,42"
-          Id="Package\Sequence Container 1\Catalog Import Container\Import SeasonContainer\MOS-SeasonContainer"
-          TopLeft="60,60" />
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="236,42"
           Id="Package\Sequence Container 1\Catalog Import Container\Import SeasonContainer\Dest Rightsline_SeasonContainer"
           TopLeft="83,339" />
+        <NodeLayout
+          Size="185,42"
+          Id="Package\Sequence Container 1\Catalog Import Container\Import SeasonContainer\MOS-SeasonContainer"
+          TopLeft="60,60" />
         <NodeLayout
           Size="156,42"
           Id="Package\Sequence Container 1\Catalog Import Container\Import SeasonContainer\Derived Column"
@@ -47692,7 +47747,9 @@ FROM    [PBS].[vwMOSUsage]
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -47726,7 +47783,9 @@ FROM    [PBS].[vwMOSUsage]
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -47760,7 +47819,9 @@ FROM    [PBS].[vwMOSUsage]
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -47791,23 +47852,23 @@ FROM    [PBS].[vwMOSUsage]
     design-time-name="Package\Sequence Container 1\Catalog Import Container\ImportSeasons">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="100,42"
           Id="Package\Sequence Container 1\Catalog Import Container\ImportSeasons\Sort"
           TopLeft="303,162" />
         <NodeLayout
-          Size="185,42"
-          Id="Package\Sequence Container 1\Catalog Import Container\ImportSeasons\Source vwMOSSeason"
-          TopLeft="271.5,82.5" />
+          Size="191,42"
+          Id="Package\Sequence Container 1\Catalog Import Container\ImportSeasons\Dest Rightsline_Season"
+          TopLeft="294.5,361.5" />
         <NodeLayout
           Size="156,42"
           Id="Package\Sequence Container 1\Catalog Import Container\ImportSeasons\Derived Column"
           TopLeft="289,257" />
         <NodeLayout
-          Size="191,42"
-          Id="Package\Sequence Container 1\Catalog Import Container\ImportSeasons\Dest Rightsline_Season"
-          TopLeft="294.5,361.5" />
+          Size="185,42"
+          Id="Package\Sequence Container 1\Catalog Import Container\ImportSeasons\Source vwMOSSeason"
+          TopLeft="271.5,82.5" />
         <EdgeLayout
           Id="Package\Sequence Container 1\Catalog Import Container\ImportSeasons.Paths[Sort Output]"
           TopLeft="353,204">
@@ -47839,7 +47900,9 @@ FROM    [PBS].[vwMOSUsage]
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -47873,7 +47936,9 @@ FROM    [PBS].[vwMOSUsage]
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -47907,7 +47972,9 @@ FROM    [PBS].[vwMOSUsage]
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -47943,11 +48010,7 @@ FROM    [PBS].[vwMOSUsage]
     design-time-name="Package\Sequence Container 1\Catalog Import Container\ImportSeries">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="185,42"
-          Id="Package\Sequence Container 1\Catalog Import Container\ImportSeries\Dest Rightsline_Series"
-          TopLeft="356,320" />
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="189,42"
           Id="Package\Sequence Container 1\Catalog Import Container\ImportSeries\Sort and Remove Dups"
@@ -47960,6 +48023,10 @@ FROM    [PBS].[vwMOSUsage]
           Size="180,42"
           Id="Package\Sequence Container 1\Catalog Import Container\ImportSeries\Source vwMOSSeries"
           TopLeft="335.5,77.5" />
+        <NodeLayout
+          Size="185,42"
+          Id="Package\Sequence Container 1\Catalog Import Container\ImportSeries\Dest Rightsline_Series"
+          TopLeft="356,320" />
         <EdgeLayout
           Id="Package\Sequence Container 1\Catalog Import Container\ImportSeries.Paths[OLE DB Source Output]"
           TopLeft="425.5,119.5">
@@ -47991,7 +48058,9 @@ FROM    [PBS].[vwMOSUsage]
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -48025,7 +48094,9 @@ FROM    [PBS].[vwMOSUsage]
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -48047,7 +48118,9 @@ FROM    [PBS].[vwMOSUsage]
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -48083,11 +48156,7 @@ FROM    [PBS].[vwMOSUsage]
     design-time-name="Package\Sequence Container 1\Contact\Import ExternalCompany">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="239,42"
-          Id="Package\Sequence Container 1\Contact\Import ExternalCompany\Dest Rightsline_ExternalCompany"
-          TopLeft="373,274" />
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="100,42"
           Id="Package\Sequence Container 1\Contact\Import ExternalCompany\Sort"
@@ -48096,6 +48165,10 @@ FROM    [PBS].[vwMOSUsage]
           Size="186,42"
           Id="Package\Sequence Container 1\Contact\Import ExternalCompany\Source MOS-Company"
           TopLeft="361,66" />
+        <NodeLayout
+          Size="239,42"
+          Id="Package\Sequence Container 1\Contact\Import ExternalCompany\Dest Rightsline_ExternalCompany"
+          TopLeft="373,274" />
         <NodeLayout
           Size="156,42"
           Id="Package\Sequence Container 1\Contact\Import ExternalCompany\Derived Column"
@@ -48131,7 +48204,9 @@ FROM    [PBS].[vwMOSUsage]
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -48159,7 +48234,9 @@ FROM    [PBS].[vwMOSUsage]
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -48193,7 +48270,9 @@ FROM    [PBS].[vwMOSUsage]
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -48229,15 +48308,7 @@ FROM    [PBS].[vwMOSUsage]
     design-time-name="Package\Sequence Container 1\Contact\Import ExternalContactPerson">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="174,42"
-          Id="Package\Sequence Container 1\Contact\Import ExternalContactPerson\Source MOS-Person"
-          TopLeft="272,50" />
-        <NodeLayout
-          Size="156,42"
-          Id="Package\Sequence Container 1\Contact\Import ExternalContactPerson\Derived Column"
-          TopLeft="296,205" />
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="263,42"
           Id="Package\Sequence Container 1\Contact\Import ExternalContactPerson\Dest Rightsline_ExternalContactPerson"
@@ -48246,6 +48317,14 @@ FROM    [PBS].[vwMOSUsage]
           Size="100,42"
           Id="Package\Sequence Container 1\Contact\Import ExternalContactPerson\Sort"
           TopLeft="294,117" />
+        <NodeLayout
+          Size="156,42"
+          Id="Package\Sequence Container 1\Contact\Import ExternalContactPerson\Derived Column"
+          TopLeft="296,205" />
+        <NodeLayout
+          Size="174,42"
+          Id="Package\Sequence Container 1\Contact\Import ExternalContactPerson\Source MOS-Person"
+          TopLeft="272,50" />
         <EdgeLayout
           Id="Package\Sequence Container 1\Contact\Import ExternalContactPerson.Paths[OLE DB Source Output]"
           TopLeft="359,92">
@@ -48277,7 +48356,9 @@ FROM    [PBS].[vwMOSUsage]
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -48311,7 +48392,9 @@ FROM    [PBS].[vwMOSUsage]
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -48345,7 +48428,9 @@ FROM    [PBS].[vwMOSUsage]
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -48381,11 +48466,7 @@ FROM    [PBS].[vwMOSUsage]
     design-time-name="Package\Sequence Container 1\Contact\Import Underwriter">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="199,42"
-          Id="Package\Sequence Container 1\Contact\Import Underwriter\Source MOS-UNderwriter"
-          TopLeft="361,66" />
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="213,42"
           Id="Package\Sequence Container 1\Contact\Import Underwriter\Dest Rightsline_Underwriter"
@@ -48398,6 +48479,10 @@ FROM    [PBS].[vwMOSUsage]
           Size="158,42"
           Id="Package\Sequence Container 1\Contact\Import Underwriter\Data Conversion"
           TopLeft="411,252" />
+        <NodeLayout
+          Size="199,42"
+          Id="Package\Sequence Container 1\Contact\Import Underwriter\Source MOS-UNderwriter"
+          TopLeft="361,66" />
         <EdgeLayout
           Id="Package\Sequence Container 1\Contact\Import Underwriter.Paths[Sort Output]"
           TopLeft="443,176">
@@ -48429,7 +48514,9 @@ FROM    [PBS].[vwMOSUsage]
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -48463,7 +48550,9 @@ FROM    [PBS].[vwMOSUsage]
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -48497,7 +48586,9 @@ FROM    [PBS].[vwMOSUsage]
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -48530,6 +48621,10 @@ FROM    [PBS].[vwMOSUsage]
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
+          Size="100,42"
+          Id="Package\Sequence Container 1\Deal Imports\Import Deal-PBS PAA1\Sort"
+          TopLeft="772,276" />
+        <NodeLayout
           Size="235,42"
           Id="Package\Sequence Container 1\Deal Imports\Import Deal-PBS PAA1\Desat RightsLine_Deal_PBSPAA1"
           TopLeft="467,333" />
@@ -48541,10 +48636,6 @@ FROM    [PBS].[vwMOSUsage]
           Size="156,42"
           Id="Package\Sequence Container 1\Deal Imports\Import Deal-PBS PAA1\Derived Column"
           TopLeft="476,243" />
-        <NodeLayout
-          Size="100,42"
-          Id="Package\Sequence Container 1\Deal Imports\Import Deal-PBS PAA1\Sort"
-          TopLeft="772,276" />
         <EdgeLayout
           Id="Package\Sequence Container 1\Deal Imports\Import Deal-PBS PAA1.Paths[OLE DB Source Output]"
           TopLeft="564,196">
@@ -48816,7 +48907,7 @@ FROM    [PBS].[vwMOSUsage]
     design-time-name="Package\Sequence Container 1\Deal Imports\Import Deal-PBS PAA1 Merged">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="242,42"
           Id="Package\Sequence Container 1\Deal Imports\Import Deal-PBS PAA1 Merged\Source MOS-DealPbsPAA1 Merged"
@@ -48844,7 +48935,9 @@ FROM    [PBS].[vwMOSUsage]
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -48875,7 +48968,7 @@ FROM    [PBS].[vwMOSUsage]
     design-time-name="Package\Sequence Container 1\Deal Imports\Import Deal-PBS Prod and Acq Merged">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="250,42"
           Id="Package\Sequence Container 1\Deal Imports\Import Deal-PBS Prod and Acq Merged\MOS-DealPbs ProdAcq Merged Data"
@@ -48915,7 +49008,9 @@ FROM    [PBS].[vwMOSUsage]
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -48952,10 +49047,6 @@ FROM    [PBS].[vwMOSUsage]
           Id="Package\Sequence Container 1\Deal Imports\Import Deal-ProdAcq\Source MOS-DealProdACQ"
           TopLeft="425.75,287.5" />
         <NodeLayout
-          Size="109,42"
-          Id="Package\Sequence Container 1\Deal Imports\Import Deal-ProdAcq\Sort 1"
-          TopLeft="456.5,387.5" />
-        <NodeLayout
           Size="156,42"
           Id="Package\Sequence Container 1\Deal Imports\Import Deal-ProdAcq\Derived Column"
           TopLeft="431.75,457.25" />
@@ -48963,6 +49054,10 @@ FROM    [PBS].[vwMOSUsage]
           Size="311,42"
           Id="Package\Sequence Container 1\Deal Imports\Import Deal-ProdAcq\Deast RightsLine_Deal_ProductionAndAcquisition"
           TopLeft="436.25,552.5" />
+        <NodeLayout
+          Size="109,42"
+          Id="Package\Sequence Container 1\Deal Imports\Import Deal-ProdAcq\Sort 1"
+          TopLeft="456.5,387.5" />
         <EdgeLayout
           Id="Package\Sequence Container 1\Deal Imports\Import Deal-ProdAcq.Paths[Sort Output]"
           TopLeft="510.375,429.5">
@@ -49081,7 +49176,7 @@ FROM    [PBS].[vwMOSUsage]
     design-time-name="Package\Sequence Container 1\Deal Imports\Import Deal-ProdAcq - O">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="169,42"
           Id="Package\Sequence Container 1\Deal Imports\Import Deal-ProdAcq - O\MOS-DealProdACQ"
@@ -49129,9 +49224,7 @@ FROM    [PBS].[vwMOSUsage]
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -49165,9 +49258,7 @@ FROM    [PBS].[vwMOSUsage]
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -49201,19 +49292,25 @@ FROM    [PBS].[vwMOSUsage]
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Sequence Container 1\Deal Imports\Import Deal-ProdAcq - O\MOS-DealProdACQ">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <TaskHost
     design-time-name="Package\Sequence Container 1\Deal Imports\Import Funders">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="167,42"
           Id="Package\Sequence Container 1\Deal Imports\Import Funders\Source vwFunders"
@@ -49253,7 +49350,9 @@ FROM    [PBS].[vwMOSUsage]
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -49285,13 +49384,13 @@ FROM    [PBS].[vwMOSUsage]
           Id="Package\Sequence Container 1\Deal Imports\Populate TEMP_RL_AlliantExtractContracts\DT Conv"
           TopLeft="100.75,134" />
         <NodeLayout
-          Size="261,42"
-          Id="Package\Sequence Container 1\Deal Imports\Populate TEMP_RL_AlliantExtractContracts\Dest TEMP_RL_AlliantExtractContracts"
-          TopLeft="81.25,219.5" />
-        <NodeLayout
           Size="220,42"
           Id="Package\Sequence Container 1\Deal Imports\Populate TEMP_RL_AlliantExtractContracts\Source AlliantDealFieldSource"
           TopLeft="60,60" />
+        <NodeLayout
+          Size="261,42"
+          Id="Package\Sequence Container 1\Deal Imports\Populate TEMP_RL_AlliantExtractContracts\Dest TEMP_RL_AlliantExtractContracts"
+          TopLeft="81.25,219.5" />
         <EdgeLayout
           Id="Package\Sequence Container 1\Deal Imports\Populate TEMP_RL_AlliantExtractContracts.Paths[OLE DB Source Output]"
           TopLeft="170,102">
@@ -49388,7 +49487,7 @@ FROM    [PBS].[vwMOSUsage]
     design-time-name="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import Rightsholdback">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="218,42"
           Id="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import Rightsholdback\Traffic Data HoldBack Source"
@@ -49428,7 +49527,9 @@ FROM    [PBS].[vwMOSUsage]
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -49454,7 +49555,7 @@ FROM    [PBS].[vwMOSUsage]
     design-time-name="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="172,42"
           Id="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\TrafficData Options"
@@ -49494,7 +49595,9 @@ FROM    [PBS].[vwMOSUsage]
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -49520,7 +49623,7 @@ FROM    [PBS].[vwMOSUsage]
     design-time-name="Package\Sequence Container 1\Rights Imports\Alliant Nola to Staging Table">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="201,42"
           Id="Package\Sequence Container 1\Rights Imports\Alliant Nola to Staging Table\Source Alliant Nola Query"
@@ -49548,7 +49651,9 @@ FROM    [PBS].[vwMOSUsage]
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -49628,7 +49733,7 @@ FROM    [PBS].[vwMOSUsage]
     design-time-name="Package\Sequence Container 1\Rights Imports\Import Alliant Rights In">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="178,42"
           Id="Package\Sequence Container 1\Rights Imports\Import Alliant Rights In\Source Alliant Rights"
@@ -49668,7 +49773,9 @@ FROM    [PBS].[vwMOSUsage]
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -49694,15 +49801,15 @@ FROM    [PBS].[vwMOSUsage]
     design-time-name="Package\Sequence Container 1\Rights Imports\Import BV Rights In">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="202,42"
-          Id="Package\Sequence Container 1\Rights Imports\Import BV Rights In\Dest Rightsline_Rights_In"
-          TopLeft="239,241" />
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="234,42"
           Id="Package\Sequence Container 1\Rights Imports\Import BV Rights In\Source View BVRights - RightsIn"
           TopLeft="200,86" />
+        <NodeLayout
+          Size="202,42"
+          Id="Package\Sequence Container 1\Rights Imports\Import BV Rights In\Dest Rightsline_Rights_In"
+          TopLeft="239,241" />
         <EdgeLayout
           Id="Package\Sequence Container 1\Rights Imports\Import BV Rights In.Paths[ADO NET Source Output]"
           TopLeft="317,128">
@@ -49734,7 +49841,9 @@ FROM    [PBS].[vwMOSUsage]
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -49760,7 +49869,7 @@ FROM    [PBS].[vwMOSUsage]
     design-time-name="Package\Sequence Container 1\Rights Imports\Import Producer-Holdback">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="238,42"
           Id="Package\Sequence Container 1\Rights Imports\Import Producer-Holdback\Source View BVRights - HoldBack"
@@ -49788,7 +49897,9 @@ FROM    [PBS].[vwMOSUsage]
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -49814,7 +49925,7 @@ FROM    [PBS].[vwMOSUsage]
     design-time-name="Package\Sequence Container 1\Rights Imports\Import Rights Blackout">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="234,42"
           Id="Package\Sequence Container 1\Rights Imports\Import Rights Blackout\Source View BVRights - Blackout"
@@ -49842,7 +49953,9 @@ FROM    [PBS].[vwMOSUsage]
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -49868,7 +49981,7 @@ FROM    [PBS].[vwMOSUsage]
     design-time-name="Package\Sequence Container 1\Rights Imports\Import Rights IN Bv-MOS">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="160,42"
           Id="Package\Sequence Container 1\Rights Imports\Import Rights IN Bv-MOS\MOS-RightsINBV"
@@ -49916,7 +50029,9 @@ FROM    [PBS].[vwMOSUsage]
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -49950,7 +50065,9 @@ FROM    [PBS].[vwMOSUsage]
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -49972,7 +50089,9 @@ FROM    [PBS].[vwMOSUsage]
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
