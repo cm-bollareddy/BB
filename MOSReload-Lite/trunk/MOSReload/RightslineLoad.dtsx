@@ -12,8 +12,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="RightslineLoad"
   DTS:PackageType="5"
-  DTS:VersionBuild="503"
-  DTS:VersionGUID="{AF086D92-169A-459D-AD87-8969A19F3F75}">
+  DTS:VersionBuild="506"
+  DTS:VersionGUID="{A0204DAE-E4FD-4AB8-8A8B-A63D9E35CECB}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">6</DTS:Property>
   <DTS:ConnectionManagers>
@@ -28,7 +28,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAArQUwPWSOn0KLzrEGz12ruAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADP8SBqssV6+6AC+RfmOVaPAAAAAASAAACgAAAAEAAAADQNP7Ai3nAJAOhLhe5aZKMIAAAA7umlhJ+RsvAUAAAAwVfbjd85sHQImUFIEYnnZype0Xw</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAArQUwPWSOn0KLzrEGz12ruAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADO4yGjmNIJqD6WhjKN9yxTAAAAAASAAACgAAAAEAAAAL9Pdr74+BVHyEWHslfJo6kIAAAAvyhzTdJLKIAUAAAAed8H/hQK2KuSentf787aVXODOn0</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -43,7 +43,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAArQUwPWSOn0KLzrEGz12ruAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADx1bjTqxp2PhVYJGl/U80VAAAAAASAAACgAAAAEAAAANMRbNmpqBCPNw9gcauZXTgIAAAAxDMPMz02/lMUAAAAnojsZ6czsoh+nVQq/458WEv+yJc</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAArQUwPWSOn0KLzrEGz12ruAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACyiHG1cdCNgGq8j3eMcxfiAAAAAASAAACgAAAAEAAAAPmBADS0LHdLJ5oKuZtqKU8IAAAARj3OUywS5oUUAAAAiZQqrduA1bO7eSHK1nAzVC6tzgg</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -58,7 +58,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAArQUwPWSOn0KLzrEGz12ruAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAxg2uImuKkwZHa9WIi5jKHAAAAAASAAACgAAAAEAAAAKTOkvLNrCI4k9j8n/LoQXQQAAAA9KCHClZ+muqid+aHL3+JfhQAAACRg4WYzWbwd6JDwaVRxRtAPoGIeQ</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAArQUwPWSOn0KLzrEGz12ruAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACnYs42HRLGCFZ0edWkXejdAAAAAASAAACgAAAAEAAAAGLVV6htesjIuoGMIcJY9jkQAAAAUXHefPtTJ+YofOBp6HY/ZxQAAABoLopaZmGIdNrbkVMglO50NGPaYA</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -73,7 +73,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAArQUwPWSOn0KLzrEGz12ruAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAC0U8tf2EYc4AS4+zXDkLxHAAAAAASAAACgAAAAEAAAAAwNcbgUVGuuf3RrlD+TRiwQAAAAQKgRqBao2cyODytcEX0BhhQAAACekutEOgVvA55bYNFzwysu+lySwQ</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAArQUwPWSOn0KLzrEGz12ruAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABNaoTBR1tJrP0fFl5qZqhcAAAAAASAAACgAAAAEAAAAFZlaas4K4BtRTE5FsW9iKUQAAAAo6MVfYMdyx/9mHWq8YqucRQAAACCUrBW/R0D20Q0jHaSxezUpQdirg</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -98,7 +98,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAArQUwPWSOn0KLzrEGz12ruAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAbSviTY73uPl4SN6QJydMmAAAAAASAAACgAAAAEAAAAEHbkq6BSSHFaivlxEh1CpkIAAAAwnYaK+mDge4UAAAArK4S69NMrBlxPsT3FSWEiWckt0A</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAArQUwPWSOn0KLzrEGz12ruAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADN7BnFlzSJU63Tolc5R+hWAAAAAASAAACgAAAAEAAAADN15fJOEZdqR38Yd4KWDzQIAAAAQ0AQPKZHCX8UAAAAcGbnxwUSWodwG2UmGIle5q7bFtc</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -38200,8 +38200,7 @@ GROUP BY c.contract_id, c.contract_description, c.contract_admin_description, c.
                               lineageId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import Rightsholdback\Traffic Data HoldBack Source.Outputs[ADO NET Source Output].Columns[Languages]" />
                             <inputColumn
                               refId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import Rightsholdback\Dest Rightsline_Rights_Holdback.Inputs[ADO NET Destination Input].Columns[Rights_ID]"
-                              cachedDataType="wstr"
-                              cachedLength="500"
+                              cachedDataType="i4"
                               cachedName="Rights_ID"
                               externalMetadataColumnId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import Rightsholdback\Dest Rightsline_Rights_Holdback.Inputs[ADO NET Destination Input].ExternalColumns[Item_BV_ID]"
                               lineageId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import Rightsholdback\Traffic Data HoldBack Source.Outputs[ADO NET Source Output].Columns[Rights_ID]" />
@@ -38219,6 +38218,13 @@ GROUP BY c.contract_id, c.contract_description, c.contract_admin_description, c.
                               cachedName="Assets"
                               externalMetadataColumnId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import Rightsholdback\Dest Rightsline_Rights_Holdback.Inputs[ADO NET Destination Input].ExternalColumns[Entity_Template]"
                               lineageId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import Rightsholdback\Traffic Data HoldBack Source.Outputs[ADO NET Source Output].Columns[Assets]" />
+                            <inputColumn
+                              refId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import Rightsholdback\Dest Rightsline_Rights_Holdback.Inputs[ADO NET Destination Input].Columns[entity_title]"
+                              cachedDataType="wstr"
+                              cachedLength="8"
+                              cachedName="entity_title"
+                              externalMetadataColumnId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import Rightsholdback\Dest Rightsline_Rights_Holdback.Inputs[ADO NET Destination Input].ExternalColumns[entity_title]"
+                              lineageId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import Rightsholdback\Traffic Data HoldBack Source.Outputs[ADO NET Source Output].Columns[entity_title]" />
                           </inputColumns>
                           <externalMetadataColumns
                             isUsed="True">
@@ -38322,7 +38328,27 @@ GROUP BY c.contract_id, c.contract_description, c.contract_admin_description, c.
                           description="Specifies the SQL statement used by the component to extract data."
                           expressionType="Notify"
                           name="SqlCommand"
-                          UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">select * ,'Holdback' as entity_title from PBS.Alliant_RIGHTS where righttype = 'Licensee Holdback'</property>
+                          UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">SELECT 'Holdback' as entity_title
+, [contract_sid]
+      ,[ContractID]
+      ,[Rights_ID]
+      ,[Assets]
+      ,[RightType]
+      ,[ContentType]
+      ,[Exclusivity]
+      ,[Comment]
+      ,[ActualStartDate]
+      ,[ActualEndDate]
+      ,[Territory]
+      ,[Languages]
+      ,[Sublicense_Flag]
+  FROM [PBS].[Alliant_Rights]
+where rightType ='Licensee Holdback'
+AND ContentType NOT IN ('Merchandising','Publishing (incl. eBook)','Music Rights','Theatrical','Audiostreaming','Learning Media (LM) Rights - All Levels','Learning Media (LM) Rights - Level 0','
+Learning Media (LM) Rights - Level 1','Learning Media (LM) Rights - Level 2','
+Learning Media (LM) Rights - Level 3 (A+B)','Clip','Radio Origination','Common Carrier')
+AND [Territory] NOT IN ('Worldwide (Ex US, terr, &amp; possessions)','Worldwide excl. Canada','Worldwide ex U.S.','Worldwide excl. United States and Canada','Worldwide ex U.S., Terr., Canada, Caribbean','U.S., Territories, Consulates, Bases, Ships and Canada','Worldwide ex U.S., Terr., Consul., Bases, Ships, Canada','Worldwide ex U.S., Terr., Consulates, Bases','Worldwide ex UK, Ireland','Worldwide ex United States, UK, Ireland ','Worldwide ex US &amp; Terr, Consulates, Bases, Ships')
+AND Languages NOT IN ('All Languages (Except Spanish)','All Languages except English and French')</property>
                         <property
                           dataType="System.Int32"
                           description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
@@ -38360,6 +38386,16 @@ GROUP BY c.contract_id, c.contract_description, c.contract_admin_description, c.
                           name="ADO NET Source Output">
                           <outputColumns>
                             <outputColumn
+                              refId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import Rightsholdback\Traffic Data HoldBack Source.Outputs[ADO NET Source Output].Columns[entity_title]"
+                              dataType="wstr"
+                              errorOrTruncationOperation="Conversion"
+                              errorRowDisposition="FailComponent"
+                              externalMetadataColumnId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import Rightsholdback\Traffic Data HoldBack Source.Outputs[ADO NET Source Output].ExternalColumns[entity_title]"
+                              length="8"
+                              lineageId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import Rightsholdback\Traffic Data HoldBack Source.Outputs[ADO NET Source Output].Columns[entity_title]"
+                              name="entity_title"
+                              truncationRowDisposition="FailComponent" />
+                            <outputColumn
                               refId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import Rightsholdback\Traffic Data HoldBack Source.Outputs[ADO NET Source Output].Columns[contract_sid]"
                               dataType="i4"
                               errorOrTruncationOperation="Conversion"
@@ -38380,11 +38416,10 @@ GROUP BY c.contract_id, c.contract_description, c.contract_admin_description, c.
                               truncationRowDisposition="FailComponent" />
                             <outputColumn
                               refId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import Rightsholdback\Traffic Data HoldBack Source.Outputs[ADO NET Source Output].Columns[Rights_ID]"
-                              dataType="wstr"
+                              dataType="i4"
                               errorOrTruncationOperation="Conversion"
                               errorRowDisposition="FailComponent"
                               externalMetadataColumnId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import Rightsholdback\Traffic Data HoldBack Source.Outputs[ADO NET Source Output].ExternalColumns[Rights_ID]"
-                              length="500"
                               lineageId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import Rightsholdback\Traffic Data HoldBack Source.Outputs[ADO NET Source Output].Columns[Rights_ID]"
                               name="Rights_ID"
                               truncationRowDisposition="FailComponent" />
@@ -38486,19 +38521,14 @@ GROUP BY c.contract_id, c.contract_description, c.contract_admin_description, c.
                               lineageId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import Rightsholdback\Traffic Data HoldBack Source.Outputs[ADO NET Source Output].Columns[Sublicense_Flag]"
                               name="Sublicense_Flag"
                               truncationRowDisposition="FailComponent" />
-                            <outputColumn
-                              refId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import Rightsholdback\Traffic Data HoldBack Source.Outputs[ADO NET Source Output].Columns[entity_title]"
-                              dataType="wstr"
-                              errorOrTruncationOperation="Conversion"
-                              errorRowDisposition="FailComponent"
-                              externalMetadataColumnId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import Rightsholdback\Traffic Data HoldBack Source.Outputs[ADO NET Source Output].ExternalColumns[entity_title]"
-                              length="8"
-                              lineageId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import Rightsholdback\Traffic Data HoldBack Source.Outputs[ADO NET Source Output].Columns[entity_title]"
-                              name="entity_title"
-                              truncationRowDisposition="FailComponent" />
                           </outputColumns>
                           <externalMetadataColumns
                             isUsed="True">
+                            <externalMetadataColumn
+                              refId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import Rightsholdback\Traffic Data HoldBack Source.Outputs[ADO NET Source Output].ExternalColumns[entity_title]"
+                              dataType="wstr"
+                              length="8"
+                              name="entity_title" />
                             <externalMetadataColumn
                               refId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import Rightsholdback\Traffic Data HoldBack Source.Outputs[ADO NET Source Output].ExternalColumns[contract_sid]"
                               dataType="i4"
@@ -38510,8 +38540,7 @@ GROUP BY c.contract_id, c.contract_description, c.contract_admin_description, c.
                               name="ContractID" />
                             <externalMetadataColumn
                               refId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import Rightsholdback\Traffic Data HoldBack Source.Outputs[ADO NET Source Output].ExternalColumns[Rights_ID]"
-                              dataType="wstr"
-                              length="500"
+                              dataType="i4"
                               name="Rights_ID" />
                             <externalMetadataColumn
                               refId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import Rightsholdback\Traffic Data HoldBack Source.Outputs[ADO NET Source Output].ExternalColumns[Assets]"
@@ -38561,11 +38590,6 @@ GROUP BY c.contract_id, c.contract_description, c.contract_admin_description, c.
                               dataType="wstr"
                               length="500"
                               name="Sublicense_Flag" />
-                            <externalMetadataColumn
-                              refId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import Rightsholdback\Traffic Data HoldBack Source.Outputs[ADO NET Source Output].ExternalColumns[entity_title]"
-                              dataType="wstr"
-                              length="8"
-                              name="entity_title" />
                           </externalMetadataColumns>
                         </output>
                         <output
@@ -38573,6 +38597,12 @@ GROUP BY c.contract_id, c.contract_description, c.contract_admin_description, c.
                           isErrorOut="true"
                           name="ADO NET Source Error Output">
                           <outputColumns>
+                            <outputColumn
+                              refId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import Rightsholdback\Traffic Data HoldBack Source.Outputs[ADO NET Source Error Output].Columns[entity_title]"
+                              dataType="wstr"
+                              length="8"
+                              lineageId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import Rightsholdback\Traffic Data HoldBack Source.Outputs[ADO NET Source Error Output].Columns[entity_title]"
+                              name="entity_title" />
                             <outputColumn
                               refId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import Rightsholdback\Traffic Data HoldBack Source.Outputs[ADO NET Source Error Output].Columns[contract_sid]"
                               dataType="i4"
@@ -38586,8 +38616,7 @@ GROUP BY c.contract_id, c.contract_description, c.contract_admin_description, c.
                               name="ContractID" />
                             <outputColumn
                               refId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import Rightsholdback\Traffic Data HoldBack Source.Outputs[ADO NET Source Error Output].Columns[Rights_ID]"
-                              dataType="wstr"
-                              length="500"
+                              dataType="i4"
                               lineageId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import Rightsholdback\Traffic Data HoldBack Source.Outputs[ADO NET Source Error Output].Columns[Rights_ID]"
                               name="Rights_ID" />
                             <outputColumn
@@ -38649,12 +38678,6 @@ GROUP BY c.contract_id, c.contract_description, c.contract_admin_description, c.
                               lineageId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import Rightsholdback\Traffic Data HoldBack Source.Outputs[ADO NET Source Error Output].Columns[Sublicense_Flag]"
                               name="Sublicense_Flag" />
                             <outputColumn
-                              refId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import Rightsholdback\Traffic Data HoldBack Source.Outputs[ADO NET Source Error Output].Columns[entity_title]"
-                              dataType="wstr"
-                              length="8"
-                              lineageId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import Rightsholdback\Traffic Data HoldBack Source.Outputs[ADO NET Source Error Output].Columns[entity_title]"
-                              name="entity_title" />
-                            <outputColumn
                               refId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import Rightsholdback\Traffic Data HoldBack Source.Outputs[ADO NET Source Error Output].Columns[ErrorCode]"
                               dataType="i4"
                               lineageId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import Rightsholdback\Traffic Data HoldBack Source.Outputs[ADO NET Source Error Output].Columns[ErrorCode]"
@@ -38696,6 +38719,382 @@ GROUP BY c.contract_id, c.contract_description, c.contract_admin_description, c.
                 <pipeline
                   version="1">
                   <components>
+                    <component
+                      refId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\ADO NET Source"
+                      componentClassID="{874F7595-FB5F-40FF-96AF-FBFF8250E3EF}"
+                      contactInfo="Consumes data from SQL Server, OLE DB, ODBC, or Oracle, using the corresponding .NET Framework data provider. Use a Transact-SQL statement to define the result set. For example, extract data from SQL Server with the .NET Framework data provider for SQL Server.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+                      description="Consumes data from SQL Server, OLE DB, ODBC, or Oracle, using the corresponding .NET Framework data provider. Use a Transact-SQL statement to define the result set. For example, extract data from SQL Server with the .NET Framework data provider for SQL Server."
+                      name="ADO NET Source"
+                      usesDispositions="true"
+                      version="4">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the SQL statement used by the component to extract data."
+                          expressionType="Notify"
+                          name="SqlCommand"
+                          UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">SELECT 'Option In' as  entity_title
+, [contract_sid]
+      ,[ContractID]
+      ,[Rights_ID]
+      ,[Assets]
+      ,[RightType]
+      ,[ContentType]
+      ,[Exclusivity]
+      ,[Comment]
+      ,[ActualStartDate]
+      ,[ActualEndDate]
+      ,[Territory]
+      ,[Languages]
+      ,[Sublicense_Flag]
+  FROM [PBS].[Alliant_Rights]
+where righttype = 'Option'
+AND ContentType IN ('Option - Additional 1','Option - Additional 2','Option - Additional 3','Option - Other 1','Option - Other 2','Option to Acquire Additional Episodes 1','Option to Acquire Additional Episodes 2','Option to Extend License Term 1','Option to Extend License Term 2','Option to Extend License Term 3','Option to Extend License Term 4')</property>
+                        <property
+                          dataType="System.Int32"
+                          description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                          name="CommandTimeout">30</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether to allow non-string external columns to be implicitly converted to strings at the output columns."
+                          name="AllowImplicitStringConversion">true</property>
+                        <property
+                          dataType="System.String"
+                          description="The Source database table name."
+                          expressionType="Notify"
+                          name="TableOrViewName"
+                          UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version= 11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specify the mode to retrieve external column information"
+                          name="AccessMode"
+                          typeConverter="Microsoft.SqlServer.Dts.Pipeline.DataReaderSourceAdapter+EnumToStringConverter, Microsoft.SqlServer.ADONETSrc, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">2</property>
+                        <property
+                          dataType="System.String"
+                          name="UserComponentTypeName">Microsoft.SqlServer.Dts.Pipeline.DataReaderSourceAdapter, Microsoft.SqlServer.ADONETSrc, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91</property>
+                      </properties>
+                      <connections>
+                        <connection
+                          refId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\ADO NET Source.Connections[IDbConnection]"
+                          connectionManagerID="Package.ConnectionManagers[ADO.NET-TrafficData]"
+                          connectionManagerRefId="Package.ConnectionManagers[ADO.NET-TrafficData]"
+                          description="Managed connection manager"
+                          name="IDbConnection" />
+                      </connections>
+                      <outputs>
+                        <output
+                          refId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\ADO NET Source.Outputs[ADO NET Source Output]"
+                          name="ADO NET Source Output">
+                          <outputColumns>
+                            <outputColumn
+                              refId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\ADO NET Source.Outputs[ADO NET Source Output].Columns[entity_title]"
+                              dataType="wstr"
+                              errorOrTruncationOperation="Conversion"
+                              errorRowDisposition="FailComponent"
+                              externalMetadataColumnId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[entity_title]"
+                              length="9"
+                              lineageId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\ADO NET Source.Outputs[ADO NET Source Output].Columns[entity_title]"
+                              name="entity_title"
+                              truncationRowDisposition="FailComponent" />
+                            <outputColumn
+                              refId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\ADO NET Source.Outputs[ADO NET Source Output].Columns[contract_sid]"
+                              dataType="i4"
+                              errorOrTruncationOperation="Conversion"
+                              errorRowDisposition="FailComponent"
+                              externalMetadataColumnId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[contract_sid]"
+                              lineageId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\ADO NET Source.Outputs[ADO NET Source Output].Columns[contract_sid]"
+                              name="contract_sid"
+                              truncationRowDisposition="FailComponent" />
+                            <outputColumn
+                              refId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\ADO NET Source.Outputs[ADO NET Source Output].Columns[ContractID]"
+                              dataType="wstr"
+                              errorOrTruncationOperation="Conversion"
+                              errorRowDisposition="FailComponent"
+                              externalMetadataColumnId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[ContractID]"
+                              length="500"
+                              lineageId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\ADO NET Source.Outputs[ADO NET Source Output].Columns[ContractID]"
+                              name="ContractID"
+                              truncationRowDisposition="FailComponent" />
+                            <outputColumn
+                              refId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\ADO NET Source.Outputs[ADO NET Source Output].Columns[Rights_ID]"
+                              dataType="i4"
+                              errorOrTruncationOperation="Conversion"
+                              errorRowDisposition="FailComponent"
+                              externalMetadataColumnId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Rights_ID]"
+                              lineageId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\ADO NET Source.Outputs[ADO NET Source Output].Columns[Rights_ID]"
+                              name="Rights_ID"
+                              truncationRowDisposition="FailComponent" />
+                            <outputColumn
+                              refId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\ADO NET Source.Outputs[ADO NET Source Output].Columns[Assets]"
+                              dataType="wstr"
+                              errorOrTruncationOperation="Conversion"
+                              errorRowDisposition="FailComponent"
+                              externalMetadataColumnId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Assets]"
+                              length="500"
+                              lineageId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\ADO NET Source.Outputs[ADO NET Source Output].Columns[Assets]"
+                              name="Assets"
+                              truncationRowDisposition="FailComponent" />
+                            <outputColumn
+                              refId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\ADO NET Source.Outputs[ADO NET Source Output].Columns[RightType]"
+                              dataType="wstr"
+                              errorOrTruncationOperation="Conversion"
+                              errorRowDisposition="FailComponent"
+                              externalMetadataColumnId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[RightType]"
+                              length="500"
+                              lineageId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\ADO NET Source.Outputs[ADO NET Source Output].Columns[RightType]"
+                              name="RightType"
+                              truncationRowDisposition="FailComponent" />
+                            <outputColumn
+                              refId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\ADO NET Source.Outputs[ADO NET Source Output].Columns[ContentType]"
+                              dataType="wstr"
+                              errorOrTruncationOperation="Conversion"
+                              errorRowDisposition="FailComponent"
+                              externalMetadataColumnId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[ContentType]"
+                              length="500"
+                              lineageId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\ADO NET Source.Outputs[ADO NET Source Output].Columns[ContentType]"
+                              name="ContentType"
+                              truncationRowDisposition="FailComponent" />
+                            <outputColumn
+                              refId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\ADO NET Source.Outputs[ADO NET Source Output].Columns[Exclusivity]"
+                              dataType="wstr"
+                              errorOrTruncationOperation="Conversion"
+                              errorRowDisposition="FailComponent"
+                              externalMetadataColumnId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Exclusivity]"
+                              length="500"
+                              lineageId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\ADO NET Source.Outputs[ADO NET Source Output].Columns[Exclusivity]"
+                              name="Exclusivity"
+                              truncationRowDisposition="FailComponent" />
+                            <outputColumn
+                              refId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\ADO NET Source.Outputs[ADO NET Source Output].Columns[Comment]"
+                              dataType="wstr"
+                              errorOrTruncationOperation="Conversion"
+                              errorRowDisposition="FailComponent"
+                              externalMetadataColumnId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Comment]"
+                              length="2000"
+                              lineageId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\ADO NET Source.Outputs[ADO NET Source Output].Columns[Comment]"
+                              name="Comment"
+                              truncationRowDisposition="FailComponent" />
+                            <outputColumn
+                              refId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\ADO NET Source.Outputs[ADO NET Source Output].Columns[ActualStartDate]"
+                              dataType="dbTimeStamp"
+                              errorOrTruncationOperation="Conversion"
+                              errorRowDisposition="FailComponent"
+                              externalMetadataColumnId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[ActualStartDate]"
+                              lineageId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\ADO NET Source.Outputs[ADO NET Source Output].Columns[ActualStartDate]"
+                              name="ActualStartDate"
+                              truncationRowDisposition="FailComponent" />
+                            <outputColumn
+                              refId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\ADO NET Source.Outputs[ADO NET Source Output].Columns[ActualEndDate]"
+                              dataType="dbTimeStamp"
+                              errorOrTruncationOperation="Conversion"
+                              errorRowDisposition="FailComponent"
+                              externalMetadataColumnId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[ActualEndDate]"
+                              lineageId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\ADO NET Source.Outputs[ADO NET Source Output].Columns[ActualEndDate]"
+                              name="ActualEndDate"
+                              truncationRowDisposition="FailComponent" />
+                            <outputColumn
+                              refId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\ADO NET Source.Outputs[ADO NET Source Output].Columns[Territory]"
+                              dataType="wstr"
+                              errorOrTruncationOperation="Conversion"
+                              errorRowDisposition="FailComponent"
+                              externalMetadataColumnId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Territory]"
+                              length="500"
+                              lineageId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\ADO NET Source.Outputs[ADO NET Source Output].Columns[Territory]"
+                              name="Territory"
+                              truncationRowDisposition="FailComponent" />
+                            <outputColumn
+                              refId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\ADO NET Source.Outputs[ADO NET Source Output].Columns[Languages]"
+                              dataType="wstr"
+                              errorOrTruncationOperation="Conversion"
+                              errorRowDisposition="FailComponent"
+                              externalMetadataColumnId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Languages]"
+                              length="500"
+                              lineageId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\ADO NET Source.Outputs[ADO NET Source Output].Columns[Languages]"
+                              name="Languages"
+                              truncationRowDisposition="FailComponent" />
+                            <outputColumn
+                              refId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\ADO NET Source.Outputs[ADO NET Source Output].Columns[Sublicense_Flag]"
+                              dataType="wstr"
+                              errorOrTruncationOperation="Conversion"
+                              errorRowDisposition="FailComponent"
+                              externalMetadataColumnId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Sublicense_Flag]"
+                              length="500"
+                              lineageId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\ADO NET Source.Outputs[ADO NET Source Output].Columns[Sublicense_Flag]"
+                              name="Sublicense_Flag"
+                              truncationRowDisposition="FailComponent" />
+                          </outputColumns>
+                          <externalMetadataColumns
+                            isUsed="True">
+                            <externalMetadataColumn
+                              refId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[entity_title]"
+                              dataType="wstr"
+                              length="9"
+                              name="entity_title" />
+                            <externalMetadataColumn
+                              refId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[contract_sid]"
+                              dataType="i4"
+                              name="contract_sid" />
+                            <externalMetadataColumn
+                              refId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[ContractID]"
+                              dataType="wstr"
+                              length="500"
+                              name="ContractID" />
+                            <externalMetadataColumn
+                              refId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Rights_ID]"
+                              dataType="i4"
+                              name="Rights_ID" />
+                            <externalMetadataColumn
+                              refId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Assets]"
+                              dataType="wstr"
+                              length="500"
+                              name="Assets" />
+                            <externalMetadataColumn
+                              refId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[RightType]"
+                              dataType="wstr"
+                              length="500"
+                              name="RightType" />
+                            <externalMetadataColumn
+                              refId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[ContentType]"
+                              dataType="wstr"
+                              length="500"
+                              name="ContentType" />
+                            <externalMetadataColumn
+                              refId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Exclusivity]"
+                              dataType="wstr"
+                              length="500"
+                              name="Exclusivity" />
+                            <externalMetadataColumn
+                              refId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Comment]"
+                              dataType="wstr"
+                              length="2000"
+                              name="Comment" />
+                            <externalMetadataColumn
+                              refId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[ActualStartDate]"
+                              dataType="dbTimeStamp"
+                              name="ActualStartDate" />
+                            <externalMetadataColumn
+                              refId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[ActualEndDate]"
+                              dataType="dbTimeStamp"
+                              name="ActualEndDate" />
+                            <externalMetadataColumn
+                              refId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Territory]"
+                              dataType="wstr"
+                              length="500"
+                              name="Territory" />
+                            <externalMetadataColumn
+                              refId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Languages]"
+                              dataType="wstr"
+                              length="500"
+                              name="Languages" />
+                            <externalMetadataColumn
+                              refId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Sublicense_Flag]"
+                              dataType="wstr"
+                              length="500"
+                              name="Sublicense_Flag" />
+                          </externalMetadataColumns>
+                        </output>
+                        <output
+                          refId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\ADO NET Source.Outputs[ADO NET Source Error Output]"
+                          isErrorOut="true"
+                          name="ADO NET Source Error Output">
+                          <outputColumns>
+                            <outputColumn
+                              refId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[entity_title]"
+                              dataType="wstr"
+                              length="9"
+                              lineageId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[entity_title]"
+                              name="entity_title" />
+                            <outputColumn
+                              refId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[contract_sid]"
+                              dataType="i4"
+                              lineageId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[contract_sid]"
+                              name="contract_sid" />
+                            <outputColumn
+                              refId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[ContractID]"
+                              dataType="wstr"
+                              length="500"
+                              lineageId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[ContractID]"
+                              name="ContractID" />
+                            <outputColumn
+                              refId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Rights_ID]"
+                              dataType="i4"
+                              lineageId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Rights_ID]"
+                              name="Rights_ID" />
+                            <outputColumn
+                              refId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Assets]"
+                              dataType="wstr"
+                              length="500"
+                              lineageId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Assets]"
+                              name="Assets" />
+                            <outputColumn
+                              refId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[RightType]"
+                              dataType="wstr"
+                              length="500"
+                              lineageId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[RightType]"
+                              name="RightType" />
+                            <outputColumn
+                              refId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[ContentType]"
+                              dataType="wstr"
+                              length="500"
+                              lineageId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[ContentType]"
+                              name="ContentType" />
+                            <outputColumn
+                              refId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Exclusivity]"
+                              dataType="wstr"
+                              length="500"
+                              lineageId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Exclusivity]"
+                              name="Exclusivity" />
+                            <outputColumn
+                              refId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Comment]"
+                              dataType="wstr"
+                              length="2000"
+                              lineageId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Comment]"
+                              name="Comment" />
+                            <outputColumn
+                              refId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[ActualStartDate]"
+                              dataType="dbTimeStamp"
+                              lineageId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[ActualStartDate]"
+                              name="ActualStartDate" />
+                            <outputColumn
+                              refId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[ActualEndDate]"
+                              dataType="dbTimeStamp"
+                              lineageId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[ActualEndDate]"
+                              name="ActualEndDate" />
+                            <outputColumn
+                              refId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Territory]"
+                              dataType="wstr"
+                              length="500"
+                              lineageId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Territory]"
+                              name="Territory" />
+                            <outputColumn
+                              refId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Languages]"
+                              dataType="wstr"
+                              length="500"
+                              lineageId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Languages]"
+                              name="Languages" />
+                            <outputColumn
+                              refId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Sublicense_Flag]"
+                              dataType="wstr"
+                              length="500"
+                              lineageId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Sublicense_Flag]"
+                              name="Sublicense_Flag" />
+                            <outputColumn
+                              refId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[ErrorCode]"
+                              dataType="i4"
+                              lineageId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[ErrorCode]"
+                              name="ErrorCode"
+                              specialFlags="1" />
+                            <outputColumn
+                              refId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[ErrorColumn]"
+                              dataType="i4"
+                              lineageId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[ErrorColumn]"
+                              name="ErrorColumn"
+                              specialFlags="2" />
+                          </outputColumns>
+                          <externalMetadataColumns />
+                        </output>
+                      </outputs>
+                    </component>
                     <component
                       refId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\Dest RightsLine_RightTypesOptions"
                       componentClassID="{874F7595-FB5F-40FF-96AF-FBFF8250E3EF}"
@@ -38751,54 +39150,53 @@ GROUP BY c.contract_id, c.contract_description, c.contract_admin_description, c.
                               cachedLength="500"
                               cachedName="Exclusivity"
                               externalMetadataColumnId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\Dest RightsLine_RightTypesOptions.Inputs[ADO NET Destination Input].ExternalColumns[exclusivity]"
-                              lineageId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\TrafficData Options.Outputs[ADO NET Source Output].Columns[Exclusivity]" />
-                            <inputColumn
-                              refId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\Dest RightsLine_RightTypesOptions.Inputs[ADO NET Destination Input].Columns[entity_title]"
-                              cachedDataType="wstr"
-                              cachedLength="9"
-                              cachedName="entity_title"
-                              externalMetadataColumnId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\Dest RightsLine_RightTypesOptions.Inputs[ADO NET Destination Input].ExternalColumns[entity_title]"
-                              lineageId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\TrafficData Options.Outputs[ADO NET Source Output].Columns[entity_title]" />
+                              lineageId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\ADO NET Source.Outputs[ADO NET Source Output].Columns[Exclusivity]" />
                             <inputColumn
                               refId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\Dest RightsLine_RightTypesOptions.Inputs[ADO NET Destination Input].Columns[ActualStartDate]"
                               cachedDataType="dbTimeStamp"
                               cachedName="ActualStartDate"
                               externalMetadataColumnId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\Dest RightsLine_RightTypesOptions.Inputs[ADO NET Destination Input].ExternalColumns[start]"
-                              lineageId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\TrafficData Options.Outputs[ADO NET Source Output].Columns[ActualStartDate]" />
+                              lineageId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\ADO NET Source.Outputs[ADO NET Source Output].Columns[ActualStartDate]" />
                             <inputColumn
                               refId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\Dest RightsLine_RightTypesOptions.Inputs[ADO NET Destination Input].Columns[ActualEndDate]"
                               cachedDataType="dbTimeStamp"
                               cachedName="ActualEndDate"
                               externalMetadataColumnId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\Dest RightsLine_RightTypesOptions.Inputs[ADO NET Destination Input].ExternalColumns[end]"
-                              lineageId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\TrafficData Options.Outputs[ADO NET Source Output].Columns[ActualEndDate]" />
+                              lineageId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\ADO NET Source.Outputs[ADO NET Source Output].Columns[ActualEndDate]" />
                             <inputColumn
                               refId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\Dest RightsLine_RightTypesOptions.Inputs[ADO NET Destination Input].Columns[Rights_ID]"
-                              cachedDataType="wstr"
-                              cachedLength="500"
+                              cachedDataType="i4"
                               cachedName="Rights_ID"
                               externalMetadataColumnId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\Dest RightsLine_RightTypesOptions.Inputs[ADO NET Destination Input].ExternalColumns[Item_BV_ID]"
-                              lineageId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\TrafficData Options.Outputs[ADO NET Source Output].Columns[Rights_ID]" />
+                              lineageId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\ADO NET Source.Outputs[ADO NET Source Output].Columns[Rights_ID]" />
                             <inputColumn
                               refId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\Dest RightsLine_RightTypesOptions.Inputs[ADO NET Destination Input].Columns[ContentType]"
                               cachedDataType="wstr"
                               cachedLength="500"
                               cachedName="ContentType"
                               externalMetadataColumnId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\Dest RightsLine_RightTypesOptions.Inputs[ADO NET Destination Input].ExternalColumns[option_type]"
-                              lineageId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\TrafficData Options.Outputs[ADO NET Source Output].Columns[ContentType]" />
+                              lineageId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\ADO NET Source.Outputs[ADO NET Source Output].Columns[ContentType]" />
                             <inputColumn
                               refId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\Dest RightsLine_RightTypesOptions.Inputs[ADO NET Destination Input].Columns[RightType]"
                               cachedDataType="wstr"
                               cachedLength="500"
                               cachedName="RightType"
                               externalMetadataColumnId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\Dest RightsLine_RightTypesOptions.Inputs[ADO NET Destination Input].ExternalColumns[entity_template]"
-                              lineageId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\TrafficData Options.Outputs[ADO NET Source Output].Columns[RightType]" />
+                              lineageId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\ADO NET Source.Outputs[ADO NET Source Output].Columns[RightType]" />
                             <inputColumn
                               refId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\Dest RightsLine_RightTypesOptions.Inputs[ADO NET Destination Input].Columns[Comment]"
                               cachedDataType="wstr"
                               cachedLength="2000"
                               cachedName="Comment"
                               externalMetadataColumnId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\Dest RightsLine_RightTypesOptions.Inputs[ADO NET Destination Input].ExternalColumns[notes]"
-                              lineageId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\TrafficData Options.Outputs[ADO NET Source Output].Columns[Comment]" />
+                              lineageId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\ADO NET Source.Outputs[ADO NET Source Output].Columns[Comment]" />
+                            <inputColumn
+                              refId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\Dest RightsLine_RightTypesOptions.Inputs[ADO NET Destination Input].Columns[entity_title]"
+                              cachedDataType="wstr"
+                              cachedLength="9"
+                              cachedName="entity_title"
+                              externalMetadataColumnId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\Dest RightsLine_RightTypesOptions.Inputs[ADO NET Destination Input].ExternalColumns[entity_title]"
+                              lineageId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\ADO NET Source.Outputs[ADO NET Source Output].Columns[entity_title]" />
                           </inputColumns>
                           <externalMetadataColumns
                             isUsed="True">
@@ -38884,376 +39282,13 @@ GROUP BY c.contract_id, c.contract_description, c.contract_admin_description, c.
                         </output>
                       </outputs>
                     </component>
-                    <component
-                      refId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\TrafficData Options"
-                      componentClassID="{874F7595-FB5F-40FF-96AF-FBFF8250E3EF}"
-                      contactInfo="Consumes data from SQL Server, OLE DB, ODBC, or Oracle, using the corresponding .NET Framework data provider. Use a Transact-SQL statement to define the result set. For example, extract data from SQL Server with the .NET Framework data provider for SQL Server.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
-                      description="Consumes data from SQL Server, OLE DB, ODBC, or Oracle, using the corresponding .NET Framework data provider. Use a Transact-SQL statement to define the result set. For example, extract data from SQL Server with the .NET Framework data provider for SQL Server."
-                      name="TrafficData Options"
-                      usesDispositions="true"
-                      version="4">
-                      <properties>
-                        <property
-                          dataType="System.String"
-                          description="Specifies the SQL statement used by the component to extract data."
-                          expressionType="Notify"
-                          name="SqlCommand"
-                          UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">select *,'Option In' as entity_title from PBS.Alliant_RIGHTS where righttype = 'Option'</property>
-                        <property
-                          dataType="System.Int32"
-                          description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
-                          name="CommandTimeout">30</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether to allow non-string external columns to be implicitly converted to strings at the output columns."
-                          name="AllowImplicitStringConversion">true</property>
-                        <property
-                          dataType="System.String"
-                          description="The Source database table name."
-                          expressionType="Notify"
-                          name="TableOrViewName"
-                          UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version= 11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
-                        <property
-                          dataType="System.Int32"
-                          description="Specify the mode to retrieve external column information"
-                          name="AccessMode"
-                          typeConverter="Microsoft.SqlServer.Dts.Pipeline.DataReaderSourceAdapter+EnumToStringConverter, Microsoft.SqlServer.ADONETSrc, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">2</property>
-                        <property
-                          dataType="System.String"
-                          name="UserComponentTypeName">Microsoft.SqlServer.Dts.Pipeline.DataReaderSourceAdapter, Microsoft.SqlServer.ADONETSrc, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91</property>
-                      </properties>
-                      <connections>
-                        <connection
-                          refId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\TrafficData Options.Connections[IDbConnection]"
-                          connectionManagerID="Package.ConnectionManagers[ADO.NET-TrafficData]"
-                          connectionManagerRefId="Package.ConnectionManagers[ADO.NET-TrafficData]"
-                          description="Managed connection manager"
-                          name="IDbConnection" />
-                      </connections>
-                      <outputs>
-                        <output
-                          refId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\TrafficData Options.Outputs[ADO NET Source Output]"
-                          name="ADO NET Source Output">
-                          <outputColumns>
-                            <outputColumn
-                              refId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\TrafficData Options.Outputs[ADO NET Source Output].Columns[contract_sid]"
-                              dataType="i4"
-                              errorOrTruncationOperation="Conversion"
-                              errorRowDisposition="FailComponent"
-                              externalMetadataColumnId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\TrafficData Options.Outputs[ADO NET Source Output].ExternalColumns[contract_sid]"
-                              lineageId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\TrafficData Options.Outputs[ADO NET Source Output].Columns[contract_sid]"
-                              name="contract_sid"
-                              truncationRowDisposition="FailComponent" />
-                            <outputColumn
-                              refId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\TrafficData Options.Outputs[ADO NET Source Output].Columns[ContractID]"
-                              dataType="wstr"
-                              errorOrTruncationOperation="Conversion"
-                              errorRowDisposition="FailComponent"
-                              externalMetadataColumnId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\TrafficData Options.Outputs[ADO NET Source Output].ExternalColumns[ContractID]"
-                              length="500"
-                              lineageId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\TrafficData Options.Outputs[ADO NET Source Output].Columns[ContractID]"
-                              name="ContractID"
-                              truncationRowDisposition="FailComponent" />
-                            <outputColumn
-                              refId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\TrafficData Options.Outputs[ADO NET Source Output].Columns[Rights_ID]"
-                              dataType="wstr"
-                              errorOrTruncationOperation="Conversion"
-                              errorRowDisposition="FailComponent"
-                              externalMetadataColumnId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\TrafficData Options.Outputs[ADO NET Source Output].ExternalColumns[Rights_ID]"
-                              length="500"
-                              lineageId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\TrafficData Options.Outputs[ADO NET Source Output].Columns[Rights_ID]"
-                              name="Rights_ID"
-                              truncationRowDisposition="FailComponent" />
-                            <outputColumn
-                              refId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\TrafficData Options.Outputs[ADO NET Source Output].Columns[Assets]"
-                              dataType="wstr"
-                              errorOrTruncationOperation="Conversion"
-                              errorRowDisposition="FailComponent"
-                              externalMetadataColumnId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\TrafficData Options.Outputs[ADO NET Source Output].ExternalColumns[Assets]"
-                              length="500"
-                              lineageId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\TrafficData Options.Outputs[ADO NET Source Output].Columns[Assets]"
-                              name="Assets"
-                              truncationRowDisposition="FailComponent" />
-                            <outputColumn
-                              refId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\TrafficData Options.Outputs[ADO NET Source Output].Columns[RightType]"
-                              dataType="wstr"
-                              errorOrTruncationOperation="Conversion"
-                              errorRowDisposition="FailComponent"
-                              externalMetadataColumnId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\TrafficData Options.Outputs[ADO NET Source Output].ExternalColumns[RightType]"
-                              length="500"
-                              lineageId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\TrafficData Options.Outputs[ADO NET Source Output].Columns[RightType]"
-                              name="RightType"
-                              truncationRowDisposition="FailComponent" />
-                            <outputColumn
-                              refId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\TrafficData Options.Outputs[ADO NET Source Output].Columns[ContentType]"
-                              dataType="wstr"
-                              errorOrTruncationOperation="Conversion"
-                              errorRowDisposition="FailComponent"
-                              externalMetadataColumnId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\TrafficData Options.Outputs[ADO NET Source Output].ExternalColumns[ContentType]"
-                              length="500"
-                              lineageId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\TrafficData Options.Outputs[ADO NET Source Output].Columns[ContentType]"
-                              name="ContentType"
-                              truncationRowDisposition="FailComponent" />
-                            <outputColumn
-                              refId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\TrafficData Options.Outputs[ADO NET Source Output].Columns[Exclusivity]"
-                              dataType="wstr"
-                              errorOrTruncationOperation="Conversion"
-                              errorRowDisposition="FailComponent"
-                              externalMetadataColumnId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\TrafficData Options.Outputs[ADO NET Source Output].ExternalColumns[Exclusivity]"
-                              length="500"
-                              lineageId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\TrafficData Options.Outputs[ADO NET Source Output].Columns[Exclusivity]"
-                              name="Exclusivity"
-                              truncationRowDisposition="FailComponent" />
-                            <outputColumn
-                              refId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\TrafficData Options.Outputs[ADO NET Source Output].Columns[Comment]"
-                              dataType="wstr"
-                              errorOrTruncationOperation="Conversion"
-                              errorRowDisposition="FailComponent"
-                              externalMetadataColumnId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\TrafficData Options.Outputs[ADO NET Source Output].ExternalColumns[Comment]"
-                              length="2000"
-                              lineageId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\TrafficData Options.Outputs[ADO NET Source Output].Columns[Comment]"
-                              name="Comment"
-                              truncationRowDisposition="FailComponent" />
-                            <outputColumn
-                              refId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\TrafficData Options.Outputs[ADO NET Source Output].Columns[ActualStartDate]"
-                              dataType="dbTimeStamp"
-                              errorOrTruncationOperation="Conversion"
-                              errorRowDisposition="FailComponent"
-                              externalMetadataColumnId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\TrafficData Options.Outputs[ADO NET Source Output].ExternalColumns[ActualStartDate]"
-                              lineageId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\TrafficData Options.Outputs[ADO NET Source Output].Columns[ActualStartDate]"
-                              name="ActualStartDate"
-                              truncationRowDisposition="FailComponent" />
-                            <outputColumn
-                              refId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\TrafficData Options.Outputs[ADO NET Source Output].Columns[ActualEndDate]"
-                              dataType="dbTimeStamp"
-                              errorOrTruncationOperation="Conversion"
-                              errorRowDisposition="FailComponent"
-                              externalMetadataColumnId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\TrafficData Options.Outputs[ADO NET Source Output].ExternalColumns[ActualEndDate]"
-                              lineageId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\TrafficData Options.Outputs[ADO NET Source Output].Columns[ActualEndDate]"
-                              name="ActualEndDate"
-                              truncationRowDisposition="FailComponent" />
-                            <outputColumn
-                              refId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\TrafficData Options.Outputs[ADO NET Source Output].Columns[Territory]"
-                              dataType="wstr"
-                              errorOrTruncationOperation="Conversion"
-                              errorRowDisposition="FailComponent"
-                              externalMetadataColumnId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\TrafficData Options.Outputs[ADO NET Source Output].ExternalColumns[Territory]"
-                              length="500"
-                              lineageId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\TrafficData Options.Outputs[ADO NET Source Output].Columns[Territory]"
-                              name="Territory"
-                              truncationRowDisposition="FailComponent" />
-                            <outputColumn
-                              refId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\TrafficData Options.Outputs[ADO NET Source Output].Columns[Languages]"
-                              dataType="wstr"
-                              errorOrTruncationOperation="Conversion"
-                              errorRowDisposition="FailComponent"
-                              externalMetadataColumnId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\TrafficData Options.Outputs[ADO NET Source Output].ExternalColumns[Languages]"
-                              length="500"
-                              lineageId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\TrafficData Options.Outputs[ADO NET Source Output].Columns[Languages]"
-                              name="Languages"
-                              truncationRowDisposition="FailComponent" />
-                            <outputColumn
-                              refId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\TrafficData Options.Outputs[ADO NET Source Output].Columns[Sublicense_Flag]"
-                              dataType="wstr"
-                              errorOrTruncationOperation="Conversion"
-                              errorRowDisposition="FailComponent"
-                              externalMetadataColumnId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\TrafficData Options.Outputs[ADO NET Source Output].ExternalColumns[Sublicense_Flag]"
-                              length="500"
-                              lineageId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\TrafficData Options.Outputs[ADO NET Source Output].Columns[Sublicense_Flag]"
-                              name="Sublicense_Flag"
-                              truncationRowDisposition="FailComponent" />
-                            <outputColumn
-                              refId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\TrafficData Options.Outputs[ADO NET Source Output].Columns[entity_title]"
-                              dataType="wstr"
-                              errorOrTruncationOperation="Conversion"
-                              errorRowDisposition="FailComponent"
-                              externalMetadataColumnId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\TrafficData Options.Outputs[ADO NET Source Output].ExternalColumns[entity_title]"
-                              length="9"
-                              lineageId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\TrafficData Options.Outputs[ADO NET Source Output].Columns[entity_title]"
-                              name="entity_title"
-                              truncationRowDisposition="FailComponent" />
-                          </outputColumns>
-                          <externalMetadataColumns
-                            isUsed="True">
-                            <externalMetadataColumn
-                              refId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\TrafficData Options.Outputs[ADO NET Source Output].ExternalColumns[contract_sid]"
-                              dataType="i4"
-                              name="contract_sid" />
-                            <externalMetadataColumn
-                              refId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\TrafficData Options.Outputs[ADO NET Source Output].ExternalColumns[ContractID]"
-                              dataType="wstr"
-                              length="500"
-                              name="ContractID" />
-                            <externalMetadataColumn
-                              refId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\TrafficData Options.Outputs[ADO NET Source Output].ExternalColumns[Rights_ID]"
-                              dataType="wstr"
-                              length="500"
-                              name="Rights_ID" />
-                            <externalMetadataColumn
-                              refId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\TrafficData Options.Outputs[ADO NET Source Output].ExternalColumns[Assets]"
-                              dataType="wstr"
-                              length="500"
-                              name="Assets" />
-                            <externalMetadataColumn
-                              refId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\TrafficData Options.Outputs[ADO NET Source Output].ExternalColumns[RightType]"
-                              dataType="wstr"
-                              length="500"
-                              name="RightType" />
-                            <externalMetadataColumn
-                              refId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\TrafficData Options.Outputs[ADO NET Source Output].ExternalColumns[ContentType]"
-                              dataType="wstr"
-                              length="500"
-                              name="ContentType" />
-                            <externalMetadataColumn
-                              refId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\TrafficData Options.Outputs[ADO NET Source Output].ExternalColumns[Exclusivity]"
-                              dataType="wstr"
-                              length="500"
-                              name="Exclusivity" />
-                            <externalMetadataColumn
-                              refId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\TrafficData Options.Outputs[ADO NET Source Output].ExternalColumns[Comment]"
-                              dataType="wstr"
-                              length="2000"
-                              name="Comment" />
-                            <externalMetadataColumn
-                              refId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\TrafficData Options.Outputs[ADO NET Source Output].ExternalColumns[ActualStartDate]"
-                              dataType="dbTimeStamp"
-                              name="ActualStartDate" />
-                            <externalMetadataColumn
-                              refId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\TrafficData Options.Outputs[ADO NET Source Output].ExternalColumns[ActualEndDate]"
-                              dataType="dbTimeStamp"
-                              name="ActualEndDate" />
-                            <externalMetadataColumn
-                              refId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\TrafficData Options.Outputs[ADO NET Source Output].ExternalColumns[Territory]"
-                              dataType="wstr"
-                              length="500"
-                              name="Territory" />
-                            <externalMetadataColumn
-                              refId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\TrafficData Options.Outputs[ADO NET Source Output].ExternalColumns[Languages]"
-                              dataType="wstr"
-                              length="500"
-                              name="Languages" />
-                            <externalMetadataColumn
-                              refId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\TrafficData Options.Outputs[ADO NET Source Output].ExternalColumns[Sublicense_Flag]"
-                              dataType="wstr"
-                              length="500"
-                              name="Sublicense_Flag" />
-                            <externalMetadataColumn
-                              refId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\TrafficData Options.Outputs[ADO NET Source Output].ExternalColumns[entity_title]"
-                              dataType="wstr"
-                              length="9"
-                              name="entity_title" />
-                          </externalMetadataColumns>
-                        </output>
-                        <output
-                          refId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\TrafficData Options.Outputs[ADO NET Source Error Output]"
-                          isErrorOut="true"
-                          name="ADO NET Source Error Output">
-                          <outputColumns>
-                            <outputColumn
-                              refId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\TrafficData Options.Outputs[ADO NET Source Error Output].Columns[contract_sid]"
-                              dataType="i4"
-                              lineageId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\TrafficData Options.Outputs[ADO NET Source Error Output].Columns[contract_sid]"
-                              name="contract_sid" />
-                            <outputColumn
-                              refId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\TrafficData Options.Outputs[ADO NET Source Error Output].Columns[ContractID]"
-                              dataType="wstr"
-                              length="500"
-                              lineageId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\TrafficData Options.Outputs[ADO NET Source Error Output].Columns[ContractID]"
-                              name="ContractID" />
-                            <outputColumn
-                              refId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\TrafficData Options.Outputs[ADO NET Source Error Output].Columns[Rights_ID]"
-                              dataType="wstr"
-                              length="500"
-                              lineageId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\TrafficData Options.Outputs[ADO NET Source Error Output].Columns[Rights_ID]"
-                              name="Rights_ID" />
-                            <outputColumn
-                              refId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\TrafficData Options.Outputs[ADO NET Source Error Output].Columns[Assets]"
-                              dataType="wstr"
-                              length="500"
-                              lineageId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\TrafficData Options.Outputs[ADO NET Source Error Output].Columns[Assets]"
-                              name="Assets" />
-                            <outputColumn
-                              refId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\TrafficData Options.Outputs[ADO NET Source Error Output].Columns[RightType]"
-                              dataType="wstr"
-                              length="500"
-                              lineageId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\TrafficData Options.Outputs[ADO NET Source Error Output].Columns[RightType]"
-                              name="RightType" />
-                            <outputColumn
-                              refId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\TrafficData Options.Outputs[ADO NET Source Error Output].Columns[ContentType]"
-                              dataType="wstr"
-                              length="500"
-                              lineageId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\TrafficData Options.Outputs[ADO NET Source Error Output].Columns[ContentType]"
-                              name="ContentType" />
-                            <outputColumn
-                              refId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\TrafficData Options.Outputs[ADO NET Source Error Output].Columns[Exclusivity]"
-                              dataType="wstr"
-                              length="500"
-                              lineageId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\TrafficData Options.Outputs[ADO NET Source Error Output].Columns[Exclusivity]"
-                              name="Exclusivity" />
-                            <outputColumn
-                              refId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\TrafficData Options.Outputs[ADO NET Source Error Output].Columns[Comment]"
-                              dataType="wstr"
-                              length="2000"
-                              lineageId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\TrafficData Options.Outputs[ADO NET Source Error Output].Columns[Comment]"
-                              name="Comment" />
-                            <outputColumn
-                              refId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\TrafficData Options.Outputs[ADO NET Source Error Output].Columns[ActualStartDate]"
-                              dataType="dbTimeStamp"
-                              lineageId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\TrafficData Options.Outputs[ADO NET Source Error Output].Columns[ActualStartDate]"
-                              name="ActualStartDate" />
-                            <outputColumn
-                              refId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\TrafficData Options.Outputs[ADO NET Source Error Output].Columns[ActualEndDate]"
-                              dataType="dbTimeStamp"
-                              lineageId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\TrafficData Options.Outputs[ADO NET Source Error Output].Columns[ActualEndDate]"
-                              name="ActualEndDate" />
-                            <outputColumn
-                              refId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\TrafficData Options.Outputs[ADO NET Source Error Output].Columns[Territory]"
-                              dataType="wstr"
-                              length="500"
-                              lineageId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\TrafficData Options.Outputs[ADO NET Source Error Output].Columns[Territory]"
-                              name="Territory" />
-                            <outputColumn
-                              refId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\TrafficData Options.Outputs[ADO NET Source Error Output].Columns[Languages]"
-                              dataType="wstr"
-                              length="500"
-                              lineageId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\TrafficData Options.Outputs[ADO NET Source Error Output].Columns[Languages]"
-                              name="Languages" />
-                            <outputColumn
-                              refId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\TrafficData Options.Outputs[ADO NET Source Error Output].Columns[Sublicense_Flag]"
-                              dataType="wstr"
-                              length="500"
-                              lineageId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\TrafficData Options.Outputs[ADO NET Source Error Output].Columns[Sublicense_Flag]"
-                              name="Sublicense_Flag" />
-                            <outputColumn
-                              refId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\TrafficData Options.Outputs[ADO NET Source Error Output].Columns[entity_title]"
-                              dataType="wstr"
-                              length="9"
-                              lineageId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\TrafficData Options.Outputs[ADO NET Source Error Output].Columns[entity_title]"
-                              name="entity_title" />
-                            <outputColumn
-                              refId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\TrafficData Options.Outputs[ADO NET Source Error Output].Columns[ErrorCode]"
-                              dataType="i4"
-                              lineageId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\TrafficData Options.Outputs[ADO NET Source Error Output].Columns[ErrorCode]"
-                              name="ErrorCode"
-                              specialFlags="1" />
-                            <outputColumn
-                              refId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\TrafficData Options.Outputs[ADO NET Source Error Output].Columns[ErrorColumn]"
-                              dataType="i4"
-                              lineageId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\TrafficData Options.Outputs[ADO NET Source Error Output].Columns[ErrorColumn]"
-                              name="ErrorColumn"
-                              specialFlags="2" />
-                          </outputColumns>
-                          <externalMetadataColumns />
-                        </output>
-                      </outputs>
-                    </component>
                   </components>
                   <paths>
                     <path
                       refId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions.Paths[ADO NET Source Output]"
                       endId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\Dest RightsLine_RightTypesOptions.Inputs[ADO NET Destination Input]"
                       name="ADO NET Source Output"
-                      startId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\TrafficData Options.Outputs[ADO NET Source Output]" />
+                      startId="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\ADO NET Source.Outputs[ADO NET Source Output]" />
                   </paths>
                 </pipeline>
               </DTS:ObjectData>
@@ -39952,28 +39987,7 @@ WHERE   ip.rights_type_sid IN ( 2, 3, 9 )</property>
         Languages ,
         Sublicense_Flag
 FROM    [z.uv_Contract_Rights]
-WHERE   right_Type IN ( 'License' )
-        AND Content_Types NOT IN ( 'Merchandising', 'Publishing (incl. eBook)',
-                                   'Music Rights', 'Theatrical',
-                                   'Audiostreaming',
-                                   'Learning Media (LM) Rights - All Levels',
-                                   'Learning Media (LM) Rights - Level 0', 
-								   'Learning Media (LM) Rights - Level 1', 'Learning Media (LM) Rights - Level 2',
-								   'Learning Media (LM) Rights - Level 3 (A+B)', 'Clip', 'Radio Origination',
-                                   'Common Carrier' )
-        AND [Territories] NOT IN ( 'Worldwide (Ex US, terr, &amp; possessions)',
-                                   'Worldwide excl. Canada',
-                                   'Worldwide ex U.S.',
-                                   'Worldwide excl. United States and Canada',
-                                   'Worldwide ex U.S., Terr., Canada, Caribbean',
-                                   'U.S., Territories, Consulates, Bases, Ships and Canada',
-                                   'Worldwide ex U.S., Terr., Consul., Bases, Ships, Canada',
-                                   'Worldwide ex U.S., Terr., Consulates, Bases',
-                                   'Worldwide ex UK, Ireland',
-                                   'Worldwide ex United States, UK, Ireland ',
-                                   'Worldwide ex US &amp; Terr, Consulates, Bases, Ships' )
-        AND Languages NOT IN ( 'All Languages (Except Spanish)',
-                               'All Languages except English and French' )</property>
+where right_Type in ('License','Option','Licensee Holdback')</property>
                         <property
                           dataType="System.Int32"
                           description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
@@ -40416,8 +40430,7 @@ WHERE   right_Type IN ( 'License' )
                               lineageId="Package\Sequence Container 1\Rights Imports\Import Alliant Rights In\Source Alliant Rights.Outputs[ADO NET Source Output].Columns[Languages]" />
                             <inputColumn
                               refId="Package\Sequence Container 1\Rights Imports\Import Alliant Rights In\Dest Rightsline_Rights_In.Inputs[ADO NET Destination Input].Columns[Rights_ID]"
-                              cachedDataType="wstr"
-                              cachedLength="500"
+                              cachedDataType="i4"
                               cachedName="Rights_ID"
                               externalMetadataColumnId="Package\Sequence Container 1\Rights Imports\Import Alliant Rights In\Dest Rightsline_Rights_In.Inputs[ADO NET Destination Input].ExternalColumns[Item_BV_ID]"
                               lineageId="Package\Sequence Container 1\Rights Imports\Import Alliant Rights In\Source Alliant Rights.Outputs[ADO NET Source Output].Columns[Rights_ID]" />
@@ -40578,7 +40591,12 @@ WHERE   right_Type IN ( 'License' )
       ,[Languages]
       ,[Sublicense_Flag]
   FROM [PBS].[Alliant_Rights]
-  where RightType = 'License'</property>
+where [RightType] = 'License'
+AND [ContentType] NOT IN ('Merchandising','Publishing (incl. eBook)','Music Rights','Theatrical','Audiostreaming','Learning Media (LM) Rights - All Levels','Learning Media (LM) Rights - Level 0','
+Learning Media (LM) Rights - Level 1','Learning Media (LM) Rights - Level 2','
+Learning Media (LM) Rights - Level 3 (A+B)','Clip','Radio Origination','Common Carrier')
+AND [Territory] NOT IN ('Worldwide (Ex US, terr, &amp; possessions)','Worldwide excl. Canada','Worldwide ex U.S.','Worldwide excl. United States and Canada','Worldwide ex U.S., Terr., Canada, Caribbean','U.S., Territories, Consulates, Bases, Ships and Canada','Worldwide ex U.S., Terr., Consul., Bases, Ships, Canada','Worldwide ex U.S., Terr., Consulates, Bases','Worldwide ex UK, Ireland','Worldwide ex United States, UK, Ireland ','Worldwide ex US &amp; Terr, Consulates, Bases, Ships')
+AND Languages NOT IN ('All Languages (Except Spanish)','All Languages except English and French')</property>
                         <property
                           dataType="System.Int32"
                           description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
@@ -40646,11 +40664,10 @@ WHERE   right_Type IN ( 'License' )
                               truncationRowDisposition="FailComponent" />
                             <outputColumn
                               refId="Package\Sequence Container 1\Rights Imports\Import Alliant Rights In\Source Alliant Rights.Outputs[ADO NET Source Output].Columns[Rights_ID]"
-                              dataType="wstr"
+                              dataType="i4"
                               errorOrTruncationOperation="Conversion"
                               errorRowDisposition="FailComponent"
                               externalMetadataColumnId="Package\Sequence Container 1\Rights Imports\Import Alliant Rights In\Source Alliant Rights.Outputs[ADO NET Source Output].ExternalColumns[Rights_ID]"
-                              length="500"
                               lineageId="Package\Sequence Container 1\Rights Imports\Import Alliant Rights In\Source Alliant Rights.Outputs[ADO NET Source Output].Columns[Rights_ID]"
                               name="Rights_ID"
                               truncationRowDisposition="FailComponent" />
@@ -40771,8 +40788,7 @@ WHERE   right_Type IN ( 'License' )
                               name="ContractID" />
                             <externalMetadataColumn
                               refId="Package\Sequence Container 1\Rights Imports\Import Alliant Rights In\Source Alliant Rights.Outputs[ADO NET Source Output].ExternalColumns[Rights_ID]"
-                              dataType="wstr"
-                              length="500"
+                              dataType="i4"
                               name="Rights_ID" />
                             <externalMetadataColumn
                               refId="Package\Sequence Container 1\Rights Imports\Import Alliant Rights In\Source Alliant Rights.Outputs[ADO NET Source Output].ExternalColumns[Assets]"
@@ -40848,8 +40864,7 @@ WHERE   right_Type IN ( 'License' )
                               name="ContractID" />
                             <outputColumn
                               refId="Package\Sequence Container 1\Rights Imports\Import Alliant Rights In\Source Alliant Rights.Outputs[ADO NET Source Error Output].Columns[Rights_ID]"
-                              dataType="wstr"
-                              length="500"
+                              dataType="i4"
                               lineageId="Package\Sequence Container 1\Rights Imports\Import Alliant Rights In\Source Alliant Rights.Outputs[ADO NET Source Error Output].Columns[Rights_ID]"
                               name="Rights_ID" />
                             <outputColumn
@@ -49487,7 +49502,7 @@ FROM    [PBS].[vwMOSUsage]
     design-time-name="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import Rightsholdback">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="218,42"
           Id="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import Rightsholdback\Traffic Data HoldBack Source"
@@ -49527,9 +49542,7 @@ FROM    [PBS].[vwMOSUsage]
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -49555,49 +49568,47 @@ FROM    [PBS].[vwMOSUsage]
     design-time-name="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
-        <NodeLayout
-          Size="172,42"
-          Id="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\TrafficData Options"
-          TopLeft="210,125" />
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="248,42"
           Id="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\Dest RightsLine_RightTypesOptions"
           TopLeft="233,267" />
+        <NodeLayout
+          Size="158,42"
+          Id="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\ADO NET Source"
+          TopLeft="291,103" />
         <EdgeLayout
           Id="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions.Paths[ADO NET Source Output]"
-          TopLeft="296,167">
+          TopLeft="370,145">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="61,100"
+              EndConnector="-13,122"
               Start="0,0"
-              End="61,92.5">
+              End="-13,114.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,46" />
+                    End="0,57" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,46"
-                    Point2="0,50"
-                    Point3="4,50" />
+                    Point1="0,57"
+                    Point2="0,61"
+                    Point3="-4,61" />
                   <mssgle:LineSegment
-                    End="57,50" />
+                    End="-9,61" />
                   <mssgle:CubicBezierSegment
-                    Point1="57,50"
-                    Point2="61,50"
-                    Point3="61,54" />
+                    Point1="-9,61"
+                    Point2="-13,61"
+                    Point3="-13,65" />
                   <mssgle:LineSegment
-                    End="61,92.5" />
+                    End="-13,114.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -49611,19 +49622,11 @@ FROM    [PBS].[vwMOSUsage]
       </Property>
     </Properties>
   </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\TrafficData Options">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
   <TaskHost
     design-time-name="Package\Sequence Container 1\Rights Imports\Alliant Nola to Staging Table">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="201,42"
           Id="Package\Sequence Container 1\Rights Imports\Alliant Nola to Staging Table\Source Alliant Nola Query"
@@ -49651,9 +49654,7 @@ FROM    [PBS].[vwMOSUsage]
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -49733,7 +49734,7 @@ FROM    [PBS].[vwMOSUsage]
     design-time-name="Package\Sequence Container 1\Rights Imports\Import Alliant Rights In">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="178,42"
           Id="Package\Sequence Container 1\Rights Imports\Import Alliant Rights In\Source Alliant Rights"
@@ -49773,9 +49774,7 @@ FROM    [PBS].[vwMOSUsage]
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -50099,6 +50098,14 @@ FROM    [PBS].[vwMOSUsage]
   </TaskHost>
   <PipelineComponentMetadata
     design-time-name="Package\Sequence Container 1\Rights Imports\Import Rights IN Bv-MOS\MOS-RightsINBV">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\ADO NET Source">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
