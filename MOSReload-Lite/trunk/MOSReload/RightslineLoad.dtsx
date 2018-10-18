@@ -12,8 +12,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="RightslineLoad"
   DTS:PackageType="5"
-  DTS:VersionBuild="506"
-  DTS:VersionGUID="{A0204DAE-E4FD-4AB8-8A8B-A63D9E35CECB}">
+  DTS:VersionBuild="507"
+  DTS:VersionGUID="{0EC2B059-8FEE-46CC-87F0-5D00A6020FCC}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">6</DTS:Property>
   <DTS:ConnectionManagers>
@@ -28,7 +28,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAArQUwPWSOn0KLzrEGz12ruAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADO4yGjmNIJqD6WhjKN9yxTAAAAAASAAACgAAAAEAAAAL9Pdr74+BVHyEWHslfJo6kIAAAAvyhzTdJLKIAUAAAAed8H/hQK2KuSentf787aVXODOn0</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAArQUwPWSOn0KLzrEGz12ruAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABmfEOc/emZP0PN3SUuvqZMAAAAAASAAACgAAAAEAAAAFN3pUcpBWZeL8vOagFZLmQIAAAA0lKfu/+CRF4UAAAAipaWxODaVSlv7WZnqTT9mqHy1fo</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -43,7 +43,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAArQUwPWSOn0KLzrEGz12ruAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACyiHG1cdCNgGq8j3eMcxfiAAAAAASAAACgAAAAEAAAAPmBADS0LHdLJ5oKuZtqKU8IAAAARj3OUywS5oUUAAAAiZQqrduA1bO7eSHK1nAzVC6tzgg</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAArQUwPWSOn0KLzrEGz12ruAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAATgj87+ZfI1h3Z6/bmH2USAAAAAASAAACgAAAAEAAAAFO2JE7V9TxXTABhlaf8w2UIAAAAZjZ3kluVbLoUAAAAjyPLtV/dn+HDjzs+U9e0H2essS4</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -58,7 +58,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAArQUwPWSOn0KLzrEGz12ruAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACnYs42HRLGCFZ0edWkXejdAAAAAASAAACgAAAAEAAAAGLVV6htesjIuoGMIcJY9jkQAAAAUXHefPtTJ+YofOBp6HY/ZxQAAABoLopaZmGIdNrbkVMglO50NGPaYA</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAArQUwPWSOn0KLzrEGz12ruAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAB6Hcsrq5gJbsBucABKSIp4AAAAAASAAACgAAAAEAAAABkkFPDWA85EdBwqpqW2EIAQAAAAZ4YS1amOONFWZINyOeyjIhQAAACFktmdQYozk0wAw2+6nkEjTTGKyQ</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -73,7 +73,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAArQUwPWSOn0KLzrEGz12ruAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABNaoTBR1tJrP0fFl5qZqhcAAAAAASAAACgAAAAEAAAAFZlaas4K4BtRTE5FsW9iKUQAAAAo6MVfYMdyx/9mHWq8YqucRQAAACCUrBW/R0D20Q0jHaSxezUpQdirg</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAArQUwPWSOn0KLzrEGz12ruAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAByA28aMuflitAdmmo9+Ib5AAAAAASAAACgAAAAEAAAAAM/kFvBH7+PutHJgC7VpSoQAAAAFBsda8QdM7VEat6T7Wmw3RQAAAAYTfa4uViE9hTSfnFdf+i0rXsulw</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -84,7 +84,12 @@
       DTS:ObjectName="db19-uat.TrafficData">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=db19-uat;Initial Catalog=TrafficData;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+          DTS:ConnectionString="Data Source=db19-uat;User ID=;Initial Catalog=TrafficData;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAArQUwPWSOn0KLzrEGz12ruAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAALxD23HDXZifytNLz8cN3JAAAAAASAAACgAAAAEAAAALmr0ZyHXh9mk0OvCGn6pwUIAAAAEB7edhFz3W0UAAAAHy1CVObLQIQWecr6lAJ1MUxYynE</DTS:Password>
+        </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -98,7 +103,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAArQUwPWSOn0KLzrEGz12ruAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADN7BnFlzSJU63Tolc5R+hWAAAAAASAAACgAAAAEAAAADN15fJOEZdqR38Yd4KWDzQIAAAAQ0AQPKZHCX8UAAAAcGbnxwUSWodwG2UmGIle5q7bFtc</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAArQUwPWSOn0KLzrEGz12ruAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAC8WhWqG+bm5XzEcSyXZAZZAAAAAASAAACgAAAAEAAAAMaTD48U60uFmzfJDQoGlZwIAAAA+WQglStlv4MUAAAAD8tUV3UORI8MHpmtltl9vEyYoX8</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -44271,6 +44276,7 @@ FROM    [PBS].[vwMOSUsage]
           DTS:refId="Package\Sequence Container 1\Truncate TrafficData Staging Tables"
           DTS:CreationName="Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.ExecuteSQLTask, Microsoft.SqlServer.SQLTask, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"
           DTS:Description="Execute SQL Task"
+          DTS:Disabled="True"
           DTS:DTSID="{5F524C39-8BDE-4311-9B87-6A8A2231D2C0}"
           DTS:ExecutableType="Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.ExecuteSQLTask, Microsoft.SqlServer.SQLTask, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"
           DTS:LocaleID="-1"
@@ -49615,6 +49621,14 @@ FROM    [PBS].[vwMOSUsage]
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
+    design-time-name="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\ADO NET Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
     design-time-name="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\Dest RightsLine_RightTypesOptions">
     <Properties>
       <Property>
@@ -50098,14 +50112,6 @@ FROM    [PBS].[vwMOSUsage]
   </TaskHost>
   <PipelineComponentMetadata
     design-time-name="Package\Sequence Container 1\Rights Imports\Import Rights IN Bv-MOS\MOS-RightsINBV">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Sequence Container 1\Import RightsOptionType from Aliant\Import RightTypesOptions\ADO NET Source">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
