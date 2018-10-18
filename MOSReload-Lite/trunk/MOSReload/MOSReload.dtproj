@@ -40,6 +40,10 @@
       <Name>RightsLineLoadConfig.dtsConfig</Name>
       <FullPath>RightsLineLoadConfig.dtsConfig</FullPath>
     </ProjectItem>
+    <ProjectItem>
+      <Name>MOSTablesConfig.dtsConfig</Name>
+      <FullPath>MOSTablesConfig.dtsConfig</FullPath>
+    </ProjectItem>
   </Miscellaneous>
   <Configurations>
     <Configuration>

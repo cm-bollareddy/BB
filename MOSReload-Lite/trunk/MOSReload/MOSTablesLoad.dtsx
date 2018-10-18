@@ -6,13 +6,14 @@
   DTS:CreatorComputerName="C-DEV-01"
   DTS:CreatorName="BRADDOCK\ytseytlin"
   DTS:DTSID="{6AD5EEF3-43DC-4A17-84C2-E19D9FD4D2BE}"
+  DTS:EnableConfig="True"
   DTS:ExecutableType="SSIS.Package.3"
   DTS:LastModifiedProductVersion="11.0.5583.0"
   DTS:LocaleID="1033"
   DTS:ObjectName="MOSTablesLoad"
   DTS:PackageType="5"
-  DTS:VersionBuild="61"
-  DTS:VersionGUID="{B4A4D719-96BF-4DB7-9CEB-CCBD42DF11D1}">
+  DTS:VersionBuild="62"
+  DTS:VersionGUID="{92C83398-2067-445F-8D7B-6095754FBE3F}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">6</DTS:Property>
   <DTS:ConnectionManagers>
@@ -27,7 +28,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA+vZle3O0r0qczwMXhgPmpAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACJO8Wsok6OL3LjjOQBOyXGAAAAAASAAACgAAAAEAAAAC/rGbguISLxJlgoY+vSS9IYAAAAwDbXyyzHtukwJgy5l+g7a8sGPxdB20lkFAAAALLTPHvIFLgAfWRHsczW+mHFvKRb</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAArQUwPWSOn0KLzrEGz12ruAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAC/XNZaaoFdZkUFmbnSeTHNAAAAAASAAACgAAAAEAAAABlQlloj/L3SQz/7p1cE94wYAAAAwt3w3+R5TXNrIb5ZzcF68Xh1xnkj2w3gFAAAAB7QsuGfzOyRlZn8wtMaj4pTtT9u</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -42,11 +43,19 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA+vZle3O0r0qczwMXhgPmpAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAB0uFhrKr9fxe7/3rZhId/qAAAAAASAAACgAAAAEAAAADU16KJYxIlhH+hAgAR9eSIYAAAA9+f55hXnnxkWzCmJJWBlY/4qaKInjqALFAAAAHPoYjBjegYJtT//elvx+aN12ox1</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAArQUwPWSOn0KLzrEGz12ruAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABl4gJmhvrOJQB7ylQ4dJ2IAAAAAASAAACgAAAAEAAAAOKJ7QmdtFl3MWsLKFFFkrEYAAAAzG+q+IUCWtynNY5Jz7NHHk2H1n7gis6OFAAAAI5OXLOHglRxO2wDVvOlyp12VyrZ</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
+  <DTS:Configurations>
+    <DTS:Configuration
+      DTS:ConfigurationString="E:\PBS Projects\SSIS\MOSReload-RLLight\MOSReload\MOSTablesConfig.dtsConfig"
+      DTS:ConfigurationType="1"
+      DTS:CreationName=""
+      DTS:DTSID="{8F8677FE-4497-491B-94F5-513188A17B4F}"
+      DTS:ObjectName="MOSTablesConfig" />
+  </DTS:Configurations>
   <DTS:Variables />
   <DTS:Executables>
     <DTS:Executable
@@ -63,7 +72,7 @@
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
           SQLTask:Connection="{638E68F5-0981-491A-B5FB-6C9504D69EF0}"
-          SQLTask:SqlStatementSource="truncate table PBS.MOSCredits&#xA;truncate table PBS.MOSEpisode &#xA;truncate table PBS.MOSOffer &#xA;truncate table PBS.MOSOrganization &#xA;truncate table PBS.MOSSeason &#xA;truncate table PBS.MOSSeries &#xA;truncate table PBS.MOSUsage &#xA;truncate table PBS.xrefMOSEpisodeCredits&#xA;truncate table PBS.xrefMOSSeriesCredits &#xA;truncate table PBS.xrefMOSEpisodeOrganizations &#xA;truncate table PBS.xrefMOSOfferOrganization &#xA;truncate table PBS.xrefSeriesOrganization &#xA;truncate table PBS.MOSManifestation&#xA;truncate table PBS.MOSCompilation&#xA;truncate table PBS.EpsiodeCredits_ExcutiveProducer&#xA;truncate table PBS.SeriesCredits_Producer" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          SQLTask:SqlStatementSource="truncate table PBS.MOSCredits&#xA;truncate table PBS.MOSEpisode &#xA;truncate table PBS.MOSOffer &#xA;truncate table PBS.MOSOrganization &#xA;truncate table PBS.MOSSeason &#xA;truncate table PBS.MOSSeries &#xA;truncate table PBS.MOSUsage &#xA;truncate table PBS.MOSManifestation&#xA;truncate table PBS.MOSCompilation&#xA;truncate table PBS.MOSEvent&#xA;truncate table PBS.EpsiodeCredits_ExcutiveProducer&#xA;truncate table PBS.SeriesCredits_Producer&#xA;truncate table PBS.xrefMOSEpisodeCredits&#xA;truncate table PBS.xrefMOSSeriesCredits &#xA;truncate table PBS.xrefMOSEpisodeOrganizations &#xA;truncate table PBS.xrefMOSOfferOrganization &#xA;truncate table PBS.xrefSeriesOrganization " xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
@@ -2870,6 +2879,888 @@ from	[PBS].[vwMOSCompilation]</property>
               endId="Package\Load MOSEpisode\ADO NET Destination.Inputs[ADO NET Destination Input]"
               name="ADO NET Source Output"
               startId="Package\Load MOSEpisode\ADO NET Source.Outputs[ADO NET Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\load MosEvent"
+      DTS:CreationName="SSIS.Pipeline.3"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{E17EA415-33A5-4697-BD06-600A78FA9EA1}"
+      DTS:ExecutableType="SSIS.Pipeline.3"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="load MosEvent"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\load MosEvent\Dest PBS MOSEvent"
+              componentClassID="{874F7595-FB5F-40FF-96AF-FBFF8250E3EF}"
+              contactInfo="Loads data into an ADO.NET-compliant database that uses a database table or view. Load data into a new or existing table. For example, use an ADO.NET provider for ODBC to load data into an ODBC destination.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;2"
+              description="Loads data into an ADO.NET-compliant database that uses a database table or view. Load data into a new or existing table. For example, use an ADO.NET provider for ODBC to load data into an ODBC destination."
+              name="Dest PBS MOSEvent"
+              usesDispositions="true"
+              version="2">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="The Destination database table name."
+                  expressionType="Notify"
+                  name="TableOrViewName"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version= 11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">"PBS"."MOSEvent"</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specify the number of rows per batch. The default is 0 which uses the same size as SSIS internal buffer. "
+                  expressionType="Notify"
+                  name="BatchSize">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out. A value of 0 indicates infinite time-out. "
+                  expressionType="Notify"
+                  name="CommandTimeout">30</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether to use the SqlBulkCopy interface to improve the performance of bulk insert operations. Only certain providers support this interface."
+                  expressionType="Notify"
+                  name="UseBulkInsertWhenPossible">true</property>
+                <property
+                  dataType="System.String"
+                  name="UserComponentTypeName">Microsoft.SqlServer.Dts.Pipeline.ADONETDestination, Microsoft.SqlServer.ADONETDest, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\load MosEvent\Dest PBS MOSEvent.Connections[IDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[db19-uat.MOS.mosuser]"
+                  connectionManagerRefId="Package.ConnectionManagers[db19-uat.MOS.mosuser]"
+                  description="Managed connection manager"
+                  name="IDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\load MosEvent\Dest PBS MOSEvent.Inputs[ADO NET Destination Input]"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="ADO NET Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\load MosEvent\Dest PBS MOSEvent.Inputs[ADO NET Destination Input].Columns[ParentUID]"
+                      cachedDataType="wstr"
+                      cachedLength="36"
+                      cachedName="ParentUID"
+                      externalMetadataColumnId="Package\load MosEvent\Dest PBS MOSEvent.Inputs[ADO NET Destination Input].ExternalColumns[ParentUID]"
+                      lineageId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Output].Columns[ParentUID]" />
+                    <inputColumn
+                      refId="Package\load MosEvent\Dest PBS MOSEvent.Inputs[ADO NET Destination Input].Columns[eventDate]"
+                      cachedDataType="dbTimeStamp2"
+                      cachedName="eventDate"
+                      cachedScale="7"
+                      externalMetadataColumnId="Package\load MosEvent\Dest PBS MOSEvent.Inputs[ADO NET Destination Input].ExternalColumns[eventDate]"
+                      lineageId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Output].Columns[eventDate]" />
+                    <inputColumn
+                      refId="Package\load MosEvent\Dest PBS MOSEvent.Inputs[ADO NET Destination Input].Columns[ManifestationUID]"
+                      cachedDataType="wstr"
+                      cachedLength="36"
+                      cachedName="ManifestationUID"
+                      externalMetadataColumnId="Package\load MosEvent\Dest PBS MOSEvent.Inputs[ADO NET Destination Input].ExternalColumns[ManifestationUID]"
+                      lineageId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Output].Columns[ManifestationUID]" />
+                    <inputColumn
+                      refId="Package\load MosEvent\Dest PBS MOSEvent.Inputs[ADO NET Destination Input].Columns[SAP]"
+                      cachedDataType="wstr"
+                      cachedLength="5"
+                      cachedName="SAP"
+                      externalMetadataColumnId="Package\load MosEvent\Dest PBS MOSEvent.Inputs[ADO NET Destination Input].ExternalColumns[SAP]"
+                      lineageId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Output].Columns[SAP]" />
+                    <inputColumn
+                      refId="Package\load MosEvent\Dest PBS MOSEvent.Inputs[ADO NET Destination Input].Columns[Subtitled]"
+                      cachedDataType="wstr"
+                      cachedLength="5"
+                      cachedName="Subtitled"
+                      externalMetadataColumnId="Package\load MosEvent\Dest PBS MOSEvent.Inputs[ADO NET Destination Input].ExternalColumns[Subtitled]"
+                      lineageId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Output].Columns[Subtitled]" />
+                    <inputColumn
+                      refId="Package\load MosEvent\Dest PBS MOSEvent.Inputs[ADO NET Destination Input].Columns[SubtitledLanguage]"
+                      cachedDataType="wstr"
+                      cachedLength="6"
+                      cachedName="SubtitledLanguage"
+                      externalMetadataColumnId="Package\load MosEvent\Dest PBS MOSEvent.Inputs[ADO NET Destination Input].ExternalColumns[SubtitledLanguage]"
+                      lineageId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Output].Columns[SubtitledLanguage]" />
+                    <inputColumn
+                      refId="Package\load MosEvent\Dest PBS MOSEvent.Inputs[ADO NET Destination Input].Columns[AlternateEventID]"
+                      cachedDataType="wstr"
+                      cachedLength="36"
+                      cachedName="AlternateEventID"
+                      externalMetadataColumnId="Package\load MosEvent\Dest PBS MOSEvent.Inputs[ADO NET Destination Input].ExternalColumns[AlternateEventID]"
+                      lineageId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Output].Columns[AlternateEventID]" />
+                    <inputColumn
+                      refId="Package\load MosEvent\Dest PBS MOSEvent.Inputs[ADO NET Destination Input].Columns[airingType]"
+                      cachedDataType="wstr"
+                      cachedLength="8"
+                      cachedName="airingType"
+                      externalMetadataColumnId="Package\load MosEvent\Dest PBS MOSEvent.Inputs[ADO NET Destination Input].ExternalColumns[airingType]"
+                      lineageId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Output].Columns[airingType]" />
+                    <inputColumn
+                      refId="Package\load MosEvent\Dest PBS MOSEvent.Inputs[ADO NET Destination Input].Columns[playRun]"
+                      cachedDataType="i2"
+                      cachedName="playRun"
+                      externalMetadataColumnId="Package\load MosEvent\Dest PBS MOSEvent.Inputs[ADO NET Destination Input].ExternalColumns[playRun]"
+                      lineageId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Output].Columns[playRun]" />
+                    <inputColumn
+                      refId="Package\load MosEvent\Dest PBS MOSEvent.Inputs[ADO NET Destination Input].Columns[playType]"
+                      cachedDataType="wstr"
+                      cachedLength="80"
+                      cachedName="playType"
+                      externalMetadataColumnId="Package\load MosEvent\Dest PBS MOSEvent.Inputs[ADO NET Destination Input].ExternalColumns[playType]"
+                      lineageId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Output].Columns[playType]" />
+                    <inputColumn
+                      refId="Package\load MosEvent\Dest PBS MOSEvent.Inputs[ADO NET Destination Input].Columns[AirDateTime]"
+                      cachedDataType="dbTimeStamp2"
+                      cachedName="AirDateTime"
+                      cachedScale="7"
+                      externalMetadataColumnId="Package\load MosEvent\Dest PBS MOSEvent.Inputs[ADO NET Destination Input].ExternalColumns[AirDateTime]"
+                      lineageId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Output].Columns[AirDateTime]" />
+                    <inputColumn
+                      refId="Package\load MosEvent\Dest PBS MOSEvent.Inputs[ADO NET Destination Input].Columns[ProviderSource]"
+                      cachedDataType="wstr"
+                      cachedLength="80"
+                      cachedName="ProviderSource"
+                      externalMetadataColumnId="Package\load MosEvent\Dest PBS MOSEvent.Inputs[ADO NET Destination Input].ExternalColumns[ProviderSource]"
+                      lineageId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Output].Columns[ProviderSource]" />
+                    <inputColumn
+                      refId="Package\load MosEvent\Dest PBS MOSEvent.Inputs[ADO NET Destination Input].Columns[ProviderSourceName]"
+                      cachedDataType="wstr"
+                      cachedLength="80"
+                      cachedName="ProviderSourceName"
+                      externalMetadataColumnId="Package\load MosEvent\Dest PBS MOSEvent.Inputs[ADO NET Destination Input].ExternalColumns[ProviderSourceName]"
+                      lineageId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Output].Columns[ProviderSourceName]" />
+                    <inputColumn
+                      refId="Package\load MosEvent\Dest PBS MOSEvent.Inputs[ADO NET Destination Input].Columns[ProviderTimezone]"
+                      cachedDataType="wstr"
+                      cachedLength="3"
+                      cachedName="ProviderTimezone"
+                      externalMetadataColumnId="Package\load MosEvent\Dest PBS MOSEvent.Inputs[ADO NET Destination Input].ExternalColumns[ProviderTimezone]"
+                      lineageId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Output].Columns[ProviderTimezone]" />
+                    <inputColumn
+                      refId="Package\load MosEvent\Dest PBS MOSEvent.Inputs[ADO NET Destination Input].Columns[TLN_TPT_ID]"
+                      cachedDataType="i4"
+                      cachedName="TLN_TPT_ID"
+                      externalMetadataColumnId="Package\load MosEvent\Dest PBS MOSEvent.Inputs[ADO NET Destination Input].ExternalColumns[TLN_TPT_ID]"
+                      lineageId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Output].Columns[TLN_TPT_ID]" />
+                    <inputColumn
+                      refId="Package\load MosEvent\Dest PBS MOSEvent.Inputs[ADO NET Destination Input].Columns[duration]"
+                      cachedDataType="i4"
+                      cachedName="duration"
+                      externalMetadataColumnId="Package\load MosEvent\Dest PBS MOSEvent.Inputs[ADO NET Destination Input].ExternalColumns[duration]"
+                      lineageId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Output].Columns[duration]" />
+                    <inputColumn
+                      refId="Package\load MosEvent\Dest PBS MOSEvent.Inputs[ADO NET Destination Input].Columns[dubbedLanguage]"
+                      cachedDataType="i4"
+                      cachedName="dubbedLanguage"
+                      externalMetadataColumnId="Package\load MosEvent\Dest PBS MOSEvent.Inputs[ADO NET Destination Input].ExternalColumns[dubbedLanguage]"
+                      lineageId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Output].Columns[dubbedLanguage]" />
+                    <inputColumn
+                      refId="Package\load MosEvent\Dest PBS MOSEvent.Inputs[ADO NET Destination Input].Columns[qualifier1]"
+                      cachedDataType="wstr"
+                      cachedLength="2"
+                      cachedName="qualifier1"
+                      externalMetadataColumnId="Package\load MosEvent\Dest PBS MOSEvent.Inputs[ADO NET Destination Input].ExternalColumns[qualifier1]"
+                      lineageId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Output].Columns[qualifier1]" />
+                    <inputColumn
+                      refId="Package\load MosEvent\Dest PBS MOSEvent.Inputs[ADO NET Destination Input].Columns[qualifier2]"
+                      cachedDataType="wstr"
+                      cachedLength="3"
+                      cachedName="qualifier2"
+                      externalMetadataColumnId="Package\load MosEvent\Dest PBS MOSEvent.Inputs[ADO NET Destination Input].ExternalColumns[qualifier2]"
+                      lineageId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Output].Columns[qualifier2]" />
+                    <inputColumn
+                      refId="Package\load MosEvent\Dest PBS MOSEvent.Inputs[ADO NET Destination Input].Columns[qualifier3]"
+                      cachedDataType="i4"
+                      cachedName="qualifier3"
+                      externalMetadataColumnId="Package\load MosEvent\Dest PBS MOSEvent.Inputs[ADO NET Destination Input].ExternalColumns[qualifier3]"
+                      lineageId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Output].Columns[qualifier3]" />
+                    <inputColumn
+                      refId="Package\load MosEvent\Dest PBS MOSEvent.Inputs[ADO NET Destination Input].Columns[qualifier4]"
+                      cachedDataType="wstr"
+                      cachedLength="16"
+                      cachedName="qualifier4"
+                      externalMetadataColumnId="Package\load MosEvent\Dest PBS MOSEvent.Inputs[ADO NET Destination Input].ExternalColumns[qualifier4]"
+                      lineageId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Output].Columns[qualifier4]" />
+                    <inputColumn
+                      refId="Package\load MosEvent\Dest PBS MOSEvent.Inputs[ADO NET Destination Input].Columns[qualifier5]"
+                      cachedDataType="wstr"
+                      cachedLength="2"
+                      cachedName="qualifier5"
+                      externalMetadataColumnId="Package\load MosEvent\Dest PBS MOSEvent.Inputs[ADO NET Destination Input].ExternalColumns[qualifier5]"
+                      lineageId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Output].Columns[qualifier5]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\load MosEvent\Dest PBS MOSEvent.Inputs[ADO NET Destination Input].ExternalColumns[ParentUID]"
+                      dataType="wstr"
+                      length="500"
+                      name="ParentUID" />
+                    <externalMetadataColumn
+                      refId="Package\load MosEvent\Dest PBS MOSEvent.Inputs[ADO NET Destination Input].ExternalColumns[eventDate]"
+                      dataType="dbTimeStamp"
+                      name="eventDate" />
+                    <externalMetadataColumn
+                      refId="Package\load MosEvent\Dest PBS MOSEvent.Inputs[ADO NET Destination Input].ExternalColumns[ManifestationUID]"
+                      dataType="wstr"
+                      length="500"
+                      name="ManifestationUID" />
+                    <externalMetadataColumn
+                      refId="Package\load MosEvent\Dest PBS MOSEvent.Inputs[ADO NET Destination Input].ExternalColumns[SAP]"
+                      dataType="wstr"
+                      length="500"
+                      name="SAP" />
+                    <externalMetadataColumn
+                      refId="Package\load MosEvent\Dest PBS MOSEvent.Inputs[ADO NET Destination Input].ExternalColumns[Subtitled]"
+                      dataType="wstr"
+                      length="500"
+                      name="Subtitled" />
+                    <externalMetadataColumn
+                      refId="Package\load MosEvent\Dest PBS MOSEvent.Inputs[ADO NET Destination Input].ExternalColumns[SubtitledLanguage]"
+                      dataType="wstr"
+                      length="500"
+                      name="SubtitledLanguage" />
+                    <externalMetadataColumn
+                      refId="Package\load MosEvent\Dest PBS MOSEvent.Inputs[ADO NET Destination Input].ExternalColumns[AlternateEventID]"
+                      dataType="wstr"
+                      length="500"
+                      name="AlternateEventID" />
+                    <externalMetadataColumn
+                      refId="Package\load MosEvent\Dest PBS MOSEvent.Inputs[ADO NET Destination Input].ExternalColumns[airingType]"
+                      dataType="wstr"
+                      length="500"
+                      name="airingType" />
+                    <externalMetadataColumn
+                      refId="Package\load MosEvent\Dest PBS MOSEvent.Inputs[ADO NET Destination Input].ExternalColumns[playRun]"
+                      dataType="i4"
+                      name="playRun" />
+                    <externalMetadataColumn
+                      refId="Package\load MosEvent\Dest PBS MOSEvent.Inputs[ADO NET Destination Input].ExternalColumns[playType]"
+                      dataType="wstr"
+                      length="500"
+                      name="playType" />
+                    <externalMetadataColumn
+                      refId="Package\load MosEvent\Dest PBS MOSEvent.Inputs[ADO NET Destination Input].ExternalColumns[AirDateTime]"
+                      dataType="dbTimeStamp"
+                      name="AirDateTime" />
+                    <externalMetadataColumn
+                      refId="Package\load MosEvent\Dest PBS MOSEvent.Inputs[ADO NET Destination Input].ExternalColumns[ProviderSource]"
+                      dataType="wstr"
+                      length="500"
+                      name="ProviderSource" />
+                    <externalMetadataColumn
+                      refId="Package\load MosEvent\Dest PBS MOSEvent.Inputs[ADO NET Destination Input].ExternalColumns[ProviderSourceName]"
+                      dataType="wstr"
+                      length="500"
+                      name="ProviderSourceName" />
+                    <externalMetadataColumn
+                      refId="Package\load MosEvent\Dest PBS MOSEvent.Inputs[ADO NET Destination Input].ExternalColumns[ProviderTimezone]"
+                      dataType="wstr"
+                      length="100"
+                      name="ProviderTimezone" />
+                    <externalMetadataColumn
+                      refId="Package\load MosEvent\Dest PBS MOSEvent.Inputs[ADO NET Destination Input].ExternalColumns[TLN_TPT_ID]"
+                      dataType="i4"
+                      name="TLN_TPT_ID" />
+                    <externalMetadataColumn
+                      refId="Package\load MosEvent\Dest PBS MOSEvent.Inputs[ADO NET Destination Input].ExternalColumns[duration]"
+                      dataType="i4"
+                      name="duration" />
+                    <externalMetadataColumn
+                      refId="Package\load MosEvent\Dest PBS MOSEvent.Inputs[ADO NET Destination Input].ExternalColumns[dubbedLanguage]"
+                      dataType="i4"
+                      name="dubbedLanguage" />
+                    <externalMetadataColumn
+                      refId="Package\load MosEvent\Dest PBS MOSEvent.Inputs[ADO NET Destination Input].ExternalColumns[qualifier1]"
+                      dataType="wstr"
+                      length="100"
+                      name="qualifier1" />
+                    <externalMetadataColumn
+                      refId="Package\load MosEvent\Dest PBS MOSEvent.Inputs[ADO NET Destination Input].ExternalColumns[qualifier2]"
+                      dataType="wstr"
+                      length="100"
+                      name="qualifier2" />
+                    <externalMetadataColumn
+                      refId="Package\load MosEvent\Dest PBS MOSEvent.Inputs[ADO NET Destination Input].ExternalColumns[qualifier3]"
+                      dataType="i4"
+                      name="qualifier3" />
+                    <externalMetadataColumn
+                      refId="Package\load MosEvent\Dest PBS MOSEvent.Inputs[ADO NET Destination Input].ExternalColumns[qualifier4]"
+                      dataType="wstr"
+                      length="100"
+                      name="qualifier4" />
+                    <externalMetadataColumn
+                      refId="Package\load MosEvent\Dest PBS MOSEvent.Inputs[ADO NET Destination Input].ExternalColumns[qualifier5]"
+                      dataType="wstr"
+                      length="100"
+                      name="qualifier5" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\load MosEvent\Dest PBS MOSEvent.Outputs[ADO NET Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="ADO NET Destination Error Output"
+                  synchronousInputId="Package\load MosEvent\Dest PBS MOSEvent.Inputs[ADO NET Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\load MosEvent\Dest PBS MOSEvent.Outputs[ADO NET Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\load MosEvent\Dest PBS MOSEvent.Outputs[ADO NET Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\load MosEvent\Dest PBS MOSEvent.Outputs[ADO NET Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\load MosEvent\Dest PBS MOSEvent.Outputs[ADO NET Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\load MosEvent\Source TrafficData vwMosEvent"
+              componentClassID="{874F7595-FB5F-40FF-96AF-FBFF8250E3EF}"
+              contactInfo="Consumes data from SQL Server, OLE DB, ODBC, or Oracle, using the corresponding .NET Framework data provider. Use a Transact-SQL statement to define the result set. For example, extract data from SQL Server with the .NET Framework data provider for SQL Server.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="Consumes data from SQL Server, OLE DB, ODBC, or Oracle, using the corresponding .NET Framework data provider. Use a Transact-SQL statement to define the result set. For example, extract data from SQL Server with the .NET Framework data provider for SQL Server."
+              name="Source TrafficData vwMosEvent"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Specifies the SQL statement used by the component to extract data."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">30</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether to allow non-string external columns to be implicitly converted to strings at the output columns."
+                  name="AllowImplicitStringConversion">true</property>
+                <property
+                  dataType="System.String"
+                  description="The Source database table name."
+                  expressionType="Notify"
+                  name="TableOrViewName"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version= 11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">"PBS"."vwMOSEvent"</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specify the mode to retrieve external column information"
+                  name="AccessMode"
+                  typeConverter="Microsoft.SqlServer.Dts.Pipeline.DataReaderSourceAdapter+EnumToStringConverter, Microsoft.SqlServer.ADONETSrc, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">0</property>
+                <property
+                  dataType="System.String"
+                  name="UserComponentTypeName">Microsoft.SqlServer.Dts.Pipeline.DataReaderSourceAdapter, Microsoft.SqlServer.ADONETSrc, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\load MosEvent\Source TrafficData vwMosEvent.Connections[IDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[db19-uat.TrafficData.TrafficDataReader]"
+                  connectionManagerRefId="Package.ConnectionManagers[db19-uat.TrafficData.TrafficDataReader]"
+                  description="Managed connection manager"
+                  name="IDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Output]"
+                  name="ADO NET Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Output].Columns[ParentUID]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Output].ExternalColumns[ParentUID]"
+                      length="36"
+                      lineageId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Output].Columns[ParentUID]"
+                      name="ParentUID"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Output].Columns[eventDate]"
+                      dataType="dbTimeStamp2"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Output].ExternalColumns[eventDate]"
+                      lineageId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Output].Columns[eventDate]"
+                      name="eventDate"
+                      scale="7"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Output].Columns[ManifestationUID]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Output].ExternalColumns[ManifestationUID]"
+                      length="36"
+                      lineageId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Output].Columns[ManifestationUID]"
+                      name="ManifestationUID"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Output].Columns[SAP]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Output].ExternalColumns[SAP]"
+                      length="5"
+                      lineageId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Output].Columns[SAP]"
+                      name="SAP"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Output].Columns[Subtitled]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Output].ExternalColumns[Subtitled]"
+                      length="5"
+                      lineageId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Output].Columns[Subtitled]"
+                      name="Subtitled"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Output].Columns[SubtitledLanguage]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Output].ExternalColumns[SubtitledLanguage]"
+                      length="6"
+                      lineageId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Output].Columns[SubtitledLanguage]"
+                      name="SubtitledLanguage"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Output].Columns[AlternateEventID]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Output].ExternalColumns[AlternateEventID]"
+                      length="36"
+                      lineageId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Output].Columns[AlternateEventID]"
+                      name="AlternateEventID"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Output].Columns[airingType]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Output].ExternalColumns[airingType]"
+                      length="8"
+                      lineageId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Output].Columns[airingType]"
+                      name="airingType"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Output].Columns[playRun]"
+                      dataType="i2"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Output].ExternalColumns[playRun]"
+                      lineageId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Output].Columns[playRun]"
+                      name="playRun"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Output].Columns[playType]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Output].ExternalColumns[playType]"
+                      length="80"
+                      lineageId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Output].Columns[playType]"
+                      name="playType"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Output].Columns[AirDateTime]"
+                      dataType="dbTimeStamp2"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Output].ExternalColumns[AirDateTime]"
+                      lineageId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Output].Columns[AirDateTime]"
+                      name="AirDateTime"
+                      scale="7"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Output].Columns[ProviderSource]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Output].ExternalColumns[ProviderSource]"
+                      length="80"
+                      lineageId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Output].Columns[ProviderSource]"
+                      name="ProviderSource"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Output].Columns[ProviderSourceName]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Output].ExternalColumns[ProviderSourceName]"
+                      length="80"
+                      lineageId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Output].Columns[ProviderSourceName]"
+                      name="ProviderSourceName"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Output].Columns[ProviderTimezone]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Output].ExternalColumns[ProviderTimezone]"
+                      length="3"
+                      lineageId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Output].Columns[ProviderTimezone]"
+                      name="ProviderTimezone"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Output].Columns[TLN_TPT_ID]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Output].ExternalColumns[TLN_TPT_ID]"
+                      lineageId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Output].Columns[TLN_TPT_ID]"
+                      name="TLN_TPT_ID"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Output].Columns[duration]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Output].ExternalColumns[duration]"
+                      lineageId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Output].Columns[duration]"
+                      name="duration"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Output].Columns[dubbedLanguage]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Output].ExternalColumns[dubbedLanguage]"
+                      lineageId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Output].Columns[dubbedLanguage]"
+                      name="dubbedLanguage"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Output].Columns[qualifier1]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Output].ExternalColumns[qualifier1]"
+                      length="2"
+                      lineageId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Output].Columns[qualifier1]"
+                      name="qualifier1"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Output].Columns[qualifier2]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Output].ExternalColumns[qualifier2]"
+                      length="3"
+                      lineageId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Output].Columns[qualifier2]"
+                      name="qualifier2"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Output].Columns[qualifier3]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Output].ExternalColumns[qualifier3]"
+                      lineageId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Output].Columns[qualifier3]"
+                      name="qualifier3"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Output].Columns[qualifier4]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Output].ExternalColumns[qualifier4]"
+                      length="16"
+                      lineageId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Output].Columns[qualifier4]"
+                      name="qualifier4"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Output].Columns[qualifier5]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Output].ExternalColumns[qualifier5]"
+                      length="2"
+                      lineageId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Output].Columns[qualifier5]"
+                      name="qualifier5"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Output].ExternalColumns[ParentUID]"
+                      dataType="wstr"
+                      length="36"
+                      name="ParentUID" />
+                    <externalMetadataColumn
+                      refId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Output].ExternalColumns[eventDate]"
+                      dataType="dbTimeStamp2"
+                      name="eventDate"
+                      scale="7" />
+                    <externalMetadataColumn
+                      refId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Output].ExternalColumns[ManifestationUID]"
+                      dataType="wstr"
+                      length="36"
+                      name="ManifestationUID" />
+                    <externalMetadataColumn
+                      refId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Output].ExternalColumns[SAP]"
+                      dataType="wstr"
+                      length="5"
+                      name="SAP" />
+                    <externalMetadataColumn
+                      refId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Output].ExternalColumns[Subtitled]"
+                      dataType="wstr"
+                      length="5"
+                      name="Subtitled" />
+                    <externalMetadataColumn
+                      refId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Output].ExternalColumns[SubtitledLanguage]"
+                      dataType="wstr"
+                      length="6"
+                      name="SubtitledLanguage" />
+                    <externalMetadataColumn
+                      refId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Output].ExternalColumns[AlternateEventID]"
+                      dataType="wstr"
+                      length="36"
+                      name="AlternateEventID" />
+                    <externalMetadataColumn
+                      refId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Output].ExternalColumns[airingType]"
+                      dataType="wstr"
+                      length="8"
+                      name="airingType" />
+                    <externalMetadataColumn
+                      refId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Output].ExternalColumns[playRun]"
+                      dataType="i2"
+                      name="playRun" />
+                    <externalMetadataColumn
+                      refId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Output].ExternalColumns[playType]"
+                      dataType="wstr"
+                      length="80"
+                      name="playType" />
+                    <externalMetadataColumn
+                      refId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Output].ExternalColumns[AirDateTime]"
+                      dataType="dbTimeStamp2"
+                      name="AirDateTime"
+                      scale="7" />
+                    <externalMetadataColumn
+                      refId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Output].ExternalColumns[ProviderSource]"
+                      dataType="wstr"
+                      length="80"
+                      name="ProviderSource" />
+                    <externalMetadataColumn
+                      refId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Output].ExternalColumns[ProviderSourceName]"
+                      dataType="wstr"
+                      length="80"
+                      name="ProviderSourceName" />
+                    <externalMetadataColumn
+                      refId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Output].ExternalColumns[ProviderTimezone]"
+                      dataType="wstr"
+                      length="3"
+                      name="ProviderTimezone" />
+                    <externalMetadataColumn
+                      refId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Output].ExternalColumns[TLN_TPT_ID]"
+                      dataType="i4"
+                      name="TLN_TPT_ID" />
+                    <externalMetadataColumn
+                      refId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Output].ExternalColumns[duration]"
+                      dataType="i4"
+                      name="duration" />
+                    <externalMetadataColumn
+                      refId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Output].ExternalColumns[dubbedLanguage]"
+                      dataType="i4"
+                      name="dubbedLanguage" />
+                    <externalMetadataColumn
+                      refId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Output].ExternalColumns[qualifier1]"
+                      dataType="wstr"
+                      length="2"
+                      name="qualifier1" />
+                    <externalMetadataColumn
+                      refId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Output].ExternalColumns[qualifier2]"
+                      dataType="wstr"
+                      length="3"
+                      name="qualifier2" />
+                    <externalMetadataColumn
+                      refId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Output].ExternalColumns[qualifier3]"
+                      dataType="i4"
+                      name="qualifier3" />
+                    <externalMetadataColumn
+                      refId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Output].ExternalColumns[qualifier4]"
+                      dataType="wstr"
+                      length="16"
+                      name="qualifier4" />
+                    <externalMetadataColumn
+                      refId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Output].ExternalColumns[qualifier5]"
+                      dataType="wstr"
+                      length="2"
+                      name="qualifier5" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Error Output]"
+                  isErrorOut="true"
+                  name="ADO NET Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Error Output].Columns[ParentUID]"
+                      dataType="wstr"
+                      length="36"
+                      lineageId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Error Output].Columns[ParentUID]"
+                      name="ParentUID" />
+                    <outputColumn
+                      refId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Error Output].Columns[eventDate]"
+                      dataType="dbTimeStamp2"
+                      lineageId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Error Output].Columns[eventDate]"
+                      name="eventDate"
+                      scale="7" />
+                    <outputColumn
+                      refId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Error Output].Columns[ManifestationUID]"
+                      dataType="wstr"
+                      length="36"
+                      lineageId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Error Output].Columns[ManifestationUID]"
+                      name="ManifestationUID" />
+                    <outputColumn
+                      refId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Error Output].Columns[SAP]"
+                      dataType="wstr"
+                      length="5"
+                      lineageId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Error Output].Columns[SAP]"
+                      name="SAP" />
+                    <outputColumn
+                      refId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Error Output].Columns[Subtitled]"
+                      dataType="wstr"
+                      length="5"
+                      lineageId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Error Output].Columns[Subtitled]"
+                      name="Subtitled" />
+                    <outputColumn
+                      refId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Error Output].Columns[SubtitledLanguage]"
+                      dataType="wstr"
+                      length="6"
+                      lineageId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Error Output].Columns[SubtitledLanguage]"
+                      name="SubtitledLanguage" />
+                    <outputColumn
+                      refId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Error Output].Columns[AlternateEventID]"
+                      dataType="wstr"
+                      length="36"
+                      lineageId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Error Output].Columns[AlternateEventID]"
+                      name="AlternateEventID" />
+                    <outputColumn
+                      refId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Error Output].Columns[airingType]"
+                      dataType="wstr"
+                      length="8"
+                      lineageId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Error Output].Columns[airingType]"
+                      name="airingType" />
+                    <outputColumn
+                      refId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Error Output].Columns[playRun]"
+                      dataType="i2"
+                      lineageId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Error Output].Columns[playRun]"
+                      name="playRun" />
+                    <outputColumn
+                      refId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Error Output].Columns[playType]"
+                      dataType="wstr"
+                      length="80"
+                      lineageId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Error Output].Columns[playType]"
+                      name="playType" />
+                    <outputColumn
+                      refId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Error Output].Columns[AirDateTime]"
+                      dataType="dbTimeStamp2"
+                      lineageId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Error Output].Columns[AirDateTime]"
+                      name="AirDateTime"
+                      scale="7" />
+                    <outputColumn
+                      refId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Error Output].Columns[ProviderSource]"
+                      dataType="wstr"
+                      length="80"
+                      lineageId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Error Output].Columns[ProviderSource]"
+                      name="ProviderSource" />
+                    <outputColumn
+                      refId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Error Output].Columns[ProviderSourceName]"
+                      dataType="wstr"
+                      length="80"
+                      lineageId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Error Output].Columns[ProviderSourceName]"
+                      name="ProviderSourceName" />
+                    <outputColumn
+                      refId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Error Output].Columns[ProviderTimezone]"
+                      dataType="wstr"
+                      length="3"
+                      lineageId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Error Output].Columns[ProviderTimezone]"
+                      name="ProviderTimezone" />
+                    <outputColumn
+                      refId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Error Output].Columns[TLN_TPT_ID]"
+                      dataType="i4"
+                      lineageId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Error Output].Columns[TLN_TPT_ID]"
+                      name="TLN_TPT_ID" />
+                    <outputColumn
+                      refId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Error Output].Columns[duration]"
+                      dataType="i4"
+                      lineageId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Error Output].Columns[duration]"
+                      name="duration" />
+                    <outputColumn
+                      refId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Error Output].Columns[dubbedLanguage]"
+                      dataType="i4"
+                      lineageId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Error Output].Columns[dubbedLanguage]"
+                      name="dubbedLanguage" />
+                    <outputColumn
+                      refId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Error Output].Columns[qualifier1]"
+                      dataType="wstr"
+                      length="2"
+                      lineageId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Error Output].Columns[qualifier1]"
+                      name="qualifier1" />
+                    <outputColumn
+                      refId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Error Output].Columns[qualifier2]"
+                      dataType="wstr"
+                      length="3"
+                      lineageId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Error Output].Columns[qualifier2]"
+                      name="qualifier2" />
+                    <outputColumn
+                      refId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Error Output].Columns[qualifier3]"
+                      dataType="i4"
+                      lineageId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Error Output].Columns[qualifier3]"
+                      name="qualifier3" />
+                    <outputColumn
+                      refId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Error Output].Columns[qualifier4]"
+                      dataType="wstr"
+                      length="16"
+                      lineageId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Error Output].Columns[qualifier4]"
+                      name="qualifier4" />
+                    <outputColumn
+                      refId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Error Output].Columns[qualifier5]"
+                      dataType="wstr"
+                      length="2"
+                      lineageId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Error Output].Columns[qualifier5]"
+                      name="qualifier5" />
+                    <outputColumn
+                      refId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\load MosEvent.Paths[ADO NET Source Output]"
+              endId="Package\load MosEvent\Dest PBS MOSEvent.Inputs[ADO NET Destination Input]"
+              name="ADO NET Source Output"
+              startId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Output]" />
           </paths>
         </pipeline>
       </DTS:ObjectData>
@@ -8814,6 +9705,22 @@ FROM trafficdata.[PBS].vwMOSEpisodeContactAgnostic</property>
       DTS:ObjectName="Constraint 17"
       DTS:To="Package\Load MOSCompilation Entry" />
     <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 18]"
+      DTS:CreationName=""
+      DTS:DTSID="{4064DDE6-12C6-4CAF-A837-EE4365C64249}"
+      DTS:From="Package\Execute SQL Task"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 18"
+      DTS:To="Package\load MosEvent" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 19]"
+      DTS:CreationName=""
+      DTS:DTSID="{810295CA-1C8A-4EEC-8903-4275A9300033}"
+      DTS:From="Package\Load Series Credits"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 19"
+      DTS:To="Package\Load SeriesCredits Producer" />
+    <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 2]"
       DTS:CreationName=""
       DTS:DTSID="{603B9CED-AE5F-4F3A-8663-AEC85A178D7B}"
@@ -8953,7 +9860,7 @@ FROM trafficdata.[PBS].vwMOSEpisodeContactAgnostic</property>
         <NodeLayout
           Size="213,42"
           Id="Package\Load SeriesCredits Producer"
-          TopLeft="574.464285714286,753.392857142857" />
+          TopLeft="778.464285714286,681.392857142857" />
         <NodeLayout
           Size="159,42"
           Id="Package\xref Episode Org"
@@ -9550,6 +10457,66 @@ FROM trafficdata.[PBS].vwMOSEpisodeContactAgnostic</property>
                     Point3="-10.5,25" />
                   <mssgle:LineSegment
                     End="-10.5,34.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="147,42"
+          Id="Package\load MosEvent"
+          TopLeft="1601,322" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 18]"
+          TopLeft="633.727272727273,87">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="1040.77272727273,235"
+              Start="0,0"
+              End="1040.77272727273,227.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,38.6116373477672" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,38.6116373477672"
+                    Point2="0,42.6116373477672"
+                    Point3="4,42.6116373477672" />
+                  <mssgle:LineSegment
+                    End="1036.77272727273,42.6116373477672" />
+                  <mssgle:CubicBezierSegment
+                    Point1="1036.77272727273,42.6116373477672"
+                    Point2="1040.77272727273,42.6116373477672"
+                    Point3="1040.77272727273,46.6116373477672" />
+                  <mssgle:LineSegment
+                    End="1040.77272727273,227.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 19]"
+          TopLeft="888.357142857143,621.75">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,59.642857142857"
+              Start="0,0"
+              End="0,52.142857142857">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.142857142857" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -10815,6 +11782,72 @@ FROM trafficdata.[PBS].vwMOSEpisodeContactAgnostic</property>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\xref Series Org\ADO NET Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\load MosEvent">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="228,42"
+          Id="Package\load MosEvent\Source TrafficData vwMosEvent"
+          TopLeft="280,132" />
+        <NodeLayout
+          Size="173,42"
+          Id="Package\load MosEvent\Dest PBS MOSEvent"
+          TopLeft="317,307" />
+        <EdgeLayout
+          Id="Package\load MosEvent.Paths[ADO NET Source Output]"
+          TopLeft="394,174">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="9.5,133"
+              Start="0,0"
+              End="9.5,125.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,62.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,62.5"
+                    Point2="0,66.5"
+                    Point3="4,66.5" />
+                  <mssgle:LineSegment
+                    End="5.5,66.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="5.5,66.5"
+                    Point2="9.5,66.5"
+                    Point3="9.5,70.5" />
+                  <mssgle:LineSegment
+                    End="9.5,125.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\load MosEvent\Source TrafficData vwMosEvent">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\load MosEvent\Dest PBS MOSEvent">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
