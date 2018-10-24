@@ -12,8 +12,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="MOSTablesLoad"
   DTS:PackageType="5"
-  DTS:VersionBuild="62"
-  DTS:VersionGUID="{92C83398-2067-445F-8D7B-6095754FBE3F}">
+  DTS:VersionBuild="71"
+  DTS:VersionGUID="{F609D0E2-3BCB-41D2-8F00-1CDDBBBB2B3E}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">6</DTS:Property>
   <DTS:ConnectionManagers>
@@ -28,7 +28,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAArQUwPWSOn0KLzrEGz12ruAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAC/XNZaaoFdZkUFmbnSeTHNAAAAAASAAACgAAAAEAAAABlQlloj/L3SQz/7p1cE94wYAAAAwt3w3+R5TXNrIb5ZzcF68Xh1xnkj2w3gFAAAAB7QsuGfzOyRlZn8wtMaj4pTtT9u</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAArQUwPWSOn0KLzrEGz12ruAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADE9Q/x9wWtKXcbzW+rEkBWAAAAAASAAACgAAAAEAAAAOqSdPMEhQpJN9tIUpJhh9IYAAAATH9LlA388RzYK/60CEXtNkBpk0m+0cLOFAAAAE9YuD9jmh1g97ZfI+eKvU2x/SDp</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -43,7 +43,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAArQUwPWSOn0KLzrEGz12ruAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABl4gJmhvrOJQB7ylQ4dJ2IAAAAAASAAACgAAAAEAAAAOKJ7QmdtFl3MWsLKFFFkrEYAAAAzG+q+IUCWtynNY5Jz7NHHk2H1n7gis6OFAAAAI5OXLOHglRxO2wDVvOlyp12VyrZ</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAArQUwPWSOn0KLzrEGz12ruAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADxGNsWNZEepVxST9WAFUAIAAAAAASAAACgAAAAEAAAADJAR0zZXd2UcHryXj496hMYAAAAC4xeHQye5kT4mFU2wLH9ozrSvKTgx5TPFAAAAJELETLy6VfUtDjYkwFzio1nIvGj</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -1369,7 +1369,7 @@ FROM    trafficdata.[PBS].[vwMOSEpisode]
                     <inputColumn
                       refId="Package\Load MOSCompilation\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Compilation.ReleaseDate]"
                       cachedDataType="wstr"
-                      cachedLength="5"
+                      cachedLength="25"
                       cachedName="Compilation.ReleaseDate"
                       externalMetadataColumnId="Package\Load MOSCompilation\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Compilation.ReleaseDate]"
                       lineageId="Package\Load MOSCompilation\ADO NET Source.Outputs[ADO NET Source Output].Columns[Compilation.ReleaseDate]" />
@@ -1393,37 +1393,37 @@ FROM    trafficdata.[PBS].[vwMOSEpisode]
                     <externalMetadataColumn
                       refId="Package\Load MOSCompilation\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Compilation.StructuralType]"
                       dataType="wstr"
-                      length="11"
+                      length="500"
                       name="Compilation.StructuralType" />
                     <externalMetadataColumn
                       refId="Package\Load MOSCompilation\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Compilation.Referent Type]"
                       dataType="wstr"
-                      length="11"
+                      length="500"
                       name="Compilation.Referent Type" />
                     <externalMetadataColumn
                       refId="Package\Load MOSCompilation\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Compilation.UID]"
                       dataType="wstr"
-                      length="58"
+                      length="500"
                       name="Compilation.UID" />
                     <externalMetadataColumn
                       refId="Package\Load MOSCompilation\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Compilation.ContentIdentifier]"
                       dataType="wstr"
-                      length="63"
+                      length="500"
                       name="Compilation.ContentIdentifier" />
                     <externalMetadataColumn
                       refId="Package\Load MOSCompilation\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Compilation.ReleaseDate]"
                       dataType="wstr"
-                      length="5"
+                      length="500"
                       name="Compilation.ReleaseDate" />
                     <externalMetadataColumn
                       refId="Package\Load MOSCompilation\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Compilation.Title]"
                       dataType="wstr"
-                      length="80"
+                      length="500"
                       name="Compilation.Title" />
                     <externalMetadataColumn
                       refId="Package\Load MOSCompilation\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Compilation.CompilationClass]"
                       dataType="wstr"
-                      length="9"
+                      length="500"
                       name="Compilation.CompilationClass" />
                   </externalMetadataColumns>
                 </input>
@@ -1472,14 +1472,14 @@ FROM    trafficdata.[PBS].[vwMOSEpisode]
 		[Compilation.Referent Type],
 		[Compilation.UID],
 		[Compilation.ContentIdentifier],
-		[Compilation.ReleaseDate],
+		CONVERT(nvarchar(25), [Compilation.ReleaseDate], 120) as [Compilation.ReleaseDate],
 		[Compilation.Title],
 		[Compilation.CompilationClass]
 from	[PBS].[vwMOSCompilation]</property>
                 <property
                   dataType="System.Int32"
                   description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
-                  name="CommandTimeout">30</property>
+                  name="CommandTimeout">0</property>
                 <property
                   dataType="System.Boolean"
                   description="Indicates whether to allow non-string external columns to be implicitly converted to strings at the output columns."
@@ -1558,7 +1558,7 @@ from	[PBS].[vwMOSCompilation]</property>
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Load MOSCompilation\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Compilation.ReleaseDate]"
-                      length="5"
+                      length="25"
                       lineageId="Package\Load MOSCompilation\ADO NET Source.Outputs[ADO NET Source Output].Columns[Compilation.ReleaseDate]"
                       name="Compilation.ReleaseDate"
                       truncationRowDisposition="FailComponent" />
@@ -1608,7 +1608,7 @@ from	[PBS].[vwMOSCompilation]</property>
                     <externalMetadataColumn
                       refId="Package\Load MOSCompilation\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Compilation.ReleaseDate]"
                       dataType="wstr"
-                      length="5"
+                      length="25"
                       name="Compilation.ReleaseDate" />
                     <externalMetadataColumn
                       refId="Package\Load MOSCompilation\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Compilation.Title]"
@@ -1654,7 +1654,7 @@ from	[PBS].[vwMOSCompilation]</property>
                     <outputColumn
                       refId="Package\Load MOSCompilation\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Compilation.ReleaseDate]"
                       dataType="wstr"
-                      length="5"
+                      length="25"
                       lineageId="Package\Load MOSCompilation\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Compilation.ReleaseDate]"
                       name="Compilation.ReleaseDate" />
                     <outputColumn
@@ -1860,7 +1860,7 @@ from	[PBS].[vwMOSCompilation]</property>
                 <property
                   dataType="System.Int32"
                   description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
-                  name="CommandTimeout">30</property>
+                  name="CommandTimeout">0</property>
                 <property
                   dataType="System.Boolean"
                   description="Indicates whether to allow non-string external columns to be implicitly converted to strings at the output columns."
@@ -9814,7 +9814,7 @@ FROM trafficdata.[PBS].vwMOSEpisodeContactAgnostic</property>
           Id="Package\Load MOS Credits"
           TopLeft="1400.5,323.5" />
         <NodeLayout
-          Size="184,42"
+          Size="182,42"
           Id="Package\Load MOSCompilation"
           TopLeft="607,317.75" />
         <NodeLayout
@@ -9825,6 +9825,10 @@ FROM trafficdata.[PBS].vwMOSEpisodeContactAgnostic</property>
           Size="165,42"
           Id="Package\Load MOSEpisode"
           TopLeft="20,315" />
+        <NodeLayout
+          Size="147,42"
+          Id="Package\load MosEvent"
+          TopLeft="1601,322" />
         <NodeLayout
           Size="192,42"
           Id="Package\Load MOSManifestation"
@@ -10071,30 +10075,30 @@ FROM trafficdata.[PBS].vwMOSEpisodeContactAgnostic</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 14]"
-          TopLeft="569.5,87">
+          TopLeft="562.363636363636,87">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="129.5,230.75"
+              EndConnector="135.636363636364,230.75"
               Start="0,0"
-              End="129.5,223.25">
+              End="135.636363636364,223.25">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,111.375" />
+                    End="0,106.159372300605" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,111.375"
-                    Point2="0,115.375"
-                    Point3="4,115.375" />
+                    Point1="0,106.159372300605"
+                    Point2="0,110.159372300605"
+                    Point3="4,110.159372300605" />
                   <mssgle:LineSegment
-                    End="125.5,115.375" />
+                    End="131.636363636364,110.159372300605" />
                   <mssgle:CubicBezierSegment
-                    Point1="125.5,115.375"
-                    Point2="129.5,115.375"
-                    Point3="129.5,119.375" />
+                    Point1="131.636363636364,110.159372300605"
+                    Point2="135.636363636364,110.159372300605"
+                    Point3="135.636363636364,114.159372300605" />
                   <mssgle:LineSegment
-                    End="129.5,223.25" />
+                    End="135.636363636364,223.25" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -10173,13 +10177,13 @@ FROM trafficdata.[PBS].vwMOSEpisodeContactAgnostic</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 17]"
-          TopLeft="699,359.75">
+          TopLeft="698,359.75">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-24,94.25"
+              EndConnector="-23,94.25"
               Start="0,0"
-              End="-24,86.75">
+              End="-23,86.75">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
@@ -10190,13 +10194,69 @@ FROM trafficdata.[PBS].vwMOSEpisodeContactAgnostic</property>
                     Point2="0,47.125"
                     Point3="-4,47.125" />
                   <mssgle:LineSegment
-                    End="-20,47.125" />
+                    End="-19,47.125" />
                   <mssgle:CubicBezierSegment
-                    Point1="-20,47.125"
-                    Point2="-24,47.125"
-                    Point3="-24,51.125" />
+                    Point1="-19,47.125"
+                    Point2="-23,47.125"
+                    Point3="-23,51.125" />
                   <mssgle:LineSegment
-                    End="-24,86.75" />
+                    End="-23,86.75" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 18]"
+          TopLeft="633.727272727273,87">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="1040.77272727273,235"
+              Start="0,0"
+              End="1040.77272727273,227.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,38.6116373477672" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,38.6116373477672"
+                    Point2="0,42.6116373477672"
+                    Point3="4,42.6116373477672" />
+                  <mssgle:LineSegment
+                    End="1036.77272727273,42.6116373477672" />
+                  <mssgle:CubicBezierSegment
+                    Point1="1036.77272727273,42.6116373477672"
+                    Point2="1040.77272727273,42.6116373477672"
+                    Point3="1040.77272727273,46.6116373477672" />
+                  <mssgle:LineSegment
+                    End="1040.77272727273,227.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 19]"
+          TopLeft="888.357142857143,621.75">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,59.642857142857"
+              Start="0,0"
+              End="0,52.142857142857">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.142857142857" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -10465,66 +10525,6 @@ FROM trafficdata.[PBS].vwMOSEpisodeContactAgnostic</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="147,42"
-          Id="Package\load MosEvent"
-          TopLeft="1601,322" />
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 18]"
-          TopLeft="633.727272727273,87">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="1040.77272727273,235"
-              Start="0,0"
-              End="1040.77272727273,227.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,38.6116373477672" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,38.6116373477672"
-                    Point2="0,42.6116373477672"
-                    Point3="4,42.6116373477672" />
-                  <mssgle:LineSegment
-                    End="1036.77272727273,42.6116373477672" />
-                  <mssgle:CubicBezierSegment
-                    Point1="1036.77272727273,42.6116373477672"
-                    Point2="1040.77272727273,42.6116373477672"
-                    Point3="1040.77272727273,46.6116373477672" />
-                  <mssgle:LineSegment
-                    End="1040.77272727273,227.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 19]"
-          TopLeft="888.357142857143,621.75">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,59.642857142857"
-              Start="0,0"
-              End="0,52.142857142857">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.142857142857" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </Package>
@@ -10726,7 +10726,7 @@ FROM trafficdata.[PBS].vwMOSEpisodeContactAgnostic</property>
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="160,42"
+          Size="158,42"
           Id="Package\Load MOSCompilation\ADO NET Source"
           TopLeft="185,97" />
         <NodeLayout
@@ -10735,30 +10735,18 @@ FROM trafficdata.[PBS].vwMOSEpisodeContactAgnostic</property>
           TopLeft="166,246" />
         <EdgeLayout
           Id="Package\Load MOSCompilation.Paths[ADO NET Source Output]"
-          TopLeft="265,139">
+          TopLeft="260.25,139">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-8.5,107"
+              EndConnector="0,107"
               Start="0,0"
-              End="-8.5,99.5">
+              End="0,99.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,49.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,49.5"
-                    Point2="0,53.5"
-                    Point3="-4,53.5" />
-                  <mssgle:LineSegment
-                    End="-4.5,53.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-4.5,53.5"
-                    Point2="-8.5,53.5"
-                    Point3="-8.5,57.5" />
-                  <mssgle:LineSegment
-                    End="-8.5,99.5" />
+                    End="0,99.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -10919,18 +10907,86 @@ FROM trafficdata.[PBS].vwMOSEpisodeContactAgnostic</property>
     </Properties>
   </PipelineComponentMetadata>
   <TaskHost
+    design-time-name="Package\load MosEvent">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="173,42"
+          Id="Package\load MosEvent\Dest PBS MOSEvent"
+          TopLeft="317,307" />
+        <NodeLayout
+          Size="228,42"
+          Id="Package\load MosEvent\Source TrafficData vwMosEvent"
+          TopLeft="280,132" />
+        <EdgeLayout
+          Id="Package\load MosEvent.Paths[ADO NET Source Output]"
+          TopLeft="394,174">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="9.5,133"
+              Start="0,0"
+              End="9.5,125.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,62.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,62.5"
+                    Point2="0,66.5"
+                    Point3="4,66.5" />
+                  <mssgle:LineSegment
+                    End="5.5,66.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="5.5,66.5"
+                    Point2="9.5,66.5"
+                    Point3="9.5,70.5" />
+                  <mssgle:LineSegment
+                    End="9.5,125.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\load MosEvent\Dest PBS MOSEvent">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\load MosEvent\Source TrafficData vwMosEvent">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
     design-time-name="Package\Load MOSManifestation">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="160,42"
-          Id="Package\Load MOSManifestation\ADO NET Source"
-          TopLeft="185,97" />
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="181,42"
           Id="Package\Load MOSManifestation\ADO NET Destination"
           TopLeft="166,246" />
+        <NodeLayout
+          Size="160,42"
+          Id="Package\Load MOSManifestation\ADO NET Source"
+          TopLeft="185,97" />
         <EdgeLayout
           Id="Package\Load MOSManifestation.Paths[ADO NET Source Output]"
           TopLeft="265,139">
@@ -10962,7 +11018,9 @@ FROM trafficdata.[PBS].vwMOSEpisodeContactAgnostic</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -11782,72 +11840,6 @@ FROM trafficdata.[PBS].vwMOSEpisodeContactAgnostic</property>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\xref Series Org\ADO NET Source">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <TaskHost
-    design-time-name="Package\load MosEvent">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="228,42"
-          Id="Package\load MosEvent\Source TrafficData vwMosEvent"
-          TopLeft="280,132" />
-        <NodeLayout
-          Size="173,42"
-          Id="Package\load MosEvent\Dest PBS MOSEvent"
-          TopLeft="317,307" />
-        <EdgeLayout
-          Id="Package\load MosEvent.Paths[ADO NET Source Output]"
-          TopLeft="394,174">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="9.5,133"
-              Start="0,0"
-              End="9.5,125.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,62.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,62.5"
-                    Point2="0,66.5"
-                    Point3="4,66.5" />
-                  <mssgle:LineSegment
-                    End="5.5,66.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="5.5,66.5"
-                    Point2="9.5,66.5"
-                    Point3="9.5,70.5" />
-                  <mssgle:LineSegment
-                    End="9.5,125.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\load MosEvent\Source TrafficData vwMosEvent">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\load MosEvent\Dest PBS MOSEvent">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
