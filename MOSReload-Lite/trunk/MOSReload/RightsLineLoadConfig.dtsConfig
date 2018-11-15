@@ -178,6 +178,6 @@
     <ConfiguredValue>0</ConfiguredValue>
   </Configuration>
   <Configuration ConfiguredType="Property" Path="\Package.Variables[User::DoTruncateXREFIDs].Properties[Value]" ValueType="Boolean">
-    <ConfiguredValue>1</ConfiguredValue>
+    <ConfiguredValue>0</ConfiguredValue>
   </Configuration>
 </DTSConfiguration>
