@@ -12,8 +12,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="MOSTablesLoad"
   DTS:PackageType="5"
-  DTS:VersionBuild="153"
-  DTS:VersionGUID="{15648DAB-7E63-4356-92B4-D30ABCEAA517}">
+  DTS:VersionBuild="157"
+  DTS:VersionGUID="{4327399A-FF03-4795-8CCE-DF9E12BE6B7F}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">6</DTS:Property>
   <DTS:ConnectionManagers>
@@ -28,7 +28,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAArQUwPWSOn0KLzrEGz12ruAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABhFHXXz95xVx+QrZ1eglEYAAAAAASAAACgAAAAEAAAACuSRThxrpoBvFZV1KOMe7AYAAAA2eh05r3JsK7yS6JcnHbS5bSIOWZTR+VBFAAAAM12Dw0kObckrIzB91x+41G03NN4</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAArQUwPWSOn0KLzrEGz12ruAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAriYw3G2Md6YWdEZNwwLu+AAAAAASAAACgAAAAEAAAAEnL4j4Qv7+I38jpjTfgVLgYAAAAfTf4HGyzn6N+5oE8mCGaFxtp1NfeOiXiFAAAAEmUBy71NlrC9rGfp5xbg0OYd7pY</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -43,7 +43,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAArQUwPWSOn0KLzrEGz12ruAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAQ19XOoWOJtZFKoY8h0TvbAAAAAASAAACgAAAAEAAAAOCWWc/9Vq/Lb6/2/qKUKWYYAAAAOu1cZXvnrobYnnqz+Gh/+AHAYQdIDvkeFAAAAPhloEb6Xa8AKuXOSnmxuaT4GBgB</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAArQUwPWSOn0KLzrEGz12ruAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACG543zWFh4NOR6tC8hg4UvAAAAAASAAACgAAAAEAAAAHwZ6cYQR/eW2LdrBDt3zVsYAAAAV6wcGVBTQGXJKSjzTmjxYp7TcRdV7TUfFAAAADjR7mCV8mnVoDEqrGRSRnn1SRdK</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -58,7 +58,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAArQUwPWSOn0KLzrEGz12ruAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADgTWmUem5D2fzRUjBjxky+AAAAAASAAACgAAAAEAAAANY0SS+fXxNtzpHS51YtdPcYAAAAs73UsH+llWUGs6GFJiETdF+9heneGmMqFAAAAB+GwDNub9yC5pAK7aJrt+q/HOha</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAArQUwPWSOn0KLzrEGz12ruAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAWpgSYsyz+Nao8WQoqu+2FAAAAAASAAACgAAAAEAAAAGV5jZ3MSVUf+Y2EWB15N+EYAAAA+sta8PAFdK5SC4p3w9NhO8CTpby9DHonFAAAAOVZY9Ry5/1/t2JGEwTBYd52N+KH</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -4097,7 +4097,7 @@ from	[PBS].[vwMOSCompilation]</property>
                     <inputColumn
                       refId="Package\Load MOSEpisode\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Episode.EpisodeClass]"
                       cachedDataType="wstr"
-                      cachedLength="200"
+                      cachedLength="13"
                       cachedName="Episode.EpisodeClass"
                       externalMetadataColumnId="Package\Load MOSEpisode\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Episode.EpisodeClass]"
                       lineageId="Package\Load MOSEpisode\ADO NET Source.Outputs[ADO NET Source Output].Columns[Episode.EpisodeClass]" />
@@ -4318,16 +4318,63 @@ from	[PBS].[vwMOSCompilation]</property>
                   description="Specifies the SQL statement used by the component to extract data."
                   expressionType="Notify"
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">SELECT distinct a.[ass_id]
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">select   Q.ass_id
+              , Q.[Episode.ContentIdentifier]
+              , Q.[Episode.UID]
+              , Q.[Episode.ParentID]
+              , Q.[Episode.Referent.Type]
+              , Q.[Episode.Title120]
+              , Q.[Episode.TitleClass]
+              , Q.[Episode.EpisodeNumber]
+              , Q.[Episode.Title]
+              , Q.[Episode.EpisodeClass]
+              , Q.[Episode.SynopsisShort]
+              , Q.[Episode.SynopsisLong]
+              , Q.[Episode.CountryOfOrigin]
+              , Q.[Episode.PrimaryGenre]
+              , Q.[Episode.SecondaryGenre]
+              , Q.[Episode.Distribution.Number]
+              , Q.[Episode.ReleaseDate]
+              , Q.[Episode.ApproximateLength]
+              , Q.[Episode.Language.Primary.mode]
+              , Q.[Episode.LanguagePrimary]
+              , Q.[Episode.LanguageSecondary]
+              , Q.DealID
+from
+(
+select distinct a.[ass_id]
       ,[Episode.ContentIdentifier]
       ,[EMMEpisode.UID] as [Episode.UID]
       ,[EMMEpisode.ParentID] as [Episode.ParentID]
       ,[Episode.Referent.Type]
-      ,[Episode.Title]
       ,[Episode.Title120]
       ,[Episode.TitleClass]
       ,[Episode.EpisodeNumber]
-      ,[Episode.EpisodeClass]
+	  ,[Episode.Title]
+	  ,case 
+		when a.[ass_id] &lt;= 607101389 then 
+			case d.ACA_DESC
+				when 'Episode in a Series' then 'Standalone'
+				when 'One-time-only' then
+					case 
+						when upper([Episode.Title]) like '%SPECIAL%' then 'Special'
+						when  upper([Episode.Title]) not like '%SPECIAL%' then 'one-time-only'
+
+					end
+				when 'Series' then 'Main'
+				else null
+			end
+		else 
+			case P.EXT_INTEGER
+				when 609587740 then 'one-time-only'
+				when 609587737 then 'Main'
+				when 619411205 then 'Special'
+				when 619411780 then 'Standalone'
+				else null
+			end
+
+	   end as [Episode.EpisodeClass]
+
       ,[Episode.SynopsisShort]
       ,[Episode.SynopsisLong]
       ,[Episode.CountryOfOrigin]
@@ -4340,10 +4387,19 @@ from	[PBS].[vwMOSCompilation]</property>
       ,[Episode.LanguagePrimary]
       ,[Episode.LanguageSecondary]
       ,[DealID]
-  FROM [PBS].vwMOSEpisodeContactAgnostic a
-join	bv.ASSET b on b.ass_id = a.ass_id
-join	[BV].[PBSFEEDDISTRIBUTOR] c on c.PBSFDS_ID = b.ASS_PBSFD_ID
-			and c.PBSFDS_ISPBSDISTRIBUTOR = 1</property>
+  FROM [PBS].vwMOSEpisodeContactAgnostic a with (nolock) 
+join	bv.ASSET b  with (nolock)  on b.ass_id = a.ass_id
+join	[BV].[PBSFEEDDISTRIBUTOR] c  with (nolock)  on c.PBSFDS_ID = b.ASS_PBSFD_ID
+			and c.PBSFDS_ISPBSDISTRIBUTOR = 1
+join	bv.ASSETCATEGORY d  with (nolock)  on d.ACA_ID = b.ASS_ACA_ID
+left outer join 
+	(
+		SELECT bb.ULU_DESC AS episodeclass,aa.EXT_OWNERRECORD_ID,aa.EXT_INTEGER
+		FROM BV.EXTENDEDDATA aa with (nolock)
+		left OUTER join BV.USERLOOKUP bb with (nolock) on aa.EXT_INTEGER = bb.ULU_ID
+		WHERE (aa.EXT_INTEGER in ( 609587740,609587737,619411205,619411780))
+	) P on p.EXT_OWNERRECORD_ID = a.ass_id
+) Q</property>
                 <property
                   dataType="System.Int32"
                   description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
@@ -4430,15 +4486,6 @@ join	[BV].[PBSFEEDDISTRIBUTOR] c on c.PBSFDS_ID = b.ASS_PBSFD_ID
                       name="Episode.Referent.Type"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Load MOSEpisode\ADO NET Source.Outputs[ADO NET Source Output].Columns[Episode.Title]"
-                      dataType="nText"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Load MOSEpisode\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Episode.Title]"
-                      lineageId="Package\Load MOSEpisode\ADO NET Source.Outputs[ADO NET Source Output].Columns[Episode.Title]"
-                      name="Episode.Title"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
                       refId="Package\Load MOSEpisode\ADO NET Source.Outputs[ADO NET Source Output].Columns[Episode.Title120]"
                       dataType="nText"
                       errorOrTruncationOperation="Conversion"
@@ -4467,12 +4514,21 @@ join	[BV].[PBSFEEDDISTRIBUTOR] c on c.PBSFDS_ID = b.ASS_PBSFD_ID
                       name="Episode.EpisodeNumber"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
+                      refId="Package\Load MOSEpisode\ADO NET Source.Outputs[ADO NET Source Output].Columns[Episode.Title]"
+                      dataType="nText"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load MOSEpisode\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Episode.Title]"
+                      lineageId="Package\Load MOSEpisode\ADO NET Source.Outputs[ADO NET Source Output].Columns[Episode.Title]"
+                      name="Episode.Title"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
                       refId="Package\Load MOSEpisode\ADO NET Source.Outputs[ADO NET Source Output].Columns[Episode.EpisodeClass]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Load MOSEpisode\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Episode.EpisodeClass]"
-                      length="200"
+                      length="13"
                       lineageId="Package\Load MOSEpisode\ADO NET Source.Outputs[ADO NET Source Output].Columns[Episode.EpisodeClass]"
                       name="Episode.EpisodeClass"
                       truncationRowDisposition="FailComponent" />
@@ -4617,10 +4673,6 @@ join	[BV].[PBSFEEDDISTRIBUTOR] c on c.PBSFDS_ID = b.ASS_PBSFD_ID
                       length="2"
                       name="Episode.Referent.Type" />
                     <externalMetadataColumn
-                      refId="Package\Load MOSEpisode\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Episode.Title]"
-                      dataType="nText"
-                      name="Episode.Title" />
-                    <externalMetadataColumn
                       refId="Package\Load MOSEpisode\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Episode.Title120]"
                       dataType="nText"
                       name="Episode.Title120" />
@@ -4634,9 +4686,13 @@ join	[BV].[PBSFEEDDISTRIBUTOR] c on c.PBSFDS_ID = b.ASS_PBSFD_ID
                       dataType="i4"
                       name="Episode.EpisodeNumber" />
                     <externalMetadataColumn
+                      refId="Package\Load MOSEpisode\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Episode.Title]"
+                      dataType="nText"
+                      name="Episode.Title" />
+                    <externalMetadataColumn
                       refId="Package\Load MOSEpisode\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Episode.EpisodeClass]"
                       dataType="wstr"
-                      length="200"
+                      length="13"
                       name="Episode.EpisodeClass" />
                     <externalMetadataColumn
                       refId="Package\Load MOSEpisode\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Episode.SynopsisShort]"
@@ -4728,11 +4784,6 @@ join	[BV].[PBSFEEDDISTRIBUTOR] c on c.PBSFDS_ID = b.ASS_PBSFD_ID
                       lineageId="Package\Load MOSEpisode\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Episode.Referent.Type]"
                       name="Episode.Referent.Type" />
                     <outputColumn
-                      refId="Package\Load MOSEpisode\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Episode.Title]"
-                      dataType="nText"
-                      lineageId="Package\Load MOSEpisode\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Episode.Title]"
-                      name="Episode.Title" />
-                    <outputColumn
                       refId="Package\Load MOSEpisode\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Episode.Title120]"
                       dataType="nText"
                       lineageId="Package\Load MOSEpisode\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Episode.Title120]"
@@ -4749,9 +4800,14 @@ join	[BV].[PBSFEEDDISTRIBUTOR] c on c.PBSFDS_ID = b.ASS_PBSFD_ID
                       lineageId="Package\Load MOSEpisode\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Episode.EpisodeNumber]"
                       name="Episode.EpisodeNumber" />
                     <outputColumn
+                      refId="Package\Load MOSEpisode\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Episode.Title]"
+                      dataType="nText"
+                      lineageId="Package\Load MOSEpisode\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Episode.Title]"
+                      name="Episode.Title" />
+                    <outputColumn
                       refId="Package\Load MOSEpisode\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Episode.EpisodeClass]"
                       dataType="wstr"
-                      length="200"
+                      length="13"
                       lineageId="Package\Load MOSEpisode\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Episode.EpisodeClass]"
                       name="Episode.EpisodeClass" />
                     <outputColumn
@@ -20098,6 +20154,10 @@ FROM trafficdata.[PBS].vwMOSEpisodeContactAgnostic</property>
           Id="Package\MOSEpisode UPSERT ID Only"
           TopLeft="269,764" />
         <NodeLayout
+          Size="165,42"
+          Id="Package\MosEvent UPSERT"
+          TopLeft="598,770" />
+        <NodeLayout
           Size="159,42"
           Id="Package\xref Episode Org"
           TopLeft="32,517" />
@@ -20847,10 +20907,6 @@ FROM trafficdata.[PBS].vwMOSEpisodeContactAgnostic</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="165,42"
-          Id="Package\MosEvent UPSERT"
-          TopLeft="598,770" />
       </GraphLayout>
     </LayoutInfo>
   </Package>
@@ -20858,7 +20914,7 @@ FROM trafficdata.[PBS].vwMOSEpisodeContactAgnostic</property>
     design-time-name="Package\Load EpsiodeCredits ExcutiveProducer">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="160,42"
           Id="Package\Load EpsiodeCredits ExcutiveProducer\ADO NET Source"
@@ -20898,7 +20954,9 @@ FROM trafficdata.[PBS].vwMOSEpisodeContactAgnostic</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -21240,7 +21298,7 @@ FROM trafficdata.[PBS].vwMOSEpisodeContactAgnostic</property>
     design-time-name="Package\Load MOSEpisode">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="158,42"
           Id="Package\Load MOSEpisode\ADO NET Source"
@@ -21280,9 +21338,7 @@ FROM trafficdata.[PBS].vwMOSEpisodeContactAgnostic</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -21512,7 +21568,7 @@ FROM trafficdata.[PBS].vwMOSEpisodeContactAgnostic</property>
     design-time-name="Package\Load MOSMOSSeason">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="160,42"
           Id="Package\Load MOSMOSSeason\ADO NET Source"
@@ -21552,7 +21608,9 @@ FROM trafficdata.[PBS].vwMOSEpisodeContactAgnostic</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -21578,7 +21636,7 @@ FROM trafficdata.[PBS].vwMOSEpisodeContactAgnostic</property>
     design-time-name="Package\Load MOSOffer">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="160,42"
           Id="Package\Load MOSOffer\ADO NET Source"
@@ -21618,7 +21676,9 @@ FROM trafficdata.[PBS].vwMOSEpisodeContactAgnostic</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -21644,7 +21704,7 @@ FROM trafficdata.[PBS].vwMOSEpisodeContactAgnostic</property>
     design-time-name="Package\Load MOSSeries">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="160,42"
           Id="Package\Load MOSSeries\ADO NET Source"
@@ -21684,7 +21744,9 @@ FROM trafficdata.[PBS].vwMOSEpisodeContactAgnostic</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -22907,6 +22969,58 @@ FROM trafficdata.[PBS].vwMOSEpisodeContactAgnostic</property>
     </Properties>
   </PipelineComponentMetadata>
   <TaskHost
+    design-time-name="Package\MosEvent UPSERT">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="173,42"
+          Id="Package\MosEvent UPSERT\Dest PBS MOSEvent"
+          TopLeft="317,307" />
+        <NodeLayout
+          Size="228,42"
+          Id="Package\MosEvent UPSERT\Source TrafficData vwMosEvent"
+          TopLeft="280,132" />
+        <EdgeLayout
+          Id="Package\MosEvent UPSERT.Paths[ADO NET Source Output]"
+          TopLeft="394,174">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="9.5,133"
+              Start="0,0"
+              End="9.5,125.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,62.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,62.5"
+                    Point2="0,66.5"
+                    Point3="4,66.5" />
+                  <mssgle:LineSegment
+                    End="5.5,66.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="5.5,66.5"
+                    Point2="9.5,66.5"
+                    Point3="9.5,70.5" />
+                  <mssgle:LineSegment
+                    End="9.5,125.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <TaskHost
     design-time-name="Package\xref Episode Org">
     <LayoutInfo>
       <GraphLayout
@@ -23166,55 +23280,5 @@ FROM trafficdata.[PBS].vwMOSEpisodeContactAgnostic</property>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
-  <TaskHost
-    design-time-name="Package\MosEvent UPSERT">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="173,42"
-          Id="Package\MosEvent UPSERT\Dest PBS MOSEvent"
-          TopLeft="317,307" />
-        <NodeLayout
-          Size="228,42"
-          Id="Package\MosEvent UPSERT\Source TrafficData vwMosEvent"
-          TopLeft="280,132" />
-        <EdgeLayout
-          Id="Package\MosEvent UPSERT.Paths[ADO NET Source Output]"
-          TopLeft="394,174">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="9.5,133"
-              Start="0,0"
-              End="9.5,125.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,62.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,62.5"
-                    Point2="0,66.5"
-                    Point3="4,66.5" />
-                  <mssgle:LineSegment
-                    End="5.5,66.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="5.5,66.5"
-                    Point2="9.5,66.5"
-                    Point3="9.5,70.5" />
-                  <mssgle:LineSegment
-                    End="9.5,125.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
 </Objects>]]></DTS:DesignTimeProperties>
 </DTS:Executable>
