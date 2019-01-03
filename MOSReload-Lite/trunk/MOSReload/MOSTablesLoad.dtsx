@@ -12,8 +12,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="MOSTablesLoad"
   DTS:PackageType="5"
-  DTS:VersionBuild="173"
-  DTS:VersionGUID="{1E7AA9E6-58CA-4A38-994A-E171E1C9D091}">
+  DTS:VersionBuild="174"
+  DTS:VersionGUID="{B85E72C3-CA5C-4D7F-86DE-4D7024BF7F66}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">6</DTS:Property>
   <DTS:ConnectionManagers>
@@ -28,7 +28,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAk9C8YJd1Qk+IP7+g9k9HRwAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAC1JgIuuufW/6eMFCYT7yi8AAAAAASAAACgAAAAEAAAAOzNHRy5pn4nVI41sDfWB7IYAAAAf/GXB+dz9kxBy91G0IKwWOsosPCciPfDFAAAAGgMwBG0J1LoVLDF8Of6vjZnhtcH</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAk9C8YJd1Qk+IP7+g9k9HRwAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAC8836pmJ34bjjXgGpDp/r8AAAAAASAAACgAAAAEAAAAIuRnZjyaLef8hGnOETj37cYAAAAXEE9xHGFlmURM514Vr3mClMLGSJoXhW1FAAAAJzlXssK1iqvFRDxVwznFqsdczIQ</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -43,7 +43,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAk9C8YJd1Qk+IP7+g9k9HRwAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACiKPvR0Gw0vUbSURbm/GucAAAAAASAAACgAAAAEAAAANzICcQhFH0kV+CezoI/qisYAAAAr59gcg7TGjFDsqlwV4FVZjU/dCbsUu/4FAAAADMtLddSGT/3qMsviZCksVnCvLLj</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAk9C8YJd1Qk+IP7+g9k9HRwAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAJYGxv81pSQ6enR1vR9fAKAAAAAASAAACgAAAAEAAAAFAPR0L6kx4+9Zd0GoPr2R8YAAAA/5NvauroFevwW71POQPQgKcXtvEpq6O/FAAAADwqE4WWrGGlxslCc/Rr+d8x5flA</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -58,7 +58,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAk9C8YJd1Qk+IP7+g9k9HRwAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACok0I0+s1VFfpmkkL8gi9GAAAAAASAAACgAAAAEAAAAId51qkoCRhz1nT7g7L/RaAYAAAAMoBWdGmma4Y9xD17A7nSkmsJrP+2sUiHFAAAAEMw4U8BpNfmF/K4WNDm2u12BiAe</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAk9C8YJd1Qk+IP7+g9k9HRwAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADE08pI+nlP+AHr3FmGNWfnAAAAAASAAACgAAAAEAAAAKAzP9XFTPXGPPk5ao5RZFIYAAAARuFHK8fX3fZrXa67qTpDolbxSWo6gjRzFAAAABm6tZdaeGXODisvrr9p4Om8Rd1j</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -8340,7 +8340,7 @@ from PBS.vwMOSUsage</property>
                       name="SqlCommand"
                       UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">select 	distinct [ass_id],
 	[EMMOffer.UID] as [Offer.UID],
-	[Offer.Entry.UID] as [Offer.Entry.UID],
+	[EMMOffer.Entry.UID] as [Offer.Entry.UID],
 	[Offer.Title] as [Offer.Title],
 	[Offer.ReferentType] as [Offer.ReferentType],
 	[Offer.StructuralType] as [Offer.StructuralType],
