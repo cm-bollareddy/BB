@@ -12,8 +12,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="MOSTablesLoad"
   DTS:PackageType="5"
-  DTS:VersionBuild="174"
-  DTS:VersionGUID="{B85E72C3-CA5C-4D7F-86DE-4D7024BF7F66}">
+  DTS:VersionBuild="177"
+  DTS:VersionGUID="{ADD75109-2A37-4ED0-AAF3-474872DD4842}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">6</DTS:Property>
   <DTS:ConnectionManagers>
@@ -28,7 +28,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAk9C8YJd1Qk+IP7+g9k9HRwAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAC8836pmJ34bjjXgGpDp/r8AAAAAASAAACgAAAAEAAAAIuRnZjyaLef8hGnOETj37cYAAAAXEE9xHGFlmURM514Vr3mClMLGSJoXhW1FAAAAJzlXssK1iqvFRDxVwznFqsdczIQ</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAk9C8YJd1Qk+IP7+g9k9HRwAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABw4xAnw/PT3npZpT3UEru9AAAAAASAAACgAAAAEAAAAM36bG8qZmbemtPNVQSEeTkYAAAAKHtIsm/1/HLkfSs7JfeTou1SAjTQLs/iFAAAAFqz0HTocCUILrTp6DjxzIp8rUZQ</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -43,7 +43,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAk9C8YJd1Qk+IP7+g9k9HRwAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAJYGxv81pSQ6enR1vR9fAKAAAAAASAAACgAAAAEAAAAFAPR0L6kx4+9Zd0GoPr2R8YAAAA/5NvauroFevwW71POQPQgKcXtvEpq6O/FAAAADwqE4WWrGGlxslCc/Rr+d8x5flA</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAk9C8YJd1Qk+IP7+g9k9HRwAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAD7JSa6+Lup/W+LyYLeJZnAAAAAASAAACgAAAAEAAAAKui9QG7rZPqziyU2bEUxYYYAAAAdrMVG8PdBdTAcztRS0vx7P8/4LCzI7yTFAAAACuFlJfodKwwoeMGxxIPsN3DMdLg</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -58,7 +58,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAk9C8YJd1Qk+IP7+g9k9HRwAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADE08pI+nlP+AHr3FmGNWfnAAAAAASAAACgAAAAEAAAAKAzP9XFTPXGPPk5ao5RZFIYAAAARuFHK8fX3fZrXa67qTpDolbxSWo6gjRzFAAAABm6tZdaeGXODisvrr9p4Om8Rd1j</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAk9C8YJd1Qk+IP7+g9k9HRwAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAWAC3G1OdDkFw4Yz6lfs6iAAAAAASAAACgAAAAEAAAABceIfvahLLSwlleYD3j/g4YAAAA3VuFGIx0+dWuFYcGQzNDZfW5l5vCN4PXFAAAAPor0KKUj6RoNGPVeCZoK1uMwXYj</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -5798,7 +5798,8 @@ WHERE   EXT_SEXTC_ID = 607871753
                       lineageId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Output].Columns[duration]" />
                     <inputColumn
                       refId="Package\load MosEvent\Dest PBS MOSEvent.Inputs[ADO NET Destination Input].Columns[dubbedLanguage]"
-                      cachedDataType="i4"
+                      cachedDataType="wstr"
+                      cachedLength="6"
                       cachedName="dubbedLanguage"
                       externalMetadataColumnId="Package\load MosEvent\Dest PBS MOSEvent.Inputs[ADO NET Destination Input].ExternalColumns[dubbedLanguage]"
                       lineageId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Output].Columns[dubbedLanguage]" />
@@ -5818,7 +5819,8 @@ WHERE   EXT_SEXTC_ID = 607871753
                       lineageId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Output].Columns[qualifier2]" />
                     <inputColumn
                       refId="Package\load MosEvent\Dest PBS MOSEvent.Inputs[ADO NET Destination Input].Columns[qualifier3]"
-                      cachedDataType="i4"
+                      cachedDataType="wstr"
+                      cachedLength="80"
                       cachedName="qualifier3"
                       externalMetadataColumnId="Package\load MosEvent\Dest PBS MOSEvent.Inputs[ADO NET Destination Input].ExternalColumns[qualifier3]"
                       lineageId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Output].Columns[qualifier3]" />
@@ -5916,7 +5918,8 @@ WHERE   EXT_SEXTC_ID = 607871753
                       name="duration" />
                     <externalMetadataColumn
                       refId="Package\load MosEvent\Dest PBS MOSEvent.Inputs[ADO NET Destination Input].ExternalColumns[dubbedLanguage]"
-                      dataType="i4"
+                      dataType="wstr"
+                      length="500"
                       name="dubbedLanguage" />
                     <externalMetadataColumn
                       refId="Package\load MosEvent\Dest PBS MOSEvent.Inputs[ADO NET Destination Input].ExternalColumns[qualifier1]"
@@ -5930,7 +5933,8 @@ WHERE   EXT_SEXTC_ID = 607871753
                       name="qualifier2" />
                     <externalMetadataColumn
                       refId="Package\load MosEvent\Dest PBS MOSEvent.Inputs[ADO NET Destination Input].ExternalColumns[qualifier3]"
-                      dataType="i4"
+                      dataType="wstr"
+                      length="100"
                       name="qualifier3" />
                     <externalMetadataColumn
                       refId="Package\load MosEvent\Dest PBS MOSEvent.Inputs[ADO NET Destination Input].ExternalColumns[qualifier4]"
@@ -6180,10 +6184,11 @@ WHERE   EXT_SEXTC_ID = 607871753
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Output].Columns[dubbedLanguage]"
-                      dataType="i4"
+                      dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Output].ExternalColumns[dubbedLanguage]"
+                      length="6"
                       lineageId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Output].Columns[dubbedLanguage]"
                       name="dubbedLanguage"
                       truncationRowDisposition="FailComponent" />
@@ -6209,10 +6214,11 @@ WHERE   EXT_SEXTC_ID = 607871753
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Output].Columns[qualifier3]"
-                      dataType="i4"
+                      dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Output].ExternalColumns[qualifier3]"
+                      length="80"
                       lineageId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Output].Columns[qualifier3]"
                       name="qualifier3"
                       truncationRowDisposition="FailComponent" />
@@ -6318,7 +6324,8 @@ WHERE   EXT_SEXTC_ID = 607871753
                       name="duration" />
                     <externalMetadataColumn
                       refId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Output].ExternalColumns[dubbedLanguage]"
-                      dataType="i4"
+                      dataType="wstr"
+                      length="6"
                       name="dubbedLanguage" />
                     <externalMetadataColumn
                       refId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Output].ExternalColumns[qualifier1]"
@@ -6332,7 +6339,8 @@ WHERE   EXT_SEXTC_ID = 607871753
                       name="qualifier2" />
                     <externalMetadataColumn
                       refId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Output].ExternalColumns[qualifier3]"
-                      dataType="i4"
+                      dataType="wstr"
+                      length="80"
                       name="qualifier3" />
                     <externalMetadataColumn
                       refId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Output].ExternalColumns[qualifier4]"
@@ -6446,7 +6454,8 @@ WHERE   EXT_SEXTC_ID = 607871753
                       name="duration" />
                     <outputColumn
                       refId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Error Output].Columns[dubbedLanguage]"
-                      dataType="i4"
+                      dataType="wstr"
+                      length="6"
                       lineageId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Error Output].Columns[dubbedLanguage]"
                       name="dubbedLanguage" />
                     <outputColumn
@@ -6463,7 +6472,8 @@ WHERE   EXT_SEXTC_ID = 607871753
                       name="qualifier2" />
                     <outputColumn
                       refId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Error Output].Columns[qualifier3]"
-                      dataType="i4"
+                      dataType="wstr"
+                      length="80"
                       lineageId="Package\load MosEvent\Source TrafficData vwMosEvent.Outputs[ADO NET Source Error Output].Columns[qualifier3]"
                       name="qualifier3" />
                     <outputColumn
@@ -13451,118 +13461,118 @@ order by ass_id</property>
                           cachedDataType="i4"
                           cachedName="ass_id"
                           cachedSortKeyPosition="1"
-                          lineageId="Package\Upsert Container\MOSEpisode UPSERT\564:invalid" />
+                          lineageId="Package\Upsert Container\MOSEpisode UPSERT\588:invalid" />
                         <inputColumn
                           refId="Package\Upsert Container\MOSEpisode UPSERT\Merge Join.Inputs[Merge Join Right Input].Columns[Episode.ContentIdentifier]"
                           cachedDataType="wstr"
                           cachedLength="500"
                           cachedName="Episode.ContentIdentifier"
-                          lineageId="Package\Upsert Container\MOSEpisode UPSERT\565:invalid" />
+                          lineageId="Package\Upsert Container\MOSEpisode UPSERT\589:invalid" />
                         <inputColumn
                           refId="Package\Upsert Container\MOSEpisode UPSERT\Merge Join.Inputs[Merge Join Right Input].Columns[Episode.UID]"
                           cachedDataType="wstr"
                           cachedLength="500"
                           cachedName="Episode.UID"
-                          lineageId="Package\Upsert Container\MOSEpisode UPSERT\566:invalid" />
+                          lineageId="Package\Upsert Container\MOSEpisode UPSERT\590:invalid" />
                         <inputColumn
                           refId="Package\Upsert Container\MOSEpisode UPSERT\Merge Join.Inputs[Merge Join Right Input].Columns[Episode.ParentID]"
                           cachedDataType="wstr"
                           cachedLength="500"
                           cachedName="Episode.ParentID"
-                          lineageId="Package\Upsert Container\MOSEpisode UPSERT\567:invalid" />
+                          lineageId="Package\Upsert Container\MOSEpisode UPSERT\591:invalid" />
                         <inputColumn
                           refId="Package\Upsert Container\MOSEpisode UPSERT\Merge Join.Inputs[Merge Join Right Input].Columns[Episode.Referent.Type]"
                           cachedDataType="wstr"
                           cachedLength="500"
                           cachedName="Episode.Referent.Type"
-                          lineageId="Package\Upsert Container\MOSEpisode UPSERT\568:invalid" />
+                          lineageId="Package\Upsert Container\MOSEpisode UPSERT\592:invalid" />
                         <inputColumn
                           refId="Package\Upsert Container\MOSEpisode UPSERT\Merge Join.Inputs[Merge Join Right Input].Columns[Episode.Title]"
                           cachedDataType="nText"
                           cachedName="Episode.Title"
-                          lineageId="Package\Upsert Container\MOSEpisode UPSERT\569:invalid" />
+                          lineageId="Package\Upsert Container\MOSEpisode UPSERT\593:invalid" />
                         <inputColumn
                           refId="Package\Upsert Container\MOSEpisode UPSERT\Merge Join.Inputs[Merge Join Right Input].Columns[Episode.Title120]"
                           cachedDataType="nText"
                           cachedName="Episode.Title120"
-                          lineageId="Package\Upsert Container\MOSEpisode UPSERT\570:invalid" />
+                          lineageId="Package\Upsert Container\MOSEpisode UPSERT\594:invalid" />
                         <inputColumn
                           refId="Package\Upsert Container\MOSEpisode UPSERT\Merge Join.Inputs[Merge Join Right Input].Columns[Episode.TitleClass]"
                           cachedDataType="wstr"
                           cachedLength="500"
                           cachedName="Episode.TitleClass"
-                          lineageId="Package\Upsert Container\MOSEpisode UPSERT\571:invalid" />
+                          lineageId="Package\Upsert Container\MOSEpisode UPSERT\595:invalid" />
                         <inputColumn
                           refId="Package\Upsert Container\MOSEpisode UPSERT\Merge Join.Inputs[Merge Join Right Input].Columns[Episode.EpisodeNumber]"
                           cachedDataType="i4"
                           cachedName="Episode.EpisodeNumber"
-                          lineageId="Package\Upsert Container\MOSEpisode UPSERT\572:invalid" />
+                          lineageId="Package\Upsert Container\MOSEpisode UPSERT\596:invalid" />
                         <inputColumn
                           refId="Package\Upsert Container\MOSEpisode UPSERT\Merge Join.Inputs[Merge Join Right Input].Columns[Episode.EpisodeClass]"
                           cachedDataType="wstr"
                           cachedLength="500"
                           cachedName="Episode.EpisodeClass"
-                          lineageId="Package\Upsert Container\MOSEpisode UPSERT\573:invalid" />
+                          lineageId="Package\Upsert Container\MOSEpisode UPSERT\597:invalid" />
                         <inputColumn
                           refId="Package\Upsert Container\MOSEpisode UPSERT\Merge Join.Inputs[Merge Join Right Input].Columns[Episode.SynopsisShort]"
                           cachedDataType="nText"
                           cachedName="Episode.SynopsisShort"
-                          lineageId="Package\Upsert Container\MOSEpisode UPSERT\574:invalid" />
+                          lineageId="Package\Upsert Container\MOSEpisode UPSERT\598:invalid" />
                         <inputColumn
                           refId="Package\Upsert Container\MOSEpisode UPSERT\Merge Join.Inputs[Merge Join Right Input].Columns[Episode.SynopsisLong]"
                           cachedDataType="nText"
                           cachedName="Episode.SynopsisLong"
-                          lineageId="Package\Upsert Container\MOSEpisode UPSERT\575:invalid" />
+                          lineageId="Package\Upsert Container\MOSEpisode UPSERT\599:invalid" />
                         <inputColumn
                           refId="Package\Upsert Container\MOSEpisode UPSERT\Merge Join.Inputs[Merge Join Right Input].Columns[Episode.CountryOfOrigin]"
                           cachedDataType="wstr"
                           cachedLength="500"
                           cachedName="Episode.CountryOfOrigin"
-                          lineageId="Package\Upsert Container\MOSEpisode UPSERT\576:invalid" />
+                          lineageId="Package\Upsert Container\MOSEpisode UPSERT\600:invalid" />
                         <inputColumn
                           refId="Package\Upsert Container\MOSEpisode UPSERT\Merge Join.Inputs[Merge Join Right Input].Columns[Episode.PrimaryGenre]"
                           cachedDataType="nText"
                           cachedName="Episode.PrimaryGenre"
-                          lineageId="Package\Upsert Container\MOSEpisode UPSERT\577:invalid" />
+                          lineageId="Package\Upsert Container\MOSEpisode UPSERT\601:invalid" />
                         <inputColumn
                           refId="Package\Upsert Container\MOSEpisode UPSERT\Merge Join.Inputs[Merge Join Right Input].Columns[Episode.SecondaryGenre]"
                           cachedDataType="nText"
                           cachedName="Episode.SecondaryGenre"
-                          lineageId="Package\Upsert Container\MOSEpisode UPSERT\578:invalid" />
+                          lineageId="Package\Upsert Container\MOSEpisode UPSERT\602:invalid" />
                         <inputColumn
                           refId="Package\Upsert Container\MOSEpisode UPSERT\Merge Join.Inputs[Merge Join Right Input].Columns[Episode.Distribution.Number]"
                           cachedDataType="i4"
                           cachedName="Episode.Distribution.Number"
-                          lineageId="Package\Upsert Container\MOSEpisode UPSERT\579:invalid" />
+                          lineageId="Package\Upsert Container\MOSEpisode UPSERT\603:invalid" />
                         <inputColumn
                           refId="Package\Upsert Container\MOSEpisode UPSERT\Merge Join.Inputs[Merge Join Right Input].Columns[Episode.ReleaseDate]"
                           cachedDataType="dbTimeStamp2"
                           cachedName="Episode.ReleaseDate"
                           cachedScale="7"
-                          lineageId="Package\Upsert Container\MOSEpisode UPSERT\580:invalid" />
+                          lineageId="Package\Upsert Container\MOSEpisode UPSERT\604:invalid" />
                         <inputColumn
                           refId="Package\Upsert Container\MOSEpisode UPSERT\Merge Join.Inputs[Merge Join Right Input].Columns[Episode.ApproximateLength]"
                           cachedDataType="wstr"
                           cachedLength="500"
                           cachedName="Episode.ApproximateLength"
-                          lineageId="Package\Upsert Container\MOSEpisode UPSERT\581:invalid" />
+                          lineageId="Package\Upsert Container\MOSEpisode UPSERT\605:invalid" />
                         <inputColumn
                           refId="Package\Upsert Container\MOSEpisode UPSERT\Merge Join.Inputs[Merge Join Right Input].Columns[Episode.Language.Primary.mode]"
                           cachedDataType="wstr"
                           cachedLength="500"
                           cachedName="Episode.Language.Primary.mode"
-                          lineageId="Package\Upsert Container\MOSEpisode UPSERT\582:invalid" />
+                          lineageId="Package\Upsert Container\MOSEpisode UPSERT\606:invalid" />
                         <inputColumn
                           refId="Package\Upsert Container\MOSEpisode UPSERT\Merge Join.Inputs[Merge Join Right Input].Columns[Episode.LanguagePrimary]"
                           cachedDataType="wstr"
                           cachedLength="500"
                           cachedName="Episode.LanguagePrimary"
-                          lineageId="Package\Upsert Container\MOSEpisode UPSERT\583:invalid" />
+                          lineageId="Package\Upsert Container\MOSEpisode UPSERT\607:invalid" />
                         <inputColumn
                           refId="Package\Upsert Container\MOSEpisode UPSERT\Merge Join.Inputs[Merge Join Right Input].Columns[Episode.LanguageSecondary]"
                           cachedDataType="i4"
                           cachedName="Episode.LanguageSecondary"
-                          lineageId="Package\Upsert Container\MOSEpisode UPSERT\584:invalid" />
+                          lineageId="Package\Upsert Container\MOSEpisode UPSERT\608:invalid" />
                       </inputColumns>
                       <externalMetadataColumns />
                     </input>
@@ -21191,7 +21201,7 @@ order by a.ass_id</property>
     design-time-name="Package\Epsiode Container\Load Epsisode Organizations">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="160,42"
           Id="Package\Epsiode Container\Load Epsisode Organizations\ADO NET Source"
@@ -21219,9 +21229,7 @@ order by a.ass_id</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -21247,7 +21255,7 @@ order by a.ass_id</property>
     design-time-name="Package\Epsiode Container\Load MOSEpisode">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="158,42"
           Id="Package\Epsiode Container\Load MOSEpisode\ADO NET Source"
@@ -21287,9 +21295,7 @@ order by a.ass_id</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -21439,7 +21445,7 @@ order by a.ass_id</property>
     design-time-name="Package\Load EpsiodeCredits ExcutiveProducer">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="160,42"
           Id="Package\Load EpsiodeCredits ExcutiveProducer\ADO NET Source"
@@ -21479,9 +21485,7 @@ order by a.ass_id</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -21507,7 +21511,7 @@ order by a.ass_id</property>
     design-time-name="Package\Load MOS Credits">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="181,42"
           Id="Package\Load MOS Credits\ADO NET Destination"
@@ -21547,9 +21551,7 @@ order by a.ass_id</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -21575,7 +21577,7 @@ order by a.ass_id</property>
     design-time-name="Package\Load MOS OneTimeOnly">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="210,42"
           Id="Package\Load MOS OneTimeOnly\Source OneTimeOnly Query"
@@ -21615,9 +21617,7 @@ order by a.ass_id</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -21643,7 +21643,7 @@ order by a.ass_id</property>
     design-time-name="Package\load MosEvent">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="173,42"
           Id="Package\load MosEvent\Dest PBS MOSEvent"
@@ -21683,9 +21683,7 @@ order by a.ass_id</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -21711,7 +21709,7 @@ order by a.ass_id</property>
     design-time-name="Package\Load MOSManifestation">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="181,42"
           Id="Package\Load MOSManifestation\ADO NET Destination"
@@ -21751,9 +21749,7 @@ order by a.ass_id</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -21779,7 +21775,7 @@ order by a.ass_id</property>
     design-time-name="Package\Load MOSManifestationFile">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="222,42"
           Id="Package\Load MOSManifestationFile\Source Maifestation File Query"
@@ -21819,9 +21815,7 @@ order by a.ass_id</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -22047,7 +22041,7 @@ order by a.ass_id</property>
     design-time-name="Package\Offer Container\xref Offer Org">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="181,42"
           Id="Package\Offer Container\xref Offer Org\ADO NET Destination"
@@ -22087,7 +22081,9 @@ order by a.ass_id</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -22179,7 +22175,7 @@ order by a.ass_id</property>
     design-time-name="Package\Series Container\Load MOSSeries">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="158,42"
           Id="Package\Series Container\Load MOSSeries\ADO NET Source"
@@ -22219,9 +22215,7 @@ order by a.ass_id</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -22247,7 +22241,7 @@ order by a.ass_id</property>
     design-time-name="Package\Series Container\Load Series Credits">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="181,42"
           Id="Package\Series Container\Load Series Credits\ADO NET Destination"
@@ -22287,9 +22281,7 @@ order by a.ass_id</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -22315,7 +22307,7 @@ order by a.ass_id</property>
     design-time-name="Package\Series Container\Load Series Organizations">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="181,42"
           Id="Package\Series Container\Load Series Organizations\ADO NET Destination"
@@ -22355,9 +22347,7 @@ order by a.ass_id</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -22383,7 +22373,7 @@ order by a.ass_id</property>
     design-time-name="Package\Series Container\Load SeriesCredits Producer">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="160,42"
           Id="Package\Series Container\Load SeriesCredits Producer\ADO NET Source"
@@ -22423,9 +22413,7 @@ order by a.ass_id</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
