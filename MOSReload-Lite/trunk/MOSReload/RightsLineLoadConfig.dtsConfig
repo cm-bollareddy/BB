@@ -4,13 +4,13 @@
     <DTSConfigurationFileInfo GeneratedBy="BRADDOCK\mrajendran" GeneratedFromPackageName="RightslineLoad" GeneratedFromPackageID="{6CAC6FBD-DC5F-4BD2-B38F-E46769929427}" GeneratedDate="7/23/2018 10:09:13 AM"/>
   </DTSConfigurationHeading>
   <Configuration ConfiguredType="Property" Path="\Package.Connections[ADO.NET-Rightsline].Properties[ConnectionString]" ValueType="String">
-    <ConfiguredValue>Data Source=db19-uat;Initial Catalog=RightsLineETL-Light-V01.07.C4.04;Integrated Security=True;Application Name=SSIS-Package-{71E29813-C634-400C-947F-2B4708DBD8E0}db19-uat.RightsLineETL;</ConfiguredValue>
+    <ConfiguredValue>Data Source=db19-uat;Initial Catalog=RightsLineETL-Light-V10.23.C4.02_RL_upload;Integrated Security=True;Application Name=SSIS-Package-{71E29813-C634-400C-947F-2B4708DBD8E0}db19-uat.RightsLineETL;</ConfiguredValue>
   </Configuration>
   <Configuration ConfiguredType="Property" Path="\Package.Connections[ADO.NET-Rightsline].Properties[Description]" ValueType="String">
     <ConfiguredValue></ConfiguredValue>
   </Configuration>
   <Configuration ConfiguredType="Property" Path="\Package.Connections[ADO.NET-Rightsline].Properties[InitialCatalog]" ValueType="String">
-    <ConfiguredValue>RightsLineETL-Light-V01.07.C4.04</ConfiguredValue>
+    <ConfiguredValue>RightsLineETL-Light-V10.23.C4.02_RL_upload</ConfiguredValue>
   </Configuration>
   <Configuration ConfiguredType="Property" Path="\Package.Connections[ADO.NET-Rightsline].Properties[Name]" ValueType="String">
     <ConfiguredValue>ADO.NET-Rightsline</ConfiguredValue>
@@ -124,13 +124,13 @@
     <ConfiguredValue></ConfiguredValue>
   </Configuration>
   <Configuration ConfiguredType="Property" Path="\Package.Connections[Rightsline-Dest].Properties[ConnectionString]" ValueType="String">
-    <ConfiguredValue>Data Source=db19-uat;Initial Catalog=RightsLineETL-Light-V01.07.C4.04;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;</ConfiguredValue>
+    <ConfiguredValue>Data Source=db19-uat;Initial Catalog=RightsLineETL-Light-V10.23.C4.02_RL_upload;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;</ConfiguredValue>
   </Configuration>
   <Configuration ConfiguredType="Property" Path="\Package.Connections[Rightsline-Dest].Properties[Description]" ValueType="String">
     <ConfiguredValue></ConfiguredValue>
   </Configuration>
   <Configuration ConfiguredType="Property" Path="\Package.Connections[Rightsline-Dest].Properties[InitialCatalog]" ValueType="String">
-    <ConfiguredValue>RightsLineETL-Light-V01.07.C4.04</ConfiguredValue>
+    <ConfiguredValue>RightsLineETL-Light-V10.23.C4.02_RL_upload</ConfiguredValue>
   </Configuration>
   <Configuration ConfiguredType="Property" Path="\Package.Connections[Rightsline-Dest].Properties[Name]" ValueType="String">
     <ConfiguredValue>Rightsline-Dest</ConfiguredValue>
