@@ -1,16 +1,16 @@
 <?xml version="1.0"?>
 <DTSConfiguration>
   <DTSConfigurationHeading>
-    <DTSConfigurationFileInfo GeneratedBy="BRADDOCK\ytseytlin" GeneratedFromPackageName="MOSTablesLoad" GeneratedFromPackageID="{6AD5EEF3-43DC-4A17-84C2-E19D9FD4D2BE}" GeneratedDate="10/18/2018 11:03:26 AM"/>
+    <DTSConfigurationFileInfo GeneratedBy="BRADDOCK\ytseytlin" GeneratedFromPackageName="MOSReload" GeneratedFromPackageID="{FB541DB7-A9F1-4D87-962B-F7F3477C5194}" GeneratedDate="2/6/2019 9:17:16 AM"/>
   </DTSConfigurationHeading>
   <Configuration ConfiguredType="Property" Path="\Package.Connections[db19-uat.MOS.mosuser].Properties[ConnectionString]" ValueType="String">
-    <ConfiguredValue>Data Source=db19-uat;User ID=mosuser;Initial Catalog=EMM_MBank R1S2;Persist Security Info=True;Application Name=SSIS-MOSTablesLoad-{638E68F5-0981-491A-B5FB-6C9504D69EF0}db19-uat.MOS.mosuser;</ConfiguredValue>
+    <ConfiguredValue>Data Source=db19-uat;User ID=mosuser;Initial Catalog="EMM_MBank R1S2";Persist Security Info=True;Application Name=SSIS-MOSTablesLoad-{638E68F5-0981-491A-B5FB-6C9504D69EF0}db19-uat.MOS.mosuser;</ConfiguredValue>
   </Configuration>
   <Configuration ConfiguredType="Property" Path="\Package.Connections[db19-uat.MOS.mosuser].Properties[Description]" ValueType="String">
-    <ConfiguredValue></ConfiguredValue>
+    <ConfiguredValue/>
   </Configuration>
   <Configuration ConfiguredType="Property" Path="\Package.Connections[db19-uat.MOS.mosuser].Properties[InitialCatalog]" ValueType="String">
-    <ConfiguredValue>EMM_MBank R1S2</ConfiguredValue>
+    <ConfiguredValue>"EMM_MBank R1S2"</ConfiguredValue>
   </Configuration>
   <Configuration ConfiguredType="Property" Path="\Package.Connections[db19-uat.MOS.mosuser].Properties[Name]" ValueType="String">
     <ConfiguredValue>db19-uat.MOS.mosuser</ConfiguredValue>
@@ -37,7 +37,7 @@
     <ConfiguredValue>Data Source=db19-uat;User ID=TrafficDataReader;Initial Catalog=TrafficData;Persist Security Info=True;Application Name=SSIS-MOSTablesLoad-{2B5C7B6C-A524-430F-9772-AD820D66573C}db19-uat.TrafficData.TrafficDataReader;</ConfiguredValue>
   </Configuration>
   <Configuration ConfiguredType="Property" Path="\Package.Connections[db19-uat.TrafficData.TrafficDataReader].Properties[Description]" ValueType="String">
-    <ConfiguredValue></ConfiguredValue>
+    <ConfiguredValue/>
   </Configuration>
   <Configuration ConfiguredType="Property" Path="\Package.Connections[db19-uat.TrafficData.TrafficDataReader].Properties[InitialCatalog]" ValueType="String">
     <ConfiguredValue>TrafficData</ConfiguredValue>

@@ -28,6 +28,11 @@
           <FullPath>XREFLoad.dtsx</FullPath>
           <References />
         </DtsPackage>
+        <DtsPackage FormatVersion="6">
+          <Name>MOSReload.dtsx</Name>
+          <FullPath>MOSReload.dtsx</FullPath>
+          <References />
+        </DtsPackage>
       </DTSPackages>
     </Manifest>
   </DeploymentModelSpecificContent>
@@ -43,6 +48,10 @@
     <ProjectItem>
       <Name>MOSTablesConfig.dtsConfig</Name>
       <FullPath>MOSTablesConfig.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>MOSLoadConfig.dtsConfig</Name>
+      <FullPath>MOSLoadConfig.dtsConfig</FullPath>
     </ProjectItem>
   </Miscellaneous>
   <Configurations>
