@@ -33,11 +33,6 @@
           <FullPath>MOSReload.dtsx</FullPath>
           <References />
         </DtsPackage>
-        <DtsPackage FormatVersion="6">
-          <Name>RightslineLoad_samar.dtsx</Name>
-          <FullPath>RightslineLoad_samar.dtsx</FullPath>
-          <References />
-        </DtsPackage>
       </DTSPackages>
     </Manifest>
   </DeploymentModelSpecificContent>
