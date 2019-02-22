@@ -8,12 +8,12 @@
   DTS:DTSID="{FB541DB7-A9F1-4D87-962B-F7F3477C5194}"
   DTS:EnableConfig="True"
   DTS:ExecutableType="SSIS.Package.3"
-  DTS:LastModifiedProductVersion="11.0.6020.0"
+  DTS:LastModifiedProductVersion="11.0.5583.0"
   DTS:LocaleID="1033"
   DTS:ObjectName="MOSReload"
   DTS:PackageType="5"
-  DTS:VersionBuild="144"
-  DTS:VersionGUID="{A1AE0C01-9FE1-4EED-9866-1C14A3A90E4F}">
+  DTS:VersionBuild="145"
+  DTS:VersionGUID="{82DA903D-E106-4FA5-A415-7428A9454DCC}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">6</DTS:Property>
   <DTS:ConnectionManagers>
@@ -28,7 +28,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAh+/3BtutRkGXV0BGBfZnngAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADdCc0RQk5hpR2Frdny5CE/AAAAAASAAACgAAAAEAAAAJ5LCMlROzOhTGRaQAxVdhoYAAAA4gyq8N8OrX9qrqlOGSdLd1/PGAmQt1i4FAAAAPqZIL0cthGvw8o9N+9C/EwUlzDR</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAk9C8YJd1Qk+IP7+g9k9HRwAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADRPgB1NxtV345t/y9G/vkhAAAAAASAAACgAAAAEAAAADAJrBVrlQAM3UssMRn6AQ4YAAAABiTeWYk+PqRQJodnaDnNzebpMM80zEj5FAAAACzBWDhYA5xY6Pdc/JFyEhkEB014</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -43,7 +43,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAh+/3BtutRkGXV0BGBfZnngAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACKY10a8yKRRkJ7uSoI99k8AAAAAASAAACgAAAAEAAAAHIfQqUINMBk6qhASSnYhwEYAAAAGSO77imMbQLv/IrXSayhHNcA1x372k9AFAAAAB88CP522ltaJ5j8aMDfvyICcTP5</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAk9C8YJd1Qk+IP7+g9k9HRwAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADWZv66J+NnZUPhpVcHKDclAAAAAASAAACgAAAAEAAAAPlN6+Qc62Q+s2sdgN+fi1kYAAAA5ksNgvJx4Unn8xwUYP1A9cR6YU6p+pF6FAAAAO+OSD9P23SEXKSKLOZn6RuWtRNZ</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -58,7 +58,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAh+/3BtutRkGXV0BGBfZnngAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAABSZ28WL0Ls9gKtG2Pk9SxAAAAAASAAACgAAAAEAAAAEZQTYgWavITl3R2YhyYfjoYAAAAOk7SOtYvG7cfbXkw2pkIT/wZp78GmcnUFAAAALXGiqhcyOL4+i3YvZ2ZwIv29Yj1</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAk9C8YJd1Qk+IP7+g9k9HRwAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAWc5HEh6IGl84oxCNrS3H1AAAAAASAAACgAAAAEAAAACu/ywi8KyhV5+r/ROcPtFsYAAAAWth/gk6Era5HqfJUDKL2FBbz6b6wf9dPFAAAAIn5GfWagiTF2v3biWZQOWzIRSzb</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -5594,7 +5594,7 @@ end</property>
           DTS:LocaleID="-1"
           DTS:ObjectName="Ceanup Nulls in xref Credits"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2012; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="0">
+          DTS:ThreadHint="1">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -15535,7 +15535,7 @@ values(?,'MOSSeries','pending','update',null,getdate(),null)</property>
           DTS:LocaleID="-1"
           DTS:ObjectName="Delete Adjunct and Pro Forma where Main Record Exists"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2012; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="1">
+          DTS:ThreadHint="0">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -18109,7 +18109,7 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
           DTS:LocaleID="-1"
           DTS:ObjectName="Truncate Table PBS SeasonEMMTemp"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2012; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="1">
+          DTS:ThreadHint="0">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -19047,6 +19047,10 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
       <GraphLayout
         Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
+          Size="153,42"
+          Id="Package\Credits Related Tasks\MOS Credits UPSERT\Update Records"
+          TopLeft="265,372" />
+        <NodeLayout
           Size="130,42"
           Id="Package\Credits Related Tasks\MOS Credits UPSERT\Merge Join"
           TopLeft="287.555555555555,168.666666666667" />
@@ -19055,33 +19059,33 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
           Id="Package\Credits Related Tasks\MOS Credits UPSERT\Dest Table In EMM"
           TopLeft="436.888888888889,64.888888888889" />
         <NodeLayout
-          Size="163,42"
-          Id="Package\Credits Related Tasks\MOS Credits UPSERT\Notification Insert"
-          TopLeft="59,371.000000000001" />
-        <NodeLayout
-          Size="155,42"
-          Id="Package\Credits Related Tasks\MOS Credits UPSERT\Conditional Split"
-          TopLeft="266.333333333333,250.555555555555" />
-        <NodeLayout
-          Size="153,42"
-          Id="Package\Credits Related Tasks\MOS Credits UPSERT\Update Records"
-          TopLeft="265,372" />
-        <NodeLayout
-          Size="168,42"
-          Id="Package\Credits Related Tasks\MOS Credits UPSERT\Source Query MOS"
-          TopLeft="119.888888888889,60" />
-        <NodeLayout
-          Size="188,42"
-          Id="Package\Credits Related Tasks\MOS Credits UPSERT\Update records in EMM"
-          TopLeft="260,518" />
+          Size="198,42"
+          Id="Package\Credits Related Tasks\MOS Credits UPSERT\Delete records from EMM"
+          TopLeft="599,483" />
         <NodeLayout
           Size="165,42"
           Id="Package\Credits Related Tasks\MOS Credits UPSERT\Notification Delete"
           TopLeft="565.222222222222,371.444444444445" />
         <NodeLayout
-          Size="198,42"
-          Id="Package\Credits Related Tasks\MOS Credits UPSERT\Delete records from EMM"
-          TopLeft="599,483" />
+          Size="168,42"
+          Id="Package\Credits Related Tasks\MOS Credits UPSERT\Source Query MOS"
+          TopLeft="119.888888888889,60" />
+        <NodeLayout
+          Size="163,42"
+          Id="Package\Credits Related Tasks\MOS Credits UPSERT\Notification Insert"
+          TopLeft="59,371.000000000001" />
+        <NodeLayout
+          Size="188,42"
+          Id="Package\Credits Related Tasks\MOS Credits UPSERT\Update records in EMM"
+          TopLeft="260,518" />
+        <NodeLayout
+          Size="179,42"
+          Id="Package\Credits Related Tasks\MOS Credits UPSERT\ADO NET Destination"
+          TopLeft="39,489" />
+        <NodeLayout
+          Size="155,42"
+          Id="Package\Credits Related Tasks\MOS Credits UPSERT\Conditional Split"
+          TopLeft="266.333333333333,250.555555555555" />
         <EdgeLayout
           Id="Package\Credits Related Tasks\MOS Credits UPSERT.Paths[RemovedRecords]"
           TopLeft="380.583333333333,292.555555555555">
@@ -19116,6 +19120,40 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
             <mssgm:EdgeLabel
               BoundingBox="94.9468663194445,32.1858116044167,77.24515625,9.7490234375"
               RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Credits Related Tasks\MOS Credits UPSERT.Paths[OLE DB Command Output1]"
+          TopLeft="140.5,413.000000000001">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-12,75.999999999999"
+              Start="0,0"
+              End="-12,68.499999999999">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,33.9999999999995" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,33.9999999999995"
+                    Point2="0,37.9999999999995"
+                    Point3="-4,37.9999999999995" />
+                  <mssgle:LineSegment
+                    End="-8,37.9999999999995" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-8,37.9999999999995"
+                    Point2="-12,37.9999999999995"
+                    Point3="-12,41.9999999999995" />
+                  <mssgle:LineSegment
+                    End="-12,68.499999999999" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -19342,44 +19380,6 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
                     Point3="-148.000000000001,40.6160081053699" />
                   <mssgle:LineSegment
                     End="-148.000000000001,54.277777777778" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="179,42"
-          Id="Package\Credits Related Tasks\MOS Credits UPSERT\ADO NET Destination"
-          TopLeft="39,489" />
-        <EdgeLayout
-          Id="Package\Credits Related Tasks\MOS Credits UPSERT.Paths[OLE DB Command Output1]"
-          TopLeft="140.5,413.000000000001">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-12,75.999999999999"
-              Start="0,0"
-              End="-12,68.499999999999">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,33.9999999999995" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,33.9999999999995"
-                    Point2="0,37.9999999999995"
-                    Point3="-4,37.9999999999995" />
-                  <mssgle:LineSegment
-                    End="-8,37.9999999999995" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-8,37.9999999999995"
-                    Point2="-12,37.9999999999995"
-                    Point3="-12,41.9999999999995" />
-                  <mssgle:LineSegment
-                    End="-12,68.499999999999" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
