@@ -8,12 +8,12 @@
   DTS:DTSID="{FB541DB7-A9F1-4D87-962B-F7F3477C5194}"
   DTS:EnableConfig="True"
   DTS:ExecutableType="SSIS.Package.3"
-  DTS:LastModifiedProductVersion="11.0.5583.0"
+  DTS:LastModifiedProductVersion="11.0.6020.0"
   DTS:LocaleID="1033"
   DTS:ObjectName="MOSReload"
   DTS:PackageType="5"
-  DTS:VersionBuild="142"
-  DTS:VersionGUID="{695F4A7A-7192-432A-829D-34706B0DF7D8}">
+  DTS:VersionBuild="144"
+  DTS:VersionGUID="{A1AE0C01-9FE1-4EED-9866-1C14A3A90E4F}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">6</DTS:Property>
   <DTS:ConnectionManagers>
@@ -24,11 +24,11 @@
       DTS:ObjectName="db19-uat.EMM_Changes.mosuser">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=db19-uat;User ID=mosuser;Initial Catalog=EMM_MBank R1S2;Provider=SQLNCLI11.1;Auto Translate=False;">
+          DTS:ConnectionString="Data Source=db19-uat;User ID=mosuser;Initial Catalog=EMM_MBank R1S2;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAk9C8YJd1Qk+IP7+g9k9HRwAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADJimg/WgGfiRzCaIWJIWThAAAAAASAAACgAAAAEAAAAB40cLQDnBtv3Hy+sbaaGXAYAAAAKkj6K3q6Hsio50Gl0RylJS0ko8MohMu3FAAAAIGiqJ00ketKhitxrQ+nHmmpfqud</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAh+/3BtutRkGXV0BGBfZnngAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADdCc0RQk5hpR2Frdny5CE/AAAAAASAAACgAAAAEAAAAJ5LCMlROzOhTGRaQAxVdhoYAAAA4gyq8N8OrX9qrqlOGSdLd1/PGAmQt1i4FAAAAPqZIL0cthGvw8o9N+9C/EwUlzDR</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -43,7 +43,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAk9C8YJd1Qk+IP7+g9k9HRwAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACJj+qQvyqnMeFXzkzDSWY2AAAAAASAAACgAAAAEAAAADouM5xQAKlI4OlVtNEbUmQYAAAAy4BhV1jR0A5qwbEQl/xIJO0LQMpIilqTFAAAAEnDVzz8PVQWLprtUFgtZT6hEQF5</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAh+/3BtutRkGXV0BGBfZnngAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACKY10a8yKRRkJ7uSoI99k8AAAAAASAAACgAAAAEAAAAHIfQqUINMBk6qhASSnYhwEYAAAAGSO77imMbQLv/IrXSayhHNcA1x372k9AFAAAAB88CP522ltaJ5j8aMDfvyICcTP5</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -58,7 +58,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAk9C8YJd1Qk+IP7+g9k9HRwAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAVpiPiPQRFl9LP2EwvW8x4AAAAAASAAACgAAAAEAAAAFZjcaV4LmQKdqvCVd5UABIYAAAA6zQgmNJlB0v8W5waxmRl8ckeFGGtZitjFAAAAFEOqgjI9x4ECDt3urxdDG9B9z98</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAh+/3BtutRkGXV0BGBfZnngAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAABSZ28WL0Ls9gKtG2Pk9SxAAAAAASAAACgAAAAEAAAAEZQTYgWavITl3R2YhyYfjoYAAAAOk7SOtYvG7cfbXkw2pkIT/wZp78GmcnUFAAAALXGiqhcyOL4+i3YvZ2ZwIv29Yj1</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -5594,7 +5594,7 @@ end</property>
           DTS:LocaleID="-1"
           DTS:ObjectName="Ceanup Nulls in xref Credits"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2012; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="1">
+          DTS:ThreadHint="0">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -15535,7 +15535,7 @@ values(?,'MOSSeries','pending','update',null,getdate(),null)</property>
           DTS:LocaleID="-1"
           DTS:ObjectName="Delete Adjunct and Pro Forma where Main Record Exists"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2012; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="0">
+          DTS:ThreadHint="1">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -18109,7 +18109,7 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
           DTS:LocaleID="-1"
           DTS:ObjectName="Truncate Table PBS SeasonEMMTemp"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2012; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="0">
+          DTS:ThreadHint="1">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -18157,7 +18157,7 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
     design-time-name="Package">
     <LayoutInfo>
       <GraphLayout
-        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="225,42"
           Id="Package\Compilation Related Tsaks\MOS  Compilation Entry Upsert"
@@ -18185,7 +18185,9 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <ContainerLayout
@@ -18195,6 +18197,21 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
           Size="237,43"
           Id="Package\Compilation Related Tsaks"
           TopLeft="415.333333333333,428.333333333333" />
+        <NodeLayout
+          Size="178,42"
+          Id="Package\Credits Related Tasks\MOS Credits UPSERT"
+          TopLeft="17.636363636364,22" />
+        <NodeLayout
+          Size="180,42"
+          Id="Package\Credits Related Tasks\XREF Credits UPSERT"
+          TopLeft="16.181818181818,81.909090909091" />
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="205,179"
+          Size="205,222"
+          Id="Package\Credits Related Tasks"
+          TopLeft="961,431" />
         <NodeLayout
           Size="209,42"
           Id="Package\Episode Related Tasks\Ceanup Nulls in xref Credits"
@@ -18230,7 +18247,9 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -18252,7 +18271,9 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -18274,7 +18295,9 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <ContainerLayout
@@ -18289,6 +18312,14 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
           Id="Package\MOS Organization UPSERT"
           TopLeft="1197.72727272727,90.545454545455" />
         <NodeLayout
+          Size="228,42"
+          Id="Package\MOS Organization UPSERT New"
+          TopLeft="1179,436" />
+        <NodeLayout
+          Size="169,42"
+          Id="Package\MOS Series Update"
+          TopLeft="1409,436" />
+        <NodeLayout
           Size="345,42"
           Id="Package\Season Related Tasks\Delete Adjunct and Pro Forma where Main Record Exists"
           TopLeft="30,152" />
@@ -18296,6 +18327,10 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
           Size="188,42"
           Id="Package\Season Related Tasks\Load SeasonEMMTemp"
           TopLeft="105,81" />
+        <NodeLayout
+          Size="138,42"
+          Id="Package\Season Related Tasks\MOS Season"
+          TopLeft="134.54545454545,231.545454545455" />
         <NodeLayout
           Size="257,42"
           Id="Package\Season Related Tasks\Truncate Table PBS SeasonEMMTemp"
@@ -18319,7 +18354,9 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -18341,13 +18378,11 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="138,42"
-          Id="Package\Season Related Tasks\MOS Season"
-          TopLeft="134.54545454545,231.545454545455" />
         <EdgeLayout
           Id="Package\Season Related Tasks.PrecedenceConstraints[Constraint 2]"
           TopLeft="203.022727272725,194">
@@ -18367,7 +18402,9 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <ContainerLayout
@@ -18377,29 +18414,6 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
           Size="204,43"
           Id="Package\Season Related Tasks"
           TopLeft="706,429" />
-        <NodeLayout
-          Size="178,42"
-          Id="Package\Credits Related Tasks\MOS Credits UPSERT"
-          TopLeft="17.636363636364,22" />
-        <NodeLayout
-          Size="180,42"
-          Id="Package\Credits Related Tasks\XREF Credits UPSERT"
-          TopLeft="16.181818181818,81.909090909091" />
-        <ContainerLayout
-          HeaderHeight="43"
-          IsExpanded="True"
-          PanelSize="205,179"
-          Size="205,222"
-          Id="Package\Credits Related Tasks"
-          TopLeft="961,431" />
-        <NodeLayout
-          Size="228,42"
-          Id="Package\MOS Organization UPSERT New"
-          TopLeft="1179,436" />
-        <NodeLayout
-          Size="169,42"
-          Id="Package\MOS Series Update"
-          TopLeft="1409,436" />
       </GraphLayout>
     </LayoutInfo>
   </Package>
@@ -19028,6 +19042,624 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
     </Properties>
   </PipelineComponentMetadata>
   <TaskHost
+    design-time-name="Package\Credits Related Tasks\MOS Credits UPSERT">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="130,42"
+          Id="Package\Credits Related Tasks\MOS Credits UPSERT\Merge Join"
+          TopLeft="287.555555555555,168.666666666667" />
+        <NodeLayout
+          Size="168,42"
+          Id="Package\Credits Related Tasks\MOS Credits UPSERT\Dest Table In EMM"
+          TopLeft="436.888888888889,64.888888888889" />
+        <NodeLayout
+          Size="163,42"
+          Id="Package\Credits Related Tasks\MOS Credits UPSERT\Notification Insert"
+          TopLeft="59,371.000000000001" />
+        <NodeLayout
+          Size="155,42"
+          Id="Package\Credits Related Tasks\MOS Credits UPSERT\Conditional Split"
+          TopLeft="266.333333333333,250.555555555555" />
+        <NodeLayout
+          Size="153,42"
+          Id="Package\Credits Related Tasks\MOS Credits UPSERT\Update Records"
+          TopLeft="265,372" />
+        <NodeLayout
+          Size="168,42"
+          Id="Package\Credits Related Tasks\MOS Credits UPSERT\Source Query MOS"
+          TopLeft="119.888888888889,60" />
+        <NodeLayout
+          Size="188,42"
+          Id="Package\Credits Related Tasks\MOS Credits UPSERT\Update records in EMM"
+          TopLeft="260,518" />
+        <NodeLayout
+          Size="165,42"
+          Id="Package\Credits Related Tasks\MOS Credits UPSERT\Notification Delete"
+          TopLeft="565.222222222222,371.444444444445" />
+        <NodeLayout
+          Size="198,42"
+          Id="Package\Credits Related Tasks\MOS Credits UPSERT\Delete records from EMM"
+          TopLeft="599,483" />
+        <EdgeLayout
+          Id="Package\Credits Related Tasks\MOS Credits UPSERT.Paths[RemovedRecords]"
+          TopLeft="380.583333333333,292.555555555555">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="267.138888888889,78.8888888888901"
+              Start="0,0"
+              End="267.138888888889,71.3888888888901">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,23.1858116044167" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,23.1858116044167"
+                    Point2="0,27.1858116044167"
+                    Point3="4,27.1858116044167" />
+                  <mssgle:LineSegment
+                    End="263.138888888889,27.1858116044167" />
+                  <mssgle:CubicBezierSegment
+                    Point1="263.138888888889,27.1858116044167"
+                    Point2="267.138888888889,27.1858116044167"
+                    Point3="267.138888888889,31.1858116044167" />
+                  <mssgle:LineSegment
+                    End="267.138888888889,71.3888888888901" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="94.9468663194445,32.1858116044167,77.24515625,9.7490234375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Credits Related Tasks\MOS Credits UPSERT.Paths[OLE DB Command Output]"
+          TopLeft="647.722222222222,413.444444444445">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="50.2777777777781,69.555555555555"
+              Start="0,0"
+              End="50.2777777777781,62.055555555555">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,30.7777777777775" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,30.7777777777775"
+                    Point2="0,34.7777777777775"
+                    Point3="4,34.7777777777775" />
+                  <mssgle:LineSegment
+                    End="46.2777777777781,34.7777777777775" />
+                  <mssgle:CubicBezierSegment
+                    Point1="46.2777777777781,34.7777777777775"
+                    Point2="50.2777777777781,34.7777777777775"
+                    Point3="50.2777777777781,38.7777777777775" />
+                  <mssgle:LineSegment
+                    End="50.2777777777781,62.055555555555" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Credits Related Tasks\MOS Credits UPSERT.Paths[No Match Data]"
+          TopLeft="341.5,414">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="12.5,104"
+              Start="0,0"
+              End="12.5,96.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,48" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,48"
+                    Point2="0,52"
+                    Point3="4,52" />
+                  <mssgle:LineSegment
+                    End="8.5,52" />
+                  <mssgle:CubicBezierSegment
+                    Point1="8.5,52"
+                    Point2="12.5,52"
+                    Point3="12.5,56" />
+                  <mssgle:LineSegment
+                    End="12.5,96.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-26.803359375,57,66.10671875,9.7490234375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Credits Related Tasks\MOS Credits UPSERT.Paths[NewRecords]"
+          TopLeft="307.083333333333,292.555555555555">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-166.583333333333,78.444444444446"
+              Start="0,0"
+              End="-166.583333333333,70.944444444446">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,23.0326521024201" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,23.0326521024201"
+                    Point2="0,27.0326521024201"
+                    Point3="-4,27.0326521024201" />
+                  <mssgle:LineSegment
+                    End="-162.583333333333,27.0326521024201" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-162.583333333333,27.0326521024201"
+                    Point2="-166.583333333333,27.0326521024201"
+                    Point3="-166.583333333333,31.0326521024201" />
+                  <mssgle:LineSegment
+                    End="-166.583333333333,70.944444444446" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-111.054244791667,32.0326521024201,55.52515625,9.7490234375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Credits Related Tasks\MOS Credits UPSERT.Paths[Merge Join Output]"
+          TopLeft="352.555555555555,210.666666666667">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-8.722222222222,39.888888888888"
+              Start="0,0"
+              End="-8.722222222222,32.388888888888">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,15.944444444444" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,15.944444444444"
+                    Point2="0,19.944444444444"
+                    Point3="-4,19.944444444444" />
+                  <mssgle:LineSegment
+                    End="-4.722222222222,19.944444444444" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-4.722222222222,19.944444444444"
+                    Point2="-8.722222222222,19.944444444444"
+                    Point3="-8.722222222222,23.944444444444" />
+                  <mssgle:LineSegment
+                    End="-8.722222222222,32.388888888888" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Credits Related Tasks\MOS Credits UPSERT.Paths[Conditional Split Default Output]"
+          TopLeft="342.666666666667,292.555555555555">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,79.444444444445"
+              Start="0,0"
+              End="0,71.944444444445">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,71.944444444445" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-70.61390625,30.1431206597225,141.2278125,11.658203125"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Credits Related Tasks\MOS Credits UPSERT.Paths[ADO NET Source Output1]"
+          TopLeft="203.888888888889,102">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="128.333333333333,66.666666666667"
+              Start="0,0"
+              End="128.333333333333,59.166666666667">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,35.5136778115503" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,35.5136778115503"
+                    Point2="0,39.5136778115503"
+                    Point3="4,39.5136778115503" />
+                  <mssgle:LineSegment
+                    End="124.333333333333,39.5136778115503" />
+                  <mssgle:CubicBezierSegment
+                    Point1="124.333333333333,39.5136778115503"
+                    Point2="128.333333333333,39.5136778115503"
+                    Point3="128.333333333333,43.5136778115503" />
+                  <mssgle:LineSegment
+                    End="128.333333333333,59.166666666667" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Credits Related Tasks\MOS Credits UPSERT.Paths[ADO NET Source Output]"
+          TopLeft="520.888888888889,106.888888888889">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-148.000000000001,61.777777777778"
+              Start="0,0"
+              End="-148.000000000001,54.277777777778">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,32.6160081053699" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,32.6160081053699"
+                    Point2="0,36.6160081053699"
+                    Point3="-4,36.6160081053699" />
+                  <mssgle:LineSegment
+                    End="-144.000000000001,36.6160081053699" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-144.000000000001,36.6160081053699"
+                    Point2="-148.000000000001,36.6160081053699"
+                    Point3="-148.000000000001,40.6160081053699" />
+                  <mssgle:LineSegment
+                    End="-148.000000000001,54.277777777778" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="179,42"
+          Id="Package\Credits Related Tasks\MOS Credits UPSERT\ADO NET Destination"
+          TopLeft="39,489" />
+        <EdgeLayout
+          Id="Package\Credits Related Tasks\MOS Credits UPSERT.Paths[OLE DB Command Output1]"
+          TopLeft="140.5,413.000000000001">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-12,75.999999999999"
+              Start="0,0"
+              End="-12,68.499999999999">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,33.9999999999995" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,33.9999999999995"
+                    Point2="0,37.9999999999995"
+                    Point3="-4,37.9999999999995" />
+                  <mssgle:LineSegment
+                    End="-8,37.9999999999995" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-8,37.9999999999995"
+                    Point2="-12,37.9999999999995"
+                    Point3="-12,41.9999999999995" />
+                  <mssgle:LineSegment
+                    End="-12,68.499999999999" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Credits Related Tasks\MOS Credits UPSERT\Dest Table In EMM">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Credits Related Tasks\MOS Credits UPSERT\Source Query MOS">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Credits Related Tasks\MOS Credits UPSERT\ADO NET Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Credits Related Tasks\XREF Credits UPSERT">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="143,42"
+          Id="Package\Credits Related Tasks\XREF Credits UPSERT\Source Query"
+          TopLeft="163,128" />
+        <NodeLayout
+          Size="150,42"
+          Id="Package\Credits Related Tasks\XREF Credits UPSERT\Delete Records"
+          TopLeft="607,455" />
+        <NodeLayout
+          Size="130,42"
+          Id="Package\Credits Related Tasks\XREF Credits UPSERT\Merge Join"
+          TopLeft="321,225" />
+        <NodeLayout
+          Size="188,42"
+          Id="Package\Credits Related Tasks\XREF Credits UPSERT\Track Inserted Records"
+          TopLeft="83,437" />
+        <NodeLayout
+          Size="155,42"
+          Id="Package\Credits Related Tasks\XREF Credits UPSERT\Conditional Split"
+          TopLeft="308,358" />
+        <NodeLayout
+          Size="129,42"
+          Id="Package\Credits Related Tasks\XREF Credits UPSERT\Dest Table"
+          TopLeft="437,123" />
+        <NodeLayout
+          Size="179,42"
+          Id="Package\Credits Related Tasks\XREF Credits UPSERT\ADO NET Destination"
+          TopLeft="80,550" />
+        <EdgeLayout
+          Id="Package\Credits Related Tasks\XREF Credits UPSERT.Paths[Removed Records]"
+          TopLeft="422.25,400">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="259.75,55"
+              Start="0,0"
+              End="259.75,47.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,14.953488372093" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,14.953488372093"
+                    Point2="0,18.953488372093"
+                    Point3="4,18.953488372093" />
+                  <mssgle:LineSegment
+                    End="255.75,18.953488372093" />
+                  <mssgle:CubicBezierSegment
+                    Point1="255.75,18.953488372093"
+                    Point2="259.75,18.953488372093"
+                    Point3="259.75,22.953488372093" />
+                  <mssgle:LineSegment
+                    End="259.75,47.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="89.687421875,23.953488372093,80.37515625,9.7490234375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Credits Related Tasks\XREF Credits UPSERT.Paths[OLE DB Command Output]"
+          TopLeft="173.25,479">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,71"
+              Start="0,0"
+              End="0,63.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,63.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Credits Related Tasks\XREF Credits UPSERT.Paths[New Records]"
+          TopLeft="348.75,400">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-171.75,37"
+              Start="0,0"
+              End="-171.75,29.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,8.75052854122622" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,8.75052854122622"
+                    Point2="0,12.7505285412262"
+                    Point3="-4,12.7505285412262" />
+                  <mssgle:LineSegment
+                    End="-167.75,12.7505285412262" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-167.75,12.7505285412262"
+                    Point2="-171.75,12.7505285412262"
+                    Point3="-171.75,16.7505285412262" />
+                  <mssgle:LineSegment
+                    End="-171.75,29.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-115.202578125,17.7505285412262,58.65515625,9.7490234375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Credits Related Tasks\XREF Credits UPSERT.Paths[Merge Join Output]"
+          TopLeft="385.75,267">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,91"
+              Start="0,0"
+              End="0,83.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,83.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Credits Related Tasks\XREF Credits UPSERT.Paths[ADO NET Source Output1]"
+          TopLeft="501.5,165">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-95.1666666666667,60"
+              Start="0,0"
+              End="-95.1666666666667,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,31.5623100303951" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,31.5623100303951"
+                    Point2="0,35.5623100303951"
+                    Point3="-4,35.5623100303951" />
+                  <mssgle:LineSegment
+                    End="-91.1666666666667,35.5623100303951" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-91.1666666666667,35.5623100303951"
+                    Point2="-95.1666666666667,35.5623100303951"
+                    Point3="-95.1666666666667,39.5623100303951" />
+                  <mssgle:LineSegment
+                    End="-95.1666666666667,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Credits Related Tasks\XREF Credits UPSERT.Paths[ADO NET Source Output]"
+          TopLeft="234.5,170">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="151.5,55"
+              Start="0,0"
+              End="151.5,47.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,23.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,23.5"
+                    Point2="0,27.5"
+                    Point3="4,27.5" />
+                  <mssgle:LineSegment
+                    End="147.5,27.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="147.5,27.5"
+                    Point2="151.5,27.5"
+                    Point3="151.5,31.5" />
+                  <mssgle:LineSegment
+                    End="151.5,47.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Credits Related Tasks\XREF Credits UPSERT\Source Query">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Credits Related Tasks\XREF Credits UPSERT\Dest Table">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Credits Related Tasks\XREF Credits UPSERT\ADO NET Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
     design-time-name="Package\Episode Related Tasks\MOSEpisode UPSERT">
     <LayoutInfo>
       <GraphLayout
@@ -19444,372 +20076,6 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
     </LayoutInfo>
   </TaskHost>
   <TaskHost
-    design-time-name="Package\Credits Related Tasks\MOS Credits UPSERT">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
-        <NodeLayout
-          Size="130,42"
-          Id="Package\Credits Related Tasks\MOS Credits UPSERT\Merge Join"
-          TopLeft="287.555555555555,168.666666666667" />
-        <NodeLayout
-          Size="168,42"
-          Id="Package\Credits Related Tasks\MOS Credits UPSERT\Dest Table In EMM"
-          TopLeft="436.888888888889,64.888888888889" />
-        <NodeLayout
-          Size="163,42"
-          Id="Package\Credits Related Tasks\MOS Credits UPSERT\Notification Insert"
-          TopLeft="59,371.000000000001" />
-        <NodeLayout
-          Size="155,42"
-          Id="Package\Credits Related Tasks\MOS Credits UPSERT\Conditional Split"
-          TopLeft="266.333333333333,250.555555555555" />
-        <NodeLayout
-          Size="153,42"
-          Id="Package\Credits Related Tasks\MOS Credits UPSERT\Update Records"
-          TopLeft="265,372" />
-        <NodeLayout
-          Size="168,42"
-          Id="Package\Credits Related Tasks\MOS Credits UPSERT\Source Query MOS"
-          TopLeft="119.888888888889,60" />
-        <NodeLayout
-          Size="188,42"
-          Id="Package\Credits Related Tasks\MOS Credits UPSERT\Update records in EMM"
-          TopLeft="260,518" />
-        <NodeLayout
-          Size="165,42"
-          Id="Package\Credits Related Tasks\MOS Credits UPSERT\Notification Delete"
-          TopLeft="565.222222222222,371.444444444445" />
-        <NodeLayout
-          Size="198,42"
-          Id="Package\Credits Related Tasks\MOS Credits UPSERT\Delete records from EMM"
-          TopLeft="599,483" />
-        <EdgeLayout
-          Id="Package\Credits Related Tasks\MOS Credits UPSERT.Paths[RemovedRecords]"
-          TopLeft="380.583333333333,292.555555555555">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="267.138888888889,78.8888888888901"
-              Start="0,0"
-              End="267.138888888889,71.3888888888901">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,23.1858116044167" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,23.1858116044167"
-                    Point2="0,27.1858116044167"
-                    Point3="4,27.1858116044167" />
-                  <mssgle:LineSegment
-                    End="263.138888888889,27.1858116044167" />
-                  <mssgle:CubicBezierSegment
-                    Point1="263.138888888889,27.1858116044167"
-                    Point2="267.138888888889,27.1858116044167"
-                    Point3="267.138888888889,31.1858116044167" />
-                  <mssgle:LineSegment
-                    End="267.138888888889,71.3888888888901" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="94.9468663194445,32.1858116044167,77.24515625,9.7490234375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Credits Related Tasks\MOS Credits UPSERT.Paths[OLE DB Command Output]"
-          TopLeft="647.722222222222,413.444444444445">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="50.2777777777781,69.555555555555"
-              Start="0,0"
-              End="50.2777777777781,62.055555555555">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,30.7777777777775" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,30.7777777777775"
-                    Point2="0,34.7777777777775"
-                    Point3="4,34.7777777777775" />
-                  <mssgle:LineSegment
-                    End="46.2777777777781,34.7777777777775" />
-                  <mssgle:CubicBezierSegment
-                    Point1="46.2777777777781,34.7777777777775"
-                    Point2="50.2777777777781,34.7777777777775"
-                    Point3="50.2777777777781,38.7777777777775" />
-                  <mssgle:LineSegment
-                    End="50.2777777777781,62.055555555555" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Credits Related Tasks\MOS Credits UPSERT.Paths[No Match Data]"
-          TopLeft="341.5,414">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="12.5,104"
-              Start="0,0"
-              End="12.5,96.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,48" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,48"
-                    Point2="0,52"
-                    Point3="4,52" />
-                  <mssgle:LineSegment
-                    End="8.5,52" />
-                  <mssgle:CubicBezierSegment
-                    Point1="8.5,52"
-                    Point2="12.5,52"
-                    Point3="12.5,56" />
-                  <mssgle:LineSegment
-                    End="12.5,96.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-26.803359375,57,66.10671875,9.7490234375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Credits Related Tasks\MOS Credits UPSERT.Paths[NewRecords]"
-          TopLeft="307.083333333333,292.555555555555">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-166.583333333333,78.444444444446"
-              Start="0,0"
-              End="-166.583333333333,70.944444444446">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,23.0326521024201" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,23.0326521024201"
-                    Point2="0,27.0326521024201"
-                    Point3="-4,27.0326521024201" />
-                  <mssgle:LineSegment
-                    End="-162.583333333333,27.0326521024201" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-162.583333333333,27.0326521024201"
-                    Point2="-166.583333333333,27.0326521024201"
-                    Point3="-166.583333333333,31.0326521024201" />
-                  <mssgle:LineSegment
-                    End="-166.583333333333,70.944444444446" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-111.054244791667,32.0326521024201,55.52515625,9.7490234375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Credits Related Tasks\MOS Credits UPSERT.Paths[Merge Join Output]"
-          TopLeft="352.555555555555,210.666666666667">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-8.722222222222,39.888888888888"
-              Start="0,0"
-              End="-8.722222222222,32.388888888888">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,15.944444444444" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,15.944444444444"
-                    Point2="0,19.944444444444"
-                    Point3="-4,19.944444444444" />
-                  <mssgle:LineSegment
-                    End="-4.722222222222,19.944444444444" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-4.722222222222,19.944444444444"
-                    Point2="-8.722222222222,19.944444444444"
-                    Point3="-8.722222222222,23.944444444444" />
-                  <mssgle:LineSegment
-                    End="-8.722222222222,32.388888888888" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Credits Related Tasks\MOS Credits UPSERT.Paths[Conditional Split Default Output]"
-          TopLeft="342.666666666667,292.555555555555">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,79.444444444445"
-              Start="0,0"
-              End="0,71.944444444445">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,71.944444444445" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-70.61390625,30.1431206597225,141.2278125,11.658203125"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Credits Related Tasks\MOS Credits UPSERT.Paths[ADO NET Source Output1]"
-          TopLeft="203.888888888889,102">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="128.333333333333,66.666666666667"
-              Start="0,0"
-              End="128.333333333333,59.166666666667">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,35.5136778115503" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,35.5136778115503"
-                    Point2="0,39.5136778115503"
-                    Point3="4,39.5136778115503" />
-                  <mssgle:LineSegment
-                    End="124.333333333333,39.5136778115503" />
-                  <mssgle:CubicBezierSegment
-                    Point1="124.333333333333,39.5136778115503"
-                    Point2="128.333333333333,39.5136778115503"
-                    Point3="128.333333333333,43.5136778115503" />
-                  <mssgle:LineSegment
-                    End="128.333333333333,59.166666666667" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Credits Related Tasks\MOS Credits UPSERT.Paths[ADO NET Source Output]"
-          TopLeft="520.888888888889,106.888888888889">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-148.000000000001,61.777777777778"
-              Start="0,0"
-              End="-148.000000000001,54.277777777778">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,32.6160081053699" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,32.6160081053699"
-                    Point2="0,36.6160081053699"
-                    Point3="-4,36.6160081053699" />
-                  <mssgle:LineSegment
-                    End="-144.000000000001,36.6160081053699" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-144.000000000001,36.6160081053699"
-                    Point2="-148.000000000001,36.6160081053699"
-                    Point3="-148.000000000001,40.6160081053699" />
-                  <mssgle:LineSegment
-                    End="-148.000000000001,54.277777777778" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="179,42"
-          Id="Package\Credits Related Tasks\MOS Credits UPSERT\ADO NET Destination"
-          TopLeft="39,489" />
-        <EdgeLayout
-          Id="Package\Credits Related Tasks\MOS Credits UPSERT.Paths[OLE DB Command Output1]"
-          TopLeft="140.5,413.000000000001">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-12,75.999999999999"
-              Start="0,0"
-              End="-12,68.499999999999">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,33.9999999999995" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,33.9999999999995"
-                    Point2="0,37.9999999999995"
-                    Point3="-4,37.9999999999995" />
-                  <mssgle:LineSegment
-                    End="-8,37.9999999999995" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-8,37.9999999999995"
-                    Point2="-12,37.9999999999995"
-                    Point3="-12,41.9999999999995" />
-                  <mssgle:LineSegment
-                    End="-12,68.499999999999" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\Credits Related Tasks\MOS Credits UPSERT\Dest Table In EMM">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Credits Related Tasks\MOS Credits UPSERT\Source Query MOS">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <TaskHost
     design-time-name="Package\MOS Organization UPSERT">
     <LayoutInfo>
       <GraphLayout
@@ -20131,680 +20397,6 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\MOS Organization UPSERT\Dest Table In EMM">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <TaskHost
-    design-time-name="Package\Season Related Tasks\MOS Season">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
-        <NodeLayout
-          Size="130,42"
-          Id="Package\Season Related Tasks\MOS Season\Merge Join"
-          TopLeft="362,181" />
-        <NodeLayout
-          Size="159,42"
-          Id="Package\Season Related Tasks\MOS Season\Updated Records"
-          TopLeft="304,392" />
-        <NodeLayout
-          Size="157,42"
-          Id="Package\Season Related Tasks\MOS Season\Conditional Split"
-          TopLeft="284.222222222222,273.111111111111" />
-        <NodeLayout
-          Size="110,42"
-          Id="Package\Season Related Tasks\MOS Season\delete"
-          TopLeft="636.111111111111,342" />
-        <NodeLayout
-          Size="243,42"
-          Id="Package\Season Related Tasks\MOS Season\delete record from Season in EMM"
-          TopLeft="591,461" />
-        <NodeLayout
-          Size="170,42"
-          Id="Package\Season Related Tasks\MOS Season\Source Query MOS"
-          TopLeft="137.777777777778,83.5555555555555" />
-        <NodeLayout
-          Size="107,42"
-          Id="Package\Season Related Tasks\MOS Season\insert"
-          TopLeft="76.8888888888889,394.555555555556" />
-        <NodeLayout
-          Size="187,42"
-          Id="Package\Season Related Tasks\MOS Season\Update Season in EMM"
-          TopLeft="301,520" />
-        <NodeLayout
-          Size="170,42"
-          Id="Package\Season Related Tasks\MOS Season\Dest Table In EMM"
-          TopLeft="453.777777777778,88.4444444444445" />
-        <NodeLayout
-          Size="179,42"
-          Id="Package\Season Related Tasks\MOS Season\ADO NET Destination"
-          TopLeft="47,500" />
-        <EdgeLayout
-          Id="Package\Season Related Tasks\MOS Season.Paths[RemovedRecords]"
-          TopLeft="399.972222222222,315.111111111111">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="291.138888888889,26.888888888889"
-              Start="0,0"
-              End="291.138888888889,19.388888888889">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,5.26235212247743" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,5.26235212247743"
-                    Point2="0,9.26235212247743"
-                    Point3="4,9.26235212247743" />
-                  <mssgle:LineSegment
-                    End="287.138888888889,9.26235212247743" />
-                  <mssgle:CubicBezierSegment
-                    Point1="287.138888888889,9.26235212247743"
-                    Point2="291.138888888889,9.26235212247743"
-                    Point3="291.138888888889,13.2623521224774" />
-                  <mssgle:LineSegment
-                    End="291.138888888889,19.388888888889" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="106.946866319445,14.2623521224774,77.24515625,9.7490234375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Season Related Tasks\MOS Season.Paths[OLE DB Command Output1]"
-          TopLeft="133.444444444444,436.555555555556">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,63.444444444444"
-              Start="0,0"
-              End="0,55.944444444444">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,55.944444444444" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Season Related Tasks\MOS Season.Paths[OLE DB Command Output]"
-          TopLeft="691.111111111111,384">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="21.388888888889,77"
-              Start="0,0"
-              End="21.388888888889,69.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,34.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,34.5"
-                    Point2="0,38.5"
-                    Point3="4,38.5" />
-                  <mssgle:LineSegment
-                    End="17.388888888889,38.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="17.388888888889,38.5"
-                    Point2="21.388888888889,38.5"
-                    Point3="21.388888888889,42.5" />
-                  <mssgle:LineSegment
-                    End="21.388888888889,69.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Season Related Tasks\MOS Season.Paths[Non Match Data]"
-          TopLeft="383.5,434">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="11,86"
-              Start="0,0"
-              End="11,78.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,39" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,39"
-                    Point2="0,43"
-                    Point3="4,43" />
-                  <mssgle:LineSegment
-                    End="7,43" />
-                  <mssgle:CubicBezierSegment
-                    Point1="7,43"
-                    Point2="11,43"
-                    Point3="11,47" />
-                  <mssgle:LineSegment
-                    End="11,78.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-30.343359375,48,71.68671875,9.7490234375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Season Related Tasks\MOS Season.Paths[NewRecords]"
-          TopLeft="325.472222222222,315.111111111111">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-195.083333333333,79.4444444444445"
-              Start="0,0"
-              End="-195.083333333333,71.9444444444445">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,23.366040361865" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,23.366040361865"
-                    Point2="0,27.366040361865"
-                    Point3="-4,27.366040361865" />
-                  <mssgle:LineSegment
-                    End="-191.083333333333,27.366040361865" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-191.083333333333,27.366040361865"
-                    Point2="-195.083333333333,27.366040361865"
-                    Point3="-195.083333333333,31.366040361865" />
-                  <mssgle:LineSegment
-                    End="-195.083333333333,71.9444444444445" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-125.304244791667,32.366040361865,55.52515625,9.7490234375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Season Related Tasks\MOS Season.Paths[Merge Join Output]"
-          TopLeft="427,223">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-64.277777777778,50.111111111111"
-              Start="0,0"
-              End="-64.277777777778,42.611111111111">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,21.0555555555555" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,21.0555555555555"
-                    Point2="0,25.0555555555555"
-                    Point3="-4,25.0555555555555" />
-                  <mssgle:LineSegment
-                    End="-60.277777777778,25.0555555555555" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-60.277777777778,25.0555555555555"
-                    Point2="-64.277777777778,25.0555555555555"
-                    Point3="-64.277777777778,29.0555555555555" />
-                  <mssgle:LineSegment
-                    End="-64.277777777778,42.611111111111" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Season Related Tasks\MOS Season.Paths[Conditional Split Default Output]"
-          TopLeft="362.722222222222,315.111111111111">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="20.777777777778,76.888888888889"
-              Start="0,0"
-              End="20.777777777778,69.388888888889">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,34.4444444444445" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,34.4444444444445"
-                    Point2="0,38.4444444444445"
-                    Point3="4,38.4444444444445" />
-                  <mssgle:LineSegment
-                    End="16.777777777778,38.4444444444445" />
-                  <mssgle:CubicBezierSegment
-                    Point1="16.777777777778,38.4444444444445"
-                    Point2="20.777777777778,38.4444444444445"
-                    Point3="20.777777777778,42.4444444444445" />
-                  <mssgle:LineSegment
-                    End="20.777777777778,69.388888888889" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-60.225017361111,43.4444444444445,141.2278125,11.658203125"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Season Related Tasks\MOS Season.Paths[ADO NET Source Output1]"
-          TopLeft="538.777777777778,130.444444444445">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-91.4444444444447,50.5555555555555"
-              Start="0,0"
-              End="-91.4444444444447,43.0555555555555">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,25.9645390070922" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,25.9645390070922"
-                    Point2="0,29.9645390070922"
-                    Point3="-4,29.9645390070922" />
-                  <mssgle:LineSegment
-                    End="-87.4444444444447,29.9645390070922" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-87.4444444444447,29.9645390070922"
-                    Point2="-91.4444444444447,29.9645390070922"
-                    Point3="-91.4444444444447,33.9645390070922" />
-                  <mssgle:LineSegment
-                    End="-91.4444444444447,43.0555555555555" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Season Related Tasks\MOS Season.Paths[ADO NET Source Output]"
-          TopLeft="222.777777777778,125.555555555556">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="183.888888888889,55.4444444444445"
-              Start="0,0"
-              End="183.888888888889,47.9444444444445">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,28.8622087132726" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,28.8622087132726"
-                    Point2="0,32.8622087132726"
-                    Point3="4,32.8622087132726" />
-                  <mssgle:LineSegment
-                    End="179.888888888889,32.8622087132726" />
-                  <mssgle:CubicBezierSegment
-                    Point1="179.888888888889,32.8622087132726"
-                    Point2="183.888888888889,32.8622087132726"
-                    Point3="183.888888888889,36.8622087132726" />
-                  <mssgle:LineSegment
-                    End="183.888888888889,47.9444444444445" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\Season Related Tasks\MOS Season\Source Query MOS">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Season Related Tasks\MOS Season\Dest Table In EMM">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Season Related Tasks\MOS Season\ADO NET Destination">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <TaskHost
-    design-time-name="Package\Season Related Tasks\Load SeasonEMMTemp">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
-        <NodeLayout
-          Size="160,42"
-          Id="Package\Season Related Tasks\Load SeasonEMMTemp\ADO NET Source"
-          TopLeft="173,157" />
-        <NodeLayout
-          Size="179,42"
-          Id="Package\Season Related Tasks\Load SeasonEMMTemp\ADO NET Destination"
-          TopLeft="166,246" />
-        <EdgeLayout
-          Id="Package\Season Related Tasks\Load SeasonEMMTemp.Paths[ADO NET Source Output]"
-          TopLeft="254.25,199">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,47"
-              Start="0,0"
-              End="0,39.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,39.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\Season Related Tasks\Load SeasonEMMTemp\ADO NET Destination">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <TaskHost
-    design-time-name="Package\Credits Related Tasks\XREF Credits UPSERT">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
-        <NodeLayout
-          Size="143,42"
-          Id="Package\Credits Related Tasks\XREF Credits UPSERT\Source Query"
-          TopLeft="163,128" />
-        <NodeLayout
-          Size="150,42"
-          Id="Package\Credits Related Tasks\XREF Credits UPSERT\Delete Records"
-          TopLeft="607,455" />
-        <NodeLayout
-          Size="130,42"
-          Id="Package\Credits Related Tasks\XREF Credits UPSERT\Merge Join"
-          TopLeft="321,225" />
-        <NodeLayout
-          Size="188,42"
-          Id="Package\Credits Related Tasks\XREF Credits UPSERT\Track Inserted Records"
-          TopLeft="83,437" />
-        <NodeLayout
-          Size="155,42"
-          Id="Package\Credits Related Tasks\XREF Credits UPSERT\Conditional Split"
-          TopLeft="308,358" />
-        <NodeLayout
-          Size="129,42"
-          Id="Package\Credits Related Tasks\XREF Credits UPSERT\Dest Table"
-          TopLeft="437,123" />
-        <NodeLayout
-          Size="179,42"
-          Id="Package\Credits Related Tasks\XREF Credits UPSERT\ADO NET Destination"
-          TopLeft="80,550" />
-        <EdgeLayout
-          Id="Package\Credits Related Tasks\XREF Credits UPSERT.Paths[Removed Records]"
-          TopLeft="422.25,400">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="259.75,55"
-              Start="0,0"
-              End="259.75,47.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,14.953488372093" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,14.953488372093"
-                    Point2="0,18.953488372093"
-                    Point3="4,18.953488372093" />
-                  <mssgle:LineSegment
-                    End="255.75,18.953488372093" />
-                  <mssgle:CubicBezierSegment
-                    Point1="255.75,18.953488372093"
-                    Point2="259.75,18.953488372093"
-                    Point3="259.75,22.953488372093" />
-                  <mssgle:LineSegment
-                    End="259.75,47.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="89.687421875,23.953488372093,80.37515625,9.7490234375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Credits Related Tasks\XREF Credits UPSERT.Paths[OLE DB Command Output]"
-          TopLeft="173.25,479">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,71"
-              Start="0,0"
-              End="0,63.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,63.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Credits Related Tasks\XREF Credits UPSERT.Paths[New Records]"
-          TopLeft="348.75,400">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-171.75,37"
-              Start="0,0"
-              End="-171.75,29.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,8.75052854122622" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,8.75052854122622"
-                    Point2="0,12.7505285412262"
-                    Point3="-4,12.7505285412262" />
-                  <mssgle:LineSegment
-                    End="-167.75,12.7505285412262" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-167.75,12.7505285412262"
-                    Point2="-171.75,12.7505285412262"
-                    Point3="-171.75,16.7505285412262" />
-                  <mssgle:LineSegment
-                    End="-171.75,29.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-115.202578125,17.7505285412262,58.65515625,9.7490234375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Credits Related Tasks\XREF Credits UPSERT.Paths[Merge Join Output]"
-          TopLeft="385.75,267">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,91"
-              Start="0,0"
-              End="0,83.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,83.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Credits Related Tasks\XREF Credits UPSERT.Paths[ADO NET Source Output1]"
-          TopLeft="501.5,165">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-95.1666666666667,60"
-              Start="0,0"
-              End="-95.1666666666667,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,31.5623100303951" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,31.5623100303951"
-                    Point2="0,35.5623100303951"
-                    Point3="-4,35.5623100303951" />
-                  <mssgle:LineSegment
-                    End="-91.1666666666667,35.5623100303951" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-91.1666666666667,35.5623100303951"
-                    Point2="-95.1666666666667,35.5623100303951"
-                    Point3="-95.1666666666667,39.5623100303951" />
-                  <mssgle:LineSegment
-                    End="-95.1666666666667,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Credits Related Tasks\XREF Credits UPSERT.Paths[ADO NET Source Output]"
-          TopLeft="234.5,170">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="151.5,55"
-              Start="0,0"
-              End="151.5,47.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,23.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,23.5"
-                    Point2="0,27.5"
-                    Point3="4,27.5" />
-                  <mssgle:LineSegment
-                    End="147.5,27.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="147.5,27.5"
-                    Point2="151.5,27.5"
-                    Point3="151.5,31.5" />
-                  <mssgle:LineSegment
-                    End="151.5,47.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\Credits Related Tasks\XREF Credits UPSERT\Source Query">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Credits Related Tasks\XREF Credits UPSERT\Dest Table">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Credits Related Tasks\XREF Credits UPSERT\ADO NET Destination">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Credits Related Tasks\MOS Credits UPSERT\ADO NET Destination">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -21547,6 +21139,428 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\MOS Series Update\Source Query MOS">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Season Related Tasks\Load SeasonEMMTemp">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="160,42"
+          Id="Package\Season Related Tasks\Load SeasonEMMTemp\ADO NET Source"
+          TopLeft="173,157" />
+        <NodeLayout
+          Size="179,42"
+          Id="Package\Season Related Tasks\Load SeasonEMMTemp\ADO NET Destination"
+          TopLeft="166,246" />
+        <EdgeLayout
+          Id="Package\Season Related Tasks\Load SeasonEMMTemp.Paths[ADO NET Source Output]"
+          TopLeft="254.25,199">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,47"
+              Start="0,0"
+              End="0,39.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,39.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Season Related Tasks\Load SeasonEMMTemp\ADO NET Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Season Related Tasks\MOS Season">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="130,42"
+          Id="Package\Season Related Tasks\MOS Season\Merge Join"
+          TopLeft="362,181" />
+        <NodeLayout
+          Size="159,42"
+          Id="Package\Season Related Tasks\MOS Season\Updated Records"
+          TopLeft="304,392" />
+        <NodeLayout
+          Size="157,42"
+          Id="Package\Season Related Tasks\MOS Season\Conditional Split"
+          TopLeft="284.222222222222,273.111111111111" />
+        <NodeLayout
+          Size="110,42"
+          Id="Package\Season Related Tasks\MOS Season\delete"
+          TopLeft="636.111111111111,342" />
+        <NodeLayout
+          Size="243,42"
+          Id="Package\Season Related Tasks\MOS Season\delete record from Season in EMM"
+          TopLeft="591,461" />
+        <NodeLayout
+          Size="170,42"
+          Id="Package\Season Related Tasks\MOS Season\Source Query MOS"
+          TopLeft="137.777777777778,83.5555555555555" />
+        <NodeLayout
+          Size="107,42"
+          Id="Package\Season Related Tasks\MOS Season\insert"
+          TopLeft="76.8888888888889,394.555555555556" />
+        <NodeLayout
+          Size="187,42"
+          Id="Package\Season Related Tasks\MOS Season\Update Season in EMM"
+          TopLeft="301,520" />
+        <NodeLayout
+          Size="170,42"
+          Id="Package\Season Related Tasks\MOS Season\Dest Table In EMM"
+          TopLeft="453.777777777778,88.4444444444445" />
+        <NodeLayout
+          Size="179,42"
+          Id="Package\Season Related Tasks\MOS Season\ADO NET Destination"
+          TopLeft="47,500" />
+        <EdgeLayout
+          Id="Package\Season Related Tasks\MOS Season.Paths[RemovedRecords]"
+          TopLeft="399.972222222222,315.111111111111">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="291.138888888889,26.888888888889"
+              Start="0,0"
+              End="291.138888888889,19.388888888889">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,5.26235212247743" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,5.26235212247743"
+                    Point2="0,9.26235212247743"
+                    Point3="4,9.26235212247743" />
+                  <mssgle:LineSegment
+                    End="287.138888888889,9.26235212247743" />
+                  <mssgle:CubicBezierSegment
+                    Point1="287.138888888889,9.26235212247743"
+                    Point2="291.138888888889,9.26235212247743"
+                    Point3="291.138888888889,13.2623521224774" />
+                  <mssgle:LineSegment
+                    End="291.138888888889,19.388888888889" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="106.946866319445,14.2623521224774,77.24515625,9.7490234375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Season Related Tasks\MOS Season.Paths[OLE DB Command Output1]"
+          TopLeft="133.444444444444,436.555555555556">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,63.444444444444"
+              Start="0,0"
+              End="0,55.944444444444">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,55.944444444444" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Season Related Tasks\MOS Season.Paths[OLE DB Command Output]"
+          TopLeft="691.111111111111,384">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="21.388888888889,77"
+              Start="0,0"
+              End="21.388888888889,69.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,34.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,34.5"
+                    Point2="0,38.5"
+                    Point3="4,38.5" />
+                  <mssgle:LineSegment
+                    End="17.388888888889,38.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="17.388888888889,38.5"
+                    Point2="21.388888888889,38.5"
+                    Point3="21.388888888889,42.5" />
+                  <mssgle:LineSegment
+                    End="21.388888888889,69.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Season Related Tasks\MOS Season.Paths[Non Match Data]"
+          TopLeft="383.5,434">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="11,86"
+              Start="0,0"
+              End="11,78.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,39" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,39"
+                    Point2="0,43"
+                    Point3="4,43" />
+                  <mssgle:LineSegment
+                    End="7,43" />
+                  <mssgle:CubicBezierSegment
+                    Point1="7,43"
+                    Point2="11,43"
+                    Point3="11,47" />
+                  <mssgle:LineSegment
+                    End="11,78.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-30.343359375,48,71.68671875,9.7490234375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Season Related Tasks\MOS Season.Paths[NewRecords]"
+          TopLeft="325.472222222222,315.111111111111">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-195.083333333333,79.4444444444445"
+              Start="0,0"
+              End="-195.083333333333,71.9444444444445">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,23.366040361865" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,23.366040361865"
+                    Point2="0,27.366040361865"
+                    Point3="-4,27.366040361865" />
+                  <mssgle:LineSegment
+                    End="-191.083333333333,27.366040361865" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-191.083333333333,27.366040361865"
+                    Point2="-195.083333333333,27.366040361865"
+                    Point3="-195.083333333333,31.366040361865" />
+                  <mssgle:LineSegment
+                    End="-195.083333333333,71.9444444444445" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-125.304244791667,32.366040361865,55.52515625,9.7490234375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Season Related Tasks\MOS Season.Paths[Merge Join Output]"
+          TopLeft="427,223">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-64.277777777778,50.111111111111"
+              Start="0,0"
+              End="-64.277777777778,42.611111111111">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,21.0555555555555" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,21.0555555555555"
+                    Point2="0,25.0555555555555"
+                    Point3="-4,25.0555555555555" />
+                  <mssgle:LineSegment
+                    End="-60.277777777778,25.0555555555555" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-60.277777777778,25.0555555555555"
+                    Point2="-64.277777777778,25.0555555555555"
+                    Point3="-64.277777777778,29.0555555555555" />
+                  <mssgle:LineSegment
+                    End="-64.277777777778,42.611111111111" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Season Related Tasks\MOS Season.Paths[Conditional Split Default Output]"
+          TopLeft="362.722222222222,315.111111111111">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="20.777777777778,76.888888888889"
+              Start="0,0"
+              End="20.777777777778,69.388888888889">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,34.4444444444445" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,34.4444444444445"
+                    Point2="0,38.4444444444445"
+                    Point3="4,38.4444444444445" />
+                  <mssgle:LineSegment
+                    End="16.777777777778,38.4444444444445" />
+                  <mssgle:CubicBezierSegment
+                    Point1="16.777777777778,38.4444444444445"
+                    Point2="20.777777777778,38.4444444444445"
+                    Point3="20.777777777778,42.4444444444445" />
+                  <mssgle:LineSegment
+                    End="20.777777777778,69.388888888889" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-60.225017361111,43.4444444444445,141.2278125,11.658203125"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Season Related Tasks\MOS Season.Paths[ADO NET Source Output1]"
+          TopLeft="538.777777777778,130.444444444445">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-91.4444444444447,50.5555555555555"
+              Start="0,0"
+              End="-91.4444444444447,43.0555555555555">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,25.9645390070922" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,25.9645390070922"
+                    Point2="0,29.9645390070922"
+                    Point3="-4,29.9645390070922" />
+                  <mssgle:LineSegment
+                    End="-87.4444444444447,29.9645390070922" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-87.4444444444447,29.9645390070922"
+                    Point2="-91.4444444444447,29.9645390070922"
+                    Point3="-91.4444444444447,33.9645390070922" />
+                  <mssgle:LineSegment
+                    End="-91.4444444444447,43.0555555555555" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Season Related Tasks\MOS Season.Paths[ADO NET Source Output]"
+          TopLeft="222.777777777778,125.555555555556">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="183.888888888889,55.4444444444445"
+              Start="0,0"
+              End="183.888888888889,47.9444444444445">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,28.8622087132726" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,28.8622087132726"
+                    Point2="0,32.8622087132726"
+                    Point3="4,32.8622087132726" />
+                  <mssgle:LineSegment
+                    End="179.888888888889,32.8622087132726" />
+                  <mssgle:CubicBezierSegment
+                    Point1="179.888888888889,32.8622087132726"
+                    Point2="183.888888888889,32.8622087132726"
+                    Point3="183.888888888889,36.8622087132726" />
+                  <mssgle:LineSegment
+                    End="183.888888888889,47.9444444444445" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Season Related Tasks\MOS Season\Source Query MOS">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Season Related Tasks\MOS Season\Dest Table In EMM">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Season Related Tasks\MOS Season\ADO NET Destination">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
