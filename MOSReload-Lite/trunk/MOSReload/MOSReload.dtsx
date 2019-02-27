@@ -8,12 +8,12 @@
   DTS:DTSID="{FB541DB7-A9F1-4D87-962B-F7F3477C5194}"
   DTS:EnableConfig="True"
   DTS:ExecutableType="SSIS.Package.3"
-  DTS:LastModifiedProductVersion="11.0.5583.0"
+  DTS:LastModifiedProductVersion="11.0.6020.0"
   DTS:LocaleID="1033"
   DTS:ObjectName="MOSReload"
   DTS:PackageType="5"
-  DTS:VersionBuild="145"
-  DTS:VersionGUID="{82DA903D-E106-4FA5-A415-7428A9454DCC}">
+  DTS:VersionBuild="161"
+  DTS:VersionGUID="{FC2C1150-78DA-4A6E-BA44-78512625C32F}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">6</DTS:Property>
   <DTS:ConnectionManagers>
@@ -28,7 +28,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAk9C8YJd1Qk+IP7+g9k9HRwAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADRPgB1NxtV345t/y9G/vkhAAAAAASAAACgAAAAEAAAADAJrBVrlQAM3UssMRn6AQ4YAAAABiTeWYk+PqRQJodnaDnNzebpMM80zEj5FAAAACzBWDhYA5xY6Pdc/JFyEhkEB014</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAh+/3BtutRkGXV0BGBfZnngAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADQrnYNVB+4HFYcmEp6uKGhAAAAAASAAACgAAAAEAAAAHJ3JmYBJkWkVlNJD6k2W5MYAAAAUi54zwP2tVzYakOC6iNtM3P4bNAPRR4aFAAAAE9ps2LYh7Os5H0yjBO9uvkfk+SR</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -43,7 +43,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAk9C8YJd1Qk+IP7+g9k9HRwAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADWZv66J+NnZUPhpVcHKDclAAAAAASAAACgAAAAEAAAAPlN6+Qc62Q+s2sdgN+fi1kYAAAA5ksNgvJx4Unn8xwUYP1A9cR6YU6p+pF6FAAAAO+OSD9P23SEXKSKLOZn6RuWtRNZ</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAh+/3BtutRkGXV0BGBfZnngAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACiSDJh5v2Qh8naSmjn9tXgAAAAAASAAACgAAAAEAAAALzY0DJwGYeWIjwxoKIGC9QYAAAABUfoqFn0VmLWOCc9E1FvIHA7z9IQEoKcFAAAABkpTOxzvwhDcfodmAWbmBG9ns36</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -58,7 +58,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAk9C8YJd1Qk+IP7+g9k9HRwAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAWc5HEh6IGl84oxCNrS3H1AAAAAASAAACgAAAAEAAAACu/ywi8KyhV5+r/ROcPtFsYAAAAWth/gk6Era5HqfJUDKL2FBbz6b6wf9dPFAAAAIn5GfWagiTF2v3biWZQOWzIRSzb</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAh+/3BtutRkGXV0BGBfZnngAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABvWUSGb8WAMSDkFkftyxYLAAAAAASAAACgAAAAEAAAAOXuuPrFLIWV2HcchWxeFFAYAAAANPJxmWhpRFTMenDxRnXUWAW5O7/fdv4DFAAAAEfhzKDFEia0lrJUomFM+NqKUAT2</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -5594,7 +5594,7 @@ end</property>
           DTS:LocaleID="-1"
           DTS:ObjectName="Ceanup Nulls in xref Credits"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2012; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="1">
+          DTS:ThreadHint="0">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -12897,6 +12897,16 @@ SELECT
                       lineageId="Package\MOS Series Update\Dest Table In EMM.Outputs[ADO NET Source Output].Columns[Series.ReleaseDate]"
                       name="Series.ReleaseDate"
                       truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\MOS Series Update\Dest Table In EMM.Outputs[ADO NET Source Output].Columns[PublishStatus]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\MOS Series Update\Dest Table In EMM.Outputs[ADO NET Source Output].ExternalColumns[PublishStatus]"
+                      length="150"
+                      lineageId="Package\MOS Series Update\Dest Table In EMM.Outputs[ADO NET Source Output].Columns[PublishStatus]"
+                      name="PublishStatus"
+                      truncationRowDisposition="FailComponent" />
                   </outputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -12976,6 +12986,11 @@ SELECT
                       dataType="wstr"
                       length="10"
                       name="Series.ReleaseDate" />
+                    <externalMetadataColumn
+                      refId="Package\MOS Series Update\Dest Table In EMM.Outputs[ADO NET Source Output].ExternalColumns[PublishStatus]"
+                      dataType="wstr"
+                      length="150"
+                      name="PublishStatus" />
                   </externalMetadataColumns>
                 </output>
                 <output
@@ -13076,6 +13091,12 @@ SELECT
                       lineageId="Package\MOS Series Update\Dest Table In EMM.Outputs[ADO NET Source Error Output].Columns[Series.ReleaseDate]"
                       name="Series.ReleaseDate" />
                     <outputColumn
+                      refId="Package\MOS Series Update\Dest Table In EMM.Outputs[ADO NET Source Error Output].Columns[PublishStatus]"
+                      dataType="wstr"
+                      length="150"
+                      lineageId="Package\MOS Series Update\Dest Table In EMM.Outputs[ADO NET Source Error Output].Columns[PublishStatus]"
+                      name="PublishStatus" />
+                    <outputColumn
                       refId="Package\MOS Series Update\Dest Table In EMM.Outputs[ADO NET Source Error Output].Columns[ErrorCode]"
                       dataType="i4"
                       lineageId="Package\MOS Series Update\Dest Table In EMM.Outputs[ADO NET Source Error Output].Columns[ErrorCode]"
@@ -13148,7 +13169,7 @@ values(?,'MOSSeries','pending','insert',null,getdate(),null)</property>
                     <externalMetadataColumn
                       refId="Package\MOS Series Update\insert.Inputs[OLE DB Command Input].ExternalColumns[Param_0]"
                       dataType="wstr"
-                      length="150"
+                      length="400"
                       name="Param_0">
                       <properties>
                         <property
@@ -13227,9 +13248,10 @@ values(?,'MOSSeries','pending','insert',null,getdate(),null)</property>
       ,[Series.LanguageSecondary]
       ,[Series.ApproximateLength]
       ,[Series.ReleaseDate]
+      ,PublishStatus
   )Values
   (
-   ?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?
+   ?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?
   )</property>
                 <property
                   dataType="System.Int32"
@@ -13363,13 +13385,20 @@ values(?,'MOSSeries','pending','insert',null,getdate(),null)</property>
                       cachedName="Series.ReleaseDate"
                       externalMetadataColumnId="Package\MOS Series Update\Insert record Series in EMM.Inputs[OLE DB Command Input].ExternalColumns[Param_15]"
                       lineageId="Package\MOS Series Update\Merge Join.Outputs[Merge Join Output].Columns[Series.ReleaseDate]" />
+                    <inputColumn
+                      refId="Package\MOS Series Update\Insert record Series in EMM.Inputs[OLE DB Command Input].Columns[PublishStatus]"
+                      cachedDataType="wstr"
+                      cachedLength="20"
+                      cachedName="PublishStatus"
+                      externalMetadataColumnId="Package\MOS Series Update\Insert record Series in EMM.Inputs[OLE DB Command Input].ExternalColumns[Param_16]"
+                      lineageId="Package\MOS Series Update\Merge Join.Outputs[Merge Join Output].Columns[PublishStatus]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
                       refId="Package\MOS Series Update\Insert record Series in EMM.Inputs[OLE DB Command Input].ExternalColumns[Param_0]"
                       dataType="wstr"
-                      length="500"
+                      length="400"
                       name="Param_0">
                       <properties>
                         <property
@@ -13554,6 +13583,18 @@ values(?,'MOSSeries','pending','insert',null,getdate(),null)</property>
                           name="DBParamInfoFlags">65</property>
                       </properties>
                     </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\MOS Series Update\Insert record Series in EMM.Inputs[OLE DB Command Input].ExternalColumns[Param_16]"
+                      dataType="wstr"
+                      length="150"
+                      name="Param_16">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                          name="DBParamInfoFlags">65</property>
+                      </properties>
+                    </externalMetadataColumn>
                   </externalMetadataColumns>
                 </input>
               </inputs>
@@ -13716,6 +13757,12 @@ values(?,'MOSSeries','pending','insert',null,getdate(),null)</property>
                       cachedLength="10"
                       cachedName="Series.ReleaseDate"
                       lineageId="Package\MOS Series Update\Source Query MOS.Outputs[ADO NET Source Output].Columns[Series.ReleaseDate]" />
+                    <inputColumn
+                      refId="Package\MOS Series Update\Merge Join.Inputs[Merge Join Left Input].Columns[PublishStatus]"
+                      cachedDataType="wstr"
+                      cachedLength="20"
+                      cachedName="PublishStatus"
+                      lineageId="Package\MOS Series Update\Source Query MOS.Outputs[ADO NET Source Output].Columns[PublishStatus]" />
                   </inputColumns>
                   <externalMetadataColumns />
                 </input>
@@ -13819,6 +13866,12 @@ values(?,'MOSSeries','pending','insert',null,getdate(),null)</property>
                       cachedLength="10"
                       cachedName="Series.ReleaseDate"
                       lineageId="Package\MOS Series Update\Dest Table In EMM.Outputs[ADO NET Source Output].Columns[Series.ReleaseDate]" />
+                    <inputColumn
+                      refId="Package\MOS Series Update\Merge Join.Inputs[Merge Join Right Input].Columns[PublishStatus]"
+                      cachedDataType="wstr"
+                      cachedLength="150"
+                      cachedName="PublishStatus"
+                      lineageId="Package\MOS Series Update\Dest Table In EMM.Outputs[ADO NET Source Output].Columns[PublishStatus]" />
                   </inputColumns>
                   <externalMetadataColumns />
                 </input>
@@ -14274,6 +14327,34 @@ values(?,'MOSSeries','pending','insert',null,getdate(),null)</property>
                           name="InputColumnID">#{Package\MOS Series Update\Merge Join.Inputs[Merge Join Right Input].Columns[Series.ReleaseDate]}</property>
                       </properties>
                     </outputColumn>
+                    <outputColumn
+                      refId="Package\MOS Series Update\Merge Join.Outputs[Merge Join Output].Columns[PublishStatus]"
+                      dataType="wstr"
+                      length="20"
+                      lineageId="Package\MOS Series Update\Merge Join.Outputs[Merge Join Output].Columns[PublishStatus]"
+                      name="PublishStatus">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="The input column associated with this output column"
+                          name="InputColumnID">#{Package\MOS Series Update\Merge Join.Inputs[Merge Join Left Input].Columns[PublishStatus]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\MOS Series Update\Merge Join.Outputs[Merge Join Output].Columns[DestSeries.PublishStatus]"
+                      dataType="wstr"
+                      length="150"
+                      lineageId="Package\MOS Series Update\Merge Join.Outputs[Merge Join Output].Columns[DestSeries.PublishStatus]"
+                      name="DestSeries.PublishStatus">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="The input column associated with this output column"
+                          name="InputColumnID">#{Package\MOS Series Update\Merge Join.Inputs[Merge Join Right Input].Columns[PublishStatus]}</property>
+                      </properties>
+                    </outputColumn>
                   </outputColumns>
                   <externalMetadataColumns />
                 </output>
@@ -14468,6 +14549,18 @@ values(?,'MOSSeries','pending','insert',null,getdate(),null)</property>
                       cachedLength="10"
                       cachedName="DestSeries.ReleaseDate"
                       lineageId="Package\MOS Series Update\Merge Join.Outputs[Merge Join Output].Columns[DestSeries.ReleaseDate]" />
+                    <inputColumn
+                      refId="Package\MOS Series Update\non matched data.Inputs[Conditional Split Input].Columns[PublishStatus]"
+                      cachedDataType="wstr"
+                      cachedLength="20"
+                      cachedName="PublishStatus"
+                      lineageId="Package\MOS Series Update\Merge Join.Outputs[Merge Join Output].Columns[PublishStatus]" />
+                    <inputColumn
+                      refId="Package\MOS Series Update\non matched data.Inputs[Conditional Split Input].Columns[DestSeries.PublishStatus]"
+                      cachedDataType="wstr"
+                      cachedLength="150"
+                      cachedName="DestSeries.PublishStatus"
+                      lineageId="Package\MOS Series Update\Merge Join.Outputs[Merge Join Output].Columns[DestSeries.PublishStatus]" />
                   </inputColumns>
                   <externalMetadataColumns />
                 </input>
@@ -14487,13 +14580,13 @@ values(?,'MOSSeries','pending','insert',null,getdate(),null)</property>
                       containsID="true"
                       dataType="System.String"
                       description="Specifies the expression. This expression version uses lineage identifiers instead of column names."
-                      name="Expression">(#{Package\MOS Series Update\Merge Join.Outputs[Merge Join Output].Columns[Series.Structural Type]} == #{Package\MOS Series Update\Merge Join.Outputs[Merge Join Output].Columns[DestSeries.Structural Type]}) &amp;&amp; (#{Package\MOS Series Update\Merge Join.Outputs[Merge Join Output].Columns[Series.Referent Type]} == #{Package\MOS Series Update\Merge Join.Outputs[Merge Join Output].Columns[DestSeries.Referent Type]}) &amp;&amp; (#{Package\MOS Series Update\Merge Join.Outputs[Merge Join Output].Columns[Series.Mode]} == #{Package\MOS Series Update\Merge Join.Outputs[Merge Join Output].Columns[DestSeries.Mode]}) &amp;&amp; (#{Package\MOS Series Update\Merge Join.Outputs[Merge Join Output].Columns[Series.ContentIdentifier]} == #{Package\MOS Series Update\Merge Join.Outputs[Merge Join Output].Columns[DestSeries.ContentIdentifier]}) &amp;&amp; (#{Package\MOS Series Update\Merge Join.Outputs[Merge Join Output].Columns[Series.SeriesClass]} == #{Package\MOS Series Update\Merge Join.Outputs[Merge Join Output].Columns[DestSeries.SeriesClass]}) &amp;&amp; (#{Package\MOS Series Update\Merge Join.Outputs[Merge Join Output].Columns[Series.Title.Class]} == #{Package\MOS Series Update\Merge Join.Outputs[Merge Join Output].Columns[DestSeries.Title.Class]}) &amp;&amp; (#{Package\MOS Series Update\Merge Join.Outputs[Merge Join Output].Columns[Series.Title.Language]} == #{Package\MOS Series Update\Merge Join.Outputs[Merge Join Output].Columns[DestSeries.Title.Language]}) &amp;&amp; (#{Package\MOS Series Update\Merge Join.Outputs[Merge Join Output].Columns[Series.Title]} == #{Package\MOS Series Update\Merge Join.Outputs[Merge Join Output].Columns[DestSeries.Title]}) &amp;&amp; (#{Package\MOS Series Update\Merge Join.Outputs[Merge Join Output].Columns[Series.Country of Origin]} == #{Package\MOS Series Update\Merge Join.Outputs[Merge Join Output].Columns[DestSeries.Country of Origin]}) &amp;&amp; (#{Package\MOS Series Update\Merge Join.Outputs[Merge Join Output].Columns[Series.SynopsisShort]} == #{Package\MOS Series Update\Merge Join.Outputs[Merge Join Output].Columns[DestSeries.SynopsisShort]}) &amp;&amp; (#{Package\MOS Series Update\Merge Join.Outputs[Merge Join Output].Columns[Series.SynopsisLong]} == #{Package\MOS Series Update\Merge Join.Outputs[Merge Join Output].Columns[DestSeries.SynopsisLong]}) &amp;&amp; (#{Package\MOS Series Update\Merge Join.Outputs[Merge Join Output].Columns[Series.LanguagePrimary]} == #{Package\MOS Series Update\Merge Join.Outputs[Merge Join Output].Columns[DestSeries.LanguagePrimary]}) &amp;&amp; (#{Package\MOS Series Update\Merge Join.Outputs[Merge Join Output].Columns[Series.LanguageSecondary]} == #{Package\MOS Series Update\Merge Join.Outputs[Merge Join Output].Columns[DestSeries.LanguageSecondary]}) &amp;&amp; (#{Package\MOS Series Update\Merge Join.Outputs[Merge Join Output].Columns[Series.ApproximateLength]} == #{Package\MOS Series Update\Merge Join.Outputs[Merge Join Output].Columns[DestSeries.ApproximateLength]}) &amp;&amp; (#{Package\MOS Series Update\Merge Join.Outputs[Merge Join Output].Columns[Series.ReleaseDate]} == #{Package\MOS Series Update\Merge Join.Outputs[Merge Join Output].Columns[DestSeries.ReleaseDate]})</property>
+                      name="Expression">(#{Package\MOS Series Update\Merge Join.Outputs[Merge Join Output].Columns[Series.Structural Type]} == #{Package\MOS Series Update\Merge Join.Outputs[Merge Join Output].Columns[DestSeries.Structural Type]}) &amp;&amp; (#{Package\MOS Series Update\Merge Join.Outputs[Merge Join Output].Columns[Series.Referent Type]} == #{Package\MOS Series Update\Merge Join.Outputs[Merge Join Output].Columns[DestSeries.Referent Type]}) &amp;&amp; (#{Package\MOS Series Update\Merge Join.Outputs[Merge Join Output].Columns[Series.Mode]} == #{Package\MOS Series Update\Merge Join.Outputs[Merge Join Output].Columns[DestSeries.Mode]}) &amp;&amp; (#{Package\MOS Series Update\Merge Join.Outputs[Merge Join Output].Columns[Series.ContentIdentifier]} == #{Package\MOS Series Update\Merge Join.Outputs[Merge Join Output].Columns[DestSeries.ContentIdentifier]}) &amp;&amp; (#{Package\MOS Series Update\Merge Join.Outputs[Merge Join Output].Columns[Series.SeriesClass]} == #{Package\MOS Series Update\Merge Join.Outputs[Merge Join Output].Columns[DestSeries.SeriesClass]}) &amp;&amp; (#{Package\MOS Series Update\Merge Join.Outputs[Merge Join Output].Columns[Series.Title.Class]} == #{Package\MOS Series Update\Merge Join.Outputs[Merge Join Output].Columns[DestSeries.Title.Class]}) &amp;&amp; (#{Package\MOS Series Update\Merge Join.Outputs[Merge Join Output].Columns[Series.Title.Language]} == #{Package\MOS Series Update\Merge Join.Outputs[Merge Join Output].Columns[DestSeries.Title.Language]}) &amp;&amp; (#{Package\MOS Series Update\Merge Join.Outputs[Merge Join Output].Columns[Series.Title]} == #{Package\MOS Series Update\Merge Join.Outputs[Merge Join Output].Columns[DestSeries.Title]}) &amp;&amp; (#{Package\MOS Series Update\Merge Join.Outputs[Merge Join Output].Columns[Series.Country of Origin]} == #{Package\MOS Series Update\Merge Join.Outputs[Merge Join Output].Columns[DestSeries.Country of Origin]}) &amp;&amp; (#{Package\MOS Series Update\Merge Join.Outputs[Merge Join Output].Columns[Series.SynopsisShort]} == #{Package\MOS Series Update\Merge Join.Outputs[Merge Join Output].Columns[DestSeries.SynopsisShort]}) &amp;&amp; (#{Package\MOS Series Update\Merge Join.Outputs[Merge Join Output].Columns[Series.SynopsisLong]} == #{Package\MOS Series Update\Merge Join.Outputs[Merge Join Output].Columns[DestSeries.SynopsisLong]}) &amp;&amp; (#{Package\MOS Series Update\Merge Join.Outputs[Merge Join Output].Columns[Series.LanguagePrimary]} == #{Package\MOS Series Update\Merge Join.Outputs[Merge Join Output].Columns[DestSeries.LanguagePrimary]}) &amp;&amp; (#{Package\MOS Series Update\Merge Join.Outputs[Merge Join Output].Columns[Series.LanguageSecondary]} == #{Package\MOS Series Update\Merge Join.Outputs[Merge Join Output].Columns[DestSeries.LanguageSecondary]}) &amp;&amp; (#{Package\MOS Series Update\Merge Join.Outputs[Merge Join Output].Columns[Series.ApproximateLength]} == #{Package\MOS Series Update\Merge Join.Outputs[Merge Join Output].Columns[DestSeries.ApproximateLength]}) &amp;&amp; (#{Package\MOS Series Update\Merge Join.Outputs[Merge Join Output].Columns[Series.ReleaseDate]} == #{Package\MOS Series Update\Merge Join.Outputs[Merge Join Output].Columns[DestSeries.ReleaseDate]}) &amp;&amp; (#{Package\MOS Series Update\Merge Join.Outputs[Merge Join Output].Columns[PublishStatus]} == #{Package\MOS Series Update\Merge Join.Outputs[Merge Join Output].Columns[DestSeries.PublishStatus]})</property>
                     <property
                       containsID="true"
                       dataType="System.String"
                       description="Specifies the friendly version of the expression. This expression version uses column names."
                       expressionType="Notify"
-                      name="FriendlyExpression">([Series.Structural Type] == [DestSeries.Structural Type]) &amp;&amp; ([Series.Referent Type] == [DestSeries.Referent Type]) &amp;&amp; ([Series.Mode] == [DestSeries.Mode]) &amp;&amp; ([Series.ContentIdentifier] == [DestSeries.ContentIdentifier]) &amp;&amp; ([Series.SeriesClass] == [DestSeries.SeriesClass]) &amp;&amp; ([Series.Title.Class] == [DestSeries.Title.Class]) &amp;&amp; ([Series.Title.Language] == [DestSeries.Title.Language]) &amp;&amp; ([Series.Title] == [DestSeries.Title]) &amp;&amp; ([Series.Country of Origin] == [DestSeries.Country of Origin]) &amp;&amp; ([Series.SynopsisShort] == [DestSeries.SynopsisShort]) &amp;&amp; ([Series.SynopsisLong] == [DestSeries.SynopsisLong]) &amp;&amp; ([Series.LanguagePrimary] == [DestSeries.LanguagePrimary]) &amp;&amp; ([Series.LanguageSecondary] == [DestSeries.LanguageSecondary]) &amp;&amp; ([Series.ApproximateLength] == [DestSeries.ApproximateLength]) &amp;&amp; ([Series.ReleaseDate] == [DestSeries.ReleaseDate])</property>
+                      name="FriendlyExpression">([Series.Structural Type] == [DestSeries.Structural Type]) &amp;&amp; ([Series.Referent Type] == [DestSeries.Referent Type]) &amp;&amp; ([Series.Mode] == [DestSeries.Mode]) &amp;&amp; ([Series.ContentIdentifier] == [DestSeries.ContentIdentifier]) &amp;&amp; ([Series.SeriesClass] == [DestSeries.SeriesClass]) &amp;&amp; ([Series.Title.Class] == [DestSeries.Title.Class]) &amp;&amp; ([Series.Title.Language] == [DestSeries.Title.Language]) &amp;&amp; ([Series.Title] == [DestSeries.Title]) &amp;&amp; ([Series.Country of Origin] == [DestSeries.Country of Origin]) &amp;&amp; ([Series.SynopsisShort] == [DestSeries.SynopsisShort]) &amp;&amp; ([Series.SynopsisLong] == [DestSeries.SynopsisLong]) &amp;&amp; ([Series.LanguagePrimary] == [DestSeries.LanguagePrimary]) &amp;&amp; ([Series.LanguageSecondary] == [DestSeries.LanguageSecondary]) &amp;&amp; ([Series.ApproximateLength] == [DestSeries.ApproximateLength]) &amp;&amp; ([Series.ReleaseDate] == [DestSeries.ReleaseDate]) &amp;&amp; (PublishStatus == [DestSeries.PublishStatus])</property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the position of the condition in the list of conditions that the transformation evaluates. The evaluation order is from the lowest to the highest value."
@@ -14569,7 +14662,7 @@ values(?,'MOSSeries','pending','insert',null,getdate(),null)</property>
       ,ISNULL([Series.LanguageSecondary],'') as [Series.LanguageSecondary]
       ,ISNULL([Series.ApproximateLength],'') as [Series.ApproximateLength]
       ,ISNULL([Series.ReleaseDate],'') as [Series.ReleaseDate]
-
+,ISNULL(PublishStatus,'') as PublishStatus
   FROM [TrafficData].[PBS].[vwMOSSeriesEMM]
   order by [Series.UID]</property>
                 <property
@@ -14768,6 +14861,16 @@ values(?,'MOSSeries','pending','insert',null,getdate(),null)</property>
                       lineageId="Package\MOS Series Update\Source Query MOS.Outputs[ADO NET Source Output].Columns[Series.ReleaseDate]"
                       name="Series.ReleaseDate"
                       truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\MOS Series Update\Source Query MOS.Outputs[ADO NET Source Output].Columns[PublishStatus]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\MOS Series Update\Source Query MOS.Outputs[ADO NET Source Output].ExternalColumns[PublishStatus]"
+                      length="20"
+                      lineageId="Package\MOS Series Update\Source Query MOS.Outputs[ADO NET Source Output].Columns[PublishStatus]"
+                      name="PublishStatus"
+                      truncationRowDisposition="FailComponent" />
                   </outputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -14849,6 +14952,11 @@ values(?,'MOSSeries','pending','insert',null,getdate(),null)</property>
                       dataType="wstr"
                       length="10"
                       name="Series.ReleaseDate" />
+                    <externalMetadataColumn
+                      refId="Package\MOS Series Update\Source Query MOS.Outputs[ADO NET Source Output].ExternalColumns[PublishStatus]"
+                      dataType="wstr"
+                      length="20"
+                      name="PublishStatus" />
                   </externalMetadataColumns>
                 </output>
                 <output
@@ -14950,6 +15058,12 @@ values(?,'MOSSeries','pending','insert',null,getdate(),null)</property>
                       length="10"
                       lineageId="Package\MOS Series Update\Source Query MOS.Outputs[ADO NET Source Error Output].Columns[Series.ReleaseDate]"
                       name="Series.ReleaseDate" />
+                    <outputColumn
+                      refId="Package\MOS Series Update\Source Query MOS.Outputs[ADO NET Source Error Output].Columns[PublishStatus]"
+                      dataType="wstr"
+                      length="20"
+                      lineageId="Package\MOS Series Update\Source Query MOS.Outputs[ADO NET Source Error Output].Columns[PublishStatus]"
+                      name="PublishStatus" />
                     <outputColumn
                       refId="Package\MOS Series Update\Source Query MOS.Outputs[ADO NET Source Error Output].Columns[ErrorCode]"
                       dataType="i4"
@@ -15102,6 +15216,7 @@ values(?,'MOSSeries','pending','update',null,getdate(),null)</property>
       ,[Series.LanguageSecondary]=?
       ,[Series.ApproximateLength]=?
       ,[Series.ReleaseDate]=?
+      ,PublishStatus=?
 	  where [Series.UID]=?</property>
                 <property
                   dataType="System.Int32"
@@ -15234,6 +15349,13 @@ values(?,'MOSSeries','pending','update',null,getdate(),null)</property>
                       cachedName="Series.ReleaseDate"
                       externalMetadataColumnId="Package\MOS Series Update\update Series table in EMM.Inputs[OLE DB Command Input].ExternalColumns[Param_14]"
                       lineageId="Package\MOS Series Update\Merge Join.Outputs[Merge Join Output].Columns[Series.ReleaseDate]" />
+                    <inputColumn
+                      refId="Package\MOS Series Update\update Series table in EMM.Inputs[OLE DB Command Input].Columns[PublishStatus]"
+                      cachedDataType="wstr"
+                      cachedLength="20"
+                      cachedName="PublishStatus"
+                      externalMetadataColumnId="Package\MOS Series Update\update Series table in EMM.Inputs[OLE DB Command Input].ExternalColumns[Param_16]"
+                      lineageId="Package\MOS Series Update\Merge Join.Outputs[Merge Join Output].Columns[PublishStatus]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -15416,8 +15538,20 @@ values(?,'MOSSeries','pending','update',null,getdate(),null)</property>
                     <externalMetadataColumn
                       refId="Package\MOS Series Update\update Series table in EMM.Inputs[OLE DB Command Input].ExternalColumns[Param_15]"
                       dataType="wstr"
-                      length="400"
+                      length="150"
                       name="Param_15">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                          name="DBParamInfoFlags">65</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\MOS Series Update\update Series table in EMM.Inputs[OLE DB Command Input].ExternalColumns[Param_16]"
+                      dataType="wstr"
+                      length="400"
+                      name="Param_16">
                       <properties>
                         <property
                           dataType="System.Int32"
@@ -15535,7 +15669,7 @@ values(?,'MOSSeries','pending','update',null,getdate(),null)</property>
           DTS:LocaleID="-1"
           DTS:ObjectName="Delete Adjunct and Pro Forma where Main Record Exists"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2012; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="0">
+          DTS:ThreadHint="1">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -15675,6 +15809,13 @@ values(?,'MOSSeries','pending','update',null,getdate(),null)</property>
                           cachedName="Season.Title"
                           externalMetadataColumnId="Package\Season Related Tasks\Load SeasonEMMTemp\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Season.Title]"
                           lineageId="Package\Season Related Tasks\Load SeasonEMMTemp\ADO NET Source.Outputs[ADO NET Source Output].Columns[Season.Title]" />
+                        <inputColumn
+                          refId="Package\Season Related Tasks\Load SeasonEMMTemp\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[PublishStatus]"
+                          cachedDataType="wstr"
+                          cachedLength="20"
+                          cachedName="PublishStatus"
+                          externalMetadataColumnId="Package\Season Related Tasks\Load SeasonEMMTemp\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[PublishStatus]"
+                          lineageId="Package\Season Related Tasks\Load SeasonEMMTemp\ADO NET Source.Outputs[ADO NET Source Output].Columns[PublishStatus]" />
                       </inputColumns>
                       <externalMetadataColumns
                         isUsed="True">
@@ -15726,6 +15867,11 @@ values(?,'MOSSeries','pending','update',null,getdate(),null)</property>
                           dataType="wstr"
                           length="500"
                           name="Season.Title" />
+                        <externalMetadataColumn
+                          refId="Package\Season Related Tasks\Load SeasonEMMTemp\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[PublishStatus]"
+                          dataType="wstr"
+                          length="150"
+                          name="PublishStatus" />
                       </externalMetadataColumns>
                     </input>
                   </inputs>
@@ -16015,6 +16161,16 @@ SELECT distinct 1 as [InternalPBSID]
                           lineageId="Package\Season Related Tasks\Load SeasonEMMTemp\ADO NET Source.Outputs[ADO NET Source Output].Columns[Season.Title]"
                           name="Season.Title"
                           truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Season Related Tasks\Load SeasonEMMTemp\ADO NET Source.Outputs[ADO NET Source Output].Columns[PublishStatus]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Season Related Tasks\Load SeasonEMMTemp\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[PublishStatus]"
+                          length="20"
+                          lineageId="Package\Season Related Tasks\Load SeasonEMMTemp\ADO NET Source.Outputs[ADO NET Source Output].Columns[PublishStatus]"
+                          name="PublishStatus"
+                          truncationRowDisposition="FailComponent" />
                       </outputColumns>
                       <externalMetadataColumns
                         isUsed="True">
@@ -16067,6 +16223,11 @@ SELECT distinct 1 as [InternalPBSID]
                           dataType="wstr"
                           length="109"
                           name="Season.Title" />
+                        <externalMetadataColumn
+                          refId="Package\Season Related Tasks\Load SeasonEMMTemp\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[PublishStatus]"
+                          dataType="wstr"
+                          length="20"
+                          name="PublishStatus" />
                       </externalMetadataColumns>
                     </output>
                     <output
@@ -16133,6 +16294,12 @@ SELECT distinct 1 as [InternalPBSID]
                           length="109"
                           lineageId="Package\Season Related Tasks\Load SeasonEMMTemp\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Season.Title]"
                           name="Season.Title" />
+                        <outputColumn
+                          refId="Package\Season Related Tasks\Load SeasonEMMTemp\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[PublishStatus]"
+                          dataType="wstr"
+                          length="20"
+                          lineageId="Package\Season Related Tasks\Load SeasonEMMTemp\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[PublishStatus]"
+                          name="PublishStatus" />
                         <outputColumn
                           refId="Package\Season Related Tasks\Load SeasonEMMTemp\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[ErrorCode]"
                           dataType="i4"
@@ -16280,6 +16447,13 @@ SELECT distinct 1 as [InternalPBSID]
                           cachedName="SourceSeason.Title"
                           externalMetadataColumnId="Package\Season Related Tasks\MOS Season\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Season.Title]"
                           lineageId="Package\Season Related Tasks\MOS Season\Merge Join.Outputs[Merge Join Output].Columns[SourceSeason.Title]" />
+                        <inputColumn
+                          refId="Package\Season Related Tasks\MOS Season\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[SourceSeason.PublishStatus]"
+                          cachedDataType="wstr"
+                          cachedLength="150"
+                          cachedName="SourceSeason.PublishStatus"
+                          externalMetadataColumnId="Package\Season Related Tasks\MOS Season\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[PublishStatus]"
+                          lineageId="Package\Season Related Tasks\MOS Season\Merge Join.Outputs[Merge Join Output].Columns[SourceSeason.PublishStatus]" />
                       </inputColumns>
                       <externalMetadataColumns
                         isUsed="True">
@@ -16322,6 +16496,11 @@ SELECT distinct 1 as [InternalPBSID]
                           dataType="wstr"
                           length="500"
                           name="Season.Title" />
+                        <externalMetadataColumn
+                          refId="Package\Season Related Tasks\MOS Season\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[PublishStatus]"
+                          dataType="wstr"
+                          length="150"
+                          name="PublishStatus" />
                       </externalMetadataColumns>
                     </input>
                   </inputs>
@@ -16812,6 +16991,16 @@ values(?,'MOSSeason','pending','delete',null,getdate(),null)</property>
                           lineageId="Package\Season Related Tasks\MOS Season\Dest Table In EMM.Outputs[ADO NET Source Output].Columns[Season.Title]"
                           name="Season.Title"
                           truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Season Related Tasks\MOS Season\Dest Table In EMM.Outputs[ADO NET Source Output].Columns[PublishStatus]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Season Related Tasks\MOS Season\Dest Table In EMM.Outputs[ADO NET Source Output].ExternalColumns[PublishStatus]"
+                          length="150"
+                          lineageId="Package\Season Related Tasks\MOS Season\Dest Table In EMM.Outputs[ADO NET Source Output].Columns[PublishStatus]"
+                          name="PublishStatus"
+                          truncationRowDisposition="FailComponent" />
                       </outputColumns>
                       <externalMetadataColumns
                         isUsed="True">
@@ -16854,6 +17043,11 @@ values(?,'MOSSeason','pending','delete',null,getdate(),null)</property>
                           dataType="wstr"
                           length="500"
                           name="Season.Title" />
+                        <externalMetadataColumn
+                          refId="Package\Season Related Tasks\MOS Season\Dest Table In EMM.Outputs[ADO NET Source Output].ExternalColumns[PublishStatus]"
+                          dataType="wstr"
+                          length="150"
+                          name="PublishStatus" />
                       </externalMetadataColumns>
                     </output>
                     <output
@@ -16908,6 +17102,12 @@ values(?,'MOSSeason','pending','delete',null,getdate(),null)</property>
                           length="500"
                           lineageId="Package\Season Related Tasks\MOS Season\Dest Table In EMM.Outputs[ADO NET Source Error Output].Columns[Season.Title]"
                           name="Season.Title" />
+                        <outputColumn
+                          refId="Package\Season Related Tasks\MOS Season\Dest Table In EMM.Outputs[ADO NET Source Error Output].Columns[PublishStatus]"
+                          dataType="wstr"
+                          length="150"
+                          lineageId="Package\Season Related Tasks\MOS Season\Dest Table In EMM.Outputs[ADO NET Source Error Output].Columns[PublishStatus]"
+                          name="PublishStatus" />
                         <outputColumn
                           refId="Package\Season Related Tasks\MOS Season\Dest Table In EMM.Outputs[ADO NET Source Error Output].Columns[ErrorCode]"
                           dataType="i4"
@@ -17105,6 +17305,12 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
                           cachedName="Season.UID"
                           cachedSortKeyPosition="1"
                           lineageId="Package\Season Related Tasks\MOS Season\Source Query MOS.Outputs[ADO NET Source Output].Columns[Season.UID]" />
+                        <inputColumn
+                          refId="Package\Season Related Tasks\MOS Season\Merge Join.Inputs[Merge Join Left Input].Columns[PublishStatus]"
+                          cachedDataType="wstr"
+                          cachedLength="150"
+                          cachedName="PublishStatus"
+                          lineageId="Package\Season Related Tasks\MOS Season\Source Query MOS.Outputs[ADO NET Source Output].Columns[PublishStatus]" />
                       </inputColumns>
                       <externalMetadataColumns />
                     </input>
@@ -17161,6 +17367,12 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
                           cachedLength="500"
                           cachedName="Season.Title"
                           lineageId="Package\Season Related Tasks\MOS Season\Dest Table In EMM.Outputs[ADO NET Source Output].Columns[Season.Title]" />
+                        <inputColumn
+                          refId="Package\Season Related Tasks\MOS Season\Merge Join.Inputs[Merge Join Right Input].Columns[PublishStatus]"
+                          cachedDataType="wstr"
+                          cachedLength="150"
+                          cachedName="PublishStatus"
+                          lineageId="Package\Season Related Tasks\MOS Season\Dest Table In EMM.Outputs[ADO NET Source Output].Columns[PublishStatus]" />
                       </inputColumns>
                       <externalMetadataColumns />
                     </input>
@@ -17394,6 +17606,34 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
                               name="InputColumnID">#{Package\Season Related Tasks\MOS Season\Merge Join.Inputs[Merge Join Right Input].Columns[Season.Title]}</property>
                           </properties>
                         </outputColumn>
+                        <outputColumn
+                          refId="Package\Season Related Tasks\MOS Season\Merge Join.Outputs[Merge Join Output].Columns[SourceSeason.PublishStatus]"
+                          dataType="wstr"
+                          length="150"
+                          lineageId="Package\Season Related Tasks\MOS Season\Merge Join.Outputs[Merge Join Output].Columns[SourceSeason.PublishStatus]"
+                          name="SourceSeason.PublishStatus">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="The input column associated with this output column"
+                              name="InputColumnID">#{Package\Season Related Tasks\MOS Season\Merge Join.Inputs[Merge Join Left Input].Columns[PublishStatus]}</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Season Related Tasks\MOS Season\Merge Join.Outputs[Merge Join Output].Columns[DestSeason.PublishStatus]"
+                          dataType="wstr"
+                          length="150"
+                          lineageId="Package\Season Related Tasks\MOS Season\Merge Join.Outputs[Merge Join Output].Columns[DestSeason.PublishStatus]"
+                          name="DestSeason.PublishStatus">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="The input column associated with this output column"
+                              name="InputColumnID">#{Package\Season Related Tasks\MOS Season\Merge Join.Inputs[Merge Join Right Input].Columns[PublishStatus]}</property>
+                          </properties>
+                        </outputColumn>
                       </outputColumns>
                       <externalMetadataColumns />
                     </output>
@@ -17422,6 +17662,7 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
 ,ISNULL(CONVERT(NVARCHAR(10), [Season.ReleaseDate],126),'') as [Season.ReleaseDate]
       ,isnull([EMMSeason.ParentID],'') as [EMMSeason.ParentID]
       ,isnull([Season.Title],'') as [Season.Title]
+	  ,isnull(PublishStatus,'') as PublishStatus
   FROM [TrafficData].[PBS].[SeasonEMMTemp]
   order by [EMMSeason.UID]</property>
                     <property
@@ -17541,6 +17782,16 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
                           lineageId="Package\Season Related Tasks\MOS Season\Source Query MOS.Outputs[ADO NET Source Output].Columns[Season.Title]"
                           name="Season.Title"
                           truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Season Related Tasks\MOS Season\Source Query MOS.Outputs[ADO NET Source Output].Columns[PublishStatus]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Season Related Tasks\MOS Season\Source Query MOS.Outputs[ADO NET Source Output].ExternalColumns[PublishStatus]"
+                          length="150"
+                          lineageId="Package\Season Related Tasks\MOS Season\Source Query MOS.Outputs[ADO NET Source Output].Columns[PublishStatus]"
+                          name="PublishStatus"
+                          truncationRowDisposition="FailComponent" />
                       </outputColumns>
                       <externalMetadataColumns
                         isUsed="True">
@@ -17583,6 +17834,11 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
                           dataType="wstr"
                           length="500"
                           name="Season.Title" />
+                        <externalMetadataColumn
+                          refId="Package\Season Related Tasks\MOS Season\Source Query MOS.Outputs[ADO NET Source Output].ExternalColumns[PublishStatus]"
+                          dataType="wstr"
+                          length="150"
+                          name="PublishStatus" />
                       </externalMetadataColumns>
                     </output>
                     <output
@@ -17638,6 +17894,12 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
                           lineageId="Package\Season Related Tasks\MOS Season\Source Query MOS.Outputs[ADO NET Source Error Output].Columns[Season.Title]"
                           name="Season.Title" />
                         <outputColumn
+                          refId="Package\Season Related Tasks\MOS Season\Source Query MOS.Outputs[ADO NET Source Error Output].Columns[PublishStatus]"
+                          dataType="wstr"
+                          length="150"
+                          lineageId="Package\Season Related Tasks\MOS Season\Source Query MOS.Outputs[ADO NET Source Error Output].Columns[PublishStatus]"
+                          name="PublishStatus" />
+                        <outputColumn
                           refId="Package\Season Related Tasks\MOS Season\Source Query MOS.Outputs[ADO NET Source Error Output].Columns[ErrorCode]"
                           dataType="i4"
                           lineageId="Package\Season Related Tasks\MOS Season\Source Query MOS.Outputs[ADO NET Source Error Output].Columns[ErrorCode]"
@@ -17672,7 +17934,7 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
                       description="The SQL command to be executed."
                       expressionType="Notify"
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">exec PBS.MOSSeasonUpdate ?,?,?,?,?,?,?,?</property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">exec PBS.MOSSeasonUpdate ?,?,?,?,?,?,?,?,?</property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -17750,6 +18012,13 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
                           cachedName="SourceSeason.Title"
                           externalMetadataColumnId="Package\Season Related Tasks\MOS Season\Update Season in EMM.Inputs[OLE DB Command Input].ExternalColumns[@Title]"
                           lineageId="Package\Season Related Tasks\MOS Season\Merge Join.Outputs[Merge Join Output].Columns[SourceSeason.Title]" />
+                        <inputColumn
+                          refId="Package\Season Related Tasks\MOS Season\Update Season in EMM.Inputs[OLE DB Command Input].Columns[SourceSeason.PublishStatus]"
+                          cachedDataType="wstr"
+                          cachedLength="150"
+                          cachedName="SourceSeason.PublishStatus"
+                          externalMetadataColumnId="Package\Season Related Tasks\MOS Season\Update Season in EMM.Inputs[OLE DB Command Input].ExternalColumns[@PublishStatus]"
+                          lineageId="Package\Season Related Tasks\MOS Season\Merge Join.Outputs[Merge Join Output].Columns[SourceSeason.PublishStatus]" />
                       </inputColumns>
                       <externalMetadataColumns
                         isUsed="True">
@@ -17841,6 +18110,18 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
                           dataType="wstr"
                           length="500"
                           name="@Title">
+                          <properties>
+                            <property
+                              dataType="System.Int32"
+                              description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                              name="DBParamInfoFlags">65</property>
+                          </properties>
+                        </externalMetadataColumn>
+                        <externalMetadataColumn
+                          refId="Package\Season Related Tasks\MOS Season\Update Season in EMM.Inputs[OLE DB Command Input].ExternalColumns[@PublishStatus]"
+                          dataType="wstr"
+                          length="150"
+                          name="@PublishStatus">
                           <properties>
                             <property
                               dataType="System.Int32"
@@ -17978,6 +18259,18 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
                           cachedLength="500"
                           cachedName="DestSeason.Title"
                           lineageId="Package\Season Related Tasks\MOS Season\Merge Join.Outputs[Merge Join Output].Columns[DestSeason.Title]" />
+                        <inputColumn
+                          refId="Package\Season Related Tasks\MOS Season\Updated Records.Inputs[Conditional Split Input].Columns[SourceSeason.PublishStatus]"
+                          cachedDataType="wstr"
+                          cachedLength="150"
+                          cachedName="SourceSeason.PublishStatus"
+                          lineageId="Package\Season Related Tasks\MOS Season\Merge Join.Outputs[Merge Join Output].Columns[SourceSeason.PublishStatus]" />
+                        <inputColumn
+                          refId="Package\Season Related Tasks\MOS Season\Updated Records.Inputs[Conditional Split Input].Columns[DestSeason.PublishStatus]"
+                          cachedDataType="wstr"
+                          cachedLength="150"
+                          cachedName="DestSeason.PublishStatus"
+                          lineageId="Package\Season Related Tasks\MOS Season\Merge Join.Outputs[Merge Join Output].Columns[DestSeason.PublishStatus]" />
                       </inputColumns>
                       <externalMetadataColumns />
                     </input>
@@ -17997,13 +18290,13 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
                           containsID="true"
                           dataType="System.String"
                           description="Specifies the expression. This expression version uses lineage identifiers instead of column names."
-                          name="Expression">#{Package\Season Related Tasks\MOS Season\Merge Join.Outputs[Merge Join Output].Columns[SourceSeason.Season Class]} == #{Package\Season Related Tasks\MOS Season\Merge Join.Outputs[Merge Join Output].Columns[DestSeason.Season Class]} &amp;&amp; #{Package\Season Related Tasks\MOS Season\Merge Join.Outputs[Merge Join Output].Columns[SourceSeason.Referent Type]} == #{Package\Season Related Tasks\MOS Season\Merge Join.Outputs[Merge Join Output].Columns[DestSeason.Referent Type]} &amp;&amp; #{Package\Season Related Tasks\MOS Season\Merge Join.Outputs[Merge Join Output].Columns[SourceSeason.ContentIdentifier]} == #{Package\Season Related Tasks\MOS Season\Merge Join.Outputs[Merge Join Output].Columns[DestSeason.ContentIdentifier]} &amp;&amp; #{Package\Season Related Tasks\MOS Season\Merge Join.Outputs[Merge Join Output].Columns[SourceSeason.Sequence.Number]} == #{Package\Season Related Tasks\MOS Season\Merge Join.Outputs[Merge Join Output].Columns[DestSeason.Sequence.Number]} &amp;&amp; #{Package\Season Related Tasks\MOS Season\Merge Join.Outputs[Merge Join Output].Columns[SourceSeason.ReleaseDate]} == #{Package\Season Related Tasks\MOS Season\Merge Join.Outputs[Merge Join Output].Columns[DestSeason.ReleaseDate]} &amp;&amp; #{Package\Season Related Tasks\MOS Season\Merge Join.Outputs[Merge Join Output].Columns[SourceEMMSeason.ParentID]} == #{Package\Season Related Tasks\MOS Season\Merge Join.Outputs[Merge Join Output].Columns[DestSeason.ParentID]} &amp;&amp; #{Package\Season Related Tasks\MOS Season\Merge Join.Outputs[Merge Join Output].Columns[SourceSeason.Title]} == #{Package\Season Related Tasks\MOS Season\Merge Join.Outputs[Merge Join Output].Columns[DestSeason.Title]}</property>
+                          name="Expression">(#{Package\Season Related Tasks\MOS Season\Merge Join.Outputs[Merge Join Output].Columns[SourceSeason.Season Class]} == #{Package\Season Related Tasks\MOS Season\Merge Join.Outputs[Merge Join Output].Columns[DestSeason.Season Class]}) &amp;&amp; (#{Package\Season Related Tasks\MOS Season\Merge Join.Outputs[Merge Join Output].Columns[SourceSeason.Referent Type]} == #{Package\Season Related Tasks\MOS Season\Merge Join.Outputs[Merge Join Output].Columns[DestSeason.Referent Type]}) &amp;&amp; (#{Package\Season Related Tasks\MOS Season\Merge Join.Outputs[Merge Join Output].Columns[SourceSeason.ContentIdentifier]} == #{Package\Season Related Tasks\MOS Season\Merge Join.Outputs[Merge Join Output].Columns[DestSeason.ContentIdentifier]}) &amp;&amp; (#{Package\Season Related Tasks\MOS Season\Merge Join.Outputs[Merge Join Output].Columns[SourceSeason.Sequence.Number]} == #{Package\Season Related Tasks\MOS Season\Merge Join.Outputs[Merge Join Output].Columns[DestSeason.Sequence.Number]}) &amp;&amp; (#{Package\Season Related Tasks\MOS Season\Merge Join.Outputs[Merge Join Output].Columns[SourceSeason.ReleaseDate]} == #{Package\Season Related Tasks\MOS Season\Merge Join.Outputs[Merge Join Output].Columns[DestSeason.ReleaseDate]}) &amp;&amp; (#{Package\Season Related Tasks\MOS Season\Merge Join.Outputs[Merge Join Output].Columns[SourceEMMSeason.ParentID]} == #{Package\Season Related Tasks\MOS Season\Merge Join.Outputs[Merge Join Output].Columns[DestSeason.ParentID]}) &amp;&amp; (#{Package\Season Related Tasks\MOS Season\Merge Join.Outputs[Merge Join Output].Columns[SourceSeason.Title]} == #{Package\Season Related Tasks\MOS Season\Merge Join.Outputs[Merge Join Output].Columns[DestSeason.Title]}) &amp;&amp; (#{Package\Season Related Tasks\MOS Season\Merge Join.Outputs[Merge Join Output].Columns[SourceSeason.PublishStatus]} == #{Package\Season Related Tasks\MOS Season\Merge Join.Outputs[Merge Join Output].Columns[DestSeason.PublishStatus]})</property>
                         <property
                           containsID="true"
                           dataType="System.String"
                           description="Specifies the friendly version of the expression. This expression version uses column names."
                           expressionType="Notify"
-                          name="FriendlyExpression">[SourceSeason.Season Class] == [DestSeason.Season Class] &amp;&amp; [SourceSeason.Referent Type] == [DestSeason.Referent Type] &amp;&amp; [SourceSeason.ContentIdentifier] == [DestSeason.ContentIdentifier] &amp;&amp; [SourceSeason.Sequence.Number] == [DestSeason.Sequence.Number] &amp;&amp; [SourceSeason.ReleaseDate] == [DestSeason.ReleaseDate] &amp;&amp; [SourceEMMSeason.ParentID] == [DestSeason.ParentID] &amp;&amp; [SourceSeason.Title] == [DestSeason.Title]</property>
+                          name="FriendlyExpression">([SourceSeason.Season Class] == [DestSeason.Season Class]) &amp;&amp; ([SourceSeason.Referent Type] == [DestSeason.Referent Type]) &amp;&amp; ([SourceSeason.ContentIdentifier] == [DestSeason.ContentIdentifier]) &amp;&amp; ([SourceSeason.Sequence.Number] == [DestSeason.Sequence.Number]) &amp;&amp; ([SourceSeason.ReleaseDate] == [DestSeason.ReleaseDate]) &amp;&amp; ([SourceEMMSeason.ParentID] == [DestSeason.ParentID]) &amp;&amp; ([SourceSeason.Title] == [DestSeason.Title]) &amp;&amp; ([SourceSeason.PublishStatus] == [DestSeason.PublishStatus])</property>
                         <property
                           dataType="System.Int32"
                           description="Specifies the position of the condition in the list of conditions that the transformation evaluates. The evaluation order is from the lowest to the highest value."
@@ -18109,7 +18402,7 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
           DTS:LocaleID="-1"
           DTS:ObjectName="Truncate Table PBS SeasonEMMTemp"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2012; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="0">
+          DTS:ThreadHint="1">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -18207,11 +18500,11 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
           TopLeft="16.181818181818,81.909090909091" />
         <ContainerLayout
           HeaderHeight="43"
-          IsExpanded="True"
-          PanelSize="205,179"
-          Size="205,222"
+          IsExpanded="False"
+          PanelSize="426,432"
+          Size="426,43"
           Id="Package\Credits Related Tasks"
-          TopLeft="961,431" />
+          TopLeft="490,290" />
         <NodeLayout
           Size="209,42"
           Id="Package\Episode Related Tasks\Ceanup Nulls in xref Credits"
@@ -18354,9 +18647,7 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -18378,9 +18669,7 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -18402,18 +18691,16 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="False"
           PanelSize="416,329"
-          Size="204,43"
+          Size="416,43"
           Id="Package\Season Related Tasks"
-          TopLeft="706,429" />
+          TopLeft="711.5,418.5" />
       </GraphLayout>
     </LayoutInfo>
   </Package>
@@ -18477,7 +18764,9 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -18535,7 +18824,9 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -18569,7 +18860,9 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -18627,7 +18920,9 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -18825,7 +19120,9 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -18919,7 +19216,9 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -18977,7 +19276,9 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -19011,7 +19312,9 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -19153,7 +19456,9 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -19187,7 +19492,9 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -19293,7 +19600,9 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -19351,7 +19660,9 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -19385,7 +19696,9 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -19503,7 +19816,9 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -19561,7 +19876,9 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -19595,7 +19912,9 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -19629,7 +19948,9 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -19779,7 +20100,9 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -19849,7 +20172,9 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -19883,7 +20208,9 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -19953,7 +20280,9 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -20175,7 +20504,9 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -20209,7 +20540,9 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -20231,7 +20564,9 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -20289,7 +20624,9 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -20347,7 +20684,9 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -20381,7 +20720,9 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -20515,7 +20856,9 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -20549,7 +20892,9 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -20631,7 +20976,9 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -20689,7 +21036,9 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -20723,7 +21072,9 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -20898,13 +21249,13 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\MOS Series Update.Paths[Merge Join Output]"
-          TopLeft="382,223">
+          TopLeft="381,223">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-19.277777777778,50.111111111111"
+              EndConnector="-18.277777777778,50.111111111111"
               Start="0,0"
-              End="-19.277777777778,42.611111111111">
+              End="-18.277777777778,42.611111111111">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
@@ -20915,13 +21266,13 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
                     Point2="0,25.0555555555555"
                     Point3="-4,25.0555555555555" />
                   <mssgle:LineSegment
-                    End="-15.277777777778,25.0555555555555" />
+                    End="-14.277777777778,25.0555555555555" />
                   <mssgle:CubicBezierSegment
-                    Point1="-15.277777777778,25.0555555555555"
-                    Point2="-19.277777777778,25.0555555555555"
-                    Point3="-19.277777777778,29.0555555555555" />
+                    Point1="-14.277777777778,25.0555555555555"
+                    Point2="-18.277777777778,25.0555555555555"
+                    Point3="-18.277777777778,29.0555555555555" />
                   <mssgle:LineSegment
-                    End="-19.277777777778,42.611111111111" />
+                    End="-18.277777777778,42.611111111111" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -21006,26 +21357,26 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="158.222222222222,55.4444444444445"
+              EndConnector="137.555555555555,55.4444444444445"
               Start="0,0"
-              End="158.222222222222,47.9444444444445">
+              End="137.555555555555,47.9444444444445">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,22.7222222222222" />
+                    End="0,28.8682634730539" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,22.7222222222222"
-                    Point2="0,26.7222222222222"
-                    Point3="4,26.7222222222222" />
+                    Point1="0,28.8682634730539"
+                    Point2="0,32.8682634730539"
+                    Point3="4,32.8682634730539" />
                   <mssgle:LineSegment
-                    End="154.222222222222,26.7222222222222" />
+                    End="133.555555555555,32.8682634730539" />
                   <mssgle:CubicBezierSegment
-                    Point1="154.222222222222,26.7222222222222"
-                    Point2="158.222222222222,26.7222222222222"
-                    Point3="158.222222222222,30.7222222222222" />
+                    Point1="133.555555555555,32.8682634730539"
+                    Point2="137.555555555555,32.8682634730539"
+                    Point3="137.555555555555,36.8682634730539" />
                   <mssgle:LineSegment
-                    End="158.222222222222,47.9444444444445" />
+                    End="137.555555555555,47.9444444444445" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -21149,7 +21500,7 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
     design-time-name="Package\Season Related Tasks\Load SeasonEMMTemp">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="160,42"
           Id="Package\Season Related Tasks\Load SeasonEMMTemp\ADO NET Source"
@@ -21177,9 +21528,7 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -21187,6 +21536,14 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
   </TaskHost>
   <PipelineComponentMetadata
     design-time-name="Package\Season Related Tasks\Load SeasonEMMTemp\ADO NET Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Season Related Tasks\Load SeasonEMMTemp\ADO NET Source">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -21233,7 +21590,7 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
         <NodeLayout
           Size="170,42"
           Id="Package\Season Related Tasks\MOS Season\Dest Table In EMM"
-          TopLeft="453.777777777778,88.4444444444445" />
+          TopLeft="453.777777777778,89.4444444444445" />
         <NodeLayout
           Size="179,42"
           Id="Package\Season Related Tasks\MOS Season\ADO NET Destination"
@@ -21474,30 +21831,30 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Season Related Tasks\MOS Season.Paths[ADO NET Source Output1]"
-          TopLeft="538.777777777778,130.444444444445">
+          TopLeft="538.777777777778,131.444444444445">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-91.4444444444447,50.5555555555555"
+              EndConnector="-91.4444444444447,49.5555555555555"
               Start="0,0"
-              End="-91.4444444444447,43.0555555555555">
+              End="-91.4444444444447,42.0555555555555">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,25.9645390070922" />
+                    End="0,25.3718338399189" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,25.9645390070922"
-                    Point2="0,29.9645390070922"
-                    Point3="-4,29.9645390070922" />
+                    Point1="0,25.3718338399189"
+                    Point2="0,29.3718338399189"
+                    Point3="-4,29.3718338399189" />
                   <mssgle:LineSegment
-                    End="-87.4444444444447,29.9645390070922" />
+                    End="-87.4444444444447,29.3718338399189" />
                   <mssgle:CubicBezierSegment
-                    Point1="-87.4444444444447,29.9645390070922"
-                    Point2="-91.4444444444447,29.9645390070922"
-                    Point3="-91.4444444444447,33.9645390070922" />
+                    Point1="-87.4444444444447,29.3718338399189"
+                    Point2="-91.4444444444447,29.3718338399189"
+                    Point3="-91.4444444444447,33.3718338399189" />
                   <mssgle:LineSegment
-                    End="-91.4444444444447,43.0555555555555" />
+                    End="-91.4444444444447,42.0555555555555" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
