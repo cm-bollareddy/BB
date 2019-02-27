@@ -12,8 +12,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="MOSReload"
   DTS:PackageType="5"
-  DTS:VersionBuild="161"
-  DTS:VersionGUID="{FC2C1150-78DA-4A6E-BA44-78512625C32F}">
+  DTS:VersionBuild="163"
+  DTS:VersionGUID="{FD585225-9208-4F41-8771-803472DFDB7B}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">6</DTS:Property>
   <DTS:ConnectionManagers>
@@ -24,11 +24,11 @@
       DTS:ObjectName="db19-uat.EMM_Changes.mosuser">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=db19-uat;User ID=mosuser;Initial Catalog=EMM_MBank R1S2;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
+          DTS:ConnectionString="Data Source=db19-uat;User ID=mosuser;Initial Catalog=EMM_MBank R1S3;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAh+/3BtutRkGXV0BGBfZnngAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADQrnYNVB+4HFYcmEp6uKGhAAAAAASAAACgAAAAEAAAAHJ3JmYBJkWkVlNJD6k2W5MYAAAAUi54zwP2tVzYakOC6iNtM3P4bNAPRR4aFAAAAE9ps2LYh7Os5H0yjBO9uvkfk+SR</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAh+/3BtutRkGXV0BGBfZnngAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABFfsGRxLMVhvW3wOihmuy8AAAAAASAAACgAAAAEAAAAPMFsa2Lnejzj8tf+7sUxmUYAAAAqJW0QU9R2x85IUrvxFGsZLIToKp8x02lFAAAAGQzybbfhlwAkiyQVYDkwid+M+iz</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -39,11 +39,11 @@
       DTS:ObjectName="db19-uat.MOS.mosuser">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=db19-uat;User ID=mosuser;Initial Catalog=&quot;EMM_MBank R1S2&quot;;Persist Security Info=True;Application Name=SSIS-MOSTablesLoad-{638E68F5-0981-491A-B5FB-6C9504D69EF0}db19-uat.MOS.mosuser;">
+          DTS:ConnectionString="Data Source=db19-uat;User ID=mosuser;Initial Catalog=&quot;EMM_MBank R1S3&quot;;Persist Security Info=True;Application Name=SSIS-MOSTablesLoad-{638E68F5-0981-491A-B5FB-6C9504D69EF0}db19-uat.MOS.mosuser;">
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAh+/3BtutRkGXV0BGBfZnngAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACiSDJh5v2Qh8naSmjn9tXgAAAAAASAAACgAAAAEAAAALzY0DJwGYeWIjwxoKIGC9QYAAAABUfoqFn0VmLWOCc9E1FvIHA7z9IQEoKcFAAAABkpTOxzvwhDcfodmAWbmBG9ns36</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAh+/3BtutRkGXV0BGBfZnngAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAB63cAtDdmXCyNCNnynB5g2AAAAAASAAACgAAAAEAAAAOnyTt9c9KvM+AZXMEFyExAYAAAAJxrylyxziqIGElAGXUufCFQxhsLZH+ufFAAAAHJTP9KaustdqbeJD3Eptak04Knl</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -58,7 +58,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAh+/3BtutRkGXV0BGBfZnngAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABvWUSGb8WAMSDkFkftyxYLAAAAAASAAACgAAAAEAAAAOXuuPrFLIWV2HcchWxeFFAYAAAANPJxmWhpRFTMenDxRnXUWAW5O7/fdv4DFAAAAEfhzKDFEia0lrJUomFM+NqKUAT2</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAh+/3BtutRkGXV0BGBfZnngAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADjvcoqhUc3ZffXdXd0KpnjAAAAAASAAACgAAAAEAAAAP4RHcNZXNkLFe/k2vMvXOAYAAAAApZIPazeFKjfaffUL60cEtAkSfwG80eiFAAAAH+folkmNlQs1U7deSYJt/kVVpSC</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>

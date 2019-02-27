@@ -4,13 +4,13 @@
     <DTSConfigurationFileInfo GeneratedBy="BRADDOCK\ytseytlin" GeneratedFromPackageName="MOSTablesLoad" GeneratedFromPackageID="{6AD5EEF3-43DC-4A17-84C2-E19D9FD4D2BE}" GeneratedDate="10/18/2018 11:03:26 AM"/>
   </DTSConfigurationHeading>
   <Configuration ConfiguredType="Property" Path="\Package.Connections[db19-uat.MOS.mosuser].Properties[ConnectionString]" ValueType="String">
-    <ConfiguredValue>Data Source=db19-uat;User ID=mosuser;Initial Catalog=EMM_MBank R1S2;Persist Security Info=True;Application Name=SSIS-MOSTablesLoad-{638E68F5-0981-491A-B5FB-6C9504D69EF0}db19-uat.MOS.mosuser;</ConfiguredValue>
+    <ConfiguredValue>Data Source=db19-uat;User ID=mosuser;Initial Catalog=EMM_MBank R1S3;Persist Security Info=True;Application Name=SSIS-MOSTablesLoad-{638E68F5-0981-491A-B5FB-6C9504D69EF0}db19-uat.MOS.mosuser;</ConfiguredValue>
   </Configuration>
   <Configuration ConfiguredType="Property" Path="\Package.Connections[db19-uat.MOS.mosuser].Properties[Description]" ValueType="String">
     <ConfiguredValue></ConfiguredValue>
   </Configuration>
   <Configuration ConfiguredType="Property" Path="\Package.Connections[db19-uat.MOS.mosuser].Properties[InitialCatalog]" ValueType="String">
-    <ConfiguredValue>EMM_MBank R1S2</ConfiguredValue>
+    <ConfiguredValue>EMM_MBank R1S3</ConfiguredValue>
   </Configuration>
   <Configuration ConfiguredType="Property" Path="\Package.Connections[db19-uat.MOS.mosuser].Properties[Name]" ValueType="String">
     <ConfiguredValue>db19-uat.MOS.mosuser</ConfiguredValue>
