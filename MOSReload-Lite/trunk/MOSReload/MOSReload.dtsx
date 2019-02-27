@@ -12,8 +12,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="MOSReload"
   DTS:PackageType="5"
-  DTS:VersionBuild="163"
-  DTS:VersionGUID="{FD585225-9208-4F41-8771-803472DFDB7B}">
+  DTS:VersionBuild="166"
+  DTS:VersionGUID="{277CE3EE-7176-4154-A209-2FA89FCEF00C}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">6</DTS:Property>
   <DTS:ConnectionManagers>
@@ -28,7 +28,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAh+/3BtutRkGXV0BGBfZnngAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABFfsGRxLMVhvW3wOihmuy8AAAAAASAAACgAAAAEAAAAPMFsa2Lnejzj8tf+7sUxmUYAAAAqJW0QU9R2x85IUrvxFGsZLIToKp8x02lFAAAAGQzybbfhlwAkiyQVYDkwid+M+iz</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAh+/3BtutRkGXV0BGBfZnngAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABkBIcyalHXF8pa60B5sXMQAAAAAASAAACgAAAAEAAAAOPy2Bp0FURMBI6En0kAXq8YAAAAVBZCsqV394NxIP9P4VULiVNWzSUBIyiqFAAAAAydMluXYH8nEaZ5gM9SUviljBIU</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -43,7 +43,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAh+/3BtutRkGXV0BGBfZnngAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAB63cAtDdmXCyNCNnynB5g2AAAAAASAAACgAAAAEAAAAOnyTt9c9KvM+AZXMEFyExAYAAAAJxrylyxziqIGElAGXUufCFQxhsLZH+ufFAAAAHJTP9KaustdqbeJD3Eptak04Knl</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAh+/3BtutRkGXV0BGBfZnngAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAA/BdtoElSTqNsMEJIkPOsvAAAAAASAAACgAAAAEAAAABJ0898HPyZMaWVKGUMUFLMYAAAA6/G9hM+mMrF4O6RJ8eBBl6UOCyWHdeUjFAAAAMRZSSmg00J7nM0RGQ++FhpDWqpE</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -58,7 +58,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAh+/3BtutRkGXV0BGBfZnngAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADjvcoqhUc3ZffXdXd0KpnjAAAAAASAAACgAAAAEAAAAP4RHcNZXNkLFe/k2vMvXOAYAAAAApZIPazeFKjfaffUL60cEtAkSfwG80eiFAAAAH+folkmNlQs1U7deSYJt/kVVpSC</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAh+/3BtutRkGXV0BGBfZnngAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADBRMvzw6UdCaAaUwfTUOezAAAAAASAAACgAAAAEAAAAFO8YSHxf0WhZG1CT/1mzQYYAAAAjq4tNsrrj8EcG3vaZBPE+EkIz9vpSuqHFAAAAOxgBkZgkNGkzGFS0gggMA0rd60A</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -14663,7 +14663,7 @@ values(?,'MOSSeries','pending','insert',null,getdate(),null)</property>
       ,ISNULL([Series.ApproximateLength],'') as [Series.ApproximateLength]
       ,ISNULL([Series.ReleaseDate],'') as [Series.ReleaseDate]
 ,ISNULL(PublishStatus,'') as PublishStatus
-  FROM [TrafficData].[PBS].[vwMOSSeriesEMM]
+  FROM [PBS].[vwMOSSeriesEMM]
   order by [Series.UID]</property>
                 <property
                   dataType="System.Int32"
@@ -17663,7 +17663,7 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
       ,isnull([EMMSeason.ParentID],'') as [EMMSeason.ParentID]
       ,isnull([Season.Title],'') as [Season.Title]
 	  ,isnull(PublishStatus,'') as PublishStatus
-  FROM [TrafficData].[PBS].[SeasonEMMTemp]
+  FROM [PBS].[SeasonEMMTemp]
   order by [EMMSeason.UID]</property>
                     <property
                       dataType="System.Int32"
@@ -18696,9 +18696,9 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
         </EdgeLayout>
         <ContainerLayout
           HeaderHeight="43"
-          IsExpanded="False"
+          IsExpanded="True"
           PanelSize="416,329"
-          Size="416,43"
+          Size="416,372"
           Id="Package\Season Related Tasks"
           TopLeft="711.5,418.5" />
       </GraphLayout>
@@ -21118,18 +21118,6 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
           Id="Package\MOS Series Update\Delete record from Series in EMM"
           TopLeft="604,489" />
         <NodeLayout
-          Size="170,42"
-          Id="Package\MOS Series Update\Dest Table In EMM"
-          TopLeft="454.777777777778,90.4444444444445" />
-        <NodeLayout
-          Size="209,42"
-          Id="Package\MOS Series Update\update Series table in EMM"
-          TopLeft="327,553" />
-        <NodeLayout
-          Size="165,42"
-          Id="Package\MOS Series Update\non matched data"
-          TopLeft="338,394" />
-        <NodeLayout
           Size="114,42"
           Id="Package\MOS Series Update\update"
           TopLeft="378,476" />
@@ -21139,12 +21127,24 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
           TopLeft="315,181" />
         <NodeLayout
           Size="170,42"
+          Id="Package\MOS Series Update\Dest Table In EMM"
+          TopLeft="454.777777777778,90.4444444444445" />
+        <NodeLayout
+          Size="209,42"
+          Id="Package\MOS Series Update\update Series table in EMM"
+          TopLeft="327,553" />
+        <NodeLayout
+          Size="170,42"
           Id="Package\MOS Series Update\Source Query MOS"
           TopLeft="137.777777777778,83.5555555555555" />
         <NodeLayout
           Size="107,42"
           Id="Package\MOS Series Update\insert"
           TopLeft="76.8888888888889,394.555555555556" />
+        <NodeLayout
+          Size="165,42"
+          Id="Package\MOS Series Update\non matched data"
+          TopLeft="338,394" />
         <NodeLayout
           Size="157,42"
           Id="Package\MOS Series Update\Conditional Split"
@@ -21153,100 +21153,6 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
           Size="110,42"
           Id="Package\MOS Series Update\delete"
           TopLeft="634.111111111111,377" />
-        <EdgeLayout
-          Id="Package\MOS Series Update.Paths[OLE DB Command Output]"
-          TopLeft="433.25,518">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,35"
-              Start="0,0"
-              End="0,27.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,27.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\MOS Series Update.Paths[non match data]"
-          TopLeft="420.5,436">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="14.5,40"
-              Start="0,0"
-              End="14.5,32.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,16" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,16"
-                    Point2="0,20"
-                    Point3="4,20" />
-                  <mssgle:LineSegment
-                    End="10.5,20" />
-                  <mssgle:CubicBezierSegment
-                    Point1="10.5,20"
-                    Point2="14.5,20"
-                    Point3="14.5,24" />
-                  <mssgle:LineSegment
-                    End="14.5,32.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-27.80498046875,25,70.1099609375,9.7490234375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\MOS Series Update.Paths[NewRecords]"
-          TopLeft="337.888888888889,315.111111111111">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-207.5,79.444444444445"
-              Start="0,0"
-              End="-207.5,71.944444444445">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,28.2586520947179" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,28.2586520947179"
-                    Point2="0,32.2586520947179"
-                    Point3="-4,32.2586520947179" />
-                  <mssgle:LineSegment
-                    End="-203.5,32.2586520947179" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-203.5,32.2586520947179"
-                    Point2="-207.5,32.2586520947179"
-                    Point3="-207.5,36.2586520947179" />
-                  <mssgle:LineSegment
-                    End="-207.5,71.944444444445" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-131.512578125,37.2586520947179,55.52515625,9.7490234375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
         <EdgeLayout
           Id="Package\MOS Series Update.Paths[Merge Join Output]"
           TopLeft="381,223">
@@ -21477,6 +21383,100 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <EdgeLayout
+          Id="Package\MOS Series Update.Paths[OLE DB Command Output]"
+          TopLeft="433.25,518">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,35"
+              Start="0,0"
+              End="0,27.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,27.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\MOS Series Update.Paths[non match data]"
+          TopLeft="420.5,436">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="14.5,40"
+              Start="0,0"
+              End="14.5,32.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,16" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,16"
+                    Point2="0,20"
+                    Point3="4,20" />
+                  <mssgle:LineSegment
+                    End="10.5,20" />
+                  <mssgle:CubicBezierSegment
+                    Point1="10.5,20"
+                    Point2="14.5,20"
+                    Point3="14.5,24" />
+                  <mssgle:LineSegment
+                    End="14.5,32.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-27.80498046875,25,70.1099609375,9.7490234375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\MOS Series Update.Paths[NewRecords]"
+          TopLeft="337.888888888889,315.111111111111">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-207.5,79.444444444445"
+              Start="0,0"
+              End="-207.5,71.944444444445">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,28.2586520947179" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,28.2586520947179"
+                    Point2="0,32.2586520947179"
+                    Point3="-4,32.2586520947179" />
+                  <mssgle:LineSegment
+                    End="-203.5,32.2586520947179" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-203.5,32.2586520947179"
+                    Point2="-207.5,32.2586520947179"
+                    Point3="-207.5,36.2586520947179" />
+                  <mssgle:LineSegment
+                    End="-207.5,71.944444444445" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-131.512578125,37.2586520947179,55.52515625,9.7490234375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
@@ -21556,45 +21556,45 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
       <GraphLayout
         Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="130,42"
-          Id="Package\Season Related Tasks\MOS Season\Merge Join"
-          TopLeft="362,181" />
-        <NodeLayout
-          Size="159,42"
-          Id="Package\Season Related Tasks\MOS Season\Updated Records"
-          TopLeft="304,392" />
+          Size="110,42"
+          Id="Package\Season Related Tasks\MOS Season\delete"
+          TopLeft="636.111111111111,342" />
         <NodeLayout
           Size="157,42"
           Id="Package\Season Related Tasks\MOS Season\Conditional Split"
           TopLeft="284.222222222222,273.111111111111" />
         <NodeLayout
-          Size="110,42"
-          Id="Package\Season Related Tasks\MOS Season\delete"
-          TopLeft="636.111111111111,342" />
+          Size="107,42"
+          Id="Package\Season Related Tasks\MOS Season\insert"
+          TopLeft="76.8888888888889,394.555555555556" />
         <NodeLayout
           Size="243,42"
           Id="Package\Season Related Tasks\MOS Season\delete record from Season in EMM"
           TopLeft="591,461" />
         <NodeLayout
-          Size="170,42"
-          Id="Package\Season Related Tasks\MOS Season\Source Query MOS"
-          TopLeft="137.777777777778,83.5555555555555" />
+          Size="159,42"
+          Id="Package\Season Related Tasks\MOS Season\Updated Records"
+          TopLeft="304,392" />
         <NodeLayout
-          Size="107,42"
-          Id="Package\Season Related Tasks\MOS Season\insert"
-          TopLeft="76.8888888888889,394.555555555556" />
-        <NodeLayout
-          Size="187,42"
-          Id="Package\Season Related Tasks\MOS Season\Update Season in EMM"
-          TopLeft="301,520" />
+          Size="130,42"
+          Id="Package\Season Related Tasks\MOS Season\Merge Join"
+          TopLeft="362,181" />
         <NodeLayout
           Size="170,42"
           Id="Package\Season Related Tasks\MOS Season\Dest Table In EMM"
           TopLeft="453.777777777778,89.4444444444445" />
         <NodeLayout
+          Size="187,42"
+          Id="Package\Season Related Tasks\MOS Season\Update Season in EMM"
+          TopLeft="301,520" />
+        <NodeLayout
           Size="179,42"
           Id="Package\Season Related Tasks\MOS Season\ADO NET Destination"
           TopLeft="47,500" />
+        <NodeLayout
+          Size="170,42"
+          Id="Package\Season Related Tasks\MOS Season\Source Query MOS"
+          TopLeft="137.777777777778,83.5555555555555" />
         <EdgeLayout
           Id="Package\Season Related Tasks\MOS Season.Paths[RemovedRecords]"
           TopLeft="399.972222222222,315.111111111111">
@@ -21901,14 +21901,6 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Season Related Tasks\MOS Season\Source Query MOS">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
     design-time-name="Package\Season Related Tasks\MOS Season\Dest Table In EMM">
     <Properties>
       <Property>
@@ -21918,6 +21910,14 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\Season Related Tasks\MOS Season\ADO NET Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Season Related Tasks\MOS Season\Source Query MOS">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
