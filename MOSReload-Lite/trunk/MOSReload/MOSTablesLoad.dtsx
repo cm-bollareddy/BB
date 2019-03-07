@@ -12,8 +12,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="MOSTablesLoad"
   DTS:PackageType="5"
-  DTS:VersionBuild="273"
-  DTS:VersionGUID="{02CAEBB2-53E5-42E3-86E7-2054518772DD}">
+  DTS:VersionBuild="280"
+  DTS:VersionGUID="{5A9CA35C-EECE-4A29-90CE-3A19A86D35F7}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">6</DTS:Property>
   <DTS:ConnectionManagers>
@@ -24,11 +24,11 @@
       DTS:ObjectName="db19-uat.EMM_Changes.mosuser">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=db19-uat;User ID=mosuser;Initial Catalog=EMM_MBank R1S2;Provider=SQLNCLI11.1;Auto Translate=False;">
+          DTS:ConnectionString="Data Source=db19-uat;User ID=mosuser;Initial Catalog=EMM_MBank R1S2;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAk9C8YJd1Qk+IP7+g9k9HRwAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACyiQEX7nIAeZbfCICfzyOlAAAAAASAAACgAAAAEAAAAMgcKj5Kux3NyBIXUT1mm6QYAAAAGUqR41vfN97fzm5ukcnMSoNdiwMga7i5FAAAAIwMD7rLziaAg06oIKB93K9UBttB</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAkjBFWtGIrkixnBX0uCWHTAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAnxauGeryz+u9IwPelULmFAAAAAASAAACgAAAAEAAAAOGMDJTno5cWBREJZwexA4gYAAAAYMhvspPpKh/5FkKhter62NPc/bBNXP/3FAAAADRU5irVdqQQOZeP8kup53P7UNnl</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -43,7 +43,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAk9C8YJd1Qk+IP7+g9k9HRwAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADC9oAwcK3n2ZdribsYRavWAAAAAASAAACgAAAAEAAAABKajGH+E1+vaFIwSmZx5dYYAAAAHPNvxw3OGVd82+TjCOcfbIA1dM4kXaUxFAAAALpkGhTu4cjVo9oV1xMSrsxaAEls</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAkjBFWtGIrkixnBX0uCWHTAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAJilrhp3UUKsKKZI08ldzQAAAAAASAAACgAAAAEAAAAE7eZc9IS5CdjMAzwJwrHucYAAAA1eVyhYToM/lXtQY2JCy9r/btKTZpRcXiFAAAABqUBwD2kmVJ2OmkMBjBuCtUoSTQ</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -58,7 +58,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAk9C8YJd1Qk+IP7+g9k9HRwAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABXYtrpKXI9Gb9Cd/YKn80TAAAAAASAAACgAAAAEAAAAMqhLWDW8b5kAyKi9HmL8BsYAAAA/jfwJ+zYrrQYWrDXzKYl1LLORIt87wIXFAAAAO4KRws5kdsF4pdecckavGbOBVy6</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAkjBFWtGIrkixnBX0uCWHTAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABHe93PfHIRqibAK0cBZIJJAAAAAASAAACgAAAAEAAAAPCEqnb9nSF12+xgH55wUfsYAAAA6D5TmrUams5R//OHAw3QPwZB4p0tD2ACFAAAAFO01L0UaclQOy1RwWD1hctdCpjd</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -145,52 +145,13 @@
                       errorRowDisposition="FailComponent"
                       hasSideEffects="true"
                       name="ADO NET Destination Input">
-                      <inputColumns>
-                        <inputColumn
-                          refId="Package\Compilation Container\Load MOSCompilation\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Compilation.StructuralType]"
-                          cachedDataType="wstr"
-                          cachedLength="11"
-                          cachedName="Compilation.StructuralType"
-                          externalMetadataColumnId="Package\Compilation Container\Load MOSCompilation\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Compilation.StructuralType]"
-                          lineageId="Package\Compilation Container\Load MOSCompilation\ADO NET Source.Outputs[ADO NET Source Output].Columns[Compilation.StructuralType]" />
-                        <inputColumn
-                          refId="Package\Compilation Container\Load MOSCompilation\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Compilation.Referent Type]"
-                          cachedDataType="wstr"
-                          cachedLength="11"
-                          cachedName="Compilation.Referent Type"
-                          externalMetadataColumnId="Package\Compilation Container\Load MOSCompilation\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Compilation.Referent Type]"
-                          lineageId="Package\Compilation Container\Load MOSCompilation\ADO NET Source.Outputs[ADO NET Source Output].Columns[Compilation.Referent Type]" />
-                        <inputColumn
-                          refId="Package\Compilation Container\Load MOSCompilation\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Compilation.UID]"
-                          cachedDataType="wstr"
-                          cachedLength="56"
-                          cachedName="Compilation.UID"
-                          externalMetadataColumnId="Package\Compilation Container\Load MOSCompilation\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Compilation.UID]"
-                          lineageId="Package\Compilation Container\Load MOSCompilation\ADO NET Source.Outputs[ADO NET Source Output].Columns[Compilation.UID]" />
-                        <inputColumn
-                          refId="Package\Compilation Container\Load MOSCompilation\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Compilation.ReleaseDate]"
-                          cachedDataType="wstr"
-                          cachedLength="10"
-                          cachedName="Compilation.ReleaseDate"
-                          externalMetadataColumnId="Package\Compilation Container\Load MOSCompilation\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Compilation.ReleaseDate]"
-                          lineageId="Package\Compilation Container\Load MOSCompilation\ADO NET Source.Outputs[ADO NET Source Output].Columns[Compilation.ReleaseDate]" />
-                        <inputColumn
-                          refId="Package\Compilation Container\Load MOSCompilation\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Compilation.Title]"
-                          cachedDataType="wstr"
-                          cachedLength="80"
-                          cachedName="Compilation.Title"
-                          externalMetadataColumnId="Package\Compilation Container\Load MOSCompilation\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Compilation.Title]"
-                          lineageId="Package\Compilation Container\Load MOSCompilation\ADO NET Source.Outputs[ADO NET Source Output].Columns[Compilation.Title]" />
-                        <inputColumn
-                          refId="Package\Compilation Container\Load MOSCompilation\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Compilation.CompilationClass]"
-                          cachedDataType="wstr"
-                          cachedLength="9"
-                          cachedName="Compilation.CompilationClass"
-                          externalMetadataColumnId="Package\Compilation Container\Load MOSCompilation\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Compilation.CompilationClass]"
-                          lineageId="Package\Compilation Container\Load MOSCompilation\ADO NET Source.Outputs[ADO NET Source Output].Columns[Compilation.CompilationClass]" />
-                      </inputColumns>
                       <externalMetadataColumns
                         isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Compilation Container\Load MOSCompilation\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Compilation.UID]"
+                          dataType="wstr"
+                          length="400"
+                          name="Compilation.UID" />
                         <externalMetadataColumn
                           refId="Package\Compilation Container\Load MOSCompilation\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Compilation.StructuralType]"
                           dataType="wstr"
@@ -201,11 +162,6 @@
                           dataType="wstr"
                           length="500"
                           name="Compilation.Referent Type" />
-                        <externalMetadataColumn
-                          refId="Package\Compilation Container\Load MOSCompilation\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Compilation.UID]"
-                          dataType="wstr"
-                          length="500"
-                          name="Compilation.UID" />
                         <externalMetadataColumn
                           refId="Package\Compilation Container\Load MOSCompilation\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Compilation.ReleaseDate]"
                           dataType="wstr"
@@ -221,6 +177,11 @@
                           dataType="wstr"
                           length="500"
                           name="Compilation.CompilationClass" />
+                        <externalMetadataColumn
+                          refId="Package\Compilation Container\Load MOSCompilation\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Compilation.PublishStatus]"
+                          dataType="wstr"
+                          length="500"
+                          name="Compilation.PublishStatus" />
                       </externalMetadataColumns>
                     </input>
                   </inputs>
@@ -546,47 +507,18 @@ from	[PBS].[vwMOSCompilation]
                       errorRowDisposition="FailComponent"
                       hasSideEffects="true"
                       name="ADO NET Destination Input">
-                      <inputColumns>
-                        <inputColumn
-                          refId="Package\Compilation Container\Load MOSCompilation Entry\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Compilation.UID]"
-                          cachedDataType="wstr"
-                          cachedLength="56"
-                          cachedName="Compilation.UID"
-                          externalMetadataColumnId="Package\Compilation Container\Load MOSCompilation Entry\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Compilation.UID]"
-                          lineageId="Package\Compilation Container\Load MOSCompilation Entry\ADO NET Source.Outputs[ADO NET Source Output].Columns[Compilation.UID]" />
-                        <inputColumn
-                          refId="Package\Compilation Container\Load MOSCompilation Entry\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Compilation.Entry.ContentIdentifier]"
-                          cachedDataType="wstr"
-                          cachedLength="54"
-                          cachedName="Compilation.Entry.ContentIdentifier"
-                          externalMetadataColumnId="Package\Compilation Container\Load MOSCompilation Entry\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Compilation.Entry.ContentIdentifier]"
-                          lineageId="Package\Compilation Container\Load MOSCompilation Entry\ADO NET Source.Outputs[ADO NET Source Output].Columns[Compilation.Entry.ContentIdentifier]" />
-                        <inputColumn
-                          refId="Package\Compilation Container\Load MOSCompilation Entry\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Compilation.Entry.EntryNumber]"
-                          cachedDataType="nText"
-                          cachedName="Compilation.Entry.EntryNumber"
-                          externalMetadataColumnId="Package\Compilation Container\Load MOSCompilation Entry\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Compilation.Entry.EntryNumber]"
-                          lineageId="Package\Compilation Container\Load MOSCompilation Entry\ADO NET Source.Outputs[ADO NET Source Output].Columns[Compilation.Entry.EntryNumber]" />
-                        <inputColumn
-                          refId="Package\Compilation Container\Load MOSCompilation Entry\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Compilation.Entry.Class]"
-                          cachedDataType="wstr"
-                          cachedLength="11"
-                          cachedName="Compilation.Entry.Class"
-                          externalMetadataColumnId="Package\Compilation Container\Load MOSCompilation Entry\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Compilation.Entry.Class]"
-                          lineageId="Package\Compilation Container\Load MOSCompilation Entry\ADO NET Source.Outputs[ADO NET Source Output].Columns[Compilation.Entry.Class]" />
-                      </inputColumns>
                       <externalMetadataColumns
                         isUsed="True">
                         <externalMetadataColumn
-                          refId="Package\Compilation Container\Load MOSCompilation Entry\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Compilation.UID]"
-                          dataType="wstr"
-                          length="63"
-                          name="Compilation.UID" />
-                        <externalMetadataColumn
                           refId="Package\Compilation Container\Load MOSCompilation Entry\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Compilation.Entry.ContentIdentifier]"
                           dataType="wstr"
-                          length="54"
+                          length="400"
                           name="Compilation.Entry.ContentIdentifier" />
+                        <externalMetadataColumn
+                          refId="Package\Compilation Container\Load MOSCompilation Entry\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Compilation.UID]"
+                          dataType="wstr"
+                          length="400"
+                          name="Compilation.UID" />
                         <externalMetadataColumn
                           refId="Package\Compilation Container\Load MOSCompilation Entry\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Compilation.Entry.EntryNumber]"
                           dataType="i4"
@@ -594,8 +526,13 @@ from	[PBS].[vwMOSCompilation]
                         <externalMetadataColumn
                           refId="Package\Compilation Container\Load MOSCompilation Entry\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Compilation.Entry.Class]"
                           dataType="wstr"
-                          length="11"
+                          length="100"
                           name="Compilation.Entry.Class" />
+                        <externalMetadataColumn
+                          refId="Package\Compilation Container\Load MOSCompilation Entry\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Compilation.Entry.PublishStatus]"
+                          dataType="wstr"
+                          length="500"
+                          name="Compilation.Entry.PublishStatus" />
                       </externalMetadataColumns>
                     </input>
                   </inputs>
@@ -830,7 +767,7 @@ from	[PBS].[vwMOSCompilation]</property>
           DTS:LocaleID="-1"
           DTS:ObjectName="Ceanup Nulls in xref Credits"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2012; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="0">
+          DTS:ThreadHint="1">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -847,7 +784,7 @@ from	[PBS].[vwMOSCompilation]</property>
           DTS:LocaleID="-1"
           DTS:ObjectName="Ceanup Nulls in xref Organization"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2012; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="1">
+          DTS:ThreadHint="0">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -917,44 +854,23 @@ from	[PBS].[vwMOSCompilation]</property>
                       errorRowDisposition="FailComponent"
                       hasSideEffects="true"
                       name="ADO NET Destination Input">
-                      <inputColumns>
-                        <inputColumn
-                          refId="Package\Epsiode Container\Credits\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[PBSInternalID]"
-                          cachedDataType="i4"
-                          cachedName="PBSInternalID"
-                          externalMetadataColumnId="Package\Epsiode Container\Credits\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[PBSInternalID]"
-                          lineageId="Package\Epsiode Container\Credits\ADO NET Source.Outputs[ADO NET Source Output].Columns[PBSInternalID]" />
-                        <inputColumn
-                          refId="Package\Epsiode Container\Credits\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Credits.TalentID]"
-                          cachedDataType="wstr"
-                          cachedLength="526"
-                          cachedName="Credits.TalentID"
-                          externalMetadataColumnId="Package\Epsiode Container\Credits\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[TalentUID]"
-                          lineageId="Package\Epsiode Container\Credits\ADO NET Source.Outputs[ADO NET Source Output].Columns[Credits.TalentID]" />
-                        <inputColumn
-                          refId="Package\Epsiode Container\Credits\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Credits.Display.Name]"
-                          cachedDataType="wstr"
-                          cachedLength="80"
-                          cachedName="Credits.Display.Name"
-                          externalMetadataColumnId="Package\Epsiode Container\Credits\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[DisplayName]"
-                          lineageId="Package\Epsiode Container\Credits\ADO NET Source.Outputs[ADO NET Source Output].Columns[Credits.Display.Name]" />
-                      </inputColumns>
                       <externalMetadataColumns
                         isUsed="True">
                         <externalMetadataColumn
-                          refId="Package\Epsiode Container\Credits\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[PBSInternalID]"
-                          dataType="i4"
-                          name="PBSInternalID" />
-                        <externalMetadataColumn
-                          refId="Package\Epsiode Container\Credits\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[TalentUID]"
+                          refId="Package\Epsiode Container\Credits\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Talent.UID]"
                           dataType="wstr"
-                          length="500"
-                          name="TalentUID" />
+                          length="400"
+                          name="Talent.UID" />
                         <externalMetadataColumn
                           refId="Package\Epsiode Container\Credits\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[DisplayName]"
                           dataType="wstr"
                           length="500"
                           name="DisplayName" />
+                        <externalMetadataColumn
+                          refId="Package\Epsiode Container\Credits\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[PublishStatus]"
+                          dataType="wstr"
+                          length="150"
+                          name="PublishStatus" />
                       </externalMetadataColumns>
                     </input>
                   </inputs>
@@ -2667,46 +2583,46 @@ left outer join
                           externalMetadataColumnId="Package\Epsiode Container\MOSEpisode Contacts\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[OrganizationID]"
                           lineageId="Package\Epsiode Container\MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Output].Columns[OrganizationID]" />
                         <inputColumn
-                          refId="Package\Epsiode Container\MOSEpisode Contacts\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Phone]"
+                          refId="Package\Epsiode Container\MOSEpisode Contacts\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Contact.Info.Phone]"
                           cachedDataType="wstr"
                           cachedLength="20"
-                          cachedName="Phone"
+                          cachedName="Contact.Info.Phone"
                           externalMetadataColumnId="Package\Epsiode Container\MOSEpisode Contacts\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Phone]"
-                          lineageId="Package\Epsiode Container\MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Output].Columns[Phone]" />
+                          lineageId="Package\Epsiode Container\MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Output].Columns[Contact.Info.Phone]" />
                         <inputColumn
-                          refId="Package\Epsiode Container\MOSEpisode Contacts\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Address]"
+                          refId="Package\Epsiode Container\MOSEpisode Contacts\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Contact Info.Address]"
                           cachedDataType="wstr"
                           cachedLength="304"
-                          cachedName="Address"
+                          cachedName="Contact Info.Address"
                           externalMetadataColumnId="Package\Epsiode Container\MOSEpisode Contacts\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Address]"
-                          lineageId="Package\Epsiode Container\MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Output].Columns[Address]" />
+                          lineageId="Package\Epsiode Container\MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Output].Columns[Contact Info.Address]" />
                         <inputColumn
-                          refId="Package\Epsiode Container\MOSEpisode Contacts\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[PrimaryEmail]"
+                          refId="Package\Epsiode Container\MOSEpisode Contacts\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Contact.Info.PrimaryEmail]"
                           cachedDataType="wstr"
                           cachedLength="80"
-                          cachedName="PrimaryEmail"
+                          cachedName="Contact.Info.PrimaryEmail"
                           externalMetadataColumnId="Package\Epsiode Container\MOSEpisode Contacts\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[PrimaryEmail]"
-                          lineageId="Package\Epsiode Container\MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Output].Columns[PrimaryEmail]" />
+                          lineageId="Package\Epsiode Container\MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Output].Columns[Contact.Info.PrimaryEmail]" />
                         <inputColumn
-                          refId="Package\Epsiode Container\MOSEpisode Contacts\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Name]"
+                          refId="Package\Epsiode Container\MOSEpisode Contacts\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Contact.Info.Name]"
                           cachedDataType="wstr"
                           cachedLength="40"
-                          cachedName="Name"
+                          cachedName="Contact.Info.Name"
                           externalMetadataColumnId="Package\Epsiode Container\MOSEpisode Contacts\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Name]"
-                          lineageId="Package\Epsiode Container\MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Output].Columns[Name]" />
+                          lineageId="Package\Epsiode Container\MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Output].Columns[Contact.Info.Name]" />
                         <inputColumn
-                          refId="Package\Epsiode Container\MOSEpisode Contacts\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[ContactID]"
+                          refId="Package\Epsiode Container\MOSEpisode Contacts\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Contact.Info.ContactID]"
                           cachedDataType="i4"
-                          cachedName="ContactID"
+                          cachedName="Contact.Info.ContactID"
                           externalMetadataColumnId="Package\Epsiode Container\MOSEpisode Contacts\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[ContactID]"
-                          lineageId="Package\Epsiode Container\MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Output].Columns[ContactID]" />
+                          lineageId="Package\Epsiode Container\MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Output].Columns[Contact.Info.ContactID]" />
                         <inputColumn
-                          refId="Package\Epsiode Container\MOSEpisode Contacts\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[PhoneType]"
+                          refId="Package\Epsiode Container\MOSEpisode Contacts\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Contact.Info.Phone.Type]"
                           cachedDataType="wstr"
-                          cachedLength="20"
-                          cachedName="PhoneType"
+                          cachedLength="6"
+                          cachedName="Contact.Info.Phone.Type"
                           externalMetadataColumnId="Package\Epsiode Container\MOSEpisode Contacts\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Phone.Type]"
-                          lineageId="Package\Epsiode Container\MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Output].Columns[PhoneType]" />
+                          lineageId="Package\Epsiode Container\MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Output].Columns[Contact.Info.Phone.Type]" />
                       </inputColumns>
                       <externalMetadataColumns
                         isUsed="True">
@@ -2886,12 +2802,12 @@ where A.[OrganizationID] is not null
                       description="The Source database table name."
                       expressionType="Notify"
                       name="TableOrViewName"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version= 11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version= 11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">"PBS"."vwContactsEMM"</property>
                     <property
                       dataType="System.Int32"
                       description="Specify the mode to retrieve external column information"
                       name="AccessMode"
-                      typeConverter="Microsoft.SqlServer.Dts.Pipeline.DataReaderSourceAdapter+EnumToStringConverter, Microsoft.SqlServer.ADONETSrc, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">2</property>
+                      typeConverter="Microsoft.SqlServer.Dts.Pipeline.DataReaderSourceAdapter+EnumToStringConverter, Microsoft.SqlServer.ADONETSrc, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">0</property>
                     <property
                       dataType="System.String"
                       name="UserComponentTypeName">Microsoft.SqlServer.Dts.Pipeline.DataReaderSourceAdapter, Microsoft.SqlServer.ADONETSrc, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91</property>
@@ -2919,63 +2835,63 @@ where A.[OrganizationID] is not null
                           name="OrganizationID"
                           truncationRowDisposition="FailComponent" />
                         <outputColumn
-                          refId="Package\Epsiode Container\MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Output].Columns[Phone]"
-                          dataType="wstr"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Epsiode Container\MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Phone]"
-                          length="20"
-                          lineageId="Package\Epsiode Container\MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Output].Columns[Phone]"
-                          name="Phone"
-                          truncationRowDisposition="FailComponent" />
-                        <outputColumn
-                          refId="Package\Epsiode Container\MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Output].Columns[PhoneType]"
-                          dataType="wstr"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Epsiode Container\MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[PhoneType]"
-                          length="20"
-                          lineageId="Package\Epsiode Container\MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Output].Columns[PhoneType]"
-                          name="PhoneType"
-                          truncationRowDisposition="FailComponent" />
-                        <outputColumn
-                          refId="Package\Epsiode Container\MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Output].Columns[Address]"
-                          dataType="wstr"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Epsiode Container\MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Address]"
-                          length="304"
-                          lineageId="Package\Epsiode Container\MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Output].Columns[Address]"
-                          name="Address"
-                          truncationRowDisposition="FailComponent" />
-                        <outputColumn
-                          refId="Package\Epsiode Container\MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Output].Columns[PrimaryEmail]"
-                          dataType="wstr"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Epsiode Container\MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[PrimaryEmail]"
-                          length="80"
-                          lineageId="Package\Epsiode Container\MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Output].Columns[PrimaryEmail]"
-                          name="PrimaryEmail"
-                          truncationRowDisposition="FailComponent" />
-                        <outputColumn
-                          refId="Package\Epsiode Container\MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Output].Columns[Name]"
-                          dataType="wstr"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Epsiode Container\MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Name]"
-                          length="40"
-                          lineageId="Package\Epsiode Container\MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Output].Columns[Name]"
-                          name="Name"
-                          truncationRowDisposition="FailComponent" />
-                        <outputColumn
-                          refId="Package\Epsiode Container\MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Output].Columns[ContactID]"
+                          refId="Package\Epsiode Container\MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Output].Columns[Contact.Info.ContactID]"
                           dataType="i4"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Epsiode Container\MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[ContactID]"
-                          lineageId="Package\Epsiode Container\MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Output].Columns[ContactID]"
-                          name="ContactID"
+                          externalMetadataColumnId="Package\Epsiode Container\MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Contact.Info.ContactID]"
+                          lineageId="Package\Epsiode Container\MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Output].Columns[Contact.Info.ContactID]"
+                          name="Contact.Info.ContactID"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Epsiode Container\MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Output].Columns[Contact.Info.Name]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Epsiode Container\MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Contact.Info.Name]"
+                          length="40"
+                          lineageId="Package\Epsiode Container\MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Output].Columns[Contact.Info.Name]"
+                          name="Contact.Info.Name"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Epsiode Container\MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Output].Columns[Contact.Info.Phone]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Epsiode Container\MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Contact.Info.Phone]"
+                          length="20"
+                          lineageId="Package\Epsiode Container\MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Output].Columns[Contact.Info.Phone]"
+                          name="Contact.Info.Phone"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Epsiode Container\MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Output].Columns[Contact.Info.Phone.Type]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Epsiode Container\MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Contact.Info.Phone.Type]"
+                          length="6"
+                          lineageId="Package\Epsiode Container\MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Output].Columns[Contact.Info.Phone.Type]"
+                          name="Contact.Info.Phone.Type"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Epsiode Container\MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Output].Columns[Contact Info.Address]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Epsiode Container\MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Contact Info.Address]"
+                          length="304"
+                          lineageId="Package\Epsiode Container\MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Output].Columns[Contact Info.Address]"
+                          name="Contact Info.Address"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Epsiode Container\MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Output].Columns[Contact.Info.PrimaryEmail]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Epsiode Container\MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Contact.Info.PrimaryEmail]"
+                          length="80"
+                          lineageId="Package\Epsiode Container\MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Output].Columns[Contact.Info.PrimaryEmail]"
+                          name="Contact.Info.PrimaryEmail"
                           truncationRowDisposition="FailComponent" />
                       </outputColumns>
                       <externalMetadataColumns
@@ -2985,34 +2901,34 @@ where A.[OrganizationID] is not null
                           dataType="i4"
                           name="OrganizationID" />
                         <externalMetadataColumn
-                          refId="Package\Epsiode Container\MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Phone]"
-                          dataType="wstr"
-                          length="20"
-                          name="Phone" />
+                          refId="Package\Epsiode Container\MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Contact.Info.ContactID]"
+                          dataType="i4"
+                          name="Contact.Info.ContactID" />
                         <externalMetadataColumn
-                          refId="Package\Epsiode Container\MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[PhoneType]"
-                          dataType="wstr"
-                          length="20"
-                          name="PhoneType" />
-                        <externalMetadataColumn
-                          refId="Package\Epsiode Container\MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Address]"
-                          dataType="wstr"
-                          length="304"
-                          name="Address" />
-                        <externalMetadataColumn
-                          refId="Package\Epsiode Container\MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[PrimaryEmail]"
-                          dataType="wstr"
-                          length="80"
-                          name="PrimaryEmail" />
-                        <externalMetadataColumn
-                          refId="Package\Epsiode Container\MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Name]"
+                          refId="Package\Epsiode Container\MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Contact.Info.Name]"
                           dataType="wstr"
                           length="40"
-                          name="Name" />
+                          name="Contact.Info.Name" />
                         <externalMetadataColumn
-                          refId="Package\Epsiode Container\MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[ContactID]"
-                          dataType="i4"
-                          name="ContactID" />
+                          refId="Package\Epsiode Container\MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Contact.Info.Phone]"
+                          dataType="wstr"
+                          length="20"
+                          name="Contact.Info.Phone" />
+                        <externalMetadataColumn
+                          refId="Package\Epsiode Container\MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Contact.Info.Phone.Type]"
+                          dataType="wstr"
+                          length="6"
+                          name="Contact.Info.Phone.Type" />
+                        <externalMetadataColumn
+                          refId="Package\Epsiode Container\MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Contact Info.Address]"
+                          dataType="wstr"
+                          length="304"
+                          name="Contact Info.Address" />
+                        <externalMetadataColumn
+                          refId="Package\Epsiode Container\MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Contact.Info.PrimaryEmail]"
+                          dataType="wstr"
+                          length="80"
+                          name="Contact.Info.PrimaryEmail" />
                       </externalMetadataColumns>
                     </output>
                     <output
@@ -3026,40 +2942,40 @@ where A.[OrganizationID] is not null
                           lineageId="Package\Epsiode Container\MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[OrganizationID]"
                           name="OrganizationID" />
                         <outputColumn
-                          refId="Package\Epsiode Container\MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Phone]"
-                          dataType="wstr"
-                          length="20"
-                          lineageId="Package\Epsiode Container\MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Phone]"
-                          name="Phone" />
+                          refId="Package\Epsiode Container\MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Contact.Info.ContactID]"
+                          dataType="i4"
+                          lineageId="Package\Epsiode Container\MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Contact.Info.ContactID]"
+                          name="Contact.Info.ContactID" />
                         <outputColumn
-                          refId="Package\Epsiode Container\MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[PhoneType]"
-                          dataType="wstr"
-                          length="20"
-                          lineageId="Package\Epsiode Container\MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[PhoneType]"
-                          name="PhoneType" />
-                        <outputColumn
-                          refId="Package\Epsiode Container\MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Address]"
-                          dataType="wstr"
-                          length="304"
-                          lineageId="Package\Epsiode Container\MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Address]"
-                          name="Address" />
-                        <outputColumn
-                          refId="Package\Epsiode Container\MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[PrimaryEmail]"
-                          dataType="wstr"
-                          length="80"
-                          lineageId="Package\Epsiode Container\MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[PrimaryEmail]"
-                          name="PrimaryEmail" />
-                        <outputColumn
-                          refId="Package\Epsiode Container\MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Name]"
+                          refId="Package\Epsiode Container\MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Contact.Info.Name]"
                           dataType="wstr"
                           length="40"
-                          lineageId="Package\Epsiode Container\MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Name]"
-                          name="Name" />
+                          lineageId="Package\Epsiode Container\MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Contact.Info.Name]"
+                          name="Contact.Info.Name" />
                         <outputColumn
-                          refId="Package\Epsiode Container\MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[ContactID]"
-                          dataType="i4"
-                          lineageId="Package\Epsiode Container\MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[ContactID]"
-                          name="ContactID" />
+                          refId="Package\Epsiode Container\MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Contact.Info.Phone]"
+                          dataType="wstr"
+                          length="20"
+                          lineageId="Package\Epsiode Container\MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Contact.Info.Phone]"
+                          name="Contact.Info.Phone" />
+                        <outputColumn
+                          refId="Package\Epsiode Container\MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Contact.Info.Phone.Type]"
+                          dataType="wstr"
+                          length="6"
+                          lineageId="Package\Epsiode Container\MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Contact.Info.Phone.Type]"
+                          name="Contact.Info.Phone.Type" />
+                        <outputColumn
+                          refId="Package\Epsiode Container\MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Contact Info.Address]"
+                          dataType="wstr"
+                          length="304"
+                          lineageId="Package\Epsiode Container\MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Contact Info.Address]"
+                          name="Contact Info.Address" />
+                        <outputColumn
+                          refId="Package\Epsiode Container\MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Contact.Info.PrimaryEmail]"
+                          dataType="wstr"
+                          length="80"
+                          lineageId="Package\Epsiode Container\MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Contact.Info.PrimaryEmail]"
+                          name="Contact.Info.PrimaryEmail" />
                         <outputColumn
                           refId="Package\Epsiode Container\MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[ErrorCode]"
                           dataType="i4"
@@ -11232,77 +11148,13 @@ SELECT distinct [EMMOffer.UID] as [Offer.UID]
                       errorRowDisposition="FailComponent"
                       hasSideEffects="true"
                       name="ADO NET Destination Input">
-                      <inputColumns>
-                        <inputColumn
-                          refId="Package\Season Container\Load EMM MOSSeason\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[InternalPBSID]"
-                          cachedDataType="wstr"
-                          cachedLength="400"
-                          cachedName="InternalPBSID"
-                          externalMetadataColumnId="Package\Season Container\Load EMM MOSSeason\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[InternalPBSID]"
-                          lineageId="Package\Season Container\Load EMM MOSSeason\ADO NET Source.Outputs[ADO NET Source Output].Columns[InternalPBSID]" />
-                        <inputColumn
-                          refId="Package\Season Container\Load EMM MOSSeason\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Season.Season Class]"
-                          cachedDataType="wstr"
-                          cachedLength="500"
-                          cachedName="Season.Season Class"
-                          externalMetadataColumnId="Package\Season Container\Load EMM MOSSeason\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Season.Season Class]"
-                          lineageId="Package\Season Container\Load EMM MOSSeason\ADO NET Source.Outputs[ADO NET Source Output].Columns[Season.Season Class]" />
-                        <inputColumn
-                          refId="Package\Season Container\Load EMM MOSSeason\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Season.Referent Type]"
-                          cachedDataType="wstr"
-                          cachedLength="500"
-                          cachedName="Season.Referent Type"
-                          externalMetadataColumnId="Package\Season Container\Load EMM MOSSeason\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Season.Referent Type]"
-                          lineageId="Package\Season Container\Load EMM MOSSeason\ADO NET Source.Outputs[ADO NET Source Output].Columns[Season.Referent Type]" />
-                        <inputColumn
-                          refId="Package\Season Container\Load EMM MOSSeason\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Season.ContentIdentifier]"
-                          cachedDataType="wstr"
-                          cachedLength="500"
-                          cachedName="Season.ContentIdentifier"
-                          externalMetadataColumnId="Package\Season Container\Load EMM MOSSeason\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Season.ContentIdentifier]"
-                          lineageId="Package\Season Container\Load EMM MOSSeason\ADO NET Source.Outputs[ADO NET Source Output].Columns[Season.ContentIdentifier]" />
-                        <inputColumn
-                          refId="Package\Season Container\Load EMM MOSSeason\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Season.Sequence.Number]"
-                          cachedDataType="i4"
-                          cachedName="Season.Sequence.Number"
-                          externalMetadataColumnId="Package\Season Container\Load EMM MOSSeason\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Season.Sequence.Number]"
-                          lineageId="Package\Season Container\Load EMM MOSSeason\ADO NET Source.Outputs[ADO NET Source Output].Columns[Season.Sequence.Number]" />
-                        <inputColumn
-                          refId="Package\Season Container\Load EMM MOSSeason\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Season.ReleaseDate]"
-                          cachedDataType="dbTimeStamp2"
-                          cachedName="Season.ReleaseDate"
-                          cachedScale="7"
-                          externalMetadataColumnId="Package\Season Container\Load EMM MOSSeason\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Season.ReleaseDate]"
-                          lineageId="Package\Season Container\Load EMM MOSSeason\ADO NET Source.Outputs[ADO NET Source Output].Columns[Season.ReleaseDate]" />
-                        <inputColumn
-                          refId="Package\Season Container\Load EMM MOSSeason\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Season.Title]"
-                          cachedDataType="wstr"
-                          cachedLength="500"
-                          cachedName="Season.Title"
-                          externalMetadataColumnId="Package\Season Container\Load EMM MOSSeason\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Season.Title]"
-                          lineageId="Package\Season Container\Load EMM MOSSeason\ADO NET Source.Outputs[ADO NET Source Output].Columns[Season.Title]" />
-                        <inputColumn
-                          refId="Package\Season Container\Load EMM MOSSeason\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[EMMSeason.ParentID]"
-                          cachedDataType="wstr"
-                          cachedLength="500"
-                          cachedName="EMMSeason.ParentID"
-                          externalMetadataColumnId="Package\Season Container\Load EMM MOSSeason\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Season.ParentID]"
-                          lineageId="Package\Season Container\Load EMM MOSSeason\ADO NET Source.Outputs[ADO NET Source Output].Columns[EMMSeason.ParentID]" />
-                        <inputColumn
-                          refId="Package\Season Container\Load EMM MOSSeason\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[EMMSeason.UID]"
-                          cachedDataType="wstr"
-                          cachedLength="500"
-                          cachedName="EMMSeason.UID"
-                          externalMetadataColumnId="Package\Season Container\Load EMM MOSSeason\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Season.UID]"
-                          lineageId="Package\Season Container\Load EMM MOSSeason\ADO NET Source.Outputs[ADO NET Source Output].Columns[EMMSeason.UID]" />
-                      </inputColumns>
                       <externalMetadataColumns
                         isUsed="True">
                         <externalMetadataColumn
-                          refId="Package\Season Container\Load EMM MOSSeason\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[InternalPBSID]"
+                          refId="Package\Season Container\Load EMM MOSSeason\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Season.UID]"
                           dataType="wstr"
                           length="400"
-                          name="InternalPBSID" />
+                          name="Season.UID" />
                         <externalMetadataColumn
                           refId="Package\Season Container\Load EMM MOSSeason\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Season.Season Class]"
                           dataType="wstr"
@@ -11313,11 +11165,6 @@ SELECT distinct [EMMOffer.UID] as [Offer.UID]
                           dataType="wstr"
                           length="500"
                           name="Season.Referent Type" />
-                        <externalMetadataColumn
-                          refId="Package\Season Container\Load EMM MOSSeason\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Season.UID]"
-                          dataType="wstr"
-                          length="500"
-                          name="Season.UID" />
                         <externalMetadataColumn
                           refId="Package\Season Container\Load EMM MOSSeason\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Season.ContentIdentifier]"
                           dataType="wstr"
@@ -11342,6 +11189,11 @@ SELECT distinct [EMMOffer.UID] as [Offer.UID]
                           dataType="wstr"
                           length="500"
                           name="Season.Title" />
+                        <externalMetadataColumn
+                          refId="Package\Season Container\Load EMM MOSSeason\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[PublishStatus]"
+                          dataType="wstr"
+                          length="150"
+                          name="PublishStatus" />
                       </externalMetadataColumns>
                     </input>
                   </inputs>
@@ -12401,124 +12253,12 @@ SELECT distinct 1 as [InternalPBSID]
                       errorRowDisposition="FailComponent"
                       hasSideEffects="true"
                       name="ADO NET Destination Input">
-                      <inputColumns>
-                        <inputColumn
-                          refId="Package\Series Container\Load MOSSeries\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Series.UID]"
-                          cachedDataType="wstr"
-                          cachedLength="56"
-                          cachedName="Series.UID"
-                          externalMetadataColumnId="Package\Series Container\Load MOSSeries\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Series.UID]"
-                          lineageId="Package\Series Container\Load MOSSeries\ADO NET Source.Outputs[ADO NET Source Output].Columns[Series.UID]" />
-                        <inputColumn
-                          refId="Package\Series Container\Load MOSSeries\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Series.Structural Type]"
-                          cachedDataType="wstr"
-                          cachedLength="11"
-                          cachedName="Series.Structural Type"
-                          externalMetadataColumnId="Package\Series Container\Load MOSSeries\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Series.Structural Type]"
-                          lineageId="Package\Series Container\Load MOSSeries\ADO NET Source.Outputs[ADO NET Source Output].Columns[Series.Structural Type]" />
-                        <inputColumn
-                          refId="Package\Series Container\Load MOSSeries\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Series.Referent Type]"
-                          cachedDataType="wstr"
-                          cachedLength="6"
-                          cachedName="Series.Referent Type"
-                          externalMetadataColumnId="Package\Series Container\Load MOSSeries\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Series.Referent Type]"
-                          lineageId="Package\Series Container\Load MOSSeries\ADO NET Source.Outputs[ADO NET Source Output].Columns[Series.Referent Type]" />
-                        <inputColumn
-                          refId="Package\Series Container\Load MOSSeries\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Series.Mode]"
-                          cachedDataType="wstr"
-                          cachedLength="11"
-                          cachedName="Series.Mode"
-                          externalMetadataColumnId="Package\Series Container\Load MOSSeries\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Series.Mode]"
-                          lineageId="Package\Series Container\Load MOSSeries\ADO NET Source.Outputs[ADO NET Source Output].Columns[Series.Mode]" />
-                        <inputColumn
-                          refId="Package\Series Container\Load MOSSeries\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Series.ContentIdentifier]"
-                          cachedDataType="wstr"
-                          cachedLength="279"
-                          cachedName="Series.ContentIdentifier"
-                          externalMetadataColumnId="Package\Series Container\Load MOSSeries\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Series.ContentIdentifier]"
-                          lineageId="Package\Series Container\Load MOSSeries\ADO NET Source.Outputs[ADO NET Source Output].Columns[Series.ContentIdentifier]" />
-                        <inputColumn
-                          refId="Package\Series Container\Load MOSSeries\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Series.SeriesClass]"
-                          cachedDataType="wstr"
-                          cachedLength="10"
-                          cachedName="Series.SeriesClass"
-                          externalMetadataColumnId="Package\Series Container\Load MOSSeries\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Series.SeriesClass]"
-                          lineageId="Package\Series Container\Load MOSSeries\ADO NET Source.Outputs[ADO NET Source Output].Columns[Series.SeriesClass]" />
-                        <inputColumn
-                          refId="Package\Series Container\Load MOSSeries\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Series.Title.Class]"
-                          cachedDataType="wstr"
-                          cachedLength="7"
-                          cachedName="Series.Title.Class"
-                          externalMetadataColumnId="Package\Series Container\Load MOSSeries\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Series.Title.Class]"
-                          lineageId="Package\Series Container\Load MOSSeries\ADO NET Source.Outputs[ADO NET Source Output].Columns[Series.Title.Class]" />
-                        <inputColumn
-                          refId="Package\Series Container\Load MOSSeries\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Series.Title.Language]"
-                          cachedDataType="wstr"
-                          cachedLength="6"
-                          cachedName="Series.Title.Language"
-                          externalMetadataColumnId="Package\Series Container\Load MOSSeries\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Series.Title.Language]"
-                          lineageId="Package\Series Container\Load MOSSeries\ADO NET Source.Outputs[ADO NET Source Output].Columns[Series.Title.Language]" />
-                        <inputColumn
-                          refId="Package\Series Container\Load MOSSeries\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Series.Title]"
-                          cachedDataType="wstr"
-                          cachedLength="80"
-                          cachedName="Series.Title"
-                          externalMetadataColumnId="Package\Series Container\Load MOSSeries\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Series.Title]"
-                          lineageId="Package\Series Container\Load MOSSeries\ADO NET Source.Outputs[ADO NET Source Output].Columns[Series.Title]" />
-                        <inputColumn
-                          refId="Package\Series Container\Load MOSSeries\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Series.Country of Origin]"
-                          cachedDataType="i4"
-                          cachedName="Series.Country of Origin"
-                          externalMetadataColumnId="Package\Series Container\Load MOSSeries\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Series.Country of Origin]"
-                          lineageId="Package\Series Container\Load MOSSeries\ADO NET Source.Outputs[ADO NET Source Output].Columns[Series.Country of Origin]" />
-                        <inputColumn
-                          refId="Package\Series Container\Load MOSSeries\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Series.SynopsisShort]"
-                          cachedDataType="wstr"
-                          cachedLength="4000"
-                          cachedName="Series.SynopsisShort"
-                          externalMetadataColumnId="Package\Series Container\Load MOSSeries\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Series.SynopsisShort]"
-                          lineageId="Package\Series Container\Load MOSSeries\ADO NET Source.Outputs[ADO NET Source Output].Columns[Series.SynopsisShort]" />
-                        <inputColumn
-                          refId="Package\Series Container\Load MOSSeries\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Series.SynopsisLong]"
-                          cachedDataType="wstr"
-                          cachedLength="4000"
-                          cachedName="Series.SynopsisLong"
-                          externalMetadataColumnId="Package\Series Container\Load MOSSeries\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Series.SynopsisLong]"
-                          lineageId="Package\Series Container\Load MOSSeries\ADO NET Source.Outputs[ADO NET Source Output].Columns[Series.SynopsisLong]" />
-                        <inputColumn
-                          refId="Package\Series Container\Load MOSSeries\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Series.LanguagePrimary]"
-                          cachedDataType="wstr"
-                          cachedLength="6"
-                          cachedName="Series.LanguagePrimary"
-                          externalMetadataColumnId="Package\Series Container\Load MOSSeries\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Series.LanguagePrimary]"
-                          lineageId="Package\Series Container\Load MOSSeries\ADO NET Source.Outputs[ADO NET Source Output].Columns[Series.LanguagePrimary]" />
-                        <inputColumn
-                          refId="Package\Series Container\Load MOSSeries\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Series.LanguageSecondary]"
-                          cachedDataType="i4"
-                          cachedName="Series.LanguageSecondary"
-                          externalMetadataColumnId="Package\Series Container\Load MOSSeries\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Series.LanguageSecondary]"
-                          lineageId="Package\Series Container\Load MOSSeries\ADO NET Source.Outputs[ADO NET Source Output].Columns[Series.LanguageSecondary]" />
-                        <inputColumn
-                          refId="Package\Series Container\Load MOSSeries\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Series.ApproximateLength]"
-                          cachedDataType="wstr"
-                          cachedLength="500"
-                          cachedName="Series.ApproximateLength"
-                          externalMetadataColumnId="Package\Series Container\Load MOSSeries\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Series.ApproximateLength]"
-                          lineageId="Package\Series Container\Load MOSSeries\ADO NET Source.Outputs[ADO NET Source Output].Columns[Series.ApproximateLength]" />
-                        <inputColumn
-                          refId="Package\Series Container\Load MOSSeries\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Series.ReleaseDate]"
-                          cachedDataType="wstr"
-                          cachedLength="10"
-                          cachedName="Series.ReleaseDate"
-                          externalMetadataColumnId="Package\Series Container\Load MOSSeries\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Series.ReleaseDate]"
-                          lineageId="Package\Series Container\Load MOSSeries\ADO NET Source.Outputs[ADO NET Source Output].Columns[Series.ReleaseDate]" />
-                      </inputColumns>
                       <externalMetadataColumns
                         isUsed="True">
                         <externalMetadataColumn
                           refId="Package\Series Container\Load MOSSeries\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Series.UID]"
                           dataType="wstr"
-                          length="500"
+                          length="400"
                           name="Series.UID" />
                         <externalMetadataColumn
                           refId="Package\Series Container\Load MOSSeries\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Series.ContentIdentifier]"
@@ -12593,6 +12333,11 @@ SELECT distinct 1 as [InternalPBSID]
                           dataType="wstr"
                           length="10"
                           name="Series.ReleaseDate" />
+                        <externalMetadataColumn
+                          refId="Package\Series Container\Load MOSSeries\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[PublishStatus]"
+                          dataType="wstr"
+                          length="150"
+                          name="PublishStatus" />
                       </externalMetadataColumns>
                     </input>
                   </inputs>
@@ -18541,152 +18286,12 @@ order by ass_id</property>
                       errorRowDisposition="FailComponent"
                       hasSideEffects="true"
                       name="ADO NET Destination Input">
-                      <inputColumns>
-                        <inputColumn
-                          refId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Destination New Records.Inputs[ADO NET Destination Input].Columns[Sourceass_id]"
-                          cachedDataType="i4"
-                          cachedName="Sourceass_id"
-                          cachedSortKeyPosition="1"
-                          externalMetadataColumnId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Destination New Records.Inputs[ADO NET Destination Input].ExternalColumns[ass_id]"
-                          lineageId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Merge Join.Outputs[Merge Join Output].Columns[Sourceass_id]" />
-                        <inputColumn
-                          refId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Destination New Records.Inputs[ADO NET Destination Input].Columns[SourceEpisode.ContentIdentifier]"
-                          cachedDataType="wstr"
-                          cachedLength="45"
-                          cachedName="SourceEpisode.ContentIdentifier"
-                          externalMetadataColumnId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Destination New Records.Inputs[ADO NET Destination Input].ExternalColumns[Episode.ContentIdentifier]"
-                          lineageId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Merge Join.Outputs[Merge Join Output].Columns[SourceEpisode.ContentIdentifier]" />
-                        <inputColumn
-                          refId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Destination New Records.Inputs[ADO NET Destination Input].Columns[SourceEpisode.UID]"
-                          cachedDataType="wstr"
-                          cachedLength="56"
-                          cachedName="SourceEpisode.UID"
-                          externalMetadataColumnId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Destination New Records.Inputs[ADO NET Destination Input].ExternalColumns[Episode.UID]"
-                          lineageId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Merge Join.Outputs[Merge Join Output].Columns[SourceEpisode.UID]" />
-                        <inputColumn
-                          refId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Destination New Records.Inputs[ADO NET Destination Input].Columns[SourceEpisode.ParentID]"
-                          cachedDataType="wstr"
-                          cachedLength="91"
-                          cachedName="SourceEpisode.ParentID"
-                          externalMetadataColumnId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Destination New Records.Inputs[ADO NET Destination Input].ExternalColumns[Episode.ParentID]"
-                          lineageId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Merge Join.Outputs[Merge Join Output].Columns[SourceEpisode.ParentID]" />
-                        <inputColumn
-                          refId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Destination New Records.Inputs[ADO NET Destination Input].Columns[SourceEpisode.Referent.Type]"
-                          cachedDataType="wstr"
-                          cachedLength="2"
-                          cachedName="SourceEpisode.Referent.Type"
-                          externalMetadataColumnId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Destination New Records.Inputs[ADO NET Destination Input].ExternalColumns[Episode.Referent.Type]"
-                          lineageId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Merge Join.Outputs[Merge Join Output].Columns[SourceEpisode.Referent.Type]" />
-                        <inputColumn
-                          refId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Destination New Records.Inputs[ADO NET Destination Input].Columns[SourceEpisode.Title]"
-                          cachedDataType="nText"
-                          cachedName="SourceEpisode.Title"
-                          externalMetadataColumnId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Destination New Records.Inputs[ADO NET Destination Input].ExternalColumns[Episode.Title]"
-                          lineageId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Merge Join.Outputs[Merge Join Output].Columns[SourceEpisode.Title]" />
-                        <inputColumn
-                          refId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Destination New Records.Inputs[ADO NET Destination Input].Columns[SourceEpisode.Title120]"
-                          cachedDataType="nText"
-                          cachedName="SourceEpisode.Title120"
-                          externalMetadataColumnId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Destination New Records.Inputs[ADO NET Destination Input].ExternalColumns[Episode.Title120]"
-                          lineageId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Merge Join.Outputs[Merge Join Output].Columns[SourceEpisode.Title120]" />
-                        <inputColumn
-                          refId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Destination New Records.Inputs[ADO NET Destination Input].Columns[SourceEpisode.TitleClass]"
-                          cachedDataType="wstr"
-                          cachedLength="7"
-                          cachedName="SourceEpisode.TitleClass"
-                          externalMetadataColumnId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Destination New Records.Inputs[ADO NET Destination Input].ExternalColumns[Episode.TitleClass]"
-                          lineageId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Merge Join.Outputs[Merge Join Output].Columns[SourceEpisode.TitleClass]" />
-                        <inputColumn
-                          refId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Destination New Records.Inputs[ADO NET Destination Input].Columns[SourceEpisode.EpisodeNumber]"
-                          cachedDataType="i4"
-                          cachedName="SourceEpisode.EpisodeNumber"
-                          externalMetadataColumnId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Destination New Records.Inputs[ADO NET Destination Input].ExternalColumns[Episode.EpisodeNumber]"
-                          lineageId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Merge Join.Outputs[Merge Join Output].Columns[SourceEpisode.EpisodeNumber]" />
-                        <inputColumn
-                          refId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Destination New Records.Inputs[ADO NET Destination Input].Columns[SourceEpisode.EpisodeClass]"
-                          cachedDataType="wstr"
-                          cachedLength="200"
-                          cachedName="SourceEpisode.EpisodeClass"
-                          externalMetadataColumnId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Destination New Records.Inputs[ADO NET Destination Input].ExternalColumns[Episode.EpisodeClass]"
-                          lineageId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Merge Join.Outputs[Merge Join Output].Columns[SourceEpisode.EpisodeClass]" />
-                        <inputColumn
-                          refId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Destination New Records.Inputs[ADO NET Destination Input].Columns[SourceEpisode.SynopsisShort]"
-                          cachedDataType="nText"
-                          cachedName="SourceEpisode.SynopsisShort"
-                          externalMetadataColumnId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Destination New Records.Inputs[ADO NET Destination Input].ExternalColumns[Episode.SynopsisShort]"
-                          lineageId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Merge Join.Outputs[Merge Join Output].Columns[SourceEpisode.SynopsisShort]" />
-                        <inputColumn
-                          refId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Destination New Records.Inputs[ADO NET Destination Input].Columns[SourceEpisode.SynopsisLong]"
-                          cachedDataType="nText"
-                          cachedName="SourceEpisode.SynopsisLong"
-                          externalMetadataColumnId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Destination New Records.Inputs[ADO NET Destination Input].ExternalColumns[Episode.SynopsisLong]"
-                          lineageId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Merge Join.Outputs[Merge Join Output].Columns[SourceEpisode.SynopsisLong]" />
-                        <inputColumn
-                          refId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Destination New Records.Inputs[ADO NET Destination Input].Columns[SourceEpisode.CountryOfOrigin]"
-                          cachedDataType="wstr"
-                          cachedLength="1"
-                          cachedName="SourceEpisode.CountryOfOrigin"
-                          externalMetadataColumnId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Destination New Records.Inputs[ADO NET Destination Input].ExternalColumns[Episode.CountryOfOrigin]"
-                          lineageId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Merge Join.Outputs[Merge Join Output].Columns[SourceEpisode.CountryOfOrigin]" />
-                        <inputColumn
-                          refId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Destination New Records.Inputs[ADO NET Destination Input].Columns[SourceEpisode.PrimaryGenre]"
-                          cachedDataType="nText"
-                          cachedName="SourceEpisode.PrimaryGenre"
-                          externalMetadataColumnId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Destination New Records.Inputs[ADO NET Destination Input].ExternalColumns[Episode.PrimaryGenre]"
-                          lineageId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Merge Join.Outputs[Merge Join Output].Columns[SourceEpisode.PrimaryGenre]" />
-                        <inputColumn
-                          refId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Destination New Records.Inputs[ADO NET Destination Input].Columns[SourceEpisode.SecondaryGenre]"
-                          cachedDataType="nText"
-                          cachedName="SourceEpisode.SecondaryGenre"
-                          externalMetadataColumnId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Destination New Records.Inputs[ADO NET Destination Input].ExternalColumns[Episode.SecondaryGenre]"
-                          lineageId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Merge Join.Outputs[Merge Join Output].Columns[SourceEpisode.SecondaryGenre]" />
-                        <inputColumn
-                          refId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Destination New Records.Inputs[ADO NET Destination Input].Columns[SourceEpisode.Distribution.Number]"
-                          cachedDataType="i4"
-                          cachedName="SourceEpisode.Distribution.Number"
-                          externalMetadataColumnId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Destination New Records.Inputs[ADO NET Destination Input].ExternalColumns[Episode.Distribution.Number]"
-                          lineageId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Merge Join.Outputs[Merge Join Output].Columns[SourceEpisode.Distribution.Number]" />
-                        <inputColumn
-                          refId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Destination New Records.Inputs[ADO NET Destination Input].Columns[SourceEpisode.ApproximateLength]"
-                          cachedDataType="wstr"
-                          cachedLength="500"
-                          cachedName="SourceEpisode.ApproximateLength"
-                          externalMetadataColumnId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Destination New Records.Inputs[ADO NET Destination Input].ExternalColumns[Episode.ApproximateLength]"
-                          lineageId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Merge Join.Outputs[Merge Join Output].Columns[SourceEpisode.ApproximateLength]" />
-                        <inputColumn
-                          refId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Destination New Records.Inputs[ADO NET Destination Input].Columns[SourceEpisode.Language.Primary.mode]"
-                          cachedDataType="wstr"
-                          cachedLength="5"
-                          cachedName="SourceEpisode.Language.Primary.mode"
-                          externalMetadataColumnId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Destination New Records.Inputs[ADO NET Destination Input].ExternalColumns[Episode.Language.Primary.mode]"
-                          lineageId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Merge Join.Outputs[Merge Join Output].Columns[SourceEpisode.Language.Primary.mode]" />
-                        <inputColumn
-                          refId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Destination New Records.Inputs[ADO NET Destination Input].Columns[SourceEpisode.LanguagePrimary]"
-                          cachedDataType="wstr"
-                          cachedLength="6"
-                          cachedName="SourceEpisode.LanguagePrimary"
-                          externalMetadataColumnId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Destination New Records.Inputs[ADO NET Destination Input].ExternalColumns[Episode.LanguagePrimary]"
-                          lineageId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Merge Join.Outputs[Merge Join Output].Columns[SourceEpisode.LanguagePrimary]" />
-                        <inputColumn
-                          refId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Destination New Records.Inputs[ADO NET Destination Input].Columns[SourceEpisode.LanguageSecondary]"
-                          cachedDataType="i4"
-                          cachedName="SourceEpisode.LanguageSecondary"
-                          externalMetadataColumnId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Destination New Records.Inputs[ADO NET Destination Input].ExternalColumns[Episode.LanguageSecondary]"
-                          lineageId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Merge Join.Outputs[Merge Join Output].Columns[SourceEpisode.LanguageSecondary]" />
-                        <inputColumn
-                          refId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Destination New Records.Inputs[ADO NET Destination Input].Columns[SourceEpisode.ReleaseDate]"
-                          cachedDataType="wstr"
-                          cachedLength="10"
-                          cachedName="SourceEpisode.ReleaseDate"
-                          externalMetadataColumnId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Destination New Records.Inputs[ADO NET Destination Input].ExternalColumns[Episode.ReleaseDate]"
-                          lineageId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Merge Join.Outputs[Merge Join Output].Columns[SourceEpisode.ReleaseDate]" />
-                      </inputColumns>
                       <externalMetadataColumns
                         isUsed="True">
                         <externalMetadataColumn
-                          refId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Destination New Records.Inputs[ADO NET Destination Input].ExternalColumns[ass_id]"
+                          refId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Destination New Records.Inputs[ADO NET Destination Input].ExternalColumns[PBSInternalID]"
                           dataType="i4"
-                          name="ass_id" />
+                          name="PBSInternalID" />
                         <externalMetadataColumn
                           refId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Destination New Records.Inputs[ADO NET Destination Input].ExternalColumns[Episode.ContentIdentifier]"
                           dataType="wstr"
@@ -18724,7 +18329,8 @@ order by ass_id</property>
                           name="Episode.TitleClass" />
                         <externalMetadataColumn
                           refId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Destination New Records.Inputs[ADO NET Destination Input].ExternalColumns[Episode.EpisodeNumber]"
-                          dataType="i4"
+                          dataType="wstr"
+                          length="20"
                           name="Episode.EpisodeNumber" />
                         <externalMetadataColumn
                           refId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Destination New Records.Inputs[ADO NET Destination Input].ExternalColumns[Episode.EpisodeClass]"
@@ -18758,12 +18364,13 @@ order by ass_id</property>
                           name="Episode.SecondaryGenre" />
                         <externalMetadataColumn
                           refId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Destination New Records.Inputs[ADO NET Destination Input].ExternalColumns[Episode.Distribution.Number]"
-                          dataType="i4"
+                          dataType="wstr"
+                          length="20"
                           name="Episode.Distribution.Number" />
                         <externalMetadataColumn
                           refId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Destination New Records.Inputs[ADO NET Destination Input].ExternalColumns[Episode.ReleaseDate]"
                           dataType="wstr"
-                          length="10"
+                          length="20"
                           name="Episode.ReleaseDate" />
                         <externalMetadataColumn
                           refId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Destination New Records.Inputs[ADO NET Destination Input].ExternalColumns[Episode.ApproximateLength]"
@@ -18784,6 +18391,11 @@ order by ass_id</property>
                           refId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Destination New Records.Inputs[ADO NET Destination Input].ExternalColumns[Episode.LanguageSecondary]"
                           dataType="i4"
                           name="Episode.LanguageSecondary" />
+                        <externalMetadataColumn
+                          refId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Destination New Records.Inputs[ADO NET Destination Input].ExternalColumns[Episode.PublishStatus]"
+                          dataType="wstr"
+                          length="500"
+                          name="Episode.PublishStatus" />
                       </externalMetadataColumns>
                     </input>
                   </inputs>
@@ -18849,118 +18461,118 @@ order by ass_id</property>
                           cachedDataType="i4"
                           cachedName="ass_id"
                           cachedSortKeyPosition="1"
-                          lineageId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Source Query.Outputs[ADO NET Source Output].Columns[ass_id]" />
+                          lineageId="Package\Upsert Container\MOSEpisode UPSERT ID Only\434:invalid" />
                         <inputColumn
                           refId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Merge Join.Inputs[Merge Join Left Input].Columns[Episode.ContentIdentifier]"
                           cachedDataType="wstr"
                           cachedLength="45"
                           cachedName="Episode.ContentIdentifier"
-                          lineageId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Source Query.Outputs[ADO NET Source Output].Columns[Episode.ContentIdentifier]" />
+                          lineageId="Package\Upsert Container\MOSEpisode UPSERT ID Only\435:invalid" />
                         <inputColumn
                           refId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Merge Join.Inputs[Merge Join Left Input].Columns[Episode.UID]"
                           cachedDataType="wstr"
                           cachedLength="56"
                           cachedName="Episode.UID"
-                          lineageId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Source Query.Outputs[ADO NET Source Output].Columns[Episode.UID]" />
+                          lineageId="Package\Upsert Container\MOSEpisode UPSERT ID Only\436:invalid" />
                         <inputColumn
                           refId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Merge Join.Inputs[Merge Join Left Input].Columns[Episode.ParentID]"
                           cachedDataType="wstr"
                           cachedLength="91"
                           cachedName="Episode.ParentID"
-                          lineageId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Source Query.Outputs[ADO NET Source Output].Columns[Episode.ParentID]" />
+                          lineageId="Package\Upsert Container\MOSEpisode UPSERT ID Only\437:invalid" />
                         <inputColumn
                           refId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Merge Join.Inputs[Merge Join Left Input].Columns[Episode.Referent.Type]"
                           cachedDataType="wstr"
                           cachedLength="2"
                           cachedName="Episode.Referent.Type"
-                          lineageId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Source Query.Outputs[ADO NET Source Output].Columns[Episode.Referent.Type]" />
+                          lineageId="Package\Upsert Container\MOSEpisode UPSERT ID Only\438:invalid" />
                         <inputColumn
                           refId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Merge Join.Inputs[Merge Join Left Input].Columns[Episode.Title]"
                           cachedDataType="nText"
                           cachedName="Episode.Title"
-                          lineageId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Source Query.Outputs[ADO NET Source Output].Columns[Episode.Title]" />
+                          lineageId="Package\Upsert Container\MOSEpisode UPSERT ID Only\439:invalid" />
                         <inputColumn
                           refId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Merge Join.Inputs[Merge Join Left Input].Columns[Episode.Title120]"
                           cachedDataType="nText"
                           cachedName="Episode.Title120"
-                          lineageId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Source Query.Outputs[ADO NET Source Output].Columns[Episode.Title120]" />
+                          lineageId="Package\Upsert Container\MOSEpisode UPSERT ID Only\440:invalid" />
                         <inputColumn
                           refId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Merge Join.Inputs[Merge Join Left Input].Columns[Episode.TitleClass]"
                           cachedDataType="wstr"
                           cachedLength="7"
                           cachedName="Episode.TitleClass"
-                          lineageId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Source Query.Outputs[ADO NET Source Output].Columns[Episode.TitleClass]" />
+                          lineageId="Package\Upsert Container\MOSEpisode UPSERT ID Only\441:invalid" />
                         <inputColumn
                           refId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Merge Join.Inputs[Merge Join Left Input].Columns[Episode.EpisodeNumber]"
                           cachedDataType="i4"
                           cachedName="Episode.EpisodeNumber"
-                          lineageId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Source Query.Outputs[ADO NET Source Output].Columns[Episode.EpisodeNumber]" />
+                          lineageId="Package\Upsert Container\MOSEpisode UPSERT ID Only\442:invalid" />
                         <inputColumn
                           refId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Merge Join.Inputs[Merge Join Left Input].Columns[Episode.EpisodeClass]"
                           cachedDataType="wstr"
                           cachedLength="200"
                           cachedName="Episode.EpisodeClass"
-                          lineageId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Source Query.Outputs[ADO NET Source Output].Columns[Episode.EpisodeClass]" />
+                          lineageId="Package\Upsert Container\MOSEpisode UPSERT ID Only\443:invalid" />
                         <inputColumn
                           refId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Merge Join.Inputs[Merge Join Left Input].Columns[Episode.SynopsisShort]"
                           cachedDataType="nText"
                           cachedName="Episode.SynopsisShort"
-                          lineageId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Source Query.Outputs[ADO NET Source Output].Columns[Episode.SynopsisShort]" />
+                          lineageId="Package\Upsert Container\MOSEpisode UPSERT ID Only\444:invalid" />
                         <inputColumn
                           refId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Merge Join.Inputs[Merge Join Left Input].Columns[Episode.SynopsisLong]"
                           cachedDataType="nText"
                           cachedName="Episode.SynopsisLong"
-                          lineageId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Source Query.Outputs[ADO NET Source Output].Columns[Episode.SynopsisLong]" />
+                          lineageId="Package\Upsert Container\MOSEpisode UPSERT ID Only\445:invalid" />
                         <inputColumn
                           refId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Merge Join.Inputs[Merge Join Left Input].Columns[Episode.CountryOfOrigin]"
                           cachedDataType="wstr"
                           cachedLength="1"
                           cachedName="Episode.CountryOfOrigin"
-                          lineageId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Source Query.Outputs[ADO NET Source Output].Columns[Episode.CountryOfOrigin]" />
+                          lineageId="Package\Upsert Container\MOSEpisode UPSERT ID Only\446:invalid" />
                         <inputColumn
                           refId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Merge Join.Inputs[Merge Join Left Input].Columns[Episode.PrimaryGenre]"
                           cachedDataType="nText"
                           cachedName="Episode.PrimaryGenre"
-                          lineageId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Source Query.Outputs[ADO NET Source Output].Columns[Episode.PrimaryGenre]" />
+                          lineageId="Package\Upsert Container\MOSEpisode UPSERT ID Only\447:invalid" />
                         <inputColumn
                           refId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Merge Join.Inputs[Merge Join Left Input].Columns[Episode.SecondaryGenre]"
                           cachedDataType="nText"
                           cachedName="Episode.SecondaryGenre"
-                          lineageId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Source Query.Outputs[ADO NET Source Output].Columns[Episode.SecondaryGenre]" />
+                          lineageId="Package\Upsert Container\MOSEpisode UPSERT ID Only\448:invalid" />
                         <inputColumn
                           refId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Merge Join.Inputs[Merge Join Left Input].Columns[Episode.Distribution.Number]"
                           cachedDataType="i4"
                           cachedName="Episode.Distribution.Number"
-                          lineageId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Source Query.Outputs[ADO NET Source Output].Columns[Episode.Distribution.Number]" />
+                          lineageId="Package\Upsert Container\MOSEpisode UPSERT ID Only\449:invalid" />
                         <inputColumn
                           refId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Merge Join.Inputs[Merge Join Left Input].Columns[Episode.ReleaseDate]"
                           cachedDataType="wstr"
                           cachedLength="10"
                           cachedName="Episode.ReleaseDate"
-                          lineageId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Source Query.Outputs[ADO NET Source Output].Columns[Episode.ReleaseDate]" />
+                          lineageId="Package\Upsert Container\MOSEpisode UPSERT ID Only\450:invalid" />
                         <inputColumn
                           refId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Merge Join.Inputs[Merge Join Left Input].Columns[Episode.ApproximateLength]"
                           cachedDataType="wstr"
                           cachedLength="500"
                           cachedName="Episode.ApproximateLength"
-                          lineageId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Source Query.Outputs[ADO NET Source Output].Columns[Episode.ApproximateLength]" />
+                          lineageId="Package\Upsert Container\MOSEpisode UPSERT ID Only\451:invalid" />
                         <inputColumn
                           refId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Merge Join.Inputs[Merge Join Left Input].Columns[Episode.Language.Primary.mode]"
                           cachedDataType="wstr"
                           cachedLength="5"
                           cachedName="Episode.Language.Primary.mode"
-                          lineageId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Source Query.Outputs[ADO NET Source Output].Columns[Episode.Language.Primary.mode]" />
+                          lineageId="Package\Upsert Container\MOSEpisode UPSERT ID Only\452:invalid" />
                         <inputColumn
                           refId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Merge Join.Inputs[Merge Join Left Input].Columns[Episode.LanguagePrimary]"
                           cachedDataType="wstr"
                           cachedLength="6"
                           cachedName="Episode.LanguagePrimary"
-                          lineageId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Source Query.Outputs[ADO NET Source Output].Columns[Episode.LanguagePrimary]" />
+                          lineageId="Package\Upsert Container\MOSEpisode UPSERT ID Only\453:invalid" />
                         <inputColumn
                           refId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Merge Join.Inputs[Merge Join Left Input].Columns[Episode.LanguageSecondary]"
                           cachedDataType="i4"
                           cachedName="Episode.LanguageSecondary"
-                          lineageId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Source Query.Outputs[ADO NET Source Output].Columns[Episode.LanguageSecondary]" />
+                          lineageId="Package\Upsert Container\MOSEpisode UPSERT ID Only\454:invalid" />
                       </inputColumns>
                       <externalMetadataColumns />
                     </input>
@@ -20712,7 +20324,6 @@ order by a.ass_id</property>
                           externalMetadataColumnId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Source Query.Outputs[ADO NET Source Output].ExternalColumns[ass_id]"
                           lineageId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Source Query.Outputs[ADO NET Source Output].Columns[ass_id]"
                           name="ass_id"
-                          sortKeyPosition="1"
                           truncationRowDisposition="FailComponent" />
                         <outputColumn
                           refId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Source Query.Outputs[ADO NET Source Output].Columns[Episode.ContentIdentifier]"
@@ -20784,10 +20395,11 @@ order by a.ass_id</property>
                           truncationRowDisposition="FailComponent" />
                         <outputColumn
                           refId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Source Query.Outputs[ADO NET Source Output].Columns[Episode.EpisodeNumber]"
-                          dataType="i4"
+                          dataType="wstr"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
                           externalMetadataColumnId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Source Query.Outputs[ADO NET Source Output].ExternalColumns[Episode.EpisodeNumber]"
+                          length="20"
                           lineageId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Source Query.Outputs[ADO NET Source Output].Columns[Episode.EpisodeNumber]"
                           name="Episode.EpisodeNumber"
                           truncationRowDisposition="FailComponent" />
@@ -20797,7 +20409,7 @@ order by a.ass_id</property>
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
                           externalMetadataColumnId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Source Query.Outputs[ADO NET Source Output].ExternalColumns[Episode.EpisodeClass]"
-                          length="200"
+                          length="40"
                           lineageId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Source Query.Outputs[ADO NET Source Output].Columns[Episode.EpisodeClass]"
                           name="Episode.EpisodeClass"
                           truncationRowDisposition="FailComponent" />
@@ -20831,19 +20443,21 @@ order by a.ass_id</property>
                           truncationRowDisposition="FailComponent" />
                         <outputColumn
                           refId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Source Query.Outputs[ADO NET Source Output].Columns[Episode.PrimaryGenre]"
-                          dataType="nText"
+                          dataType="wstr"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
                           externalMetadataColumnId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Source Query.Outputs[ADO NET Source Output].ExternalColumns[Episode.PrimaryGenre]"
+                          length="500"
                           lineageId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Source Query.Outputs[ADO NET Source Output].Columns[Episode.PrimaryGenre]"
                           name="Episode.PrimaryGenre"
                           truncationRowDisposition="FailComponent" />
                         <outputColumn
                           refId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Source Query.Outputs[ADO NET Source Output].Columns[Episode.SecondaryGenre]"
-                          dataType="nText"
+                          dataType="wstr"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
                           externalMetadataColumnId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Source Query.Outputs[ADO NET Source Output].ExternalColumns[Episode.SecondaryGenre]"
+                          length="500"
                           lineageId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Source Query.Outputs[ADO NET Source Output].Columns[Episode.SecondaryGenre]"
                           name="Episode.SecondaryGenre"
                           truncationRowDisposition="FailComponent" />
@@ -20947,12 +20561,13 @@ order by a.ass_id</property>
                           name="Episode.TitleClass" />
                         <externalMetadataColumn
                           refId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Source Query.Outputs[ADO NET Source Output].ExternalColumns[Episode.EpisodeNumber]"
-                          dataType="i4"
+                          dataType="wstr"
+                          length="20"
                           name="Episode.EpisodeNumber" />
                         <externalMetadataColumn
                           refId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Source Query.Outputs[ADO NET Source Output].ExternalColumns[Episode.EpisodeClass]"
                           dataType="wstr"
-                          length="200"
+                          length="40"
                           name="Episode.EpisodeClass" />
                         <externalMetadataColumn
                           refId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Source Query.Outputs[ADO NET Source Output].ExternalColumns[Episode.SynopsisShort]"
@@ -20969,11 +20584,13 @@ order by a.ass_id</property>
                           name="Episode.CountryOfOrigin" />
                         <externalMetadataColumn
                           refId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Source Query.Outputs[ADO NET Source Output].ExternalColumns[Episode.PrimaryGenre]"
-                          dataType="nText"
+                          dataType="wstr"
+                          length="500"
                           name="Episode.PrimaryGenre" />
                         <externalMetadataColumn
                           refId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Source Query.Outputs[ADO NET Source Output].ExternalColumns[Episode.SecondaryGenre]"
-                          dataType="nText"
+                          dataType="wstr"
+                          length="500"
                           name="Episode.SecondaryGenre" />
                         <externalMetadataColumn
                           refId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Source Query.Outputs[ADO NET Source Output].ExternalColumns[Episode.Distribution.Number]"
@@ -21057,13 +20674,14 @@ order by a.ass_id</property>
                           name="Episode.TitleClass" />
                         <outputColumn
                           refId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Source Query.Outputs[ADO NET Source Error Output].Columns[Episode.EpisodeNumber]"
-                          dataType="i4"
+                          dataType="wstr"
+                          length="20"
                           lineageId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Source Query.Outputs[ADO NET Source Error Output].Columns[Episode.EpisodeNumber]"
                           name="Episode.EpisodeNumber" />
                         <outputColumn
                           refId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Source Query.Outputs[ADO NET Source Error Output].Columns[Episode.EpisodeClass]"
                           dataType="wstr"
-                          length="200"
+                          length="40"
                           lineageId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Source Query.Outputs[ADO NET Source Error Output].Columns[Episode.EpisodeClass]"
                           name="Episode.EpisodeClass" />
                         <outputColumn
@@ -21084,12 +20702,14 @@ order by a.ass_id</property>
                           name="Episode.CountryOfOrigin" />
                         <outputColumn
                           refId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Source Query.Outputs[ADO NET Source Error Output].Columns[Episode.PrimaryGenre]"
-                          dataType="nText"
+                          dataType="wstr"
+                          length="500"
                           lineageId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Source Query.Outputs[ADO NET Source Error Output].Columns[Episode.PrimaryGenre]"
                           name="Episode.PrimaryGenre" />
                         <outputColumn
                           refId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Source Query.Outputs[ADO NET Source Error Output].Columns[Episode.SecondaryGenre]"
-                          dataType="nText"
+                          dataType="wstr"
+                          length="500"
                           lineageId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Source Query.Outputs[ADO NET Source Error Output].Columns[Episode.SecondaryGenre]"
                           name="Episode.SecondaryGenre" />
                         <outputColumn
@@ -22567,6 +22187,10 @@ order by a.ass_id</property>
           Id="Package\Epsiode Container\Ceanup Nulls in xref Credits"
           TopLeft="31.818181818182,698.090909090909" />
         <NodeLayout
+          Size="236,42"
+          Id="Package\Epsiode Container\Ceanup Nulls in xref Organization"
+          TopLeft="247.777777777778,699" />
+        <NodeLayout
           Size="112,42"
           Id="Package\Epsiode Container\Credits"
           TopLeft="82.8571428571429,554.714285714286" />
@@ -22598,6 +22222,10 @@ order by a.ass_id</property>
           Size="135,42"
           Id="Package\Epsiode Container\xref_Credits"
           TopLeft="67.7142857142858,624.142857142857" />
+        <NodeLayout
+          Size="162,42"
+          Id="Package\Epsiode Container\xref_Organization"
+          TopLeft="280,599" />
         <EdgeLayout
           Id="Package\Epsiode Container.PrecedenceConstraints[Constraint]"
           TopLeft="232.444444444444,424.444444444444">
@@ -22624,6 +22252,40 @@ order by a.ass_id</property>
                     Point3="102.722222222223,35.7001338688086" />
                   <mssgle:LineSegment
                     End="102.722222222223,70.7222222222222" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Epsiode Container.PrecedenceConstraints[Constraint 1]"
+          TopLeft="174.777777777778,424.444444444444">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-35.9206349206346,130.269841269842"
+              Start="0,0"
+              End="-35.9206349206346,122.769841269842">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,48.7928162867923" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,48.7928162867923"
+                    Point2="0,52.7928162867923"
+                    Point3="-4,52.7928162867923" />
+                  <mssgle:LineSegment
+                    End="-31.9206349206346,52.7928162867923" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-31.9206349206346,52.7928162867923"
+                    Point2="-35.9206349206346,52.7928162867923"
+                    Point3="-35.9206349206346,56.7928162867923" />
+                  <mssgle:LineSegment
+                    End="-35.9206349206346,122.769841269842" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -22699,6 +22361,40 @@ order by a.ass_id</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
+          Id="Package\Epsiode Container.PrecedenceConstraints[Constraint 4]"
+          TopLeft="335.166666666667,544.666666666667">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="25.8333333333333,54.3333333333335"
+              Start="0,0"
+              End="25.8333333333333,46.8333333333335">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,23.1666666666667" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,23.1666666666667"
+                    Point2="0,27.1666666666667"
+                    Point3="4,27.1666666666667" />
+                  <mssgle:LineSegment
+                    End="21.8333333333333,27.1666666666667" />
+                  <mssgle:CubicBezierSegment
+                    Point1="21.8333333333333,27.1666666666667"
+                    Point2="25.8333333333333,27.1666666666667"
+                    Point3="25.8333333333333,31.1666666666667" />
+                  <mssgle:LineSegment
+                    End="25.8333333333333,46.8333333333335" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
           Id="Package\Epsiode Container.PrecedenceConstraints[Constraint 5]"
           TopLeft="113.5,47.5">
           <EdgeLayout.Curve>
@@ -22733,6 +22429,28 @@ order by a.ass_id</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
+          Id="Package\Epsiode Container.PrecedenceConstraints[Constraint 6]"
+          TopLeft="363.388888888889,641">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,58"
+              Start="0,0"
+              End="0,50.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,50.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
           Id="Package\Epsiode Container.PrecedenceConstraints[Constraint 8]"
           TopLeft="193,149.5">
           <EdgeLayout.Curve>
@@ -22758,104 +22476,6 @@ order by a.ass_id</property>
                     Point3="-77.2777777777776,34" />
                   <mssgle:LineSegment
                     End="-77.2777777777776,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="162,42"
-          Id="Package\Epsiode Container\xref_Organization"
-          TopLeft="280,599" />
-        <EdgeLayout
-          Id="Package\Epsiode Container.PrecedenceConstraints[Constraint 4]"
-          TopLeft="335.166666666667,544.666666666667">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="25.8333333333333,54.3333333333335"
-              Start="0,0"
-              End="25.8333333333333,46.8333333333335">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,23.1666666666667" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,23.1666666666667"
-                    Point2="0,27.1666666666667"
-                    Point3="4,27.1666666666667" />
-                  <mssgle:LineSegment
-                    End="21.8333333333333,27.1666666666667" />
-                  <mssgle:CubicBezierSegment
-                    Point1="21.8333333333333,27.1666666666667"
-                    Point2="25.8333333333333,27.1666666666667"
-                    Point3="25.8333333333333,31.1666666666667" />
-                  <mssgle:LineSegment
-                    End="25.8333333333333,46.8333333333335" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="236,42"
-          Id="Package\Epsiode Container\Ceanup Nulls in xref Organization"
-          TopLeft="247.777777777778,699" />
-        <EdgeLayout
-          Id="Package\Epsiode Container.PrecedenceConstraints[Constraint 6]"
-          TopLeft="363.388888888889,641">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,58"
-              Start="0,0"
-              End="0,50.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,50.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Epsiode Container.PrecedenceConstraints[Constraint 1]"
-          TopLeft="174.777777777778,424.444444444444">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-35.9206349206346,130.269841269842"
-              Start="0,0"
-              End="-35.9206349206346,122.769841269842">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,48.7928162867923" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,48.7928162867923"
-                    Point2="0,52.7928162867923"
-                    Point3="-4,52.7928162867923" />
-                  <mssgle:LineSegment
-                    End="-31.9206349206346,52.7928162867923" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-31.9206349206346,52.7928162867923"
-                    Point2="-35.9206349206346,52.7928162867923"
-                    Point3="-35.9206349206346,56.7928162867923" />
-                  <mssgle:LineSegment
-                    End="-35.9206349206346,122.769841269842" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -22971,31 +22591,13 @@ order by a.ass_id</property>
           Id="Package\Season Container\Delete Adjunct and Pro Forma where Main Record Exists"
           TopLeft="6.61111111111131,210.833333333333" />
         <NodeLayout
+          Size="186,42"
+          Id="Package\Season Container\Load EMM MOSSeason"
+          TopLeft="97.1111111111118,286.333333333333" />
+        <NodeLayout
           Size="188,42"
           Id="Package\Season Container\Load SeasonEMMTemp"
           TopLeft="83.7777777777778,141.055555555556" />
-        <EdgeLayout
-          Id="Package\Season Container.PrecedenceConstraints[Constraint 21]"
-          TopLeft="178.444444444445,183.055555555556">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,27.7777777777778"
-              Start="0,0"
-              End="0,20.2777777777778">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,20.2777777777778" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
         <NodeLayout
           Size="257,42"
           Id="Package\Season Container\Truncate Table PBS SeasonEMMTemp"
@@ -23022,10 +22624,6 @@ order by a.ass_id</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="186,42"
-          Id="Package\Season Container\Load EMM MOSSeason"
-          TopLeft="97.1111111111118,286.333333333333" />
         <EdgeLayout
           Id="Package\Season Container.PrecedenceConstraints[Constraint 1]"
           TopLeft="179.111111111111,252.833333333333">
@@ -23052,6 +22650,28 @@ order by a.ass_id</property>
                     Point3="11.0000000000005,20.75" />
                   <mssgle:LineSegment
                     End="11.0000000000005,26.0000000000001" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Season Container.PrecedenceConstraints[Constraint 21]"
+          TopLeft="178.444444444445,183.055555555556">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,27.7777777777778"
+              Start="0,0"
+              End="0,20.2777777777778">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,20.2777777777778" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -23604,7 +23224,7 @@ order by a.ass_id</property>
     design-time-name="Package\Compilation Container\Load MOSCompilation">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="158,42"
           Id="Package\Compilation Container\Load MOSCompilation\ADO NET Source"
@@ -23644,7 +23264,9 @@ order by a.ass_id</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -23670,7 +23292,7 @@ order by a.ass_id</property>
     design-time-name="Package\Compilation Container\Load MOSCompilation Entry">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="181,42"
           Id="Package\Compilation Container\Load MOSCompilation Entry\ADO NET Destination"
@@ -23710,7 +23332,9 @@ order by a.ass_id</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -23736,7 +23360,7 @@ order by a.ass_id</property>
     design-time-name="Package\Epsiode Container\Credits">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="158,42"
           Id="Package\Epsiode Container\Credits\ADO NET Source"
@@ -23776,12 +23400,22 @@ order by a.ass_id</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Epsiode Container\Credits\ADO NET Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\Epsiode Container\Credits\ADO NET Source">
     <Properties>
@@ -23794,7 +23428,7 @@ order by a.ass_id</property>
     design-time-name="Package\Epsiode Container\Load Epsisode Organizations using PBS Organization table now">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="181,42"
           Id="Package\Epsiode Container\Load Epsisode Organizations using PBS Organization table now\ADO NET Destination"
@@ -23822,7 +23456,9 @@ order by a.ass_id</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -23848,7 +23484,7 @@ order by a.ass_id</property>
     design-time-name="Package\Epsiode Container\Load MOSEpisode">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="158,42"
           Id="Package\Epsiode Container\Load MOSEpisode\ADO NET Source"
@@ -23888,7 +23524,9 @@ order by a.ass_id</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -23918,25 +23556,25 @@ order by a.ass_id</property>
         <NodeLayout
           Size="158,42"
           Id="Package\Epsiode Container\MOSEpisode Contacts\ADO NET Source"
-          TopLeft="242,130" />
+          TopLeft="243,125" />
         <NodeLayout
           Size="179,42"
           Id="Package\Epsiode Container\MOSEpisode Contacts\ADO NET Destination"
-          TopLeft="231,286" />
+          TopLeft="230,286" />
         <EdgeLayout
           Id="Package\Epsiode Container\MOSEpisode Contacts.Paths[ADO NET Source Output]"
-          TopLeft="320.75,172">
+          TopLeft="320.75,167">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,114"
+              EndConnector="0,119"
               Start="0,0"
-              End="0,106.5">
+              End="0,111.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,106.5" />
+                    End="0,111.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -23968,7 +23606,7 @@ order by a.ass_id</property>
     design-time-name="Package\Epsiode Container\Organization">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="158,42"
           Id="Package\Epsiode Container\Organization\ADO NET Source"
@@ -23996,7 +23634,9 @@ order by a.ass_id</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -24022,7 +23662,7 @@ order by a.ass_id</property>
     design-time-name="Package\Epsiode Container\xref Episode Org">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="181,42"
           Id="Package\Epsiode Container\xref Episode Org\ADO NET Destination"
@@ -24062,7 +23702,9 @@ order by a.ass_id</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -24144,7 +23786,7 @@ order by a.ass_id</property>
     design-time-name="Package\Epsiode Container\xref_Credits">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="179,42"
           Id="Package\Epsiode Container\xref_Credits\ADO NET Destination"
@@ -24172,7 +23814,9 @@ order by a.ass_id</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -24188,6 +23832,62 @@ order by a.ass_id</property>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\Epsiode Container\xref_Credits\ADO NET Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Epsiode Container\xref_Organization">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="179,42"
+          Id="Package\Epsiode Container\xref_Organization\ADO NET Destination"
+          TopLeft="231,286" />
+        <NodeLayout
+          Size="158,42"
+          Id="Package\Epsiode Container\xref_Organization\ADO NET Source"
+          TopLeft="242,130" />
+        <EdgeLayout
+          Id="Package\Epsiode Container\xref_Organization.Paths[ADO NET Source Output]"
+          TopLeft="320.75,172">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,114"
+              Start="0,0"
+              End="0,106.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,106.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Epsiode Container\xref_Organization\ADO NET Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Epsiode Container\xref_Organization\ADO NET Source">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -24266,7 +23966,7 @@ order by a.ass_id</property>
     design-time-name="Package\Load MOS Credits">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="181,42"
           Id="Package\Load MOS Credits\ADO NET Destination"
@@ -24306,7 +24006,9 @@ order by a.ass_id</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -24332,15 +24034,15 @@ order by a.ass_id</property>
     design-time-name="Package\Load MOS OneTimeOnly">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="210,42"
-          Id="Package\Load MOS OneTimeOnly\Source OneTimeOnly Query"
-          TopLeft="244,134" />
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="209,42"
           Id="Package\Load MOS OneTimeOnly\Dest PBS MOsOneTimeOnly"
           TopLeft="262,344" />
+        <NodeLayout
+          Size="210,42"
+          Id="Package\Load MOS OneTimeOnly\Source OneTimeOnly Query"
+          TopLeft="244,134" />
         <EdgeLayout
           Id="Package\Load MOS OneTimeOnly.Paths[ADO NET Source Output]"
           TopLeft="349,176">
@@ -24372,7 +24074,9 @@ order by a.ass_id</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -24466,7 +24170,7 @@ order by a.ass_id</property>
     design-time-name="Package\Load MOSManifestation">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="181,42"
           Id="Package\Load MOSManifestation\ADO NET Destination"
@@ -24506,7 +24210,9 @@ order by a.ass_id</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -24532,7 +24238,7 @@ order by a.ass_id</property>
     design-time-name="Package\Load MOSManifestationFile">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="222,42"
           Id="Package\Load MOSManifestationFile\Source Maifestation File Query"
@@ -24572,7 +24278,9 @@ order by a.ass_id</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -24666,7 +24374,7 @@ order by a.ass_id</property>
     design-time-name="Package\Offer Container\Load MOSOffer">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="160,42"
           Id="Package\Offer Container\Load MOSOffer\ADO NET Source"
@@ -24706,7 +24414,9 @@ order by a.ass_id</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -24865,10 +24575,78 @@ order by a.ass_id</property>
     </Properties>
   </PipelineComponentMetadata>
   <TaskHost
+    design-time-name="Package\Season Container\Load EMM MOSSeason">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="158,42"
+          Id="Package\Season Container\Load EMM MOSSeason\ADO NET Source"
+          TopLeft="326,113" />
+        <NodeLayout
+          Size="179,42"
+          Id="Package\Season Container\Load EMM MOSSeason\ADO NET Destination"
+          TopLeft="355,295" />
+        <EdgeLayout
+          Id="Package\Season Container\Load EMM MOSSeason.Paths[ADO NET Source Output]"
+          TopLeft="405,155">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="39.5,140"
+              Start="0,0"
+              End="39.5,132.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,66" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,66"
+                    Point2="0,70"
+                    Point3="4,70" />
+                  <mssgle:LineSegment
+                    End="35.5,70" />
+                  <mssgle:CubicBezierSegment
+                    Point1="35.5,70"
+                    Point2="39.5,70"
+                    Point3="39.5,74" />
+                  <mssgle:LineSegment
+                    End="39.5,132.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Season Container\Load EMM MOSSeason\ADO NET Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Season Container\Load EMM MOSSeason\ADO NET Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
     design-time-name="Package\Season Container\Load SeasonEMMTemp">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="160,42"
           Id="Package\Season Container\Load SeasonEMMTemp\ADO NET Source"
@@ -24896,7 +24674,9 @@ order by a.ass_id</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -24922,7 +24702,7 @@ order by a.ass_id</property>
     design-time-name="Package\Series Container\Load MOSSeries">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="158,42"
           Id="Package\Series Container\Load MOSSeries\ADO NET Source"
@@ -24962,7 +24742,9 @@ order by a.ass_id</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -25324,7 +25106,9 @@ order by a.ass_id</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -25364,6 +25148,42 @@ order by a.ass_id</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
+          Id="Package\Upsert Container\MOSEpisode UPSERT.Paths[ADO NET Source Output1]"
+          TopLeft="501.5,165">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-114.166666666667,90"
+              Start="0,0"
+              End="-114.166666666667,82.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,49.3434650455927" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,49.3434650455927"
+                    Point2="0,53.3434650455927"
+                    Point3="-4,53.3434650455927" />
+                  <mssgle:LineSegment
+                    End="-110.166666666667,53.3434650455927" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-110.166666666667,53.3434650455927"
+                    Point2="-114.166666666667,53.3434650455927"
+                    Point3="-114.166666666667,57.3434650455927" />
+                  <mssgle:LineSegment
+                    End="-114.166666666667,82.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
           Id="Package\Upsert Container\MOSEpisode UPSERT.Paths[ADO NET Source Output]"
           TopLeft="234.5,170">
           <EdgeLayout.Curve>
@@ -25394,7 +25214,9 @@ order by a.ass_id</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -25503,40 +25325,6 @@ order by a.ass_id</property>
             <mssgm:EdgeLabel
               BoundingBox="-143.952578125,32.568710359408,58.65515625,9.7490234375"
               RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Upsert Container\MOSEpisode UPSERT.Paths[ADO NET Source Output1]"
-          TopLeft="501.5,165">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-114.166666666667,90"
-              Start="0,0"
-              End="-114.166666666667,82.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,49.3434650455927" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,49.3434650455927"
-                    Point2="0,53.3434650455927"
-                    Point3="-4,53.3434650455927" />
-                  <mssgle:LineSegment
-                    End="-110.166666666667,53.3434650455927" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-110.166666666667,53.3434650455927"
-                    Point2="-114.166666666667,53.3434650455927"
-                    Point3="-114.166666666667,57.3434650455927" />
-                  <mssgle:LineSegment
-                    End="-114.166666666667,82.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -26164,134 +25952,6 @@ order by a.ass_id</property>
   </TaskHost>
   <PipelineComponentMetadata
     design-time-name="Package\Upsert Container\MosEvent UPSERT\Dest PBS MOSEvent">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <TaskHost
-    design-time-name="Package\Epsiode Container\xref_Organization">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="179,42"
-          Id="Package\Epsiode Container\xref_Organization\ADO NET Destination"
-          TopLeft="231,286" />
-        <NodeLayout
-          Size="158,42"
-          Id="Package\Epsiode Container\xref_Organization\ADO NET Source"
-          TopLeft="242,130" />
-        <EdgeLayout
-          Id="Package\Epsiode Container\xref_Organization.Paths[ADO NET Source Output]"
-          TopLeft="320.75,172">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,114"
-              Start="0,0"
-              End="0,106.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,106.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\Epsiode Container\xref_Organization\ADO NET Destination">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Epsiode Container\xref_Organization\ADO NET Source">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <TaskHost
-    design-time-name="Package\Season Container\Load EMM MOSSeason">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="158,42"
-          Id="Package\Season Container\Load EMM MOSSeason\ADO NET Source"
-          TopLeft="326,113" />
-        <NodeLayout
-          Size="179,42"
-          Id="Package\Season Container\Load EMM MOSSeason\ADO NET Destination"
-          TopLeft="355,295" />
-        <EdgeLayout
-          Id="Package\Season Container\Load EMM MOSSeason.Paths[ADO NET Source Output]"
-          TopLeft="405,155">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="39.5,140"
-              Start="0,0"
-              End="39.5,132.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,66" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,66"
-                    Point2="0,70"
-                    Point3="4,70" />
-                  <mssgle:LineSegment
-                    End="35.5,70" />
-                  <mssgle:CubicBezierSegment
-                    Point1="35.5,70"
-                    Point2="39.5,70"
-                    Point3="39.5,74" />
-                  <mssgle:LineSegment
-                    End="39.5,132.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\Season Container\Load EMM MOSSeason\ADO NET Source">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Season Container\Load EMM MOSSeason\ADO NET Destination">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Epsiode Container\Credits\ADO NET Destination">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
