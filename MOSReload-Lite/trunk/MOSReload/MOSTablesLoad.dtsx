@@ -12,8 +12,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="MOSTablesLoad"
   DTS:PackageType="5"
-  DTS:VersionBuild="280"
-  DTS:VersionGUID="{5A9CA35C-EECE-4A29-90CE-3A19A86D35F7}">
+  DTS:VersionBuild="277"
+  DTS:VersionGUID="{6A967803-B828-4D4E-BCD2-5732D313E090}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">6</DTS:Property>
   <DTS:ConnectionManagers>
@@ -24,11 +24,11 @@
       DTS:ObjectName="db19-uat.EMM_Changes.mosuser">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=db19-uat;User ID=mosuser;Initial Catalog=EMM_MBank R1S2;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
+          DTS:ConnectionString="Data Source=db19-uat;User ID=mosuser;Initial Catalog=EMM_MBank R1S3;Provider=SQLNCLI11.1;Auto Translate=False;">
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAkjBFWtGIrkixnBX0uCWHTAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAnxauGeryz+u9IwPelULmFAAAAAASAAACgAAAAEAAAAOGMDJTno5cWBREJZwexA4gYAAAAYMhvspPpKh/5FkKhter62NPc/bBNXP/3FAAAADRU5irVdqQQOZeP8kup53P7UNnl</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAv1xuicR+Zk+e+yqnmwFKMQAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAB/JAK/DCGRWJY/6dNxhkZUAAAAAASAAACgAAAAEAAAAPIwHE9CwFuQz8emCjBf2okYAAAANmYw8WaHjXANeJIvlNsMw4aGNXxD/+6NFAAAAPdzxJCBf3QwjUoLeSFN1afWzm2Z</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -39,11 +39,11 @@
       DTS:ObjectName="db19-uat.MOS.mosuser">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=db19-uat;User ID=mosuser;Initial Catalog=&quot;EMM_MBank R1S2&quot;;Persist Security Info=True;Application Name=SSIS-MOSTablesLoad-{638E68F5-0981-491A-B5FB-6C9504D69EF0}db19-uat.MOS.mosuser;">
+          DTS:ConnectionString="Data Source=db19-uat;User ID=mosuser;Initial Catalog=&quot;EMM_MBank R1S3&quot;;Persist Security Info=True;Application Name=SSIS-MOSTablesLoad-{638E68F5-0981-491A-B5FB-6C9504D69EF0}db19-uat.MOS.mosuser;">
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAkjBFWtGIrkixnBX0uCWHTAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAJilrhp3UUKsKKZI08ldzQAAAAAASAAACgAAAAEAAAAE7eZc9IS5CdjMAzwJwrHucYAAAA1eVyhYToM/lXtQY2JCy9r/btKTZpRcXiFAAAABqUBwD2kmVJ2OmkMBjBuCtUoSTQ</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAv1xuicR+Zk+e+yqnmwFKMQAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAAAENIxG+5bcD7tV5x/YtzAAAAAASAAACgAAAAEAAAAI8fIGAcJrsqlAWthQOm7AwYAAAA6p+mi237whCNPhPldt94CdRj7hMcLDdfFAAAAKhx2l54pZqKA6EHYOFs7xjN4KNS</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -58,7 +58,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAkjBFWtGIrkixnBX0uCWHTAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABHe93PfHIRqibAK0cBZIJJAAAAAASAAACgAAAAEAAAAPCEqnb9nSF12+xgH55wUfsYAAAA6D5TmrUams5R//OHAw3QPwZB4p0tD2ACFAAAAFO01L0UaclQOy1RwWD1hctdCpjd</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAv1xuicR+Zk+e+yqnmwFKMQAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAB9fvZ4RER8AAY/61VKdz5CAAAAAASAAACgAAAAEAAAAKx8oPiWJoO0vloydMNRHEoYAAAAnUPiLRLC8YH1vVf+blG4w2c+ai2I6eCcFAAAALJrw+sGLcMWHHqPnfyX8A3rF9h+</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -784,7 +784,7 @@ from	[PBS].[vwMOSCompilation]</property>
           DTS:LocaleID="-1"
           DTS:ObjectName="Ceanup Nulls in xref Organization"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2012; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="0">
+          DTS:ThreadHint="2">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -866,11 +866,6 @@ from	[PBS].[vwMOSCompilation]</property>
                           dataType="wstr"
                           length="500"
                           name="DisplayName" />
-                        <externalMetadataColumn
-                          refId="Package\Epsiode Container\Credits\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[PublishStatus]"
-                          dataType="wstr"
-                          length="150"
-                          name="PublishStatus" />
                       </externalMetadataColumns>
                     </input>
                   </inputs>
@@ -2517,7 +2512,7 @@ left outer join
           DTS:refId="Package\Epsiode Container\MOSEpisode Contacts"
           DTS:CreationName="SSIS.Pipeline.3"
           DTS:Description="Data Flow Task"
-          DTS:DTSID="{E8CFA31C-4EB9-481B-87ED-E4D3EF4F9AE1}"
+          DTS:DTSID="{88fcf5c5-0f5a-4f46-b753-479c85082678}"
           DTS:ExecutableType="SSIS.Pipeline.3"
           DTS:LocaleID="-1"
           DTS:ObjectName="MOSEpisode Contacts"
@@ -2590,6 +2585,13 @@ left outer join
                           externalMetadataColumnId="Package\Epsiode Container\MOSEpisode Contacts\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Phone]"
                           lineageId="Package\Epsiode Container\MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Output].Columns[Contact.Info.Phone]" />
                         <inputColumn
+                          refId="Package\Epsiode Container\MOSEpisode Contacts\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Contact.Info.Phone.Type]"
+                          cachedDataType="wstr"
+                          cachedLength="6"
+                          cachedName="Contact.Info.Phone.Type"
+                          externalMetadataColumnId="Package\Epsiode Container\MOSEpisode Contacts\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Phone.Type]"
+                          lineageId="Package\Epsiode Container\MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Output].Columns[Contact.Info.Phone.Type]" />
+                        <inputColumn
                           refId="Package\Epsiode Container\MOSEpisode Contacts\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Contact Info.Address]"
                           cachedDataType="wstr"
                           cachedLength="304"
@@ -2616,13 +2618,6 @@ left outer join
                           cachedName="Contact.Info.ContactID"
                           externalMetadataColumnId="Package\Epsiode Container\MOSEpisode Contacts\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[ContactID]"
                           lineageId="Package\Epsiode Container\MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Output].Columns[Contact.Info.ContactID]" />
-                        <inputColumn
-                          refId="Package\Epsiode Container\MOSEpisode Contacts\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Contact.Info.Phone.Type]"
-                          cachedDataType="wstr"
-                          cachedLength="6"
-                          cachedName="Contact.Info.Phone.Type"
-                          externalMetadataColumnId="Package\Epsiode Container\MOSEpisode Contacts\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Phone.Type]"
-                          lineageId="Package\Epsiode Container\MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Output].Columns[Contact.Info.Phone.Type]" />
                       </inputColumns>
                       <externalMetadataColumns
                         isUsed="True">
@@ -3317,6 +3312,497 @@ from	pbs.vwMOSSeries
                   endId="Package\Epsiode Container\Organization\ADO NET Destination.Inputs[ADO NET Destination Input]"
                   name="ADO NET Source Output"
                   startId="Package\Epsiode Container\Organization\ADO NET Source.Outputs[ADO NET Source Output]" />
+              </paths>
+            </pipeline>
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\Epsiode Container\To bE Deleted MOSEpisode Contacts"
+          DTS:CreationName="SSIS.Pipeline.3"
+          DTS:Description="Data Flow Task"
+          DTS:DTSID="{E8CFA31C-4EB9-481B-87ED-E4D3EF4F9AE1}"
+          DTS:ExecutableType="SSIS.Pipeline.3"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="To bE Deleted MOSEpisode Contacts"
+          DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <pipeline
+              version="1">
+              <components>
+                <component
+                  refId="Package\Epsiode Container\To bE Deleted MOSEpisode Contacts\ADO NET Destination"
+                  componentClassID="{874F7595-FB5F-40FF-96AF-FBFF8250E3EF}"
+                  contactInfo="Loads data into an ADO.NET-compliant database that uses a database table or view. Load data into a new or existing table. For example, use an ADO.NET provider for ODBC to load data into an ODBC destination.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;2"
+                  description="Loads data into an ADO.NET-compliant database that uses a database table or view. Load data into a new or existing table. For example, use an ADO.NET provider for ODBC to load data into an ODBC destination."
+                  name="ADO NET Destination"
+                  usesDispositions="true"
+                  version="2">
+                  <properties>
+                    <property
+                      dataType="System.String"
+                      description="The Destination database table name."
+                      expressionType="Notify"
+                      name="TableOrViewName"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version= 11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">"PBS"."Contact"</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specify the number of rows per batch. The default is 0 which uses the same size as SSIS internal buffer. "
+                      expressionType="Notify"
+                      name="BatchSize">0</property>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out. A value of 0 indicates infinite time-out. "
+                      expressionType="Notify"
+                      name="CommandTimeout">30</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Specifies whether to use the SqlBulkCopy interface to improve the performance of bulk insert operations. Only certain providers support this interface."
+                      expressionType="Notify"
+                      name="UseBulkInsertWhenPossible">true</property>
+                    <property
+                      dataType="System.String"
+                      name="UserComponentTypeName">Microsoft.SqlServer.Dts.Pipeline.ADONETDestination, Microsoft.SqlServer.ADONETDest, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Epsiode Container\To bE Deleted MOSEpisode Contacts\ADO NET Destination.Connections[IDbConnection]"
+                      connectionManagerID="Package.ConnectionManagers[db19-uat.MOS.mosuser]"
+                      connectionManagerRefId="Package.ConnectionManagers[db19-uat.MOS.mosuser]"
+                      description="Managed connection manager"
+                      name="IDbConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\Epsiode Container\To bE Deleted MOSEpisode Contacts\ADO NET Destination.Inputs[ADO NET Destination Input]"
+                      errorRowDisposition="FailComponent"
+                      hasSideEffects="true"
+                      name="ADO NET Destination Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Epsiode Container\To bE Deleted MOSEpisode Contacts\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[OrganizationID]"
+                          cachedDataType="i4"
+                          cachedName="OrganizationID"
+                          externalMetadataColumnId="Package\Epsiode Container\To bE Deleted MOSEpisode Contacts\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[OrganizationID]"
+                          lineageId="Package\Epsiode Container\To bE Deleted MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Output].Columns[OrganizationID]" />
+                        <inputColumn
+                          refId="Package\Epsiode Container\To bE Deleted MOSEpisode Contacts\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Phone]"
+                          cachedDataType="wstr"
+                          cachedLength="20"
+                          cachedName="Phone"
+                          externalMetadataColumnId="Package\Epsiode Container\To bE Deleted MOSEpisode Contacts\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Phone]"
+                          lineageId="Package\Epsiode Container\To bE Deleted MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Output].Columns[Phone]" />
+                        <inputColumn
+                          refId="Package\Epsiode Container\To bE Deleted MOSEpisode Contacts\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Address]"
+                          cachedDataType="wstr"
+                          cachedLength="304"
+                          cachedName="Address"
+                          externalMetadataColumnId="Package\Epsiode Container\To bE Deleted MOSEpisode Contacts\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Address]"
+                          lineageId="Package\Epsiode Container\To bE Deleted MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Output].Columns[Address]" />
+                        <inputColumn
+                          refId="Package\Epsiode Container\To bE Deleted MOSEpisode Contacts\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[PrimaryEmail]"
+                          cachedDataType="wstr"
+                          cachedLength="80"
+                          cachedName="PrimaryEmail"
+                          externalMetadataColumnId="Package\Epsiode Container\To bE Deleted MOSEpisode Contacts\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[PrimaryEmail]"
+                          lineageId="Package\Epsiode Container\To bE Deleted MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Output].Columns[PrimaryEmail]" />
+                        <inputColumn
+                          refId="Package\Epsiode Container\To bE Deleted MOSEpisode Contacts\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Name]"
+                          cachedDataType="wstr"
+                          cachedLength="40"
+                          cachedName="Name"
+                          externalMetadataColumnId="Package\Epsiode Container\To bE Deleted MOSEpisode Contacts\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Name]"
+                          lineageId="Package\Epsiode Container\To bE Deleted MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Output].Columns[Name]" />
+                        <inputColumn
+                          refId="Package\Epsiode Container\To bE Deleted MOSEpisode Contacts\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[ContactID]"
+                          cachedDataType="i4"
+                          cachedName="ContactID"
+                          externalMetadataColumnId="Package\Epsiode Container\To bE Deleted MOSEpisode Contacts\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[ContactID]"
+                          lineageId="Package\Epsiode Container\To bE Deleted MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Output].Columns[ContactID]" />
+                        <inputColumn
+                          refId="Package\Epsiode Container\To bE Deleted MOSEpisode Contacts\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[PhoneType]"
+                          cachedDataType="wstr"
+                          cachedLength="20"
+                          cachedName="PhoneType"
+                          externalMetadataColumnId="Package\Epsiode Container\To bE Deleted MOSEpisode Contacts\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Phone.Type]"
+                          lineageId="Package\Epsiode Container\To bE Deleted MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Output].Columns[PhoneType]" />
+                      </inputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Epsiode Container\To bE Deleted MOSEpisode Contacts\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[OrganizationID]"
+                          dataType="wstr"
+                          length="500"
+                          name="OrganizationID" />
+                        <externalMetadataColumn
+                          refId="Package\Epsiode Container\To bE Deleted MOSEpisode Contacts\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Phone]"
+                          dataType="wstr"
+                          length="500"
+                          name="Phone" />
+                        <externalMetadataColumn
+                          refId="Package\Epsiode Container\To bE Deleted MOSEpisode Contacts\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Phone.Type]"
+                          dataType="wstr"
+                          length="500"
+                          name="Phone.Type" />
+                        <externalMetadataColumn
+                          refId="Package\Epsiode Container\To bE Deleted MOSEpisode Contacts\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Address]"
+                          dataType="wstr"
+                          length="500"
+                          name="Address" />
+                        <externalMetadataColumn
+                          refId="Package\Epsiode Container\To bE Deleted MOSEpisode Contacts\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[PrimaryEmail]"
+                          dataType="wstr"
+                          length="500"
+                          name="PrimaryEmail" />
+                        <externalMetadataColumn
+                          refId="Package\Epsiode Container\To bE Deleted MOSEpisode Contacts\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Name]"
+                          dataType="wstr"
+                          length="500"
+                          name="Name" />
+                        <externalMetadataColumn
+                          refId="Package\Epsiode Container\To bE Deleted MOSEpisode Contacts\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[ContactID]"
+                          dataType="wstr"
+                          length="500"
+                          name="ContactID" />
+                      </externalMetadataColumns>
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Epsiode Container\To bE Deleted MOSEpisode Contacts\ADO NET Destination.Outputs[ADO NET Destination Error Output]"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="ADO NET Destination Error Output"
+                      synchronousInputId="Package\Epsiode Container\To bE Deleted MOSEpisode Contacts\ADO NET Destination.Inputs[ADO NET Destination Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Epsiode Container\To bE Deleted MOSEpisode Contacts\ADO NET Destination.Outputs[ADO NET Destination Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Epsiode Container\To bE Deleted MOSEpisode Contacts\ADO NET Destination.Outputs[ADO NET Destination Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Epsiode Container\To bE Deleted MOSEpisode Contacts\ADO NET Destination.Outputs[ADO NET Destination Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Epsiode Container\To bE Deleted MOSEpisode Contacts\ADO NET Destination.Outputs[ADO NET Destination Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Epsiode Container\To bE Deleted MOSEpisode Contacts\ADO NET Source"
+                  componentClassID="{874F7595-FB5F-40FF-96AF-FBFF8250E3EF}"
+                  contactInfo="Consumes data from SQL Server, OLE DB, ODBC, or Oracle, using the corresponding .NET Framework data provider. Use a Transact-SQL statement to define the result set. For example, extract data from SQL Server with the .NET Framework data provider for SQL Server.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+                  description="Consumes data from SQL Server, OLE DB, ODBC, or Oracle, using the corresponding .NET Framework data provider. Use a Transact-SQL statement to define the result set. For example, extract data from SQL Server with the .NET Framework data provider for SQL Server."
+                  name="ADO NET Source"
+                  usesDispositions="true"
+                  version="4">
+                  <properties>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the SQL statement used by the component to extract data."
+                      expressionType="Notify"
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">select distinct
+       A.OrganizationID
+     , A.Phone
+     , A.PhoneType
+     , A.Address
+     , A.PrimaryEmail
+     , A.Name
+     , A.ContactID
+from
+(
+    select Q.OrganizationID
+         , Q.Phone
+         , Q.PhoneType
+         , Q.Address
+         , Q.PrimaryEmail
+         , Q.Name
+         , Q.ContactID
+    from
+    (
+        select distinct
+               [Episode.Organization.OrganizationID] as OrganizationID
+             , [Episode.Organization.Contact.Info.Phone] as Phone
+             , [Episode.Organization.Contact.Info.Phone.Type] as PhoneType
+             , [Episode.Organization.Contact Info.Address] as Address
+             , [Episode.Organization.Contact.Info.PrimaryEmail] as PrimaryEmail
+             , [Episode.Organization.Contact.Info.Name] as Name
+             , [Episode.Organization.Contact.Info.ContactID] as ContactID
+        from [PBS].vwMOSEpisodeContactAgnostic a with (nolock)
+            join BV.ASSET                      b with (nolock)
+                on b.ASS_ID = a.ass_id
+            join [BV].[PBSFEEDDISTRIBUTOR]     c with (nolock)
+                on c.PBSFDS_ID = b.ASS_PBSFD_ID
+                   and c.PBSFDS_ISPBSDISTRIBUTOR = 1
+            join BV.ASSETCATEGORY              d with (nolock)
+                on d.ACA_ID = b.ASS_ACA_ID
+            left join
+            (
+                select BV.ASSET.ASS_PBSNOLAROOT_CM        as NOLARoot
+                     , BV.EXTENDEDDATA.EXT_OWNERRECORD_ID as ASS_ID
+                     , BV.EXTENDEDDATA.EXT_INTEGER        as CleansedbyProgramming
+                     , BV.ASSET.ASS_EPISODESLATE
+                from BV.EXTENDEDDATA with (nolock)
+                    left outer join BV.ASSET with (nolock)
+                        on BV.EXTENDEDDATA.EXT_OWNERRECORD_ID = BV.ASSET.ASS_ID
+                where (BV.EXTENDEDDATA.EXT_INTEGER = 652154224)
+                      and (BV.EXTENDEDDATA.P_DELETEFLAG = 0)
+                      and (BV.EXTENDEDDATA.EXT_UPDATEUSERID is not null)
+            )                                  P
+                on P.ASS_ID = b.ASS_ID
+            left outer join
+            (
+                select bb.ULU_DESC as episodeclass
+                     , aa.EXT_OWNERRECORD_ID
+                     , aa.EXT_INTEGER
+                from BV.EXTENDEDDATA              aa with (nolock)
+                    left outer join BV.USERLOOKUP bb with (nolock)
+                        on aa.EXT_INTEGER = bb.ULU_ID
+                where (aa.EXT_INTEGER in ( 609587740, 609587737, 619411205, 619411780 ))
+            )                                  Q
+                on Q.EXT_OWNERRECORD_ID = a.ass_id
+    ) Q
+
+    union
+
+    select Z.OrganizationID
+         , Z.PhoneType
+         , Z.Phone
+         , Z.Address
+         , Z.PrimaryEmail
+         , Z.Name
+         , Z.Contactid
+    from
+    (
+        select distinct
+               [Series.Organization.OrganizationID]            as OrganizationID
+             , [Series.Organization.ContactInfo.Phone.Type]    as PhoneType
+             , [Series.Organization.Contact.Info.Phone]        as Phone
+             , [Series.Organization.Contact Info.Address]      as Address
+             , [Series.Organization.Contact.Info.PrimaryEmail] as PrimaryEmail
+             , [Series.Organization.Contact.Info.Name]         as Name
+             , [Series.Organization.Contact.Info.ContactID]    as Contactid
+        from [PBS].vwMOSSeriesPerAsset
+    ) Z
+) A
+where A.[OrganizationID] is not null
+      and A.[ContactID] is not null;</property>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether to allow non-string external columns to be implicitly converted to strings at the output columns."
+                      name="AllowImplicitStringConversion">true</property>
+                    <property
+                      dataType="System.String"
+                      description="The Source database table name."
+                      expressionType="Notify"
+                      name="TableOrViewName"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version= 11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specify the mode to retrieve external column information"
+                      name="AccessMode"
+                      typeConverter="Microsoft.SqlServer.Dts.Pipeline.DataReaderSourceAdapter+EnumToStringConverter, Microsoft.SqlServer.ADONETSrc, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">2</property>
+                    <property
+                      dataType="System.String"
+                      name="UserComponentTypeName">Microsoft.SqlServer.Dts.Pipeline.DataReaderSourceAdapter, Microsoft.SqlServer.ADONETSrc, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Epsiode Container\To bE Deleted MOSEpisode Contacts\ADO NET Source.Connections[IDbConnection]"
+                      connectionManagerID="Package.ConnectionManagers[db19-uat.TrafficData.TrafficDataReader]"
+                      connectionManagerRefId="Package.ConnectionManagers[db19-uat.TrafficData.TrafficDataReader]"
+                      description="Managed connection manager"
+                      name="IDbConnection" />
+                  </connections>
+                  <outputs>
+                    <output
+                      refId="Package\Epsiode Container\To bE Deleted MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Output]"
+                      name="ADO NET Source Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Epsiode Container\To bE Deleted MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Output].Columns[OrganizationID]"
+                          dataType="i4"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Epsiode Container\To bE Deleted MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[OrganizationID]"
+                          lineageId="Package\Epsiode Container\To bE Deleted MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Output].Columns[OrganizationID]"
+                          name="OrganizationID"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Epsiode Container\To bE Deleted MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Output].Columns[Phone]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Epsiode Container\To bE Deleted MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Phone]"
+                          length="20"
+                          lineageId="Package\Epsiode Container\To bE Deleted MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Output].Columns[Phone]"
+                          name="Phone"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Epsiode Container\To bE Deleted MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Output].Columns[PhoneType]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Epsiode Container\To bE Deleted MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[PhoneType]"
+                          length="20"
+                          lineageId="Package\Epsiode Container\To bE Deleted MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Output].Columns[PhoneType]"
+                          name="PhoneType"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Epsiode Container\To bE Deleted MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Output].Columns[Address]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Epsiode Container\To bE Deleted MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Address]"
+                          length="304"
+                          lineageId="Package\Epsiode Container\To bE Deleted MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Output].Columns[Address]"
+                          name="Address"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Epsiode Container\To bE Deleted MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Output].Columns[PrimaryEmail]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Epsiode Container\To bE Deleted MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[PrimaryEmail]"
+                          length="80"
+                          lineageId="Package\Epsiode Container\To bE Deleted MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Output].Columns[PrimaryEmail]"
+                          name="PrimaryEmail"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Epsiode Container\To bE Deleted MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Output].Columns[Name]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Epsiode Container\To bE Deleted MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Name]"
+                          length="40"
+                          lineageId="Package\Epsiode Container\To bE Deleted MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Output].Columns[Name]"
+                          name="Name"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Epsiode Container\To bE Deleted MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Output].Columns[ContactID]"
+                          dataType="i4"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Epsiode Container\To bE Deleted MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[ContactID]"
+                          lineageId="Package\Epsiode Container\To bE Deleted MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Output].Columns[ContactID]"
+                          name="ContactID"
+                          truncationRowDisposition="FailComponent" />
+                      </outputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Epsiode Container\To bE Deleted MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[OrganizationID]"
+                          dataType="i4"
+                          name="OrganizationID" />
+                        <externalMetadataColumn
+                          refId="Package\Epsiode Container\To bE Deleted MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Phone]"
+                          dataType="wstr"
+                          length="20"
+                          name="Phone" />
+                        <externalMetadataColumn
+                          refId="Package\Epsiode Container\To bE Deleted MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[PhoneType]"
+                          dataType="wstr"
+                          length="20"
+                          name="PhoneType" />
+                        <externalMetadataColumn
+                          refId="Package\Epsiode Container\To bE Deleted MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Address]"
+                          dataType="wstr"
+                          length="304"
+                          name="Address" />
+                        <externalMetadataColumn
+                          refId="Package\Epsiode Container\To bE Deleted MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[PrimaryEmail]"
+                          dataType="wstr"
+                          length="80"
+                          name="PrimaryEmail" />
+                        <externalMetadataColumn
+                          refId="Package\Epsiode Container\To bE Deleted MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Name]"
+                          dataType="wstr"
+                          length="40"
+                          name="Name" />
+                        <externalMetadataColumn
+                          refId="Package\Epsiode Container\To bE Deleted MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[ContactID]"
+                          dataType="i4"
+                          name="ContactID" />
+                      </externalMetadataColumns>
+                    </output>
+                    <output
+                      refId="Package\Epsiode Container\To bE Deleted MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Error Output]"
+                      isErrorOut="true"
+                      name="ADO NET Source Error Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Epsiode Container\To bE Deleted MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[OrganizationID]"
+                          dataType="i4"
+                          lineageId="Package\Epsiode Container\To bE Deleted MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[OrganizationID]"
+                          name="OrganizationID" />
+                        <outputColumn
+                          refId="Package\Epsiode Container\To bE Deleted MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Phone]"
+                          dataType="wstr"
+                          length="20"
+                          lineageId="Package\Epsiode Container\To bE Deleted MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Phone]"
+                          name="Phone" />
+                        <outputColumn
+                          refId="Package\Epsiode Container\To bE Deleted MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[PhoneType]"
+                          dataType="wstr"
+                          length="20"
+                          lineageId="Package\Epsiode Container\To bE Deleted MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[PhoneType]"
+                          name="PhoneType" />
+                        <outputColumn
+                          refId="Package\Epsiode Container\To bE Deleted MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Address]"
+                          dataType="wstr"
+                          length="304"
+                          lineageId="Package\Epsiode Container\To bE Deleted MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Address]"
+                          name="Address" />
+                        <outputColumn
+                          refId="Package\Epsiode Container\To bE Deleted MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[PrimaryEmail]"
+                          dataType="wstr"
+                          length="80"
+                          lineageId="Package\Epsiode Container\To bE Deleted MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[PrimaryEmail]"
+                          name="PrimaryEmail" />
+                        <outputColumn
+                          refId="Package\Epsiode Container\To bE Deleted MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Name]"
+                          dataType="wstr"
+                          length="40"
+                          lineageId="Package\Epsiode Container\To bE Deleted MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Name]"
+                          name="Name" />
+                        <outputColumn
+                          refId="Package\Epsiode Container\To bE Deleted MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[ContactID]"
+                          dataType="i4"
+                          lineageId="Package\Epsiode Container\To bE Deleted MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[ContactID]"
+                          name="ContactID" />
+                        <outputColumn
+                          refId="Package\Epsiode Container\To bE Deleted MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Epsiode Container\To bE Deleted MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Epsiode Container\To bE Deleted MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Epsiode Container\To bE Deleted MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+              </components>
+              <paths>
+                <path
+                  refId="Package\Epsiode Container\To bE Deleted MOSEpisode Contacts.Paths[ADO NET Source Output]"
+                  endId="Package\Epsiode Container\To bE Deleted MOSEpisode Contacts\ADO NET Destination.Inputs[ADO NET Destination Input]"
+                  name="ADO NET Source Output"
+                  startId="Package\Epsiode Container\To bE Deleted MOSEpisode Contacts\ADO NET Source.Outputs[ADO NET Source Output]" />
               </paths>
             </pipeline>
           </DTS:ObjectData>
@@ -4572,19 +5058,19 @@ join	PBS.vwMOSSeriesPerAsset b  on b.[EMMSeries.UID] = a.[EMMEpisode.SeriesID]
         <DTS:PrecedenceConstraint
           DTS:refId="Package\Epsiode Container.PrecedenceConstraints[Constraint]"
           DTS:CreationName=""
-          DTS:DTSID="{DA1B758F-3BB0-4470-AAF8-C8390C495E57}"
+          DTS:DTSID="{05ED1ED0-7D23-487C-94C1-45636A2B81F0}"
           DTS:From="Package\Epsiode Container\MOSEpisode Contacts"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Constraint"
-          DTS:To="Package\Epsiode Container\Organization" />
+          DTS:To="Package\Epsiode Container\Credits" />
         <DTS:PrecedenceConstraint
           DTS:refId="Package\Epsiode Container.PrecedenceConstraints[Constraint 1]"
           DTS:CreationName=""
-          DTS:DTSID="{C9ABD413-3A38-405A-A8D4-2D0C27F40519}"
+          DTS:DTSID="{335B93D8-F83A-40CE-A443-1FF85B589CA7}"
           DTS:From="Package\Epsiode Container\MOSEpisode Contacts"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Constraint 1"
-          DTS:To="Package\Epsiode Container\Credits" />
+          DTS:To="Package\Epsiode Container\Organization" />
         <DTS:PrecedenceConstraint
           DTS:refId="Package\Epsiode Container.PrecedenceConstraints[Constraint 11]"
           DTS:CreationName=""
@@ -4657,7 +5143,7 @@ join	PBS.vwMOSSeriesPerAsset b  on b.[EMMSeries.UID] = a.[EMMEpisode.SeriesID]
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
           SQLTask:Connection="{638E68F5-0981-491A-B5FB-6C9504D69EF0}"
-          SQLTask:SqlStatementSource="truncate table PBS.MOSCredits&#xA;truncate table PBS.MOSEpisode &#xA;truncate table PBS.MOSOffer &#xA;truncate table PBS.MOSOrganization &#xA;truncate table PBS.MOSSeason &#xA;truncate table PBS.MOSSeries &#xA;truncate table PBS.MOSUsage &#xA;truncate table PBS.MOSManifestation&#xA;truncate table PBS.MOSManifestationFile&#xA;truncate table PBS.MOSCompilation&#xA;truncate table PBS.MOSEvent&#xA;truncate table PBS.MOSCompilationEntry&#xA;truncate table PBS.MOSOneTimeOnly&#xA;truncate table PBS.MOSContact&#xA;truncate table PBS.Credits&#xA;truncate table PBS.Organization &#xA;truncate table PBS.EpsiodeCredits_ExcutiveProducer&#xA;truncate table PBS.SeriesCredits_Producer&#xA;truncate table PBS.xrefMOSEpisodeCredits&#xA;truncate table PBS.xrefMOSSeriesCredits &#xA;truncate table PBS.xrefMOSEpisodeOrganizations &#xA;truncate table PBS.xrefMOSOfferOrganization &#xA;truncate table PBS.xrefSeriesOrganization &#xA;truncate table pbs.xref_Credits" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          SQLTask:SqlStatementSource="truncate table PBS.MOSOffer &#xA;truncate table PBS.MOSUsage &#xA;truncate table PBS.MOSManifestation&#xA;truncate table PBS.MOSManifestationFile&#xA;truncate table PBS.MOSEvent&#xA;truncate table PBS.MOSOneTimeOnly&#xA;truncate table PBS.EpsiodeCredits_ExcutiveProducer&#xA;truncate table PBS.SeriesCredits_Producer&#xA;truncate table PBS.xrefMOSEpisodeCredits&#xA;truncate table PBS.xrefMOSSeriesCredits &#xA;truncate table PBS.xrefMOSEpisodeOrganizations &#xA;truncate table PBS.xrefMOSOfferOrganization &#xA;truncate table PBS.xrefSeriesOrganization &#xA;truncate table pbs.xref_Credits" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
@@ -11078,7 +11564,7 @@ SELECT distinct [EMMOffer.UID] as [Offer.UID]
           DTS:LocaleID="-1"
           DTS:ObjectName="Delete Adjunct and Pro Forma where Main Record Exists"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2012; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="2">
+          DTS:ThreadHint="0">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -11189,11 +11675,6 @@ SELECT distinct [EMMOffer.UID] as [Offer.UID]
                           dataType="wstr"
                           length="500"
                           name="Season.Title" />
-                        <externalMetadataColumn
-                          refId="Package\Season Container\Load EMM MOSSeason\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[PublishStatus]"
-                          dataType="wstr"
-                          length="150"
-                          name="PublishStatus" />
                       </externalMetadataColumns>
                     </input>
                   </inputs>
@@ -11580,77 +12061,6 @@ SELECT distinct [EMMOffer.UID] as [Offer.UID]
                       errorRowDisposition="FailComponent"
                       hasSideEffects="true"
                       name="ADO NET Destination Input">
-                      <inputColumns>
-                        <inputColumn
-                          refId="Package\Season Container\Load SeasonEMMTemp\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[InternalPBSID]"
-                          cachedDataType="wstr"
-                          cachedLength="102"
-                          cachedName="InternalPBSID"
-                          externalMetadataColumnId="Package\Season Container\Load SeasonEMMTemp\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[InternalPBSID]"
-                          lineageId="Package\Season Container\Load SeasonEMMTemp\ADO NET Source.Outputs[ADO NET Source Output].Columns[InternalPBSID]" />
-                        <inputColumn
-                          refId="Package\Season Container\Load SeasonEMMTemp\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Season.Season Class]"
-                          cachedDataType="wstr"
-                          cachedLength="10"
-                          cachedName="Season.Season Class"
-                          externalMetadataColumnId="Package\Season Container\Load SeasonEMMTemp\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Season.Season Class]"
-                          lineageId="Package\Season Container\Load SeasonEMMTemp\ADO NET Source.Outputs[ADO NET Source Output].Columns[Season.Season Class]" />
-                        <inputColumn
-                          refId="Package\Season Container\Load SeasonEMMTemp\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Season.Referent Type]"
-                          cachedDataType="wstr"
-                          cachedLength="6"
-                          cachedName="Season.Referent Type"
-                          externalMetadataColumnId="Package\Season Container\Load SeasonEMMTemp\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Season.Referent Type]"
-                          lineageId="Package\Season Container\Load SeasonEMMTemp\ADO NET Source.Outputs[ADO NET Source Output].Columns[Season.Referent Type]" />
-                        <inputColumn
-                          refId="Package\Season Container\Load SeasonEMMTemp\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Season.UID]"
-                          cachedDataType="wstr"
-                          cachedLength="78"
-                          cachedName="Season.UID"
-                          externalMetadataColumnId="Package\Season Container\Load SeasonEMMTemp\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Season.UID]"
-                          lineageId="Package\Season Container\Load SeasonEMMTemp\ADO NET Source.Outputs[ADO NET Source Output].Columns[Season.UID]" />
-                        <inputColumn
-                          refId="Package\Season Container\Load SeasonEMMTemp\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[EMMSeason.UID]"
-                          cachedDataType="wstr"
-                          cachedLength="91"
-                          cachedName="EMMSeason.UID"
-                          externalMetadataColumnId="Package\Season Container\Load SeasonEMMTemp\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[EMMSeason.UID]"
-                          lineageId="Package\Season Container\Load SeasonEMMTemp\ADO NET Source.Outputs[ADO NET Source Output].Columns[EMMSeason.UID]" />
-                        <inputColumn
-                          refId="Package\Season Container\Load SeasonEMMTemp\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Season.ContentIdentifier]"
-                          cachedDataType="wstr"
-                          cachedLength="1"
-                          cachedName="Season.ContentIdentifier"
-                          externalMetadataColumnId="Package\Season Container\Load SeasonEMMTemp\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Season.ContentIdentifier]"
-                          lineageId="Package\Season Container\Load SeasonEMMTemp\ADO NET Source.Outputs[ADO NET Source Output].Columns[Season.ContentIdentifier]" />
-                        <inputColumn
-                          refId="Package\Season Container\Load SeasonEMMTemp\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Season.Sequence.Number]"
-                          cachedDataType="i4"
-                          cachedName="Season.Sequence.Number"
-                          externalMetadataColumnId="Package\Season Container\Load SeasonEMMTemp\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Season.Sequence.Number]"
-                          lineageId="Package\Season Container\Load SeasonEMMTemp\ADO NET Source.Outputs[ADO NET Source Output].Columns[Season.Sequence.Number]" />
-                        <inputColumn
-                          refId="Package\Season Container\Load SeasonEMMTemp\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Season.ReleaseDate]"
-                          cachedDataType="dbTimeStamp2"
-                          cachedName="Season.ReleaseDate"
-                          cachedScale="7"
-                          externalMetadataColumnId="Package\Season Container\Load SeasonEMMTemp\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Season.ReleaseDate]"
-                          lineageId="Package\Season Container\Load SeasonEMMTemp\ADO NET Source.Outputs[ADO NET Source Output].Columns[Season.ReleaseDate]" />
-                        <inputColumn
-                          refId="Package\Season Container\Load SeasonEMMTemp\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[EMMSeason.ParentID]"
-                          cachedDataType="wstr"
-                          cachedLength="56"
-                          cachedName="EMMSeason.ParentID"
-                          externalMetadataColumnId="Package\Season Container\Load SeasonEMMTemp\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[EMMSeason.ParentID]"
-                          lineageId="Package\Season Container\Load SeasonEMMTemp\ADO NET Source.Outputs[ADO NET Source Output].Columns[EMMSeason.ParentID]" />
-                        <inputColumn
-                          refId="Package\Season Container\Load SeasonEMMTemp\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Season.Title]"
-                          cachedDataType="wstr"
-                          cachedLength="109"
-                          cachedName="Season.Title"
-                          externalMetadataColumnId="Package\Season Container\Load SeasonEMMTemp\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Season.Title]"
-                          lineageId="Package\Season Container\Load SeasonEMMTemp\ADO NET Source.Outputs[ADO NET Source Output].Columns[Season.Title]" />
-                      </inputColumns>
                       <externalMetadataColumns
                         isUsed="True">
                         <externalMetadataColumn
@@ -11681,7 +12091,7 @@ SELECT distinct [EMMOffer.UID] as [Offer.UID]
                         <externalMetadataColumn
                           refId="Package\Season Container\Load SeasonEMMTemp\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Season.ContentIdentifier]"
                           dataType="wstr"
-                          length="500"
+                          length="1000"
                           name="Season.ContentIdentifier" />
                         <externalMetadataColumn
                           refId="Package\Season Container\Load SeasonEMMTemp\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Season.Sequence.Number]"
@@ -11701,6 +12111,11 @@ SELECT distinct [EMMOffer.UID] as [Offer.UID]
                           dataType="wstr"
                           length="500"
                           name="Season.Title" />
+                        <externalMetadataColumn
+                          refId="Package\Season Container\Load SeasonEMMTemp\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[PublishStatus]"
+                          dataType="wstr"
+                          length="150"
+                          name="PublishStatus" />
                       </externalMetadataColumns>
                     </input>
                   </inputs>
@@ -12145,7 +12560,7 @@ SELECT distinct 1 as [InternalPBSID]
           DTS:LocaleID="-1"
           DTS:ObjectName="Truncate Table PBS SeasonEMMTemp"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2012; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="2">
+          DTS:ThreadHint="0">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -12333,11 +12748,6 @@ SELECT distinct 1 as [InternalPBSID]
                           dataType="wstr"
                           length="10"
                           name="Series.ReleaseDate" />
-                        <externalMetadataColumn
-                          refId="Package\Series Container\Load MOSSeries\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[PublishStatus]"
-                          dataType="wstr"
-                          length="150"
-                          name="PublishStatus" />
                       </externalMetadataColumns>
                     </input>
                   </inputs>
@@ -18389,7 +18799,8 @@ order by ass_id</property>
                           name="Episode.LanguagePrimary" />
                         <externalMetadataColumn
                           refId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Destination New Records.Inputs[ADO NET Destination Input].ExternalColumns[Episode.LanguageSecondary]"
-                          dataType="i4"
+                          dataType="wstr"
+                          length="500"
                           name="Episode.LanguageSecondary" />
                         <externalMetadataColumn
                           refId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Destination New Records.Inputs[ADO NET Destination Input].ExternalColumns[Episode.PublishStatus]"
@@ -18461,118 +18872,118 @@ order by ass_id</property>
                           cachedDataType="i4"
                           cachedName="ass_id"
                           cachedSortKeyPosition="1"
-                          lineageId="Package\Upsert Container\MOSEpisode UPSERT ID Only\434:invalid" />
+                          lineageId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Source Query.Outputs[ADO NET Source Output].Columns[ass_id]" />
                         <inputColumn
                           refId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Merge Join.Inputs[Merge Join Left Input].Columns[Episode.ContentIdentifier]"
                           cachedDataType="wstr"
                           cachedLength="45"
                           cachedName="Episode.ContentIdentifier"
-                          lineageId="Package\Upsert Container\MOSEpisode UPSERT ID Only\435:invalid" />
+                          lineageId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Source Query.Outputs[ADO NET Source Output].Columns[Episode.ContentIdentifier]" />
                         <inputColumn
                           refId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Merge Join.Inputs[Merge Join Left Input].Columns[Episode.UID]"
                           cachedDataType="wstr"
                           cachedLength="56"
                           cachedName="Episode.UID"
-                          lineageId="Package\Upsert Container\MOSEpisode UPSERT ID Only\436:invalid" />
+                          lineageId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Source Query.Outputs[ADO NET Source Output].Columns[Episode.UID]" />
                         <inputColumn
                           refId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Merge Join.Inputs[Merge Join Left Input].Columns[Episode.ParentID]"
                           cachedDataType="wstr"
                           cachedLength="91"
                           cachedName="Episode.ParentID"
-                          lineageId="Package\Upsert Container\MOSEpisode UPSERT ID Only\437:invalid" />
+                          lineageId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Source Query.Outputs[ADO NET Source Output].Columns[Episode.ParentID]" />
                         <inputColumn
                           refId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Merge Join.Inputs[Merge Join Left Input].Columns[Episode.Referent.Type]"
                           cachedDataType="wstr"
                           cachedLength="2"
                           cachedName="Episode.Referent.Type"
-                          lineageId="Package\Upsert Container\MOSEpisode UPSERT ID Only\438:invalid" />
+                          lineageId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Source Query.Outputs[ADO NET Source Output].Columns[Episode.Referent.Type]" />
                         <inputColumn
                           refId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Merge Join.Inputs[Merge Join Left Input].Columns[Episode.Title]"
                           cachedDataType="nText"
                           cachedName="Episode.Title"
-                          lineageId="Package\Upsert Container\MOSEpisode UPSERT ID Only\439:invalid" />
+                          lineageId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Source Query.Outputs[ADO NET Source Output].Columns[Episode.Title]" />
                         <inputColumn
                           refId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Merge Join.Inputs[Merge Join Left Input].Columns[Episode.Title120]"
                           cachedDataType="nText"
                           cachedName="Episode.Title120"
-                          lineageId="Package\Upsert Container\MOSEpisode UPSERT ID Only\440:invalid" />
+                          lineageId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Source Query.Outputs[ADO NET Source Output].Columns[Episode.Title120]" />
                         <inputColumn
                           refId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Merge Join.Inputs[Merge Join Left Input].Columns[Episode.TitleClass]"
                           cachedDataType="wstr"
                           cachedLength="7"
                           cachedName="Episode.TitleClass"
-                          lineageId="Package\Upsert Container\MOSEpisode UPSERT ID Only\441:invalid" />
+                          lineageId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Source Query.Outputs[ADO NET Source Output].Columns[Episode.TitleClass]" />
                         <inputColumn
                           refId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Merge Join.Inputs[Merge Join Left Input].Columns[Episode.EpisodeNumber]"
                           cachedDataType="i4"
                           cachedName="Episode.EpisodeNumber"
-                          lineageId="Package\Upsert Container\MOSEpisode UPSERT ID Only\442:invalid" />
+                          lineageId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Source Query.Outputs[ADO NET Source Output].Columns[Episode.EpisodeNumber]" />
                         <inputColumn
                           refId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Merge Join.Inputs[Merge Join Left Input].Columns[Episode.EpisodeClass]"
                           cachedDataType="wstr"
                           cachedLength="200"
                           cachedName="Episode.EpisodeClass"
-                          lineageId="Package\Upsert Container\MOSEpisode UPSERT ID Only\443:invalid" />
+                          lineageId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Source Query.Outputs[ADO NET Source Output].Columns[Episode.EpisodeClass]" />
                         <inputColumn
                           refId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Merge Join.Inputs[Merge Join Left Input].Columns[Episode.SynopsisShort]"
                           cachedDataType="nText"
                           cachedName="Episode.SynopsisShort"
-                          lineageId="Package\Upsert Container\MOSEpisode UPSERT ID Only\444:invalid" />
+                          lineageId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Source Query.Outputs[ADO NET Source Output].Columns[Episode.SynopsisShort]" />
                         <inputColumn
                           refId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Merge Join.Inputs[Merge Join Left Input].Columns[Episode.SynopsisLong]"
                           cachedDataType="nText"
                           cachedName="Episode.SynopsisLong"
-                          lineageId="Package\Upsert Container\MOSEpisode UPSERT ID Only\445:invalid" />
+                          lineageId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Source Query.Outputs[ADO NET Source Output].Columns[Episode.SynopsisLong]" />
                         <inputColumn
                           refId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Merge Join.Inputs[Merge Join Left Input].Columns[Episode.CountryOfOrigin]"
                           cachedDataType="wstr"
                           cachedLength="1"
                           cachedName="Episode.CountryOfOrigin"
-                          lineageId="Package\Upsert Container\MOSEpisode UPSERT ID Only\446:invalid" />
+                          lineageId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Source Query.Outputs[ADO NET Source Output].Columns[Episode.CountryOfOrigin]" />
                         <inputColumn
                           refId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Merge Join.Inputs[Merge Join Left Input].Columns[Episode.PrimaryGenre]"
                           cachedDataType="nText"
                           cachedName="Episode.PrimaryGenre"
-                          lineageId="Package\Upsert Container\MOSEpisode UPSERT ID Only\447:invalid" />
+                          lineageId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Source Query.Outputs[ADO NET Source Output].Columns[Episode.PrimaryGenre]" />
                         <inputColumn
                           refId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Merge Join.Inputs[Merge Join Left Input].Columns[Episode.SecondaryGenre]"
                           cachedDataType="nText"
                           cachedName="Episode.SecondaryGenre"
-                          lineageId="Package\Upsert Container\MOSEpisode UPSERT ID Only\448:invalid" />
+                          lineageId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Source Query.Outputs[ADO NET Source Output].Columns[Episode.SecondaryGenre]" />
                         <inputColumn
                           refId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Merge Join.Inputs[Merge Join Left Input].Columns[Episode.Distribution.Number]"
                           cachedDataType="i4"
                           cachedName="Episode.Distribution.Number"
-                          lineageId="Package\Upsert Container\MOSEpisode UPSERT ID Only\449:invalid" />
+                          lineageId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Source Query.Outputs[ADO NET Source Output].Columns[Episode.Distribution.Number]" />
                         <inputColumn
                           refId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Merge Join.Inputs[Merge Join Left Input].Columns[Episode.ReleaseDate]"
                           cachedDataType="wstr"
                           cachedLength="10"
                           cachedName="Episode.ReleaseDate"
-                          lineageId="Package\Upsert Container\MOSEpisode UPSERT ID Only\450:invalid" />
+                          lineageId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Source Query.Outputs[ADO NET Source Output].Columns[Episode.ReleaseDate]" />
                         <inputColumn
                           refId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Merge Join.Inputs[Merge Join Left Input].Columns[Episode.ApproximateLength]"
                           cachedDataType="wstr"
                           cachedLength="500"
                           cachedName="Episode.ApproximateLength"
-                          lineageId="Package\Upsert Container\MOSEpisode UPSERT ID Only\451:invalid" />
+                          lineageId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Source Query.Outputs[ADO NET Source Output].Columns[Episode.ApproximateLength]" />
                         <inputColumn
                           refId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Merge Join.Inputs[Merge Join Left Input].Columns[Episode.Language.Primary.mode]"
                           cachedDataType="wstr"
                           cachedLength="5"
                           cachedName="Episode.Language.Primary.mode"
-                          lineageId="Package\Upsert Container\MOSEpisode UPSERT ID Only\452:invalid" />
+                          lineageId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Source Query.Outputs[ADO NET Source Output].Columns[Episode.Language.Primary.mode]" />
                         <inputColumn
                           refId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Merge Join.Inputs[Merge Join Left Input].Columns[Episode.LanguagePrimary]"
                           cachedDataType="wstr"
                           cachedLength="6"
                           cachedName="Episode.LanguagePrimary"
-                          lineageId="Package\Upsert Container\MOSEpisode UPSERT ID Only\453:invalid" />
+                          lineageId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Source Query.Outputs[ADO NET Source Output].Columns[Episode.LanguagePrimary]" />
                         <inputColumn
                           refId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Merge Join.Inputs[Merge Join Left Input].Columns[Episode.LanguageSecondary]"
                           cachedDataType="i4"
                           cachedName="Episode.LanguageSecondary"
-                          lineageId="Package\Upsert Container\MOSEpisode UPSERT ID Only\454:invalid" />
+                          lineageId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Source Query.Outputs[ADO NET Source Output].Columns[Episode.LanguageSecondary]" />
                       </inputColumns>
                       <externalMetadataColumns />
                     </input>
@@ -20324,6 +20735,7 @@ order by a.ass_id</property>
                           externalMetadataColumnId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Source Query.Outputs[ADO NET Source Output].ExternalColumns[ass_id]"
                           lineageId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Source Query.Outputs[ADO NET Source Output].Columns[ass_id]"
                           name="ass_id"
+                          sortKeyPosition="1"
                           truncationRowDisposition="FailComponent" />
                         <outputColumn
                           refId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Source Query.Outputs[ADO NET Source Output].Columns[Episode.ContentIdentifier]"
@@ -20395,11 +20807,10 @@ order by a.ass_id</property>
                           truncationRowDisposition="FailComponent" />
                         <outputColumn
                           refId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Source Query.Outputs[ADO NET Source Output].Columns[Episode.EpisodeNumber]"
-                          dataType="wstr"
+                          dataType="i4"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
                           externalMetadataColumnId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Source Query.Outputs[ADO NET Source Output].ExternalColumns[Episode.EpisodeNumber]"
-                          length="20"
                           lineageId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Source Query.Outputs[ADO NET Source Output].Columns[Episode.EpisodeNumber]"
                           name="Episode.EpisodeNumber"
                           truncationRowDisposition="FailComponent" />
@@ -20409,7 +20820,7 @@ order by a.ass_id</property>
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
                           externalMetadataColumnId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Source Query.Outputs[ADO NET Source Output].ExternalColumns[Episode.EpisodeClass]"
-                          length="40"
+                          length="200"
                           lineageId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Source Query.Outputs[ADO NET Source Output].Columns[Episode.EpisodeClass]"
                           name="Episode.EpisodeClass"
                           truncationRowDisposition="FailComponent" />
@@ -20443,21 +20854,19 @@ order by a.ass_id</property>
                           truncationRowDisposition="FailComponent" />
                         <outputColumn
                           refId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Source Query.Outputs[ADO NET Source Output].Columns[Episode.PrimaryGenre]"
-                          dataType="wstr"
+                          dataType="nText"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
                           externalMetadataColumnId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Source Query.Outputs[ADO NET Source Output].ExternalColumns[Episode.PrimaryGenre]"
-                          length="500"
                           lineageId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Source Query.Outputs[ADO NET Source Output].Columns[Episode.PrimaryGenre]"
                           name="Episode.PrimaryGenre"
                           truncationRowDisposition="FailComponent" />
                         <outputColumn
                           refId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Source Query.Outputs[ADO NET Source Output].Columns[Episode.SecondaryGenre]"
-                          dataType="wstr"
+                          dataType="nText"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
                           externalMetadataColumnId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Source Query.Outputs[ADO NET Source Output].ExternalColumns[Episode.SecondaryGenre]"
-                          length="500"
                           lineageId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Source Query.Outputs[ADO NET Source Output].Columns[Episode.SecondaryGenre]"
                           name="Episode.SecondaryGenre"
                           truncationRowDisposition="FailComponent" />
@@ -20561,13 +20970,12 @@ order by a.ass_id</property>
                           name="Episode.TitleClass" />
                         <externalMetadataColumn
                           refId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Source Query.Outputs[ADO NET Source Output].ExternalColumns[Episode.EpisodeNumber]"
-                          dataType="wstr"
-                          length="20"
+                          dataType="i4"
                           name="Episode.EpisodeNumber" />
                         <externalMetadataColumn
                           refId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Source Query.Outputs[ADO NET Source Output].ExternalColumns[Episode.EpisodeClass]"
                           dataType="wstr"
-                          length="40"
+                          length="200"
                           name="Episode.EpisodeClass" />
                         <externalMetadataColumn
                           refId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Source Query.Outputs[ADO NET Source Output].ExternalColumns[Episode.SynopsisShort]"
@@ -20584,13 +20992,11 @@ order by a.ass_id</property>
                           name="Episode.CountryOfOrigin" />
                         <externalMetadataColumn
                           refId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Source Query.Outputs[ADO NET Source Output].ExternalColumns[Episode.PrimaryGenre]"
-                          dataType="wstr"
-                          length="500"
+                          dataType="nText"
                           name="Episode.PrimaryGenre" />
                         <externalMetadataColumn
                           refId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Source Query.Outputs[ADO NET Source Output].ExternalColumns[Episode.SecondaryGenre]"
-                          dataType="wstr"
-                          length="500"
+                          dataType="nText"
                           name="Episode.SecondaryGenre" />
                         <externalMetadataColumn
                           refId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Source Query.Outputs[ADO NET Source Output].ExternalColumns[Episode.Distribution.Number]"
@@ -20674,14 +21080,13 @@ order by a.ass_id</property>
                           name="Episode.TitleClass" />
                         <outputColumn
                           refId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Source Query.Outputs[ADO NET Source Error Output].Columns[Episode.EpisodeNumber]"
-                          dataType="wstr"
-                          length="20"
+                          dataType="i4"
                           lineageId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Source Query.Outputs[ADO NET Source Error Output].Columns[Episode.EpisodeNumber]"
                           name="Episode.EpisodeNumber" />
                         <outputColumn
                           refId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Source Query.Outputs[ADO NET Source Error Output].Columns[Episode.EpisodeClass]"
                           dataType="wstr"
-                          length="40"
+                          length="200"
                           lineageId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Source Query.Outputs[ADO NET Source Error Output].Columns[Episode.EpisodeClass]"
                           name="Episode.EpisodeClass" />
                         <outputColumn
@@ -20702,14 +21107,12 @@ order by a.ass_id</property>
                           name="Episode.CountryOfOrigin" />
                         <outputColumn
                           refId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Source Query.Outputs[ADO NET Source Error Output].Columns[Episode.PrimaryGenre]"
-                          dataType="wstr"
-                          length="500"
+                          dataType="nText"
                           lineageId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Source Query.Outputs[ADO NET Source Error Output].Columns[Episode.PrimaryGenre]"
                           name="Episode.PrimaryGenre" />
                         <outputColumn
                           refId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Source Query.Outputs[ADO NET Source Error Output].Columns[Episode.SecondaryGenre]"
-                          dataType="wstr"
-                          length="500"
+                          dataType="nText"
                           lineageId="Package\Upsert Container\MOSEpisode UPSERT ID Only\Source Query.Outputs[ADO NET Source Error Output].Columns[Episode.SecondaryGenre]"
                           name="Episode.SecondaryGenre" />
                         <outputColumn
@@ -22203,9 +22606,9 @@ order by a.ass_id</property>
           Id="Package\Epsiode Container\Load MOSEpisode"
           TopLeft="32,5.5" />
         <NodeLayout
-          Size="181,42"
-          Id="Package\Epsiode Container\MOSEpisode Contacts"
-          TopLeft="113.111111111111,382.444444444444" />
+          Size="251,42"
+          Id="Package\Epsiode Container\To bE Deleted MOSEpisode Contacts"
+          TopLeft="175.111111111111,364.444444444444" />
         <NodeLayout
           Size="138,42"
           Id="Package\Epsiode Container\Organization"
@@ -22226,74 +22629,6 @@ order by a.ass_id</property>
           Size="162,42"
           Id="Package\Epsiode Container\xref_Organization"
           TopLeft="280,599" />
-        <EdgeLayout
-          Id="Package\Epsiode Container.PrecedenceConstraints[Constraint]"
-          TopLeft="232.444444444444,424.444444444444">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="102.722222222223,78.2222222222222"
-              Start="0,0"
-              End="102.722222222223,70.7222222222222">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,27.7001338688086" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,27.7001338688086"
-                    Point2="0,31.7001338688086"
-                    Point3="4,31.7001338688086" />
-                  <mssgle:LineSegment
-                    End="98.7222222222226,31.7001338688086" />
-                  <mssgle:CubicBezierSegment
-                    Point1="98.7222222222226,31.7001338688086"
-                    Point2="102.722222222223,31.7001338688086"
-                    Point3="102.722222222223,35.7001338688086" />
-                  <mssgle:LineSegment
-                    End="102.722222222223,70.7222222222222" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Epsiode Container.PrecedenceConstraints[Constraint 1]"
-          TopLeft="174.777777777778,424.444444444444">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-35.9206349206346,130.269841269842"
-              Start="0,0"
-              End="-35.9206349206346,122.769841269842">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,48.7928162867923" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,48.7928162867923"
-                    Point2="0,52.7928162867923"
-                    Point3="-4,52.7928162867923" />
-                  <mssgle:LineSegment
-                    End="-31.9206349206346,52.7928162867923" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-31.9206349206346,52.7928162867923"
-                    Point2="-35.9206349206346,52.7928162867923"
-                    Point3="-35.9206349206346,56.7928162867923" />
-                  <mssgle:LineSegment
-                    End="-35.9206349206346,122.769841269842" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
         <EdgeLayout
           Id="Package\Epsiode Container.PrecedenceConstraints[Constraint 11]"
           TopLeft="114.111111111111,251.5">
@@ -22484,11 +22819,83 @@ order by a.ass_id</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <NodeLayout
+          Size="181,42"
+          Id="Package\Epsiode Container\MOSEpisode Contacts"
+          TopLeft="142,434" />
+        <EdgeLayout
+          Id="Package\Epsiode Container.PrecedenceConstraints[Constraint]"
+          TopLeft="203.666666666667,476">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-64.8095238095238,78.714285714286"
+              Start="0,0"
+              End="-64.8095238095238,71.214285714286">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,27.8995462368957" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,27.8995462368957"
+                    Point2="0,31.8995462368957"
+                    Point3="-4,31.8995462368957" />
+                  <mssgle:LineSegment
+                    End="-60.8095238095238,31.8995462368957" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-60.8095238095238,31.8995462368957"
+                    Point2="-64.8095238095238,31.8995462368957"
+                    Point3="-64.8095238095238,35.8995462368957" />
+                  <mssgle:LineSegment
+                    End="-64.8095238095238,71.214285714286" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Epsiode Container.PrecedenceConstraints[Constraint 1]"
+          TopLeft="261.333333333333,476">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="73.8333333333337,26.666666666667"
+              Start="0,0"
+              End="73.8333333333337,19.166666666667">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,6.80686381891214" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,6.80686381891214"
+                    Point2="0,10.8068638189121"
+                    Point3="4,10.8068638189121" />
+                  <mssgle:LineSegment
+                    End="69.8333333333337,10.8068638189121" />
+                  <mssgle:CubicBezierSegment
+                    Point1="69.8333333333337,10.8068638189121"
+                    Point2="73.8333333333337,10.8068638189121"
+                    Point3="73.8333333333337,14.8068638189121" />
+                  <mssgle:LineSegment
+                    End="73.8333333333337,19.166666666667" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="489,803"
-          Size="489,846"
+          PanelSize="499,803"
+          Size="499,846"
           Id="Package\Epsiode Container"
           TopLeft="1750,158.5" />
         <NodeLayout
@@ -22827,9 +23234,9 @@ order by a.ass_id</property>
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="365.884615384615,111"
+              EndConnector="370.884615384615,111"
               Start="0,0"
-              End="365.884615384615,103.5">
+              End="370.884615384615,103.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
@@ -22840,13 +23247,13 @@ order by a.ass_id</property>
                     Point2="0,48.6551453260017"
                     Point3="4,48.6551453260017" />
                   <mssgle:LineSegment
-                    End="361.884615384615,48.6551453260017" />
+                    End="366.884615384615,48.6551453260017" />
                   <mssgle:CubicBezierSegment
-                    Point1="361.884615384615,48.6551453260017"
-                    Point2="365.884615384615,48.6551453260017"
-                    Point3="365.884615384615,52.6551453260017" />
+                    Point1="366.884615384615,48.6551453260017"
+                    Point2="370.884615384615,48.6551453260017"
+                    Point3="370.884615384615,52.6551453260017" />
                   <mssgle:LineSegment
-                    End="365.884615384615,103.5" />
+                    End="370.884615384615,103.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -23549,45 +23956,47 @@ order by a.ass_id</property>
     </Properties>
   </PipelineComponentMetadata>
   <TaskHost
-    design-time-name="Package\Epsiode Container\MOSEpisode Contacts">
+    design-time-name="Package\Epsiode Container\To bE Deleted MOSEpisode Contacts">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="158,42"
-          Id="Package\Epsiode Container\MOSEpisode Contacts\ADO NET Source"
-          TopLeft="243,125" />
+          Id="Package\Epsiode Container\To bE Deleted MOSEpisode Contacts\ADO NET Source"
+          TopLeft="242,130" />
         <NodeLayout
           Size="179,42"
-          Id="Package\Epsiode Container\MOSEpisode Contacts\ADO NET Destination"
-          TopLeft="230,286" />
+          Id="Package\Epsiode Container\To bE Deleted MOSEpisode Contacts\ADO NET Destination"
+          TopLeft="231,286" />
         <EdgeLayout
-          Id="Package\Epsiode Container\MOSEpisode Contacts.Paths[ADO NET Source Output]"
-          TopLeft="320.75,167">
+          Id="Package\Epsiode Container\To bE Deleted MOSEpisode Contacts.Paths[ADO NET Source Output]"
+          TopLeft="320.75,172">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,119"
+              EndConnector="0,114"
               Start="0,0"
-              End="0,111.5">
+              End="0,106.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,111.5" />
+                    End="0,106.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Epsiode Container\MOSEpisode Contacts\ADO NET Destination">
+    design-time-name="Package\Epsiode Container\To bE Deleted MOSEpisode Contacts\ADO NET Destination">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -23595,7 +24004,7 @@ order by a.ass_id</property>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Epsiode Container\MOSEpisode Contacts\ADO NET Source">
+    design-time-name="Package\Epsiode Container\To bE Deleted MOSEpisode Contacts\ADO NET Source">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -25952,6 +26361,60 @@ order by a.ass_id</property>
   </TaskHost>
   <PipelineComponentMetadata
     design-time-name="Package\Upsert Container\MosEvent UPSERT\Dest PBS MOSEvent">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Epsiode Container\MOSEpisode Contacts">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="179,42"
+          Id="Package\Epsiode Container\MOSEpisode Contacts\ADO NET Destination"
+          TopLeft="230,286" />
+        <NodeLayout
+          Size="158,42"
+          Id="Package\Epsiode Container\MOSEpisode Contacts\ADO NET Source"
+          TopLeft="243,125" />
+        <EdgeLayout
+          Id="Package\Epsiode Container\MOSEpisode Contacts.Paths[ADO NET Source Output]"
+          TopLeft="320.75,167">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,119"
+              Start="0,0"
+              End="0,111.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,111.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Epsiode Container\MOSEpisode Contacts\ADO NET Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Epsiode Container\MOSEpisode Contacts\ADO NET Source">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
