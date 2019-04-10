@@ -12,8 +12,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="MOSReload"
   DTS:PackageType="5"
-  DTS:VersionBuild="238"
-  DTS:VersionGUID="{A5D12896-C89F-4091-B227-811EBE619C1D}">
+  DTS:VersionBuild="241"
+  DTS:VersionGUID="{323B0868-CF77-4165-B41A-00D76498D104}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">6</DTS:Property>
   <DTS:ConnectionManagers>
@@ -28,7 +28,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAv1xuicR+Zk+e+yqnmwFKMQAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAkKR5fF4BkwolgQQPMiYNIAAAAAASAAACgAAAAEAAAABFnqwpcYXERfzQFtDw7JA4YAAAAWR1HXPJLyhIIjBWn7UqRQbz3e5I/l7EIFAAAADFS9XlaIu74j6sa1p3SqAqrBNnP</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAv1xuicR+Zk+e+yqnmwFKMQAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADX3mPmM3p6GcXtPQl/YDchAAAAAASAAACgAAAAEAAAAAy/X6nsJcfwYoytIyi+bZIYAAAA27fErlCytbhrhixGSL4971zQCZ0gQbU+FAAAAEYRRVAXsESFzjlYwwfgWuO5106d</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -43,7 +43,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAv1xuicR+Zk+e+yqnmwFKMQAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAC8VJcaWx6QubAXAFfxEAhxAAAAAASAAACgAAAAEAAAABC1RkhNa2wIeifrmPww7hAYAAAANsUUfNMKSnOfEye+ijS5Ws548NwxvmgMFAAAACH+TuyW1HnTFxOpk4eR6CLgSRRJ</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAv1xuicR+Zk+e+yqnmwFKMQAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABvtu3QKmFNCAztsimBMaE8AAAAAASAAACgAAAAEAAAAIp+zVyi3dkVmsxPU4aHLkoYAAAAg9LffLBxc/o0Hs4Bg9PpFtUwQAtqakRQFAAAAMtP5e8Uiw54JzoeRXxWxVyi2TZ3</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -58,7 +58,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAv1xuicR+Zk+e+yqnmwFKMQAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABeWpqRVKnffJO/sk4VS/kuAAAAAASAAACgAAAAEAAAAEfS4gA2G04gm2ziQ8L0nywYAAAAMv4X42HtXjHouhZc68yBOKlFK0B7bP+kFAAAABzxCxoW/ewUs3t4wTpO/0PYLF8T</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAv1xuicR+Zk+e+yqnmwFKMQAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAD+IX+Mfex9X1uzzF5Iuf8eAAAAAASAAACgAAAAEAAAABXpOsPZIkGNgCZEpjcH2wsYAAAAP8Y8KuhPdpYLeQ3He+uPSY1xcpFwc36rFAAAAAO2mYP34un/IwnXro42AHgEothi</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -6699,6 +6699,404 @@ end</property>
                   endId="Package\Credits Related Tasks\XREF Credits UPSERT\Delete Records.Inputs[OLE DB Command Input]"
                   name="Removed Records"
                   startId="Package\Credits Related Tasks\XREF Credits UPSERT\Conditional Split.Outputs[Removed Records]" />
+              </paths>
+            </pipeline>
+          </DTS:ObjectData>
+        </DTS:Executable>
+      </DTS:Executables>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\EMMFile"
+      DTS:CreationName="STOCK:SEQUENCE"
+      DTS:Description="Sequence Container"
+      DTS:DTSID="{8D2DE3E5-F2B3-4ADA-98CD-F8696D88D470}"
+      DTS:ExecutableType="STOCK:SEQUENCE"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="EMMFile">
+      <DTS:Variables />
+      <DTS:Executables>
+        <DTS:Executable
+          DTS:refId="Package\EMMFile\Load EMMFile"
+          DTS:CreationName="SSIS.Pipeline.3"
+          DTS:Description="Data Flow Task"
+          DTS:DTSID="{D511E21F-0BF5-40F3-9CDA-EBD7F64A5D0E}"
+          DTS:ExecutableType="SSIS.Pipeline.3"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Load EMMFile"
+          DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <pipeline
+              version="1">
+              <components>
+                <component
+                  refId="Package\EMMFile\Load EMMFile\ADO NET Destination"
+                  componentClassID="{874F7595-FB5F-40FF-96AF-FBFF8250E3EF}"
+                  contactInfo="Loads data into an ADO.NET-compliant database that uses a database table or view. Load data into a new or existing table. For example, use an ADO.NET provider for ODBC to load data into an ODBC destination.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;2"
+                  description="Loads data into an ADO.NET-compliant database that uses a database table or view. Load data into a new or existing table. For example, use an ADO.NET provider for ODBC to load data into an ODBC destination."
+                  name="ADO NET Destination"
+                  usesDispositions="true"
+                  version="2">
+                  <properties>
+                    <property
+                      dataType="System.String"
+                      description="The Destination database table name."
+                      expressionType="Notify"
+                      name="TableOrViewName"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version= 11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">"PBS"."EMMFile"</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specify the number of rows per batch. The default is 0 which uses the same size as SSIS internal buffer. "
+                      expressionType="Notify"
+                      name="BatchSize">0</property>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out. A value of 0 indicates infinite time-out. "
+                      expressionType="Notify"
+                      name="CommandTimeout">30</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Specifies whether to use the SqlBulkCopy interface to improve the performance of bulk insert operations. Only certain providers support this interface."
+                      expressionType="Notify"
+                      name="UseBulkInsertWhenPossible">true</property>
+                    <property
+                      dataType="System.String"
+                      name="UserComponentTypeName">Microsoft.SqlServer.Dts.Pipeline.ADONETDestination, Microsoft.SqlServer.ADONETDest, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\EMMFile\Load EMMFile\ADO NET Destination.Connections[IDbConnection]"
+                      connectionManagerID="Package.ConnectionManagers[db19-uat.MOS.mosuser]"
+                      connectionManagerRefId="Package.ConnectionManagers[db19-uat.MOS.mosuser]"
+                      description="Managed connection manager"
+                      name="IDbConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\EMMFile\Load EMMFile\ADO NET Destination.Inputs[ADO NET Destination Input]"
+                      errorRowDisposition="FailComponent"
+                      hasSideEffects="true"
+                      name="ADO NET Destination Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\EMMFile\Load EMMFile\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[AlternateAssetUID]"
+                          cachedDataType="wstr"
+                          cachedLength="36"
+                          cachedName="AlternateAssetUID"
+                          externalMetadataColumnId="Package\EMMFile\Load EMMFile\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[AlternateAssetUID]"
+                          lineageId="Package\EMMFile\Load EMMFile\ADO NET Source.Outputs[ADO NET Source Output].Columns[AlternateAssetUID]" />
+                        <inputColumn
+                          refId="Package\EMMFile\Load EMMFile\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[ParentID]"
+                          cachedDataType="wstr"
+                          cachedLength="36"
+                          cachedName="ParentID"
+                          externalMetadataColumnId="Package\EMMFile\Load EMMFile\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[ParentID]"
+                          lineageId="Package\EMMFile\Load EMMFile\ADO NET Source.Outputs[ADO NET Source Output].Columns[ParentID]" />
+                        <inputColumn
+                          refId="Package\EMMFile\Load EMMFile\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Filename]"
+                          cachedDataType="wstr"
+                          cachedLength="49"
+                          cachedName="Filename"
+                          externalMetadataColumnId="Package\EMMFile\Load EMMFile\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Filename]"
+                          lineageId="Package\EMMFile\Load EMMFile\ADO NET Source.Outputs[ADO NET Source Output].Columns[Filename]" />
+                        <inputColumn
+                          refId="Package\EMMFile\Load EMMFile\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[TRV_SLU_ID_TRANSCODESTATUS]"
+                          cachedDataType="i4"
+                          cachedName="TRV_SLU_ID_TRANSCODESTATUS"
+                          externalMetadataColumnId="Package\EMMFile\Load EMMFile\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[TRV_SLU_ID_TRANSCODESTATUS]"
+                          lineageId="Package\EMMFile\Load EMMFile\ADO NET Source.Outputs[ADO NET Source Output].Columns[TRV_SLU_ID_TRANSCODESTATUS]" />
+                        <inputColumn
+                          refId="Package\EMMFile\Load EMMFile\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[FileClass]"
+                          cachedDataType="wstr"
+                          cachedLength="5"
+                          cachedName="FileClass"
+                          externalMetadataColumnId="Package\EMMFile\Load EMMFile\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[FileClass]"
+                          lineageId="Package\EMMFile\Load EMMFile\ADO NET Source.Outputs[ADO NET Source Output].Columns[FileClass]" />
+                        <inputColumn
+                          refId="Package\EMMFile\Load EMMFile\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[FileDeliveryStatus]"
+                          cachedDataType="wstr"
+                          cachedLength="9"
+                          cachedName="FileDeliveryStatus"
+                          externalMetadataColumnId="Package\EMMFile\Load EMMFile\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[FileDeliveryStatus]"
+                          lineageId="Package\EMMFile\Load EMMFile\ADO NET Source.Outputs[ADO NET Source Output].Columns[FileDeliveryStatus]" />
+                      </inputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\EMMFile\Load EMMFile\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[AlternateAssetUID]"
+                          dataType="wstr"
+                          length="500"
+                          name="AlternateAssetUID" />
+                        <externalMetadataColumn
+                          refId="Package\EMMFile\Load EMMFile\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[ParentID]"
+                          dataType="wstr"
+                          length="500"
+                          name="ParentID" />
+                        <externalMetadataColumn
+                          refId="Package\EMMFile\Load EMMFile\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Filename]"
+                          dataType="wstr"
+                          length="500"
+                          name="Filename" />
+                        <externalMetadataColumn
+                          refId="Package\EMMFile\Load EMMFile\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[TRV_SLU_ID_TRANSCODESTATUS]"
+                          dataType="i4"
+                          name="TRV_SLU_ID_TRANSCODESTATUS" />
+                        <externalMetadataColumn
+                          refId="Package\EMMFile\Load EMMFile\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[FileClass]"
+                          dataType="wstr"
+                          length="500"
+                          name="FileClass" />
+                        <externalMetadataColumn
+                          refId="Package\EMMFile\Load EMMFile\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[FileDeliveryStatus]"
+                          dataType="wstr"
+                          length="500"
+                          name="FileDeliveryStatus" />
+                      </externalMetadataColumns>
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\EMMFile\Load EMMFile\ADO NET Destination.Outputs[ADO NET Destination Error Output]"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="ADO NET Destination Error Output"
+                      synchronousInputId="Package\EMMFile\Load EMMFile\ADO NET Destination.Inputs[ADO NET Destination Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\EMMFile\Load EMMFile\ADO NET Destination.Outputs[ADO NET Destination Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\EMMFile\Load EMMFile\ADO NET Destination.Outputs[ADO NET Destination Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\EMMFile\Load EMMFile\ADO NET Destination.Outputs[ADO NET Destination Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\EMMFile\Load EMMFile\ADO NET Destination.Outputs[ADO NET Destination Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\EMMFile\Load EMMFile\ADO NET Source"
+                  componentClassID="{874F7595-FB5F-40FF-96AF-FBFF8250E3EF}"
+                  contactInfo="Consumes data from SQL Server, OLE DB, ODBC, or Oracle, using the corresponding .NET Framework data provider. Use a Transact-SQL statement to define the result set. For example, extract data from SQL Server with the .NET Framework data provider for SQL Server.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+                  description="Consumes data from SQL Server, OLE DB, ODBC, or Oracle, using the corresponding .NET Framework data provider. Use a Transact-SQL statement to define the result set. For example, extract data from SQL Server with the .NET Framework data provider for SQL Server."
+                  name="ADO NET Source"
+                  usesDispositions="true"
+                  version="4">
+                  <properties>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the SQL statement used by the component to extract data."
+                      expressionType="Notify"
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">select 'cid:org:pbs.org:Broadview-' + cast(b.TRV_ID as varchar(10))     as AlternateAssetUID
+     , 'cid:org:pbs.org:Broadview-' + cast(b.TRV_VER_ID as varchar(10)) as ParentID
+     , a.VER_PACKAGEHOUSE + N'PROXY.mxf'                                             as Filename
+     , b.TRV_SLU_ID_TRANSCODESTATUS
+     , 'media'                                                                                as FileClass
+     , 'delivered'                                                                            as FileDeliveryStatus
+from Trafficdata.BV.VERSION a
+    right outer join Trafficdata.BV.PBSTRANSCODE_VERSION b
+        on a.VER_ID = b.TRV_VER_ID
+where (b.TRV_TRST_ID = 146746683)
+      and (b.TRV_SLU_ID_TRANSCODESTATUS = 103060)</property>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">30</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether to allow non-string external columns to be implicitly converted to strings at the output columns."
+                      name="AllowImplicitStringConversion">true</property>
+                    <property
+                      dataType="System.String"
+                      description="The Source database table name."
+                      expressionType="Notify"
+                      name="TableOrViewName"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version= 11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specify the mode to retrieve external column information"
+                      name="AccessMode"
+                      typeConverter="Microsoft.SqlServer.Dts.Pipeline.DataReaderSourceAdapter+EnumToStringConverter, Microsoft.SqlServer.ADONETSrc, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">2</property>
+                    <property
+                      dataType="System.String"
+                      name="UserComponentTypeName">Microsoft.SqlServer.Dts.Pipeline.DataReaderSourceAdapter, Microsoft.SqlServer.ADONETSrc, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\EMMFile\Load EMMFile\ADO NET Source.Connections[IDbConnection]"
+                      connectionManagerID="Package.ConnectionManagers[db19-uat.TrafficData.TrafficDataReader]"
+                      connectionManagerRefId="Package.ConnectionManagers[db19-uat.TrafficData.TrafficDataReader]"
+                      description="Managed connection manager"
+                      name="IDbConnection" />
+                  </connections>
+                  <outputs>
+                    <output
+                      refId="Package\EMMFile\Load EMMFile\ADO NET Source.Outputs[ADO NET Source Output]"
+                      name="ADO NET Source Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\EMMFile\Load EMMFile\ADO NET Source.Outputs[ADO NET Source Output].Columns[AlternateAssetUID]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\EMMFile\Load EMMFile\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[AlternateAssetUID]"
+                          length="36"
+                          lineageId="Package\EMMFile\Load EMMFile\ADO NET Source.Outputs[ADO NET Source Output].Columns[AlternateAssetUID]"
+                          name="AlternateAssetUID"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\EMMFile\Load EMMFile\ADO NET Source.Outputs[ADO NET Source Output].Columns[ParentID]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\EMMFile\Load EMMFile\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[ParentID]"
+                          length="36"
+                          lineageId="Package\EMMFile\Load EMMFile\ADO NET Source.Outputs[ADO NET Source Output].Columns[ParentID]"
+                          name="ParentID"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\EMMFile\Load EMMFile\ADO NET Source.Outputs[ADO NET Source Output].Columns[Filename]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\EMMFile\Load EMMFile\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Filename]"
+                          length="49"
+                          lineageId="Package\EMMFile\Load EMMFile\ADO NET Source.Outputs[ADO NET Source Output].Columns[Filename]"
+                          name="Filename"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\EMMFile\Load EMMFile\ADO NET Source.Outputs[ADO NET Source Output].Columns[TRV_SLU_ID_TRANSCODESTATUS]"
+                          dataType="i4"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\EMMFile\Load EMMFile\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[TRV_SLU_ID_TRANSCODESTATUS]"
+                          lineageId="Package\EMMFile\Load EMMFile\ADO NET Source.Outputs[ADO NET Source Output].Columns[TRV_SLU_ID_TRANSCODESTATUS]"
+                          name="TRV_SLU_ID_TRANSCODESTATUS"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\EMMFile\Load EMMFile\ADO NET Source.Outputs[ADO NET Source Output].Columns[FileClass]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\EMMFile\Load EMMFile\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[FileClass]"
+                          length="5"
+                          lineageId="Package\EMMFile\Load EMMFile\ADO NET Source.Outputs[ADO NET Source Output].Columns[FileClass]"
+                          name="FileClass"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\EMMFile\Load EMMFile\ADO NET Source.Outputs[ADO NET Source Output].Columns[FileDeliveryStatus]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\EMMFile\Load EMMFile\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[FileDeliveryStatus]"
+                          length="9"
+                          lineageId="Package\EMMFile\Load EMMFile\ADO NET Source.Outputs[ADO NET Source Output].Columns[FileDeliveryStatus]"
+                          name="FileDeliveryStatus"
+                          truncationRowDisposition="FailComponent" />
+                      </outputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\EMMFile\Load EMMFile\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[AlternateAssetUID]"
+                          dataType="wstr"
+                          length="36"
+                          name="AlternateAssetUID" />
+                        <externalMetadataColumn
+                          refId="Package\EMMFile\Load EMMFile\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[ParentID]"
+                          dataType="wstr"
+                          length="36"
+                          name="ParentID" />
+                        <externalMetadataColumn
+                          refId="Package\EMMFile\Load EMMFile\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Filename]"
+                          dataType="wstr"
+                          length="49"
+                          name="Filename" />
+                        <externalMetadataColumn
+                          refId="Package\EMMFile\Load EMMFile\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[TRV_SLU_ID_TRANSCODESTATUS]"
+                          dataType="i4"
+                          name="TRV_SLU_ID_TRANSCODESTATUS" />
+                        <externalMetadataColumn
+                          refId="Package\EMMFile\Load EMMFile\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[FileClass]"
+                          dataType="wstr"
+                          length="5"
+                          name="FileClass" />
+                        <externalMetadataColumn
+                          refId="Package\EMMFile\Load EMMFile\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[FileDeliveryStatus]"
+                          dataType="wstr"
+                          length="9"
+                          name="FileDeliveryStatus" />
+                      </externalMetadataColumns>
+                    </output>
+                    <output
+                      refId="Package\EMMFile\Load EMMFile\ADO NET Source.Outputs[ADO NET Source Error Output]"
+                      isErrorOut="true"
+                      name="ADO NET Source Error Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\EMMFile\Load EMMFile\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[AlternateAssetUID]"
+                          dataType="wstr"
+                          length="36"
+                          lineageId="Package\EMMFile\Load EMMFile\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[AlternateAssetUID]"
+                          name="AlternateAssetUID" />
+                        <outputColumn
+                          refId="Package\EMMFile\Load EMMFile\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[ParentID]"
+                          dataType="wstr"
+                          length="36"
+                          lineageId="Package\EMMFile\Load EMMFile\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[ParentID]"
+                          name="ParentID" />
+                        <outputColumn
+                          refId="Package\EMMFile\Load EMMFile\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Filename]"
+                          dataType="wstr"
+                          length="49"
+                          lineageId="Package\EMMFile\Load EMMFile\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Filename]"
+                          name="Filename" />
+                        <outputColumn
+                          refId="Package\EMMFile\Load EMMFile\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[TRV_SLU_ID_TRANSCODESTATUS]"
+                          dataType="i4"
+                          lineageId="Package\EMMFile\Load EMMFile\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[TRV_SLU_ID_TRANSCODESTATUS]"
+                          name="TRV_SLU_ID_TRANSCODESTATUS" />
+                        <outputColumn
+                          refId="Package\EMMFile\Load EMMFile\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[FileClass]"
+                          dataType="wstr"
+                          length="5"
+                          lineageId="Package\EMMFile\Load EMMFile\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[FileClass]"
+                          name="FileClass" />
+                        <outputColumn
+                          refId="Package\EMMFile\Load EMMFile\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[FileDeliveryStatus]"
+                          dataType="wstr"
+                          length="9"
+                          lineageId="Package\EMMFile\Load EMMFile\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[FileDeliveryStatus]"
+                          name="FileDeliveryStatus" />
+                        <outputColumn
+                          refId="Package\EMMFile\Load EMMFile\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\EMMFile\Load EMMFile\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\EMMFile\Load EMMFile\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\EMMFile\Load EMMFile\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+              </components>
+              <paths>
+                <path
+                  refId="Package\EMMFile\Load EMMFile.Paths[ADO NET Source Output]"
+                  endId="Package\EMMFile\Load EMMFile\ADO NET Destination.Inputs[ADO NET Destination Input]"
+                  name="ADO NET Source Output"
+                  startId="Package\EMMFile\Load EMMFile\ADO NET Source.Outputs[ADO NET Source Output]" />
               </paths>
             </pipeline>
           </DTS:ObjectData>
@@ -26105,7 +26503,7 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
           SQLTask:Connection="{2F195E8D-B30A-4883-8207-8A58E27A3003}"
-          SQLTask:SqlStatementSource="truncate table [PBS].[Constraint];&#xA;truncate table [PBS].[Policy];&#xA;truncate table [PBS].[Manifestation];&#xA;truncate table [PBS].[MOSOffer];" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          SQLTask:SqlStatementSource="truncate table [PBS].[Constraint];&#xA;truncate table [PBS].[Policy];&#xA;truncate table [PBS].[Manifestation];&#xA;truncate table [PBS].[MOSOffer];&#xA;truncate table [PBS].[EMMFile];" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
   </DTS:Executables>
@@ -26142,6 +26540,14 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 3"
       DTS:To="Package\MOSOffer Related Tasks" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 4]"
+      DTS:CreationName=""
+      DTS:DTSID="{42B7D0AD-DB57-4F0C-84AB-A0ECCC2C6C9A}"
+      DTS:From="Package\Truncate Tables"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 4"
+      DTS:To="Package\EMMFile" />
   </DTS:PrecedenceConstraints>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
 <!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
@@ -26224,9 +26630,9 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
           TopLeft="50,4" />
         <ContainerLayout
           HeaderHeight="43"
-          IsExpanded="False"
+          IsExpanded="True"
           PanelSize="401,409"
-          Size="401,43"
+          Size="401,452"
           Id="Package\Episode Related Tasks"
           TopLeft="19,633.333333333333" />
         <NodeLayout
@@ -26362,16 +26768,16 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
         <NodeLayout
           Size="155,42"
           Id="Package\Truncate Tables"
-          TopLeft="442,263" />
+          TopLeft="443,263" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="475.4,305">
+          TopLeft="476.4,305">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-347.9,55"
+              EndConnector="-348.9,55"
               Start="0,0"
-              End="-347.9,47.5">
+              End="-348.9,47.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
@@ -26382,13 +26788,13 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
                     Point2="0,16.5644724977457"
                     Point3="-4,16.5644724977457" />
                   <mssgle:LineSegment
-                    End="-343.9,16.5644724977457" />
+                    End="-344.9,16.5644724977457" />
                   <mssgle:CubicBezierSegment
-                    Point1="-343.9,16.5644724977457"
-                    Point2="-347.9,16.5644724977457"
-                    Point3="-347.9,20.5644724977457" />
+                    Point1="-344.9,16.5644724977457"
+                    Point2="-348.9,16.5644724977457"
+                    Point3="-348.9,20.5644724977457" />
                   <mssgle:LineSegment
-                    End="-347.9,47.5" />
+                    End="-348.9,47.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -26399,13 +26805,13 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 1]"
-          TopLeft="504.8,305">
+          TopLeft="505.8,305">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-116.3,60"
+              EndConnector="-117.3,60"
               Start="0,0"
-              End="-116.3,52.5">
+              End="-117.3,52.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
@@ -26416,13 +26822,13 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
                     Point2="0,26.8567355666429"
                     Point3="-4,26.8567355666429" />
                   <mssgle:LineSegment
-                    End="-112.3,26.8567355666429" />
+                    End="-113.3,26.8567355666429" />
                   <mssgle:CubicBezierSegment
-                    Point1="-112.3,26.8567355666429"
-                    Point2="-116.3,26.8567355666429"
-                    Point3="-116.3,30.8567355666429" />
+                    Point1="-113.3,26.8567355666429"
+                    Point2="-117.3,26.8567355666429"
+                    Point3="-117.3,30.8567355666429" />
                   <mssgle:LineSegment
-                    End="-116.3,52.5" />
+                    End="-117.3,52.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -26433,13 +26839,13 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 2]"
-          TopLeft="534.2,305">
+          TopLeft="535.2,305">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="109.8,65"
+              EndConnector="108.8,65"
               Start="0,0"
-              End="109.8,57.5">
+              End="108.8,57.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
@@ -26450,13 +26856,13 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
                     Point2="0,29.0947968638631"
                     Point3="4,29.0947968638631" />
                   <mssgle:LineSegment
-                    End="105.8,29.0947968638631" />
+                    End="104.8,29.0947968638631" />
                   <mssgle:CubicBezierSegment
-                    Point1="105.8,29.0947968638631"
-                    Point2="109.8,29.0947968638631"
-                    Point3="109.8,33.0947968638631" />
+                    Point1="104.8,29.0947968638631"
+                    Point2="108.8,29.0947968638631"
+                    Point3="108.8,33.0947968638631" />
                   <mssgle:LineSegment
-                    End="109.8,57.5" />
+                    End="108.8,57.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -26467,13 +26873,13 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 3]"
-          TopLeft="563.6,305">
+          TopLeft="564.6,305">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="363.9,70"
+              EndConnector="362.9,70"
               Start="0,0"
-              End="363.9,62.5">
+              End="362.9,62.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
@@ -26484,13 +26890,13 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
                     Point2="0,21.0820559062218"
                     Point3="4,21.0820559062218" />
                   <mssgle:LineSegment
-                    End="359.9,21.0820559062218" />
+                    End="358.9,21.0820559062218" />
                   <mssgle:CubicBezierSegment
-                    Point1="359.9,21.0820559062218"
-                    Point2="363.9,21.0820559062218"
-                    Point3="363.9,25.0820559062218" />
+                    Point1="358.9,21.0820559062218"
+                    Point2="362.9,21.0820559062218"
+                    Point3="362.9,25.0820559062218" />
                   <mssgle:LineSegment
-                    End="363.9,62.5" />
+                    End="362.9,62.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -26580,7 +26986,52 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
           PanelSize="360,464"
           Size="360,43"
           Id="Package\None of These are USed Put In here Just In Case"
-          TopLeft="1166,279" />
+          TopLeft="1249,127" />
+        <NodeLayout
+          Size="143,42"
+          Id="Package\EMMFile\Load EMMFile"
+          TopLeft="25,21" />
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="211,118"
+          Size="211,161"
+          Id="Package\EMMFile"
+          TopLeft="1086,381" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 4]"
+          TopLeft="569.5,305">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="622,76"
+              Start="0,0"
+              End="622,68.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,16.4339622641509" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,16.4339622641509"
+                    Point2="0,20.4339622641509"
+                    Point3="4,20.4339622641509" />
+                  <mssgle:LineSegment
+                    End="618,20.4339622641509" />
+                  <mssgle:CubicBezierSegment
+                    Point1="618,20.4339622641509"
+                    Point2="622,20.4339622641509"
+                    Point3="622,24.4339622641509" />
+                  <mssgle:LineSegment
+                    End="622,68.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </Package>
@@ -27012,7 +27463,9 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -27106,7 +27559,9 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -27164,7 +27619,9 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -27198,7 +27655,9 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -27408,7 +27867,9 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -27442,7 +27903,9 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -27548,7 +28011,9 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -27606,7 +28071,9 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -27640,7 +28107,9 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -28438,7 +28907,9 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -28472,7 +28943,9 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -28554,7 +29027,9 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -28612,7 +29087,9 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -28646,7 +29123,9 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -28828,7 +29307,9 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -28862,7 +29343,9 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -28932,7 +29415,9 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -28966,7 +29451,9 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -29000,7 +29487,9 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -29106,7 +29595,9 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -29420,7 +29911,9 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -29454,7 +29947,9 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -29560,7 +30055,9 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -29630,7 +30127,9 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -29664,7 +30163,9 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -30506,7 +31007,9 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -30612,7 +31115,9 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -30682,7 +31187,9 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -30716,7 +31223,9 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -30774,7 +31283,9 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -30808,7 +31319,9 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -30824,6 +31337,72 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\None of These are USed Put In here Just In Case\To Be Deleted MOS Series Update\Source Query MOS">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\EMMFile\Load EMMFile">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="158,42"
+          Id="Package\EMMFile\Load EMMFile\ADO NET Source"
+          TopLeft="182,111" />
+        <NodeLayout
+          Size="179,42"
+          Id="Package\EMMFile\Load EMMFile\ADO NET Destination"
+          TopLeft="217,277" />
+        <EdgeLayout
+          Id="Package\EMMFile\Load EMMFile.Paths[ADO NET Source Output]"
+          TopLeft="261,153">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="45.5,124"
+              Start="0,0"
+              End="45.5,116.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,58" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,58"
+                    Point2="0,62"
+                    Point3="4,62" />
+                  <mssgle:LineSegment
+                    End="41.5,62" />
+                  <mssgle:CubicBezierSegment
+                    Point1="41.5,62"
+                    Point2="45.5,62"
+                    Point3="45.5,66" />
+                  <mssgle:LineSegment
+                    End="45.5,116.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\EMMFile\Load EMMFile\ADO NET Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\EMMFile\Load EMMFile\ADO NET Destination">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>

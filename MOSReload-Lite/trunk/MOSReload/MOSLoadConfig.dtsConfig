@@ -64,13 +64,13 @@
     <ConfiguredValue>mosuser</ConfiguredValue>
   </Configuration>
   <Configuration ConfiguredType="Property" Path="\Package.Connections[db19-uat.TrafficData.TrafficDataReader].Properties[ConnectionString]" ValueType="String">
-    <ConfiguredValue>Data Source=db19-uat;User ID=TrafficDataReader;Initial Catalog=TrafficData;Persist Security Info=True;Application Name=SSIS-MOSTablesLoad-{2B5C7B6C-A524-430F-9772-AD820D66573C}db19-uat.TrafficData.TrafficDataReader;</ConfiguredValue>
+    <ConfiguredValue>Data Source=db19-uat;User ID=TrafficDataReader;Initial Catalog=TrafficData-SystemTest;Persist Security Info=True;Application Name=SSIS-MOSTablesLoad-{2B5C7B6C-A524-430F-9772-AD820D66573C}db19-uat.TrafficData.TrafficDataReader;</ConfiguredValue>
   </Configuration>
   <Configuration ConfiguredType="Property" Path="\Package.Connections[db19-uat.TrafficData.TrafficDataReader].Properties[Description]" ValueType="String">
     <ConfiguredValue/>
   </Configuration>
   <Configuration ConfiguredType="Property" Path="\Package.Connections[db19-uat.TrafficData.TrafficDataReader].Properties[InitialCatalog]" ValueType="String">
-    <ConfiguredValue>TrafficData</ConfiguredValue>
+    <ConfiguredValue>TrafficData-SystemTest</ConfiguredValue>
   </Configuration>
   <Configuration ConfiguredType="Property" Path="\Package.Connections[db19-uat.TrafficData.TrafficDataReader].Properties[Name]" ValueType="String">
     <ConfiguredValue>db19-uat.TrafficData.TrafficDataReader</ConfiguredValue>
