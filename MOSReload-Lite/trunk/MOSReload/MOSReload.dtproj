@@ -33,6 +33,11 @@
           <FullPath>MOSReload.dtsx</FullPath>
           <References />
         </DtsPackage>
+        <DtsPackage FormatVersion="6">
+          <Name>MOSTablesReload.dtsx</Name>
+          <FullPath>MOSTablesReload.dtsx</FullPath>
+          <References />
+        </DtsPackage>
       </DTSPackages>
     </Manifest>
   </DeploymentModelSpecificContent>
