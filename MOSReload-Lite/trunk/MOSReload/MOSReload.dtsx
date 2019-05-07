@@ -12,8 +12,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="MOSReload"
   DTS:PackageType="5"
-  DTS:VersionBuild="271"
-  DTS:VersionGUID="{6E00CD38-7FC2-4C9E-8E28-9344FF08D028}">
+  DTS:VersionBuild="272"
+  DTS:VersionGUID="{788EDF46-B893-46C8-B4F8-A61DADDBD42F}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">6</DTS:Property>
   <DTS:ConnectionManagers>
@@ -28,7 +28,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAv1xuicR+Zk+e+yqnmwFKMQAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAqIOYbI3uJa1F727dJlbrAAAAAAASAAACgAAAAEAAAAD/6FB+EPbjEf/tc6KKjD1YYAAAAUc6yTzNx92nWu26dqo8xo0JJ7p7/yBhCFAAAAMVKQmnR3O1OD0WGfu9dN3phoVfM</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAv1xuicR+Zk+e+yqnmwFKMQAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADthbbpfG5l1aUEQikG3RGzAAAAAASAAACgAAAAEAAAAI+GW03iQkzqy2hQottwNkAYAAAA7biCgwIGNDn2w24yAf/ulV51p4j963bpFAAAAAnUpKIx457g0ebXzh2YI7xuolnM</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -43,7 +43,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAv1xuicR+Zk+e+yqnmwFKMQAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADS3m+RY1/1hDelk9LtKtbLAAAAAASAAACgAAAAEAAAALh3Bs3bJBFQwV+mBlvnoGIYAAAAJpJJRKBRXON+g5PPQpOD4q02ZgCfb24EFAAAAB/ZZOHiDYahekFBo/tChNNk7djA</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAv1xuicR+Zk+e+yqnmwFKMQAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAD4kiJZpIqfkxM6/EbL8NHdAAAAAASAAACgAAAAEAAAACXp+QvMfpaJolYCCziNB/YYAAAAuASBYvC+AgAihxHZRrStEUO4AfxYxmmEFAAAAKoHJ9ucStnhOzJKrYzrXaFYdcth</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -58,7 +58,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAv1xuicR+Zk+e+yqnmwFKMQAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADrYXT7IcuuOIx1cXhta3F+AAAAAASAAACgAAAAEAAAAMSzmuhDanecYqybUcgDqbMYAAAACZ410wgTg/R+BAIzhc/iF+yaa3ixCPtRFAAAANn5TcJWpEEfenSZ9zOQMa4iok3L</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAv1xuicR+Zk+e+yqnmwFKMQAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADKwbKZPd1D/Gi3jxtHbwtTAAAAAASAAACgAAAAEAAAACAiWcZx6HeIcFabmS0k+d8YAAAAc7QPeM3ThDY3uWT5IAHgiYmeR9qWRsXcFAAAAC92gEuGTqeyrlL8TJJKxgsse8uE</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -24059,9 +24059,9 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
           TopLeft="50,4" />
         <ContainerLayout
           HeaderHeight="43"
-          IsExpanded="True"
+          IsExpanded="False"
           PanelSize="401,409"
-          Size="401,452"
+          Size="401,43"
           Id="Package\Episode Related Tasks"
           TopLeft="20,631.333333333333" />
         <NodeLayout
@@ -24242,9 +24242,9 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
         </EdgeLayout>
         <ContainerLayout
           HeaderHeight="43"
-          IsExpanded="True"
+          IsExpanded="False"
           PanelSize="416,329"
-          Size="416,372"
+          Size="204,43"
           Id="Package\Season Related Tasks"
           TopLeft="722,632" />
       </GraphLayout>
