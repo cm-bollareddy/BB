@@ -12,8 +12,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="MOSReload"
   DTS:PackageType="5"
-  DTS:VersionBuild="272"
-  DTS:VersionGUID="{788EDF46-B893-46C8-B4F8-A61DADDBD42F}">
+  DTS:VersionBuild="277"
+  DTS:VersionGUID="{0260827C-D492-43F1-9F02-63260F30739E}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">6</DTS:Property>
   <DTS:ConnectionManagers>
@@ -28,7 +28,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAv1xuicR+Zk+e+yqnmwFKMQAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADthbbpfG5l1aUEQikG3RGzAAAAAASAAACgAAAAEAAAAI+GW03iQkzqy2hQottwNkAYAAAA7biCgwIGNDn2w24yAf/ulV51p4j963bpFAAAAAnUpKIx457g0ebXzh2YI7xuolnM</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAv1xuicR+Zk+e+yqnmwFKMQAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABtETjFhWUMycI7baT/mqHDAAAAAASAAACgAAAAEAAAAOV4dj3fXoQeIzLEIXaDiBkYAAAA29log8hAOH0DsBba15BOTdFYBP3f1siyFAAAAD3sTcpZfZqib+1FdPqinHMANszW</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -43,7 +43,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAv1xuicR+Zk+e+yqnmwFKMQAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAD4kiJZpIqfkxM6/EbL8NHdAAAAAASAAACgAAAAEAAAACXp+QvMfpaJolYCCziNB/YYAAAAuASBYvC+AgAihxHZRrStEUO4AfxYxmmEFAAAAKoHJ9ucStnhOzJKrYzrXaFYdcth</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAv1xuicR+Zk+e+yqnmwFKMQAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADX1glaHZZyOmhfDNRkI14uAAAAAASAAACgAAAAEAAAAGcgwZE/IFhogySuVlyZrRIYAAAALHBRXvb99DUij3fFNVXqgqiHWnyaYWSaFAAAAICGXzGmluwKQJzQCy/gad2270qq</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -58,7 +58,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAv1xuicR+Zk+e+yqnmwFKMQAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADKwbKZPd1D/Gi3jxtHbwtTAAAAAASAAACgAAAAEAAAACAiWcZx6HeIcFabmS0k+d8YAAAAc7QPeM3ThDY3uWT5IAHgiYmeR9qWRsXcFAAAAC92gEuGTqeyrlL8TJJKxgsse8uE</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAv1xuicR+Zk+e+yqnmwFKMQAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABwlBqMLB7WvsVqTgvZkwS1AAAAAASAAACgAAAAEAAAAHy0rbqytdWq/iDkVwv0sWAYAAAA0dMMQ92h8a9w3twfipVUFeNiTXMtLutgFAAAAC44010IG0duFeasxdKY1bFJUb8h</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -6169,28 +6169,28 @@ end</property>
                         <inputColumn
                           refId="Package\Episode Related Tasks\MOSEpisode UPSERT\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[SourceEpisode.ContentIdentifier]"
                           cachedDataType="wstr"
-                          cachedLength="555"
+                          cachedLength="500"
                           cachedName="SourceEpisode.ContentIdentifier"
                           externalMetadataColumnId="Package\Episode Related Tasks\MOSEpisode UPSERT\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Episode.ContentIdentifier]"
                           lineageId="Package\Episode Related Tasks\MOSEpisode UPSERT\Merge Join.Outputs[Merge Join Output].Columns[SourceEpisode.ContentIdentifier]" />
                         <inputColumn
                           refId="Package\Episode Related Tasks\MOSEpisode UPSERT\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[SourceEpisode.UID]"
                           cachedDataType="wstr"
-                          cachedLength="56"
+                          cachedLength="500"
                           cachedName="SourceEpisode.UID"
                           externalMetadataColumnId="Package\Episode Related Tasks\MOSEpisode UPSERT\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Episode.UID]"
                           lineageId="Package\Episode Related Tasks\MOSEpisode UPSERT\Merge Join.Outputs[Merge Join Output].Columns[SourceEpisode.UID]" />
                         <inputColumn
                           refId="Package\Episode Related Tasks\MOSEpisode UPSERT\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[SourceEpisode.ParentID]"
                           cachedDataType="wstr"
-                          cachedLength="91"
+                          cachedLength="500"
                           cachedName="SourceEpisode.ParentID"
                           externalMetadataColumnId="Package\Episode Related Tasks\MOSEpisode UPSERT\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Episode.ParentID]"
                           lineageId="Package\Episode Related Tasks\MOSEpisode UPSERT\Merge Join.Outputs[Merge Join Output].Columns[SourceEpisode.ParentID]" />
                         <inputColumn
                           refId="Package\Episode Related Tasks\MOSEpisode UPSERT\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[SourceEpisode.Referent.Type]"
                           cachedDataType="wstr"
-                          cachedLength="2"
+                          cachedLength="500"
                           cachedName="SourceEpisode.Referent.Type"
                           externalMetadataColumnId="Package\Episode Related Tasks\MOSEpisode UPSERT\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Episode.Referent.Type]"
                           lineageId="Package\Episode Related Tasks\MOSEpisode UPSERT\Merge Join.Outputs[Merge Join Output].Columns[SourceEpisode.Referent.Type]" />
@@ -6209,7 +6209,7 @@ end</property>
                         <inputColumn
                           refId="Package\Episode Related Tasks\MOSEpisode UPSERT\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[SourceEpisode.TitleClass]"
                           cachedDataType="wstr"
-                          cachedLength="7"
+                          cachedLength="500"
                           cachedName="SourceEpisode.TitleClass"
                           externalMetadataColumnId="Package\Episode Related Tasks\MOSEpisode UPSERT\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Episode.TitleClass]"
                           lineageId="Package\Episode Related Tasks\MOSEpisode UPSERT\Merge Join.Outputs[Merge Join Output].Columns[SourceEpisode.TitleClass]" />
@@ -6223,7 +6223,7 @@ end</property>
                         <inputColumn
                           refId="Package\Episode Related Tasks\MOSEpisode UPSERT\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[SourceEpisode.EpisodeClass]"
                           cachedDataType="wstr"
-                          cachedLength="80"
+                          cachedLength="500"
                           cachedName="SourceEpisode.EpisodeClass"
                           externalMetadataColumnId="Package\Episode Related Tasks\MOSEpisode UPSERT\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Episode.EpisodeClass]"
                           lineageId="Package\Episode Related Tasks\MOSEpisode UPSERT\Merge Join.Outputs[Merge Join Output].Columns[SourceEpisode.EpisodeClass]" />
@@ -6242,14 +6242,13 @@ end</property>
                         <inputColumn
                           refId="Package\Episode Related Tasks\MOSEpisode UPSERT\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[SourceEpisode.CountryOfOrigin]"
                           cachedDataType="wstr"
-                          cachedLength="1"
+                          cachedLength="500"
                           cachedName="SourceEpisode.CountryOfOrigin"
                           externalMetadataColumnId="Package\Episode Related Tasks\MOSEpisode UPSERT\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Episode.CountryOfOrigin]"
                           lineageId="Package\Episode Related Tasks\MOSEpisode UPSERT\Merge Join.Outputs[Merge Join Output].Columns[SourceEpisode.CountryOfOrigin]" />
                         <inputColumn
                           refId="Package\Episode Related Tasks\MOSEpisode UPSERT\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[SourceEpisode.PrimaryGenre]"
-                          cachedDataType="wstr"
-                          cachedLength="500"
+                          cachedDataType="nText"
                           cachedName="SourceEpisode.PrimaryGenre"
                           externalMetadataColumnId="Package\Episode Related Tasks\MOSEpisode UPSERT\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Episode.PrimaryGenre]"
                           lineageId="Package\Episode Related Tasks\MOSEpisode UPSERT\Merge Join.Outputs[Merge Join Output].Columns[SourceEpisode.PrimaryGenre]" />
@@ -6269,7 +6268,7 @@ end</property>
                         <inputColumn
                           refId="Package\Episode Related Tasks\MOSEpisode UPSERT\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[SourceEpisode.ReleaseDate]"
                           cachedDataType="wstr"
-                          cachedLength="10"
+                          cachedLength="20"
                           cachedName="SourceEpisode.ReleaseDate"
                           externalMetadataColumnId="Package\Episode Related Tasks\MOSEpisode UPSERT\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Episode.ReleaseDate]"
                           lineageId="Package\Episode Related Tasks\MOSEpisode UPSERT\Merge Join.Outputs[Merge Join Output].Columns[SourceEpisode.ReleaseDate]" />
@@ -6283,14 +6282,14 @@ end</property>
                         <inputColumn
                           refId="Package\Episode Related Tasks\MOSEpisode UPSERT\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[SourceEpisode.Language.Primary.mode]"
                           cachedDataType="wstr"
-                          cachedLength="5"
+                          cachedLength="500"
                           cachedName="SourceEpisode.Language.Primary.mode"
                           externalMetadataColumnId="Package\Episode Related Tasks\MOSEpisode UPSERT\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Episode.Language.Primary.mode]"
                           lineageId="Package\Episode Related Tasks\MOSEpisode UPSERT\Merge Join.Outputs[Merge Join Output].Columns[SourceEpisode.Language.Primary.mode]" />
                         <inputColumn
                           refId="Package\Episode Related Tasks\MOSEpisode UPSERT\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[SourceEpisode.LanguagePrimary]"
                           cachedDataType="wstr"
-                          cachedLength="6"
+                          cachedLength="500"
                           cachedName="SourceEpisode.LanguagePrimary"
                           externalMetadataColumnId="Package\Episode Related Tasks\MOSEpisode UPSERT\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Episode.LanguagePrimary]"
                           lineageId="Package\Episode Related Tasks\MOSEpisode UPSERT\Merge Join.Outputs[Merge Join Output].Columns[SourceEpisode.LanguagePrimary]" />
@@ -6304,14 +6303,14 @@ end</property>
                         <inputColumn
                           refId="Package\Episode Related Tasks\MOSEpisode UPSERT\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[SourcePublishStatus]"
                           cachedDataType="wstr"
-                          cachedLength="20"
+                          cachedLength="500"
                           cachedName="SourcePublishStatus"
                           externalMetadataColumnId="Package\Episode Related Tasks\MOSEpisode UPSERT\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Episode.PublishStatus]"
                           lineageId="Package\Episode Related Tasks\MOSEpisode UPSERT\Merge Join.Outputs[Merge Join Output].Columns[SourcePublishStatus]" />
                         <inputColumn
                           refId="Package\Episode Related Tasks\MOSEpisode UPSERT\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[SourceEpisode.StructuralType]"
                           cachedDataType="wstr"
-                          cachedLength="11"
+                          cachedLength="500"
                           cachedName="SourceEpisode.StructuralType"
                           externalMetadataColumnId="Package\Episode Related Tasks\MOSEpisode UPSERT\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Episode.StructuralType]"
                           lineageId="Package\Episode Related Tasks\MOSEpisode UPSERT\Merge Join.Outputs[Merge Join Output].Columns[SourceEpisode.StructuralType]" />
@@ -7188,25 +7187,25 @@ end</property>
                         <inputColumn
                           refId="Package\Episode Related Tasks\MOSEpisode UPSERT\Merge Join.Inputs[Merge Join Left Input].Columns[Episode.ContentIdentifier]"
                           cachedDataType="wstr"
-                          cachedLength="555"
+                          cachedLength="500"
                           cachedName="Episode.ContentIdentifier"
                           lineageId="Package\Episode Related Tasks\MOSEpisode UPSERT\Source Query.Outputs[ADO NET Source Output].Columns[Episode.ContentIdentifier]" />
                         <inputColumn
                           refId="Package\Episode Related Tasks\MOSEpisode UPSERT\Merge Join.Inputs[Merge Join Left Input].Columns[Episode.UID]"
                           cachedDataType="wstr"
-                          cachedLength="56"
+                          cachedLength="500"
                           cachedName="Episode.UID"
                           lineageId="Package\Episode Related Tasks\MOSEpisode UPSERT\Source Query.Outputs[ADO NET Source Output].Columns[Episode.UID]" />
                         <inputColumn
                           refId="Package\Episode Related Tasks\MOSEpisode UPSERT\Merge Join.Inputs[Merge Join Left Input].Columns[Episode.ParentID]"
                           cachedDataType="wstr"
-                          cachedLength="91"
+                          cachedLength="500"
                           cachedName="Episode.ParentID"
                           lineageId="Package\Episode Related Tasks\MOSEpisode UPSERT\Source Query.Outputs[ADO NET Source Output].Columns[Episode.ParentID]" />
                         <inputColumn
                           refId="Package\Episode Related Tasks\MOSEpisode UPSERT\Merge Join.Inputs[Merge Join Left Input].Columns[Episode.Referent.Type]"
                           cachedDataType="wstr"
-                          cachedLength="2"
+                          cachedLength="500"
                           cachedName="Episode.Referent.Type"
                           lineageId="Package\Episode Related Tasks\MOSEpisode UPSERT\Source Query.Outputs[ADO NET Source Output].Columns[Episode.Referent.Type]" />
                         <inputColumn
@@ -7222,7 +7221,7 @@ end</property>
                         <inputColumn
                           refId="Package\Episode Related Tasks\MOSEpisode UPSERT\Merge Join.Inputs[Merge Join Left Input].Columns[Episode.TitleClass]"
                           cachedDataType="wstr"
-                          cachedLength="7"
+                          cachedLength="500"
                           cachedName="Episode.TitleClass"
                           lineageId="Package\Episode Related Tasks\MOSEpisode UPSERT\Source Query.Outputs[ADO NET Source Output].Columns[Episode.TitleClass]" />
                         <inputColumn
@@ -7234,7 +7233,7 @@ end</property>
                         <inputColumn
                           refId="Package\Episode Related Tasks\MOSEpisode UPSERT\Merge Join.Inputs[Merge Join Left Input].Columns[Episode.EpisodeClass]"
                           cachedDataType="wstr"
-                          cachedLength="80"
+                          cachedLength="500"
                           cachedName="Episode.EpisodeClass"
                           lineageId="Package\Episode Related Tasks\MOSEpisode UPSERT\Source Query.Outputs[ADO NET Source Output].Columns[Episode.EpisodeClass]" />
                         <inputColumn
@@ -7250,19 +7249,17 @@ end</property>
                         <inputColumn
                           refId="Package\Episode Related Tasks\MOSEpisode UPSERT\Merge Join.Inputs[Merge Join Left Input].Columns[Episode.CountryOfOrigin]"
                           cachedDataType="wstr"
-                          cachedLength="1"
+                          cachedLength="500"
                           cachedName="Episode.CountryOfOrigin"
                           lineageId="Package\Episode Related Tasks\MOSEpisode UPSERT\Source Query.Outputs[ADO NET Source Output].Columns[Episode.CountryOfOrigin]" />
                         <inputColumn
                           refId="Package\Episode Related Tasks\MOSEpisode UPSERT\Merge Join.Inputs[Merge Join Left Input].Columns[Episode.PrimaryGenre]"
-                          cachedDataType="wstr"
-                          cachedLength="500"
+                          cachedDataType="nText"
                           cachedName="Episode.PrimaryGenre"
                           lineageId="Package\Episode Related Tasks\MOSEpisode UPSERT\Source Query.Outputs[ADO NET Source Output].Columns[Episode.PrimaryGenre]" />
                         <inputColumn
                           refId="Package\Episode Related Tasks\MOSEpisode UPSERT\Merge Join.Inputs[Merge Join Left Input].Columns[Episode.SecondaryGenre]"
-                          cachedDataType="wstr"
-                          cachedLength="500"
+                          cachedDataType="nText"
                           cachedName="Episode.SecondaryGenre"
                           lineageId="Package\Episode Related Tasks\MOSEpisode UPSERT\Source Query.Outputs[ADO NET Source Output].Columns[Episode.SecondaryGenre]" />
                         <inputColumn
@@ -7279,7 +7276,7 @@ end</property>
                         <inputColumn
                           refId="Package\Episode Related Tasks\MOSEpisode UPSERT\Merge Join.Inputs[Merge Join Left Input].Columns[Episode.ReleaseDate]"
                           cachedDataType="wstr"
-                          cachedLength="10"
+                          cachedLength="20"
                           cachedName="Episode.ReleaseDate"
                           lineageId="Package\Episode Related Tasks\MOSEpisode UPSERT\Source Query.Outputs[ADO NET Source Output].Columns[Episode.ReleaseDate]" />
                         <inputColumn
@@ -7291,13 +7288,13 @@ end</property>
                         <inputColumn
                           refId="Package\Episode Related Tasks\MOSEpisode UPSERT\Merge Join.Inputs[Merge Join Left Input].Columns[Episode.Language.Primary.mode]"
                           cachedDataType="wstr"
-                          cachedLength="5"
+                          cachedLength="500"
                           cachedName="Episode.Language.Primary.mode"
                           lineageId="Package\Episode Related Tasks\MOSEpisode UPSERT\Source Query.Outputs[ADO NET Source Output].Columns[Episode.Language.Primary.mode]" />
                         <inputColumn
                           refId="Package\Episode Related Tasks\MOSEpisode UPSERT\Merge Join.Inputs[Merge Join Left Input].Columns[Episode.LanguagePrimary]"
                           cachedDataType="wstr"
-                          cachedLength="6"
+                          cachedLength="500"
                           cachedName="Episode.LanguagePrimary"
                           lineageId="Package\Episode Related Tasks\MOSEpisode UPSERT\Source Query.Outputs[ADO NET Source Output].Columns[Episode.LanguagePrimary]" />
                         <inputColumn
@@ -7314,19 +7311,19 @@ end</property>
                         <inputColumn
                           refId="Package\Episode Related Tasks\MOSEpisode UPSERT\Merge Join.Inputs[Merge Join Left Input].Columns[EMMEpisode.SeriesID]"
                           cachedDataType="wstr"
-                          cachedLength="56"
+                          cachedLength="500"
                           cachedName="EMMEpisode.SeriesID"
                           lineageId="Package\Episode Related Tasks\MOSEpisode UPSERT\Source Query.Outputs[ADO NET Source Output].Columns[EMMEpisode.SeriesID]" />
                         <inputColumn
                           refId="Package\Episode Related Tasks\MOSEpisode UPSERT\Merge Join.Inputs[Merge Join Left Input].Columns[PublishStatus]"
                           cachedDataType="wstr"
-                          cachedLength="20"
+                          cachedLength="500"
                           cachedName="PublishStatus"
                           lineageId="Package\Episode Related Tasks\MOSEpisode UPSERT\Source Query.Outputs[ADO NET Source Output].Columns[PublishStatus]" />
                         <inputColumn
                           refId="Package\Episode Related Tasks\MOSEpisode UPSERT\Merge Join.Inputs[Merge Join Left Input].Columns[Episode.StructuralType]"
                           cachedDataType="wstr"
-                          cachedLength="11"
+                          cachedLength="500"
                           cachedName="Episode.StructuralType"
                           lineageId="Package\Episode Related Tasks\MOSEpisode UPSERT\Source Query.Outputs[ADO NET Source Output].Columns[Episode.StructuralType]" />
                       </inputColumns>
@@ -7496,7 +7493,7 @@ end</property>
                         <outputColumn
                           refId="Package\Episode Related Tasks\MOSEpisode UPSERT\Merge Join.Outputs[Merge Join Output].Columns[SourceEpisode.ContentIdentifier]"
                           dataType="wstr"
-                          length="555"
+                          length="500"
                           lineageId="Package\Episode Related Tasks\MOSEpisode UPSERT\Merge Join.Outputs[Merge Join Output].Columns[SourceEpisode.ContentIdentifier]"
                           name="SourceEpisode.ContentIdentifier">
                           <properties>
@@ -7510,7 +7507,7 @@ end</property>
                         <outputColumn
                           refId="Package\Episode Related Tasks\MOSEpisode UPSERT\Merge Join.Outputs[Merge Join Output].Columns[SourceEpisode.UID]"
                           dataType="wstr"
-                          length="56"
+                          length="500"
                           lineageId="Package\Episode Related Tasks\MOSEpisode UPSERT\Merge Join.Outputs[Merge Join Output].Columns[SourceEpisode.UID]"
                           name="SourceEpisode.UID">
                           <properties>
@@ -7524,7 +7521,7 @@ end</property>
                         <outputColumn
                           refId="Package\Episode Related Tasks\MOSEpisode UPSERT\Merge Join.Outputs[Merge Join Output].Columns[SourceEpisode.ParentID]"
                           dataType="wstr"
-                          length="91"
+                          length="500"
                           lineageId="Package\Episode Related Tasks\MOSEpisode UPSERT\Merge Join.Outputs[Merge Join Output].Columns[SourceEpisode.ParentID]"
                           name="SourceEpisode.ParentID">
                           <properties>
@@ -7538,7 +7535,7 @@ end</property>
                         <outputColumn
                           refId="Package\Episode Related Tasks\MOSEpisode UPSERT\Merge Join.Outputs[Merge Join Output].Columns[SourceEpisode.Referent.Type]"
                           dataType="wstr"
-                          length="2"
+                          length="500"
                           lineageId="Package\Episode Related Tasks\MOSEpisode UPSERT\Merge Join.Outputs[Merge Join Output].Columns[SourceEpisode.Referent.Type]"
                           name="SourceEpisode.Referent.Type">
                           <properties>
@@ -7578,7 +7575,7 @@ end</property>
                         <outputColumn
                           refId="Package\Episode Related Tasks\MOSEpisode UPSERT\Merge Join.Outputs[Merge Join Output].Columns[SourceEpisode.TitleClass]"
                           dataType="wstr"
-                          length="7"
+                          length="500"
                           lineageId="Package\Episode Related Tasks\MOSEpisode UPSERT\Merge Join.Outputs[Merge Join Output].Columns[SourceEpisode.TitleClass]"
                           name="SourceEpisode.TitleClass">
                           <properties>
@@ -7606,7 +7603,7 @@ end</property>
                         <outputColumn
                           refId="Package\Episode Related Tasks\MOSEpisode UPSERT\Merge Join.Outputs[Merge Join Output].Columns[SourceEpisode.EpisodeClass]"
                           dataType="wstr"
-                          length="80"
+                          length="500"
                           lineageId="Package\Episode Related Tasks\MOSEpisode UPSERT\Merge Join.Outputs[Merge Join Output].Columns[SourceEpisode.EpisodeClass]"
                           name="SourceEpisode.EpisodeClass">
                           <properties>
@@ -7646,7 +7643,7 @@ end</property>
                         <outputColumn
                           refId="Package\Episode Related Tasks\MOSEpisode UPSERT\Merge Join.Outputs[Merge Join Output].Columns[SourceEpisode.CountryOfOrigin]"
                           dataType="wstr"
-                          length="1"
+                          length="500"
                           lineageId="Package\Episode Related Tasks\MOSEpisode UPSERT\Merge Join.Outputs[Merge Join Output].Columns[SourceEpisode.CountryOfOrigin]"
                           name="SourceEpisode.CountryOfOrigin">
                           <properties>
@@ -7659,8 +7656,7 @@ end</property>
                         </outputColumn>
                         <outputColumn
                           refId="Package\Episode Related Tasks\MOSEpisode UPSERT\Merge Join.Outputs[Merge Join Output].Columns[SourceEpisode.PrimaryGenre]"
-                          dataType="wstr"
-                          length="500"
+                          dataType="nText"
                           lineageId="Package\Episode Related Tasks\MOSEpisode UPSERT\Merge Join.Outputs[Merge Join Output].Columns[SourceEpisode.PrimaryGenre]"
                           name="SourceEpisode.PrimaryGenre">
                           <properties>
@@ -7673,8 +7669,7 @@ end</property>
                         </outputColumn>
                         <outputColumn
                           refId="Package\Episode Related Tasks\MOSEpisode UPSERT\Merge Join.Outputs[Merge Join Output].Columns[SourceEpisode.SecondaryGenre]"
-                          dataType="wstr"
-                          length="500"
+                          dataType="nText"
                           lineageId="Package\Episode Related Tasks\MOSEpisode UPSERT\Merge Join.Outputs[Merge Join Output].Columns[SourceEpisode.SecondaryGenre]"
                           name="SourceEpisode.SecondaryGenre">
                           <properties>
@@ -7715,7 +7710,7 @@ end</property>
                         <outputColumn
                           refId="Package\Episode Related Tasks\MOSEpisode UPSERT\Merge Join.Outputs[Merge Join Output].Columns[SourceEpisode.ReleaseDate]"
                           dataType="wstr"
-                          length="10"
+                          length="20"
                           lineageId="Package\Episode Related Tasks\MOSEpisode UPSERT\Merge Join.Outputs[Merge Join Output].Columns[SourceEpisode.ReleaseDate]"
                           name="SourceEpisode.ReleaseDate">
                           <properties>
@@ -7743,7 +7738,7 @@ end</property>
                         <outputColumn
                           refId="Package\Episode Related Tasks\MOSEpisode UPSERT\Merge Join.Outputs[Merge Join Output].Columns[SourceEpisode.Language.Primary.mode]"
                           dataType="wstr"
-                          length="5"
+                          length="500"
                           lineageId="Package\Episode Related Tasks\MOSEpisode UPSERT\Merge Join.Outputs[Merge Join Output].Columns[SourceEpisode.Language.Primary.mode]"
                           name="SourceEpisode.Language.Primary.mode">
                           <properties>
@@ -7757,7 +7752,7 @@ end</property>
                         <outputColumn
                           refId="Package\Episode Related Tasks\MOSEpisode UPSERT\Merge Join.Outputs[Merge Join Output].Columns[SourceEpisode.LanguagePrimary]"
                           dataType="wstr"
-                          length="6"
+                          length="500"
                           lineageId="Package\Episode Related Tasks\MOSEpisode UPSERT\Merge Join.Outputs[Merge Join Output].Columns[SourceEpisode.LanguagePrimary]"
                           name="SourceEpisode.LanguagePrimary">
                           <properties>
@@ -7798,7 +7793,7 @@ end</property>
                         <outputColumn
                           refId="Package\Episode Related Tasks\MOSEpisode UPSERT\Merge Join.Outputs[Merge Join Output].Columns[SourceEMMEpisode.SeriesID]"
                           dataType="wstr"
-                          length="56"
+                          length="500"
                           lineageId="Package\Episode Related Tasks\MOSEpisode UPSERT\Merge Join.Outputs[Merge Join Output].Columns[SourceEMMEpisode.SeriesID]"
                           name="SourceEMMEpisode.SeriesID">
                           <properties>
@@ -8099,7 +8094,7 @@ end</property>
                         <outputColumn
                           refId="Package\Episode Related Tasks\MOSEpisode UPSERT\Merge Join.Outputs[Merge Join Output].Columns[SourcePublishStatus]"
                           dataType="wstr"
-                          length="20"
+                          length="500"
                           lineageId="Package\Episode Related Tasks\MOSEpisode UPSERT\Merge Join.Outputs[Merge Join Output].Columns[SourcePublishStatus]"
                           name="SourcePublishStatus">
                           <properties>
@@ -8127,7 +8122,7 @@ end</property>
                         <outputColumn
                           refId="Package\Episode Related Tasks\MOSEpisode UPSERT\Merge Join.Outputs[Merge Join Output].Columns[SourceEpisode.StructuralType]"
                           dataType="wstr"
-                          length="11"
+                          length="500"
                           lineageId="Package\Episode Related Tasks\MOSEpisode UPSERT\Merge Join.Outputs[Merge Join Output].Columns[SourceEpisode.StructuralType]"
                           name="SourceEpisode.StructuralType">
                           <properties>
@@ -8323,28 +8318,28 @@ end</property>
                         <inputColumn
                           refId="Package\Episode Related Tasks\MOSEpisode UPSERT\OLE DB Command 1.Inputs[OLE DB Command Input].Columns[SourceEpisode.ContentIdentifier]"
                           cachedDataType="wstr"
-                          cachedLength="555"
+                          cachedLength="500"
                           cachedName="SourceEpisode.ContentIdentifier"
                           externalMetadataColumnId="Package\Episode Related Tasks\MOSEpisode UPSERT\OLE DB Command 1.Inputs[OLE DB Command Input].ExternalColumns[@ContentIdentifier]"
                           lineageId="Package\Episode Related Tasks\MOSEpisode UPSERT\Merge Join.Outputs[Merge Join Output].Columns[SourceEpisode.ContentIdentifier]" />
                         <inputColumn
                           refId="Package\Episode Related Tasks\MOSEpisode UPSERT\OLE DB Command 1.Inputs[OLE DB Command Input].Columns[SourceEpisode.UID]"
                           cachedDataType="wstr"
-                          cachedLength="56"
+                          cachedLength="500"
                           cachedName="SourceEpisode.UID"
                           externalMetadataColumnId="Package\Episode Related Tasks\MOSEpisode UPSERT\OLE DB Command 1.Inputs[OLE DB Command Input].ExternalColumns[@UID]"
                           lineageId="Package\Episode Related Tasks\MOSEpisode UPSERT\Merge Join.Outputs[Merge Join Output].Columns[SourceEpisode.UID]" />
                         <inputColumn
                           refId="Package\Episode Related Tasks\MOSEpisode UPSERT\OLE DB Command 1.Inputs[OLE DB Command Input].Columns[SourceEpisode.ParentID]"
                           cachedDataType="wstr"
-                          cachedLength="91"
+                          cachedLength="500"
                           cachedName="SourceEpisode.ParentID"
                           externalMetadataColumnId="Package\Episode Related Tasks\MOSEpisode UPSERT\OLE DB Command 1.Inputs[OLE DB Command Input].ExternalColumns[@ParentID]"
                           lineageId="Package\Episode Related Tasks\MOSEpisode UPSERT\Merge Join.Outputs[Merge Join Output].Columns[SourceEpisode.ParentID]" />
                         <inputColumn
                           refId="Package\Episode Related Tasks\MOSEpisode UPSERT\OLE DB Command 1.Inputs[OLE DB Command Input].Columns[SourceEpisode.Referent.Type]"
                           cachedDataType="wstr"
-                          cachedLength="2"
+                          cachedLength="500"
                           cachedName="SourceEpisode.Referent.Type"
                           externalMetadataColumnId="Package\Episode Related Tasks\MOSEpisode UPSERT\OLE DB Command 1.Inputs[OLE DB Command Input].ExternalColumns[@ReferentType]"
                           lineageId="Package\Episode Related Tasks\MOSEpisode UPSERT\Merge Join.Outputs[Merge Join Output].Columns[SourceEpisode.Referent.Type]" />
@@ -8363,7 +8358,7 @@ end</property>
                         <inputColumn
                           refId="Package\Episode Related Tasks\MOSEpisode UPSERT\OLE DB Command 1.Inputs[OLE DB Command Input].Columns[SourceEpisode.TitleClass]"
                           cachedDataType="wstr"
-                          cachedLength="7"
+                          cachedLength="500"
                           cachedName="SourceEpisode.TitleClass"
                           externalMetadataColumnId="Package\Episode Related Tasks\MOSEpisode UPSERT\OLE DB Command 1.Inputs[OLE DB Command Input].ExternalColumns[@TitleClass]"
                           lineageId="Package\Episode Related Tasks\MOSEpisode UPSERT\Merge Join.Outputs[Merge Join Output].Columns[SourceEpisode.TitleClass]" />
@@ -8377,7 +8372,7 @@ end</property>
                         <inputColumn
                           refId="Package\Episode Related Tasks\MOSEpisode UPSERT\OLE DB Command 1.Inputs[OLE DB Command Input].Columns[SourceEpisode.EpisodeClass]"
                           cachedDataType="wstr"
-                          cachedLength="80"
+                          cachedLength="500"
                           cachedName="SourceEpisode.EpisodeClass"
                           externalMetadataColumnId="Package\Episode Related Tasks\MOSEpisode UPSERT\OLE DB Command 1.Inputs[OLE DB Command Input].ExternalColumns[@EpisodeClass]"
                           lineageId="Package\Episode Related Tasks\MOSEpisode UPSERT\Merge Join.Outputs[Merge Join Output].Columns[SourceEpisode.EpisodeClass]" />
@@ -8396,21 +8391,20 @@ end</property>
                         <inputColumn
                           refId="Package\Episode Related Tasks\MOSEpisode UPSERT\OLE DB Command 1.Inputs[OLE DB Command Input].Columns[SourceEpisode.CountryOfOrigin]"
                           cachedDataType="wstr"
-                          cachedLength="1"
+                          cachedLength="500"
                           cachedName="SourceEpisode.CountryOfOrigin"
                           externalMetadataColumnId="Package\Episode Related Tasks\MOSEpisode UPSERT\OLE DB Command 1.Inputs[OLE DB Command Input].ExternalColumns[@CountryOfOrigin]"
                           lineageId="Package\Episode Related Tasks\MOSEpisode UPSERT\Merge Join.Outputs[Merge Join Output].Columns[SourceEpisode.CountryOfOrigin]" />
                         <inputColumn
                           refId="Package\Episode Related Tasks\MOSEpisode UPSERT\OLE DB Command 1.Inputs[OLE DB Command Input].Columns[SourceEpisode.PrimaryGenre]"
-                          cachedDataType="wstr"
-                          cachedLength="500"
+                          cachedDataType="nText"
                           cachedName="SourceEpisode.PrimaryGenre"
                           externalMetadataColumnId="Package\Episode Related Tasks\MOSEpisode UPSERT\OLE DB Command 1.Inputs[OLE DB Command Input].ExternalColumns[@PrimaryGenre]"
                           lineageId="Package\Episode Related Tasks\MOSEpisode UPSERT\Merge Join.Outputs[Merge Join Output].Columns[SourceEpisode.PrimaryGenre]" />
                         <inputColumn
                           refId="Package\Episode Related Tasks\MOSEpisode UPSERT\OLE DB Command 1.Inputs[OLE DB Command Input].Columns[SourceEpisode.ReleaseDate]"
                           cachedDataType="wstr"
-                          cachedLength="10"
+                          cachedLength="20"
                           cachedName="SourceEpisode.ReleaseDate"
                           externalMetadataColumnId="Package\Episode Related Tasks\MOSEpisode UPSERT\OLE DB Command 1.Inputs[OLE DB Command Input].ExternalColumns[@ReleaseDate]"
                           lineageId="Package\Episode Related Tasks\MOSEpisode UPSERT\Merge Join.Outputs[Merge Join Output].Columns[SourceEpisode.ReleaseDate]" />
@@ -8424,14 +8418,14 @@ end</property>
                         <inputColumn
                           refId="Package\Episode Related Tasks\MOSEpisode UPSERT\OLE DB Command 1.Inputs[OLE DB Command Input].Columns[SourceEpisode.Language.Primary.mode]"
                           cachedDataType="wstr"
-                          cachedLength="5"
+                          cachedLength="500"
                           cachedName="SourceEpisode.Language.Primary.mode"
                           externalMetadataColumnId="Package\Episode Related Tasks\MOSEpisode UPSERT\OLE DB Command 1.Inputs[OLE DB Command Input].ExternalColumns[@LanguagePrimaryMode]"
                           lineageId="Package\Episode Related Tasks\MOSEpisode UPSERT\Merge Join.Outputs[Merge Join Output].Columns[SourceEpisode.Language.Primary.mode]" />
                         <inputColumn
                           refId="Package\Episode Related Tasks\MOSEpisode UPSERT\OLE DB Command 1.Inputs[OLE DB Command Input].Columns[SourceEpisode.LanguagePrimary]"
                           cachedDataType="wstr"
-                          cachedLength="6"
+                          cachedLength="500"
                           cachedName="SourceEpisode.LanguagePrimary"
                           externalMetadataColumnId="Package\Episode Related Tasks\MOSEpisode UPSERT\OLE DB Command 1.Inputs[OLE DB Command Input].ExternalColumns[@LanguagePrimary]"
                           lineageId="Package\Episode Related Tasks\MOSEpisode UPSERT\Merge Join.Outputs[Merge Join Output].Columns[SourceEpisode.LanguagePrimary]" />
@@ -8452,7 +8446,7 @@ end</property>
                         <inputColumn
                           refId="Package\Episode Related Tasks\MOSEpisode UPSERT\OLE DB Command 1.Inputs[OLE DB Command Input].Columns[SourcePublishStatus]"
                           cachedDataType="wstr"
-                          cachedLength="20"
+                          cachedLength="500"
                           cachedName="SourcePublishStatus"
                           externalMetadataColumnId="Package\Episode Related Tasks\MOSEpisode UPSERT\OLE DB Command 1.Inputs[OLE DB Command Input].ExternalColumns[@PublishStatus]"
                           lineageId="Package\Episode Related Tasks\MOSEpisode UPSERT\Merge Join.Outputs[Merge Join Output].Columns[SourcePublishStatus]" />
@@ -8472,7 +8466,7 @@ end</property>
                         <inputColumn
                           refId="Package\Episode Related Tasks\MOSEpisode UPSERT\OLE DB Command 1.Inputs[OLE DB Command Input].Columns[SourceEpisode.StructuralType]"
                           cachedDataType="wstr"
-                          cachedLength="11"
+                          cachedLength="500"
                           cachedName="SourceEpisode.StructuralType"
                           externalMetadataColumnId="Package\Episode Related Tasks\MOSEpisode UPSERT\OLE DB Command 1.Inputs[OLE DB Command Input].ExternalColumns[@StructuralType]"
                           lineageId="Package\Episode Related Tasks\MOSEpisode UPSERT\Merge Join.Outputs[Merge Join Output].Columns[SourceEpisode.StructuralType]" />
@@ -8878,7 +8872,7 @@ order by [PBSInternalID]</property>
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
                           externalMetadataColumnId="Package\Episode Related Tasks\MOSEpisode UPSERT\Source Query.Outputs[ADO NET Source Output].ExternalColumns[Episode.ContentIdentifier]"
-                          length="555"
+                          length="500"
                           lineageId="Package\Episode Related Tasks\MOSEpisode UPSERT\Source Query.Outputs[ADO NET Source Output].Columns[Episode.ContentIdentifier]"
                           name="Episode.ContentIdentifier"
                           truncationRowDisposition="FailComponent" />
@@ -8888,7 +8882,7 @@ order by [PBSInternalID]</property>
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
                           externalMetadataColumnId="Package\Episode Related Tasks\MOSEpisode UPSERT\Source Query.Outputs[ADO NET Source Output].ExternalColumns[Episode.UID]"
-                          length="56"
+                          length="500"
                           lineageId="Package\Episode Related Tasks\MOSEpisode UPSERT\Source Query.Outputs[ADO NET Source Output].Columns[Episode.UID]"
                           name="Episode.UID"
                           truncationRowDisposition="FailComponent" />
@@ -8898,7 +8892,7 @@ order by [PBSInternalID]</property>
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
                           externalMetadataColumnId="Package\Episode Related Tasks\MOSEpisode UPSERT\Source Query.Outputs[ADO NET Source Output].ExternalColumns[Episode.ParentID]"
-                          length="91"
+                          length="500"
                           lineageId="Package\Episode Related Tasks\MOSEpisode UPSERT\Source Query.Outputs[ADO NET Source Output].Columns[Episode.ParentID]"
                           name="Episode.ParentID"
                           truncationRowDisposition="FailComponent" />
@@ -8908,7 +8902,7 @@ order by [PBSInternalID]</property>
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
                           externalMetadataColumnId="Package\Episode Related Tasks\MOSEpisode UPSERT\Source Query.Outputs[ADO NET Source Output].ExternalColumns[Episode.Referent.Type]"
-                          length="2"
+                          length="500"
                           lineageId="Package\Episode Related Tasks\MOSEpisode UPSERT\Source Query.Outputs[ADO NET Source Output].Columns[Episode.Referent.Type]"
                           name="Episode.Referent.Type"
                           truncationRowDisposition="FailComponent" />
@@ -8936,7 +8930,7 @@ order by [PBSInternalID]</property>
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
                           externalMetadataColumnId="Package\Episode Related Tasks\MOSEpisode UPSERT\Source Query.Outputs[ADO NET Source Output].ExternalColumns[Episode.TitleClass]"
-                          length="7"
+                          length="500"
                           lineageId="Package\Episode Related Tasks\MOSEpisode UPSERT\Source Query.Outputs[ADO NET Source Output].Columns[Episode.TitleClass]"
                           name="Episode.TitleClass"
                           truncationRowDisposition="FailComponent" />
@@ -8956,7 +8950,7 @@ order by [PBSInternalID]</property>
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
                           externalMetadataColumnId="Package\Episode Related Tasks\MOSEpisode UPSERT\Source Query.Outputs[ADO NET Source Output].ExternalColumns[Episode.EpisodeClass]"
-                          length="80"
+                          length="500"
                           lineageId="Package\Episode Related Tasks\MOSEpisode UPSERT\Source Query.Outputs[ADO NET Source Output].Columns[Episode.EpisodeClass]"
                           name="Episode.EpisodeClass"
                           truncationRowDisposition="FailComponent" />
@@ -8984,27 +8978,25 @@ order by [PBSInternalID]</property>
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
                           externalMetadataColumnId="Package\Episode Related Tasks\MOSEpisode UPSERT\Source Query.Outputs[ADO NET Source Output].ExternalColumns[Episode.CountryOfOrigin]"
-                          length="1"
+                          length="500"
                           lineageId="Package\Episode Related Tasks\MOSEpisode UPSERT\Source Query.Outputs[ADO NET Source Output].Columns[Episode.CountryOfOrigin]"
                           name="Episode.CountryOfOrigin"
                           truncationRowDisposition="FailComponent" />
                         <outputColumn
                           refId="Package\Episode Related Tasks\MOSEpisode UPSERT\Source Query.Outputs[ADO NET Source Output].Columns[Episode.PrimaryGenre]"
-                          dataType="wstr"
+                          dataType="nText"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
                           externalMetadataColumnId="Package\Episode Related Tasks\MOSEpisode UPSERT\Source Query.Outputs[ADO NET Source Output].ExternalColumns[Episode.PrimaryGenre]"
-                          length="500"
                           lineageId="Package\Episode Related Tasks\MOSEpisode UPSERT\Source Query.Outputs[ADO NET Source Output].Columns[Episode.PrimaryGenre]"
                           name="Episode.PrimaryGenre"
                           truncationRowDisposition="FailComponent" />
                         <outputColumn
                           refId="Package\Episode Related Tasks\MOSEpisode UPSERT\Source Query.Outputs[ADO NET Source Output].Columns[Episode.SecondaryGenre]"
-                          dataType="wstr"
+                          dataType="nText"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
                           externalMetadataColumnId="Package\Episode Related Tasks\MOSEpisode UPSERT\Source Query.Outputs[ADO NET Source Output].ExternalColumns[Episode.SecondaryGenre]"
-                          length="500"
                           lineageId="Package\Episode Related Tasks\MOSEpisode UPSERT\Source Query.Outputs[ADO NET Source Output].Columns[Episode.SecondaryGenre]"
                           name="Episode.SecondaryGenre"
                           truncationRowDisposition="FailComponent" />
@@ -9033,7 +9025,7 @@ order by [PBSInternalID]</property>
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
                           externalMetadataColumnId="Package\Episode Related Tasks\MOSEpisode UPSERT\Source Query.Outputs[ADO NET Source Output].ExternalColumns[Episode.ReleaseDate]"
-                          length="10"
+                          length="20"
                           lineageId="Package\Episode Related Tasks\MOSEpisode UPSERT\Source Query.Outputs[ADO NET Source Output].Columns[Episode.ReleaseDate]"
                           name="Episode.ReleaseDate"
                           truncationRowDisposition="FailComponent" />
@@ -9053,7 +9045,7 @@ order by [PBSInternalID]</property>
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
                           externalMetadataColumnId="Package\Episode Related Tasks\MOSEpisode UPSERT\Source Query.Outputs[ADO NET Source Output].ExternalColumns[Episode.Language.Primary.mode]"
-                          length="5"
+                          length="500"
                           lineageId="Package\Episode Related Tasks\MOSEpisode UPSERT\Source Query.Outputs[ADO NET Source Output].Columns[Episode.Language.Primary.mode]"
                           name="Episode.Language.Primary.mode"
                           truncationRowDisposition="FailComponent" />
@@ -9063,7 +9055,7 @@ order by [PBSInternalID]</property>
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
                           externalMetadataColumnId="Package\Episode Related Tasks\MOSEpisode UPSERT\Source Query.Outputs[ADO NET Source Output].ExternalColumns[Episode.LanguagePrimary]"
-                          length="6"
+                          length="500"
                           lineageId="Package\Episode Related Tasks\MOSEpisode UPSERT\Source Query.Outputs[ADO NET Source Output].Columns[Episode.LanguagePrimary]"
                           name="Episode.LanguagePrimary"
                           truncationRowDisposition="FailComponent" />
@@ -9092,7 +9084,7 @@ order by [PBSInternalID]</property>
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
                           externalMetadataColumnId="Package\Episode Related Tasks\MOSEpisode UPSERT\Source Query.Outputs[ADO NET Source Output].ExternalColumns[EMMEpisode.SeriesID]"
-                          length="56"
+                          length="500"
                           lineageId="Package\Episode Related Tasks\MOSEpisode UPSERT\Source Query.Outputs[ADO NET Source Output].Columns[EMMEpisode.SeriesID]"
                           name="EMMEpisode.SeriesID"
                           truncationRowDisposition="FailComponent" />
@@ -9102,7 +9094,7 @@ order by [PBSInternalID]</property>
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
                           externalMetadataColumnId="Package\Episode Related Tasks\MOSEpisode UPSERT\Source Query.Outputs[ADO NET Source Output].ExternalColumns[PublishStatus]"
-                          length="20"
+                          length="500"
                           lineageId="Package\Episode Related Tasks\MOSEpisode UPSERT\Source Query.Outputs[ADO NET Source Output].Columns[PublishStatus]"
                           name="PublishStatus"
                           truncationRowDisposition="FailComponent" />
@@ -9112,7 +9104,7 @@ order by [PBSInternalID]</property>
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
                           externalMetadataColumnId="Package\Episode Related Tasks\MOSEpisode UPSERT\Source Query.Outputs[ADO NET Source Output].ExternalColumns[Episode.StructuralType]"
-                          length="11"
+                          length="500"
                           lineageId="Package\Episode Related Tasks\MOSEpisode UPSERT\Source Query.Outputs[ADO NET Source Output].Columns[Episode.StructuralType]"
                           name="Episode.StructuralType"
                           truncationRowDisposition="FailComponent" />
@@ -9126,22 +9118,22 @@ order by [PBSInternalID]</property>
                         <externalMetadataColumn
                           refId="Package\Episode Related Tasks\MOSEpisode UPSERT\Source Query.Outputs[ADO NET Source Output].ExternalColumns[Episode.ContentIdentifier]"
                           dataType="wstr"
-                          length="555"
+                          length="500"
                           name="Episode.ContentIdentifier" />
                         <externalMetadataColumn
                           refId="Package\Episode Related Tasks\MOSEpisode UPSERT\Source Query.Outputs[ADO NET Source Output].ExternalColumns[Episode.UID]"
                           dataType="wstr"
-                          length="56"
+                          length="500"
                           name="Episode.UID" />
                         <externalMetadataColumn
                           refId="Package\Episode Related Tasks\MOSEpisode UPSERT\Source Query.Outputs[ADO NET Source Output].ExternalColumns[Episode.ParentID]"
                           dataType="wstr"
-                          length="91"
+                          length="500"
                           name="Episode.ParentID" />
                         <externalMetadataColumn
                           refId="Package\Episode Related Tasks\MOSEpisode UPSERT\Source Query.Outputs[ADO NET Source Output].ExternalColumns[Episode.Referent.Type]"
                           dataType="wstr"
-                          length="2"
+                          length="500"
                           name="Episode.Referent.Type" />
                         <externalMetadataColumn
                           refId="Package\Episode Related Tasks\MOSEpisode UPSERT\Source Query.Outputs[ADO NET Source Output].ExternalColumns[Episode.Title]"
@@ -9154,7 +9146,7 @@ order by [PBSInternalID]</property>
                         <externalMetadataColumn
                           refId="Package\Episode Related Tasks\MOSEpisode UPSERT\Source Query.Outputs[ADO NET Source Output].ExternalColumns[Episode.TitleClass]"
                           dataType="wstr"
-                          length="7"
+                          length="500"
                           name="Episode.TitleClass" />
                         <externalMetadataColumn
                           refId="Package\Episode Related Tasks\MOSEpisode UPSERT\Source Query.Outputs[ADO NET Source Output].ExternalColumns[Episode.EpisodeNumber]"
@@ -9164,7 +9156,7 @@ order by [PBSInternalID]</property>
                         <externalMetadataColumn
                           refId="Package\Episode Related Tasks\MOSEpisode UPSERT\Source Query.Outputs[ADO NET Source Output].ExternalColumns[Episode.EpisodeClass]"
                           dataType="wstr"
-                          length="80"
+                          length="500"
                           name="Episode.EpisodeClass" />
                         <externalMetadataColumn
                           refId="Package\Episode Related Tasks\MOSEpisode UPSERT\Source Query.Outputs[ADO NET Source Output].ExternalColumns[Episode.SynopsisShort]"
@@ -9177,17 +9169,15 @@ order by [PBSInternalID]</property>
                         <externalMetadataColumn
                           refId="Package\Episode Related Tasks\MOSEpisode UPSERT\Source Query.Outputs[ADO NET Source Output].ExternalColumns[Episode.CountryOfOrigin]"
                           dataType="wstr"
-                          length="1"
+                          length="500"
                           name="Episode.CountryOfOrigin" />
                         <externalMetadataColumn
                           refId="Package\Episode Related Tasks\MOSEpisode UPSERT\Source Query.Outputs[ADO NET Source Output].ExternalColumns[Episode.PrimaryGenre]"
-                          dataType="wstr"
-                          length="500"
+                          dataType="nText"
                           name="Episode.PrimaryGenre" />
                         <externalMetadataColumn
                           refId="Package\Episode Related Tasks\MOSEpisode UPSERT\Source Query.Outputs[ADO NET Source Output].ExternalColumns[Episode.SecondaryGenre]"
-                          dataType="wstr"
-                          length="500"
+                          dataType="nText"
                           name="Episode.SecondaryGenre" />
                         <externalMetadataColumn
                           refId="Package\Episode Related Tasks\MOSEpisode UPSERT\Source Query.Outputs[ADO NET Source Output].ExternalColumns[Episode.SecondaryGenreEMM]"
@@ -9201,7 +9191,7 @@ order by [PBSInternalID]</property>
                         <externalMetadataColumn
                           refId="Package\Episode Related Tasks\MOSEpisode UPSERT\Source Query.Outputs[ADO NET Source Output].ExternalColumns[Episode.ReleaseDate]"
                           dataType="wstr"
-                          length="10"
+                          length="20"
                           name="Episode.ReleaseDate" />
                         <externalMetadataColumn
                           refId="Package\Episode Related Tasks\MOSEpisode UPSERT\Source Query.Outputs[ADO NET Source Output].ExternalColumns[Episode.ApproximateLength]"
@@ -9211,12 +9201,12 @@ order by [PBSInternalID]</property>
                         <externalMetadataColumn
                           refId="Package\Episode Related Tasks\MOSEpisode UPSERT\Source Query.Outputs[ADO NET Source Output].ExternalColumns[Episode.Language.Primary.mode]"
                           dataType="wstr"
-                          length="5"
+                          length="500"
                           name="Episode.Language.Primary.mode" />
                         <externalMetadataColumn
                           refId="Package\Episode Related Tasks\MOSEpisode UPSERT\Source Query.Outputs[ADO NET Source Output].ExternalColumns[Episode.LanguagePrimary]"
                           dataType="wstr"
-                          length="6"
+                          length="500"
                           name="Episode.LanguagePrimary" />
                         <externalMetadataColumn
                           refId="Package\Episode Related Tasks\MOSEpisode UPSERT\Source Query.Outputs[ADO NET Source Output].ExternalColumns[Episode.LanguageSecondary]"
@@ -9230,17 +9220,17 @@ order by [PBSInternalID]</property>
                         <externalMetadataColumn
                           refId="Package\Episode Related Tasks\MOSEpisode UPSERT\Source Query.Outputs[ADO NET Source Output].ExternalColumns[EMMEpisode.SeriesID]"
                           dataType="wstr"
-                          length="56"
+                          length="500"
                           name="EMMEpisode.SeriesID" />
                         <externalMetadataColumn
                           refId="Package\Episode Related Tasks\MOSEpisode UPSERT\Source Query.Outputs[ADO NET Source Output].ExternalColumns[PublishStatus]"
                           dataType="wstr"
-                          length="20"
+                          length="500"
                           name="PublishStatus" />
                         <externalMetadataColumn
                           refId="Package\Episode Related Tasks\MOSEpisode UPSERT\Source Query.Outputs[ADO NET Source Output].ExternalColumns[Episode.StructuralType]"
                           dataType="wstr"
-                          length="11"
+                          length="500"
                           name="Episode.StructuralType" />
                       </externalMetadataColumns>
                     </output>
@@ -9484,7 +9474,7 @@ end</property>
                         <inputColumn
                           refId="Package\Episode Related Tasks\MOSEpisode UPSERT\Track Inserted Records.Inputs[OLE DB Command Input].Columns[SourceEpisode.UID]"
                           cachedDataType="wstr"
-                          cachedLength="56"
+                          cachedLength="500"
                           cachedName="SourceEpisode.UID"
                           externalMetadataColumnId="Package\Episode Related Tasks\MOSEpisode UPSERT\Track Inserted Records.Inputs[OLE DB Command Input].ExternalColumns[Param_0]"
                           lineageId="Package\Episode Related Tasks\MOSEpisode UPSERT\Merge Join.Outputs[Merge Join Output].Columns[SourceEpisode.UID]" />
@@ -9564,25 +9554,25 @@ end</property>
                         <inputColumn
                           refId="Package\Episode Related Tasks\MOSEpisode UPSERT\Updated Records.Inputs[Conditional Split Input].Columns[SourceEpisode.ContentIdentifier]"
                           cachedDataType="wstr"
-                          cachedLength="555"
+                          cachedLength="500"
                           cachedName="SourceEpisode.ContentIdentifier"
                           lineageId="Package\Episode Related Tasks\MOSEpisode UPSERT\Merge Join.Outputs[Merge Join Output].Columns[SourceEpisode.ContentIdentifier]" />
                         <inputColumn
                           refId="Package\Episode Related Tasks\MOSEpisode UPSERT\Updated Records.Inputs[Conditional Split Input].Columns[SourceEpisode.UID]"
                           cachedDataType="wstr"
-                          cachedLength="56"
+                          cachedLength="500"
                           cachedName="SourceEpisode.UID"
                           lineageId="Package\Episode Related Tasks\MOSEpisode UPSERT\Merge Join.Outputs[Merge Join Output].Columns[SourceEpisode.UID]" />
                         <inputColumn
                           refId="Package\Episode Related Tasks\MOSEpisode UPSERT\Updated Records.Inputs[Conditional Split Input].Columns[SourceEpisode.ParentID]"
                           cachedDataType="wstr"
-                          cachedLength="91"
+                          cachedLength="500"
                           cachedName="SourceEpisode.ParentID"
                           lineageId="Package\Episode Related Tasks\MOSEpisode UPSERT\Merge Join.Outputs[Merge Join Output].Columns[SourceEpisode.ParentID]" />
                         <inputColumn
                           refId="Package\Episode Related Tasks\MOSEpisode UPSERT\Updated Records.Inputs[Conditional Split Input].Columns[SourceEpisode.Referent.Type]"
                           cachedDataType="wstr"
-                          cachedLength="2"
+                          cachedLength="500"
                           cachedName="SourceEpisode.Referent.Type"
                           lineageId="Package\Episode Related Tasks\MOSEpisode UPSERT\Merge Join.Outputs[Merge Join Output].Columns[SourceEpisode.Referent.Type]" />
                         <inputColumn
@@ -9598,7 +9588,7 @@ end</property>
                         <inputColumn
                           refId="Package\Episode Related Tasks\MOSEpisode UPSERT\Updated Records.Inputs[Conditional Split Input].Columns[SourceEpisode.TitleClass]"
                           cachedDataType="wstr"
-                          cachedLength="7"
+                          cachedLength="500"
                           cachedName="SourceEpisode.TitleClass"
                           lineageId="Package\Episode Related Tasks\MOSEpisode UPSERT\Merge Join.Outputs[Merge Join Output].Columns[SourceEpisode.TitleClass]" />
                         <inputColumn
@@ -9610,7 +9600,7 @@ end</property>
                         <inputColumn
                           refId="Package\Episode Related Tasks\MOSEpisode UPSERT\Updated Records.Inputs[Conditional Split Input].Columns[SourceEpisode.EpisodeClass]"
                           cachedDataType="wstr"
-                          cachedLength="80"
+                          cachedLength="500"
                           cachedName="SourceEpisode.EpisodeClass"
                           lineageId="Package\Episode Related Tasks\MOSEpisode UPSERT\Merge Join.Outputs[Merge Join Output].Columns[SourceEpisode.EpisodeClass]" />
                         <inputColumn
@@ -9626,19 +9616,18 @@ end</property>
                         <inputColumn
                           refId="Package\Episode Related Tasks\MOSEpisode UPSERT\Updated Records.Inputs[Conditional Split Input].Columns[SourceEpisode.CountryOfOrigin]"
                           cachedDataType="wstr"
-                          cachedLength="1"
+                          cachedLength="500"
                           cachedName="SourceEpisode.CountryOfOrigin"
                           lineageId="Package\Episode Related Tasks\MOSEpisode UPSERT\Merge Join.Outputs[Merge Join Output].Columns[SourceEpisode.CountryOfOrigin]" />
                         <inputColumn
                           refId="Package\Episode Related Tasks\MOSEpisode UPSERT\Updated Records.Inputs[Conditional Split Input].Columns[SourceEpisode.PrimaryGenre]"
-                          cachedDataType="wstr"
-                          cachedLength="500"
+                          cachedDataType="nText"
                           cachedName="SourceEpisode.PrimaryGenre"
                           lineageId="Package\Episode Related Tasks\MOSEpisode UPSERT\Merge Join.Outputs[Merge Join Output].Columns[SourceEpisode.PrimaryGenre]" />
                         <inputColumn
                           refId="Package\Episode Related Tasks\MOSEpisode UPSERT\Updated Records.Inputs[Conditional Split Input].Columns[SourceEpisode.ReleaseDate]"
                           cachedDataType="wstr"
-                          cachedLength="10"
+                          cachedLength="20"
                           cachedName="SourceEpisode.ReleaseDate"
                           lineageId="Package\Episode Related Tasks\MOSEpisode UPSERT\Merge Join.Outputs[Merge Join Output].Columns[SourceEpisode.ReleaseDate]" />
                         <inputColumn
@@ -9650,13 +9639,13 @@ end</property>
                         <inputColumn
                           refId="Package\Episode Related Tasks\MOSEpisode UPSERT\Updated Records.Inputs[Conditional Split Input].Columns[SourceEpisode.Language.Primary.mode]"
                           cachedDataType="wstr"
-                          cachedLength="5"
+                          cachedLength="500"
                           cachedName="SourceEpisode.Language.Primary.mode"
                           lineageId="Package\Episode Related Tasks\MOSEpisode UPSERT\Merge Join.Outputs[Merge Join Output].Columns[SourceEpisode.Language.Primary.mode]" />
                         <inputColumn
                           refId="Package\Episode Related Tasks\MOSEpisode UPSERT\Updated Records.Inputs[Conditional Split Input].Columns[SourceEpisode.LanguagePrimary]"
                           cachedDataType="wstr"
-                          cachedLength="6"
+                          cachedLength="500"
                           cachedName="SourceEpisode.LanguagePrimary"
                           lineageId="Package\Episode Related Tasks\MOSEpisode UPSERT\Merge Join.Outputs[Merge Join Output].Columns[SourceEpisode.LanguagePrimary]" />
                         <inputColumn
@@ -9771,7 +9760,7 @@ end</property>
                         <inputColumn
                           refId="Package\Episode Related Tasks\MOSEpisode UPSERT\Updated Records.Inputs[Conditional Split Input].Columns[SourcePublishStatus]"
                           cachedDataType="wstr"
-                          cachedLength="20"
+                          cachedLength="500"
                           cachedName="SourcePublishStatus"
                           lineageId="Package\Episode Related Tasks\MOSEpisode UPSERT\Merge Join.Outputs[Merge Join Output].Columns[SourcePublishStatus]" />
                         <inputColumn
@@ -9795,7 +9784,7 @@ end</property>
                         <inputColumn
                           refId="Package\Episode Related Tasks\MOSEpisode UPSERT\Updated Records.Inputs[Conditional Split Input].Columns[SourceEpisode.StructuralType]"
                           cachedDataType="wstr"
-                          cachedLength="11"
+                          cachedLength="500"
                           cachedName="SourceEpisode.StructuralType"
                           lineageId="Package\Episode Related Tasks\MOSEpisode UPSERT\Merge Join.Outputs[Merge Join Output].Columns[SourceEpisode.StructuralType]" />
                         <inputColumn
@@ -24048,9 +24037,9 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
           TopLeft="25,102" />
         <ContainerLayout
           HeaderHeight="43"
-          IsExpanded="True"
+          IsExpanded="False"
           PanelSize="243,214"
-          Size="243,257"
+          Size="243,43"
           Id="Package\Credits Related Tasks"
           TopLeft="1371.28571428571,635" />
         <NodeLayout
@@ -24059,9 +24048,9 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
           TopLeft="50,4" />
         <ContainerLayout
           HeaderHeight="43"
-          IsExpanded="False"
+          IsExpanded="True"
           PanelSize="401,409"
-          Size="401,43"
+          Size="401,452"
           Id="Package\Episode Related Tasks"
           TopLeft="20,631.333333333333" />
         <NodeLayout
@@ -26383,7 +26372,7 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="105.946866319444,26.3187195546277,77.24515625,9.7490234375"
+              BoundingBox="105.946866319445,26.3187195546277,77.24515625,9.7490234375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
