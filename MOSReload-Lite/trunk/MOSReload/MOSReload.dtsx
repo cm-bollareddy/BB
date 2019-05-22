@@ -12,8 +12,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="MOSReload"
   DTS:PackageType="5"
-  DTS:VersionBuild="277"
-  DTS:VersionGUID="{0260827C-D492-43F1-9F02-63260F30739E}">
+  DTS:VersionBuild="282"
+  DTS:VersionGUID="{D2646DE4-BA6C-4A60-9318-7E9C7AC9D2BB}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">6</DTS:Property>
   <DTS:ConnectionManagers>
@@ -28,7 +28,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAv1xuicR+Zk+e+yqnmwFKMQAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABtETjFhWUMycI7baT/mqHDAAAAAASAAACgAAAAEAAAAOV4dj3fXoQeIzLEIXaDiBkYAAAA29log8hAOH0DsBba15BOTdFYBP3f1siyFAAAAD3sTcpZfZqib+1FdPqinHMANszW</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAv1xuicR+Zk+e+yqnmwFKMQAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACJMCTgV0bLfA9y7gXOOJr5AAAAAASAAACgAAAAEAAAALiuB/o9CF3YzLaw7U47o5kYAAAAlNtElU+S08hYPLwyPS52bSHnr64rAkF7FAAAAKkgXWSLXtJL/EZMIsyI7ajVKBNF</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -43,7 +43,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAv1xuicR+Zk+e+yqnmwFKMQAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADX1glaHZZyOmhfDNRkI14uAAAAAASAAACgAAAAEAAAAGcgwZE/IFhogySuVlyZrRIYAAAALHBRXvb99DUij3fFNVXqgqiHWnyaYWSaFAAAAICGXzGmluwKQJzQCy/gad2270qq</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAv1xuicR+Zk+e+yqnmwFKMQAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACQYfFOQue3CarW11LLm3RBAAAAAASAAACgAAAAEAAAAIT/9HtGcah50oempbG6yS0YAAAAF7vdEEe307cYIP1gEqKRD4CAq/vQgQaqFAAAAM5ejwcavXKqwAtaGvf3kp4THP92</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -58,7 +58,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAv1xuicR+Zk+e+yqnmwFKMQAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABwlBqMLB7WvsVqTgvZkwS1AAAAAASAAACgAAAAEAAAAHy0rbqytdWq/iDkVwv0sWAYAAAA0dMMQ92h8a9w3twfipVUFeNiTXMtLutgFAAAAC44010IG0duFeasxdKY1bFJUb8h</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAv1xuicR+Zk+e+yqnmwFKMQAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADhEAZlSS260qeGrD+VCZ/xAAAAAASAAACgAAAAEAAAAET/npsYIFHVDDJAqQPztIsYAAAAInoG+Tn/v8LJnH9FRpoG06Er0ygc7PRhFAAAAAvKYyKmK8IUvky1CgNVwZipRf3l</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -149,7 +149,7 @@
                         <inputColumn
                           refId="Package\Compilation Related Tsaks\MOS  Compilation Entry Upsert\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[SourcePBSInternalID]"
                           cachedDataType="wstr"
-                          cachedLength="113"
+                          cachedLength="400"
                           cachedName="SourcePBSInternalID"
                           cachedSortKeyPosition="1"
                           externalMetadataColumnId="Package\Compilation Related Tsaks\MOS  Compilation Entry Upsert\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[PBSInternalID]"
@@ -157,35 +157,35 @@
                         <inputColumn
                           refId="Package\Compilation Related Tsaks\MOS  Compilation Entry Upsert\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[SourceCompilation.Entry.UID]"
                           cachedDataType="wstr"
-                          cachedLength="56"
+                          cachedLength="400"
                           cachedName="SourceCompilation.Entry.UID"
                           externalMetadataColumnId="Package\Compilation Related Tsaks\MOS  Compilation Entry Upsert\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Compilation.Entry.UID]"
                           lineageId="Package\Compilation Related Tsaks\MOS  Compilation Entry Upsert\Merge Join.Outputs[Merge Join Output].Columns[SourceCompilation.Entry.UID]" />
                         <inputColumn
                           refId="Package\Compilation Related Tsaks\MOS  Compilation Entry Upsert\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[SourceCompilation.UID]"
                           cachedDataType="wstr"
-                          cachedLength="56"
+                          cachedLength="400"
                           cachedName="SourceCompilation.UID"
                           externalMetadataColumnId="Package\Compilation Related Tsaks\MOS  Compilation Entry Upsert\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Compilation.UID]"
                           lineageId="Package\Compilation Related Tsaks\MOS  Compilation Entry Upsert\Merge Join.Outputs[Merge Join Output].Columns[SourceCompilation.UID]" />
                         <inputColumn
                           refId="Package\Compilation Related Tsaks\MOS  Compilation Entry Upsert\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[SourceCompilation.Entry.EntryNumber]"
                           cachedDataType="wstr"
-                          cachedLength="20"
+                          cachedLength="50"
                           cachedName="SourceCompilation.Entry.EntryNumber"
                           externalMetadataColumnId="Package\Compilation Related Tsaks\MOS  Compilation Entry Upsert\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Compilation.Entry.EntryNumber]"
                           lineageId="Package\Compilation Related Tsaks\MOS  Compilation Entry Upsert\Merge Join.Outputs[Merge Join Output].Columns[SourceCompilation.Entry.EntryNumber]" />
                         <inputColumn
                           refId="Package\Compilation Related Tsaks\MOS  Compilation Entry Upsert\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[SourceCompilation.Entry.Class]"
                           cachedDataType="wstr"
-                          cachedLength="11"
+                          cachedLength="100"
                           cachedName="SourceCompilation.Entry.Class"
                           externalMetadataColumnId="Package\Compilation Related Tsaks\MOS  Compilation Entry Upsert\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Compilation.Entry.Class]"
                           lineageId="Package\Compilation Related Tsaks\MOS  Compilation Entry Upsert\Merge Join.Outputs[Merge Join Output].Columns[SourceCompilation.Entry.Class]" />
                         <inputColumn
                           refId="Package\Compilation Related Tsaks\MOS  Compilation Entry Upsert\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[SourceCompilation.Entry.PublishStatus]"
                           cachedDataType="wstr"
-                          cachedLength="20"
+                          cachedLength="500"
                           cachedName="SourceCompilation.Entry.PublishStatus"
                           externalMetadataColumnId="Package\Compilation Related Tsaks\MOS  Compilation Entry Upsert\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Compilation.Entry.PublishStatus]"
                           lineageId="Package\Compilation Related Tsaks\MOS  Compilation Entry Upsert\Merge Join.Outputs[Merge Join Output].Columns[SourceCompilation.Entry.PublishStatus]" />
@@ -266,7 +266,7 @@
                         <inputColumn
                           refId="Package\Compilation Related Tsaks\MOS  Compilation Entry Upsert\Conditional Split.Inputs[Conditional Split Input].Columns[SourcePBSInternalID]"
                           cachedDataType="wstr"
-                          cachedLength="113"
+                          cachedLength="400"
                           cachedName="SourcePBSInternalID"
                           cachedSortKeyPosition="1"
                           lineageId="Package\Compilation Related Tsaks\MOS  Compilation Entry Upsert\Merge Join.Outputs[Merge Join Output].Columns[SourcePBSInternalID]" />
@@ -761,38 +761,38 @@ end</property>
                         <inputColumn
                           refId="Package\Compilation Related Tsaks\MOS  Compilation Entry Upsert\Merge Join.Inputs[Merge Join Left Input].Columns[Compilation.UID]"
                           cachedDataType="wstr"
-                          cachedLength="56"
+                          cachedLength="400"
                           cachedName="Compilation.UID"
                           lineageId="Package\Compilation Related Tsaks\MOS  Compilation Entry Upsert\Source Query.Outputs[ADO NET Source Output].Columns[Compilation.UID]" />
                         <inputColumn
                           refId="Package\Compilation Related Tsaks\MOS  Compilation Entry Upsert\Merge Join.Inputs[Merge Join Left Input].Columns[Compilation.Entry.Class]"
                           cachedDataType="wstr"
-                          cachedLength="11"
+                          cachedLength="100"
                           cachedName="Compilation.Entry.Class"
                           lineageId="Package\Compilation Related Tsaks\MOS  Compilation Entry Upsert\Source Query.Outputs[ADO NET Source Output].Columns[Compilation.Entry.Class]" />
                         <inputColumn
                           refId="Package\Compilation Related Tsaks\MOS  Compilation Entry Upsert\Merge Join.Inputs[Merge Join Left Input].Columns[Compilation.Entry.EntryNumber]"
                           cachedDataType="wstr"
-                          cachedLength="20"
+                          cachedLength="50"
                           cachedName="Compilation.Entry.EntryNumber"
                           lineageId="Package\Compilation Related Tsaks\MOS  Compilation Entry Upsert\Source Query.Outputs[ADO NET Source Output].Columns[Compilation.Entry.EntryNumber]" />
                         <inputColumn
                           refId="Package\Compilation Related Tsaks\MOS  Compilation Entry Upsert\Merge Join.Inputs[Merge Join Left Input].Columns[Compilation.Entry.PublishStatus]"
                           cachedDataType="wstr"
-                          cachedLength="20"
+                          cachedLength="500"
                           cachedName="Compilation.Entry.PublishStatus"
                           lineageId="Package\Compilation Related Tsaks\MOS  Compilation Entry Upsert\Source Query.Outputs[ADO NET Source Output].Columns[Compilation.Entry.PublishStatus]" />
                         <inputColumn
                           refId="Package\Compilation Related Tsaks\MOS  Compilation Entry Upsert\Merge Join.Inputs[Merge Join Left Input].Columns[PBSInternalID]"
                           cachedDataType="wstr"
-                          cachedLength="113"
+                          cachedLength="400"
                           cachedName="PBSInternalID"
                           cachedSortKeyPosition="1"
                           lineageId="Package\Compilation Related Tsaks\MOS  Compilation Entry Upsert\Source Query.Outputs[ADO NET Source Output].Columns[PBSInternalID]" />
                         <inputColumn
                           refId="Package\Compilation Related Tsaks\MOS  Compilation Entry Upsert\Merge Join.Inputs[Merge Join Left Input].Columns[Compilation.Entry.UID]"
                           cachedDataType="wstr"
-                          cachedLength="56"
+                          cachedLength="400"
                           cachedName="Compilation.Entry.UID"
                           lineageId="Package\Compilation Related Tsaks\MOS  Compilation Entry Upsert\Source Query.Outputs[ADO NET Source Output].Columns[Compilation.Entry.UID]" />
                       </inputColumns>
@@ -853,7 +853,7 @@ end</property>
                         <outputColumn
                           refId="Package\Compilation Related Tsaks\MOS  Compilation Entry Upsert\Merge Join.Outputs[Merge Join Output].Columns[SourceCompilation.UID]"
                           dataType="wstr"
-                          length="56"
+                          length="400"
                           lineageId="Package\Compilation Related Tsaks\MOS  Compilation Entry Upsert\Merge Join.Outputs[Merge Join Output].Columns[SourceCompilation.UID]"
                           name="SourceCompilation.UID">
                           <properties>
@@ -867,7 +867,7 @@ end</property>
                         <outputColumn
                           refId="Package\Compilation Related Tsaks\MOS  Compilation Entry Upsert\Merge Join.Outputs[Merge Join Output].Columns[SourceCompilation.Entry.Class]"
                           dataType="wstr"
-                          length="11"
+                          length="100"
                           lineageId="Package\Compilation Related Tsaks\MOS  Compilation Entry Upsert\Merge Join.Outputs[Merge Join Output].Columns[SourceCompilation.Entry.Class]"
                           name="SourceCompilation.Entry.Class">
                           <properties>
@@ -881,7 +881,7 @@ end</property>
                         <outputColumn
                           refId="Package\Compilation Related Tsaks\MOS  Compilation Entry Upsert\Merge Join.Outputs[Merge Join Output].Columns[SourceCompilation.Entry.EntryNumber]"
                           dataType="wstr"
-                          length="20"
+                          length="50"
                           lineageId="Package\Compilation Related Tsaks\MOS  Compilation Entry Upsert\Merge Join.Outputs[Merge Join Output].Columns[SourceCompilation.Entry.EntryNumber]"
                           name="SourceCompilation.Entry.EntryNumber">
                           <properties>
@@ -895,7 +895,7 @@ end</property>
                         <outputColumn
                           refId="Package\Compilation Related Tsaks\MOS  Compilation Entry Upsert\Merge Join.Outputs[Merge Join Output].Columns[SourceCompilation.Entry.PublishStatus]"
                           dataType="wstr"
-                          length="20"
+                          length="500"
                           lineageId="Package\Compilation Related Tsaks\MOS  Compilation Entry Upsert\Merge Join.Outputs[Merge Join Output].Columns[SourceCompilation.Entry.PublishStatus]"
                           name="SourceCompilation.Entry.PublishStatus">
                           <properties>
@@ -965,7 +965,7 @@ end</property>
                         <outputColumn
                           refId="Package\Compilation Related Tsaks\MOS  Compilation Entry Upsert\Merge Join.Outputs[Merge Join Output].Columns[SourceCompilation.Entry.UID]"
                           dataType="wstr"
-                          length="56"
+                          length="400"
                           lineageId="Package\Compilation Related Tsaks\MOS  Compilation Entry Upsert\Merge Join.Outputs[Merge Join Output].Columns[SourceCompilation.Entry.UID]"
                           name="SourceCompilation.Entry.UID">
                           <properties>
@@ -993,7 +993,7 @@ end</property>
                         <outputColumn
                           refId="Package\Compilation Related Tsaks\MOS  Compilation Entry Upsert\Merge Join.Outputs[Merge Join Output].Columns[SourcePBSInternalID]"
                           dataType="wstr"
-                          length="113"
+                          length="400"
                           lineageId="Package\Compilation Related Tsaks\MOS  Compilation Entry Upsert\Merge Join.Outputs[Merge Join Output].Columns[SourcePBSInternalID]"
                           name="SourcePBSInternalID"
                           sortKeyPosition="1">
@@ -1089,7 +1089,7 @@ order by PBSInternalID</property>
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
                           externalMetadataColumnId="Package\Compilation Related Tsaks\MOS  Compilation Entry Upsert\Source Query.Outputs[ADO NET Source Output].ExternalColumns[PBSInternalID]"
-                          length="113"
+                          length="400"
                           lineageId="Package\Compilation Related Tsaks\MOS  Compilation Entry Upsert\Source Query.Outputs[ADO NET Source Output].Columns[PBSInternalID]"
                           name="PBSInternalID"
                           sortKeyPosition="1"
@@ -1100,7 +1100,7 @@ order by PBSInternalID</property>
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
                           externalMetadataColumnId="Package\Compilation Related Tsaks\MOS  Compilation Entry Upsert\Source Query.Outputs[ADO NET Source Output].ExternalColumns[Compilation.UID]"
-                          length="56"
+                          length="400"
                           lineageId="Package\Compilation Related Tsaks\MOS  Compilation Entry Upsert\Source Query.Outputs[ADO NET Source Output].Columns[Compilation.UID]"
                           name="Compilation.UID"
                           truncationRowDisposition="FailComponent" />
@@ -1110,7 +1110,7 @@ order by PBSInternalID</property>
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
                           externalMetadataColumnId="Package\Compilation Related Tsaks\MOS  Compilation Entry Upsert\Source Query.Outputs[ADO NET Source Output].ExternalColumns[Compilation.Entry.UID]"
-                          length="56"
+                          length="400"
                           lineageId="Package\Compilation Related Tsaks\MOS  Compilation Entry Upsert\Source Query.Outputs[ADO NET Source Output].Columns[Compilation.Entry.UID]"
                           name="Compilation.Entry.UID"
                           truncationRowDisposition="FailComponent" />
@@ -1120,7 +1120,7 @@ order by PBSInternalID</property>
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
                           externalMetadataColumnId="Package\Compilation Related Tsaks\MOS  Compilation Entry Upsert\Source Query.Outputs[ADO NET Source Output].ExternalColumns[Compilation.Entry.Class]"
-                          length="11"
+                          length="100"
                           lineageId="Package\Compilation Related Tsaks\MOS  Compilation Entry Upsert\Source Query.Outputs[ADO NET Source Output].Columns[Compilation.Entry.Class]"
                           name="Compilation.Entry.Class"
                           truncationRowDisposition="FailComponent" />
@@ -1130,7 +1130,7 @@ order by PBSInternalID</property>
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
                           externalMetadataColumnId="Package\Compilation Related Tsaks\MOS  Compilation Entry Upsert\Source Query.Outputs[ADO NET Source Output].ExternalColumns[Compilation.Entry.EntryNumber]"
-                          length="20"
+                          length="50"
                           lineageId="Package\Compilation Related Tsaks\MOS  Compilation Entry Upsert\Source Query.Outputs[ADO NET Source Output].Columns[Compilation.Entry.EntryNumber]"
                           name="Compilation.Entry.EntryNumber"
                           truncationRowDisposition="FailComponent" />
@@ -1140,7 +1140,7 @@ order by PBSInternalID</property>
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
                           externalMetadataColumnId="Package\Compilation Related Tsaks\MOS  Compilation Entry Upsert\Source Query.Outputs[ADO NET Source Output].ExternalColumns[Compilation.Entry.PublishStatus]"
-                          length="20"
+                          length="500"
                           lineageId="Package\Compilation Related Tsaks\MOS  Compilation Entry Upsert\Source Query.Outputs[ADO NET Source Output].Columns[Compilation.Entry.PublishStatus]"
                           name="Compilation.Entry.PublishStatus"
                           truncationRowDisposition="FailComponent" />
@@ -1150,32 +1150,32 @@ order by PBSInternalID</property>
                         <externalMetadataColumn
                           refId="Package\Compilation Related Tsaks\MOS  Compilation Entry Upsert\Source Query.Outputs[ADO NET Source Output].ExternalColumns[PBSInternalID]"
                           dataType="wstr"
-                          length="113"
+                          length="400"
                           name="PBSInternalID" />
                         <externalMetadataColumn
                           refId="Package\Compilation Related Tsaks\MOS  Compilation Entry Upsert\Source Query.Outputs[ADO NET Source Output].ExternalColumns[Compilation.UID]"
                           dataType="wstr"
-                          length="56"
+                          length="400"
                           name="Compilation.UID" />
                         <externalMetadataColumn
                           refId="Package\Compilation Related Tsaks\MOS  Compilation Entry Upsert\Source Query.Outputs[ADO NET Source Output].ExternalColumns[Compilation.Entry.UID]"
                           dataType="wstr"
-                          length="56"
+                          length="400"
                           name="Compilation.Entry.UID" />
                         <externalMetadataColumn
                           refId="Package\Compilation Related Tsaks\MOS  Compilation Entry Upsert\Source Query.Outputs[ADO NET Source Output].ExternalColumns[Compilation.Entry.Class]"
                           dataType="wstr"
-                          length="11"
+                          length="100"
                           name="Compilation.Entry.Class" />
                         <externalMetadataColumn
                           refId="Package\Compilation Related Tsaks\MOS  Compilation Entry Upsert\Source Query.Outputs[ADO NET Source Output].ExternalColumns[Compilation.Entry.EntryNumber]"
                           dataType="wstr"
-                          length="20"
+                          length="50"
                           name="Compilation.Entry.EntryNumber" />
                         <externalMetadataColumn
                           refId="Package\Compilation Related Tsaks\MOS  Compilation Entry Upsert\Source Query.Outputs[ADO NET Source Output].ExternalColumns[Compilation.Entry.PublishStatus]"
                           dataType="wstr"
-                          length="20"
+                          length="500"
                           name="Compilation.Entry.PublishStatus" />
                       </externalMetadataColumns>
                     </output>
@@ -1306,7 +1306,7 @@ end</property>
                         <inputColumn
                           refId="Package\Compilation Related Tsaks\MOS  Compilation Entry Upsert\Track Inserted Records.Inputs[OLE DB Command Input].Columns[SourcePBSInternalID]"
                           cachedDataType="wstr"
-                          cachedLength="113"
+                          cachedLength="400"
                           cachedName="SourcePBSInternalID"
                           cachedSortKeyPosition="1"
                           externalMetadataColumnId="Package\Compilation Related Tsaks\MOS  Compilation Entry Upsert\Track Inserted Records.Inputs[OLE DB Command Input].ExternalColumns[Param_0]"
@@ -1404,28 +1404,28 @@ end</property>
                         <inputColumn
                           refId="Package\Compilation Related Tsaks\MOS  Compilation Entry Upsert\Update Records.Inputs[OLE DB Command Input].Columns[SourceCompilation.Entry.Class]"
                           cachedDataType="wstr"
-                          cachedLength="11"
+                          cachedLength="100"
                           cachedName="SourceCompilation.Entry.Class"
                           externalMetadataColumnId="Package\Compilation Related Tsaks\MOS  Compilation Entry Upsert\Update Records.Inputs[OLE DB Command Input].ExternalColumns[@Class]"
                           lineageId="Package\Compilation Related Tsaks\MOS  Compilation Entry Upsert\Merge Join.Outputs[Merge Join Output].Columns[SourceCompilation.Entry.Class]" />
                         <inputColumn
                           refId="Package\Compilation Related Tsaks\MOS  Compilation Entry Upsert\Update Records.Inputs[OLE DB Command Input].Columns[SourceCompilation.UID]"
                           cachedDataType="wstr"
-                          cachedLength="56"
+                          cachedLength="400"
                           cachedName="SourceCompilation.UID"
                           externalMetadataColumnId="Package\Compilation Related Tsaks\MOS  Compilation Entry Upsert\Update Records.Inputs[OLE DB Command Input].ExternalColumns[@CompilationUID]"
                           lineageId="Package\Compilation Related Tsaks\MOS  Compilation Entry Upsert\Merge Join.Outputs[Merge Join Output].Columns[SourceCompilation.UID]" />
                         <inputColumn
                           refId="Package\Compilation Related Tsaks\MOS  Compilation Entry Upsert\Update Records.Inputs[OLE DB Command Input].Columns[SourceCompilation.Entry.UID]"
                           cachedDataType="wstr"
-                          cachedLength="56"
+                          cachedLength="400"
                           cachedName="SourceCompilation.Entry.UID"
                           externalMetadataColumnId="Package\Compilation Related Tsaks\MOS  Compilation Entry Upsert\Update Records.Inputs[OLE DB Command Input].ExternalColumns[@EntryUID]"
                           lineageId="Package\Compilation Related Tsaks\MOS  Compilation Entry Upsert\Merge Join.Outputs[Merge Join Output].Columns[SourceCompilation.Entry.UID]" />
                         <inputColumn
                           refId="Package\Compilation Related Tsaks\MOS  Compilation Entry Upsert\Update Records.Inputs[OLE DB Command Input].Columns[SourcePBSInternalID]"
                           cachedDataType="wstr"
-                          cachedLength="113"
+                          cachedLength="400"
                           cachedName="SourcePBSInternalID"
                           cachedSortKeyPosition="1"
                           externalMetadataColumnId="Package\Compilation Related Tsaks\MOS  Compilation Entry Upsert\Update Records.Inputs[OLE DB Command Input].ExternalColumns[@InternalID]"
@@ -1433,14 +1433,14 @@ end</property>
                         <inputColumn
                           refId="Package\Compilation Related Tsaks\MOS  Compilation Entry Upsert\Update Records.Inputs[OLE DB Command Input].Columns[SourceCompilation.Entry.PublishStatus]"
                           cachedDataType="wstr"
-                          cachedLength="20"
+                          cachedLength="500"
                           cachedName="SourceCompilation.Entry.PublishStatus"
                           externalMetadataColumnId="Package\Compilation Related Tsaks\MOS  Compilation Entry Upsert\Update Records.Inputs[OLE DB Command Input].ExternalColumns[@PublishStatus]"
                           lineageId="Package\Compilation Related Tsaks\MOS  Compilation Entry Upsert\Merge Join.Outputs[Merge Join Output].Columns[SourceCompilation.Entry.PublishStatus]" />
                         <inputColumn
                           refId="Package\Compilation Related Tsaks\MOS  Compilation Entry Upsert\Update Records.Inputs[OLE DB Command Input].Columns[SourceCompilation.Entry.EntryNumber]"
                           cachedDataType="wstr"
-                          cachedLength="20"
+                          cachedLength="50"
                           cachedName="SourceCompilation.Entry.EntryNumber"
                           externalMetadataColumnId="Package\Compilation Related Tsaks\MOS  Compilation Entry Upsert\Update Records.Inputs[OLE DB Command Input].ExternalColumns[@EntryNumber]"
                           lineageId="Package\Compilation Related Tsaks\MOS  Compilation Entry Upsert\Merge Join.Outputs[Merge Join Output].Columns[SourceCompilation.Entry.EntryNumber]" />
@@ -1575,19 +1575,19 @@ end</property>
                         <inputColumn
                           refId="Package\Compilation Related Tsaks\MOS  Compilation Entry Upsert\Updated Records.Inputs[Conditional Split Input].Columns[SourceCompilation.UID]"
                           cachedDataType="wstr"
-                          cachedLength="56"
+                          cachedLength="400"
                           cachedName="SourceCompilation.UID"
                           lineageId="Package\Compilation Related Tsaks\MOS  Compilation Entry Upsert\Merge Join.Outputs[Merge Join Output].Columns[SourceCompilation.UID]" />
                         <inputColumn
                           refId="Package\Compilation Related Tsaks\MOS  Compilation Entry Upsert\Updated Records.Inputs[Conditional Split Input].Columns[SourceCompilation.Entry.Class]"
                           cachedDataType="wstr"
-                          cachedLength="11"
+                          cachedLength="100"
                           cachedName="SourceCompilation.Entry.Class"
                           lineageId="Package\Compilation Related Tsaks\MOS  Compilation Entry Upsert\Merge Join.Outputs[Merge Join Output].Columns[SourceCompilation.Entry.Class]" />
                         <inputColumn
                           refId="Package\Compilation Related Tsaks\MOS  Compilation Entry Upsert\Updated Records.Inputs[Conditional Split Input].Columns[SourceCompilation.Entry.EntryNumber]"
                           cachedDataType="wstr"
-                          cachedLength="20"
+                          cachedLength="50"
                           cachedName="SourceCompilation.Entry.EntryNumber"
                           lineageId="Package\Compilation Related Tsaks\MOS  Compilation Entry Upsert\Merge Join.Outputs[Merge Join Output].Columns[SourceCompilation.Entry.EntryNumber]" />
                         <inputColumn
@@ -1605,7 +1605,7 @@ end</property>
                         <inputColumn
                           refId="Package\Compilation Related Tsaks\MOS  Compilation Entry Upsert\Updated Records.Inputs[Conditional Split Input].Columns[SourceCompilation.Entry.PublishStatus]"
                           cachedDataType="wstr"
-                          cachedLength="20"
+                          cachedLength="500"
                           cachedName="SourceCompilation.Entry.PublishStatus"
                           lineageId="Package\Compilation Related Tsaks\MOS  Compilation Entry Upsert\Merge Join.Outputs[Merge Join Output].Columns[SourceCompilation.Entry.PublishStatus]" />
                         <inputColumn
@@ -1617,7 +1617,7 @@ end</property>
                         <inputColumn
                           refId="Package\Compilation Related Tsaks\MOS  Compilation Entry Upsert\Updated Records.Inputs[Conditional Split Input].Columns[SourceCompilation.Entry.UID]"
                           cachedDataType="wstr"
-                          cachedLength="56"
+                          cachedLength="400"
                           cachedName="SourceCompilation.Entry.UID"
                           lineageId="Package\Compilation Related Tsaks\MOS  Compilation Entry Upsert\Merge Join.Outputs[Merge Join Output].Columns[SourceCompilation.Entry.UID]" />
                         <inputColumn
@@ -3610,7 +3610,7 @@ end</property>
                         <inputColumn
                           refId="Package\Credits Related Tasks\MOS Credits UPSERT\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[SourceCredits.TalentID]"
                           cachedDataType="wstr"
-                          cachedLength="526"
+                          cachedLength="500"
                           cachedName="SourceCredits.TalentID"
                           cachedSortKeyPosition="1"
                           externalMetadataColumnId="Package\Credits Related Tasks\MOS Credits UPSERT\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Talent.UID]"
@@ -3618,14 +3618,14 @@ end</property>
                         <inputColumn
                           refId="Package\Credits Related Tasks\MOS Credits UPSERT\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[SourceCredits.Display.Name]"
                           cachedDataType="wstr"
-                          cachedLength="80"
+                          cachedLength="500"
                           cachedName="SourceCredits.Display.Name"
                           externalMetadataColumnId="Package\Credits Related Tasks\MOS Credits UPSERT\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[DisplayName]"
                           lineageId="Package\Credits Related Tasks\MOS Credits UPSERT\Merge Join.Outputs[Merge Join Output].Columns[SourceCredits.Display.Name]" />
                         <inputColumn
                           refId="Package\Credits Related Tasks\MOS Credits UPSERT\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[SourcePublishStatus]"
                           cachedDataType="wstr"
-                          cachedLength="20"
+                          cachedLength="150"
                           cachedName="SourcePublishStatus"
                           externalMetadataColumnId="Package\Credits Related Tasks\MOS Credits UPSERT\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[PublishStatus]"
                           lineageId="Package\Credits Related Tasks\MOS Credits UPSERT\Merge Join.Outputs[Merge Join Output].Columns[SourcePublishStatus]" />
@@ -3691,7 +3691,7 @@ end</property>
                         <inputColumn
                           refId="Package\Credits Related Tasks\MOS Credits UPSERT\Conditional Split.Inputs[Conditional Split Input].Columns[SourceCredits.TalentID]"
                           cachedDataType="wstr"
-                          cachedLength="526"
+                          cachedLength="500"
                           cachedName="SourceCredits.TalentID"
                           cachedSortKeyPosition="1"
                           lineageId="Package\Credits Related Tasks\MOS Credits UPSERT\Merge Join.Outputs[Merge Join Output].Columns[SourceCredits.TalentID]" />
@@ -4080,20 +4080,20 @@ ORDER BY [PBSInternalID]</property>
                         <inputColumn
                           refId="Package\Credits Related Tasks\MOS Credits UPSERT\Merge Join.Inputs[Merge Join Left Input].Columns[Credits.Display.Name]"
                           cachedDataType="wstr"
-                          cachedLength="80"
+                          cachedLength="500"
                           cachedName="Credits.Display.Name"
                           lineageId="Package\Credits Related Tasks\MOS Credits UPSERT\Source Query MOS.Outputs[ADO NET Source Output].Columns[Credits.Display.Name]" />
                         <inputColumn
                           refId="Package\Credits Related Tasks\MOS Credits UPSERT\Merge Join.Inputs[Merge Join Left Input].Columns[Credits.TalentID]"
                           cachedDataType="wstr"
-                          cachedLength="526"
+                          cachedLength="500"
                           cachedName="Credits.TalentID"
                           cachedSortKeyPosition="1"
                           lineageId="Package\Credits Related Tasks\MOS Credits UPSERT\Source Query MOS.Outputs[ADO NET Source Output].Columns[Credits.TalentID]" />
                         <inputColumn
                           refId="Package\Credits Related Tasks\MOS Credits UPSERT\Merge Join.Inputs[Merge Join Left Input].Columns[PublishStatus]"
                           cachedDataType="wstr"
-                          cachedLength="20"
+                          cachedLength="150"
                           cachedName="PublishStatus"
                           lineageId="Package\Credits Related Tasks\MOS Credits UPSERT\Source Query MOS.Outputs[ADO NET Source Output].Columns[PublishStatus]" />
                       </inputColumns>
@@ -4136,7 +4136,7 @@ ORDER BY [PBSInternalID]</property>
                         <outputColumn
                           refId="Package\Credits Related Tasks\MOS Credits UPSERT\Merge Join.Outputs[Merge Join Output].Columns[SourceCredits.Display.Name]"
                           dataType="wstr"
-                          length="80"
+                          length="500"
                           lineageId="Package\Credits Related Tasks\MOS Credits UPSERT\Merge Join.Outputs[Merge Join Output].Columns[SourceCredits.Display.Name]"
                           name="SourceCredits.Display.Name">
                           <properties>
@@ -4150,7 +4150,7 @@ ORDER BY [PBSInternalID]</property>
                         <outputColumn
                           refId="Package\Credits Related Tasks\MOS Credits UPSERT\Merge Join.Outputs[Merge Join Output].Columns[SourceCredits.TalentID]"
                           dataType="wstr"
-                          length="526"
+                          length="500"
                           lineageId="Package\Credits Related Tasks\MOS Credits UPSERT\Merge Join.Outputs[Merge Join Output].Columns[SourceCredits.TalentID]"
                           name="SourceCredits.TalentID"
                           sortKeyPosition="1">
@@ -4193,7 +4193,7 @@ ORDER BY [PBSInternalID]</property>
                         <outputColumn
                           refId="Package\Credits Related Tasks\MOS Credits UPSERT\Merge Join.Outputs[Merge Join Output].Columns[SourcePublishStatus]"
                           dataType="wstr"
-                          length="20"
+                          length="150"
                           lineageId="Package\Credits Related Tasks\MOS Credits UPSERT\Merge Join.Outputs[Merge Join Output].Columns[SourcePublishStatus]"
                           name="SourcePublishStatus">
                           <properties>
@@ -4367,7 +4367,7 @@ values(?,'Credits','pending','insert',null,getdate(),null)</property>
                         <inputColumn
                           refId="Package\Credits Related Tasks\MOS Credits UPSERT\Notification Insert.Inputs[OLE DB Command Input].Columns[SourceCredits.TalentID]"
                           cachedDataType="wstr"
-                          cachedLength="526"
+                          cachedLength="500"
                           cachedName="SourceCredits.TalentID"
                           cachedSortKeyPosition="1"
                           externalMetadataColumnId="Package\Credits Related Tasks\MOS Credits UPSERT\Notification Insert.Inputs[OLE DB Command Input].ExternalColumns[Param_0]"
@@ -4485,7 +4485,7 @@ ORDER BY [Credits.TalentID]</property>
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
                           externalMetadataColumnId="Package\Credits Related Tasks\MOS Credits UPSERT\Source Query MOS.Outputs[ADO NET Source Output].ExternalColumns[Credits.TalentID]"
-                          length="526"
+                          length="500"
                           lineageId="Package\Credits Related Tasks\MOS Credits UPSERT\Source Query MOS.Outputs[ADO NET Source Output].Columns[Credits.TalentID]"
                           name="Credits.TalentID"
                           sortKeyPosition="1"
@@ -4496,7 +4496,7 @@ ORDER BY [Credits.TalentID]</property>
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
                           externalMetadataColumnId="Package\Credits Related Tasks\MOS Credits UPSERT\Source Query MOS.Outputs[ADO NET Source Output].ExternalColumns[Credits.Display.Name]"
-                          length="80"
+                          length="500"
                           lineageId="Package\Credits Related Tasks\MOS Credits UPSERT\Source Query MOS.Outputs[ADO NET Source Output].Columns[Credits.Display.Name]"
                           name="Credits.Display.Name"
                           truncationRowDisposition="FailComponent" />
@@ -4506,7 +4506,7 @@ ORDER BY [Credits.TalentID]</property>
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
                           externalMetadataColumnId="Package\Credits Related Tasks\MOS Credits UPSERT\Source Query MOS.Outputs[ADO NET Source Output].ExternalColumns[PublishStatus]"
-                          length="20"
+                          length="150"
                           lineageId="Package\Credits Related Tasks\MOS Credits UPSERT\Source Query MOS.Outputs[ADO NET Source Output].Columns[PublishStatus]"
                           name="PublishStatus"
                           truncationRowDisposition="FailComponent" />
@@ -4516,17 +4516,17 @@ ORDER BY [Credits.TalentID]</property>
                         <externalMetadataColumn
                           refId="Package\Credits Related Tasks\MOS Credits UPSERT\Source Query MOS.Outputs[ADO NET Source Output].ExternalColumns[Credits.TalentID]"
                           dataType="wstr"
-                          length="526"
+                          length="500"
                           name="Credits.TalentID" />
                         <externalMetadataColumn
                           refId="Package\Credits Related Tasks\MOS Credits UPSERT\Source Query MOS.Outputs[ADO NET Source Output].ExternalColumns[Credits.Display.Name]"
                           dataType="wstr"
-                          length="80"
+                          length="500"
                           name="Credits.Display.Name" />
                         <externalMetadataColumn
                           refId="Package\Credits Related Tasks\MOS Credits UPSERT\Source Query MOS.Outputs[ADO NET Source Output].ExternalColumns[PublishStatus]"
                           dataType="wstr"
-                          length="20"
+                          length="150"
                           name="PublishStatus" />
                       </externalMetadataColumns>
                     </output>
@@ -4586,7 +4586,7 @@ ORDER BY [Credits.TalentID]</property>
                         <inputColumn
                           refId="Package\Credits Related Tasks\MOS Credits UPSERT\Update Records.Inputs[Conditional Split Input].Columns[SourceCredits.Display.Name]"
                           cachedDataType="wstr"
-                          cachedLength="80"
+                          cachedLength="500"
                           cachedName="SourceCredits.Display.Name"
                           lineageId="Package\Credits Related Tasks\MOS Credits UPSERT\Merge Join.Outputs[Merge Join Output].Columns[SourceCredits.Display.Name]" />
                         <inputColumn
@@ -4598,7 +4598,7 @@ ORDER BY [Credits.TalentID]</property>
                         <inputColumn
                           refId="Package\Credits Related Tasks\MOS Credits UPSERT\Update Records.Inputs[Conditional Split Input].Columns[SourcePublishStatus]"
                           cachedDataType="wstr"
-                          cachedLength="20"
+                          cachedLength="150"
                           cachedName="SourcePublishStatus"
                           lineageId="Package\Credits Related Tasks\MOS Credits UPSERT\Merge Join.Outputs[Merge Join Output].Columns[SourcePublishStatus]" />
                         <inputColumn
@@ -4721,7 +4721,7 @@ ORDER BY [Credits.TalentID]</property>
                         <inputColumn
                           refId="Package\Credits Related Tasks\MOS Credits UPSERT\Update records in EMM.Inputs[OLE DB Command Input].Columns[SourceCredits.TalentID]"
                           cachedDataType="wstr"
-                          cachedLength="526"
+                          cachedLength="500"
                           cachedName="SourceCredits.TalentID"
                           cachedSortKeyPosition="1"
                           externalMetadataColumnId="Package\Credits Related Tasks\MOS Credits UPSERT\Update records in EMM.Inputs[OLE DB Command Input].ExternalColumns[@TalentUID]"
@@ -4729,14 +4729,14 @@ ORDER BY [Credits.TalentID]</property>
                         <inputColumn
                           refId="Package\Credits Related Tasks\MOS Credits UPSERT\Update records in EMM.Inputs[OLE DB Command Input].Columns[SourceCredits.Display.Name]"
                           cachedDataType="wstr"
-                          cachedLength="80"
+                          cachedLength="500"
                           cachedName="SourceCredits.Display.Name"
                           externalMetadataColumnId="Package\Credits Related Tasks\MOS Credits UPSERT\Update records in EMM.Inputs[OLE DB Command Input].ExternalColumns[@DisplayName]"
                           lineageId="Package\Credits Related Tasks\MOS Credits UPSERT\Merge Join.Outputs[Merge Join Output].Columns[SourceCredits.Display.Name]" />
                         <inputColumn
                           refId="Package\Credits Related Tasks\MOS Credits UPSERT\Update records in EMM.Inputs[OLE DB Command Input].Columns[SourcePublishStatus]"
                           cachedDataType="wstr"
-                          cachedLength="20"
+                          cachedLength="150"
                           cachedName="SourcePublishStatus"
                           externalMetadataColumnId="Package\Credits Related Tasks\MOS Credits UPSERT\Update records in EMM.Inputs[OLE DB Command Input].ExternalColumns[@PublishStatus]"
                           lineageId="Package\Credits Related Tasks\MOS Credits UPSERT\Merge Join.Outputs[Merge Join Output].Columns[SourcePublishStatus]" />
@@ -9985,21 +9985,21 @@ end</property>
                     <inputColumn
                       refId="Package\MOS Organization UPSERT\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Sourcedomain]"
                       cachedDataType="wstr"
-                      cachedLength="7"
+                      cachedLength="500"
                       cachedName="Sourcedomain"
                       externalMetadataColumnId="Package\MOS Organization UPSERT\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Domain]"
                       lineageId="Package\MOS Organization UPSERT\Merge Join.Outputs[Merge Join Output].Columns[Sourcedomain]" />
                     <inputColumn
                       refId="Package\MOS Organization UPSERT\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[SourceDisplayName]"
                       cachedDataType="wstr"
-                      cachedLength="80"
+                      cachedLength="500"
                       cachedName="SourceDisplayName"
                       externalMetadataColumnId="Package\MOS Organization UPSERT\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[DisplayName]"
                       lineageId="Package\MOS Organization UPSERT\Merge Join.Outputs[Merge Join Output].Columns[SourceDisplayName]" />
                     <inputColumn
                       refId="Package\MOS Organization UPSERT\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[SourcePublishStatus]"
                       cachedDataType="wstr"
-                      cachedLength="20"
+                      cachedLength="150"
                       cachedName="SourcePublishStatus"
                       externalMetadataColumnId="Package\MOS Organization UPSERT\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[PublishStatus]"
                       lineageId="Package\MOS Organization UPSERT\Merge Join.Outputs[Merge Join Output].Columns[SourcePublishStatus]" />
@@ -10676,19 +10676,19 @@ values(?,'Organization','pending','insert',null,getdate(),null)</property>
                     <inputColumn
                       refId="Package\MOS Organization UPSERT\Merge Join.Inputs[Merge Join Left Input].Columns[DisplayName]"
                       cachedDataType="wstr"
-                      cachedLength="80"
+                      cachedLength="500"
                       cachedName="DisplayName"
                       lineageId="Package\MOS Organization UPSERT\Source Query MOS.Outputs[ADO NET Source Output].Columns[DisplayName]" />
                     <inputColumn
                       refId="Package\MOS Organization UPSERT\Merge Join.Inputs[Merge Join Left Input].Columns[domain]"
                       cachedDataType="wstr"
-                      cachedLength="7"
+                      cachedLength="500"
                       cachedName="domain"
                       lineageId="Package\MOS Organization UPSERT\Source Query MOS.Outputs[ADO NET Source Output].Columns[domain]" />
                     <inputColumn
                       refId="Package\MOS Organization UPSERT\Merge Join.Inputs[Merge Join Left Input].Columns[PublishStatus]"
                       cachedDataType="wstr"
-                      cachedLength="20"
+                      cachedLength="150"
                       cachedName="PublishStatus"
                       lineageId="Package\MOS Organization UPSERT\Source Query MOS.Outputs[ADO NET Source Output].Columns[PublishStatus]" />
                   </inputColumns>
@@ -10763,7 +10763,7 @@ values(?,'Organization','pending','insert',null,getdate(),null)</property>
                     <outputColumn
                       refId="Package\MOS Organization UPSERT\Merge Join.Outputs[Merge Join Output].Columns[SourceDisplayName]"
                       dataType="wstr"
-                      length="80"
+                      length="500"
                       lineageId="Package\MOS Organization UPSERT\Merge Join.Outputs[Merge Join Output].Columns[SourceDisplayName]"
                       name="SourceDisplayName">
                       <properties>
@@ -10777,7 +10777,7 @@ values(?,'Organization','pending','insert',null,getdate(),null)</property>
                     <outputColumn
                       refId="Package\MOS Organization UPSERT\Merge Join.Outputs[Merge Join Output].Columns[Sourcedomain]"
                       dataType="wstr"
-                      length="7"
+                      length="500"
                       lineageId="Package\MOS Organization UPSERT\Merge Join.Outputs[Merge Join Output].Columns[Sourcedomain]"
                       name="Sourcedomain">
                       <properties>
@@ -10819,7 +10819,7 @@ values(?,'Organization','pending','insert',null,getdate(),null)</property>
                     <outputColumn
                       refId="Package\MOS Organization UPSERT\Merge Join.Outputs[Merge Join Output].Columns[SourcePublishStatus]"
                       dataType="wstr"
-                      length="20"
+                      length="150"
                       lineageId="Package\MOS Organization UPSERT\Merge Join.Outputs[Merge Join Output].Columns[SourcePublishStatus]"
                       name="SourcePublishStatus">
                       <properties>
@@ -10924,7 +10924,7 @@ values(?,'Organization','pending','insert',null,getdate(),null)</property>
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\MOS Organization UPSERT\Source Query MOS.Outputs[ADO NET Source Output].ExternalColumns[DisplayName]"
-                      length="80"
+                      length="500"
                       lineageId="Package\MOS Organization UPSERT\Source Query MOS.Outputs[ADO NET Source Output].Columns[DisplayName]"
                       name="DisplayName"
                       truncationRowDisposition="FailComponent" />
@@ -10934,7 +10934,7 @@ values(?,'Organization','pending','insert',null,getdate(),null)</property>
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\MOS Organization UPSERT\Source Query MOS.Outputs[ADO NET Source Output].ExternalColumns[domain]"
-                      length="7"
+                      length="500"
                       lineageId="Package\MOS Organization UPSERT\Source Query MOS.Outputs[ADO NET Source Output].Columns[domain]"
                       name="domain"
                       truncationRowDisposition="FailComponent" />
@@ -10944,7 +10944,7 @@ values(?,'Organization','pending','insert',null,getdate(),null)</property>
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\MOS Organization UPSERT\Source Query MOS.Outputs[ADO NET Source Output].ExternalColumns[PublishStatus]"
-                      length="20"
+                      length="150"
                       lineageId="Package\MOS Organization UPSERT\Source Query MOS.Outputs[ADO NET Source Output].Columns[PublishStatus]"
                       name="PublishStatus"
                       truncationRowDisposition="FailComponent" />
@@ -10958,17 +10958,17 @@ values(?,'Organization','pending','insert',null,getdate(),null)</property>
                     <externalMetadataColumn
                       refId="Package\MOS Organization UPSERT\Source Query MOS.Outputs[ADO NET Source Output].ExternalColumns[DisplayName]"
                       dataType="wstr"
-                      length="80"
+                      length="500"
                       name="DisplayName" />
                     <externalMetadataColumn
                       refId="Package\MOS Organization UPSERT\Source Query MOS.Outputs[ADO NET Source Output].ExternalColumns[domain]"
                       dataType="wstr"
-                      length="7"
+                      length="500"
                       name="domain" />
                     <externalMetadataColumn
                       refId="Package\MOS Organization UPSERT\Source Query MOS.Outputs[ADO NET Source Output].ExternalColumns[PublishStatus]"
                       dataType="wstr"
-                      length="20"
+                      length="150"
                       name="PublishStatus" />
                   </externalMetadataColumns>
                 </output>
@@ -11060,7 +11060,7 @@ values(?,'Organization','pending','insert',null,getdate(),null)</property>
                     <inputColumn
                       refId="Package\MOS Organization UPSERT\Update records in EMM.Inputs[OLE DB Command Input].Columns[SourceDisplayName]"
                       cachedDataType="wstr"
-                      cachedLength="80"
+                      cachedLength="500"
                       cachedName="SourceDisplayName"
                       externalMetadataColumnId="Package\MOS Organization UPSERT\Update records in EMM.Inputs[OLE DB Command Input].ExternalColumns[@DisplayName]"
                       lineageId="Package\MOS Organization UPSERT\Merge Join.Outputs[Merge Join Output].Columns[SourceDisplayName]" />
@@ -11073,14 +11073,14 @@ values(?,'Organization','pending','insert',null,getdate(),null)</property>
                     <inputColumn
                       refId="Package\MOS Organization UPSERT\Update records in EMM.Inputs[OLE DB Command Input].Columns[Sourcedomain]"
                       cachedDataType="wstr"
-                      cachedLength="7"
+                      cachedLength="500"
                       cachedName="Sourcedomain"
                       externalMetadataColumnId="Package\MOS Organization UPSERT\Update records in EMM.Inputs[OLE DB Command Input].ExternalColumns[@Domain]"
                       lineageId="Package\MOS Organization UPSERT\Merge Join.Outputs[Merge Join Output].Columns[Sourcedomain]" />
                     <inputColumn
                       refId="Package\MOS Organization UPSERT\Update records in EMM.Inputs[OLE DB Command Input].Columns[SourcePublishStatus]"
                       cachedDataType="wstr"
-                      cachedLength="20"
+                      cachedLength="150"
                       cachedName="SourcePublishStatus"
                       externalMetadataColumnId="Package\MOS Organization UPSERT\Update records in EMM.Inputs[OLE DB Command Input].ExternalColumns[@PublishStatus]"
                       lineageId="Package\MOS Organization UPSERT\Merge Join.Outputs[Merge Join Output].Columns[SourcePublishStatus]" />
@@ -11185,13 +11185,13 @@ values(?,'Organization','pending','insert',null,getdate(),null)</property>
                     <inputColumn
                       refId="Package\MOS Organization UPSERT\Updated Records.Inputs[Conditional Split Input].Columns[SourceDisplayName]"
                       cachedDataType="wstr"
-                      cachedLength="80"
+                      cachedLength="500"
                       cachedName="SourceDisplayName"
                       lineageId="Package\MOS Organization UPSERT\Merge Join.Outputs[Merge Join Output].Columns[SourceDisplayName]" />
                     <inputColumn
                       refId="Package\MOS Organization UPSERT\Updated Records.Inputs[Conditional Split Input].Columns[Sourcedomain]"
                       cachedDataType="wstr"
-                      cachedLength="7"
+                      cachedLength="500"
                       cachedName="Sourcedomain"
                       lineageId="Package\MOS Organization UPSERT\Merge Join.Outputs[Merge Join Output].Columns[Sourcedomain]" />
                     <inputColumn
@@ -11209,7 +11209,7 @@ values(?,'Organization','pending','insert',null,getdate(),null)</property>
                     <inputColumn
                       refId="Package\MOS Organization UPSERT\Updated Records.Inputs[Conditional Split Input].Columns[SourcePublishStatus]"
                       cachedDataType="wstr"
-                      cachedLength="20"
+                      cachedLength="150"
                       cachedName="SourcePublishStatus"
                       lineageId="Package\MOS Organization UPSERT\Merge Join.Outputs[Merge Join Output].Columns[SourcePublishStatus]" />
                     <inputColumn
@@ -21807,7 +21807,7 @@ SELECT distinct 1 as [InternalPBSID]
                         <inputColumn
                           refId="Package\Season Related Tasks\MOS Season\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[SourceSeason.UID]"
                           cachedDataType="wstr"
-                          cachedLength="500"
+                          cachedLength="400"
                           cachedName="SourceSeason.UID"
                           cachedSortKeyPosition="1"
                           externalMetadataColumnId="Package\Season Related Tasks\MOS Season\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Season.UID]"
@@ -21829,7 +21829,7 @@ SELECT distinct 1 as [InternalPBSID]
                         <inputColumn
                           refId="Package\Season Related Tasks\MOS Season\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[SourceSeason.ContentIdentifier]"
                           cachedDataType="wstr"
-                          cachedLength="1000"
+                          cachedLength="500"
                           cachedName="SourceSeason.ContentIdentifier"
                           externalMetadataColumnId="Package\Season Related Tasks\MOS Season\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Season.ContentIdentifier]"
                           lineageId="Package\Season Related Tasks\MOS Season\Merge Join.Outputs[Merge Join Output].Columns[SourceSeason.ContentIdentifier]" />
@@ -21842,7 +21842,7 @@ SELECT distinct 1 as [InternalPBSID]
                         <inputColumn
                           refId="Package\Season Related Tasks\MOS Season\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[SourceSeason.ReleaseDate]"
                           cachedDataType="wstr"
-                          cachedLength="10"
+                          cachedLength="500"
                           cachedName="SourceSeason.ReleaseDate"
                           externalMetadataColumnId="Package\Season Related Tasks\MOS Season\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Season.ReleaseDate]"
                           lineageId="Package\Season Related Tasks\MOS Season\Merge Join.Outputs[Merge Join Output].Columns[SourceSeason.ReleaseDate]" />
@@ -21870,7 +21870,7 @@ SELECT distinct 1 as [InternalPBSID]
                         <inputColumn
                           refId="Package\Season Related Tasks\MOS Season\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[SourceSeason.StructuralType]"
                           cachedDataType="wstr"
-                          cachedLength="11"
+                          cachedLength="500"
                           cachedName="SourceSeason.StructuralType"
                           externalMetadataColumnId="Package\Season Related Tasks\MOS Season\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Season.StructuralType]"
                           lineageId="Package\Season Related Tasks\MOS Season\Merge Join.Outputs[Merge Join Output].Columns[SourceSeason.StructuralType]" />
@@ -21976,7 +21976,7 @@ SELECT distinct 1 as [InternalPBSID]
                         <inputColumn
                           refId="Package\Season Related Tasks\MOS Season\Conditional Split.Inputs[Conditional Split Input].Columns[SourceSeason.UID]"
                           cachedDataType="wstr"
-                          cachedLength="500"
+                          cachedLength="400"
                           cachedName="SourceSeason.UID"
                           cachedSortKeyPosition="1"
                           lineageId="Package\Season Related Tasks\MOS Season\Merge Join.Outputs[Merge Join Output].Columns[SourceSeason.UID]" />
@@ -22616,7 +22616,7 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
                         <inputColumn
                           refId="Package\Season Related Tasks\MOS Season\insert.Inputs[OLE DB Command Input].Columns[SourceSeason.UID]"
                           cachedDataType="wstr"
-                          cachedLength="500"
+                          cachedLength="400"
                           cachedName="SourceSeason.UID"
                           cachedSortKeyPosition="1"
                           externalMetadataColumnId="Package\Season Related Tasks\MOS Season\insert.Inputs[OLE DB Command Input].ExternalColumns[Param_0]"
@@ -22706,7 +22706,7 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
                         <inputColumn
                           refId="Package\Season Related Tasks\MOS Season\Merge Join.Inputs[Merge Join Left Input].Columns[Season.Season Class]"
                           cachedDataType="wstr"
-                          cachedLength="4"
+                          cachedLength="500"
                           cachedName="Season.Season Class"
                           lineageId="Package\Season Related Tasks\MOS Season\Source Query MOS.Outputs[ADO NET Source Output].Columns[Season.Season Class]" />
                         <inputColumn
@@ -22718,7 +22718,7 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
                         <inputColumn
                           refId="Package\Season Related Tasks\MOS Season\Merge Join.Inputs[Merge Join Left Input].Columns[Season.ContentIdentifier]"
                           cachedDataType="wstr"
-                          cachedLength="1000"
+                          cachedLength="500"
                           cachedName="Season.ContentIdentifier"
                           lineageId="Package\Season Related Tasks\MOS Season\Source Query MOS.Outputs[ADO NET Source Output].Columns[Season.ContentIdentifier]" />
                         <inputColumn
@@ -22729,7 +22729,7 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
                         <inputColumn
                           refId="Package\Season Related Tasks\MOS Season\Merge Join.Inputs[Merge Join Left Input].Columns[Season.ReleaseDate]"
                           cachedDataType="wstr"
-                          cachedLength="10"
+                          cachedLength="500"
                           cachedName="Season.ReleaseDate"
                           lineageId="Package\Season Related Tasks\MOS Season\Source Query MOS.Outputs[ADO NET Source Output].Columns[Season.ReleaseDate]" />
                         <inputColumn
@@ -22747,7 +22747,7 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
                         <inputColumn
                           refId="Package\Season Related Tasks\MOS Season\Merge Join.Inputs[Merge Join Left Input].Columns[Season.UID]"
                           cachedDataType="wstr"
-                          cachedLength="500"
+                          cachedLength="400"
                           cachedName="Season.UID"
                           cachedSortKeyPosition="1"
                           lineageId="Package\Season Related Tasks\MOS Season\Source Query MOS.Outputs[ADO NET Source Output].Columns[Season.UID]" />
@@ -22760,7 +22760,7 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
                         <inputColumn
                           refId="Package\Season Related Tasks\MOS Season\Merge Join.Inputs[Merge Join Left Input].Columns[Season.StructuralType]"
                           cachedDataType="wstr"
-                          cachedLength="11"
+                          cachedLength="500"
                           cachedName="Season.StructuralType"
                           lineageId="Package\Season Related Tasks\MOS Season\Source Query MOS.Outputs[ADO NET Source Output].Columns[Season.StructuralType]" />
                       </inputColumns>
@@ -22872,7 +22872,7 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
                         <outputColumn
                           refId="Package\Season Related Tasks\MOS Season\Merge Join.Outputs[Merge Join Output].Columns[SourceSeason.ContentIdentifier]"
                           dataType="wstr"
-                          length="1000"
+                          length="500"
                           lineageId="Package\Season Related Tasks\MOS Season\Merge Join.Outputs[Merge Join Output].Columns[SourceSeason.ContentIdentifier]"
                           name="SourceSeason.ContentIdentifier">
                           <properties>
@@ -22899,7 +22899,7 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
                         <outputColumn
                           refId="Package\Season Related Tasks\MOS Season\Merge Join.Outputs[Merge Join Output].Columns[SourceSeason.ReleaseDate]"
                           dataType="wstr"
-                          length="10"
+                          length="500"
                           lineageId="Package\Season Related Tasks\MOS Season\Merge Join.Outputs[Merge Join Output].Columns[SourceSeason.ReleaseDate]"
                           name="SourceSeason.ReleaseDate">
                           <properties>
@@ -22955,7 +22955,7 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
                         <outputColumn
                           refId="Package\Season Related Tasks\MOS Season\Merge Join.Outputs[Merge Join Output].Columns[SourceSeason.UID]"
                           dataType="wstr"
-                          length="500"
+                          length="400"
                           lineageId="Package\Season Related Tasks\MOS Season\Merge Join.Outputs[Merge Join Output].Columns[SourceSeason.UID]"
                           name="SourceSeason.UID"
                           sortKeyPosition="1">
@@ -23109,7 +23109,7 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
                         <outputColumn
                           refId="Package\Season Related Tasks\MOS Season\Merge Join.Outputs[Merge Join Output].Columns[SourceSeason.StructuralType]"
                           dataType="wstr"
-                          length="11"
+                          length="500"
                           lineageId="Package\Season Related Tasks\MOS Season\Merge Join.Outputs[Merge Join Output].Columns[SourceSeason.StructuralType]"
                           name="SourceSeason.StructuralType">
                           <properties>
@@ -23195,7 +23195,7 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
                           externalMetadataColumnId="Package\Season Related Tasks\MOS Season\Source Query MOS.Outputs[ADO NET Source Output].ExternalColumns[Season.UID]"
-                          length="500"
+                          length="400"
                           lineageId="Package\Season Related Tasks\MOS Season\Source Query MOS.Outputs[ADO NET Source Output].Columns[Season.UID]"
                           name="Season.UID"
                           sortKeyPosition="1"
@@ -23206,7 +23206,7 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
                           externalMetadataColumnId="Package\Season Related Tasks\MOS Season\Source Query MOS.Outputs[ADO NET Source Output].ExternalColumns[Season.Season Class]"
-                          length="4"
+                          length="500"
                           lineageId="Package\Season Related Tasks\MOS Season\Source Query MOS.Outputs[ADO NET Source Output].Columns[Season.Season Class]"
                           name="Season.Season Class"
                           truncationRowDisposition="FailComponent" />
@@ -23226,7 +23226,7 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
                           externalMetadataColumnId="Package\Season Related Tasks\MOS Season\Source Query MOS.Outputs[ADO NET Source Output].ExternalColumns[Season.ContentIdentifier]"
-                          length="1000"
+                          length="500"
                           lineageId="Package\Season Related Tasks\MOS Season\Source Query MOS.Outputs[ADO NET Source Output].Columns[Season.ContentIdentifier]"
                           name="Season.ContentIdentifier"
                           truncationRowDisposition="FailComponent" />
@@ -23245,7 +23245,7 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
                           externalMetadataColumnId="Package\Season Related Tasks\MOS Season\Source Query MOS.Outputs[ADO NET Source Output].ExternalColumns[Season.ReleaseDate]"
-                          length="10"
+                          length="500"
                           lineageId="Package\Season Related Tasks\MOS Season\Source Query MOS.Outputs[ADO NET Source Output].Columns[Season.ReleaseDate]"
                           name="Season.ReleaseDate"
                           truncationRowDisposition="FailComponent" />
@@ -23285,7 +23285,7 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
                           externalMetadataColumnId="Package\Season Related Tasks\MOS Season\Source Query MOS.Outputs[ADO NET Source Output].ExternalColumns[Season.StructuralType]"
-                          length="11"
+                          length="500"
                           lineageId="Package\Season Related Tasks\MOS Season\Source Query MOS.Outputs[ADO NET Source Output].Columns[Season.StructuralType]"
                           name="Season.StructuralType"
                           truncationRowDisposition="FailComponent" />
@@ -23295,12 +23295,12 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
                         <externalMetadataColumn
                           refId="Package\Season Related Tasks\MOS Season\Source Query MOS.Outputs[ADO NET Source Output].ExternalColumns[Season.UID]"
                           dataType="wstr"
-                          length="500"
+                          length="400"
                           name="Season.UID" />
                         <externalMetadataColumn
                           refId="Package\Season Related Tasks\MOS Season\Source Query MOS.Outputs[ADO NET Source Output].ExternalColumns[Season.Season Class]"
                           dataType="wstr"
-                          length="4"
+                          length="500"
                           name="Season.Season Class" />
                         <externalMetadataColumn
                           refId="Package\Season Related Tasks\MOS Season\Source Query MOS.Outputs[ADO NET Source Output].ExternalColumns[Season.Referent Type]"
@@ -23310,7 +23310,7 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
                         <externalMetadataColumn
                           refId="Package\Season Related Tasks\MOS Season\Source Query MOS.Outputs[ADO NET Source Output].ExternalColumns[Season.ContentIdentifier]"
                           dataType="wstr"
-                          length="1000"
+                          length="500"
                           name="Season.ContentIdentifier" />
                         <externalMetadataColumn
                           refId="Package\Season Related Tasks\MOS Season\Source Query MOS.Outputs[ADO NET Source Output].ExternalColumns[Season.Sequence.Number]"
@@ -23319,7 +23319,7 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
                         <externalMetadataColumn
                           refId="Package\Season Related Tasks\MOS Season\Source Query MOS.Outputs[ADO NET Source Output].ExternalColumns[Season.ReleaseDate]"
                           dataType="wstr"
-                          length="10"
+                          length="500"
                           name="Season.ReleaseDate" />
                         <externalMetadataColumn
                           refId="Package\Season Related Tasks\MOS Season\Source Query MOS.Outputs[ADO NET Source Output].ExternalColumns[EMMSeason.ParentID]"
@@ -23339,7 +23339,7 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
                         <externalMetadataColumn
                           refId="Package\Season Related Tasks\MOS Season\Source Query MOS.Outputs[ADO NET Source Output].ExternalColumns[Season.StructuralType]"
                           dataType="wstr"
-                          length="11"
+                          length="500"
                           name="Season.StructuralType" />
                       </externalMetadataColumns>
                     </output>
@@ -23467,7 +23467,7 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
                         <inputColumn
                           refId="Package\Season Related Tasks\MOS Season\Update Season in EMM.Inputs[OLE DB Command Input].Columns[SourceSeason.UID]"
                           cachedDataType="wstr"
-                          cachedLength="500"
+                          cachedLength="400"
                           cachedName="SourceSeason.UID"
                           cachedSortKeyPosition="1"
                           externalMetadataColumnId="Package\Season Related Tasks\MOS Season\Update Season in EMM.Inputs[OLE DB Command Input].ExternalColumns[@UID]"
@@ -23489,7 +23489,7 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
                         <inputColumn
                           refId="Package\Season Related Tasks\MOS Season\Update Season in EMM.Inputs[OLE DB Command Input].Columns[SourceSeason.ContentIdentifier]"
                           cachedDataType="wstr"
-                          cachedLength="1000"
+                          cachedLength="500"
                           cachedName="SourceSeason.ContentIdentifier"
                           externalMetadataColumnId="Package\Season Related Tasks\MOS Season\Update Season in EMM.Inputs[OLE DB Command Input].ExternalColumns[@ContentIdentifier]"
                           lineageId="Package\Season Related Tasks\MOS Season\Merge Join.Outputs[Merge Join Output].Columns[SourceSeason.ContentIdentifier]" />
@@ -23502,7 +23502,7 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
                         <inputColumn
                           refId="Package\Season Related Tasks\MOS Season\Update Season in EMM.Inputs[OLE DB Command Input].Columns[SourceSeason.ReleaseDate]"
                           cachedDataType="wstr"
-                          cachedLength="10"
+                          cachedLength="500"
                           cachedName="SourceSeason.ReleaseDate"
                           externalMetadataColumnId="Package\Season Related Tasks\MOS Season\Update Season in EMM.Inputs[OLE DB Command Input].ExternalColumns[@ReleaseDate]"
                           lineageId="Package\Season Related Tasks\MOS Season\Merge Join.Outputs[Merge Join Output].Columns[SourceSeason.ReleaseDate]" />
@@ -23530,7 +23530,7 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
                         <inputColumn
                           refId="Package\Season Related Tasks\MOS Season\Update Season in EMM.Inputs[OLE DB Command Input].Columns[SourceSeason.StructuralType]"
                           cachedDataType="wstr"
-                          cachedLength="11"
+                          cachedLength="500"
                           cachedName="SourceSeason.StructuralType"
                           externalMetadataColumnId="Package\Season Related Tasks\MOS Season\Update Season in EMM.Inputs[OLE DB Command Input].ExternalColumns[@StructuralType]"
                           lineageId="Package\Season Related Tasks\MOS Season\Merge Join.Outputs[Merge Join Output].Columns[SourceSeason.StructuralType]" />
@@ -23719,7 +23719,7 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
                         <inputColumn
                           refId="Package\Season Related Tasks\MOS Season\Updated Records.Inputs[Conditional Split Input].Columns[SourceSeason.ContentIdentifier]"
                           cachedDataType="wstr"
-                          cachedLength="1000"
+                          cachedLength="500"
                           cachedName="SourceSeason.ContentIdentifier"
                           lineageId="Package\Season Related Tasks\MOS Season\Merge Join.Outputs[Merge Join Output].Columns[SourceSeason.ContentIdentifier]" />
                         <inputColumn
@@ -23730,7 +23730,7 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
                         <inputColumn
                           refId="Package\Season Related Tasks\MOS Season\Updated Records.Inputs[Conditional Split Input].Columns[SourceSeason.ReleaseDate]"
                           cachedDataType="wstr"
-                          cachedLength="10"
+                          cachedLength="500"
                           cachedName="SourceSeason.ReleaseDate"
                           lineageId="Package\Season Related Tasks\MOS Season\Merge Join.Outputs[Merge Join Output].Columns[SourceSeason.ReleaseDate]" />
                         <inputColumn
@@ -23807,7 +23807,7 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
                         <inputColumn
                           refId="Package\Season Related Tasks\MOS Season\Updated Records.Inputs[Conditional Split Input].Columns[SourceSeason.StructuralType]"
                           cachedDataType="wstr"
-                          cachedLength="11"
+                          cachedLength="500"
                           cachedName="SourceSeason.StructuralType"
                           lineageId="Package\Season Related Tasks\MOS Season\Merge Join.Outputs[Merge Join Output].Columns[SourceSeason.StructuralType]" />
                       </inputColumns>
@@ -24024,7 +24024,7 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
           HeaderHeight="43"
           IsExpanded="False"
           PanelSize="237,401"
-          Size="237,43"
+          Size="226,43"
           Id="Package\Compilation Related Tsaks"
           TopLeft="459.333333333333,632.333333333333" />
         <NodeLayout
@@ -24037,9 +24037,9 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
           TopLeft="25,102" />
         <ContainerLayout
           HeaderHeight="43"
-          IsExpanded="False"
+          IsExpanded="True"
           PanelSize="243,214"
-          Size="243,43"
+          Size="243,257"
           Id="Package\Credits Related Tasks"
           TopLeft="1371.28571428571,635" />
         <NodeLayout
@@ -24048,9 +24048,9 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
           TopLeft="50,4" />
         <ContainerLayout
           HeaderHeight="43"
-          IsExpanded="True"
+          IsExpanded="False"
           PanelSize="401,409"
-          Size="401,452"
+          Size="401,43"
           Id="Package\Episode Related Tasks"
           TopLeft="20,631.333333333333" />
         <NodeLayout
@@ -24231,9 +24231,9 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
         </EdgeLayout>
         <ContainerLayout
           HeaderHeight="43"
-          IsExpanded="False"
+          IsExpanded="True"
           PanelSize="416,329"
-          Size="204,43"
+          Size="416,372"
           Id="Package\Season Related Tasks"
           TopLeft="722,632" />
       </GraphLayout>
@@ -24335,9 +24335,7 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -24443,9 +24441,7 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -24503,9 +24499,7 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -24539,9 +24533,7 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -24667,9 +24659,7 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -24763,9 +24753,7 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -24823,9 +24811,7 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -24859,9 +24845,7 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -25003,9 +24987,7 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -25039,9 +25021,7 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -25147,9 +25127,7 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -25207,9 +25185,7 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -25243,9 +25219,7 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -25903,9 +25877,7 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -25939,9 +25911,7 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -26023,9 +25993,7 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -26083,9 +26051,7 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -26119,9 +26085,7 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
