@@ -12,8 +12,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="MOSReload"
   DTS:PackageType="5"
-  DTS:VersionBuild="307"
-  DTS:VersionGUID="{3D1B696C-AFBD-4CA2-BC9F-36F11861DF40}">
+  DTS:VersionBuild="308"
+  DTS:VersionGUID="{889C352F-6EDF-4FCE-9F65-A92B6F3053DF}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">6</DTS:Property>
   <DTS:ConnectionManagers>
@@ -24,11 +24,11 @@
       DTS:ObjectName="db19-uat.EMM_Changes.mosuser">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=db19;User ID=mosuser;Initial Catalog=MBank-Staging-TEST;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
+          DTS:ConnectionString="Data Source=db19-uat;User ID=mosuser;Initial Catalog=MBank-Staging-TEST;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAFh6t3bNFs0KNgS7+L+SC4QAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAbfuQL/30hNASfYyWJUZuoAAAAAASAAACgAAAAEAAAADtr5q1zvwaAkuasBzjwIoIYAAAALFS56AuXL+Za2YCofhqdftDX0Ke3V+uFFAAAAJlxH63GWuw0iomBRcbNtB7nSoe6</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAFh6t3bNFs0KNgS7+L+SC4QAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAB3n4bYDdhHrCl1tFUygBCNAAAAAASAAACgAAAAEAAAAPI7NvvuVE8MEO82xiyux8kYAAAAbwtKR+Yj73Wih3DfebRHoFAGAjLhUbqIFAAAADO6svuYdRniE1YboPhhHlgvmD/Z</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -39,11 +39,11 @@
       DTS:ObjectName="db19-uat.MOS.mosuser">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=db19;User ID=mosuser;Initial Catalog=&quot;MBank-Staging-TEST&quot;;Persist Security Info=True;Application Name=SSIS-MOSTablesLoad-{638E68F5-0981-491A-B5FB-6C9504D69EF0}db19-uat.MOS.mosuser;">
+          DTS:ConnectionString="Data Source=db19-uat;User ID=mosuser;Initial Catalog=MBank-Staging-TEST;Persist Security Info=True;Application Name=SSIS-MOSTablesLoad-{638E68F5-0981-491A-B5FB-6C9504D69EF0}db19-uat.MOS.mosuser;">
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAFh6t3bNFs0KNgS7+L+SC4QAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAbhmzKAbTcTU+CLEtxSNyeAAAAAASAAACgAAAAEAAAALagKULrGA0vyfOUrBzDan8YAAAA57IBJ0q/bVpZcba8xwjQxS+gdylpDTFOFAAAAC9nWCNE+Jz6VI4s8/cOJyKJoquv</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAFh6t3bNFs0KNgS7+L+SC4QAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADejpGwGCG/FNh5JiWoU0ogAAAAAASAAACgAAAAEAAAAFxNafo2RgkLOslQckunc5cYAAAAcR7lihVCrg8fhMuo0QkxtdbMhEDyMGSaFAAAAEjZEtrEmrSgftckuZeAKdh3zACq</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -58,7 +58,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAFh6t3bNFs0KNgS7+L+SC4QAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADPfiJEggxWtLJ23MXY1KHEAAAAAASAAACgAAAAEAAAANvWgjWAv87WDVviHwcqYbcYAAAAkXETyTCq/NOJu94vYt0Fl/odzKUpOvOUFAAAAKEIXrVqcuHH6lgmRkYDCkNw/VRC</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAFh6t3bNFs0KNgS7+L+SC4QAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACYmrb5Edkjpf0q5na5d6lfAAAAAASAAACgAAAAEAAAAIXUyvdzcGY1oQXh0NjuW5EYAAAACtraa51ecAK74HDJ+EUtLGdN12keSrIKFAAAAPbIwRoiNf0e7UTrcN1X9NI60Si0</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -73,7 +73,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAFh6t3bNFs0KNgS7+L+SC4QAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAapbOSUhWzEhmR29o1D+x1AAAAAASAAACgAAAAEAAAAE2x1y3BZcyMmz6HOg4KkaYYAAAA3JMB7ZPNsnaUVkVRcQR5YcI3e/JbFnGyFAAAABeKRRsm7YGmXOP9IU7vyvyr9U8v</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAFh6t3bNFs0KNgS7+L+SC4QAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACoVm0YOPh07yBjYtVV2N5lAAAAAASAAACgAAAAEAAAABHmJGVtJ7rHqkckZNk32nsYAAAAeht5ZGb9BP0uUANdMCtXAGxJ4eqicU9AFAAAAOpUfoDr9+M2H4KLhdHhbdcnq4OU</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
