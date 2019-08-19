@@ -10,7 +10,7 @@
     <ConfiguredValue></ConfiguredValue>
   </Configuration>
   <Configuration ConfiguredType="Property" Path="\Package.Connections[ADO.NET-Rightsline].Properties[InitialCatalog]" ValueType="String">
-    <ConfiguredValue>RightsLineETL-Light-DM-Cycle4-Sprint5-Migration</ConfiguredValue>
+    <ConfiguredValue>RightsLineETL-Migration-LaunchCritical</ConfiguredValue>
   </Configuration>
   <Configuration ConfiguredType="Property" Path="\Package.Connections[ADO.NET-Rightsline].Properties[Name]" ValueType="String">
     <ConfiguredValue>ADO.NET-Rightsline</ConfiguredValue>
@@ -130,7 +130,7 @@
     <ConfiguredValue></ConfiguredValue>
   </Configuration>
   <Configuration ConfiguredType="Property" Path="\Package.Connections[Rightsline-Dest].Properties[InitialCatalog]" ValueType="String">
-    <ConfiguredValue>RightsLineETL-Light-DM-Cycle4-Sprint5-Migration</ConfiguredValue>
+    <ConfiguredValue>RightsLineETL-Migration-LaunchCritical</ConfiguredValue>
   </Configuration>
   <Configuration ConfiguredType="Property" Path="\Package.Connections[Rightsline-Dest].Properties[Name]" ValueType="String">
     <ConfiguredValue>Rightsline-Dest</ConfiguredValue>
