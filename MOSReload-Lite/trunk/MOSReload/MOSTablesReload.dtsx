@@ -12,8 +12,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="MOSTablesReload"
   DTS:PackageType="5"
-  DTS:VersionBuild="56"
-  DTS:VersionGUID="{303DF2CF-53CB-4221-9FFE-744FE5F6A982}">
+  DTS:VersionBuild="57"
+  DTS:VersionGUID="{B3EE6C86-F5AA-49EC-850A-3F924CF248EE}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">6</DTS:Property>
   <DTS:ConnectionManagers>
@@ -28,7 +28,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAFh6t3bNFs0KNgS7+L+SC4QAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACT0Z2MPp992PCWaAhmSpmWAAAAAASAAACgAAAAEAAAABv9fgO1yKiXl22SVenKZ/oYAAAAq24YkfKSXwQTpBuoc8rTlqQkaEx/wyboFAAAAKJ6Rbwj1fzWu4K+XhoNYj2PCs7b</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAXXUpcuYAN0e936E+mbOjpgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADIVBrDK4JdJhr0R6Ua7fGGAAAAAASAAACgAAAAEAAAAAkzPRoayxc/9YK+y1vJ4XsYAAAANLC9gpi8u0oQYIdg9XnR2D8urtCFCyVhFAAAAH8RBn3xEroawediHVmlMRUGlvNk</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -43,7 +43,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAFh6t3bNFs0KNgS7+L+SC4QAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADJ3ZoTjn/8D/tlpXCEIS8+AAAAAASAAACgAAAAEAAAAOUPC1givFO6ejcqkUIzu7wYAAAAi5vca7fwzE/qAAkHiTEM5i6uD0RJEg39FAAAAOv5ILrTBZaoP8ppk7RlhdEHL1yC</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAXXUpcuYAN0e936E+mbOjpgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAcSevjG/YDOaGO5NKA2nkwAAAAAASAAACgAAAAEAAAAKoLweE2t0MAQ8FgYGxAW5YYAAAAzqG66HTkCGYO7jDFs0mmleKhME6SpB34FAAAACI9JPdOpd6RJWAL8aaQ9RIeFyzV</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -58,7 +58,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAFh6t3bNFs0KNgS7+L+SC4QAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACIEkGhfMd2gh8r34Nx6RxlAAAAAASAAACgAAAAEAAAAJ+NzeSagBSQ9LWZ0f9Ali0YAAAAgKEIQV6Wmsfq72gNFzznR04TRVKVvFQcFAAAAHXmOfW/W7Ci/qMysgeR/B3hkfSy</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAXXUpcuYAN0e936E+mbOjpgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAWMttJ2GZRmt47ylrvFfH3AAAAAASAAACgAAAAEAAAAHq6sisrvyya56TFSM+dxugYAAAA5XKGx+HxvbFNmY6J2Efm/VLPFqBnITF4FAAAANrj4NLeEwwfENolGDnConv0AoOZ</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -7710,7 +7710,7 @@ join	PBS.vwMOSSeriesPerAsset b  on b.[EMMSeries.UID] = a.[EMMEpisode.SeriesID]
     design-time-name="Package">
     <LayoutInfo>
       <GraphLayout
-        Capacity="64" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="64" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="153,42"
           Id="Package\Constraint Related Tasks\Load Constraint"
@@ -7745,6 +7745,14 @@ join	PBS.vwMOSSeriesPerAsset b  on b.[EMMSeries.UID] = a.[EMMEpisode.SeriesID]
           Size="158,42"
           Id="Package\Load MOSUsage"
           TopLeft="937,182" />
+        <NodeLayout
+          Size="171,42"
+          Id="Package\Load Series Credits"
+          TopLeft="375,679" />
+        <NodeLayout
+          Size="211,42"
+          Id="Package\Load SeriesCredits Producer"
+          TopLeft="601,678" />
         <NodeLayout
           Size="190,42"
           Id="Package\Manifestation Related Tasks\Load MOSManifestation"
@@ -7787,6 +7795,22 @@ join	PBS.vwMOSSeriesPerAsset b  on b.[EMMSeries.UID] = a.[EMMEpisode.SeriesID]
           Id="Package\Truncate Tables"
           TopLeft="712,382" />
         <NodeLayout
+          Size="159,42"
+          Id="Package\xref Episode Org"
+          TopLeft="448,59" />
+        <NodeLayout
+          Size="173,42"
+          Id="Package\xref Epsiode Credits"
+          TopLeft="838,57" />
+        <NodeLayout
+          Size="147,42"
+          Id="Package\xref Offer Org"
+          TopLeft="638,60" />
+        <NodeLayout
+          Size="151,42"
+          Id="Package\xref Series Org"
+          TopLeft="104,673" />
+        <NodeLayout
           Size="236,42"
           Id="Package\xref_Organization Related Tasks\Ceanup Nulls in xref Organization"
           TopLeft="5.5,107" />
@@ -7813,7 +7837,9 @@ join	PBS.vwMOSSeriesPerAsset b  on b.[EMMSeries.UID] = a.[EMMEpisode.SeriesID]
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <ContainerLayout
@@ -7917,6 +7943,40 @@ join	PBS.vwMOSSeriesPerAsset b  on b.[EMMSeries.UID] = a.[EMMEpisode.SeriesID]
                     Point3="-269.3,63.5324305060584" />
                   <mssgle:LineSegment
                     End="-269.3,125.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 10]"
+          TopLeft="807.875,424">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-101.375,254"
+              Start="0,0"
+              End="-101.375,246.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,105.919487648673" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,105.919487648673"
+                    Point2="0,109.919487648673"
+                    Point3="-4,109.919487648673" />
+                  <mssgle:LineSegment
+                    End="-97.375,109.919487648673" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-97.375,109.919487648673"
+                    Point2="-101.375,109.919487648673"
+                    Point3="-101.375,113.919487648673" />
+                  <mssgle:LineSegment
+                    End="-101.375,246.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -8117,10 +8177,6 @@ join	PBS.vwMOSSeriesPerAsset b  on b.[EMMSeries.UID] = a.[EMMEpisode.SeriesID]
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="159,42"
-          Id="Package\xref Episode Org"
-          TopLeft="448,59" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 5]"
           TopLeft="527.5,101">
@@ -8155,10 +8211,6 @@ join	PBS.vwMOSSeriesPerAsset b  on b.[EMMSeries.UID] = a.[EMMEpisode.SeriesID]
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="147,42"
-          Id="Package\xref Offer Org"
-          TopLeft="638,60" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 6]"
           TopLeft="711.5,102">
@@ -8193,10 +8245,6 @@ join	PBS.vwMOSSeriesPerAsset b  on b.[EMMSeries.UID] = a.[EMMEpisode.SeriesID]
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="173,42"
-          Id="Package\xref Epsiode Credits"
-          TopLeft="838,57" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 7]"
           TopLeft="924.5,99">
@@ -8231,14 +8279,6 @@ join	PBS.vwMOSSeriesPerAsset b  on b.[EMMSeries.UID] = a.[EMMEpisode.SeriesID]
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="151,42"
-          Id="Package\xref Series Org"
-          TopLeft="104,673" />
-        <NodeLayout
-          Size="171,42"
-          Id="Package\Load Series Credits"
-          TopLeft="375,679" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 8]"
           TopLeft="740.5,424">
@@ -8299,44 +8339,6 @@ join	PBS.vwMOSSeriesPerAsset b  on b.[EMMSeries.UID] = a.[EMMEpisode.SeriesID]
                     Point3="-318.5,122.235294117647" />
                   <mssgle:LineSegment
                     End="-318.5,247.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="211,42"
-          Id="Package\Load SeriesCredits Producer"
-          TopLeft="601,678" />
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 10]"
-          TopLeft="807.875,424">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-101.375,254"
-              Start="0,0"
-              End="-101.375,246.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,105.919487648673" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,105.919487648673"
-                    Point2="0,109.919487648673"
-                    Point3="-4,109.919487648673" />
-                  <mssgle:LineSegment
-                    End="-97.375,109.919487648673" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-97.375,109.919487648673"
-                    Point2="-101.375,109.919487648673"
-                    Point3="-101.375,113.919487648673" />
-                  <mssgle:LineSegment
-                    End="-101.375,246.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -8619,6 +8621,106 @@ join	PBS.vwMOSSeriesPerAsset b  on b.[EMMSeries.UID] = a.[EMMEpisode.SeriesID]
     </LayoutInfo>
   </TaskHost>
   <TaskHost
+    design-time-name="Package\Load Series Credits">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="181,42"
+          Id="Package\Load Series Credits\ADO NET Destination"
+          TopLeft="166,236" />
+        <NodeLayout
+          Size="158,42"
+          Id="Package\Load Series Credits\ADO NET Source"
+          TopLeft="149,71" />
+        <EdgeLayout
+          Id="Package\Load Series Credits.Paths[ADO NET Source Output]"
+          TopLeft="228,113">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="28.5,123"
+              Start="0,0"
+              End="28.5,115.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,57.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,57.5"
+                    Point2="0,61.5"
+                    Point3="4,61.5" />
+                  <mssgle:LineSegment
+                    End="24.5,61.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="24.5,61.5"
+                    Point2="28.5,61.5"
+                    Point3="28.5,65.5" />
+                  <mssgle:LineSegment
+                    End="28.5,115.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <TaskHost
+    design-time-name="Package\Load SeriesCredits Producer">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="181,42"
+          Id="Package\Load SeriesCredits Producer\ADO NET Destination"
+          TopLeft="284,261" />
+        <NodeLayout
+          Size="160,42"
+          Id="Package\Load SeriesCredits Producer\ADO NET Source"
+          TopLeft="286,116" />
+        <EdgeLayout
+          Id="Package\Load SeriesCredits Producer.Paths[ADO NET Source Output]"
+          TopLeft="366,158">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="8.5,103"
+              Start="0,0"
+              End="8.5,95.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,47.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,47.5"
+                    Point2="0,51.5"
+                    Point3="4,51.5" />
+                  <mssgle:LineSegment
+                    End="4.5,51.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="4.5,51.5"
+                    Point2="8.5,51.5"
+                    Point3="8.5,55.5" />
+                  <mssgle:LineSegment
+                    End="8.5,95.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <TaskHost
     design-time-name="Package\Manifestation Related Tasks\Load MOSManifestation">
     <LayoutInfo>
       <GraphLayout
@@ -8815,52 +8917,6 @@ join	PBS.vwMOSSeriesPerAsset b  on b.[EMMSeries.UID] = a.[EMMEpisode.SeriesID]
     </LayoutInfo>
   </TaskHost>
   <TaskHost
-    design-time-name="Package\xref_Organization Related Tasks\Load xref_Organization">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="179,42"
-          Id="Package\xref_Organization Related Tasks\Load xref_Organization\ADO NET Destination"
-          TopLeft="231,286" />
-        <NodeLayout
-          Size="158,42"
-          Id="Package\xref_Organization Related Tasks\Load xref_Organization\ADO NET Source"
-          TopLeft="242,130" />
-        <EdgeLayout
-          Id="Package\xref_Organization Related Tasks\Load xref_Organization.Paths[ADO NET Source Output]"
-          TopLeft="320.75,172">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,114"
-              Start="0,0"
-              End="0,106.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,106.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\xref_Organization Related Tasks\Load xref_Organization\ADO NET Source">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <TaskHost
     design-time-name="Package\xref Episode Org">
     <LayoutInfo>
       <GraphLayout
@@ -8911,14 +8967,6 @@ join	PBS.vwMOSSeriesPerAsset b  on b.[EMMSeries.UID] = a.[EMMEpisode.SeriesID]
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\xref Episode Org\ADO NET Source">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
     design-time-name="Package\xref Episode Org\ADO NET Destination">
     <Properties>
       <Property>
@@ -8926,6 +8974,52 @@ join	PBS.vwMOSSeriesPerAsset b  on b.[EMMSeries.UID] = a.[EMMEpisode.SeriesID]
       </Property>
     </Properties>
   </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\xref Episode Org\ADO NET Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\xref Epsiode Credits">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="181,42"
+          Id="Package\xref Epsiode Credits\ADO NET Destination"
+          TopLeft="159,246" />
+        <NodeLayout
+          Size="160,42"
+          Id="Package\xref Epsiode Credits\ADO NET Source"
+          TopLeft="172,69" />
+        <EdgeLayout
+          Id="Package\xref Epsiode Credits.Paths[ADO NET Source Output]"
+          TopLeft="250.75,111">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,135"
+              Start="0,0"
+              End="0,127.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,127.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
   <TaskHost
     design-time-name="Package\xref Offer Org">
     <LayoutInfo>
@@ -8965,44 +9059,6 @@ join	PBS.vwMOSSeriesPerAsset b  on b.[EMMSeries.UID] = a.[EMMEpisode.SeriesID]
                     Point3="51.5,58" />
                   <mssgle:LineSegment
                     End="51.5,100.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <TaskHost
-    design-time-name="Package\xref Epsiode Credits">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="181,42"
-          Id="Package\xref Epsiode Credits\ADO NET Destination"
-          TopLeft="159,246" />
-        <NodeLayout
-          Size="160,42"
-          Id="Package\xref Epsiode Credits\ADO NET Source"
-          TopLeft="172,69" />
-        <EdgeLayout
-          Id="Package\xref Epsiode Credits.Paths[ADO NET Source Output]"
-          TopLeft="250.75,111">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,135"
-              Start="0,0"
-              End="0,127.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,127.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -9065,44 +9121,32 @@ join	PBS.vwMOSSeriesPerAsset b  on b.[EMMSeries.UID] = a.[EMMEpisode.SeriesID]
     </LayoutInfo>
   </TaskHost>
   <TaskHost
-    design-time-name="Package\Load Series Credits">
+    design-time-name="Package\xref_Organization Related Tasks\Load xref_Organization">
     <LayoutInfo>
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="181,42"
-          Id="Package\Load Series Credits\ADO NET Destination"
-          TopLeft="166,236" />
+          Size="179,42"
+          Id="Package\xref_Organization Related Tasks\Load xref_Organization\ADO NET Destination"
+          TopLeft="231,286" />
         <NodeLayout
           Size="158,42"
-          Id="Package\Load Series Credits\ADO NET Source"
-          TopLeft="149,71" />
+          Id="Package\xref_Organization Related Tasks\Load xref_Organization\ADO NET Source"
+          TopLeft="242,130" />
         <EdgeLayout
-          Id="Package\Load Series Credits.Paths[ADO NET Source Output]"
-          TopLeft="228,113">
+          Id="Package\xref_Organization Related Tasks\Load xref_Organization.Paths[ADO NET Source Output]"
+          TopLeft="320.75,172">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="28.5,123"
+              EndConnector="0,114"
               Start="0,0"
-              End="28.5,115.5">
+              End="0,106.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,57.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,57.5"
-                    Point2="0,61.5"
-                    Point3="4,61.5" />
-                  <mssgle:LineSegment
-                    End="24.5,61.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="24.5,61.5"
-                    Point2="28.5,61.5"
-                    Point3="28.5,65.5" />
-                  <mssgle:LineSegment
-                    End="28.5,115.5" />
+                    End="0,106.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -9114,55 +9158,13 @@ join	PBS.vwMOSSeriesPerAsset b  on b.[EMMSeries.UID] = a.[EMMEpisode.SeriesID]
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
-  <TaskHost
-    design-time-name="Package\Load SeriesCredits Producer">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="181,42"
-          Id="Package\Load SeriesCredits Producer\ADO NET Destination"
-          TopLeft="284,261" />
-        <NodeLayout
-          Size="160,42"
-          Id="Package\Load SeriesCredits Producer\ADO NET Source"
-          TopLeft="286,116" />
-        <EdgeLayout
-          Id="Package\Load SeriesCredits Producer.Paths[ADO NET Source Output]"
-          TopLeft="366,158">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="8.5,103"
-              Start="0,0"
-              End="8.5,95.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,47.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,47.5"
-                    Point2="0,51.5"
-                    Point3="4,51.5" />
-                  <mssgle:LineSegment
-                    End="4.5,51.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="4.5,51.5"
-                    Point2="8.5,51.5"
-                    Point3="8.5,55.5" />
-                  <mssgle:LineSegment
-                    End="8.5,95.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\xref_Organization Related Tasks\Load xref_Organization\ADO NET Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
 </Objects>]]></DTS:DesignTimeProperties>
 </DTS:Executable>

@@ -14,8 +14,8 @@
     <Manifest>
       <DTSPackages>
         <DtsPackage FormatVersion="6">
-          <Name>MOSTablesLoad.dtsx</Name>
-          <FullPath>MOSTablesLoad.dtsx</FullPath>
+          <Name>DONOTUSEMOSTablesLoad.dtsx</Name>
+          <FullPath>DONOTUSEMOSTablesLoad.dtsx</FullPath>
           <References />
         </DtsPackage>
         <DtsPackage FormatVersion="6">

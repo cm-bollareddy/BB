@@ -12,8 +12,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="MOSReload"
   DTS:PackageType="5"
-  DTS:VersionBuild="314"
-  DTS:VersionGUID="{8D8312D1-7D00-4157-8857-2A8F08E51F23}">
+  DTS:VersionBuild="315"
+  DTS:VersionGUID="{77E4D988-1D3D-4B89-BB0E-E8874C26482F}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">6</DTS:Property>
   <DTS:ConnectionManagers>
@@ -24,11 +24,11 @@
       DTS:ObjectName="db19-uat.EMM_Changes.mosuser">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=db19;User ID=mosuser;Initial Catalog=MBANK_STAGING_PROD;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
+          DTS:ConnectionString="Data Source=db19-uat;User ID=mosuser;Initial Catalog=MBank-Staging-DEV;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAXpNC7+zqZUWgYwaIebzoOQAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACpeabg8prdictmo0BfSfWaAAAAAASAAACgAAAAEAAAAC75UOkkZQ5rs4ywKVwXHQwYAAAAxz5Fw4ktHq4BIaNbx3RsOhIPFDyToPOjFAAAABQ9sONDJ4gd0RQ0DVUh3s1/vujw</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAXXUpcuYAN0e936E+mbOjpgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAB8iQi/8ubXQ830t7yUu92sAAAAAASAAACgAAAAEAAAABj0Pap5D8g/Am6VGVVWlcwYAAAA0VyZJojUJKy51CH2rZMJM2tUQw8o/FsCFAAAAJ+wGrE0TA8ZLkepcnSV5gopRU/n</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -39,11 +39,11 @@
       DTS:ObjectName="db19-uat.MOS.mosuser">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=db19;User ID=mosuser;Initial Catalog=MBANK_STAGING_PROD;Persist Security Info=True;Application Name=SSIS-MOSTablesLoad-{638E68F5-0981-491A-B5FB-6C9504D69EF0}db19-uat.MOS.mosuser;">
+          DTS:ConnectionString="Data Source=db19-UAT;User ID=mosuser;Initial Catalog=MBank-Staging-DEV;Persist Security Info=True;Application Name=SSIS-MOSTablesLoad-{638E68F5-0981-491A-B5FB-6C9504D69EF0}db19-uat.MOS.mosuser;">
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAXpNC7+zqZUWgYwaIebzoOQAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAMxwWk/w6JQLT36dp62YnAAAAAAASAAACgAAAAEAAAAHWplUOz5fgL7Wzt2/yb9aUYAAAAOJZqdS5MA5tBzerd37CJwJu8OYqpISQHFAAAALINpzbxzeUaAx2rhGu4U5OKcqdG</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAXXUpcuYAN0e936E+mbOjpgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAA256Ow+gr3Q/pCuyaeqQSQAAAAAASAAACgAAAAEAAAADzZ/feVM7jlzgitWxxGEaQYAAAAshLvyFfMwSWt+A+WVfQXGrgviHq8SlL6FAAAAC0e3T00U74Q0Ol1loC+FdGI27tY</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -54,11 +54,11 @@
       DTS:ObjectName="db19-uat.TrafficData">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=db19-UAT;User ID=TrafficDataReader;Initial Catalog=TrafficData;Provider=SQLNCLI11.1;Auto Translate=False;">
+          DTS:ConnectionString="Data Source=db19-UAT;User ID=TrafficDataReader;Initial Catalog=TrafficData-SystemTest;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAXpNC7+zqZUWgYwaIebzoOQAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAB3PovLaOUDPZtK5t4js92NAAAAAASAAACgAAAAEAAAAKPVetPgx0JF5zFRwjn3Qf0YAAAADaQ2JXIC2LmQnV4B8peYNv8dcAUf0sYnFAAAANIrqDAgwyqdF65xxMDeXBmDlL4z</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAXXUpcuYAN0e936E+mbOjpgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABI5CJj7NUf338YpnjNfC19AAAAAASAAACgAAAAEAAAAAMvfJ3zhTGDqXM0eZstaMoYAAAAm1Lj8hn919g1yMvfyxbd6rrsv/vYTdUEFAAAAJLIuOvDN8RimJ5cqVFoVNgVTpPH</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -69,11 +69,11 @@
       DTS:ObjectName="db19-uat.TrafficData.TrafficDataReader">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=db19-UAT;User ID=TrafficDataReader;Initial Catalog=TrafficData;Persist Security Info=True;Application Name=SSIS-MOSTablesLoad-{2B5C7B6C-A524-430F-9772-AD820D66573C}db19-uat.TrafficData.TrafficDataReader;">
+          DTS:ConnectionString="Data Source=db19-UAT;User ID=TrafficDataReader;Initial Catalog=TrafficData-SystemTest;Persist Security Info=True;Application Name=SSIS-MOSTablesLoad-{2B5C7B6C-A524-430F-9772-AD820D66573C}db19-uat.TrafficData.TrafficDataReader;">
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAXpNC7+zqZUWgYwaIebzoOQAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACsmfpiOj0/swFz20g9weuTAAAAAASAAACgAAAAEAAAAF9+Lg+E9tCcLN/sAFtmpWkYAAAA1SI6lVG+hpu1M6T76mo4FP1G0sTb5xPoFAAAAFHG5YKVJoLPgshnXiU79ydbD8rA</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAXXUpcuYAN0e936E+mbOjpgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADDeiRhwWzi43ZWku5gt0kHAAAAAASAAACgAAAAEAAAAF8UdxV7a4hhrn1kL+AEEJMYAAAAwgU6G0r6TsZZvoDE+WP9ARNlOcsWelKFFAAAAI3aRWgDhjr9A6JwkUEUtgDfr3VQ</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -15704,95 +15704,95 @@ values(?,'MOSSeries','pending','insert',null,getdate(),null)</property>
                           cachedLength="400"
                           cachedName="Series.UID"
                           cachedSortKeyPosition="1"
-                          lineageId="Package\None of These are USed Put In here Just In Case\To Be Deleted MOS Series Update\588:invalid" />
+                          lineageId="Package\None of These are USed Put In here Just In Case\To Be Deleted MOS Series Update\570:invalid" />
                         <inputColumn
                           refId="Package\None of These are USed Put In here Just In Case\To Be Deleted MOS Series Update\Merge Join.Inputs[Merge Join Right Input].Columns[Series.ContentIdentifier]"
                           cachedDataType="wstr"
                           cachedLength="500"
                           cachedName="Series.ContentIdentifier"
-                          lineageId="Package\None of These are USed Put In here Just In Case\To Be Deleted MOS Series Update\589:invalid" />
+                          lineageId="Package\None of These are USed Put In here Just In Case\To Be Deleted MOS Series Update\571:invalid" />
                         <inputColumn
                           refId="Package\None of These are USed Put In here Just In Case\To Be Deleted MOS Series Update\Merge Join.Inputs[Merge Join Right Input].Columns[Series.Structural Type]"
                           cachedDataType="wstr"
                           cachedLength="500"
                           cachedName="Series.Structural Type"
-                          lineageId="Package\None of These are USed Put In here Just In Case\To Be Deleted MOS Series Update\590:invalid" />
+                          lineageId="Package\None of These are USed Put In here Just In Case\To Be Deleted MOS Series Update\572:invalid" />
                         <inputColumn
                           refId="Package\None of These are USed Put In here Just In Case\To Be Deleted MOS Series Update\Merge Join.Inputs[Merge Join Right Input].Columns[Series.Referent Type]"
                           cachedDataType="wstr"
                           cachedLength="500"
                           cachedName="Series.Referent Type"
-                          lineageId="Package\None of These are USed Put In here Just In Case\To Be Deleted MOS Series Update\591:invalid" />
+                          lineageId="Package\None of These are USed Put In here Just In Case\To Be Deleted MOS Series Update\573:invalid" />
                         <inputColumn
                           refId="Package\None of These are USed Put In here Just In Case\To Be Deleted MOS Series Update\Merge Join.Inputs[Merge Join Right Input].Columns[Series.Mode]"
                           cachedDataType="wstr"
                           cachedLength="500"
                           cachedName="Series.Mode"
-                          lineageId="Package\None of These are USed Put In here Just In Case\To Be Deleted MOS Series Update\592:invalid" />
+                          lineageId="Package\None of These are USed Put In here Just In Case\To Be Deleted MOS Series Update\574:invalid" />
                         <inputColumn
                           refId="Package\None of These are USed Put In here Just In Case\To Be Deleted MOS Series Update\Merge Join.Inputs[Merge Join Right Input].Columns[Series.SeriesClass]"
                           cachedDataType="wstr"
                           cachedLength="500"
                           cachedName="Series.SeriesClass"
-                          lineageId="Package\None of These are USed Put In here Just In Case\To Be Deleted MOS Series Update\593:invalid" />
+                          lineageId="Package\None of These are USed Put In here Just In Case\To Be Deleted MOS Series Update\575:invalid" />
                         <inputColumn
                           refId="Package\None of These are USed Put In here Just In Case\To Be Deleted MOS Series Update\Merge Join.Inputs[Merge Join Right Input].Columns[Series.Title.Class]"
                           cachedDataType="wstr"
                           cachedLength="500"
                           cachedName="Series.Title.Class"
-                          lineageId="Package\None of These are USed Put In here Just In Case\To Be Deleted MOS Series Update\594:invalid" />
+                          lineageId="Package\None of These are USed Put In here Just In Case\To Be Deleted MOS Series Update\576:invalid" />
                         <inputColumn
                           refId="Package\None of These are USed Put In here Just In Case\To Be Deleted MOS Series Update\Merge Join.Inputs[Merge Join Right Input].Columns[Series.Title.Language]"
                           cachedDataType="wstr"
                           cachedLength="500"
                           cachedName="Series.Title.Language"
-                          lineageId="Package\None of These are USed Put In here Just In Case\To Be Deleted MOS Series Update\595:invalid" />
+                          lineageId="Package\None of These are USed Put In here Just In Case\To Be Deleted MOS Series Update\577:invalid" />
                         <inputColumn
                           refId="Package\None of These are USed Put In here Just In Case\To Be Deleted MOS Series Update\Merge Join.Inputs[Merge Join Right Input].Columns[Series.Title]"
                           cachedDataType="wstr"
                           cachedLength="500"
                           cachedName="Series.Title"
-                          lineageId="Package\None of These are USed Put In here Just In Case\To Be Deleted MOS Series Update\596:invalid" />
+                          lineageId="Package\None of These are USed Put In here Just In Case\To Be Deleted MOS Series Update\578:invalid" />
                         <inputColumn
                           refId="Package\None of These are USed Put In here Just In Case\To Be Deleted MOS Series Update\Merge Join.Inputs[Merge Join Right Input].Columns[Series.Country of Origin]"
                           cachedDataType="i4"
                           cachedName="Series.Country of Origin"
-                          lineageId="Package\None of These are USed Put In here Just In Case\To Be Deleted MOS Series Update\597:invalid" />
+                          lineageId="Package\None of These are USed Put In here Just In Case\To Be Deleted MOS Series Update\579:invalid" />
                         <inputColumn
                           refId="Package\None of These are USed Put In here Just In Case\To Be Deleted MOS Series Update\Merge Join.Inputs[Merge Join Right Input].Columns[Series.SynopsisShort]"
                           cachedDataType="wstr"
                           cachedLength="4000"
                           cachedName="Series.SynopsisShort"
-                          lineageId="Package\None of These are USed Put In here Just In Case\To Be Deleted MOS Series Update\598:invalid" />
+                          lineageId="Package\None of These are USed Put In here Just In Case\To Be Deleted MOS Series Update\580:invalid" />
                         <inputColumn
                           refId="Package\None of These are USed Put In here Just In Case\To Be Deleted MOS Series Update\Merge Join.Inputs[Merge Join Right Input].Columns[Series.SynopsisLong]"
                           cachedDataType="wstr"
                           cachedLength="4000"
                           cachedName="Series.SynopsisLong"
-                          lineageId="Package\None of These are USed Put In here Just In Case\To Be Deleted MOS Series Update\599:invalid" />
+                          lineageId="Package\None of These are USed Put In here Just In Case\To Be Deleted MOS Series Update\581:invalid" />
                         <inputColumn
                           refId="Package\None of These are USed Put In here Just In Case\To Be Deleted MOS Series Update\Merge Join.Inputs[Merge Join Right Input].Columns[Series.LanguagePrimary]"
                           cachedDataType="wstr"
                           cachedLength="500"
                           cachedName="Series.LanguagePrimary"
-                          lineageId="Package\None of These are USed Put In here Just In Case\To Be Deleted MOS Series Update\600:invalid" />
+                          lineageId="Package\None of These are USed Put In here Just In Case\To Be Deleted MOS Series Update\582:invalid" />
                         <inputColumn
                           refId="Package\None of These are USed Put In here Just In Case\To Be Deleted MOS Series Update\Merge Join.Inputs[Merge Join Right Input].Columns[Series.LanguageSecondary]"
                           cachedDataType="i4"
                           cachedName="Series.LanguageSecondary"
-                          lineageId="Package\None of These are USed Put In here Just In Case\To Be Deleted MOS Series Update\601:invalid" />
+                          lineageId="Package\None of These are USed Put In here Just In Case\To Be Deleted MOS Series Update\583:invalid" />
                         <inputColumn
                           refId="Package\None of These are USed Put In here Just In Case\To Be Deleted MOS Series Update\Merge Join.Inputs[Merge Join Right Input].Columns[Series.ApproximateLength]"
                           cachedDataType="wstr"
                           cachedLength="500"
                           cachedName="Series.ApproximateLength"
-                          lineageId="Package\None of These are USed Put In here Just In Case\To Be Deleted MOS Series Update\602:invalid" />
+                          lineageId="Package\None of These are USed Put In here Just In Case\To Be Deleted MOS Series Update\584:invalid" />
                         <inputColumn
                           refId="Package\None of These are USed Put In here Just In Case\To Be Deleted MOS Series Update\Merge Join.Inputs[Merge Join Right Input].Columns[Series.ReleaseDate]"
                           cachedDataType="wstr"
                           cachedLength="10"
                           cachedName="Series.ReleaseDate"
-                          lineageId="Package\None of These are USed Put In here Just In Case\To Be Deleted MOS Series Update\603:invalid" />
+                          lineageId="Package\None of These are USed Put In here Just In Case\To Be Deleted MOS Series Update\585:invalid" />
                       </inputColumns>
                       <externalMetadataColumns />
                     </input>
@@ -25149,26 +25149,26 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="499.326007326007,28.1538461538462"
+              EndConnector="499.326007326007,28.153846153847"
               Start="0,0"
-              End="499.326007326007,20.6538461538462">
+              End="499.326007326007,20.653846153847">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,10.0769230769231" />
+                    End="0,10.0769230769235" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,10.0769230769231"
-                    Point2="0,14.0769230769231"
-                    Point3="4,14.0769230769231" />
+                    Point1="0,10.0769230769235"
+                    Point2="0,14.0769230769235"
+                    Point3="4,14.0769230769235" />
                   <mssgle:LineSegment
-                    End="495.326007326007,14.0769230769231" />
+                    End="495.326007326007,14.0769230769235" />
                   <mssgle:CubicBezierSegment
-                    Point1="495.326007326007,14.0769230769231"
-                    Point2="499.326007326007,14.0769230769231"
-                    Point3="499.326007326007,18.0769230769231" />
+                    Point1="495.326007326007,14.0769230769235"
+                    Point2="499.326007326007,14.0769230769235"
+                    Point3="499.326007326007,18.0769230769235" />
                   <mssgle:LineSegment
-                    End="499.326007326007,20.6538461538462" />
+                    End="499.326007326007,20.653846153847" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -25183,26 +25183,26 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-456.635531135531,65.9890109890108"
+              EndConnector="-456.635531135531,65.98901098901"
               Start="0,0"
-              End="-456.635531135531,58.4890109890108">
+              End="-456.635531135531,58.48901098901">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,28.9945054945054" />
+                    End="0,28.994505494505" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,28.9945054945054"
-                    Point2="0,32.9945054945054"
-                    Point3="-4,32.9945054945054" />
+                    Point1="0,28.994505494505"
+                    Point2="0,32.994505494505"
+                    Point3="-4,32.994505494505" />
                   <mssgle:LineSegment
-                    End="-452.635531135531,32.9945054945054" />
+                    End="-452.635531135531,32.994505494505" />
                   <mssgle:CubicBezierSegment
-                    Point1="-452.635531135531,32.9945054945054"
-                    Point2="-456.635531135531,32.9945054945054"
-                    Point3="-456.635531135531,36.9945054945054" />
+                    Point1="-452.635531135531,32.994505494505"
+                    Point2="-456.635531135531,32.994505494505"
+                    Point3="-456.635531135531,36.994505494505" />
                   <mssgle:LineSegment
-                    End="-456.635531135531,58.4890109890108" />
+                    End="-456.635531135531,58.48901098901" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -29262,9 +29262,7 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -29298,9 +29296,7 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -29406,9 +29402,7 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -29478,9 +29472,7 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -29514,9 +29506,7 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
