@@ -12,8 +12,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="ImportHarmonizationData"
   DTS:PackageType="5"
-  DTS:VersionBuild="75"
-  DTS:VersionGUID="{EBC09DCE-8591-43BC-91A8-4A3067459D74}">
+  DTS:VersionBuild="76"
+  DTS:VersionGUID="{3DFCD614-C475-456B-A42E-4DAED52B0E5F}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">6</DTS:Property>
   <DTS:ConnectionManagers>
@@ -67,7 +67,7 @@
       DTS:ObjectName="Excel Connection Manager 1">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\ytseytlin\Desktop\HarmonizedData\Episode.xlsx;Extended Properties=&quot;Excel 12.0 XML;HDR=YES&quot;;" />
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\ytseytlin\Desktop\HarmonizedData\Episode.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -77,7 +77,7 @@
       DTS:ObjectName="Excel Connection Manager 2">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\ytseytlin\Desktop\HarmonizedData\PandQ.xlsx;Extended Properties=&quot;Excel 12.0 XML;HDR=YES&quot;;" />
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\ytseytlin\Desktop\HarmonizedData\PandQ.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -2340,9 +2340,17 @@
       <GraphLayout
         Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
+          Size="169,42"
+          Id="Package\Foreach Loop Container\Deal PandQ Import"
+          TopLeft="1259,129" />
+        <NodeLayout
           Size="137,42"
           Id="Package\Foreach Loop Container\Edits Import"
           TopLeft="584,124" />
+        <NodeLayout
+          Size="151,42"
+          Id="Package\Foreach Loop Container\Episode Import"
+          TopLeft="1025,134" />
         <NodeLayout
           Size="143,42"
           Id="Package\Foreach Loop Container\Import Series"
@@ -2352,9 +2360,17 @@
           Id="Package\Foreach Loop Container\Insert into RightsLine_Edits_IDs Table"
           TopLeft="527.5,205" />
         <NodeLayout
+          Size="337,42"
+          Id="Package\Foreach Loop Container\Insert into RightsLine_EpisodeParentSeason_IDs Table"
+          TopLeft="981.5,232" />
+        <NodeLayout
           Size="258,42"
           Id="Package\Foreach Loop Container\Insert into RightsLine_OTO_IDs Table"
           TopLeft="796,288" />
+        <NodeLayout
+          Size="271,42"
+          Id="Package\Foreach Loop Container\Insert into RightsLine_ProdnQ_IDs Table"
+          TopLeft="1198.5,307" />
         <NodeLayout
           Size="265,42"
           Id="Package\Foreach Loop Container\Insert into RightsLine_Series_IDs Table"
@@ -2443,6 +2459,76 @@
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Foreach Loop Container.PrecedenceConstraints[Constraint 10]"
+          TopLeft="1343.5,171">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-9.5,136"
+              Start="0,0"
+              End="-9.5,128.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,64" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,64"
+                    Point2="0,68"
+                    Point3="-4,68" />
+                  <mssgle:LineSegment
+                    End="-5.5,68" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-5.5,68"
+                    Point2="-9.5,68"
+                    Point3="-9.5,72" />
+                  <mssgle:LineSegment
+                    End="-9.5,128.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Foreach Loop Container.PrecedenceConstraints[Constraint 11]"
+          TopLeft="369.142857142857,64">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="974.357142857143,65"
+              Start="0,0"
+              End="974.357142857143,57.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,11.8625525946704" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,11.8625525946704"
+                    Point2="0,15.8625525946704"
+                    Point3="4,15.8625525946704" />
+                  <mssgle:LineSegment
+                    End="970.357142857143,15.8625525946704" />
+                  <mssgle:CubicBezierSegment
+                    Point1="970.357142857143,15.8625525946704"
+                    Point2="974.357142857143,15.8625525946704"
+                    Point3="974.357142857143,19.8625525946704" />
+                  <mssgle:LineSegment
+                    End="974.357142857143,57.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="479.178571428571,20.8625525946704,16,16"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -2619,14 +2705,6 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="151,42"
-          Id="Package\Foreach Loop Container\Episode Import"
-          TopLeft="1025,134" />
-        <NodeLayout
-          Size="337,42"
-          Id="Package\Foreach Loop Container\Insert into RightsLine_EpisodeParentSeason_IDs Table"
-          TopLeft="981.5,232" />
         <EdgeLayout
           Id="Package\Foreach Loop Container.PrecedenceConstraints[Constraint 8]"
           TopLeft="1100.5,176">
@@ -2697,84 +2775,6 @@
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="169,42"
-          Id="Package\Foreach Loop Container\Deal PandQ Import"
-          TopLeft="1259,129" />
-        <NodeLayout
-          Size="271,42"
-          Id="Package\Foreach Loop Container\Insert into RightsLine_ProdnQ_IDs Table"
-          TopLeft="1198.5,307" />
-        <EdgeLayout
-          Id="Package\Foreach Loop Container.PrecedenceConstraints[Constraint 10]"
-          TopLeft="1343.5,171">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-9.5,136"
-              Start="0,0"
-              End="-9.5,128.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,64" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,64"
-                    Point2="0,68"
-                    Point3="-4,68" />
-                  <mssgle:LineSegment
-                    End="-5.5,68" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-5.5,68"
-                    Point2="-9.5,68"
-                    Point3="-9.5,72" />
-                  <mssgle:LineSegment
-                    End="-9.5,128.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Foreach Loop Container.PrecedenceConstraints[Constraint 11]"
-          TopLeft="369.142857142857,64">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="974.357142857143,65"
-              Start="0,0"
-              End="974.357142857143,57.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,11.8625525946704" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,11.8625525946704"
-                    Point2="0,15.8625525946704"
-                    Point3="4,15.8625525946704" />
-                  <mssgle:LineSegment
-                    End="970.357142857143,15.8625525946704" />
-                  <mssgle:CubicBezierSegment
-                    Point1="970.357142857143,15.8625525946704"
-                    Point2="974.357142857143,15.8625525946704"
-                    Point3="974.357142857143,19.8625525946704" />
-                  <mssgle:LineSegment
-                    End="974.357142857143,57.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="479.178571428571,20.8625525946704,16,16"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
@@ -2830,6 +2830,65 @@
       </GraphLayout>
     </LayoutInfo>
   </Package>
+  <TaskHost
+    design-time-name="Package\Foreach Loop Container\Deal PandQ Import">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="145,42"
+          Id="Package\Foreach Loop Container\Deal PandQ Import\PandQ Source"
+          TopLeft="356,100" />
+        <NodeLayout
+          Size="184,42"
+          Id="Package\Foreach Loop Container\Deal PandQ Import\DealPand_UpdateOnly"
+          TopLeft="344,271" />
+        <EdgeLayout
+          Id="Package\Foreach Loop Container\Deal PandQ Import.Paths[Excel Source Output]"
+          TopLeft="432.25,142">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,129"
+              Start="0,0"
+              End="0,121.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,121.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Foreach Loop Container\Deal PandQ Import\DealPand_UpdateOnly">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Foreach Loop Container\Deal PandQ Import\PandQ Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <TaskHost
     design-time-name="Package\Foreach Loop Container\Edits Import">
     <LayoutInfo>
@@ -2890,6 +2949,77 @@
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\Foreach Loop Container\Edits Import\Edit Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Foreach Loop Container\Episode Import">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="179,42"
+          Id="Package\Foreach Loop Container\Episode Import\ADO NET Destination"
+          TopLeft="381,287" />
+        <NodeLayout
+          Size="132,42"
+          Id="Package\Foreach Loop Container\Episode Import\Edit Source"
+          TopLeft="390,142" />
+        <EdgeLayout
+          Id="Package\Foreach Loop Container\Episode Import.Paths[Excel Source Output]"
+          TopLeft="456,184">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="14.5,103"
+              Start="0,0"
+              End="14.5,95.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,47.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,47.5"
+                    Point2="0,51.5"
+                    Point3="4,51.5" />
+                  <mssgle:LineSegment
+                    End="10.5,51.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="10.5,51.5"
+                    Point2="14.5,51.5"
+                    Point3="14.5,55.5" />
+                  <mssgle:LineSegment
+                    End="14.5,95.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Foreach Loop Container\Episode Import\ADO NET Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Foreach Loop Container\Episode Import\Edit Source">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -3117,136 +3247,6 @@
         <Name>TableInfoObjectType</Name>
         <Value
           type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <TaskHost
-    design-time-name="Package\Foreach Loop Container\Episode Import">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="179,42"
-          Id="Package\Foreach Loop Container\Episode Import\ADO NET Destination"
-          TopLeft="381,287" />
-        <NodeLayout
-          Size="132,42"
-          Id="Package\Foreach Loop Container\Episode Import\Edit Source"
-          TopLeft="390,142" />
-        <EdgeLayout
-          Id="Package\Foreach Loop Container\Episode Import.Paths[Excel Source Output]"
-          TopLeft="456,184">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="14.5,103"
-              Start="0,0"
-              End="14.5,95.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,47.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,47.5"
-                    Point2="0,51.5"
-                    Point3="4,51.5" />
-                  <mssgle:LineSegment
-                    End="10.5,51.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="10.5,51.5"
-                    Point2="14.5,51.5"
-                    Point3="14.5,55.5" />
-                  <mssgle:LineSegment
-                    End="14.5,95.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\Foreach Loop Container\Episode Import\ADO NET Destination">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Foreach Loop Container\Episode Import\Edit Source">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <TaskHost
-    design-time-name="Package\Foreach Loop Container\Deal PandQ Import">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="145,42"
-          Id="Package\Foreach Loop Container\Deal PandQ Import\PandQ Source"
-          TopLeft="356,100" />
-        <NodeLayout
-          Size="184,42"
-          Id="Package\Foreach Loop Container\Deal PandQ Import\DealPand_UpdateOnly"
-          TopLeft="344,271" />
-        <EdgeLayout
-          Id="Package\Foreach Loop Container\Deal PandQ Import.Paths[Excel Source Output]"
-          TopLeft="432.25,142">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,129"
-              Start="0,0"
-              End="0,121.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,121.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\Foreach Loop Container\Deal PandQ Import\PandQ Source">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Foreach Loop Container\Deal PandQ Import\DealPand_UpdateOnly">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
       </Property>
     </Properties>
   </PipelineComponentMetadata>

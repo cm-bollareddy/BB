@@ -14,11 +14,6 @@
     <Manifest>
       <DTSPackages>
         <DtsPackage FormatVersion="6">
-          <Name>DONOTUSEMOSTablesLoad.dtsx</Name>
-          <FullPath>DONOTUSEMOSTablesLoad.dtsx</FullPath>
-          <References />
-        </DtsPackage>
-        <DtsPackage FormatVersion="6">
           <Name>RightslineLoad.dtsx</Name>
           <FullPath>RightslineLoad.dtsx</FullPath>
           <References />

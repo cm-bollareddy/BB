@@ -12,8 +12,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="MOSReload"
   DTS:PackageType="5"
-  DTS:VersionBuild="315"
-  DTS:VersionGUID="{77E4D988-1D3D-4B89-BB0E-E8874C26482F}">
+  DTS:VersionBuild="316"
+  DTS:VersionGUID="{9EC02A58-AC51-44C9-913B-572E0517B134}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">6</DTS:Property>
   <DTS:ConnectionManagers>
@@ -24,11 +24,11 @@
       DTS:ObjectName="db19-uat.EMM_Changes.mosuser">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=db19-uat;User ID=mosuser;Initial Catalog=MBank-Staging-DEV;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
+          DTS:ConnectionString="Data Source=db19-uat;User ID=mosuser;Initial Catalog=MBank-Staging-TEST;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAXXUpcuYAN0e936E+mbOjpgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAB8iQi/8ubXQ830t7yUu92sAAAAAASAAACgAAAAEAAAABj0Pap5D8g/Am6VGVVWlcwYAAAA0VyZJojUJKy51CH2rZMJM2tUQw8o/FsCFAAAAJ+wGrE0TA8ZLkepcnSV5gopRU/n</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAXpNC7+zqZUWgYwaIebzoOQAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAyg+g0UdoptuvLiMBIHF3sAAAAAASAAACgAAAAEAAAAGBYf0EWYk8Wskh6mrxni8QYAAAAf0D8vd4n/DhIV2NM5vk8U5myTEs1sdWgFAAAAN+dlS1K4WQRIUpHUQJLJo1l8Lw5</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -39,11 +39,11 @@
       DTS:ObjectName="db19-uat.MOS.mosuser">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=db19-UAT;User ID=mosuser;Initial Catalog=MBank-Staging-DEV;Persist Security Info=True;Application Name=SSIS-MOSTablesLoad-{638E68F5-0981-491A-B5FB-6C9504D69EF0}db19-uat.MOS.mosuser;">
+          DTS:ConnectionString="Data Source=db19-uat;User ID=mosuser;Initial Catalog=MBank-Staging-TEST;Persist Security Info=True;Application Name=SSIS-MOSTablesLoad-{638E68F5-0981-491A-B5FB-6C9504D69EF0}db19-uat.MOS.mosuser;">
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAXXUpcuYAN0e936E+mbOjpgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAA256Ow+gr3Q/pCuyaeqQSQAAAAAASAAACgAAAAEAAAADzZ/feVM7jlzgitWxxGEaQYAAAAshLvyFfMwSWt+A+WVfQXGrgviHq8SlL6FAAAAC0e3T00U74Q0Ol1loC+FdGI27tY</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAXpNC7+zqZUWgYwaIebzoOQAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAxUjOSuVFit+9/h5Bh4p3AAAAAAASAAACgAAAAEAAAAEg3qEAaOygA4qtN/kb15bUYAAAAQ6YvlFRKPP2OBO/wiPUTOhrpteS9CKmzFAAAADgRW5ZOQ+qVHUtKIZuSIL6VPQ9Z</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -54,11 +54,11 @@
       DTS:ObjectName="db19-uat.TrafficData">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=db19-UAT;User ID=TrafficDataReader;Initial Catalog=TrafficData-SystemTest;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
+          DTS:ConnectionString="Data Source=db19-UAT;User ID=TrafficDataReader;Initial Catalog=TrafficData;Provider=SQLNCLI11.1;Auto Translate=False;">
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAXXUpcuYAN0e936E+mbOjpgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABI5CJj7NUf338YpnjNfC19AAAAAASAAACgAAAAEAAAAAMvfJ3zhTGDqXM0eZstaMoYAAAAm1Lj8hn919g1yMvfyxbd6rrsv/vYTdUEFAAAAJLIuOvDN8RimJ5cqVFoVNgVTpPH</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAXpNC7+zqZUWgYwaIebzoOQAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADyo43mYYy/Wsp1aVjuSEA+AAAAAASAAACgAAAAEAAAAEqHfhEbisf2BIVfH9juEEIYAAAA1a6prxzNHnQN2XH9Hxl1X8JRWveeFAy5FAAAAFRWmOkq0RUXzaD3mjIYo/IY4I1o</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -69,11 +69,11 @@
       DTS:ObjectName="db19-uat.TrafficData.TrafficDataReader">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=db19-UAT;User ID=TrafficDataReader;Initial Catalog=TrafficData-SystemTest;Persist Security Info=True;Application Name=SSIS-MOSTablesLoad-{2B5C7B6C-A524-430F-9772-AD820D66573C}db19-uat.TrafficData.TrafficDataReader;">
+          DTS:ConnectionString="Data Source=db19-UAT;User ID=TrafficDataReader;Initial Catalog=TrafficData;Persist Security Info=True;Application Name=SSIS-MOSTablesLoad-{2B5C7B6C-A524-430F-9772-AD820D66573C}db19-uat.TrafficData.TrafficDataReader;">
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAXXUpcuYAN0e936E+mbOjpgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADDeiRhwWzi43ZWku5gt0kHAAAAAASAAACgAAAAEAAAAF8UdxV7a4hhrn1kL+AEEJMYAAAAwgU6G0r6TsZZvoDE+WP9ARNlOcsWelKFFAAAAI3aRWgDhjr9A6JwkUEUtgDfr3VQ</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAXpNC7+zqZUWgYwaIebzoOQAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADdkzR+/DgB+gsBEKMzT1myAAAAAASAAACgAAAAEAAAALvdiF9J/gsEZwR6I9/rAtEYAAAACxE7eSL29eWg8cYYOZaapiBk/+Ob6pPSFAAAAHkSICd6u6EW34CS+DE4OryQJeRU</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
