@@ -38,6 +38,11 @@
           <FullPath>MOSTablesReload.dtsx</FullPath>
           <References />
         </DtsPackage>
+        <DtsPackage FormatVersion="6">
+          <Name>ImportHarmonizationData.dtsx</Name>
+          <FullPath>ImportHarmonizationData.dtsx</FullPath>
+          <References />
+        </DtsPackage>
       </DTSPackages>
     </Manifest>
   </DeploymentModelSpecificContent>
