@@ -34,7 +34,7 @@
     <ConfiguredValue></ConfiguredValue>
   </Configuration>
   <Configuration ConfiguredType="Property" Path="\Package.Connections[ADO.NET-TrafficData].Properties[ConnectionString]" ValueType="String">
-    <ConfiguredValue>Data Source=db19-uat;Initial Catalog=TrafficData;Integrated Security=True;Application Name=SSIS-RightslineLoad-{39B52C15-5840-48C4-B58F-F9A976E2C894}db19-uat.TrafficData2;</ConfiguredValue>
+    <ConfiguredValue>Data Source=db19-uat;Integrated Security=True;Application Name=SSIS-RightslineLoad-{39B52C15-5840-48C4-B58F-F9A976E2C894}db19-uat.TrafficData2;</ConfiguredValue>
   </Configuration>
   <Configuration ConfiguredType="Property" Path="\Package.Connections[ADO.NET-TrafficData].Properties[Description]" ValueType="String">
     <ConfiguredValue></ConfiguredValue>
@@ -64,7 +64,7 @@
     <ConfiguredValue></ConfiguredValue>
   </Configuration>
   <Configuration ConfiguredType="Property" Path="\Package.Connections[alliantDB].Properties[ConnectionString]" ValueType="String">
-    <ConfiguredValue>Data Source=alliantdb-prod;User ID=kwalikar;Initial Catalog=pbs_master;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;</ConfiguredValue>
+    <ConfiguredValue>Data Source=alliantdb-prod;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;</ConfiguredValue>
   </Configuration>
   <Configuration ConfiguredType="Property" Path="\Package.Connections[alliantDB].Properties[Description]" ValueType="String">
     <ConfiguredValue></ConfiguredValue>

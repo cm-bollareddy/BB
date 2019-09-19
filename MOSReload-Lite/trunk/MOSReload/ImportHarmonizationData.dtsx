@@ -12,8 +12,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="ImportHarmonizationData"
   DTS:PackageType="5"
-  DTS:VersionBuild="76"
-  DTS:VersionGUID="{3DFCD614-C475-456B-A42E-4DAED52B0E5F}">
+  DTS:VersionBuild="95"
+  DTS:VersionGUID="{5D0680BF-6F11-42BD-AA09-5C1B8D88D178}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">6</DTS:Property>
   <DTS:ConnectionManagers>
@@ -43,38 +43,36 @@
       DTS:DelayValidation="True"
       DTS:DTSID="{7EAA4688-EEBA-4A6A-9C60-34EB77ED724E}"
       DTS:ObjectName="Edits Connection Manager">
-      <DTS:PropertyExpression
-        DTS:Name="ExcelFilePath">@[User::strInputFolder] +  @[User::strExcelfile]</DTS:PropertyExpression>
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\ytseytlin\Desktop\HarmonizedData\;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\ytseytlin\Desktop\HarmonizedData\Edits.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[Excel Connection Manager]"
-      DTS:CreationName="EXCEL"
-      DTS:DTSID="{FD5F4838-85EF-46DD-B321-1460E821F075}"
-      DTS:ObjectName="Excel Connection Manager">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\ytseytlin\Desktop\HarmonizedData\OTO.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[Excel Connection Manager 1]"
+      DTS:refId="Package.ConnectionManagers[Episode Connection Manager]"
       DTS:CreationName="EXCEL"
       DTS:DTSID="{B96CFAAC-F975-4DE9-BB78-3C489BAEB33A}"
-      DTS:ObjectName="Excel Connection Manager 1">
+      DTS:ObjectName="Episode Connection Manager">
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\ytseytlin\Desktop\HarmonizedData\Episode.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[Excel Connection Manager 2]"
+      DTS:refId="Package.ConnectionManagers[OTO Connection Manager]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{FD5F4838-85EF-46DD-B321-1460E821F075}"
+      DTS:ObjectName="OTO Connection Manager">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\ytseytlin\Desktop\HarmonizedData\OTO.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[PnQ Connection Manager]"
       DTS:CreationName="EXCEL"
       DTS:DTSID="{C9CB7B21-F0A7-4D25-972B-BD349A446374}"
-      DTS:ObjectName="Excel Connection Manager 2">
+      DTS:ObjectName="PnQ Connection Manager">
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\ytseytlin\Desktop\HarmonizedData\PandQ.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
@@ -86,11 +84,9 @@
       DTS:DelayValidation="True"
       DTS:DTSID="{017F4BDD-AADE-46B6-B8AF-1E280833B2BF}"
       DTS:ObjectName="Season Connection Manager">
-      <DTS:PropertyExpression
-        DTS:Name="ExcelFilePath">@[User::strInputFolder] +  @[User::strExcelfile]</DTS:PropertyExpression>
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\ytseytlin\Desktop\HarmonizedData\;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\ytseytlin\Desktop\HarmonizedData\Seasons.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -99,11 +95,9 @@
       DTS:DelayValidation="True"
       DTS:DTSID="{79EA1CF5-9C1D-474C-BA51-E87A84B7A3EE}"
       DTS:ObjectName="Series Connection Manager">
-      <DTS:PropertyExpression
-        DTS:Name="ExcelFilePath">@[User::strInputFolder] +  @[User::strExcelfile]</DTS:PropertyExpression>
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\ytseytlin\Desktop\HarmonizedData\;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\ytseytlin\Desktop\HarmonizedData\Series.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
@@ -230,7 +224,8 @@
                           lineageId="Package\Foreach Loop Container\Deal PandQ Import\PandQ Source.Outputs[Excel Source Output].Columns[RL_ID]" />
                         <inputColumn
                           refId="Package\Foreach Loop Container\Deal PandQ Import\DealPand_UpdateOnly.Inputs[ADO NET Destination Input].Columns[PBS Alliant ID]"
-                          cachedDataType="r8"
+                          cachedDataType="wstr"
+                          cachedLength="255"
                           cachedName="PBS Alliant ID"
                           externalMetadataColumnId="Package\Foreach Loop Container\Deal PandQ Import\DealPand_UpdateOnly.Inputs[ADO NET Destination Input].ExternalColumns[AlliantID]"
                           lineageId="Package\Foreach Loop Container\Deal PandQ Import\PandQ Source.Outputs[Excel Source Output].Columns[PBS Alliant ID]" />
@@ -329,8 +324,8 @@
                   <connections>
                     <connection
                       refId="Package\Foreach Loop Container\Deal PandQ Import\PandQ Source.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[Excel Connection Manager 2]"
-                      connectionManagerRefId="Package.ConnectionManagers[Excel Connection Manager 2]"
+                      connectionManagerID="Package.ConnectionManagers[PnQ Connection Manager]"
+                      connectionManagerRefId="Package.ConnectionManagers[PnQ Connection Manager]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -350,10 +345,11 @@
                           truncationRowDisposition="FailComponent" />
                         <outputColumn
                           refId="Package\Foreach Loop Container\Deal PandQ Import\PandQ Source.Outputs[Excel Source Output].Columns[PBS Alliant ID]"
-                          dataType="r8"
+                          dataType="wstr"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
                           externalMetadataColumnId="Package\Foreach Loop Container\Deal PandQ Import\PandQ Source.Outputs[Excel Source Output].ExternalColumns[PBS Alliant ID]"
+                          length="255"
                           lineageId="Package\Foreach Loop Container\Deal PandQ Import\PandQ Source.Outputs[Excel Source Output].Columns[PBS Alliant ID]"
                           name="PBS Alliant ID"
                           truncationRowDisposition="FailComponent" />
@@ -376,7 +372,8 @@
                           name="RL_ID" />
                         <externalMetadataColumn
                           refId="Package\Foreach Loop Container\Deal PandQ Import\PandQ Source.Outputs[Excel Source Output].ExternalColumns[PBS Alliant ID]"
-                          dataType="r8"
+                          dataType="wstr"
+                          length="255"
                           name="PBS Alliant ID" />
                         <externalMetadataColumn
                           refId="Package\Foreach Loop Container\Deal PandQ Import\PandQ Source.Outputs[Excel Source Output].ExternalColumns[Enterprise Metadata UID]"
@@ -397,7 +394,8 @@
                           name="RL_ID" />
                         <outputColumn
                           refId="Package\Foreach Loop Container\Deal PandQ Import\PandQ Source.Outputs[Excel Source Error Output].Columns[PBS Alliant ID]"
-                          dataType="r8"
+                          dataType="wstr"
+                          length="255"
                           lineageId="Package\Foreach Loop Container\Deal PandQ Import\PandQ Source.Outputs[Excel Source Error Output].Columns[PBS Alliant ID]"
                           name="PBS Alliant ID" />
                         <outputColumn
@@ -498,23 +496,11 @@
                       name="ADO NET Destination Input">
                       <inputColumns>
                         <inputColumn
-                          refId="Package\Foreach Loop Container\Edits Import\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[enterprise_metadata_uid]"
-                          cachedDataType="r8"
-                          cachedName="enterprise_metadata_uid"
-                          externalMetadataColumnId="Package\Foreach Loop Container\Edits Import\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[enterprise_metadata_uid]"
-                          lineageId="Package\Foreach Loop Container\Edits Import\Edit Source.Outputs[Excel Source Output].Columns[enterprise_metadata_uid]" />
-                        <inputColumn
                           refId="Package\Foreach Loop Container\Edits Import\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Rightsline ID]"
                           cachedDataType="r8"
                           cachedName="Rightsline ID"
                           externalMetadataColumnId="Package\Foreach Loop Container\Edits Import\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[RL_ID]"
                           lineageId="Package\Foreach Loop Container\Edits Import\Edit Source.Outputs[Excel Source Output].Columns[Rightsline ID]" />
-                        <inputColumn
-                          refId="Package\Foreach Loop Container\Edits Import\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Episode Number]"
-                          cachedDataType="r8"
-                          cachedName="Episode Number"
-                          externalMetadataColumnId="Package\Foreach Loop Container\Edits Import\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[NOLA_Code]"
-                          lineageId="Package\Foreach Loop Container\Edits Import\Edit Source.Outputs[Excel Source Output].Columns[Episode Number]" />
                         <inputColumn
                           refId="Package\Foreach Loop Container\Edits Import\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[PBS NOLA Root]"
                           cachedDataType="wstr"
@@ -529,6 +515,19 @@
                           cachedName="Sort-friendly Title"
                           externalMetadataColumnId="Package\Foreach Loop Container\Edits Import\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Title]"
                           lineageId="Package\Foreach Loop Container\Edits Import\Edit Source.Outputs[Excel Source Output].Columns[Sort-friendly Title]" />
+                        <inputColumn
+                          refId="Package\Foreach Loop Container\Edits Import\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[enterprise_metadata_uid]"
+                          cachedDataType="wstr"
+                          cachedLength="255"
+                          cachedName="enterprise_metadata_uid"
+                          externalMetadataColumnId="Package\Foreach Loop Container\Edits Import\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[enterprise_metadata_uid]"
+                          lineageId="Package\Foreach Loop Container\Edits Import\Edit Source.Outputs[Excel Source Output].Columns[enterprise_metadata_uid]" />
+                        <inputColumn
+                          refId="Package\Foreach Loop Container\Edits Import\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[PBS NOLA Code]"
+                          cachedDataType="r8"
+                          cachedName="PBS NOLA Code"
+                          externalMetadataColumnId="Package\Foreach Loop Container\Edits Import\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[NOLA_Code]"
+                          lineageId="Package\Foreach Loop Container\Edits Import\Edit Source.Outputs[Excel Source Output].Columns[PBS NOLA Code]" />
                       </inputColumns>
                       <externalMetadataColumns
                         isUsed="True">
@@ -646,15 +645,6 @@
                           name="Rightsline ID"
                           truncationRowDisposition="FailComponent" />
                         <outputColumn
-                          refId="Package\Foreach Loop Container\Edits Import\Edit Source.Outputs[Excel Source Output].Columns[Episode Number]"
-                          dataType="r8"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Foreach Loop Container\Edits Import\Edit Source.Outputs[Excel Source Output].ExternalColumns[Episode Number]"
-                          lineageId="Package\Foreach Loop Container\Edits Import\Edit Source.Outputs[Excel Source Output].Columns[Episode Number]"
-                          name="Episode Number"
-                          truncationRowDisposition="FailComponent" />
-                        <outputColumn
                           refId="Package\Foreach Loop Container\Edits Import\Edit Source.Outputs[Excel Source Output].Columns[PBS NOLA Root]"
                           dataType="wstr"
                           errorOrTruncationOperation="Conversion"
@@ -675,11 +665,21 @@
                           name="Sort-friendly Title"
                           truncationRowDisposition="FailComponent" />
                         <outputColumn
-                          refId="Package\Foreach Loop Container\Edits Import\Edit Source.Outputs[Excel Source Output].Columns[enterprise_metadata_uid]"
+                          refId="Package\Foreach Loop Container\Edits Import\Edit Source.Outputs[Excel Source Output].Columns[PBS NOLA Code]"
                           dataType="r8"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Foreach Loop Container\Edits Import\Edit Source.Outputs[Excel Source Output].ExternalColumns[PBS NOLA Code]"
+                          lineageId="Package\Foreach Loop Container\Edits Import\Edit Source.Outputs[Excel Source Output].Columns[PBS NOLA Code]"
+                          name="PBS NOLA Code"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Foreach Loop Container\Edits Import\Edit Source.Outputs[Excel Source Output].Columns[enterprise_metadata_uid]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
                           externalMetadataColumnId="Package\Foreach Loop Container\Edits Import\Edit Source.Outputs[Excel Source Output].ExternalColumns[enterprise_metadata_uid]"
+                          length="255"
                           lineageId="Package\Foreach Loop Container\Edits Import\Edit Source.Outputs[Excel Source Output].Columns[enterprise_metadata_uid]"
                           name="enterprise_metadata_uid"
                           truncationRowDisposition="FailComponent" />
@@ -691,10 +691,6 @@
                           dataType="r8"
                           name="Rightsline ID" />
                         <externalMetadataColumn
-                          refId="Package\Foreach Loop Container\Edits Import\Edit Source.Outputs[Excel Source Output].ExternalColumns[Episode Number]"
-                          dataType="r8"
-                          name="Episode Number" />
-                        <externalMetadataColumn
                           refId="Package\Foreach Loop Container\Edits Import\Edit Source.Outputs[Excel Source Output].ExternalColumns[PBS NOLA Root]"
                           dataType="wstr"
                           length="255"
@@ -705,8 +701,13 @@
                           length="255"
                           name="Sort-friendly Title" />
                         <externalMetadataColumn
-                          refId="Package\Foreach Loop Container\Edits Import\Edit Source.Outputs[Excel Source Output].ExternalColumns[enterprise_metadata_uid]"
+                          refId="Package\Foreach Loop Container\Edits Import\Edit Source.Outputs[Excel Source Output].ExternalColumns[PBS NOLA Code]"
                           dataType="r8"
+                          name="PBS NOLA Code" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\Edits Import\Edit Source.Outputs[Excel Source Output].ExternalColumns[enterprise_metadata_uid]"
+                          dataType="wstr"
+                          length="255"
                           name="enterprise_metadata_uid" />
                       </externalMetadataColumns>
                     </output>
@@ -721,16 +722,16 @@
                           lineageId="Package\Foreach Loop Container\Edits Import\Edit Source.Outputs[Excel Source Error Output].Columns[Rightsline ID]"
                           name="Rightsline ID" />
                         <outputColumn
-                          refId="Package\Foreach Loop Container\Edits Import\Edit Source.Outputs[Excel Source Error Output].Columns[Episode Number]"
-                          dataType="r8"
-                          lineageId="Package\Foreach Loop Container\Edits Import\Edit Source.Outputs[Excel Source Error Output].Columns[Episode Number]"
-                          name="Episode Number" />
-                        <outputColumn
                           refId="Package\Foreach Loop Container\Edits Import\Edit Source.Outputs[Excel Source Error Output].Columns[PBS NOLA Root]"
                           dataType="wstr"
                           length="255"
                           lineageId="Package\Foreach Loop Container\Edits Import\Edit Source.Outputs[Excel Source Error Output].Columns[PBS NOLA Root]"
                           name="PBS NOLA Root" />
+                        <outputColumn
+                          refId="Package\Foreach Loop Container\Edits Import\Edit Source.Outputs[Excel Source Error Output].Columns[PBS NOLA Code]"
+                          dataType="r8"
+                          lineageId="Package\Foreach Loop Container\Edits Import\Edit Source.Outputs[Excel Source Error Output].Columns[PBS NOLA Code]"
+                          name="PBS NOLA Code" />
                         <outputColumn
                           refId="Package\Foreach Loop Container\Edits Import\Edit Source.Outputs[Excel Source Error Output].Columns[Sort-friendly Title]"
                           dataType="wstr"
@@ -739,7 +740,8 @@
                           name="Sort-friendly Title" />
                         <outputColumn
                           refId="Package\Foreach Loop Container\Edits Import\Edit Source.Outputs[Excel Source Error Output].Columns[enterprise_metadata_uid]"
-                          dataType="r8"
+                          dataType="wstr"
+                          length="255"
                           lineageId="Package\Foreach Loop Container\Edits Import\Edit Source.Outputs[Excel Source Error Output].Columns[enterprise_metadata_uid]"
                           name="enterprise_metadata_uid" />
                         <outputColumn
@@ -835,7 +837,8 @@
                       <inputColumns>
                         <inputColumn
                           refId="Package\Foreach Loop Container\Episode Import\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[enterprise_metadata_uid]"
-                          cachedDataType="r8"
+                          cachedDataType="wstr"
+                          cachedLength="50"
                           cachedName="enterprise_metadata_uid"
                           externalMetadataColumnId="Package\Foreach Loop Container\Episode Import\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[enterprise_metadata_uid]"
                           lineageId="Package\Foreach Loop Container\Episode Import\Edit Source.Outputs[Excel Source Output].Columns[enterprise_metadata_uid]" />
@@ -950,8 +953,8 @@
                   <connections>
                     <connection
                       refId="Package\Foreach Loop Container\Episode Import\Edit Source.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[Excel Connection Manager 1]"
-                      connectionManagerRefId="Package.ConnectionManagers[Excel Connection Manager 1]"
+                      connectionManagerID="Package.ConnectionManagers[Episode Connection Manager]"
+                      connectionManagerRefId="Package.ConnectionManagers[Episode Connection Manager]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -981,10 +984,11 @@
                           truncationRowDisposition="FailComponent" />
                         <outputColumn
                           refId="Package\Foreach Loop Container\Episode Import\Edit Source.Outputs[Excel Source Output].Columns[enterprise_metadata_uid]"
-                          dataType="r8"
+                          dataType="wstr"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
                           externalMetadataColumnId="Package\Foreach Loop Container\Episode Import\Edit Source.Outputs[Excel Source Output].ExternalColumns[enterprise_metadata_uid]"
+                          length="50"
                           lineageId="Package\Foreach Loop Container\Episode Import\Edit Source.Outputs[Excel Source Output].Columns[enterprise_metadata_uid]"
                           name="enterprise_metadata_uid"
                           truncationRowDisposition="FailComponent" />
@@ -1011,7 +1015,8 @@
                           name="PBS NOLA Root" />
                         <externalMetadataColumn
                           refId="Package\Foreach Loop Container\Episode Import\Edit Source.Outputs[Excel Source Output].ExternalColumns[enterprise_metadata_uid]"
-                          dataType="r8"
+                          dataType="wstr"
+                          length="255"
                           name="enterprise_metadata_uid" />
                         <externalMetadataColumn
                           refId="Package\Foreach Loop Container\Episode Import\Edit Source.Outputs[Excel Source Output].ExternalColumns[PBS NOLA Code]"
@@ -1042,7 +1047,8 @@
                           name="PBS NOLA Root" />
                         <outputColumn
                           refId="Package\Foreach Loop Container\Episode Import\Edit Source.Outputs[Excel Source Error Output].Columns[enterprise_metadata_uid]"
-                          dataType="r8"
+                          dataType="wstr"
+                          length="255"
                           lineageId="Package\Foreach Loop Container\Episode Import\Edit Source.Outputs[Excel Source Error Output].Columns[enterprise_metadata_uid]"
                           name="enterprise_metadata_uid" />
                         <outputColumn
@@ -1139,7 +1145,8 @@
                       <inputColumns>
                         <inputColumn
                           refId="Package\Foreach Loop Container\Import Series\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[enterprise_metadata_uid]"
-                          cachedDataType="r8"
+                          cachedDataType="wstr"
+                          cachedLength="50"
                           cachedName="enterprise_metadata_uid"
                           externalMetadataColumnId="Package\Foreach Loop Container\Import Series\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[enterprise_metadata_uid]"
                           lineageId="Package\Foreach Loop Container\Import Series\Excel Source.Outputs[Excel Source Output].Columns[enterprise_metadata_uid]" />
@@ -1297,10 +1304,11 @@
                           truncationRowDisposition="FailComponent" />
                         <outputColumn
                           refId="Package\Foreach Loop Container\Import Series\Excel Source.Outputs[Excel Source Output].Columns[enterprise_metadata_uid]"
-                          dataType="r8"
+                          dataType="wstr"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
                           externalMetadataColumnId="Package\Foreach Loop Container\Import Series\Excel Source.Outputs[Excel Source Output].ExternalColumns[enterprise_metadata_uid]"
+                          length="50"
                           lineageId="Package\Foreach Loop Container\Import Series\Excel Source.Outputs[Excel Source Output].Columns[enterprise_metadata_uid]"
                           name="enterprise_metadata_uid"
                           truncationRowDisposition="FailComponent" />
@@ -1323,7 +1331,8 @@
                           name="Display Title" />
                         <externalMetadataColumn
                           refId="Package\Foreach Loop Container\Import Series\Excel Source.Outputs[Excel Source Output].ExternalColumns[enterprise_metadata_uid]"
-                          dataType="r8"
+                          dataType="wstr"
+                          length="255"
                           name="enterprise_metadata_uid" />
                       </externalMetadataColumns>
                     </output>
@@ -1351,7 +1360,8 @@
                           name="Display Title" />
                         <outputColumn
                           refId="Package\Foreach Loop Container\Import Series\Excel Source.Outputs[Excel Source Error Output].Columns[enterprise_metadata_uid]"
-                          dataType="r8"
+                          dataType="wstr"
+                          length="255"
                           lineageId="Package\Foreach Loop Container\Import Series\Excel Source.Outputs[Excel Source Error Output].Columns[enterprise_metadata_uid]"
                           name="enterprise_metadata_uid" />
                         <outputColumn
@@ -1533,7 +1543,8 @@
                       <inputColumns>
                         <inputColumn
                           refId="Package\Foreach Loop Container\Insert Records Into CatalogSeasons_UpdateOnly\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[enterprise_metadata_uid]"
-                          cachedDataType="r8"
+                          cachedDataType="wstr"
+                          cachedLength="255"
                           cachedName="enterprise_metadata_uid"
                           externalMetadataColumnId="Package\Foreach Loop Container\Insert Records Into CatalogSeasons_UpdateOnly\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[enterprise_metadata_uid]"
                           lineageId="Package\Foreach Loop Container\Insert Records Into CatalogSeasons_UpdateOnly\Excel Source.Outputs[Excel Source Output].Columns[enterprise_metadata_uid]" />
@@ -1706,10 +1717,11 @@
                           truncationRowDisposition="FailComponent" />
                         <outputColumn
                           refId="Package\Foreach Loop Container\Insert Records Into CatalogSeasons_UpdateOnly\Excel Source.Outputs[Excel Source Output].Columns[enterprise_metadata_uid]"
-                          dataType="r8"
+                          dataType="wstr"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
                           externalMetadataColumnId="Package\Foreach Loop Container\Insert Records Into CatalogSeasons_UpdateOnly\Excel Source.Outputs[Excel Source Output].ExternalColumns[enterprise_metadata_uid]"
+                          length="255"
                           lineageId="Package\Foreach Loop Container\Insert Records Into CatalogSeasons_UpdateOnly\Excel Source.Outputs[Excel Source Output].Columns[enterprise_metadata_uid]"
                           name="enterprise_metadata_uid"
                           truncationRowDisposition="FailComponent" />
@@ -1741,7 +1753,8 @@
                           name="Display Title" />
                         <externalMetadataColumn
                           refId="Package\Foreach Loop Container\Insert Records Into CatalogSeasons_UpdateOnly\Excel Source.Outputs[Excel Source Output].ExternalColumns[enterprise_metadata_uid]"
-                          dataType="r8"
+                          dataType="wstr"
+                          length="255"
                           name="enterprise_metadata_uid" />
                         <externalMetadataColumn
                           refId="Package\Foreach Loop Container\Insert Records Into CatalogSeasons_UpdateOnly\Excel Source.Outputs[Excel Source Output].ExternalColumns[Season Number]"
@@ -1778,7 +1791,8 @@
                           name="Display Title" />
                         <outputColumn
                           refId="Package\Foreach Loop Container\Insert Records Into CatalogSeasons_UpdateOnly\Excel Source.Outputs[Excel Source Error Output].Columns[enterprise_metadata_uid]"
-                          dataType="r8"
+                          dataType="wstr"
+                          length="255"
                           lineageId="Package\Foreach Loop Container\Insert Records Into CatalogSeasons_UpdateOnly\Excel Source.Outputs[Excel Source Error Output].Columns[enterprise_metadata_uid]"
                           name="enterprise_metadata_uid" />
                         <outputColumn
@@ -1874,7 +1888,8 @@
                       <inputColumns>
                         <inputColumn
                           refId="Package\Foreach Loop Container\OTO Import\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[enterprise_metadata_uid]"
-                          cachedDataType="r8"
+                          cachedDataType="wstr"
+                          cachedLength="255"
                           cachedName="enterprise_metadata_uid"
                           externalMetadataColumnId="Package\Foreach Loop Container\OTO Import\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[enterprise_metadata_uid]"
                           lineageId="Package\Foreach Loop Container\OTO Import\Edit Source.Outputs[Excel Source Output].Columns[enterprise_metadata_uid]" />
@@ -1990,8 +2005,8 @@
                   <connections>
                     <connection
                       refId="Package\Foreach Loop Container\OTO Import\Edit Source.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[Excel Connection Manager]"
-                      connectionManagerRefId="Package.ConnectionManagers[Excel Connection Manager]"
+                      connectionManagerID="Package.ConnectionManagers[OTO Connection Manager]"
+                      connectionManagerRefId="Package.ConnectionManagers[OTO Connection Manager]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -2021,10 +2036,11 @@
                           truncationRowDisposition="FailComponent" />
                         <outputColumn
                           refId="Package\Foreach Loop Container\OTO Import\Edit Source.Outputs[Excel Source Output].Columns[enterprise_metadata_uid]"
-                          dataType="r8"
+                          dataType="wstr"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
                           externalMetadataColumnId="Package\Foreach Loop Container\OTO Import\Edit Source.Outputs[Excel Source Output].ExternalColumns[enterprise_metadata_uid]"
+                          length="255"
                           lineageId="Package\Foreach Loop Container\OTO Import\Edit Source.Outputs[Excel Source Output].Columns[enterprise_metadata_uid]"
                           name="enterprise_metadata_uid"
                           truncationRowDisposition="FailComponent" />
@@ -2061,7 +2077,8 @@
                           name="PBS NOLA Root" />
                         <externalMetadataColumn
                           refId="Package\Foreach Loop Container\OTO Import\Edit Source.Outputs[Excel Source Output].ExternalColumns[enterprise_metadata_uid]"
-                          dataType="r8"
+                          dataType="wstr"
+                          length="255"
                           name="enterprise_metadata_uid" />
                         <externalMetadataColumn
                           refId="Package\Foreach Loop Container\OTO Import\Edit Source.Outputs[Excel Source Output].ExternalColumns[PBS NOLA Code]"
@@ -2103,7 +2120,8 @@
                           name="PBS America ID" />
                         <outputColumn
                           refId="Package\Foreach Loop Container\OTO Import\Edit Source.Outputs[Excel Source Error Output].Columns[enterprise_metadata_uid]"
-                          dataType="r8"
+                          dataType="wstr"
+                          length="255"
                           lineageId="Package\Foreach Loop Container\OTO Import\Edit Source.Outputs[Excel Source Error Output].Columns[enterprise_metadata_uid]"
                           name="enterprise_metadata_uid" />
                         <outputColumn
@@ -2346,7 +2364,7 @@
         <NodeLayout
           Size="137,42"
           Id="Package\Foreach Loop Container\Edits Import"
-          TopLeft="584,124" />
+          TopLeft="584,130" />
         <NodeLayout
           Size="151,42"
           Id="Package\Foreach Loop Container\Episode Import"
@@ -2527,7 +2545,7 @@
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="479.178571428571,20.8625525946704,16,16"
+              BoundingBox="479.178571428572,20.8625525946704,16,16"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -2569,37 +2587,37 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Foreach Loop Container.PrecedenceConstraints[Constraint 3]"
-          TopLeft="353.5,64">
+          TopLeft="306.571428571429,64">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="299,60"
+              EndConnector="345.928571428571,66"
               Start="0,0"
-              End="299,52.5">
+              End="345.928571428571,58.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,16.6808510638298" />
+                    End="0,26.6029850746269" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,16.6808510638298"
-                    Point2="0,20.6808510638298"
-                    Point3="4,20.6808510638298" />
+                    Point1="0,26.6029850746269"
+                    Point2="0,30.6029850746269"
+                    Point3="4,30.6029850746269" />
                   <mssgle:LineSegment
-                    End="295,20.6808510638298" />
+                    End="341.928571428571,30.6029850746269" />
                   <mssgle:CubicBezierSegment
-                    Point1="295,20.6808510638298"
-                    Point2="299,20.6808510638298"
-                    Point3="299,24.6808510638298" />
+                    Point1="341.928571428571,30.6029850746269"
+                    Point2="345.928571428571,30.6029850746269"
+                    Point3="345.928571428571,34.6029850746269" />
                   <mssgle:LineSegment
-                    End="299,52.5" />
+                    End="345.928571428571,58.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="141.5,25.6808510638298,16,16"
+              BoundingBox="164.964285714285,35.6029850746269,16,16"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -2627,18 +2645,18 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Foreach Loop Container.PrecedenceConstraints[Constraint 5]"
-          TopLeft="654.75,166">
+          TopLeft="654.75,172">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,39"
+              EndConnector="0,33"
               Start="0,0"
-              End="0,31.5">
+              End="0,25.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,31.5" />
+                    End="0,25.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -2834,7 +2852,7 @@
     design-time-name="Package\Foreach Loop Container\Deal PandQ Import">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="145,42"
           Id="Package\Foreach Loop Container\Deal PandQ Import\PandQ Source"
@@ -2862,7 +2880,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -2964,7 +2984,7 @@
     design-time-name="Package\Foreach Loop Container\Episode Import">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="179,42"
           Id="Package\Foreach Loop Container\Episode Import\ADO NET Destination"
@@ -3004,7 +3024,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
