@@ -12,8 +12,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="ImportHarmonizationData"
   DTS:PackageType="5"
-  DTS:VersionBuild="102"
-  DTS:VersionGUID="{EC2682FA-D2D7-4E90-8DEF-A29C9ED90811}">
+  DTS:VersionBuild="122"
+  DTS:VersionGUID="{49B8D137-9713-4DDB-AB50-FACDE20406FB}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">6</DTS:Property>
   <DTS:ConnectionManagers>
@@ -65,7 +65,7 @@
       DTS:ObjectName="OTO Connection Manager">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\ytseytlin\Desktop\HarmonizedData\OTO.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\ytseytlin\Desktop\HarmonizedData\OTO2.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -377,8 +377,7 @@
                           name="Enterprise Metadata UID" />
                         <externalMetadataColumn
                           refId="Package\Foreach Loop Container\Deal PandQ Import\PandQ Source.Outputs[Excel Source Output].ExternalColumns[AlliantID]"
-                          dataType="wstr"
-                          length="255"
+                          dataType="r8"
                           name="AlliantID" />
                       </externalMetadataColumns>
                     </output>
@@ -394,8 +393,7 @@
                           name="RL_ID" />
                         <outputColumn
                           refId="Package\Foreach Loop Container\Deal PandQ Import\PandQ Source.Outputs[Excel Source Error Output].Columns[AlliantID]"
-                          dataType="wstr"
-                          length="255"
+                          dataType="r8"
                           lineageId="Package\Foreach Loop Container\Deal PandQ Import\PandQ Source.Outputs[Excel Source Error Output].Columns[AlliantID]"
                           name="AlliantID" />
                         <outputColumn
@@ -841,26 +839,28 @@
                           cachedLength="50"
                           cachedName="enterprise_metadata_uid"
                           externalMetadataColumnId="Package\Foreach Loop Container\Episode Import\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[enterprise_metadata_uid]"
-                          lineageId="Package\Foreach Loop Container\Episode Import\Edit Source.Outputs[Excel Source Output].Columns[enterprise_metadata_uid]" />
+                          lineageId="Package\Foreach Loop Container\Episode Import\Episode Source.Outputs[Excel Source Output].Columns[enterprise_metadata_uid]" />
                         <inputColumn
-                          refId="Package\Foreach Loop Container\Episode Import\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Rightsline ID]"
-                          cachedDataType="r8"
-                          cachedName="Rightsline ID"
-                          externalMetadataColumnId="Package\Foreach Loop Container\Episode Import\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[RL_ID]"
-                          lineageId="Package\Foreach Loop Container\Episode Import\Edit Source.Outputs[Excel Source Output].Columns[Rightsline ID]" />
-                        <inputColumn
-                          refId="Package\Foreach Loop Container\Episode Import\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[PBS NOLA Code]"
-                          cachedDataType="r8"
-                          cachedName="PBS NOLA Code"
-                          externalMetadataColumnId="Package\Foreach Loop Container\Episode Import\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[NOLA_Code]"
-                          lineageId="Package\Foreach Loop Container\Episode Import\Edit Source.Outputs[Excel Source Output].Columns[PBS NOLA Code]" />
-                        <inputColumn
-                          refId="Package\Foreach Loop Container\Episode Import\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[PBS NOLA Root]"
+                          refId="Package\Foreach Loop Container\Episode Import\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Pbs Nola Code]"
                           cachedDataType="wstr"
                           cachedLength="255"
-                          cachedName="PBS NOLA Root"
+                          cachedName="Pbs Nola Code"
+                          externalMetadataColumnId="Package\Foreach Loop Container\Episode Import\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[NOLA_Code]"
+                          lineageId="Package\Foreach Loop Container\Episode Import\Episode Source.Outputs[Excel Source Output].Columns[Pbs Nola Code]" />
+                        <inputColumn
+                          refId="Package\Foreach Loop Container\Episode Import\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Pbs Nola Root]"
+                          cachedDataType="wstr"
+                          cachedLength="255"
+                          cachedName="Pbs Nola Root"
                           externalMetadataColumnId="Package\Foreach Loop Container\Episode Import\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[NOLA_Root]"
-                          lineageId="Package\Foreach Loop Container\Episode Import\Edit Source.Outputs[Excel Source Output].Columns[PBS NOLA Root]" />
+                          lineageId="Package\Foreach Loop Container\Episode Import\Episode Source.Outputs[Excel Source Output].Columns[Pbs Nola Root]" />
+                        <inputColumn
+                          refId="Package\Foreach Loop Container\Episode Import\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Rightsline ID]"
+                          cachedDataType="wstr"
+                          cachedLength="255"
+                          cachedName="Rightsline ID"
+                          externalMetadataColumnId="Package\Foreach Loop Container\Episode Import\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[RL_ID]"
+                          lineageId="Package\Foreach Loop Container\Episode Import\Episode Source.Outputs[Excel Source Output].Columns[Rightsline ID]" />
                       </inputColumns>
                       <externalMetadataColumns
                         isUsed="True">
@@ -911,11 +911,11 @@
                   </outputs>
                 </component>
                 <component
-                  refId="Package\Foreach Loop Container\Episode Import\Edit Source"
+                  refId="Package\Foreach Loop Container\Episode Import\Episode Source"
                   componentClassID="{8C084929-27D1-479F-9641-ABB7CDADF1AC}"
                   contactInfo="Excel Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
                   description="Excel Source"
-                  name="Edit Source"
+                  name="Episode Source"
                   usesDispositions="true"
                   version="1">
                   <properties>
@@ -952,7 +952,7 @@
                   </properties>
                   <connections>
                     <connection
-                      refId="Package\Foreach Loop Container\Episode Import\Edit Source.Connections[OleDbConnection]"
+                      refId="Package\Foreach Loop Container\Episode Import\Episode Source.Connections[OleDbConnection]"
                       connectionManagerID="Package.ConnectionManagers[Episode Connection Manager]"
                       connectionManagerRefId="Package.ConnectionManagers[Episode Connection Manager]"
                       description="The OLE DB runtime connection used to access the database."
@@ -960,107 +960,113 @@
                   </connections>
                   <outputs>
                     <output
-                      refId="Package\Foreach Loop Container\Episode Import\Edit Source.Outputs[Excel Source Output]"
+                      refId="Package\Foreach Loop Container\Episode Import\Episode Source.Outputs[Excel Source Output]"
                       name="Excel Source Output">
                       <outputColumns>
                         <outputColumn
-                          refId="Package\Foreach Loop Container\Episode Import\Edit Source.Outputs[Excel Source Output].Columns[Rightsline ID]"
-                          dataType="r8"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Foreach Loop Container\Episode Import\Edit Source.Outputs[Excel Source Output].ExternalColumns[Rightsline ID]"
-                          lineageId="Package\Foreach Loop Container\Episode Import\Edit Source.Outputs[Excel Source Output].Columns[Rightsline ID]"
-                          name="Rightsline ID"
-                          truncationRowDisposition="FailComponent" />
-                        <outputColumn
-                          refId="Package\Foreach Loop Container\Episode Import\Edit Source.Outputs[Excel Source Output].Columns[PBS NOLA Root]"
+                          refId="Package\Foreach Loop Container\Episode Import\Episode Source.Outputs[Excel Source Output].Columns[enterprise_metadata_uid]"
                           dataType="wstr"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Foreach Loop Container\Episode Import\Edit Source.Outputs[Excel Source Output].ExternalColumns[PBS NOLA Root]"
-                          length="255"
-                          lineageId="Package\Foreach Loop Container\Episode Import\Edit Source.Outputs[Excel Source Output].Columns[PBS NOLA Root]"
-                          name="PBS NOLA Root"
-                          truncationRowDisposition="FailComponent" />
-                        <outputColumn
-                          refId="Package\Foreach Loop Container\Episode Import\Edit Source.Outputs[Excel Source Output].Columns[enterprise_metadata_uid]"
-                          dataType="wstr"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Foreach Loop Container\Episode Import\Edit Source.Outputs[Excel Source Output].ExternalColumns[enterprise_metadata_uid]"
+                          externalMetadataColumnId="Package\Foreach Loop Container\Episode Import\Episode Source.Outputs[Excel Source Output].ExternalColumns[enterprise_metadata_uid]"
                           length="50"
-                          lineageId="Package\Foreach Loop Container\Episode Import\Edit Source.Outputs[Excel Source Output].Columns[enterprise_metadata_uid]"
+                          lineageId="Package\Foreach Loop Container\Episode Import\Episode Source.Outputs[Excel Source Output].Columns[enterprise_metadata_uid]"
                           name="enterprise_metadata_uid"
                           truncationRowDisposition="FailComponent" />
                         <outputColumn
-                          refId="Package\Foreach Loop Container\Episode Import\Edit Source.Outputs[Excel Source Output].Columns[PBS NOLA Code]"
-                          dataType="r8"
+                          refId="Package\Foreach Loop Container\Episode Import\Episode Source.Outputs[Excel Source Output].Columns[Pbs Nola Root]"
+                          dataType="wstr"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Foreach Loop Container\Episode Import\Edit Source.Outputs[Excel Source Output].ExternalColumns[PBS NOLA Code]"
-                          lineageId="Package\Foreach Loop Container\Episode Import\Edit Source.Outputs[Excel Source Output].Columns[PBS NOLA Code]"
-                          name="PBS NOLA Code"
+                          externalMetadataColumnId="Package\Foreach Loop Container\Episode Import\Episode Source.Outputs[Excel Source Output].ExternalColumns[Pbs Nola Root]"
+                          length="255"
+                          lineageId="Package\Foreach Loop Container\Episode Import\Episode Source.Outputs[Excel Source Output].Columns[Pbs Nola Root]"
+                          name="Pbs Nola Root"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Foreach Loop Container\Episode Import\Episode Source.Outputs[Excel Source Output].Columns[Pbs Nola Code]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Foreach Loop Container\Episode Import\Episode Source.Outputs[Excel Source Output].ExternalColumns[Pbs Nola Code]"
+                          length="255"
+                          lineageId="Package\Foreach Loop Container\Episode Import\Episode Source.Outputs[Excel Source Output].Columns[Pbs Nola Code]"
+                          name="Pbs Nola Code"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Foreach Loop Container\Episode Import\Episode Source.Outputs[Excel Source Output].Columns[Rightsline ID]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Foreach Loop Container\Episode Import\Episode Source.Outputs[Excel Source Output].ExternalColumns[Rightsline ID]"
+                          length="255"
+                          lineageId="Package\Foreach Loop Container\Episode Import\Episode Source.Outputs[Excel Source Output].Columns[Rightsline ID]"
+                          name="Rightsline ID"
                           truncationRowDisposition="FailComponent" />
                       </outputColumns>
                       <externalMetadataColumns
                         isUsed="True">
                         <externalMetadataColumn
-                          refId="Package\Foreach Loop Container\Episode Import\Edit Source.Outputs[Excel Source Output].ExternalColumns[Rightsline ID]"
-                          dataType="r8"
-                          name="Rightsline ID" />
-                        <externalMetadataColumn
-                          refId="Package\Foreach Loop Container\Episode Import\Edit Source.Outputs[Excel Source Output].ExternalColumns[PBS NOLA Root]"
-                          dataType="wstr"
-                          length="255"
-                          name="PBS NOLA Root" />
-                        <externalMetadataColumn
-                          refId="Package\Foreach Loop Container\Episode Import\Edit Source.Outputs[Excel Source Output].ExternalColumns[enterprise_metadata_uid]"
+                          refId="Package\Foreach Loop Container\Episode Import\Episode Source.Outputs[Excel Source Output].ExternalColumns[enterprise_metadata_uid]"
                           dataType="wstr"
                           length="255"
                           name="enterprise_metadata_uid" />
                         <externalMetadataColumn
-                          refId="Package\Foreach Loop Container\Episode Import\Edit Source.Outputs[Excel Source Output].ExternalColumns[PBS NOLA Code]"
-                          dataType="r8"
-                          name="PBS NOLA Code" />
+                          refId="Package\Foreach Loop Container\Episode Import\Episode Source.Outputs[Excel Source Output].ExternalColumns[Pbs Nola Root]"
+                          dataType="wstr"
+                          length="255"
+                          name="Pbs Nola Root" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\Episode Import\Episode Source.Outputs[Excel Source Output].ExternalColumns[Pbs Nola Code]"
+                          dataType="wstr"
+                          length="255"
+                          name="Pbs Nola Code" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\Episode Import\Episode Source.Outputs[Excel Source Output].ExternalColumns[Rightsline ID]"
+                          dataType="wstr"
+                          length="255"
+                          name="Rightsline ID" />
                       </externalMetadataColumns>
                     </output>
                     <output
-                      refId="Package\Foreach Loop Container\Episode Import\Edit Source.Outputs[Excel Source Error Output]"
+                      refId="Package\Foreach Loop Container\Episode Import\Episode Source.Outputs[Excel Source Error Output]"
                       isErrorOut="true"
                       name="Excel Source Error Output">
                       <outputColumns>
                         <outputColumn
-                          refId="Package\Foreach Loop Container\Episode Import\Edit Source.Outputs[Excel Source Error Output].Columns[Rightsline ID]"
-                          dataType="r8"
-                          lineageId="Package\Foreach Loop Container\Episode Import\Edit Source.Outputs[Excel Source Error Output].Columns[Rightsline ID]"
+                          refId="Package\Foreach Loop Container\Episode Import\Episode Source.Outputs[Excel Source Error Output].Columns[Pbs Nola Root]"
+                          dataType="wstr"
+                          length="255"
+                          lineageId="Package\Foreach Loop Container\Episode Import\Episode Source.Outputs[Excel Source Error Output].Columns[Pbs Nola Root]"
+                          name="Pbs Nola Root" />
+                        <outputColumn
+                          refId="Package\Foreach Loop Container\Episode Import\Episode Source.Outputs[Excel Source Error Output].Columns[Pbs Nola Code]"
+                          dataType="wstr"
+                          length="255"
+                          lineageId="Package\Foreach Loop Container\Episode Import\Episode Source.Outputs[Excel Source Error Output].Columns[Pbs Nola Code]"
+                          name="Pbs Nola Code" />
+                        <outputColumn
+                          refId="Package\Foreach Loop Container\Episode Import\Episode Source.Outputs[Excel Source Error Output].Columns[Rightsline ID]"
+                          dataType="wstr"
+                          length="255"
+                          lineageId="Package\Foreach Loop Container\Episode Import\Episode Source.Outputs[Excel Source Error Output].Columns[Rightsline ID]"
                           name="Rightsline ID" />
                         <outputColumn
-                          refId="Package\Foreach Loop Container\Episode Import\Edit Source.Outputs[Excel Source Error Output].Columns[PBS NOLA Code]"
-                          dataType="r8"
-                          lineageId="Package\Foreach Loop Container\Episode Import\Edit Source.Outputs[Excel Source Error Output].Columns[PBS NOLA Code]"
-                          name="PBS NOLA Code" />
-                        <outputColumn
-                          refId="Package\Foreach Loop Container\Episode Import\Edit Source.Outputs[Excel Source Error Output].Columns[PBS NOLA Root]"
+                          refId="Package\Foreach Loop Container\Episode Import\Episode Source.Outputs[Excel Source Error Output].Columns[enterprise_metadata_uid]"
                           dataType="wstr"
                           length="255"
-                          lineageId="Package\Foreach Loop Container\Episode Import\Edit Source.Outputs[Excel Source Error Output].Columns[PBS NOLA Root]"
-                          name="PBS NOLA Root" />
-                        <outputColumn
-                          refId="Package\Foreach Loop Container\Episode Import\Edit Source.Outputs[Excel Source Error Output].Columns[enterprise_metadata_uid]"
-                          dataType="wstr"
-                          length="255"
-                          lineageId="Package\Foreach Loop Container\Episode Import\Edit Source.Outputs[Excel Source Error Output].Columns[enterprise_metadata_uid]"
+                          lineageId="Package\Foreach Loop Container\Episode Import\Episode Source.Outputs[Excel Source Error Output].Columns[enterprise_metadata_uid]"
                           name="enterprise_metadata_uid" />
                         <outputColumn
-                          refId="Package\Foreach Loop Container\Episode Import\Edit Source.Outputs[Excel Source Error Output].Columns[ErrorCode]"
+                          refId="Package\Foreach Loop Container\Episode Import\Episode Source.Outputs[Excel Source Error Output].Columns[ErrorCode]"
                           dataType="i4"
-                          lineageId="Package\Foreach Loop Container\Episode Import\Edit Source.Outputs[Excel Source Error Output].Columns[ErrorCode]"
+                          lineageId="Package\Foreach Loop Container\Episode Import\Episode Source.Outputs[Excel Source Error Output].Columns[ErrorCode]"
                           name="ErrorCode"
                           specialFlags="1" />
                         <outputColumn
-                          refId="Package\Foreach Loop Container\Episode Import\Edit Source.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
+                          refId="Package\Foreach Loop Container\Episode Import\Episode Source.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
                           dataType="i4"
-                          lineageId="Package\Foreach Loop Container\Episode Import\Edit Source.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
+                          lineageId="Package\Foreach Loop Container\Episode Import\Episode Source.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
                           name="ErrorColumn"
                           specialFlags="2" />
                       </outputColumns>
@@ -1074,7 +1080,7 @@
                   refId="Package\Foreach Loop Container\Episode Import.Paths[Excel Source Output]"
                   endId="Package\Foreach Loop Container\Episode Import\ADO NET Destination.Inputs[ADO NET Destination Input]"
                   name="Excel Source Output"
-                  startId="Package\Foreach Loop Container\Episode Import\Edit Source.Outputs[Excel Source Output]" />
+                  startId="Package\Foreach Loop Container\Episode Import\Episode Source.Outputs[Excel Source Output]" />
               </paths>
             </pipeline>
           </DTS:ObjectData>
@@ -2054,14 +2060,24 @@
                           name="PBS NOLA Code"
                           truncationRowDisposition="FailComponent" />
                         <outputColumn
-                          refId="Package\Foreach Loop Container\OTO Import\Edit Source.Outputs[Excel Source Output].Columns[PBS America ID]"
+                          refId="Package\Foreach Loop Container\OTO Import\Edit Source.Outputs[Excel Source Output].Columns[F5]"
                           dataType="wstr"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Foreach Loop Container\OTO Import\Edit Source.Outputs[Excel Source Output].ExternalColumns[PBS America ID]"
+                          externalMetadataColumnId="Package\Foreach Loop Container\OTO Import\Edit Source.Outputs[Excel Source Output].ExternalColumns[F5]"
                           length="255"
-                          lineageId="Package\Foreach Loop Container\OTO Import\Edit Source.Outputs[Excel Source Output].Columns[PBS America ID]"
-                          name="PBS America ID"
+                          lineageId="Package\Foreach Loop Container\OTO Import\Edit Source.Outputs[Excel Source Output].Columns[F5]"
+                          name="F5"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Foreach Loop Container\OTO Import\Edit Source.Outputs[Excel Source Output].Columns[F6]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Foreach Loop Container\OTO Import\Edit Source.Outputs[Excel Source Output].ExternalColumns[F6]"
+                          length="255"
+                          lineageId="Package\Foreach Loop Container\OTO Import\Edit Source.Outputs[Excel Source Output].Columns[F6]"
+                          name="F6"
                           truncationRowDisposition="FailComponent" />
                       </outputColumns>
                       <externalMetadataColumns
@@ -2082,13 +2098,19 @@
                           name="enterprise_metadata_uid" />
                         <externalMetadataColumn
                           refId="Package\Foreach Loop Container\OTO Import\Edit Source.Outputs[Excel Source Output].ExternalColumns[PBS NOLA Code]"
-                          dataType="r8"
-                          name="PBS NOLA Code" />
-                        <externalMetadataColumn
-                          refId="Package\Foreach Loop Container\OTO Import\Edit Source.Outputs[Excel Source Output].ExternalColumns[PBS America ID]"
                           dataType="wstr"
                           length="255"
-                          name="PBS America ID" />
+                          name="PBS NOLA Code" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\OTO Import\Edit Source.Outputs[Excel Source Output].ExternalColumns[F5]"
+                          dataType="wstr"
+                          length="255"
+                          name="F5" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\OTO Import\Edit Source.Outputs[Excel Source Output].ExternalColumns[F6]"
+                          dataType="wstr"
+                          length="255"
+                          name="F6" />
                       </externalMetadataColumns>
                     </output>
                     <output
@@ -2103,7 +2125,8 @@
                           name="Rightsline ID" />
                         <outputColumn
                           refId="Package\Foreach Loop Container\OTO Import\Edit Source.Outputs[Excel Source Error Output].Columns[PBS NOLA Code]"
-                          dataType="r8"
+                          dataType="wstr"
+                          length="255"
                           lineageId="Package\Foreach Loop Container\OTO Import\Edit Source.Outputs[Excel Source Error Output].Columns[PBS NOLA Code]"
                           name="PBS NOLA Code" />
                         <outputColumn
@@ -2113,17 +2136,23 @@
                           lineageId="Package\Foreach Loop Container\OTO Import\Edit Source.Outputs[Excel Source Error Output].Columns[PBS NOLA Root]"
                           name="PBS NOLA Root" />
                         <outputColumn
-                          refId="Package\Foreach Loop Container\OTO Import\Edit Source.Outputs[Excel Source Error Output].Columns[PBS America ID]"
-                          dataType="wstr"
-                          length="255"
-                          lineageId="Package\Foreach Loop Container\OTO Import\Edit Source.Outputs[Excel Source Error Output].Columns[PBS America ID]"
-                          name="PBS America ID" />
-                        <outputColumn
                           refId="Package\Foreach Loop Container\OTO Import\Edit Source.Outputs[Excel Source Error Output].Columns[enterprise_metadata_uid]"
                           dataType="wstr"
                           length="255"
                           lineageId="Package\Foreach Loop Container\OTO Import\Edit Source.Outputs[Excel Source Error Output].Columns[enterprise_metadata_uid]"
                           name="enterprise_metadata_uid" />
+                        <outputColumn
+                          refId="Package\Foreach Loop Container\OTO Import\Edit Source.Outputs[Excel Source Error Output].Columns[F5]"
+                          dataType="wstr"
+                          length="255"
+                          lineageId="Package\Foreach Loop Container\OTO Import\Edit Source.Outputs[Excel Source Error Output].Columns[F5]"
+                          name="F5" />
+                        <outputColumn
+                          refId="Package\Foreach Loop Container\OTO Import\Edit Source.Outputs[Excel Source Error Output].Columns[F6]"
+                          dataType="wstr"
+                          length="255"
+                          lineageId="Package\Foreach Loop Container\OTO Import\Edit Source.Outputs[Excel Source Error Output].Columns[F6]"
+                          name="F6" />
                         <outputColumn
                           refId="Package\Foreach Loop Container\OTO Import\Edit Source.Outputs[Excel Source Error Output].Columns[ErrorCode]"
                           dataType="i4"
@@ -2166,7 +2195,7 @@
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
               SQLTask:Connection="{C63B4740-025F-4647-B602-4B2D232DC3B0}"
-              SQLTask:SqlStatementSource="delete from [dbo].[CatalogSeasons_UpdateOnly] &#xA;where rl_id not in &#xA;(&#xA;select&#x9;RL_ID&#xA;from&#xA;(&#xA;select&#x9;max(rl_id) as RL_ID,&#xA;&#x9;&#x9;a.[season_number],&#xA;&#x9;&#x9;a.[pbs_nola_root]&#xA;&#xA;from&#x9;[dbo].[CatalogSeasons_UpdateOnly] a&#xA;join&#xA;(&#xA;select [season_number]&#xA;      ,[pbs_nola_root]&#xA;  from [dbo].[CatalogSeasons_UpdateOnly]&#xA;group by [season_number],[pbs_nola_root]&#xA;&#xA;) b on a.season_number = b.season_number&#xA;and a.pbs_nola_root = b.[pbs_nola_root]&#xA;group by a.[season_number],&#xA;&#x9;&#x9;a.[pbs_nola_root]&#xA;)Q&#xA;);&#xA;&#xA;exec dbo.spHarmonize_Catalog_Season_IDs;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+              SQLTask:SqlStatementSource="delete from [dbo].[CatalogSeasons_UpdateOnly] &#xA;where rl_id not in &#xA;(&#xA;select&#x9;RL_ID&#xA;from&#xA;(&#xA;select&#x9;max(rl_id) as RL_ID,&#xA;&#x9;&#x9;a.[season_number],&#xA;&#x9;&#x9;a.[pbs_nola_root],&#xA;&#x9;&#x9;a.entity_title&#xA;&#xA;from&#x9;[dbo].[CatalogSeasons_UpdateOnly] a&#xA;join&#xA;(&#xA;select [season_number]&#xA;      ,[pbs_nola_root]&#xA;&#x9;  ,entity_title&#xA;  from [dbo].[CatalogSeasons_UpdateOnly]&#xA;group by [season_number],[pbs_nola_root],entity_title&#xA;&#xA;) b on a.season_number = b.season_number&#xA;and a.pbs_nola_root = b.[pbs_nola_root]&#xA;group by a.[season_number],&#xA;&#x9;&#x9;a.[pbs_nola_root],a.entity_title&#xA;)Q&#xA;)&#xA;&#xA;exec dbo.spHarmonize_Catalog_Season_IDs;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
           </DTS:ObjectData>
         </DTS:Executable>
         <DTS:Executable
@@ -2581,7 +2610,7 @@
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="71.5039682539681,27.9724485836245,16,16"
+              BoundingBox="71.503968253968,27.9724485836245,16,16"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -2852,7 +2881,7 @@
     design-time-name="Package\Foreach Loop Container\Deal PandQ Import">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="145,42"
           Id="Package\Foreach Loop Container\Deal PandQ Import\PandQ Source"
@@ -2880,7 +2909,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -2990,35 +3021,23 @@
           Id="Package\Foreach Loop Container\Episode Import\ADO NET Destination"
           TopLeft="381,287" />
         <NodeLayout
-          Size="132,42"
-          Id="Package\Foreach Loop Container\Episode Import\Edit Source"
+          Size="151,42"
+          Id="Package\Foreach Loop Container\Episode Import\Episode Source"
           TopLeft="390,142" />
         <EdgeLayout
           Id="Package\Foreach Loop Container\Episode Import.Paths[Excel Source Output]"
-          TopLeft="456,184">
+          TopLeft="468,184">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="14.5,103"
+              EndConnector="0,103"
               Start="0,0"
-              End="14.5,95.5">
+              End="0,95.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,47.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,47.5"
-                    Point2="0,51.5"
-                    Point3="4,51.5" />
-                  <mssgle:LineSegment
-                    End="10.5,51.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="10.5,51.5"
-                    Point2="14.5,51.5"
-                    Point3="14.5,55.5" />
-                  <mssgle:LineSegment
-                    End="14.5,95.5" />
+                    End="0,95.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -3041,7 +3060,7 @@
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Foreach Loop Container\Episode Import\Edit Source">
+    design-time-name="Package\Foreach Loop Container\Episode Import\Episode Source">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -3128,7 +3147,7 @@
     design-time-name="Package\Foreach Loop Container\Insert Records Into CatalogSeasons_UpdateOnly">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="139,42"
           Id="Package\Foreach Loop Container\Insert Records Into CatalogSeasons_UpdateOnly\Excel Source"
@@ -3168,9 +3187,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -3201,7 +3218,7 @@
     design-time-name="Package\Foreach Loop Container\OTO Import">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="179,42"
           Id="Package\Foreach Loop Container\OTO Import\ADO NET Destination"
@@ -3241,9 +3258,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>

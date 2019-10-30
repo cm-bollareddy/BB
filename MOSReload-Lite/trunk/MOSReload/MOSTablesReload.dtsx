@@ -12,8 +12,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="MOSTablesReload"
   DTS:PackageType="5"
-  DTS:VersionBuild="60"
-  DTS:VersionGUID="{BE0DDA6F-8BD5-47A5-BF00-618C2B28F439}">
+  DTS:VersionBuild="64"
+  DTS:VersionGUID="{78C26440-8550-4782-9D8E-080E53E23436}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">6</DTS:Property>
   <DTS:ConnectionManagers>
@@ -28,7 +28,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAXpNC7+zqZUWgYwaIebzoOQAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABg4hl4OTuw0ah4P8bueMHWAAAAAASAAACgAAAAEAAAALuwF4GB4DDQuPW/A3Y0JdwYAAAAiHk4ROgVO7uV4yDri722R/ysVlGhEhYoFAAAAME1ZItiJB9iYbfx0R6BNVCfUh+p</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAXpNC7+zqZUWgYwaIebzoOQAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAmocPsknZb6OO55RwqChiyAAAAAASAAACgAAAAEAAAAHIojM8Xat00xLLIfK8f4qsYAAAAKfUniuk3S265jkxn7c5hjYUi6tXNnieFFAAAAJhPeuIondyVFfyV2pCLYEoa8BzO</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -39,11 +39,11 @@
       DTS:ObjectName="db19-uat.MOS.mosuser">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=db19-uat;User ID=mosuser;Initial Catalog=MBank-Staging-TEST;Persist Security Info=True;Application Name=SSIS-MOSTablesLoad-{638E68F5-0981-491A-B5FB-6C9504D69EF0}db19-uat.MOS.mosuser;">
+          DTS:ConnectionString="Data Source=db19;User ID=mosuser;Initial Catalog=MBank_Staging_prod;Persist Security Info=True;Application Name=SSIS-MOSTablesLoad-{638E68F5-0981-491A-B5FB-6C9504D69EF0}db19-uat.MOS.mosuser;">
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAXpNC7+zqZUWgYwaIebzoOQAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAYIqf9Bj1bVd9/CoUblZlyAAAAAASAAACgAAAAEAAAAB8qa40u+6oZw/DNnivnvs4YAAAA0soTd2v5t7d1YBgO9lPEgY7Cm754o+qQFAAAADZeDfaRoCHkI2cTHk91IReTbtDi</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAXpNC7+zqZUWgYwaIebzoOQAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABZJ4oxcEvpptBKtD/bLALxAAAAAASAAACgAAAAEAAAAK3ftVhnAmUAJzB41fuBA7oYAAAA8s9vYoSQ8VKRZ3QWA8H1ahdIV2khRenbFAAAANr6JrEgnm1JJrCZ7MSFiRD+RrJj</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -54,11 +54,11 @@
       DTS:ObjectName="db19-uat.TrafficData.TrafficDataReader">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=db19-uat;User ID=TrafficDataReader;Initial Catalog=TrafficData-SystemTest;Persist Security Info=True;Application Name=SSIS-MOSTablesLoad-{2B5C7B6C-A524-430F-9772-AD820D66573C}db19-uat.TrafficData.TrafficDataReader;">
+          DTS:ConnectionString="Data Source=db19-uat;User ID=TrafficDataReader;Initial Catalog=TrafficData;Persist Security Info=True;Application Name=SSIS-MOSTablesLoad-{2B5C7B6C-A524-430F-9772-AD820D66573C}db19-uat.TrafficData.TrafficDataReader;">
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAXpNC7+zqZUWgYwaIebzoOQAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAIg7wo/JK1yopPp+Bdsj0+AAAAAASAAACgAAAAEAAAAIKIpLuJZQNjmGJvprmSErcYAAAAx+GELG/ROkIP4eWr64CCPIAq1gdA4i/2FAAAAEmjVnE78fGTVRrowcvSn+Nz/haD</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAXpNC7+zqZUWgYwaIebzoOQAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAp6PYtH3RzbYaFUYwvl/rEAAAAAASAAACgAAAAEAAAAGMUSMSzdmYNFaE2Egh7OXsYAAAA2g7y0LHVDMttHHIc6YlbhyzkcXWl6PnYFAAAAIVo6zLaY9nAmQLDZcpyvA2hN7Vv</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -3755,14 +3755,14 @@ WHERE   ( TRAFFICDATA.BV.EXTENDEDDATA.EXT_SEXTC_ID = 607871712 )
                         <inputColumn
                           refId="Package\Manifestation Related Tasks\Load MOSManifestation\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Manifestation.ContentIdentifier]"
                           cachedDataType="wstr"
-                          cachedLength="277"
+                          cachedLength="271"
                           cachedName="Manifestation.ContentIdentifier"
                           externalMetadataColumnId="Package\Manifestation Related Tasks\Load MOSManifestation\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Manifestation.ContentIdentifier]"
                           lineageId="Package\Manifestation Related Tasks\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Output].Columns[Manifestation.ContentIdentifier]" />
                         <inputColumn
                           refId="Package\Manifestation Related Tasks\Load MOSManifestation\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Manifestation.ParentID]"
                           cachedDataType="wstr"
-                          cachedLength="53"
+                          cachedLength="56"
                           cachedName="Manifestation.ParentID"
                           externalMetadataColumnId="Package\Manifestation Related Tasks\Load MOSManifestation\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Manifestation.ParentID]"
                           lineageId="Package\Manifestation Related Tasks\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Output].Columns[Manifestation.ParentID]" />
@@ -3834,6 +3834,20 @@ WHERE   ( TRAFFICDATA.BV.EXTENDEDDATA.EXT_SEXTC_ID = 607871712 )
                           cachedName="Manifestation.VideoVChip"
                           externalMetadataColumnId="Package\Manifestation Related Tasks\Load MOSManifestation\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Manifestation.VideoVChip]"
                           lineageId="Package\Manifestation Related Tasks\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Output].Columns[Manifestation.VideoVChip]" />
+                        <inputColumn
+                          refId="Package\Manifestation Related Tasks\Load MOSManifestation\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Manifestation.Audio.Type]"
+                          cachedDataType="wstr"
+                          cachedLength="15"
+                          cachedName="Manifestation.Audio.Type"
+                          externalMetadataColumnId="Package\Manifestation Related Tasks\Load MOSManifestation\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Manifestation.Audio.Type]"
+                          lineageId="Package\Manifestation Related Tasks\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Output].Columns[Manifestation.Audio.Type]" />
+                        <inputColumn
+                          refId="Package\Manifestation Related Tasks\Load MOSManifestation\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Manifestation.Status]"
+                          cachedDataType="wstr"
+                          cachedLength="20"
+                          cachedName="Manifestation.Status"
+                          externalMetadataColumnId="Package\Manifestation Related Tasks\Load MOSManifestation\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Manifestation.Status]"
+                          lineageId="Package\Manifestation Related Tasks\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Output].Columns[Manifestation.Status]" />
                       </inputColumns>
                       <externalMetadataColumns
                         isUsed="True">
@@ -3910,6 +3924,16 @@ WHERE   ( TRAFFICDATA.BV.EXTENDEDDATA.EXT_SEXTC_ID = 607871712 )
                           dataType="wstr"
                           length="500"
                           name="Manifestation.VideoVChip" />
+                        <externalMetadataColumn
+                          refId="Package\Manifestation Related Tasks\Load MOSManifestation\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Manifestation.Audio.Type]"
+                          dataType="wstr"
+                          length="500"
+                          name="Manifestation.Audio.Type" />
+                        <externalMetadataColumn
+                          refId="Package\Manifestation Related Tasks\Load MOSManifestation\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Manifestation.Status]"
+                          dataType="wstr"
+                          length="500"
+                          name="Manifestation.Status" />
                       </externalMetadataColumns>
                     </input>
                   </inputs>
@@ -3968,6 +3992,8 @@ WHERE   ( TRAFFICDATA.BV.EXTENDEDDATA.EXT_SEXTC_ID = 607871712 )
       ,[Manifestation.Audio.Language.CloseCaptioning]
       ,[Manifestation.VideoVChip]
       ,[VER_ID]
+      ,[Manifestation.Audio.Type]
+      ,[Manifestation.Status]
   from [PBS].[vwMOSManifestation]</property>
                     <property
                       dataType="System.Int32"
@@ -4041,7 +4067,7 @@ WHERE   ( TRAFFICDATA.BV.EXTENDEDDATA.EXT_SEXTC_ID = 607871712 )
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
                           externalMetadataColumnId="Package\Manifestation Related Tasks\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Manifestation.ContentIdentifier]"
-                          length="277"
+                          length="271"
                           lineageId="Package\Manifestation Related Tasks\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Output].Columns[Manifestation.ContentIdentifier]"
                           name="Manifestation.ContentIdentifier"
                           truncationRowDisposition="FailComponent" />
@@ -4051,7 +4077,7 @@ WHERE   ( TRAFFICDATA.BV.EXTENDEDDATA.EXT_SEXTC_ID = 607871712 )
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
                           externalMetadataColumnId="Package\Manifestation Related Tasks\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Manifestation.ParentID]"
-                          length="53"
+                          length="56"
                           lineageId="Package\Manifestation Related Tasks\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Output].Columns[Manifestation.ParentID]"
                           name="Manifestation.ParentID"
                           truncationRowDisposition="FailComponent" />
@@ -4162,6 +4188,26 @@ WHERE   ( TRAFFICDATA.BV.EXTENDEDDATA.EXT_SEXTC_ID = 607871712 )
                           lineageId="Package\Manifestation Related Tasks\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Output].Columns[VER_ID]"
                           name="VER_ID"
                           truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Manifestation Related Tasks\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Output].Columns[Manifestation.Audio.Type]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Manifestation Related Tasks\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Manifestation.Audio.Type]"
+                          length="15"
+                          lineageId="Package\Manifestation Related Tasks\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Output].Columns[Manifestation.Audio.Type]"
+                          name="Manifestation.Audio.Type"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Manifestation Related Tasks\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Output].Columns[Manifestation.Status]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Manifestation Related Tasks\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Manifestation.Status]"
+                          length="20"
+                          lineageId="Package\Manifestation Related Tasks\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Output].Columns[Manifestation.Status]"
+                          name="Manifestation.Status"
+                          truncationRowDisposition="FailComponent" />
                       </outputColumns>
                       <externalMetadataColumns
                         isUsed="True">
@@ -4183,12 +4229,12 @@ WHERE   ( TRAFFICDATA.BV.EXTENDEDDATA.EXT_SEXTC_ID = 607871712 )
                         <externalMetadataColumn
                           refId="Package\Manifestation Related Tasks\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Manifestation.ContentIdentifier]"
                           dataType="wstr"
-                          length="277"
+                          length="271"
                           name="Manifestation.ContentIdentifier" />
                         <externalMetadataColumn
                           refId="Package\Manifestation Related Tasks\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Manifestation.ParentID]"
                           dataType="wstr"
-                          length="53"
+                          length="56"
                           name="Manifestation.ParentID" />
                         <externalMetadataColumn
                           refId="Package\Manifestation Related Tasks\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Manifestation.UseWindow.TermStart]"
@@ -4242,6 +4288,16 @@ WHERE   ( TRAFFICDATA.BV.EXTENDEDDATA.EXT_SEXTC_ID = 607871712 )
                           refId="Package\Manifestation Related Tasks\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[VER_ID]"
                           dataType="i4"
                           name="VER_ID" />
+                        <externalMetadataColumn
+                          refId="Package\Manifestation Related Tasks\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Manifestation.Audio.Type]"
+                          dataType="wstr"
+                          length="15"
+                          name="Manifestation.Audio.Type" />
+                        <externalMetadataColumn
+                          refId="Package\Manifestation Related Tasks\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Manifestation.Status]"
+                          dataType="wstr"
+                          length="20"
+                          name="Manifestation.Status" />
                       </externalMetadataColumns>
                     </output>
                     <output
@@ -4270,13 +4326,13 @@ WHERE   ( TRAFFICDATA.BV.EXTENDEDDATA.EXT_SEXTC_ID = 607871712 )
                         <outputColumn
                           refId="Package\Manifestation Related Tasks\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Manifestation.ContentIdentifier]"
                           dataType="wstr"
-                          length="277"
+                          length="271"
                           lineageId="Package\Manifestation Related Tasks\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Manifestation.ContentIdentifier]"
                           name="Manifestation.ContentIdentifier" />
                         <outputColumn
                           refId="Package\Manifestation Related Tasks\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Manifestation.ParentID]"
                           dataType="wstr"
-                          length="53"
+                          length="56"
                           lineageId="Package\Manifestation Related Tasks\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Manifestation.ParentID]"
                           name="Manifestation.ParentID" />
                         <outputColumn
@@ -4342,6 +4398,18 @@ WHERE   ( TRAFFICDATA.BV.EXTENDEDDATA.EXT_SEXTC_ID = 607871712 )
                           dataType="i4"
                           lineageId="Package\Manifestation Related Tasks\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[VER_ID]"
                           name="VER_ID" />
+                        <outputColumn
+                          refId="Package\Manifestation Related Tasks\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Manifestation.Audio.Type]"
+                          dataType="wstr"
+                          length="15"
+                          lineageId="Package\Manifestation Related Tasks\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Manifestation.Audio.Type]"
+                          name="Manifestation.Audio.Type" />
+                        <outputColumn
+                          refId="Package\Manifestation Related Tasks\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Manifestation.Status]"
+                          dataType="wstr"
+                          length="20"
+                          lineageId="Package\Manifestation Related Tasks\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Manifestation.Status]"
+                          name="Manifestation.Status" />
                         <outputColumn
                           refId="Package\Manifestation Related Tasks\Load MOSManifestation\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[ErrorCode]"
                           dataType="i4"
@@ -7767,7 +7835,7 @@ join	PBS.vwMOSSeriesPerAsset b  on b.[EMMSeries.UID] = a.[EMMEpisode.SeriesID]
           PanelSize="268,211"
           Size="268,254"
           Id="Package\Manifestation Related Tasks"
-          TopLeft="752,574" />
+          TopLeft="753,574" />
         <NodeLayout
           Size="152,42"
           Id="Package\MOSOffer Related Tasks\Load MOSOffer"
@@ -8025,9 +8093,9 @@ join	PBS.vwMOSSeriesPerAsset b  on b.[EMMSeries.UID] = a.[EMMEpisode.SeriesID]
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="59.75,150"
+              EndConnector="60.75,150"
               Start="0,0"
-              End="59.75,142.5">
+              End="60.75,142.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
@@ -8038,13 +8106,13 @@ join	PBS.vwMOSSeriesPerAsset b  on b.[EMMSeries.UID] = a.[EMMEpisode.SeriesID]
                     Point2="0,51.6913319238901"
                     Point3="4,51.6913319238901" />
                   <mssgle:LineSegment
-                    End="55.75,51.6913319238901" />
+                    End="56.75,51.6913319238901" />
                   <mssgle:CubicBezierSegment
-                    Point1="55.75,51.6913319238901"
-                    Point2="59.75,51.6913319238901"
-                    Point3="59.75,55.6913319238901" />
+                    Point1="56.75,51.6913319238901"
+                    Point2="60.75,51.6913319238901"
+                    Point3="60.75,55.6913319238901" />
                   <mssgle:LineSegment
-                    End="59.75,142.5" />
+                    End="60.75,142.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -8466,7 +8534,7 @@ join	PBS.vwMOSSeriesPerAsset b  on b.[EMMSeries.UID] = a.[EMMEpisode.SeriesID]
     design-time-name="Package\Load Contact">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="158,42"
           Id="Package\Load Contact\ADO NET Source"
@@ -8494,9 +8562,7 @@ join	PBS.vwMOSSeriesPerAsset b  on b.[EMMSeries.UID] = a.[EMMEpisode.SeriesID]
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -8514,7 +8580,7 @@ join	PBS.vwMOSSeriesPerAsset b  on b.[EMMSeries.UID] = a.[EMMEpisode.SeriesID]
     design-time-name="Package\load MosEvent">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="173,42"
           Id="Package\load MosEvent\Dest PBS MOSEvent"
@@ -8554,7 +8620,9 @@ join	PBS.vwMOSSeriesPerAsset b  on b.[EMMSeries.UID] = a.[EMMEpisode.SeriesID]
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -8730,7 +8798,7 @@ join	PBS.vwMOSSeriesPerAsset b  on b.[EMMSeries.UID] = a.[EMMEpisode.SeriesID]
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="181,42"
+          Size="179,42"
           Id="Package\Manifestation Related Tasks\Load MOSManifestation\ADO NET Destination"
           TopLeft="166,246" />
         <NodeLayout
@@ -8739,18 +8807,30 @@ join	PBS.vwMOSSeriesPerAsset b  on b.[EMMSeries.UID] = a.[EMMEpisode.SeriesID]
           TopLeft="185,97" />
         <EdgeLayout
           Id="Package\Manifestation Related Tasks\Load MOSManifestation.Paths[ADO NET Source Output]"
-          TopLeft="260.25,139">
+          TopLeft="264,139">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,107"
+              EndConnector="-8.5,107"
               Start="0,0"
-              End="0,99.5">
+              End="-8.5,99.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,99.5" />
+                    End="0,49.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,49.5"
+                    Point2="0,53.5"
+                    Point3="-4,53.5" />
+                  <mssgle:LineSegment
+                    End="-4.5,53.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-4.5,53.5"
+                    Point2="-8.5,53.5"
+                    Point3="-8.5,57.5" />
+                  <mssgle:LineSegment
+                    End="-8.5,99.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -8762,6 +8842,22 @@ join	PBS.vwMOSSeriesPerAsset b  on b.[EMMSeries.UID] = a.[EMMEpisode.SeriesID]
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Manifestation Related Tasks\Load MOSManifestation\ADO NET Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Manifestation Related Tasks\Load MOSManifestation\ADO NET Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <TaskHost
     design-time-name="Package\Manifestation Related Tasks\Load MOSManifestationFile">
     <LayoutInfo>
