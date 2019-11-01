@@ -1,0 +1,42 @@
+15:06:04.607: Plugin starting. Avid Media Composer version: 
+15:06:04.607: Trying to load Ini file : C:\PBSAvidPopupWindow.ini
+15:06:04.607: Cannot find INI file for Enumerating window name. Using default value:Avid Media Composer
+15:06:04.608: Found matching window. Class: TAvid1 ,Title: Avid Media Composer Nitris DX ,Handle: 269250
+15:06:04.608: SearchText : Avid Media Composer
+15:06:04.609: Avid Media Composer class name: TAvid1
+16:40:51.328: KeyBoardProc: PRESSED key 17, clip='JFYI'
+16:40:51.328: KeyBoardProc: END
+16:40:51.329: KeyBoardProc: PRESSED key 17, clip='JFYI'
+16:40:51.329: KeyBoardProc: END
+16:40:51.615: KeyBoardProc: PRESSED key 'C', clip='JFYI'
+16:40:51.615: window=Avid Media Composer Nitris DX, classname=TAvid1
+16:40:51.615: KeyBoardProc: END
+16:40:51.616: KeyBoardProc: PRESSED key 'C', clip='JFYI'
+16:40:51.616: window=Avid Media Composer Nitris DX, classname=TAvid1
+16:40:51.616: KeyBoardProc: END
+16:40:51.680: KeyBoardProc: RELEASED key 'C', clip='JFYI'
+16:40:51.680: window=Avid Media Composer Nitris DX, classname=TAvid1
+16:40:51.680: SetKeyStatus old=Normal, new=WasControlCRelease
+16:40:51.680: KeyBoardProc: END
+16:40:51.681: KeyBoardProc: RELEASED key 'C', clip='JFYI'
+16:40:51.681: window=Avid Media Composer Nitris DX, classname=TAvid1
+16:40:51.681: SetKeyStatus old=WasControlCRelease, new=InternalCC_Sent
+16:40:51.681: KeyBoardProc: END
+16:40:51.760: KeyBoardProc: PRESSED key 'C', clip='$#$MARKER...'
+16:40:51.760: window=Avid Media Composer Nitris DX, classname=TAvid1
+16:40:51.760: KeyBoardProc: END
+16:40:51.761: KeyBoardProc: PRESSED key 'C', clip='$#$MARKER...'
+16:40:51.761: window=Avid Media Composer Nitris DX, classname=TAvid1
+16:40:51.761: KeyBoardProc: END
+16:40:51.824: KeyBoardProc: RELEASED key 'C', clip='$#$MARKER...'
+16:40:51.824: window=Avid Media Composer Nitris DX, classname=TAvid1
+16:40:51.824: SetKeyStatus old=InternalCC_Sent, new=InternalCC_CaughtFirst
+16:40:51.824: KeyBoardProc: END
+16:40:51.825: KeyBoardProc: RELEASED key 'C', clip='$#$MARKER...'
+16:40:51.825: window=Avid Media Composer Nitris DX, classname=TAvid1
+16:40:51.825: KeyBoardProc: END
+16:40:51.872: KeyBoardProc: RELEASED key 17, clip='$#$MARKER...'
+16:40:51.872: KeyBoardProc: END
+16:40:51.873: KeyBoardProc: RELEASED key 17, clip='$#$MARKER...'
+16:40:51.873: KeyBoardProc: END
+16:40:51.926: SetKeyStatus old=InternalCC_CaughtFirst, new=Normal

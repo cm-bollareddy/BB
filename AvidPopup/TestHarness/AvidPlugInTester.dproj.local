@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2015/05/14 09:56:04.000.924,C:\Work\AvidPopupHook\TestHarness\SDIAPP.dproj=C:\Work\AvidPopupHook\TestHarness\AvidPlugInTester.dproj</Transaction>
+    <Transaction>2015/05/14 09:56:15.000.735,C:\Work\AvidPopupHook\TestHarness\Unit1.dfm=C:\Work\AvidPopupHook\TestHarness\Testform.dfm</Transaction>
+    <Transaction>2015/05/14 09:56:15.000.735,C:\Work\AvidPopupHook\TestHarness\Unit1.pas=C:\Work\AvidPopupHook\TestHarness\Testform.pas</Transaction>
+  </Transactions>
+</BorlandProject>

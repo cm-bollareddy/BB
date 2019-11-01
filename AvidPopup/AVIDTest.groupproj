@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{6628F2E9-5EB9-4234-8F3D-4EC7C2E52A0E}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="AvidPopupHook\AvidPopupHook.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="TestHarness\AvidPlugInTester.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="AvidPopupHook">
+        <MSBuild Projects="AvidPopupHook\AvidPopupHook.dproj"/>
+    </Target>
+    <Target Name="AvidPopupHook:Clean">
+        <MSBuild Projects="AvidPopupHook\AvidPopupHook.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="AvidPopupHook:Make">
+        <MSBuild Projects="AvidPopupHook\AvidPopupHook.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="AvidPlugInTester">
+        <MSBuild Projects="TestHarness\AvidPlugInTester.dproj"/>
+    </Target>
+    <Target Name="AvidPlugInTester:Clean">
+        <MSBuild Projects="TestHarness\AvidPlugInTester.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="AvidPlugInTester:Make">
+        <MSBuild Projects="TestHarness\AvidPlugInTester.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="AvidPopupHook;AvidPlugInTester"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="AvidPopupHook:Clean;AvidPlugInTester:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="AvidPopupHook:Make;AvidPlugInTester:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
