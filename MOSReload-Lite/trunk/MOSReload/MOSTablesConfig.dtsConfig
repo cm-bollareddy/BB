@@ -10,7 +10,7 @@
     <ConfiguredValue></ConfiguredValue>
   </Configuration>
   <Configuration ConfiguredType="Property" Path="\Package.Connections[db19-uat.MOS.mosuser].Properties[InitialCatalog]" ValueType="String">
-    <ConfiguredValue>MBank-Staging-dev</ConfiguredValue>
+    <ConfiguredValue>MBank-Staging-Test</ConfiguredValue>
   </Configuration>
   <Configuration ConfiguredType="Property" Path="\Package.Connections[db19-uat.MOS.mosuser].Properties[Name]" ValueType="String">
     <ConfiguredValue>db19-uat.MOS.mosuser</ConfiguredValue>
