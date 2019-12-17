@@ -12,8 +12,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="MOSTablesReload"
   DTS:PackageType="5"
-  DTS:VersionBuild="68"
-  DTS:VersionGUID="{D2E07761-0AB3-41DF-AC91-DC71F23EEB98}">
+  DTS:VersionBuild="71"
+  DTS:VersionGUID="{2656F551-0BCF-4F93-92C2-1C4FEA63BD89}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">6</DTS:Property>
   <DTS:ConnectionManagers>
@@ -28,7 +28,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAzohHResd90W8VACltU2jNAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAH/AcQOMgC+8DS6Ndra3eTAAAAAASAAACgAAAAEAAAADMzUXpS6StG2uuEbixkptQYAAAAW7HowT6/IQ5UFC3dQfS0EWwbZ2T6gG1cFAAAAEqKjr3LRqlEofJZZ+yrSJ/o9Srm</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAzohHResd90W8VACltU2jNAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACYlGtzPdltG/ZMzXOi0c2/AAAAAASAAACgAAAAEAAAAEwo4v2S9/y1lFAwOsHf1SoYAAAApW3Ce/aTCRYYWJKQYRhKwy9uax/pXGASFAAAAJ0n0mIgfzh1gwczTCamKfW1hS5Z</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -43,7 +43,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAzohHResd90W8VACltU2jNAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAC2w3oXl385vS6lipapqh4pAAAAAASAAACgAAAAEAAAAMKOr10MVW+RekmcvtMLUPYYAAAAprGk7axXKSiQGCI3iIO+nKHdYQHoS1VjFAAAAEx9fpwJGB5yUCEULl8EI0jUfVE8</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAzohHResd90W8VACltU2jNAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAKYCYKZ5Y/WLr4s7yA7yv8AAAAAASAAACgAAAAEAAAAHt2QAl9KKUd3Tu2e39+ZXYYAAAAb0/7UpjTLJ8p5eu3fLWIT/nHuFiU7SWxFAAAAFxqmiQvYdxwtfGxa1tqJH1HS4Wm</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -58,7 +58,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAzohHResd90W8VACltU2jNAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADV3G5AWJtFEPSo3KpzmxnJAAAAAASAAACgAAAAEAAAAEb143vcDaOV7UAszNEjHOMYAAAAKyxcNhfdbqBYiE1DcK1gDlElvPAJjDafFAAAABxCOdldsmydlJJuGc+ZjH1mgvxr</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAzohHResd90W8VACltU2jNAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADv+6tRuRNGtD+SvGlZvok5AAAAAASAAACgAAAAEAAAAMRNkxjbUuuEEoVOd/6HqqEYAAAAHXFt/K/jm+JGuDQiw2F6HFWche1lfXt+FAAAANoqo7E0G1+LeOisZFz3D3IS0y+m</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -3998,7 +3998,7 @@ WHERE   ( TRAFFICDATA.BV.EXTENDEDDATA.EXT_SEXTC_ID = 607871712 )
                     <property
                       dataType="System.Int32"
                       description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
-                      name="CommandTimeout">30</property>
+                      name="CommandTimeout">0</property>
                     <property
                       dataType="System.Boolean"
                       description="Indicates whether to allow non-string external columns to be implicitly converted to strings at the output columns."
@@ -8582,7 +8582,7 @@ join	PBS.vwMOSSeriesPerAsset b  on b.[EMMSeries.UID] = a.[EMMEpisode.SeriesID]
     design-time-name="Package\load MosEvent">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="173,42"
           Id="Package\load MosEvent\Dest PBS MOSEvent"
@@ -8622,9 +8622,7 @@ join	PBS.vwMOSSeriesPerAsset b  on b.[EMMSeries.UID] = a.[EMMEpisode.SeriesID]
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -8798,7 +8796,7 @@ join	PBS.vwMOSSeriesPerAsset b  on b.[EMMSeries.UID] = a.[EMMEpisode.SeriesID]
     design-time-name="Package\Manifestation Related Tasks\Load MOSManifestation">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="158,42"
           Id="Package\Manifestation Related Tasks\Load MOSManifestation\ADO NET Source"
@@ -8838,9 +8836,7 @@ join	PBS.vwMOSSeriesPerAsset b  on b.[EMMSeries.UID] = a.[EMMEpisode.SeriesID]
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
