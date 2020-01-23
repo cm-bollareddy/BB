@@ -4,19 +4,22 @@
     <DTSConfigurationFileInfo GeneratedBy="BRADDOCK\mrajendran" GeneratedFromPackageName="RightslineLoad" GeneratedFromPackageID="{6CAC6FBD-DC5F-4BD2-B38F-E46769929427}" GeneratedDate="7/23/2018 10:09:13 AM"/>
   </DTSConfigurationHeading>
   <Configuration ConfiguredType="Property" Path="\Package.Connections[ADO.NET-Rightsline].Properties[ConnectionString]" ValueType="String">
-    <ConfiguredValue>Data Source=db19-uat;Integrated Security=True;Application Name=SSIS-Package-{71E29813-C634-400C-947F-2B4708DBD8E0}db19-uat.RightsLineETL;</ConfiguredValue>
-  </Configuration>
-  <Configuration ConfiguredType="Property" Path="\Package.Connections[ADO.NET-Rightsline].Properties[Description]" ValueType="String">
-    <ConfiguredValue></ConfiguredValue>
-  </Configuration>
-  <Configuration ConfiguredType="Property" Path="\Package.Connections[ADO.NET-Rightsline].Properties[InitialCatalog]" ValueType="String">
-    <ConfiguredValue>RightsLineETL-Migration-LaunchCritical</ConfiguredValue>
+    <ConfiguredValue>Data Source=db19-uat;Application Name=SSIS-Package-{71E29813-C634-400C-947F-2B4708DBD8E0}db19-uat.RightsLineETL;</ConfiguredValue>
   </Configuration>
   <Configuration ConfiguredType="Property" Path="\Package.Connections[ADO.NET-Rightsline].Properties[Name]" ValueType="String">
     <ConfiguredValue>ADO.NET-Rightsline</ConfiguredValue>
   </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Connections[ADO.NET-Rightsline].Properties[InitialCatalog]" ValueType="String">
+    <ConfiguredValue>RightsLineETL-Migration-Testing</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Connections[ADO.NET-Rightsline].Properties[ServerName]" ValueType="String">
+    <ConfiguredValue>db19-uat</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Connections[ADO.NET-Rightsline].Properties[UserName]" ValueType="String">
+    <ConfiguredValue>RightsLineUser</ConfiguredValue>
+  </Configuration>
   <Configuration ConfiguredType="Property" Path="\Package.Connections[ADO.NET-Rightsline].Properties[Password]" ValueType="String">
-    <ConfiguredValue></ConfiguredValue>
+    <ConfiguredValue>7d2*H4z!u8JV</ConfiguredValue>
   </Configuration>
   <Configuration ConfiguredType="Property" Path="\Package.Connections[ADO.NET-Rightsline].Properties[ProtectionLevel]" ValueType="Int32">
     <ConfiguredValue>1</ConfiguredValue>
@@ -27,26 +30,26 @@
   <Configuration ConfiguredType="Property" Path="\Package.Connections[ADO.NET-Rightsline].Properties[Scope]" ValueType="Int32">
     <ConfiguredValue>0</ConfiguredValue>
   </Configuration>
-  <Configuration ConfiguredType="Property" Path="\Package.Connections[ADO.NET-Rightsline].Properties[ServerName]" ValueType="String">
-    <ConfiguredValue>db19-uat</ConfiguredValue>
-  </Configuration>
-  <Configuration ConfiguredType="Property" Path="\Package.Connections[ADO.NET-Rightsline].Properties[UserName]" ValueType="String">
+  <Configuration ConfiguredType="Property" Path="\Package.Connections[ADO.NET-Rightsline].Properties[Description]" ValueType="String">
     <ConfiguredValue></ConfiguredValue>
   </Configuration>
   <Configuration ConfiguredType="Property" Path="\Package.Connections[ADO.NET-TrafficData].Properties[ConnectionString]" ValueType="String">
-    <ConfiguredValue>Data Source=db19-uat;Integrated Security=True;Application Name=SSIS-RightslineLoad-{39B52C15-5840-48C4-B58F-F9A976E2C894}db19-uat.TrafficData2;</ConfiguredValue>
-  </Configuration>
-  <Configuration ConfiguredType="Property" Path="\Package.Connections[ADO.NET-TrafficData].Properties[Description]" ValueType="String">
-    <ConfiguredValue></ConfiguredValue>
-  </Configuration>
-  <Configuration ConfiguredType="Property" Path="\Package.Connections[ADO.NET-TrafficData].Properties[InitialCatalog]" ValueType="String">
-    <ConfiguredValue>TrafficData</ConfiguredValue>
+    <ConfiguredValue>Data Source=db19-uat;Application Name=SSIS-RightslineLoad-{39B52C15-5840-48C4-B58F-F9A976E2C894}db19-uat.TrafficData2;</ConfiguredValue>
   </Configuration>
   <Configuration ConfiguredType="Property" Path="\Package.Connections[ADO.NET-TrafficData].Properties[Name]" ValueType="String">
     <ConfiguredValue>ADO.NET-TrafficData</ConfiguredValue>
   </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Connections[ADO.NET-TrafficData].Properties[ServerName]" ValueType="String">
+    <ConfiguredValue>db19-uat</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Connections[ADO.NET-TrafficData].Properties[InitialCatalog]" ValueType="String">
+    <ConfiguredValue>TrafficData</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Connections[ADO.NET-TrafficData].Properties[UserName]" ValueType="String">
+    <ConfiguredValue>trafficdatauser</ConfiguredValue>
+  </Configuration>
   <Configuration ConfiguredType="Property" Path="\Package.Connections[ADO.NET-TrafficData].Properties[Password]" ValueType="String">
-    <ConfiguredValue></ConfiguredValue>
+    <ConfiguredValue>NGEComErefORcHER</ConfiguredValue>
   </Configuration>
   <Configuration ConfiguredType="Property" Path="\Package.Connections[ADO.NET-TrafficData].Properties[ProtectionLevel]" ValueType="Int32">
     <ConfiguredValue>1</ConfiguredValue>
@@ -57,23 +60,23 @@
   <Configuration ConfiguredType="Property" Path="\Package.Connections[ADO.NET-TrafficData].Properties[Scope]" ValueType="Int32">
     <ConfiguredValue>0</ConfiguredValue>
   </Configuration>
-  <Configuration ConfiguredType="Property" Path="\Package.Connections[ADO.NET-TrafficData].Properties[ServerName]" ValueType="String">
-    <ConfiguredValue>db19-uat</ConfiguredValue>
-  </Configuration>
-  <Configuration ConfiguredType="Property" Path="\Package.Connections[ADO.NET-TrafficData].Properties[UserName]" ValueType="String">
+  <Configuration ConfiguredType="Property" Path="\Package.Connections[ADO.NET-TrafficData].Properties[Description]" ValueType="String">
     <ConfiguredValue></ConfiguredValue>
   </Configuration>
   <Configuration ConfiguredType="Property" Path="\Package.Connections[alliantDB].Properties[ConnectionString]" ValueType="String">
     <ConfiguredValue>Data Source=alliantdb-prod;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;</ConfiguredValue>
   </Configuration>
-  <Configuration ConfiguredType="Property" Path="\Package.Connections[alliantDB].Properties[Description]" ValueType="String">
-    <ConfiguredValue></ConfiguredValue>
+  <Configuration ConfiguredType="Property" Path="\Package.Connections[alliantDB].Properties[Name]" ValueType="String">
+    <ConfiguredValue>alliantDB</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Connections[alliantDB].Properties[ServerName]" ValueType="String">
+    <ConfiguredValue>alliantdb-prod</ConfiguredValue>
   </Configuration>
   <Configuration ConfiguredType="Property" Path="\Package.Connections[alliantDB].Properties[InitialCatalog]" ValueType="String">
     <ConfiguredValue>pbs_master</ConfiguredValue>
   </Configuration>
-  <Configuration ConfiguredType="Property" Path="\Package.Connections[alliantDB].Properties[Name]" ValueType="String">
-    <ConfiguredValue>alliantDB</ConfiguredValue>
+  <Configuration ConfiguredType="Property" Path="\Package.Connections[alliantDB].Properties[UserName]" ValueType="String">
+    <ConfiguredValue>kwalikar</ConfiguredValue>
   </Configuration>
   <Configuration ConfiguredType="Property" Path="\Package.Connections[alliantDB].Properties[Password]" ValueType="String">
     <ConfiguredValue>alliant</ConfiguredValue>
@@ -87,26 +90,26 @@
   <Configuration ConfiguredType="Property" Path="\Package.Connections[alliantDB].Properties[Scope]" ValueType="Int32">
     <ConfiguredValue>0</ConfiguredValue>
   </Configuration>
-  <Configuration ConfiguredType="Property" Path="\Package.Connections[alliantDB].Properties[ServerName]" ValueType="String">
-    <ConfiguredValue>alliantdb-prod</ConfiguredValue>
-  </Configuration>
-  <Configuration ConfiguredType="Property" Path="\Package.Connections[alliantDB].Properties[UserName]" ValueType="String">
-    <ConfiguredValue>kwalikar</ConfiguredValue>
+  <Configuration ConfiguredType="Property" Path="\Package.Connections[alliantDB].Properties[Description]" ValueType="String">
+    <ConfiguredValue></ConfiguredValue>
   </Configuration>
   <Configuration ConfiguredType="Property" Path="\Package.Connections[db19-uat.TrafficData].Properties[ConnectionString]" ValueType="String">
     <ConfiguredValue>Data Source=db19-uat;Initial Catalog=TrafficData;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;</ConfiguredValue>
   </Configuration>
-  <Configuration ConfiguredType="Property" Path="\Package.Connections[db19-uat.TrafficData].Properties[Description]" ValueType="String">
-    <ConfiguredValue></ConfiguredValue>
+  <Configuration ConfiguredType="Property" Path="\Package.Connections[db19-uat.TrafficData].Properties[Name]" ValueType="String">
+    <ConfiguredValue>db19-uat.TrafficData</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Connections[db19-uat.TrafficData].Properties[ServerName]" ValueType="String">
+    <ConfiguredValue>db19-uat</ConfiguredValue>
   </Configuration>
   <Configuration ConfiguredType="Property" Path="\Package.Connections[db19-uat.TrafficData].Properties[InitialCatalog]" ValueType="String">
     <ConfiguredValue>TrafficData</ConfiguredValue>
   </Configuration>
-  <Configuration ConfiguredType="Property" Path="\Package.Connections[db19-uat.TrafficData].Properties[Name]" ValueType="String">
-    <ConfiguredValue>db19-uat.TrafficData</ConfiguredValue>
+  <Configuration ConfiguredType="Property" Path="\Package.Connections[db19-uat.TrafficData].Properties[UserName]" ValueType="String">
+    <ConfiguredValue>trafficdatauser</ConfiguredValue>
   </Configuration>
   <Configuration ConfiguredType="Property" Path="\Package.Connections[db19-uat.TrafficData].Properties[Password]" ValueType="String">
-    <ConfiguredValue></ConfiguredValue>
+    <ConfiguredValue>NGEComErefORcHER</ConfiguredValue>
   </Configuration>
   <Configuration ConfiguredType="Property" Path="\Package.Connections[db19-uat.TrafficData].Properties[ProtectionLevel]" ValueType="Int32">
     <ConfiguredValue>1</ConfiguredValue>
@@ -117,26 +120,26 @@
   <Configuration ConfiguredType="Property" Path="\Package.Connections[db19-uat.TrafficData].Properties[Scope]" ValueType="Int32">
     <ConfiguredValue>0</ConfiguredValue>
   </Configuration>
-  <Configuration ConfiguredType="Property" Path="\Package.Connections[db19-uat.TrafficData].Properties[ServerName]" ValueType="String">
-    <ConfiguredValue>db19-uat</ConfiguredValue>
-  </Configuration>
-  <Configuration ConfiguredType="Property" Path="\Package.Connections[db19-uat.TrafficData].Properties[UserName]" ValueType="String">
+  <Configuration ConfiguredType="Property" Path="\Package.Connections[db19-uat.TrafficData].Properties[Description]" ValueType="String">
     <ConfiguredValue></ConfiguredValue>
   </Configuration>
   <Configuration ConfiguredType="Property" Path="\Package.Connections[Rightsline-Dest].Properties[ConnectionString]" ValueType="String">
     <ConfiguredValue>Data Source=db19-uat;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;</ConfiguredValue>
   </Configuration>
-  <Configuration ConfiguredType="Property" Path="\Package.Connections[Rightsline-Dest].Properties[Description]" ValueType="String">
-    <ConfiguredValue></ConfiguredValue>
-  </Configuration>
   <Configuration ConfiguredType="Property" Path="\Package.Connections[Rightsline-Dest].Properties[InitialCatalog]" ValueType="String">
-    <ConfiguredValue>RightsLineETL-Migration-LaunchCritical</ConfiguredValue>
+    <ConfiguredValue>RightsLineETL-Migration-Testing</ConfiguredValue>
   </Configuration>
   <Configuration ConfiguredType="Property" Path="\Package.Connections[Rightsline-Dest].Properties[Name]" ValueType="String">
     <ConfiguredValue>Rightsline-Dest</ConfiguredValue>
   </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Connections[Rightsline-Dest].Properties[ServerName]" ValueType="String">
+    <ConfiguredValue>db19-uat</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Connections[Rightsline-Dest].Properties[UserName]" ValueType="String">
+    <ConfiguredValue>RightsLineUser</ConfiguredValue>
+  </Configuration>
   <Configuration ConfiguredType="Property" Path="\Package.Connections[Rightsline-Dest].Properties[Password]" ValueType="String">
-    <ConfiguredValue></ConfiguredValue>
+    <ConfiguredValue>7d2*H4z!u8JV"</ConfiguredValue>
   </Configuration>
   <Configuration ConfiguredType="Property" Path="\Package.Connections[Rightsline-Dest].Properties[ProtectionLevel]" ValueType="Int32">
     <ConfiguredValue>1</ConfiguredValue>
@@ -147,11 +150,17 @@
   <Configuration ConfiguredType="Property" Path="\Package.Connections[Rightsline-Dest].Properties[Scope]" ValueType="Int32">
     <ConfiguredValue>0</ConfiguredValue>
   </Configuration>
-  <Configuration ConfiguredType="Property" Path="\Package.Connections[Rightsline-Dest].Properties[ServerName]" ValueType="String">
-    <ConfiguredValue>db19-uat</ConfiguredValue>
-  </Configuration>
-  <Configuration ConfiguredType="Property" Path="\Package.Connections[Rightsline-Dest].Properties[UserName]" ValueType="String">
+  <Configuration ConfiguredType="Property" Path="\Package.Connections[Rightsline-Dest].Properties[Description]" ValueType="String">
     <ConfiguredValue></ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Connections[Excel Connection Manager].Properties[ConnectionString]" ValueType="String">
+    <ConfiguredValue>Provider=Microsoft.ACE.OLEDB.12.0;Extended Properties="EXCEL 12.0 XML;HDR=YES";</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Connections[Excel Connection Manager].Properties[ExcelFilePath]" ValueType="String">
+    <ConfiguredValue>C:\Users\ytseytlin\Desktop\HarmonizedData\WorkingAlliantID_PBSOnly.xlsx</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Connections[Excel Connection Manager].Properties[FirstRowHasColumnName]" ValueType="Boolean">
+    <ConfiguredValue>1</ConfiguredValue>
   </Configuration>
   <Configuration ConfiguredType="Property" Path="\Package.Variables[User::DoTruncateXREFIDs].Properties[Description]" ValueType="String">
     <ConfiguredValue></ConfiguredValue>

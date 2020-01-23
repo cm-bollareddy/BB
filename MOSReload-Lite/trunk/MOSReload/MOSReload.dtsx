@@ -12,8 +12,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="MOSReload"
   DTS:PackageType="5"
-  DTS:VersionBuild="316"
-  DTS:VersionGUID="{9EC02A58-AC51-44C9-913B-572E0517B134}">
+  DTS:VersionBuild="318"
+  DTS:VersionGUID="{165EB11B-027D-4BE0-9751-CF3029E88B36}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">6</DTS:Property>
   <DTS:ConnectionManagers>
@@ -24,11 +24,11 @@
       DTS:ObjectName="db19-uat.EMM_Changes.mosuser">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=db19-uat;User ID=mosuser;Initial Catalog=MBank-Staging-TEST;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
+          DTS:ConnectionString="Data Source=db19;User ID=mosuser;Initial Catalog=MBank-Staging-TEST;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAXpNC7+zqZUWgYwaIebzoOQAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAyg+g0UdoptuvLiMBIHF3sAAAAAASAAACgAAAAEAAAAGBYf0EWYk8Wskh6mrxni8QYAAAAf0D8vd4n/DhIV2NM5vk8U5myTEs1sdWgFAAAAN+dlS1K4WQRIUpHUQJLJo1l8Lw5</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAzohHResd90W8VACltU2jNAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACMdwOs4+Th3+vsHSi8VmpwAAAAAASAAACgAAAAEAAAAH5q1GpzgkuyEN5jivdTMdMYAAAA3aLurVK9JYAcBlro7znW8KBc5R1s/35UFAAAAJZmwXpUwoz0GRzu1XUHHsTkG6kr</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -39,11 +39,11 @@
       DTS:ObjectName="db19-uat.MOS.mosuser">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=db19-uat;User ID=mosuser;Initial Catalog=MBank-Staging-TEST;Persist Security Info=True;Application Name=SSIS-MOSTablesLoad-{638E68F5-0981-491A-B5FB-6C9504D69EF0}db19-uat.MOS.mosuser;">
+          DTS:ConnectionString="Data Source=db19;User ID=mosuser;Initial Catalog=&quot;MBank-Staging-TEST&quot;;Persist Security Info=True;Application Name=SSIS-MOSTablesLoad-{638E68F5-0981-491A-B5FB-6C9504D69EF0}db19-uat.MOS.mosuser;">
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAXpNC7+zqZUWgYwaIebzoOQAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAxUjOSuVFit+9/h5Bh4p3AAAAAAASAAACgAAAAEAAAAEg3qEAaOygA4qtN/kb15bUYAAAAQ6YvlFRKPP2OBO/wiPUTOhrpteS9CKmzFAAAADgRW5ZOQ+qVHUtKIZuSIL6VPQ9Z</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAzohHResd90W8VACltU2jNAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAA2WHud+ltOLiMYSX7Ih/OeAAAAAASAAACgAAAAEAAAAFsf3/i6UDk1d0IVrqz21wEYAAAATPycUKUnBDsqkUYykYgm9PVQcwHJKamAFAAAAPexBG+vZ36WhdPXsOi8O6W00DcJ</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -58,7 +58,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAXpNC7+zqZUWgYwaIebzoOQAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADyo43mYYy/Wsp1aVjuSEA+AAAAAASAAACgAAAAEAAAAEqHfhEbisf2BIVfH9juEEIYAAAA1a6prxzNHnQN2XH9Hxl1X8JRWveeFAy5FAAAAFRWmOkq0RUXzaD3mjIYo/IY4I1o</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAzohHResd90W8VACltU2jNAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACZTy889og/MqIGcOrkW7bmAAAAAASAAACgAAAAEAAAAE5zznG5SK4NB6ShcbAfsjMYAAAAfTroYIWkmQIw89/dWlPj85Yp1hj25aO9FAAAAMehWO3amf1BK5yCFBUaqqkAMctg</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -73,7 +73,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAXpNC7+zqZUWgYwaIebzoOQAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADdkzR+/DgB+gsBEKMzT1myAAAAAASAAACgAAAAEAAAALvdiF9J/gsEZwR6I9/rAtEYAAAACxE7eSL29eWg8cYYOZaapiBk/+Ob6pPSFAAAAHkSICd6u6EW34CS+DE4OryQJeRU</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAzohHResd90W8VACltU2jNAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAPdJKICkl2ryyQLfFB/OmPAAAAAASAAACgAAAAEAAAAIPT0TqyParIDDThVdI6NP8YAAAARdXaH+LNYC2e5FWyB4ZgnoAtdKiodrIEFAAAANGW8vjWSFjuWc9pH4dp1Mr+dG7+</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -24876,26 +24876,26 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-102.166666666667,57.6666666666665"
+              EndConnector="-102.166666666667,57.666666666666"
               Start="0,0"
-              End="-102.166666666667,50.1666666666665">
+              End="-102.166666666667,50.166666666666">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,24.8333333333333" />
+                    End="0,24.833333333333" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,24.8333333333333"
-                    Point2="0,28.8333333333333"
-                    Point3="-4,28.8333333333333" />
+                    Point1="0,24.833333333333"
+                    Point2="0,28.833333333333"
+                    Point3="-4,28.833333333333" />
                   <mssgle:LineSegment
-                    End="-98.1666666666666,28.8333333333333" />
+                    End="-98.1666666666666,28.833333333333" />
                   <mssgle:CubicBezierSegment
-                    Point1="-98.1666666666666,28.8333333333333"
-                    Point2="-102.166666666667,28.8333333333333"
-                    Point3="-102.166666666667,32.8333333333333" />
+                    Point1="-98.1666666666666,28.833333333333"
+                    Point2="-102.166666666667,28.833333333333"
+                    Point3="-102.166666666667,32.833333333333" />
                   <mssgle:LineSegment
-                    End="-102.166666666667,50.1666666666665" />
+                    End="-102.166666666667,50.166666666666" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -24907,8 +24907,8 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="401,282"
-          Size="401,325"
+          PanelSize="401,312"
+          Size="401,355"
           Id="Package\Episode Related Tasks"
           TopLeft="1257.16666666667,1227.38095238095" />
         <NodeLayout
@@ -25011,7 +25011,7 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
           PanelSize="415,88"
           Size="415,131"
           Id="Package\Populate Series"
-          TopLeft="929.230769230769,504.615384615385" />
+          TopLeft="742.230769230769,510.615384615385" />
         <NodeLayout
           Size="330,42"
           Id="Package\Poulate TEMP_SeriesSeasonCompilation_RelaseDates"
@@ -25149,26 +25149,26 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="499.326007326007,28.153846153847"
+              EndConnector="312.326007326007,34.153846153847"
               Start="0,0"
-              End="499.326007326007,20.653846153847">
+              End="312.326007326007,26.653846153847">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,10.0769230769235" />
+                    End="0,13.0769230769235" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,10.0769230769235"
-                    Point2="0,14.0769230769235"
-                    Point3="4,14.0769230769235" />
+                    Point1="0,13.0769230769235"
+                    Point2="0,17.0769230769235"
+                    Point3="4,17.0769230769235" />
                   <mssgle:LineSegment
-                    End="495.326007326007,14.0769230769235" />
+                    End="308.326007326007,17.0769230769235" />
                   <mssgle:CubicBezierSegment
-                    Point1="495.326007326007,14.0769230769235"
-                    Point2="499.326007326007,14.0769230769235"
-                    Point3="499.326007326007,18.0769230769235" />
+                    Point1="308.326007326007,17.0769230769235"
+                    Point2="312.326007326007,17.0769230769235"
+                    Point3="312.326007326007,21.0769230769235" />
                   <mssgle:LineSegment
-                    End="499.326007326007,20.653846153847" />
+                    End="312.326007326007,26.653846153847" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -25179,30 +25179,30 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 2]"
-          TopLeft="1136.73076923077,635.615384615385">
+          TopLeft="949.730769230769,641.615384615385">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-456.635531135531,65.98901098901"
+              EndConnector="-269.635531135531,59.98901098901"
               Start="0,0"
-              End="-456.635531135531,58.48901098901">
+              End="-269.635531135531,52.48901098901">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,28.994505494505" />
+                    End="0,25.994505494505" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,28.994505494505"
-                    Point2="0,32.994505494505"
-                    Point3="-4,32.994505494505" />
+                    Point1="0,25.994505494505"
+                    Point2="0,29.994505494505"
+                    Point3="-4,29.994505494505" />
                   <mssgle:LineSegment
-                    End="-452.635531135531,32.994505494505" />
+                    End="-265.635531135531,29.994505494505" />
                   <mssgle:CubicBezierSegment
-                    Point1="-452.635531135531,32.994505494505"
-                    Point2="-456.635531135531,32.994505494505"
-                    Point3="-456.635531135531,36.994505494505" />
+                    Point1="-265.635531135531,29.994505494505"
+                    Point2="-269.635531135531,29.994505494505"
+                    Point3="-269.635531135531,33.994505494505" />
                   <mssgle:LineSegment
-                    End="-456.635531135531,58.48901098901" />
+                    End="-269.635531135531,52.48901098901" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -25778,9 +25778,7 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -25874,9 +25872,7 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -25934,9 +25930,7 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -25970,9 +25964,7 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -26722,9 +26714,7 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -26806,9 +26796,7 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -26878,9 +26866,7 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -26914,9 +26900,7 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -29054,7 +29038,7 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
     design-time-name="Package\Poulate TEMP_SeriesSeasonCompilation_RelaseDates">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="158,42"
           Id="Package\Poulate TEMP_SeriesSeasonCompilation_RelaseDates\ADO NET Source"
@@ -29094,7 +29078,9 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -29112,7 +29098,7 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
     design-time-name="Package\Season Related Tasks\Load SeasonEMMTemp">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="179,42"
           Id="Package\Season Related Tasks\Load SeasonEMMTemp\ADO NET Destination"
@@ -29140,7 +29126,9 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -29262,7 +29250,9 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -29296,7 +29286,9 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -29402,7 +29394,9 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -29472,7 +29466,9 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -29506,7 +29502,9 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
