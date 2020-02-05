@@ -12,8 +12,9 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="MOSReload"
   DTS:PackageType="5"
-  DTS:VersionBuild="318"
-  DTS:VersionGUID="{165EB11B-027D-4BE0-9751-CF3029E88B36}">
+  DTS:ProtectionLevel="2"
+  DTS:VersionBuild="325"
+  DTS:VersionGUID="{B5244859-673E-46B8-B793-F34C7A296729}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">6</DTS:Property>
   <DTS:ConnectionManagers>
@@ -24,11 +25,17 @@
       DTS:ObjectName="db19-uat.EMM_Changes.mosuser">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=db19;User ID=mosuser;Initial Catalog=MBank-Staging-TEST;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
-          <DTS:Password
-            DTS:Name="Password"
-            Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAzohHResd90W8VACltU2jNAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACMdwOs4+Th3+vsHSi8VmpwAAAAAASAAACgAAAAEAAAAH5q1GpzgkuyEN5jivdTMdMYAAAA3aLurVK9JYAcBlro7znW8KBc5R1s/35UFAAAAJZmwXpUwoz0GRzu1XUHHsTkG6kr</DTS:Password>
+          DTS:ConnectionString="Data Source=db19;User ID=mosuser;Initial Catalog=MBANK_STAGING_PROD;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
+          <EncryptedData
+            Type="http://www.w3.org/2001/04/xmlenc#Element"
+            Salt="A7GpvSqMFw=="
+            IV="oVSFvOhZSSQ=" xmlns="http://www.w3.org/2001/04/xmlenc#">
+            <EncryptionMethod
+              Algorithm="http://www.w3.org/2001/04/xmlenc#tripledes-cbc" />
+            <CipherData>
+              <CipherValue>oVSFvOhZSSSYHENQcRmdHHbzy2ufuAKeN18OoQb9I0xuKGn7r8egbTaHK8YLR/xc90nRXbSI4OvXZEqY8rLhnO985rfzR1XHxfYv+6/wtAkpMje8WTWooyskPxfU9klG4tMF/GuOaSUpRe2XqJfScIFVVoBpG01Qoy/QoW74R0I=</CipherValue>
+            </CipherData>
+          </EncryptedData>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -39,11 +46,17 @@
       DTS:ObjectName="db19-uat.MOS.mosuser">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=db19;User ID=mosuser;Initial Catalog=&quot;MBank-Staging-TEST&quot;;Persist Security Info=True;Application Name=SSIS-MOSTablesLoad-{638E68F5-0981-491A-B5FB-6C9504D69EF0}db19-uat.MOS.mosuser;">
-          <DTS:Password
-            DTS:Name="Password"
-            Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAzohHResd90W8VACltU2jNAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAA2WHud+ltOLiMYSX7Ih/OeAAAAAASAAACgAAAAEAAAAFsf3/i6UDk1d0IVrqz21wEYAAAATPycUKUnBDsqkUYykYgm9PVQcwHJKamAFAAAAPexBG+vZ36WhdPXsOi8O6W00DcJ</DTS:Password>
+          DTS:ConnectionString="Data Source=db19;User ID=mosuser;Initial Catalog=MBANK_STAGING_PROD;Persist Security Info=True;Application Name=SSIS-MOSTablesLoad-{638E68F5-0981-491A-B5FB-6C9504D69EF0}db19-uat.MOS.mosuser;">
+          <EncryptedData
+            Type="http://www.w3.org/2001/04/xmlenc#Element"
+            Salt="tkeDjsduxA=="
+            IV="pGZ7+oC+tsI=" xmlns="http://www.w3.org/2001/04/xmlenc#">
+            <EncryptionMethod
+              Algorithm="http://www.w3.org/2001/04/xmlenc#tripledes-cbc" />
+            <CipherData>
+              <CipherValue>pGZ7+oC+tsJWEYsDDZ4izC4d60u7qp26dcN6FTdHkjjoTTRkpiMMR0mTRQTIWrUvToJ2sqYa/We9UHCU3078USb0/rixIUQKmFHJrP76T8LAYJoYvazJu8IBVrXI+zLkiHf4FxOq9CgWLAe5DUgwfrBNWOHuj4kqlxgY0R+krhg=</CipherValue>
+            </CipherData>
+          </EncryptedData>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -55,10 +68,16 @@
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:ConnectionString="Data Source=db19-UAT;User ID=TrafficDataReader;Initial Catalog=TrafficData;Provider=SQLNCLI11.1;Auto Translate=False;">
-          <DTS:Password
-            DTS:Name="Password"
-            Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAzohHResd90W8VACltU2jNAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACZTy889og/MqIGcOrkW7bmAAAAAASAAACgAAAAEAAAAE5zznG5SK4NB6ShcbAfsjMYAAAAfTroYIWkmQIw89/dWlPj85Yp1hj25aO9FAAAAMehWO3amf1BK5yCFBUaqqkAMctg</DTS:Password>
+          <EncryptedData
+            Type="http://www.w3.org/2001/04/xmlenc#Element"
+            Salt="3OjAEegazw=="
+            IV="Cpeiq1uZKH4=" xmlns="http://www.w3.org/2001/04/xmlenc#">
+            <EncryptionMethod
+              Algorithm="http://www.w3.org/2001/04/xmlenc#tripledes-cbc" />
+            <CipherData>
+              <CipherValue>Cpeiq1uZKH4W3xNyCDYXHtWYSc2MV2OrB55v3fE6IsG0dLjk0Q3rXuvNfqDZ7NDrvjpGyrSorYOLg7ZgYQsmltv2qcbjw0otgpsBK2EaGMFVx92lhIhUAmR+wgEElB4zXNPtlxnQEuYgt12I7zYbS98j9/AVdt5ZYoOb3DX2vmg=</CipherValue>
+            </CipherData>
+          </EncryptedData>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -70,10 +89,16 @@
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:ConnectionString="Data Source=db19-UAT;User ID=TrafficDataReader;Initial Catalog=TrafficData;Persist Security Info=True;Application Name=SSIS-MOSTablesLoad-{2B5C7B6C-A524-430F-9772-AD820D66573C}db19-uat.TrafficData.TrafficDataReader;">
-          <DTS:Password
-            DTS:Name="Password"
-            Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAzohHResd90W8VACltU2jNAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAPdJKICkl2ryyQLfFB/OmPAAAAAASAAACgAAAAEAAAAIPT0TqyParIDDThVdI6NP8YAAAARdXaH+LNYC2e5FWyB4ZgnoAtdKiodrIEFAAAANGW8vjWSFjuWc9pH4dp1Mr+dG7+</DTS:Password>
+          <EncryptedData
+            Type="http://www.w3.org/2001/04/xmlenc#Element"
+            Salt="++1p506Qfw=="
+            IV="uxDfLweFLL8=" xmlns="http://www.w3.org/2001/04/xmlenc#">
+            <EncryptionMethod
+              Algorithm="http://www.w3.org/2001/04/xmlenc#tripledes-cbc" />
+            <CipherData>
+              <CipherValue>uxDfLweFLL86QtaXP9+jF6HCKEjb8BNzb/W7l64q9rjBRmmbEon98fr/bW0BzenwI6c/WZpiKEJ19wtaPKHZG+/AxblHj3ZVg3F2CYuWjkS9wojJo11dtaZQhF1FN1EkHXbPDImECrX21DlX3NieaTSCfCQ4tcAgsZm8NTZc1kk=</CipherValue>
+            </CipherData>
+          </EncryptedData>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -8201,7 +8226,7 @@ Declare @ID nvarchar(400)
 
 Set @ID = ?
 
-delete from PBS.MOSEpisode where [Episode.UID] = substring(@ID,1,150) ;
+--delete from PBS.MOSEpisode where [Episode.UID] = substring(@ID,1,150) ;
 insert into	[PBS].[MOS_ObjectChange_Notification]
 			(
 			   [entity_uid]
@@ -8210,15 +8235,17 @@ insert into	[PBS].[MOS_ObjectChange_Notification]
 			  ,[action]
 			  ,[createddatetime]
 			  ,[updateddatetime]
+                                                  ,[error_description]
 			)
 			values
 			(
 				substring(@ID,1,150),
 				'MOSEpisode',
-				'pending',
+				'skip',
 				'delete',
 				getdate(),
-				null
+				null,
+                                                               'We are skippping this record per ticket MOS-427. We are not deleting the actual record, but we are making note that it was slated for deletion'
 			);
 
 end</property>
@@ -18291,9 +18318,28 @@ FROM trafficdata.[PBS].vwMOSEpisodeContactAgnostic</property>
                       description="The SQL command to be executed."
                       expressionType="Notify"
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">insert into PBS.MOS_ObjectChange_Notification 
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">
+/*
+insert into PBS.MOS_ObjectChange_Notification 
 (entity_uid,entity_type,status,action,error_description,createddatetime,updateddatetime)
-values(?,'MOSSeries','pending','delete',null,getdate(),null)</property>
+values(?,'MOSSeries','pending','delete',null,getdate(),null)
+*/
+
+
+
+
+INSERT INTO PBS.MOS_ObjectChange_Notification
+(
+entity_uid
+	, entity_type
+	, status
+	, action
+	, createddatetime
+	, updateddatetime
+	, error_description
+)
+VALUES	(?, 'MOSSeries', 'skip', 'delete', NULL, GETDATE(), 'We are skippping this record per ticket MOS-427. We are not deleting the actual record, but we are making note that it was slated for deletion');
+</property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -18390,7 +18436,7 @@ values(?,'MOSSeries','pending','delete',null,getdate(),null)</property>
                       description="The SQL command to be executed."
                       expressionType="Notify"
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">  delete from [PBS].[MOSSeries] where [Series.UID] =?</property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">  --delete from [PBS].[MOSSeries] where [Series.UID] =?</property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -18411,30 +18457,8 @@ values(?,'MOSSeries','pending','delete',null,getdate(),null)</property>
                       errorRowDisposition="FailComponent"
                       hasSideEffects="true"
                       name="OLE DB Command Input">
-                      <inputColumns>
-                        <inputColumn
-                          refId="Package\Populate Series\MOS Series Update\Delete record from Series in EMM.Inputs[OLE DB Command Input].Columns[Destinationass_id]"
-                          cachedDataType="wstr"
-                          cachedLength="400"
-                          cachedName="Destinationass_id"
-                          externalMetadataColumnId="Package\Populate Series\MOS Series Update\Delete record from Series in EMM.Inputs[OLE DB Command Input].ExternalColumns[Param_0]"
-                          lineageId="Package\Populate Series\MOS Series Update\Merge Join.Outputs[Merge Join Output].Columns[Destinationass_id]" />
-                      </inputColumns>
                       <externalMetadataColumns
-                        isUsed="True">
-                        <externalMetadataColumn
-                          refId="Package\Populate Series\MOS Series Update\Delete record from Series in EMM.Inputs[OLE DB Command Input].ExternalColumns[Param_0]"
-                          dataType="wstr"
-                          length="400"
-                          name="Param_0">
-                          <properties>
-                            <property
-                              dataType="System.Int32"
-                              description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
-                              name="DBParamInfoFlags">65</property>
-                          </properties>
-                        </externalMetadataColumn>
-                      </externalMetadataColumns>
+                        isUsed="True" />
                     </input>
                   </inputs>
                   <outputs>
@@ -22770,9 +22794,19 @@ SELECT distinct 1 as [InternalPBSID]
                       description="The SQL command to be executed."
                       expressionType="Notify"
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">insert into PBS.MOS_ObjectChange_Notification 
-(entity_uid,entity_type,status,action,error_description,createddatetime,updateddatetime)
-values(?,'MOSSeason','pending','delete',null,getdate(),null)</property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">
+INSERT INTO PBS.MOS_ObjectChange_Notification
+(
+                  entity_uid
+	, entity_type
+	, status
+	, action
+	, createddatetime
+	, updateddatetime
+	, error_description
+)
+VALUES	(?, 'MOSSeason', 'skip', 'delete', NULL, GETDATE(), 'We are skippping this record per ticket MOS-427. We are not deleting the actual record, but we are making note that it was slated for deletion');
+</property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -22869,7 +22903,7 @@ values(?,'MOSSeason','pending','delete',null,getdate(),null)</property>
                       description="The SQL command to be executed."
                       expressionType="Notify"
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"> delete from [PBS].[MOSSeason] where [Season.UID] = ?</property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">-- delete from [PBS].[MOSSeason] where [Season.UID] = ?</property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -22890,30 +22924,8 @@ values(?,'MOSSeason','pending','delete',null,getdate(),null)</property>
                       errorRowDisposition="FailComponent"
                       hasSideEffects="true"
                       name="OLE DB Command Input">
-                      <inputColumns>
-                        <inputColumn
-                          refId="Package\Season Related Tasks\MOS Season\delete record from Season in EMM.Inputs[OLE DB Command Input].Columns[DestSeason.UID]"
-                          cachedDataType="wstr"
-                          cachedLength="400"
-                          cachedName="DestSeason.UID"
-                          externalMetadataColumnId="Package\Season Related Tasks\MOS Season\delete record from Season in EMM.Inputs[OLE DB Command Input].ExternalColumns[Param_0]"
-                          lineageId="Package\Season Related Tasks\MOS Season\Merge Join.Outputs[Merge Join Output].Columns[DestSeason.UID]" />
-                      </inputColumns>
                       <externalMetadataColumns
-                        isUsed="True">
-                        <externalMetadataColumn
-                          refId="Package\Season Related Tasks\MOS Season\delete record from Season in EMM.Inputs[OLE DB Command Input].ExternalColumns[Param_0]"
-                          dataType="wstr"
-                          length="400"
-                          name="Param_0">
-                          <properties>
-                            <property
-                              dataType="System.Int32"
-                              description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
-                              name="DBParamInfoFlags">65</property>
-                          </properties>
-                        </externalMetadataColumn>
-                      </externalMetadataColumns>
+                        isUsed="True" />
                     </input>
                   </inputs>
                   <outputs>
@@ -28604,7 +28616,7 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
       <GraphLayout
         Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="239,42"
+          Size="237,42"
           Id="Package\Populate Series\MOS Series Update\Delete record from Series in EMM"
           TopLeft="604,489" />
         <NodeLayout
@@ -28640,7 +28652,7 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
           Id="Package\Populate Series\MOS Series Update\Conditional Split"
           TopLeft="284.222222222222,273.111111111111" />
         <NodeLayout
-          Size="110,42"
+          Size="108,42"
           Id="Package\Populate Series\MOS Series Update\delete"
           TopLeft="634.111111111111,377" />
         <NodeLayout
@@ -28678,9 +28690,7 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -28689,9 +28699,9 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="289.138888888889,61.888888888889"
+              EndConnector="288.138888888889,61.888888888889"
               Start="0,0"
-              End="289.138888888889,54.388888888889">
+              End="288.138888888889,54.388888888889">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
@@ -28702,20 +28712,20 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
                     Point2="0,21.3187195546277"
                     Point3="4,21.3187195546277" />
                   <mssgle:LineSegment
-                    End="285.138888888889,21.3187195546277" />
+                    End="284.138888888889,21.3187195546277" />
                   <mssgle:CubicBezierSegment
-                    Point1="285.138888888889,21.3187195546277"
-                    Point2="289.138888888889,21.3187195546277"
-                    Point3="289.138888888889,25.3187195546277" />
+                    Point1="284.138888888889,21.3187195546277"
+                    Point2="288.138888888889,21.3187195546277"
+                    Point3="288.138888888889,25.3187195546277" />
                   <mssgle:LineSegment
-                    End="289.138888888889,54.388888888889" />
+                    End="288.138888888889,54.388888888889" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="105.946866319445,26.3187195546277,77.24515625,9.7490234375"
+              BoundingBox="105.446866319444,26.3187195546277,77.24515625,9.7490234375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -28750,9 +28760,7 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -28786,14 +28794,12 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Populate Series\MOS Series Update.Paths[OLE DB Command Output]"
-          TopLeft="689.111111111111,419">
+          TopLeft="688.111111111111,419">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -28822,9 +28828,7 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -28930,9 +28934,7 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -29002,9 +29004,7 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -29250,9 +29250,7 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -29286,9 +29284,7 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -29394,9 +29390,7 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -29466,9 +29460,7 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -29502,9 +29494,7 @@ values(?,'MOSSeason','pending','insert',null,getdate(),null)</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
