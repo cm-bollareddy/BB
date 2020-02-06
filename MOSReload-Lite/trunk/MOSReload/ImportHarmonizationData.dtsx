@@ -14,8 +14,8 @@
   DTS:ObjectName="ImportHarmonizationData"
   DTS:PackageType="5"
   DTS:ProtectionLevel="2"
-  DTS:VersionBuild="146"
-  DTS:VersionGUID="{2DA02253-D0CA-48E0-A638-95949E40441D}">
+  DTS:VersionBuild="147"
+  DTS:VersionGUID="{E329A619-7800-4428-A4AF-E981D031F5CF}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">6</DTS:Property>
   <DTS:ConnectionManagers>
@@ -29,12 +29,12 @@
           DTS:ConnectionString="Data Source=db19-uat;User ID=;Initial Catalog=TrafficData-Harmonized;Integrated Security=True;Application Name=SSIS-RightslineLoad-{39B52C15-5840-48C4-B58F-F9A976E2C894}db19-uat.TrafficData2;">
           <EncryptedData
             Type="http://www.w3.org/2001/04/xmlenc#Element"
-            Salt="U5YAo9ACrQ=="
-            IV="1sEU3HFGt5s=" xmlns="http://www.w3.org/2001/04/xmlenc#">
+            Salt="bxplnofgjg=="
+            IV="eawwNqeR2wo=" xmlns="http://www.w3.org/2001/04/xmlenc#">
             <EncryptionMethod
               Algorithm="http://www.w3.org/2001/04/xmlenc#tripledes-cbc" />
             <CipherData>
-              <CipherValue>1sEU3HFGt5uxcFLXjdyc1V5JijXOixlPTTbcYuqzTx/necMRAzNqoqYq496t6K/N0mW4ofT0qNm4i9wEQKAzVHkQnaOmnh2+crzHJfcDR8gXtylb0P3RdGEjEqysgumMi6TTbn5JnVKKhtupSWXAc9MbmZUKWf4x</CipherValue>
+              <CipherValue>eawwNqeR2wqqYKbmJy859aJ5dGMVpVFDH89a8VsHwEY75Bky6krkb/Zea/5hHQTrvY1Us5Q/d8D+MH4iUXmTmK/4sdFqk1Heq2MluuyZlv96cxq53psv4jZNyhTVTSHIjqkiTM4iGMvaGJhKZTqxLeZAXh8LCbEk</CipherValue>
             </CipherData>
           </EncryptedData>
         </DTS:ConnectionManager>
@@ -47,7 +47,7 @@
       DTS:ObjectName="Alliant Contacts Connection Manager">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\ytseytlin\Desktop\HarmonizedData\AlliantContacts.xlsx;Extended Properties=&quot;Excel 12.0 XML;HDR=YES&quot;;" />
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\ytseytlin\Desktop\HarmonizedData\AlliantContacts.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -60,12 +60,12 @@
           DTS:ConnectionString="Data Source=db19-uat;User ID=;Initial Catalog=RightsLineETL-Harmonization;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;">
           <EncryptedData
             Type="http://www.w3.org/2001/04/xmlenc#Element"
-            Salt="ceFLTxO2cA=="
-            IV="FOJ7jzVEmv0=" xmlns="http://www.w3.org/2001/04/xmlenc#">
+            Salt="amm/5UN5rw=="
+            IV="xpD/guZmhxg=" xmlns="http://www.w3.org/2001/04/xmlenc#">
             <EncryptionMethod
               Algorithm="http://www.w3.org/2001/04/xmlenc#tripledes-cbc" />
             <CipherData>
-              <CipherValue>FOJ7jzVEmv1i7MuHNPYyIcscl23E1aTvHM7mv6NJmeJS+P4/hie1Ircwc/hoqsOYFDUfabu2vT3goFsjuhmuiC64cDRb0eDu0XiJzdTlF5oOt/mQdJ1bippUPbSnBmGntc+CgfrzQJVIMQZhYvm8xH58lSnFp4vv</CipherValue>
+              <CipherValue>xpD/guZmhxiP9yYbHdrC0xKuXb+FqgnRKE8ouu4UP0aZH+5N1is/IZRycbGeSV3AdYNwwsbV8PBAbskg5z0j0AiTl801Xv3QbLcLl63pP4n3lToWH4bfBn7AIEWI4bgd8WUd37QiM8IdhUkuL+GTK7IFYAjwjqX4</CipherValue>
             </CipherData>
           </EncryptedData>
         </DTS:ConnectionManager>
@@ -81,12 +81,12 @@
           DTS:ConnectionString="Data Source=DB19-uat;User ID=;Initial Catalog=RightsLineETL-Harmonization;Integrated Security=True;Application Name=SSIS-ImportHarmonizationData-{C95E5D56-CF86-4342-98E8-7DB159E4F942}DB19-uat.RightsLineETL-Harmonization;">
           <EncryptedData
             Type="http://www.w3.org/2001/04/xmlenc#Element"
-            Salt="uso9NDdkRw=="
-            IV="hb/x2ZoGfTg=" xmlns="http://www.w3.org/2001/04/xmlenc#">
+            Salt="S1igLScsow=="
+            IV="q9DcbpxqkWM=" xmlns="http://www.w3.org/2001/04/xmlenc#">
             <EncryptionMethod
               Algorithm="http://www.w3.org/2001/04/xmlenc#tripledes-cbc" />
             <CipherData>
-              <CipherValue>hb/x2ZoGfTg8NTfTUpD1MSQsfPycOhdPiMQIcEETnzzFHCYrc5orB1vvwEiOI0sW9KLYMiPsAVFVSec31JgBtfTJGRlcfE1IIjeJZr+Sv51221d4blxQA/EA7vk7GYX3dYfhO9I9AElS+n9JDd28jttbAly6cqoj</CipherValue>
+              <CipherValue>q9DcbpxqkWOSdlQSAz27Kb1kQPSvB1JohLqwrmrzG/mUrAis67dd1THnVfZc2X4Ob6yPWGJptJKtg0ex18uFif7S6+QsNKi3xkMRvitx5uy9KotljzNvpcNG5gH7FCvR70bsBv7sv38EEXSrPjRsdJ3sOddzkh5R</CipherValue>
             </CipherData>
           </EncryptedData>
         </DTS:ConnectionManager>
@@ -103,12 +103,12 @@
           DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;User ID=;Data Source=C:\Users\ytseytlin\Desktop\HarmonizedData\Edits.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;">
           <EncryptedData
             Type="http://www.w3.org/2001/04/xmlenc#Element"
-            Salt="O12iB5w2ww=="
-            IV="bO4gkqoHDBE=" xmlns="http://www.w3.org/2001/04/xmlenc#">
+            Salt="jUbp7flQuw=="
+            IV="wQys3SqLHPE=" xmlns="http://www.w3.org/2001/04/xmlenc#">
             <EncryptionMethod
               Algorithm="http://www.w3.org/2001/04/xmlenc#tripledes-cbc" />
             <CipherData>
-              <CipherValue>bO4gkqoHDBFAK6snZE7QpWZz4jgflp/5h5PTh6BOj5gd0aInOYizX1tuXH4Zjlnq57MbbS8aymVjyGO8gNLEC2CMQisNOxw2MDiOKgxjNGRgEiWuPYur3Tppae1tSrDWD263oR8DpkV6GIFiS/b8VUOMn4/TXD62</CipherValue>
+              <CipherValue>wQys3SqLHPGHVUNgc+sBTS9Zw9aCgFG+JmEoBI9dyW61AhUymAsWQQ5Lg+klA8l3sMpg/vQ7kTew8oC/UTAD1PtpdA4X67l+1KryYelKKQkgtnACOZZTC1klIpS5tU1lGZbr4LeOY/KPgeA9wsj1A+yNPDwGIbkm</CipherValue>
             </CipherData>
           </EncryptedData>
         </DTS:ConnectionManager>
@@ -124,12 +124,12 @@
           DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;User ID=;Data Source=C:\Users\ytseytlin\Desktop\HarmonizedData\Episode.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;">
           <EncryptedData
             Type="http://www.w3.org/2001/04/xmlenc#Element"
-            Salt="Mi4GPdRlzA=="
-            IV="e3BjBUTeKaQ=" xmlns="http://www.w3.org/2001/04/xmlenc#">
+            Salt="Xh76Rrc3Vw=="
+            IV="GIgXMKynaD0=" xmlns="http://www.w3.org/2001/04/xmlenc#">
             <EncryptionMethod
               Algorithm="http://www.w3.org/2001/04/xmlenc#tripledes-cbc" />
             <CipherData>
-              <CipherValue>e3BjBUTeKaSgxPMMRijgZ/SiYYt+FntvRZSkzCaR8DI+p0L0Nuy391pLTvdckKcug808chTiWnmNZFzqLUHS60atCvuO2Y5NyTs65ucCFifEAOqxhGk6bTfD2CwzJ8BoQO+s5Q4GbdULhb+vR3RVipJ4P9omMX74</CipherValue>
+              <CipherValue>GIgXMKynaD1IvtbZZhfAnoecTN6eqdSJ+otaTpQ0rfpgy59uC1j19HZrkyTCrf9xmNyxj2qfOZRtSS/WiG690tmeUyf/49OeqrESqZB2XTZ28eLY6Iw6w2AsOeEcGnxkvFNsI/eJYXvjK1hhJasl+tqtPvZSYzmF</CipherValue>
             </CipherData>
           </EncryptedData>
         </DTS:ConnectionManager>
@@ -145,12 +145,12 @@
           DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;User ID=;Data Source=C:\Users\ytseytlin\Desktop\HarmonizedData\OTO2.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;">
           <EncryptedData
             Type="http://www.w3.org/2001/04/xmlenc#Element"
-            Salt="mpAtBA8Vgw=="
-            IV="gJtkMj2YycE=" xmlns="http://www.w3.org/2001/04/xmlenc#">
+            Salt="7pvXwoZrSA=="
+            IV="WZzpUqKo68Q=" xmlns="http://www.w3.org/2001/04/xmlenc#">
             <EncryptionMethod
               Algorithm="http://www.w3.org/2001/04/xmlenc#tripledes-cbc" />
             <CipherData>
-              <CipherValue>gJtkMj2YycFqeMCQXV4gcwJe1/f3kR4pP26nJ1GPskv0OV8GllAqNi6lAzjB0KHDHEO3++ERC27p0d/fMJr2zmT+vhQ8hiqd6KLZr79c+xuyzliDwijr7LnRrMJ0Dw599N3JtYP5qAILwsqokuB6UjxSQkN9xmh8</CipherValue>
+              <CipherValue>WZzpUqKo68SkV0DuZKvrL1Fi2QGCMWiITgQpj0zxEx7/6yPEsb6t9uB8KABA1NvmNxKpiU07Eh3NnRASwu2xl/PBNS6qT9fwMC/xU/fKWrWqX8rZ5BpVKz/UVKsSJwG0dv6HxYkCJWvbi31wE6lL9ZZhWov99HjM</CipherValue>
             </CipherData>
           </EncryptedData>
         </DTS:ConnectionManager>
@@ -166,12 +166,12 @@
           DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;User ID=;Data Source=C:\Users\ytseytlin\Desktop\HarmonizedData\PnQ2.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;">
           <EncryptedData
             Type="http://www.w3.org/2001/04/xmlenc#Element"
-            Salt="+1Wac3PGyQ=="
-            IV="EpWD/xasCIQ=" xmlns="http://www.w3.org/2001/04/xmlenc#">
+            Salt="Pp3tHlEWPw=="
+            IV="Rw5vzRTDy+g=" xmlns="http://www.w3.org/2001/04/xmlenc#">
             <EncryptionMethod
               Algorithm="http://www.w3.org/2001/04/xmlenc#tripledes-cbc" />
             <CipherData>
-              <CipherValue>EpWD/xasCITPdadwbX6f+3rGJMKD/i0sekor7fUXqJfi0fDXPRoP6IBZDt66DWGDGqNxNpmQlY7jN4gZlGxfPF8SJyHcYBAeKQEXlNaBvYVahPKqVcocITR/g6yn9txyqCsKPthTDVvYgDWzXHBHuGiaAo3cluGq</CipherValue>
+              <CipherValue>Rw5vzRTDy+g9fmR70E7SVFgXflta0vyvY3klWoNYU6snBj+qHbRd0NWcu1KJ5l1q7DCjnkQq8NAynrpjy348Ph7ZEzPJen7b8uilNwduWHnw2jiUArW3SqaXKUWhnMZ3HybtDquevNvQJE9DbhuRu+9b6SyvcS4G</CipherValue>
             </CipherData>
           </EncryptedData>
         </DTS:ConnectionManager>
@@ -188,12 +188,12 @@
           DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;User ID=;Data Source=C:\Users\ytseytlin\Desktop\HarmonizedData\Seasons.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;">
           <EncryptedData
             Type="http://www.w3.org/2001/04/xmlenc#Element"
-            Salt="kbwUxPF2uQ=="
-            IV="RYwz7vM3PAc=" xmlns="http://www.w3.org/2001/04/xmlenc#">
+            Salt="QeusUoaWHQ=="
+            IV="FQc2xvI3TUo=" xmlns="http://www.w3.org/2001/04/xmlenc#">
             <EncryptionMethod
               Algorithm="http://www.w3.org/2001/04/xmlenc#tripledes-cbc" />
             <CipherData>
-              <CipherValue>RYwz7vM3PAcOzRI7fdaopSMRiqLSTpbeTJI9ncd8WhdLwqKjsah5+uolx+V2aetCVmPEh1q2gxSzqIWsm4xSByETPcKEdzjxviAJJE3WvhGT264/2hyPKNkNDRwiqR+cmYboYy4zWtAmgXYbINhkDA7qxEoDtBsD</CipherValue>
+              <CipherValue>FQc2xvI3TUrR5zpP9SS0L0pCp0RvI7qngR5dbKOVRgpzi/cbFxvkIG3T8dk7xvFbOp48mLDU60Eq6wOQE540EIT5t05fMqD4DyRHSaTQJHczRV2l5mjZC67CuZ4Cjim+fzSbqQRISFGVKm32cE3ymKGEnjtL5T8a</CipherValue>
             </CipherData>
           </EncryptedData>
         </DTS:ConnectionManager>
@@ -210,12 +210,12 @@
           DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;User ID=;Data Source=C:\Users\ytseytlin\Desktop\HarmonizedData\Series.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;">
           <EncryptedData
             Type="http://www.w3.org/2001/04/xmlenc#Element"
-            Salt="x61u9l80Gw=="
-            IV="GNgGwjZLkFQ=" xmlns="http://www.w3.org/2001/04/xmlenc#">
+            Salt="55fClhjEmg=="
+            IV="5thYnBynPy4=" xmlns="http://www.w3.org/2001/04/xmlenc#">
             <EncryptionMethod
               Algorithm="http://www.w3.org/2001/04/xmlenc#tripledes-cbc" />
             <CipherData>
-              <CipherValue>GNgGwjZLkFS+yhOGsGkIWXOc9DvWZlJt/WTG+WG12Zo9fgJXM8APdRB0YIIW4+Hb2kAwiH9kiqODCRDUrXGuEPWusaFRiohowDHe2RgHwaQ62DjRK4sNYJR012rPNLEeuDSByXqNstMY/BTActaWD+oxVfLgNKlv</CipherValue>
+              <CipherValue>5thYnBynPy7lsuREz91CR1MkxHLQ2Y8vqkyHZKL/kTp0k1AjD0wzSI19khOS7DsEkSnw5y0rYBi5JX+98RGhvfggfopFBMLVVNu4AtJNNJpCs6Mb+v9KB4WPcdePtKtWcbxpJ5C+0Smw7JmoXrPl1AxDGMXU9OXR</CipherValue>
             </CipherData>
           </EncryptedData>
         </DTS:ConnectionManager>
@@ -1764,7 +1764,7 @@
           DTS:LocaleID="-1"
           DTS:ObjectName="Insert into RightsLine_Edits_IDs Table"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2012; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="4">
+          DTS:ThreadHint="5">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -1781,7 +1781,7 @@
           DTS:LocaleID="-1"
           DTS:ObjectName="Insert into RightsLine_EpisodeParentSeason_IDs Table"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2012; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="5">
+          DTS:ThreadHint="0">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -1798,7 +1798,7 @@
           DTS:LocaleID="-1"
           DTS:ObjectName="Insert into RightsLine_OTO_IDs Table"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2012; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="6">
+          DTS:ThreadHint="2">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -1815,7 +1815,7 @@
           DTS:LocaleID="-1"
           DTS:ObjectName="Insert into RightsLine_ProdnQ_IDs Table"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2012; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="2">
+          DTS:ThreadHint="4">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -2547,7 +2547,7 @@
           DTS:LocaleID="-1"
           DTS:ObjectName="Remove Duplicates and insert into RightsLine_Season_IDs Table"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2012; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="7">
+          DTS:ThreadHint="1">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -3561,7 +3561,7 @@ Where [shared?] IS  NOT NULL</property>
           DTS:LocaleID="-1"
           DTS:ObjectName="Insert into RightsLine_ExternalCompany_ids"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2012; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="1">
+          DTS:ThreadHint="6">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -4611,7 +4611,7 @@ Where [shared?] IS  NOT NULL</property>
           DTS:LocaleID="-1"
           DTS:ObjectName="Insert into RightsLine_ExternalContacts_ids"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2012; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="0">
+          DTS:ThreadHint="7">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -4678,6 +4678,197 @@ Where [shared?] IS  NOT NULL</property>
     <LayoutInfo>
       <GraphLayout
         Capacity="64" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="187,42"
+          Id="Package\Load Data From Excel\Alliant Contacts Import"
+          TopLeft="1068.75,51" />
+        <NodeLayout
+          Size="169,42"
+          Id="Package\Load Data From Excel\Deal PandQ Import"
+          TopLeft="767.25,42.5" />
+        <NodeLayout
+          Size="137,42"
+          Id="Package\Load Data From Excel\Edits Import"
+          TopLeft="820,237" />
+        <NodeLayout
+          Size="151,42"
+          Id="Package\Load Data From Excel\Episode Import"
+          TopLeft="492.25,239.75" />
+        <NodeLayout
+          Size="143,42"
+          Id="Package\Load Data From Excel\Import Series"
+          TopLeft="489.222222222222,24.666666666667" />
+        <NodeLayout
+          Size="259,42"
+          Id="Package\Load Data From Excel\Insert into RightsLine_Edits_IDs Table"
+          TopLeft="763.5,312" />
+        <NodeLayout
+          Size="337,42"
+          Id="Package\Load Data From Excel\Insert into RightsLine_EpisodeParentSeason_IDs Table"
+          TopLeft="391.5,321" />
+        <NodeLayout
+          Size="258,42"
+          Id="Package\Load Data From Excel\Insert into RightsLine_OTO_IDs Table"
+          TopLeft="64,311" />
+        <NodeLayout
+          Size="271,42"
+          Id="Package\Load Data From Excel\Insert into RightsLine_ProdnQ_IDs Table"
+          TopLeft="716.75,138.5" />
+        <NodeLayout
+          Size="265,42"
+          Id="Package\Load Data From Excel\Insert into RightsLine_Series_IDs Table"
+          TopLeft="432,139" />
+        <NodeLayout
+          Size="308,42"
+          Id="Package\Load Data From Excel\Insert Records Into CatalogSeasons_UpdateOnly"
+          TopLeft="65.5,36" />
+        <NodeLayout
+          Size="136,42"
+          Id="Package\Load Data From Excel\OTO Import"
+          TopLeft="125,239" />
+        <NodeLayout
+          Size="382,42"
+          Id="Package\Load Data From Excel\Remove Duplicates and insert into RightsLine_Season_IDs Table"
+          TopLeft="33.5,138" />
+        <EdgeLayout
+          Id="Package\Load Data From Excel.PrecedenceConstraints[Constraint 1]"
+          TopLeft="222,78">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load Data From Excel.PrecedenceConstraints[Constraint 10]"
+          TopLeft="852,84.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,54"
+              Start="0,0"
+              End="0,46.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,46.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load Data From Excel.PrecedenceConstraints[Constraint 4]"
+          TopLeft="562.611111111111,66.666666666667">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,72.333333333333"
+              Start="0,0"
+              End="0,64.833333333333">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,64.833333333333" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load Data From Excel.PrecedenceConstraints[Constraint 5]"
+          TopLeft="890.75,279">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,33"
+              Start="0,0"
+              End="0,25.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,25.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load Data From Excel.PrecedenceConstraints[Constraint 7]"
+          TopLeft="193,281">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,30"
+              Start="0,0"
+              End="0,22.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,22.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load Data From Excel.PrecedenceConstraints[Constraint 8]"
+          TopLeft="563.875,281.75">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,39.25"
+              Start="0,0"
+              End="0,31.75">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,31.75" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="1436,450"
+          Size="1436,493"
+          Id="Package\Load Data From Excel"
+          TopLeft="700,146" />
         <NodeLayout
           Size="211,42"
           Id="Package\Season Truncate All Harmonization Tables\Truncate Harmonoze Tables"
@@ -4815,197 +5006,6 @@ Where [shared?] IS  NOT NULL</property>
           Size="340,320"
           Id="Package\Whitelisted Contacts"
           TopLeft="514.25,685.5" />
-        <NodeLayout
-          Size="308,42"
-          Id="Package\Load Data From Excel\Insert Records Into CatalogSeasons_UpdateOnly"
-          TopLeft="65.5,36" />
-        <EdgeLayout
-          Id="Package\Load Data From Excel.PrecedenceConstraints[Constraint 1]"
-          TopLeft="222,78">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="382,42"
-          Id="Package\Load Data From Excel\Remove Duplicates and insert into RightsLine_Season_IDs Table"
-          TopLeft="33.5,138" />
-        <NodeLayout
-          Size="143,42"
-          Id="Package\Load Data From Excel\Import Series"
-          TopLeft="489.222222222222,24.666666666667" />
-        <EdgeLayout
-          Id="Package\Load Data From Excel.PrecedenceConstraints[Constraint 4]"
-          TopLeft="562.611111111111,66.666666666667">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,72.333333333333"
-              Start="0,0"
-              End="0,64.833333333333">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,64.833333333333" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="265,42"
-          Id="Package\Load Data From Excel\Insert into RightsLine_Series_IDs Table"
-          TopLeft="432,139" />
-        <NodeLayout
-          Size="137,42"
-          Id="Package\Load Data From Excel\Edits Import"
-          TopLeft="820,237" />
-        <EdgeLayout
-          Id="Package\Load Data From Excel.PrecedenceConstraints[Constraint 5]"
-          TopLeft="890.75,279">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,33"
-              Start="0,0"
-              End="0,25.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,25.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="259,42"
-          Id="Package\Load Data From Excel\Insert into RightsLine_Edits_IDs Table"
-          TopLeft="763.5,312" />
-        <NodeLayout
-          Size="136,42"
-          Id="Package\Load Data From Excel\OTO Import"
-          TopLeft="125,239" />
-        <EdgeLayout
-          Id="Package\Load Data From Excel.PrecedenceConstraints[Constraint 7]"
-          TopLeft="193,281">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,30"
-              Start="0,0"
-              End="0,22.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,22.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="258,42"
-          Id="Package\Load Data From Excel\Insert into RightsLine_OTO_IDs Table"
-          TopLeft="64,311" />
-        <NodeLayout
-          Size="151,42"
-          Id="Package\Load Data From Excel\Episode Import"
-          TopLeft="492.25,239.75" />
-        <EdgeLayout
-          Id="Package\Load Data From Excel.PrecedenceConstraints[Constraint 8]"
-          TopLeft="563.875,281.75">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,39.25"
-              Start="0,0"
-              End="0,31.75">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,31.75" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="337,42"
-          Id="Package\Load Data From Excel\Insert into RightsLine_EpisodeParentSeason_IDs Table"
-          TopLeft="391.5,321" />
-        <NodeLayout
-          Size="169,42"
-          Id="Package\Load Data From Excel\Deal PandQ Import"
-          TopLeft="767.25,42.5" />
-        <EdgeLayout
-          Id="Package\Load Data From Excel.PrecedenceConstraints[Constraint 10]"
-          TopLeft="852,84.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,54"
-              Start="0,0"
-              End="0,46.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,46.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="271,42"
-          Id="Package\Load Data From Excel\Insert into RightsLine_ProdnQ_IDs Table"
-          TopLeft="716.75,138.5" />
-        <NodeLayout
-          Size="187,42"
-          Id="Package\Load Data From Excel\Alliant Contacts Import"
-          TopLeft="1068.75,51" />
-        <ContainerLayout
-          HeaderHeight="43"
-          IsExpanded="True"
-          PanelSize="1436,450"
-          Size="1436,493"
-          Id="Package\Load Data From Excel"
-          TopLeft="700,146" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
           TopLeft="308,576">
@@ -5087,6 +5087,65 @@ Where [shared?] IS  NOT NULL</property>
       </GraphLayout>
     </LayoutInfo>
   </Package>
+  <TaskHost
+    design-time-name="Package\Load Data From Excel\Alliant Contacts Import">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="139,42"
+          Id="Package\Load Data From Excel\Alliant Contacts Import\Excel Source"
+          TopLeft="344,72" />
+        <NodeLayout
+          Size="179,42"
+          Id="Package\Load Data From Excel\Alliant Contacts Import\ADO NET Destination"
+          TopLeft="325,216" />
+        <EdgeLayout
+          Id="Package\Load Data From Excel\Alliant Contacts Import.Paths[Excel Source Output]"
+          TopLeft="414,114">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,102"
+              Start="0,0"
+              End="0,94.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,94.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load Data From Excel\Alliant Contacts Import\ADO NET Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load Data From Excel\Alliant Contacts Import\Excel Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <TaskHost
     design-time-name="Package\Load Data From Excel\Deal PandQ Import">
     <LayoutInfo>
@@ -5503,7 +5562,7 @@ Where [shared?] IS  NOT NULL</property>
     design-time-name="Package\Whitelisted Companies\Import BV Alliant ExternalCompany">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="206,42"
           Id="Package\Whitelisted Companies\Import BV Alliant ExternalCompany\Source WhitelistCompanies"
@@ -5543,9 +5602,7 @@ Where [shared?] IS  NOT NULL</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -5763,65 +5820,6 @@ Where [shared?] IS  NOT NULL</property>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\Whitelisted Contacts\Import Whitelisted Contacts\IMport Whitelisted Contacts">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <TaskHost
-    design-time-name="Package\Load Data From Excel\Alliant Contacts Import">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="139,42"
-          Id="Package\Load Data From Excel\Alliant Contacts Import\Excel Source"
-          TopLeft="344,72" />
-        <NodeLayout
-          Size="179,42"
-          Id="Package\Load Data From Excel\Alliant Contacts Import\ADO NET Destination"
-          TopLeft="325,216" />
-        <EdgeLayout
-          Id="Package\Load Data From Excel\Alliant Contacts Import.Paths[Excel Source Output]"
-          TopLeft="414,114">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,102"
-              Start="0,0"
-              End="0,94.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,94.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\Load Data From Excel\Alliant Contacts Import\Excel Source">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Load Data From Excel\Alliant Contacts Import\ADO NET Destination">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
