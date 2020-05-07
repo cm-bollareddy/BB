@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "MOSReload", "MOSReload\MOSReload.dtproj", "{0C92E4F0-476A-4484-B640-D6235AD628AD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PSScript", "PSScript", "{02E2DA55-D5B0-40F7-926A-63F00FFD692B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "log4net", "log4net", "{885D8538-81A6-4EF7-B75F-3A173A79050E}"
+	ProjectSection(SolutionItems) = preProject
+		log4net\log4net.config = log4net\log4net.config
+		log4net\log4net.dll = log4net\log4net.dll
+		log4net\psm_logger.psm1 = log4net\psm_logger.psm1
+		log4net\rl_RunSSIS.ps1 = log4net\rl_RunSSIS.ps1
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrafficDataRightLineMapperWebUI", "TrafficDataRightLineMapperWebUI\TrafficDataRightLineMapperWebUI.csproj", "{9A6076EC-889C-4B9F-A60F-B176AE17C03F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ErrorParser", "ErrorParser\ErrorParser.csproj", "{D285C653-A92C-4B43-95FC-77D55A2A20B4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Development|Any CPU = Development|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0C92E4F0-476A-4484-B640-D6235AD628AD}.Debug|Any CPU.ActiveCfg = Development
+		{0C92E4F0-476A-4484-B640-D6235AD628AD}.Debug|Any CPU.Build.0 = Development
+		{0C92E4F0-476A-4484-B640-D6235AD628AD}.Development|Any CPU.ActiveCfg = Development
+		{0C92E4F0-476A-4484-B640-D6235AD628AD}.Development|Any CPU.Build.0 = Development
+		{0C92E4F0-476A-4484-B640-D6235AD628AD}.Release|Any CPU.ActiveCfg = Development
+		{0C92E4F0-476A-4484-B640-D6235AD628AD}.Release|Any CPU.Build.0 = Development
+		{9A6076EC-889C-4B9F-A60F-B176AE17C03F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A6076EC-889C-4B9F-A60F-B176AE17C03F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A6076EC-889C-4B9F-A60F-B176AE17C03F}.Development|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A6076EC-889C-4B9F-A60F-B176AE17C03F}.Development|Any CPU.Build.0 = Debug|Any CPU
+		{9A6076EC-889C-4B9F-A60F-B176AE17C03F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A6076EC-889C-4B9F-A60F-B176AE17C03F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D285C653-A92C-4B43-95FC-77D55A2A20B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D285C653-A92C-4B43-95FC-77D55A2A20B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D285C653-A92C-4B43-95FC-77D55A2A20B4}.Development|Any CPU.ActiveCfg = Debug|Any CPU
+		{D285C653-A92C-4B43-95FC-77D55A2A20B4}.Development|Any CPU.Build.0 = Debug|Any CPU
+		{D285C653-A92C-4B43-95FC-77D55A2A20B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D285C653-A92C-4B43-95FC-77D55A2A20B4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{885D8538-81A6-4EF7-B75F-3A173A79050E} = {02E2DA55-D5B0-40F7-926A-63F00FFD692B}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		VisualSVNWorkingCopyRoot = .
+	EndGlobalSection
+EndGlobal
