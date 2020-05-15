@@ -10115,7 +10115,7 @@ from
     where (BV.ASSET.P_DELETEFLAG = 0)
           and (BV.PBSFEEDDISTRIBUTOR.PBSFDS_ISPBSDISTRIBUTOR = 1)
           and (BV.TIMELINE.TLN_VER_ID &lt;&gt; 0)
-          and (BV.ASSET.ASS_ACA_ID in ( 3163743, 3163744, 3163745, 3163746 ))
+          and (BV.ASSET.ASS_ACA_ID in ( 3163743, 3163744, 3163745, 3163746, 654852340, 654852332))
           and (not (BV.TIMELINE.TLN_TPT_ID in ( 3130966, 3130969, 3130971, 3130972, 3130973, 3130974, 3137282, 3137283
                                               , 3162935
                                               )
@@ -10151,7 +10151,7 @@ from
     where (BV.ASSET.P_DELETEFLAG = 0)
           and (BV.PBSFEEDDISTRIBUTOR.PBSFDS_ISPBSDISTRIBUTOR = 1)
           and (BV.TIMELINE.TLN_VER_ID &lt;&gt; 0)
-          and (BV.ASSET.ASS_ACA_ID in ( 3163743, 3163744, 3163745, 3163746 ))
+          and (BV.ASSET.ASS_ACA_ID in ( 3163743, 3163744, 3163745, 3163746, 654852340, 654852332))
           and (not (BV.TIMELINE.TLN_TPT_ID in ( 3130966, 3130969, 3130971, 3130972, 3130973, 3130974, 3137282, 3137283
                                               , 3162935
                                               )
@@ -10183,7 +10183,7 @@ from
 			where (BV.ASSET.P_DELETEFLAG = 0)
 				  and (BV.PBSFEEDDISTRIBUTOR.PBSFDS_ISPBSDISTRIBUTOR = 1)
 				  and (BV.TIMELINE.TLN_VER_ID &lt;&gt; 0)
-				  and (BV.ASSET.ASS_ACA_ID in ( 3163743, 3163744, 3163745, 3163746 ))
+				  and (BV.ASSET.ASS_ACA_ID in ( 3163743, 3163744, 3163745, 3163746, 654852340, 654852332))
 				  and (not (BV.TIMELINE.TLN_TPT_ID in ( 3130966, 3130969, 3130971, 3130972, 3130973, 3130974, 3137282, 3137283
 													  , 3162935
 													  )
